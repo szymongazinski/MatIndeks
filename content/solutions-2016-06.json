@@ -1,5 +1,20 @@
 [
   {
+    "numer": "8",
+    "rozwiazanie": "Obie strony nierówności są dodatnie, więc możemy równoważnie podnieść je do kwadratu. Otrzymujemy\n\\[(a+b)(c+d)\\ge ac+bd+2\\sqrt{abcd}.\\]\nPo rozwinięciu iloczynu i odjęciu wspólnych składników zostaje \\(ad+bc\\ge2\\sqrt{abcd}\\), czyli\n\\[\\bigl(\\sqrt{ad}-\\sqrt{bc}\\bigr)^2\\ge0.\\]\nKwadrat liczby rzeczywistej jest nieujemny, co kończy dowód.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "**Sposób I — rozkład na czynniki**\nMamy \\(|x-1|(|x-2|-1)\\ge0\\). Liczba \\(x=1\\) spełnia nierówność. Dla \\(x\\ne1\\) dzielimy przez \\(|x-1|>0\\) i otrzymujemy \\(|x-2|\\ge1\\), czyli \\(x\\le1\\) lub \\(x\\ge3\\).\n\n**Sposób II — przedziały stałego znaku**\nDla \\(x\\le1\\) nierówność przyjmuje postać \\((x-1)^2\\ge0\\). Dla \\(1<x<2\\) równoważna jest \\((x-1)^2\\le0\\), co nie daje rozwiązań w tym przedziale. Dla \\(x\\ge2\\) dostajemy \\((x-1)(x-3)\\ge0\\), stąd \\(x\\ge3\\).\n\n**Sposób III — podniesienie do kwadratu**\nObie strony są nieujemne, więc możemy podnieść je do kwadratu. Otrzymujemy\n\\[(x^2-3x+2)^2-(x-1)^2\\ge0.\\]\nLewą stronę można rozłożyć przez dwukrotne dzielenie wielomianu przez \\(x-1\\) lub przez różnicę kwadratów. W obu wypadkach jest to \\((x-1)^3(x-3)\\). Analiza znaków tego iloczynu daje \\(x\\le1\\) lub \\(x\\ge3\\).\n\n**Sposób IV — porównanie wykresów**\nPorównujemy wykresy \\(f(x)=|x^2-3x+2|\\) i \\(g(x)=|x-1|\\). Ich punkty wspólne mają odcięte \\(1\\) i \\(3\\), bo równanie \\(f(x)=g(x)\\) jest równoważne \\(x^2-3x+2=\\pm(x-1)\\). Na trzech przedziałach wyznaczonych przez \\(1,3\\) możemy sprawdzić punkty \\(0,2,4\\). Otrzymujemy odpowiednio \\(f>g,\\ f<g,\\ f>g\\).\n\nWynik to \\((-\\infty,1]\\cup[3,+\\infty)\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Warunek istnienia dwóch różnych pierwiastków rzeczywistych to \\(k\\ne0\\) oraz\n\\[\\Delta=(k-1)^2-4k^2=(1+k)(1-3k)>0.\\]\nStąd \\(k\\in(-1,0)\\cup(0,\\tfrac13)\\). Iloczyn pierwiastków jest równy \\(1/k^2\\), więc oba pierwiastki są niezerowe. Ze wzorów Viète'a otrzymujemy\n\\[m=\\frac{1}{x_1}+\\frac{1}{x_2}=\\frac{x_1+x_2}{x_1x_2}=1-k.\\]\n\n**Interpretacja \\(f\\) jako funkcji parametru \\(k\\)**\n\nDla wskazanych \\(k\\) mamy \\(f(k)=2^{1-k}=(\\tfrac12)^{k-1}\\). Wykres otrzymujemy przez przesunięcie wykresu \\(y=(\\tfrac12)^k\\) o jednostkę w prawo i ograniczenie do przedziałów z dziedziny. Funkcja \\(h(k)=(\\tfrac12)^{k-1}\\) jest malejąca i ciągła, a jej wartości na końcach to \\(h(-1)=4\\), \\(h(0)=2\\) i \\(h(\\tfrac13)=\\sqrt[3]{4}\\). Zatem zbiór wartości to \\((\\sqrt[3]{4},2)\\cup(2,4)\\).\n\n**Interpretacja \\(f\\) jako funkcji zmiennej \\(x\\) przy ustalonym \\(k\\)**\n\nCKE dopuszcza również odczytanie zapisu \\(f(x)=2^m\\) dosłownie. Przy ustalonym \\(k\\) spełniającym powyższe warunki liczba \\(m\\) jest stała, więc zbiorem wartości jest \\(\\{2^m\\}\\).",
+    "strona_rozwiazania": 12
+  },
+  {
     "numer": "14",
     "rozwiazanie": "Niech \\(a>b\\) będą przyprostokątnymi, \\(c\\) przeciwprostokątną, \\(\\alpha\\) kątem naprzeciw \\(a\\), a \\(\\beta=90^\\circ-\\alpha\\). Mamy \\((a-b)/c=\\frac12\\).\n\n**Sposób I — funkcje trygonometryczne**\nMamy \\(\\sin\\alpha-\\cos\\alpha=\\frac12\\). Podstawienie \\(\\sin\\alpha=\\cos\\alpha+\\frac12\\) do jedynki trygonometrycznej daje \\(2\\cos^2\\alpha+\\cos\\alpha-\\frac34=0\\). Z dwóch pierwiastków dodatni jest \\(\\cos\\alpha=\\frac{\\sqrt7-1}{4}\\). Stąd \\(\\cos\\beta=\\sin\\alpha=\\frac{\\sqrt7+1}{4}\\).\n\n**Sposób II — twierdzenie Pitagorasa**\nMamy \\(a=b+c/2\\), więc \\((b+c/2)^2+b^2=c^2\\), czyli \\(3c^2-4bc-8b^2=0\\). Dodatni pierwiastek to \\(c=\\frac{2b(1+\\sqrt7)}{3}\\), a zatem \\(a=\\frac{b(4+\\sqrt7)}{3}\\). Po uproszczeniu otrzymujemy \\(\\cos\\alpha=b/c=\\frac{\\sqrt7-1}{4}\\) i \\(\\cos\\beta=a/c=\\frac{\\sqrt7+1}{4}\\).",
     "strona_rozwiazania": 16

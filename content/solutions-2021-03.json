@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "Odpowiedź CKE — **C**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Odpowiedź CKE — **C**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Odpowiedź CKE — **C**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Odpowiedź CKE — **B**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Odpowiedź CKE to \\(220\\). W kratkach wpisujemy \\(2,\\ 2,\\ 0\\).\n\nUzasadnienie. Ponieważ wszystkie dziesięć cyfr wynosi co najmniej \\(1\\), po odjęciu jedności od każdej cyfry zostaje \\(3\\) do rozdysponowania między \\(10\\) pozycji. Każdy taki rozkład daje poprawne cyfry, bo największa możliwa cyfra to \\(4\\). Liczba rozkładów to\n\\[\\binom{3+10-1}{10-1}=\\binom{12}{3}=220.\\]",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Grupujemy wyrazy i rozkładamy pozostały trójmian.\n\\[\n\\begin{aligned}\n5x^2-6xy+3y^2-2x-4\n&=3(x-y)^2+2x^2-2x-4\\\\\n&=3(x-y)^2+2(x+1)(x-2).\n\\end{aligned}\n\\]\nPierwszy składnik jest nieujemny. Drugi jest dodatni, ponieważ \\(x>2\\) daje \\(x+1>0\\) i \\(x-2>0\\). Stąd żądana nierówność.",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób 1 — sinus podwojonego kąta**\n\nMnożymy przez \\(2\\) i stosujemy wzór \\(2\\sin u\\cos u=\\sin(2u)\\) dla \\(u=x+\\frac{\\pi}{4}\\). Dostajemy\n\\[\\sin\\left(2x+\\frac\\pi2\\right)=\\frac{\\sqrt2}{2}=\\sin\\frac\\pi4.\\]\nDla \\(k\\in\\mathbb Z\\) otrzymujemy \\(2x+\\tfrac\\pi2=\\tfrac\\pi4+2k\\pi\\) lub \\(2x+\\tfrac\\pi2=\\tfrac{3\\pi}{4}+2k\\pi\\).\n\n**Sposób 2 — rozwinięcie sinusa i cosinusa sumy**\n\nPo rozwinięciu funkcji obu sum lewa strona przyjmuje postać\n\\[\\frac12(\\sin x+\\cos x)(\\cos x-\\sin x)=\\frac12(\\cos^2x-\\sin^2x)=\\frac12\\cos(2x).\\]\nZatem \\(\\cos(2x)=\\frac{\\sqrt2}{2}\\), czyli \\(2x=-\\frac\\pi4+2k\\pi\\) lub \\(2x=\\frac\\pi4+2k\\pi\\), dla \\(k\\in\\mathbb Z\\).\n\nObie metody dają \\(x=-\\tfrac\\pi8+k\\pi\\) lub \\(x=\\tfrac\\pi8+k\\pi\\) dla \\(k\\in\\mathbb Z\\).",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(a=|BC|\\), \\(b=|AC|\\), \\(c=|AB|\\). Kąty przy \\(A,B\\) oznaczamy odpowiednio przez \\(\\alpha,\\beta\\). Stosunek pól to\n\\[k=\\frac{ab}{2c^2}.\\]\nZ definicji tangensa i twierdzenia Pitagorasa otrzymujemy\n\\[\\tan\\alpha+\\tan\\beta=\\frac ab+\\frac ba=\\frac{a^2+b^2}{ab}=\\frac{c^2}{ab}=\\frac1{2k}.\\]",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Kąty przy \\(A,B,C,D\\) oznaczamy odpowiednio przez \\(\\alpha,\\beta,\\gamma,\\delta\\). Z twierdzenia sinusów w trójkącie \\(ABD\\) mamy\n\\[\\sin\\alpha=\\frac{|BD|}{2R}=\\frac{10}{10\\sqrt2}=\\frac{\\sqrt2}{2}.\\]\nKąt \\(\\alpha\\) jest ostry, stąd \\(\\alpha=45^\\circ\\). Suma przeciwległych kątów czworokąta wpisanego w okrąg wynosi \\(180^\\circ\\), więc \\(\\gamma=135^\\circ\\) oraz \\(\\beta=180^\\circ-\\delta\\). W szczególności \\(\\sin\\beta=\\sin\\delta\\). Podstawiając do warunku na iloczyn sinusów, mamy\n\\[\\tfrac12\\sin^2\\delta=\\tfrac38,\\qquad\\sin\\delta=\\tfrac{\\sqrt3}{2}.\\]\nZ ostrości kąta \\(\\delta\\) wynika \\(\\delta=60^\\circ\\) oraz \\(\\beta=120^\\circ\\). Miary kątów w kolejności \\(A,B,C,D\\) to \\(45^\\circ,120^\\circ,135^\\circ,60^\\circ\\).",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "**Sposób 1 — wyznaczenie współczynników**\nZ twierdzenia o reszcie \\(W(2)=-8\\) i \\(W(3)=-18\\), więc\n\\[\\begin{cases}\n16+8b+4c=-8,\\\\ 81+27b+9c=-18.\n\\end{cases}\\]\nPo uproszczeniu mamy \\(2b+c=-6\\) i \\(3b+c=-11\\). Odejmowanie daje \\(b=-5\\), skąd \\(c=4\\). Zatem \\(W(4)=256-320+64=0\\).\n\n**Sposób 2 — rozkład wielomianu pomocniczego**\nPiszemy \\(W(x)=x^2P(x)\\), gdzie \\(P(x)=x^2+bx+c\\). Z reszt dostajemy \\(P(2)=-8/4=-2\\) i \\(P(3)=-18/9=-2\\). Wielomian \\(P(x)+2\\) jest moniczny i ma zera \\(2,3\\), więc \\(P(x)+2=(x-2)(x-3)\\). W szczególności \\(P(4)=2\\cdot1-2=0\\) i \\(W(4)=0\\).",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Niech \\(\\alpha=\\angle AFB\\). Przekątne odpowiednich ścian bocznych mają długości \\(|AF|=|BF|=\\sqrt{6^2+4^2}=2\\sqrt{13}\\). Trójkąt \\(AFB\\) jest więc równoramienny.\n\n**Sposób 1 — porównanie wzorów na pole**\nNiech \\(M\\) będzie środkiem \\(AB\\). W podstawie równobocznej \\(|CM|=2\\sqrt3\\), a \\(CF\\) jest prostopadły do płaszczyzny podstawy. Stąd\n\\[|FM|=\\sqrt{|CF|^2+|CM|^2}=\\sqrt{36+12}=4\\sqrt3.\\]\nPonieważ \\(FM\\) jest wysokością trójkąta \\(AFB\\), jego pole wynosi \\(\\tfrac12\\cdot4\\cdot4\\sqrt3=8\\sqrt3\\). To samo pole z kąta między ramionami wynosi \\(\\tfrac12(2\\sqrt{13})^2\\sin\\alpha=26\\sin\\alpha\\). Wobec tego \\(\\sin\\alpha=4\\sqrt3/13\\). Pole \\(8\\sqrt3\\) można też uzyskać wzorem Herona. Dla \\(p=2+2\\sqrt{13}\\) mamy \\(P=\\sqrt{(2+2\\sqrt{13})(2\\sqrt{13}-2)\\cdot2\\cdot2}=8\\sqrt3\\).\n\n**Sposób 2 — twierdzenie cosinusów**\nW trójkącie \\(AFB\\) mamy \\(4^2=2\\cdot52-2\\cdot52\\cos\\alpha\\), więc \\(\\cos\\alpha=11/13\\). Stąd\n\\[\\sin\\alpha=\\sqrt{1-(11/13)^2}=\\frac{4\\sqrt3}{13}.\\]\n\n**Sposób 3 — połowa kąta**\nWysokość \\(FM\\) dzieli kąt \\(\\alpha\\) na połowy. W trójkącie \\(AFM\\) mamy \\(|AM|=2\\), \\(|FM|=4\\sqrt3\\), \\(|AF|=2\\sqrt{13}\\), więc\n\\[\\sin\\frac\\alpha2=\\frac1{\\sqrt{13}},\\qquad\\cos\\frac\\alpha2=\\frac{2\\sqrt3}{\\sqrt{13}}.\\]\nZe wzoru na sinus podwojonego kąta otrzymujemy \\(\\sin\\alpha=4\\sqrt3/13\\).",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Niech \\(r>0\\) będzie różnicą ciągu. Wtedy \\(b=a+r\\), \\(c=a+2r\\), \\(d=a+3r\\), zatem\n\\[(a+3r)^2=2\\bigl(a^2+(a+r)^2+(a+2r)^2\\bigr).\\]\nPo rozwinięciu dostajemy \\(5a^2+6ar+r^2=(5a+r)(a+r)=0\\). Stąd \\(a=-r\\) albo \\(a=-r/5\\).\n\nDla \\(a=-r\\) ciąg z warunku geometrycznego ma postać \\((100-r,0,r)\\). Warunek \\(0^2=(100-r)r\\) daje \\(r=0\\) lub \\(r=100\\). Pierwsza wartość narusza \\(r>0\\), a druga daje \\((0,0,100)\\), którego trzeci wyraz nie może powstać przez pomnożenie drugiego przez stały iloraz.\n\nDla \\(a=-r/5\\) ciąg geometryczny miałby postać \\((100-r/5,4r/5,9r/5)\\). Równanie\n\\[\\left(\\frac{4r}{5}\\right)^2=\\left(100-\\frac r5\\right)\\frac{9r}{5}\\]\npo podzieleniu przez \\(r>0\\) daje \\(r=180\\). Otrzymujemy \\((a,b,c,d)=(-36,144,324,504)\\). Ciąg \\((64,144,324)\\) jest geometryczny o ilorazie \\(9/4\\), więc wynik spełnia warunki.",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "**Sposób 1 — podstawa pozioma i wysokość**\nPunktom przecięcia prostych \\(y=x+b\\), \\(y=x+2b\\) z osią \\(Oy\\) odpowiada przesunięcie pionowe o długości \\(|b|\\). Ponieważ obie proste mają współczynnik kierunkowy \\(1\\), ich punkty przecięcia z jedną prostą poziomą są odległe również o \\(|b|\\). To długość poziomej podstawy. Wysokość jest odległością między \\(y=b\\) i \\(y=2\\), czyli \\(|b-2|\\). Pole wynosi \\(|b|\\,|b-2|\\).\n\n**Sposób 2 — pole przez wyznacznik**\nPunkty przecięcia prostych to \\(A=(2-b,2)\\), \\(B=(0,b)\\), \\(C=(-b,b)\\) i \\(D=(2-2b,2)\\), w kolejności wokół figury. Pole równoległoboku jest dwukrotnością pola \\(ABC\\), czyli\n\\[\nP=\\left|(-(2-b))(b-2)-(b-2)(-b-(2-b))\\right|=|b(b-2)|.\n\\]\n\n**Sposób 3 — odległość punktu od prostej**\nZe współrzędnych jak w sposobie 2 mamy \\(|BC|=|b|\\). Odległość \\(A=(2-b,2)\\) od prostej zawierającej \\(BC\\), czyli \\(y=b\\), wynosi\n\\[h=\\frac{|0(2-b)+1\\cdot2-b|}{\\sqrt{0^2+1^2}}=|b-2|.\\]\nStąd \\(P=|BC|h=|b(b-2)|\\).\n\nWe wszystkich sposobach warunek \\(P=1\\) prowadzi do \\(b(b-2)=-1\\) lub \\(b(b-2)=1\\). Pierwsze równanie daje \\((b-1)^2=0\\). Drugie można zapisać jako \\((b-1)^2=2\\). Wszystkie uzyskane wartości są dopuszczalne: \\(b\\in\\{1-\\sqrt2,1,1+\\sqrt2\\}\\).",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "W obu sposobach warunek dwóch różnych pierwiastków to\n\\[\\Delta=4a^2-4(a^3-2a)=-4a(a+1)(a-2)>0.\\]\nZ analizy znaku otrzymujemy \\(a\\in(-\\infty,-1)\\cup(0,2)\\).\n\n**Sposób 1 — wzory Viète’a**\nPrzy dodatnim wyróżniku dwa pierwiastki są dodatnie dokładnie wtedy, gdy ich suma i iloczyn są dodatnie. Suma to \\(2a\\), więc potrzeba \\(a>0\\). Iloczyn \\(a^3-2a=a(a-\\sqrt2)(a+\\sqrt2)\\) jest dodatni dla \\(a\\in(-\\sqrt2,0)\\cup(\\sqrt2,\\infty)\\). Po przecięciu trzech warunków mamy \\(a\\in(\\sqrt2,2)\\).\n\n**Sposób 2 — położenie paraboli**\nWykres \\(f(x)=x^2-2ax+a^3-2a\\) jest parabolą o ramionach w górę. Przy \\(\\Delta>0\\) dwa jej przecięcia z osią \\(Ox\\) leżą na dodatniej półosi dokładnie wtedy, gdy odcięta wierzchołka jest dodatnia i \\(f(0)>0\\). Odcięta to \\(a\\), a \\(f(0)=a(a-\\sqrt2)(a+\\sqrt2)\\). Otrzymujemy te same ograniczenia i wynik \\(a\\in(\\sqrt2,2)\\).",
+    "strona_rozwiazania": 21
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Niech \\(A=(a,9/a^4)\\), \\(B=(-a,9/a^4)\\) dla \\(a>0\\). Podstawa \\(AB\\) ma długość \\(2a\\). Wysokość z \\(C\\) jest równa \\(9/a^4+1/3\\). Zatem\n\\[P(a)=\\frac12\\cdot2a\\left(\\frac9{a^4}+\\frac13\\right)=\\frac9{a^3}+\\frac a3.\\]\nPochodna ma postać \\(P'(a)=\\dfrac{a^4-81}{3a^4}\\). Dla \\(0<a<3\\) jest ujemna, dla \\(a>3\\) dodatnia. Pole osiąga minimum dla \\(a=3\\). Zatem \\(A=(3,1/9)\\), \\(B=(-3,1/9)\\) z możliwością zamiany oznaczeń, a \\(P(3)=4/3\\).",
+    "strona_rozwiazania": 23
+  }
+]

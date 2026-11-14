@@ -1,7 +1,62 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "Z własności logarytmu potęgi oraz ze wzoru na zmianę podstawy otrzymujemy\n\\[\\log_4 49=2\\log_4 7=2\\frac{\\log_3 7}{\\log_3 4}\n=2\\log_3 7\\cdot\\frac{\\log_2 3}{\\log_2 4}\n=2b\\cdot\\frac{a}{2}=ab.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Różniczkujemy iloraz dla \\(x\\ne1\\).\n\\[f'(x)=\\frac{2x(x-1)-(x^2+3)}{(x-1)^2}\n=\\frac{x^2-2x-3}{(x-1)^2}.\\]\nWspółczynnik kierunkowy stycznej wynosi \\(f'(-3)=\\frac{9+6-3}{16}=\\frac34\\). Styczna przechodzi przez \\(P=(-3,-3)\\), więc \\(y+3=\\frac34(x+3)\\), czyli\n\\[y=\\frac34x-\\frac34.\\]",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Suma wszystkich wyrazów istnieje i wynosi \\(8\\), więc \\(a_1\\ne0\\) i \\(|q|<1\\), gdzie \\(q\\) jest ilorazem ciągu. Suma trzech pierwszych wyrazów to\n\\[7=\\frac{a_1(1-q^3)}{1-q}=8(1-q^3),\\]\nstąd \\(q=\\frac12\\). Dla \\(n\\ge1\\) mamy \\(S_n=S(1-q^n)\\), zatem\n\\[\\frac{S-S_n}{S_n}\n=\\frac{(1/2)^n}{1-(1/2)^n}\n=\\frac{1}{2^n-1}>0.\\]\nWarunek \\(\\frac1{2^n-1}<0{,}001\\) jest równoważny \\(2^n>1001\\). Ponieważ \\(2^9=512\\), a \\(2^{10}=1024\\), rozwiązaniami są wszystkie naturalne \\(n\\ge10\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Liczba \\(6\\) zawsze jest pierwiastkiem równania. Aby otrzymać trzy różne pierwiastki o tym samym znaku, trójmian \\(Q_m(x)=(m-2)x^2-4(m+3)x+m+1\\) musi mieć dwa różne dodatnie pierwiastki, oba różne od \\(6\\). Dla \\(m=2\\) pozostaje równanie liniowe \\(-20x+3=0\\), więc odrzucamy tę wartość.\n\nDwa różne pierwiastki rzeczywiste istnieją, gdy\n\\[\\Delta=16(m+3)^2-4(m-2)(m+1)\n=4(3m+19)(m+2)>0,\\]\nczyli dla \\(m\\in(-\\infty,-\\frac{19}{3})\\cup(-2,\\infty)\\). Z wzorów Viète’a iloczyn pierwiastków jest dodatni, gdy \\(\\frac{m+1}{m-2}>0\\), czyli \\(m\\in(-\\infty,-1)\\cup(2,\\infty)\\). Suma pierwiastków jest dodatnia, gdy \\(\\frac{4(m+3)}{m-2}>0\\), czyli \\(m\\in(-\\infty,-3)\\cup(2,\\infty)\\). Łącznie dwa różne dodatnie pierwiastki otrzymujemy dla \\(m\\in(-\\infty,-\\frac{19}{3})\\cup(2,\\infty)\\).\n\nWarunek \\(Q_m(6)\\ne0\\) ma postać \\(13m-143\\ne0\\), czyli \\(m\\ne11\\). Ostatecznie\n\\[m\\in\\left(-\\infty,-\\frac{19}{3}\\right)\\cup(2,11)\\cup(11,\\infty).\\]",
+    "strona_rozwiazania": 8
+  },
+  {
     "numer": "5",
-    "rozwiazanie": "**Sposób 1 — środkowa liczba**\nZapisujemy liczby jako \\(a-1,a,a+1\\), gdzie \\(a\\) jest parzysta. Z rozwinięcia sześcianów wynika\n\\[(a-1)^3+a^3+(a+1)^3=3a(a^2+2).\\]\nIloczyn \\(3a(a^2+2)\\) jest podzielny przez \\(4\\), ponieważ \\(3a\\) i \\(a^2+2\\) są parzyste. Jeżeli \\(a\\) ma resztę \\(0\\) modulo \\(3\\), to \\(3a\\) jest podzielne przez \\(9\\). Jeżeli reszta wynosi \\(1\\) lub \\(2\\), wówczas \\(a^2\\) daje resztę \\(1\\) i \\(a^2+2\\) jest podzielne przez \\(3\\). Wtedy całe \\(3a(a^2+2)\\) też jest podzielne przez \\(9\\). Liczby \\(4\\) i \\(9\\) są względnie pierwsze, więc suma dzieli się przez \\(36\\).\n\n**Sposób 2 — postać liczb modulo \\(4\\)**\nTrzy kolejne liczby niepodzielne przez \\(4\\) mają postać \\(4k+1,4k+2,4k+3\\) dla \\(k\\in\\mathbb{Z}\\). Rozwijamy sumę.\n\\[\\begin{aligned}\n(4k+1)^3+(4k+2)^3+(4k+3)^3&=192k^3+288k^2+168k+36\\\\\n&=36(5k^3+8k^2+4k+1)+12k(k^2+2).\n\\end{aligned}\\]\nDla \\(k=3m\\) dzielnikiem \\(k\\) jest \\(3\\). Dla \\(k=3m+1\\) mamy \\(k^2+2=3(3m^2+2m+1)\\); dla \\(k=3m+2\\) mamy \\(k^2+2=3(3m^2+4m+2)\\). Zatem \\(k(k^2+2)\\) jest zawsze podzielne przez \\(3\\). Oba składniki ostatniej sumy dzielą się przez \\(36\\).",
+    "rozwiazanie": "**Sposób 1 — środkowa liczba**\n\nLiczby mają postać \\(a-1,a,a+1\\), gdzie \\(a\\) jest parzysta i nie dzieli się przez \\(4\\). Rozwijamy sumę sześcianów.\n\\[(a-1)^3+a^3+(a+1)^3=3a(a^2+2).\\]\nIloczyn jest podzielny przez \\(4\\), ponieważ oba czynniki \\(3a\\) i \\(a^2+2\\) są parzyste. Gdy \\(3\\mid a\\), liczba \\(3a\\) jest podzielna przez \\(9\\). W pozostałych przypadkach \\(a^2\\equiv1\\pmod3\\), więc \\(3\\mid(a^2+2)\\), a cały iloczyn też dzieli się przez \\(9\\). Ponieważ \\(4\\) i \\(9\\) są względnie pierwsze, suma jest podzielna przez \\(36\\).\n\n**Sposób 2 — trzy kolejne reszty modulo \\(4\\)**\n\nLiczby zapisujemy jako \\(4k+1,4k+2,4k+3\\), gdzie \\(k\\in\\mathbb Z\\). Otrzymujemy\n\\[\\begin{aligned}\n(4k+1)^3+(4k+2)^3+(4k+3)^3\n&=192k^3+288k^2+168k+36\\\\\n&=36(5k^3+8k^2+4k+1)+12k(k^2+2).\n\\end{aligned}\\]\nJeśli \\(k=3m\\), dzielnikiem \\(k\\) jest \\(3\\). Jeśli \\(k=3m+1\\), to \\(k^2+2=3(3m^2+2m+1)\\). Jeśli \\(k=3m+2\\), to \\(k^2+2=3(3m^2+4m+2)\\). Zatem \\(3\\mid k(k^2+2)\\) i oba składniki ostatniej sumy są podzielne przez \\(36\\).",
     "strona_rozwiazania": 10
+  },
+  {
+    "numer": "6.1",
+    "rozwiazanie": "Mamy \\(P=(-1,1)\\) oraz \\(R=(x,-\\frac12(x-\\frac12)^2+4)\\). Ze wzoru na odległość dwóch punktów wynika\n\\[\\begin{aligned}\n|PR|^2\n&=(x+1)^2+\\left(3-\\tfrac12(x-\\tfrac12)^2\\right)^2\\\\\n&=(x+1)^2+9-3\\left(x^2-x+\\tfrac14\\right)\n+\\tfrac14\\left(x^2-x+\\tfrac14\\right)^2\\\\\n&=\\tfrac14x^4-\\tfrac12x^3-\\tfrac{13}{8}x^2+\\tfrac{39}{8}x+\\tfrac{593}{64}.\n\\end{aligned}\\]\nBierzemy nieujemny pierwiastek, aby otrzymać podany wzór na \\(|PR|\\).",
+    "strona_rozwiazania": 12
+  },
+  {
+    "numer": "6.2",
+    "rozwiazanie": "Niech \\(A\\) i \\(B\\) będą lewym i prawym punktem przecięcia wykresów. Równanie \\(x^2=-\\frac12(x-\\frac12)^2+4\\) sprowadza się do \\(12x^2-4x-31=0\\), skąd\n\\[x_A=\\frac{1-\\sqrt{94}}6\\approx-1{,}45,\\qquad x_B=\\frac{1+\\sqrt{94}}6\\approx1{,}78.\\]\n\nJeżeli \\(C=(x,x^2)\\) jest punktem dolnego łuku, to \\(x\\in[x_A,x_B]\\), \\(0\\le x^2\\le x_B^2\\) i \\(x_B^2-1>1\\). Zatem \\(|x+1|\\le x_B+1\\) oraz \\(|x^2-1|\\le x_B^2-1\\), czyli \\(|PC|\\le|PB|\\). Ponieważ \\(B\\) leży też na górnym łuku, wystarczy znaleźć największą odległość od \\(P\\) na wykresie \\(g\\) w przedziale \\([x_A,x_B]\\).\n\nKwadrat odległości ma postać\n\\[k(x)=\\frac14x^4-\\frac12x^3-\\frac{13}{8}x^2+\\frac{39}{8}x+\\frac{593}{64}.\\]\nPochodna ma postać\n\\[k'(x)=\\frac{8x^3-12x^2-26x+39}{8}=\\frac{(4x^2-13)(2x-3)}{8}.\\]\nNa rozpatrywanym przedziale \\(4x^2-13<0\\), ponieważ \\(x_A>-\\frac{\\sqrt{13}}2\\) i \\(x_B<\\frac{\\sqrt{13}}2\\). Funkcja \\(k\\) rośnie przed \\(x=\\frac32\\) i maleje po nim. W tym samym punkcie maksimum osiąga \\(\\sqrt{k(x)}\\).\n\nMamy \\(g(\\frac32)=\\frac72\\), więc koniec toru należy umieścić w \\(K=(\\frac32,\\frac72)\\). Długość wynosi\n\\[|PK|=\\sqrt{\\left(\\frac52\\right)^2+\\left(\\frac52\\right)^2}=\\frac{5\\sqrt2}{2}.\\]",
+    "strona_rozwiazania": 14
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Rozpisujemy sinus kąta \\(3x=2x+x\\), następnie używamy wzorów na kąt podwojony i zależności \\(\\cos^2x=1-\\sin^2x\\).\n\\[\\begin{aligned}\n\\sin(3x)&=\\sin(2x)\\cos x+\\cos(2x)\\sin x\\\\\n&=2\\sin x\\cos^2x+(1-2\\sin^2x)\\sin x\\\\\n&=3\\sin x-4\\sin^3x.\n\\end{aligned}\\]\nZatem wyjściowe równanie przyjmuje postać \\(\\sin x(1-4\\sin^2x)=0\\). Mamy \\(\\sin x=0\\) albo \\(\\sin x=\\frac12\\) albo \\(\\sin x=-\\frac12\\). Ostatnia możliwość odpada w przedziale \\([0,\\pi]\\), więc\n\\[x\\in\\left\\{0,\\frac{\\pi}{6},\\frac{5\\pi}{6},\\pi\\right\\}.\\]",
+    "strona_rozwiazania": 17
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(a,b\\) będą długościami podstaw \\(AB,CD\\), a \\(c\\) długością każdego ramienia. Pary przeciwległych boków czworokąta opisanego na okręgu mają równe sumy długości. Stąd \\(a+b=2c\\), a z obwodu \\(l=a+b+2c=4c\\), czyli \\(c=\\frac l4\\).\n\nNiech \\(E\\) będzie rzutem \\(C\\) na \\(AB\\), a \\(h=|CE|\\) wysokością trapezu. Ponieważ trapez jest równoramienny, \\(|EB|=\\frac{a-b}{2}\\) i \\(|AE|=\\frac{a+b}{2}=c\\). Twierdzenie Pitagorasa w trójkącie \\(AEC\\) daje\n\\[h=\\sqrt{d^2-c^2}=\\frac{\\sqrt{16d^2-l^2}}4.\\]\nDla \\(\\alpha=\\angle ABC\\) z trójkąta \\(BEC\\) mamy \\(\\sin\\alpha=\\frac{h}{c}=\\frac{\\sqrt{16d^2-l^2}}l\\). Okrąg opisany na \\(ABC\\) jest okręgiem opisanym na trapezie. Z twierdzenia sinusów otrzymujemy\n\\[R=\\frac{|AC|}{2\\sin\\alpha}=\\frac{d l}{2\\sqrt{16d^2-l^2}}.\\]",
+    "strona_rozwiazania": 19
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Prosta \\(AB\\) jest jedną ze stycznych do okręgu poprowadzonych przez \\(A=(9,12)\\). Prosta pionowa \\(x=9\\) nie jest styczna, gdyż leży w odległości \\(1\\) od środka \\(S=(8,4)\\), a promień wynosi \\(4\\). Przyjmijmy równanie \\(AB\\) w postaci \\(ax-y+12-9a=0\\). Z warunku styczności wynika\n\\[\\frac{|8-a|}{\\sqrt{a^2+1}}=4\n\\quad\\Longleftrightarrow\\quad\n15a^2+16a-48=0.\\]\nMożliwe nachylenia to \\(a=\\frac43\\) oraz \\(a=-\\frac{12}5\\).\n\nDla \\(a=\\frac43\\) mamy \\(y=\\frac43x\\), a jego przecięcie z dwusieczną \\(k\\colon y=\\frac12x\\) daje \\(B=(0,0)\\). Drugą styczną poprowadzoną z tego punktu jest oś \\(Ox\\), więc \\(BC\\) jest styczna do okręgu w \\((8,0)\\).\n\nDla \\(a=-\\frac{12}5\\) prosta \\(AB\\) miałaby równanie \\(y=-\\frac{12}5x+\\frac{168}5\\). Jej prostopadła ma nachylenie \\(\\frac5{12}<\\frac12\\), a więc tworzy z osią \\(Ox\\) mniejszy kąt ostry niż dwusieczna \\(k\\). W ustawieniu punktów \\(A,B,S\\) oznacza to \\(\\angle ABS>90^\\circ\\). Można to też sprawdzić bezpośrednio: \\(B=(\\frac{336}{29},\\frac{168}{29})\\) i\n\\[\\overrightarrow{BA}\\cdot\\overrightarrow{BS}\n=\\frac{(-75)(-104)+180(-52)}{29^2}<0.\\]\nJednak \\(S\\) leży na wewnętrznej dwusiecznej, więc \\(\\angle ABS=\\tfrac12\\angle ABC<90^\\circ\\). Pozostaje zatem punkt styczności \\((8,0)\\).\n\nNa s. 22 w przejściu do kolejnej linii rachunku CKE wydrukowano współczynnik \\(16\\) zamiast \\(4\\). Następujące po nim równanie kwadratowe odpowiada wartości \\(4\\).",
+    "strona_rozwiazania": 21
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Oznaczmy przez \\(a\\) długość boku podstawy, przez \\(h\\) wysokość ściany bocznej, a przez \\(H\\) wysokość ostrosłupa. Niech \\(O\\) będzie środkiem podstawy, \\(E,F\\) środkami sąsiednich krawędzi podstawy, a \\(G\\) środkiem \\(EF\\). Wtedy \\(|SE|=|SF|=h\\), \\(\\angle ESF=2\\alpha\\), \\(|EF|=\\frac{a\\sqrt2}2\\) i \\(|OF|=\\frac a2\\). Z pola powierzchni bocznej mamy \\(P=2ah\\).\n\n[[rysunek:2023-przykladowy-10-rozw|Ostrosłup ABCDS z wysokością SO oraz wysokościami sąsiednich ścian SE i SF. Ich kąt to 2α, a G jest środkiem EF.]]\n\n**Sposób 1 — szczególny ostrosłup**\n\nWspółczynnik \\(k\\) jest stały, więc wybieramy \\(P=\\sqrt2\\) i \\(\\alpha=30^\\circ\\). Trójkąt \\(ESF\\) jest równoboczny, dlatego \\(h=|EF|=\\frac{a\\sqrt2}{2}\\). Z równania \\(P=2ah\\) wynika \\(a=1\\). Twierdzenie Pitagorasa w trójkącie \\(SOF\\) daje \\(H=\\sqrt{h^2-(a/2)^2}=\\frac12\\). Zatem objętość wynosi \\(V=\\frac13a^2H=\\frac16\\). Ze wzoru z zadania\n\\[\\frac1{36}=V^2=k(\\sqrt2)^3\\sin30^\\circ\\cos60^\\circ\n=k\\frac{\\sqrt2}{2},\\]\nczyli \\(k=\\frac{\\sqrt2}{36}\\).\n\n**Sposób 2 — obliczenie dla dowolnego kąta**\n\nPonieważ \\(SG\\) jest wysokością i dwusieczną w trójkącie równoramiennym \\(ESF\\), mamy \\(\\sin\\alpha=\\frac{|EG|}{h}=\\frac{a\\sqrt2}{4h}\\). Podstawiając \\(h=\\frac{P}{2a}\\), otrzymujemy\n\\[a^2=\\sqrt2 P\\sin\\alpha,\\qquad h^2=\\frac{P}{4\\sqrt2\\sin\\alpha}.\\]\nZ twierdzenia Pitagorasa w trójkącie \\(SOF\\) dostajemy\n\\[H^2=h^2-\\frac{a^2}{4}\n=\\frac{P(1-2\\sin^2\\alpha)}{4\\sqrt2\\sin\\alpha}\n=\\frac{P\\cos(2\\alpha)}{4\\sqrt2\\sin\\alpha}.\\]\nObjętość spełnia\n\\[V^2=\\frac{a^4H^2}{9}=\\frac{\\sqrt2}{36}P^3\\sin\\alpha\\cos(2\\alpha).\\]\nPorównanie z podanym wzorem daje \\(k=\\frac{\\sqrt2}{36}\\).",
+    "strona_rozwiazania": 25
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "W każdej z \\(15\\) niezależnych prób prawdopodobieństwo poprawnej odpowiedzi wynosi \\(\\frac14\\), a błędnej \\(\\frac34\\). Jeśli \\(X\\) oznacza liczbę poprawnych odpowiedzi, student zdaje wtedy, gdy \\(X\\ge11\\). Sumujemy prawdopodobieństwa rozłącznych przypadków \\(X=11,\\dots,15\\).\n\\[\\begin{aligned}\n\\Pr(X\\ge11)&=\\sum_{j=11}^{15}\\binom{15}{j}\\left(\\frac14\\right)^j\n\\left(\\frac34\\right)^{15-j}\\\\\n&=\\frac{1365\\cdot81+455\\cdot27+105\\cdot9+15\\cdot3+1}{4^{15}}\\\\\n&=\\frac{123841}{4^{15}}\\approx0{,}00012.\n\\end{aligned}\\]",
+    "strona_rozwiazania": 29
   }
 ]

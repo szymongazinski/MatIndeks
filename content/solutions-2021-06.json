@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nZe wzoru na kwadrat sumy i różnicy wynika \\((\\sqrt3-1)^2-(\\sqrt3+1)^2=-4\\sqrt3\\). Po podniesieniu do trzeciej potęgi dostajemy \\((-4\\sqrt3)^3=-192\\sqrt3\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nDla \\(a\\ne0\\) pierwszy iloraz ma granicę nieskończoną, a drugi granicę \\(0\\). Zatem \\(a=0\\). Jeśli także \\(b=0\\), granice wynoszą \\(0\\) i \\(+\\infty\\), więc \\(b\\ne0\\). Wtedy granice wynoszą \\(b\\) i \\(1/b\\). Ich równość oznacza \\(b^2=1\\), czyli \\(|b|=1\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nPotęga \\(m^{1{,}5}=m^{3/2}\\) jest określona dla \\(m\\ge0\\). Porównujemy kwadraty długości:\n\\[(m-2)^2+(m+2)^2=m^3+2^3.\\]\nPo uproszczeniu mamy \\(m^2(m-2)=0\\). Obie wartości \\(m=0,2\\) należą do dziedziny.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nWykres ma wartości skrajne \\(-2\\pi\\) i \\(2\\pi\\), więc amplituda to \\(2\\pi\\). Kolejne maksima są oddalone o \\(4\\pi\\), co odpowiada \\(\\sin(\\frac x2)\\). Daje to \\(f(x)=2\\pi\\sin(\\frac x2)\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Odpowiedź CKE — \\(5,\\ 3,\\ 2\\).**\n\nMnożenie \\((x-2)(5x^2+3x+2)\\) daje \\(5x^3-7x^2-4x-4\\). Zatem \\(a=5\\), \\(b=3\\) i \\(c=2\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Z warunku \\(c=\\log_2 9\\) wynika \\(\\log_2 3=c/2\\). Ponieważ \\(54=2\\cdot27\\), zmiana podstawy i rozłożenie logarytmu iloczynu dają\n\\[\\log_3 54\n=\\frac{\\log_2 27+1}{\\log_2 3}\n=\\frac{2\\log_2 27+2}{2\\log_2 3}\n=\\frac{3\\log_2 9+2}{\\log_2 9}\n=\\frac{3c+2}{c}.\\]",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Niech \\(a=|FB|\\). Wtedy \\(|AE|=4a\\), \\(|AD|=2a\\), \\(|EB|=3a\\) i \\(|AB|=7a\\). Pole \\(FBH\\) to \\(S\\).\n\n**Sposób 1 — stosunki pól**\n\nZ \\(FH\\parallel EC\\) wynika podobieństwo \\(FBH\\) i \\(EBC\\) w skali \\(|FB|/|EB|=\\frac13\\), więc \\(\\operatorname{pole}(EBC)=9S\\). Trójkąty \\(AEC\\) i \\(EBC\\) mają wspólną wysokość do prostej \\(AB\\), więc ich pola są w stosunku \\(|AE|:|EB|=4:3\\). Stąd \\(\\operatorname{pole}(AEC)=12S\\). Z \\(DG\\parallel EC\\) wynika podobieństwo \\(ADG\\) i \\(AEC\\) w skali \\(\\frac12\\), więc \\(\\operatorname{pole}(ADG)=\\frac14\\cdot12S=3S\\).\n\n**Sposób 2 — wysokość i pole trapezu**\n\nJeśli \\(h\\) jest wysokością \\(FBH\\) opuszczoną na \\(AB\\), to wysokość \\(ABC\\) wynosi \\(3h\\) z podobieństwa \\(FBH\\) i \\(EBC\\). Zatem pola \\(ABC\\) i \\(EBC\\) to odpowiednio \\(\\frac12(7a)(3h)=21S\\) i \\(\\frac12(3a)(3h)=9S\\). Niech \\(p\\) oznacza pole trapezu \\(DECG\\), a \\(q\\) pole \\(ADG\\). Wtedy \\(p+q=21S-9S=12S\\). Podobieństwo \\(ADG\\) i \\(AEC\\) w skali \\(\\frac12\\) daje \\(p+q=4q\\). Stąd \\(q=3S\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Używamy \\(\\sin(2x)=2\\sin x\\cos x\\) i wyłączamy wspólny czynnik:\n\\[2\\cos^2x-\\cos x-\\sin(2x)+\\sin x=(2\\cos x-1)(\\cos x-\\sin x).\\]\nZ pierwszego czynnika mamy \\(\\cos x=\\frac12\\), co w \\([0,2\\pi]\\) daje \\(\\frac\\pi3,\\frac{5\\pi}3\\). Drugi czynnik daje \\(\\cos x=\\sin x\\), czyli \\(x=\\frac\\pi4,\\frac{5\\pi}4\\) w tym samym przedziale. Zbiór rozwiązań to \\(\\{\\frac\\pi4,\\frac\\pi3,\\frac{5\\pi}4,\\frac{5\\pi}3\\}\\).",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Zapisujemy \\(P=(t,t+4)\\). Ze wzoru na odległość punktu od prostej\n\\[d(P,k)=\\frac{|-t-8|}{\\sqrt5},\\qquad\nd(P,l)=\\frac{|3t+3|}{\\sqrt5}.\\]\nWarunek \\(d(P,k)=2d(P,l)\\) daje \\(|-t-8|=|6t+6|\\). Rozwiązujemy \\(-t-8=6t+6\\) albo \\(t+8=6t+6\\), skąd \\(t=-2\\) lub \\(t=\\frac25\\). Istnieją więc dwa takie punkty:\n\\[P=(-2,2)\\qquad\\text{lub}\\qquad P=\\left(\\frac25,\\frac{22}5\\right).\\]",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Odcinek \\(CF\\) jest przekątną kwadratowej ściany, więc \\(|CF|=2\\sqrt2\\). Ponieważ \\(S\\) jest środkiem \\(DH\\), mamy \\(|DS|=|HS|=1\\). W trójkącie prostokątnym \\(CDS\\) dostajemy \\(|CS|=\\sqrt{2^2+1^2}=\\sqrt5\\). Przekątna górnej ściany \\(FH\\) ma długość \\(2\\sqrt2\\) i jest prostopadła do \\(HS\\), więc \\(|FS|=\\sqrt{(2\\sqrt2)^2+1^2}=3\\).\n\nNajkrótszym bokiem \\(CFS\\) jest \\(CS\\), zatem najmniejszym kątem jest \\(CFS\\). Twierdzenie cosinusów daje\n\\[5=8+9-2\\cdot2\\sqrt2\\cdot3\\cos\\angle CFS.\\]\nStąd \\(\\cos\\angle CFS=\\frac{\\sqrt2}{2}\\), więc szukany kąt wynosi \\(45^\\circ\\).",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Niech \\(n\\) oznacza liczbę aktorów. Ustawień wszystkich uczestników jest \\((n+3)!\\). Gdy sportowcy siedzą obok siebie, traktujemy ich jako jeden blok, który wraz z aktorami można ustawić na \\((n+1)!\\) sposobów. Kolejność trzech sportowców w bloku można wybrać na \\(3!\\) sposobów. Stąd\n\\[\\frac{3!(n+1)!}{(n+3)!}=\\frac{6}{(n+2)(n+3)}=\\frac1{15}.\\]\nOtrzymujemy \\((n+2)(n+3)=90\\), czyli \\((n-7)(n+12)=0\\). Jedyną dopuszczalną liczbą aktorów jest \\(7\\).",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Pierwiastkiem równania zawsze jest \\(3\\). Aby wszystkich różnych pierwiastków było dokładnie dwa, trójmian \\(Q_m(x)=x^2+(m-1)x-6m^2+2m\\) musi mieć podwójny pierwiastek różny od \\(3\\) albo dwa różne pierwiastki, z których jednym jest \\(3\\). Wyróżnik wynosi\n\\[\\Delta=(m-1)^2-4(-6m^2+2m)=(5m-1)^2.\\]\n\n**Sposób 1 — obliczenie wszystkich pierwiastków**\n\nZe wzoru kwadratowego pierwiastki to \\(\\frac{1-m\\pm|5m-1|}{2}\\). Rozpatrując znak \\(5m-1\\), otrzymujemy w pewnej kolejności \\(2m\\) i \\(1-3m\\). Zbiór \\(\\{3,2m,1-3m\\}\\) ma dokładnie dwa elementy, gdy \\(2m=1-3m\\), \\(2m=3\\) lub \\(1-3m=3\\). Daje to odpowiednio \\(m=\\frac15,\\frac32,-\\frac23\\). Żadna z tych wartości nie zrównuje wszystkich trzech liczb.\n\n**Sposób 2 — wyróżnik i podstawienie \\(3\\)**\n\nDla \\(\\Delta=0\\) mamy \\(m=\\frac15\\), a podwójny pierwiastek \\(Q_m\\) to \\(\\frac25\\), różny od \\(3\\). Dla \\(\\Delta>0\\) szukamy \\(Q_m(3)=0\\), czyli \\(-6m^2+5m+6=0\\). Stąd \\(m=-\\frac23\\) lub \\(m=\\frac32\\). Dla obu wartości wyróżnik jest dodatni.\n\nOstatecznie \\(m\\in\\{-\\frac23,\\frac15,\\frac32\\}\\).",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "W punkcie styczności o pierwszej współrzędnej \\(x_0\\ne0\\) zachodzi \\(f(x_0)=-x_0\\) i \\(f'(x_0)=-1\\). Pochodna wynosi\n\\[f'(x)=\\frac{2x^3-k}{x^2}.\\]\nMnożąc pierwsze równanie przez \\(x_0\\), a drugie przez \\(x_0^2\\), otrzymujemy\n\\[x_0^3+k=-x_0^2,\\qquad 2x_0^3-k=-x_0^2.\\]\nPo dodaniu mamy \\(3x_0^3=-2x_0^2\\), więc \\(x_0=-\\frac23\\). Podstawienie daje \\(k=-x_0^2-x_0^3=-\\frac4{27}\\).",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Niech \\(a=|AB|\\). Wtedy \\(|AD|=2a\\), a \\(|BD|=6\\). W trójkącie \\(ABD\\) stosujemy twierdzenie cosinusów dla kąta przy \\(D\\):\n\\[a^2=(2a)^2+6^2-2\\cdot2a\\cdot6\\cdot\\frac78.\\]\nPo uproszczeniu mamy \\((a-3)(a-4)=0\\). Warunek \\(a>\\sqrt{15}\\) zostawia \\(a=4\\), więc \\(|AD|=8\\).\n\nW czworokącie opisanym na okręgu sumy długości przeciwległych boków są równe. Jeśli \\(c=|BC|\\), to \\(|CD|=c+4\\). Trójkąt \\(BCD\\) jest prostokątny, więc\n\\[c^2+(c+4)^2=6^2.\\]\nStąd \\(c^2+4c-10=0\\). Wybieramy dodatni pierwiastek i otrzymujemy \\(|BC|=\\sqrt{14}-2\\).",
+    "strona_rozwiazania": 17
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Niech \\(b=|BC|\\) i \\(c=|AB|\\). Obwód wynosi \\(4\\), więc \\(c=4-x-b\\). Z twierdzenia Pitagorasa\n\\[(4-x-b)^2=x^2+b^2.\\]\nPo uporządkowaniu \\(b(4-x)=8-4x\\), więc \\(b=\\frac{8-4x}{4-x}\\). Dla \\(0<x<4\\) warunek \\(b>0\\) daje \\(x<2\\).\n\nDla każdego \\(x\\in(0,2)\\) otrzymujemy dodatnie \\(b\\) oraz \\(c=4-x-b=\\frac{x^2-4x+8}{4-x}>0\\). Zachodzi wtedy \\(c^2=x^2+b^2\\), więc takie boki tworzą trójkąt prostokątny o obwodzie \\(4\\). Dziedzina to \\((0,2)\\). Pole wynosi\n\\[P(x)=\\frac{xb}{2}=\\frac{x(4-2x)}{4-x}.\\]\nPochodna ma postać \\(P'(x)=\\frac{2x^2-16x+16}{(4-x)^2}\\). Jej licznik znika dla \\(4-2\\sqrt2\\) oraz \\(4+2\\sqrt2\\). Tylko \\(4-2\\sqrt2\\) należy do dziedziny. Wcześniej pochodna jest dodatnia, a później ujemna, więc jest to punkt maksimum.\n\nDla \\(x=4-2\\sqrt2\\) otrzymujemy \\(b=x\\) i \\(c=x\\sqrt2=4\\sqrt2-4\\). Największe pole wynosi\n\\[P_{\\max}=\\tfrac12(4-2\\sqrt2)^2=4(3-2\\sqrt2).\\]",
+    "strona_rozwiazania": 20
+  }
+]

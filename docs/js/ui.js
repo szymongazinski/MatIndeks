@@ -1,4 +1,4 @@
-import { kindLabels, suggestTags } from './catalog.js';
+import { kindLabels, suggestTags } from './catalog.js?v=2';
 
 export function element(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
@@ -26,6 +26,21 @@ export function sourceLink(url, page, label) {
 }
 
 const tokens = /\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\[(?:rysunek:([a-z0-9_-]+(?:\.[a-z0-9_-]+)*)(?:\|([^\]]+))?|(zrodlo))\]\]|\*\*([^*\n]+)\*\*|(\r?\n[^\S\r\n]*\r?\n(?:[^\S\r\n]*\r?\n)*)/gi;
+
+export function fitMath(root) {
+  const formulas = root.querySelectorAll('.math-inline > .katex, .math-display .katex-display > .katex');
+  const resized = [];
+  for (const formula of formulas) formula.style.removeProperty('--math-scale');
+  for (const formula of formulas) {
+    const available = formula.closest('.math-paragraph').clientWidth - 3;
+    if (available <= 0) continue;
+    // KaTeX allows line breaks between these spans, so only shrink a span that cannot fit on its own.
+    const chunks = formula.querySelectorAll(':scope > .katex-html > :is(.katex-base, .katex-tag)');
+    const widest = Math.max(0, ...Array.from(chunks, chunk => Math.max(chunk.offsetWidth, chunk.scrollWidth)));
+    if (widest > available) resized.push([formula, available / (widest + 1)]);
+  }
+  for (const [formula, scale] of resized) formula.style.setProperty('--math-scale', scale);
+}
 
 export function renderText(text, source, page, sourceLabel) {
   const content = element('div', { class: 'math-text' });
@@ -87,7 +102,11 @@ export function taskCard(catalog, task, links, { heading, showPaper = true, show
   const solution = element('details', { class: 'task-solution' }, label);
   solution.addEventListener('toggle', () => {
     label.textContent = solution.open ? 'Ukryj rozwiązanie' : 'Pokaż rozwiązanie';
-    if (!solution.open || solution.children.length > 1) return;
+    if (!solution.open) return;
+    if (solution.children.length > 1) {
+      fitMath(solution);
+      return;
+    }
     const row = catalog.solution(task.id);
     const url = row?.zrodlo_rozwiazanie;
     const page = row?.strona_rozwiazania;
@@ -99,6 +118,7 @@ export function taskCard(catalog, task, links, { heading, showPaper = true, show
     const note = row?.sprawdzone_rozwiazanie === 0 && text ? element('span', { class: 'editorial-note' }, 'Transkrypcja automatyczna') : null;
     solution.append(element('div', { class: 'solution-body' }, content,
       source || note ? element('div', { class: 'solution-source' }, source, note) : null));
+    fitMath(content);
   });
   const statementNote = showReview && task.sprawdzone_polecenie === 0 && task.polecenie?.trim()
     ? element('span', { class: 'editorial-note' }, 'Transkrypcja automatyczna') : null;
@@ -120,6 +140,7 @@ export class TagPicker {
     this.active = -1;
     this.matches = [];
     this.availability = null;
+    this.omitted = [];
     const id = container.id;
     this.input = element('input', { id: id + '-input', type: 'search', role: 'combobox',
       'aria-expanded': 'false', 'aria-controls': id + '-options', 'aria-autocomplete': 'list',
@@ -161,7 +182,7 @@ export class TagPicker {
 
   open(listOpen = false) {
     this.listOpen = listOpen;
-    this.matches = suggestTags(this.tags, this.input.value, this.selected);
+    this.matches = suggestTags(this.tags, this.input.value, [...this.selected, ...this.omitted]);
     this.active = -1;
     this.options.replaceChildren(...this.matches.map((tag, index) => {
       const count = this.availability ? this.availability.get(tag) ?? 0 : null;
@@ -216,8 +237,9 @@ export class TagPicker {
     }));
   }
 
-  setAvailability(counts) {
+  setAvailability(counts, omitted = []) {
     this.availability = counts;
+    this.omitted = omitted;
     if (!this.popup.hidden) this.open(this.listOpen);
   }
 

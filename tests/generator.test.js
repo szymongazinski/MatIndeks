@@ -83,3 +83,19 @@ test('available generator filters reflect the proposed selection and preserve a 
   assert.equal(narrowed.includeCounts.get(similarity), 1);
   assert.equal(narrowed.excludeCounts.get(similarity), 1);
 });
+
+test('one-point tasks contribute to neither generator mode, tag availability nor topic slots', () => {
+  const items = [
+    task('abcd', 2018, 'maj 2018', plane, 1, [similarity], { formula: 2015 }),
+    task('open', 2018, 'maj 2018', parameter, 49, [viète], { formula: 2015 }),
+  ];
+  const profiles = buildProfiles(items);
+  assert.deepEqual(profiles[0].categories, [parameter]);
+  assert.equal(profiles[0].points, 49);
+  const options = generatorAvailability(items, {}, { years: [2018], tags: [similarity, viète] });
+  assert.equal(options.total, 1);
+  assert.equal(options.includeCounts.get(similarity), 0);
+  assert.deepEqual(generatePaper(items, profiles, { include: [similarity] }).tasks, []);
+  assert.deepEqual(generatePaper(items, profiles, { exclude: [viète] }).tasks, []);
+  assert.deepEqual(generatePaper(items, profiles, { random: () => 0 }).tasks.map(task => task.id), ['open']);
+});

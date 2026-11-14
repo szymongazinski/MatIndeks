@@ -1,11 +1,12 @@
-import { kindLabels, loadCatalog } from './catalog.js';
-import { buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js';
-import { countText, element, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js';
+import { kindLabels, loadCatalog } from './catalog.js?v=2';
+import { buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=2';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=2';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];
 const pointsText = points => points == null ? '—' : points + ' pkt';
 const tagPreferenceKey = 'matindeks-pokazuj-tagi';
+const onePointTitle = 'Zadania za 1 pkt';
 
 function href(view, params = {}) {
   const query = new URLSearchParams();
@@ -62,44 +63,119 @@ function configure(catalog) {
   let lastViewHash;
   const taxonomy = catalog.taxonomy;
   const categoryPanel = find('category-panel');
+  const categoryList = find('categories');
   if (window.matchMedia('(max-width: 680px)').matches) categoryPanel.open = false;
 
   const catalogTags = new TagPicker(find('catalog-tag-filter'), 'Szukaj według tagów', taxonomy.tagi, tags => {
     const { params } = readRoute();
-    navigate(href('zadania', { kategoria: params.get('kategoria'), tag: tags }));
+    navigate(href('zadania', { kategoria: params.get('kategoria'), podkategoria: params.get('podkategoria'), tag: tags }));
   }, { showListButton: true });
 
-  function selectCategory(current, values, tags, options) {
-    return values.map(category => {
-      const active = (category ?? null) === current;
-      const count = category == null ? options.allCategories : (options.categories.get(category) ?? 0);
-      return element('a', { href: count ? href('zadania', { kategoria: category, tag: tags }) : null,
-        'aria-current': active ? 'true' : null, 'aria-disabled': count ? null : 'true',
-        role: count ? null : 'link', class: 'category-link' },
-        element('span', {}, category ?? 'Wszystkie zadania'), element('span', { class: 'category-count' }, String(count)));
-    });
+  function makeCategoryLink(label, className) {
+    const count = element('span', { class: 'category-count' });
+    return { link: element('a', { class: className, role: 'link' }, element('span', {}, label), count), count };
   }
 
+  function updateCategoryLink(control, count, target, active) {
+    control.count.textContent = count;
+    if (count) {
+      control.link.setAttribute('href', target);
+      control.link.removeAttribute('aria-disabled');
+    } else {
+      control.link.removeAttribute('href');
+      control.link.setAttribute('aria-disabled', 'true');
+    }
+    if (active) control.link.setAttribute('aria-current', 'true');
+    else control.link.removeAttribute('aria-current');
+  }
+
+  function setBranch(category, { items, button }, show) {
+    items.hidden = !show;
+    button.setAttribute('aria-expanded', String(show));
+    button.setAttribute('aria-label', (show ? 'Zwiń' : 'Rozwiń') + ' podkategorie: ' + category);
+    button.textContent = show ? '−' : '+';
+  }
+
+  const wholeCatalog = catalog.taskOptions();
+  const categoryControls = new Map([null, ...taxonomy.kategorie].map((category, index) => {
+    const main = makeCategoryLink(category ?? 'Wszystkie zadania', 'category-link');
+    const line = element('div', { class: 'category-row' }, main.link);
+    const items = element('div', { class: 'category-children', id: 'subcategories-' + index, hidden: true });
+    const children = new Map((taxonomy.podkategorie?.[category] ?? [])
+      .filter(tag => wholeCatalog.tagsByCategory.get(category)?.has(tag))
+      .map(tag => [tag, makeCategoryLink(tag, 'subcategory-link')]));
+    let button;
+    if (children.size) {
+      button = element('button', { type: 'button', class: 'category-toggle', 'aria-expanded': 'false',
+        'aria-label': 'Rozwiń podkategorie: ' + category, 'aria-controls': items.id }, '+');
+      button.addEventListener('click', () => setBranch(category, { items, button }, items.hidden));
+      line.append(button);
+      for (const child of children.values()) items.append(child.link);
+    }
+    categoryList.append(line);
+    if (children.size) categoryList.append(items);
+    return [category, { main, items, children, button }];
+  }));
+  const onePointCount = catalog.tasks({ onePoint: true, size: 1 }).total;
+  const onePointLink = makeCategoryLink('Pokaż zadania za 1 pkt', 'subcategory-link');
+  const onePointSection = element('details', { class: 'category-one-point', hidden: !onePointCount },
+    element('summary', {}, onePointTitle), onePointLink.link);
+  categoryList.append(onePointSection);
+
+  function selectCategory(category, subcategory, tags, options) {
+    for (const [value, control] of categoryControls) {
+      const total = value == null ? options.allCategories : options.categories.get(value) ?? 0;
+      updateCategoryLink(control.main, total, href('zadania', { kategoria: value, tag: tags }), value === category && !subcategory);
+      for (const [tag, child] of control.children) {
+        const count = options.tagsByCategory.get(value)?.get(tag) ?? 0;
+        updateCategoryLink(child, count, href('zadania', { kategoria: value, podkategoria: tag, tag: tags }),
+          value === category && tag === subcategory);
+      }
+      if (value === category && subcategory && control.button) setBranch(value, control, true);
+    }
+  }
+
+  categoryList.addEventListener('click', event => {
+    const link = event.target.closest('a[href]');
+    if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+    const hash = link.getAttribute('href');
+    event.preventDefault();
+    if (hash === location.hash) return;
+    history.pushState(null, '', hash);
+    render();
+  });
+
   function drawTasks(params) {
+    const onePoint = params.get('za-1-pkt') === '1';
     const requestedCategory = params.get('kategoria');
-    const category = taxonomy.kategorie.includes(requestedCategory) ? requestedCategory : null;
-    const tags = [...new Set(params.getAll('tag').filter(tag => taxonomy.tagi.includes(tag)))];
+    const category = !onePoint && taxonomy.kategorie.includes(requestedCategory) ? requestedCategory : null;
+    const requestedChild = params.get('podkategoria');
+    const subcategory = categoryControls.get(category).children.has(requestedChild) ? requestedChild : null;
+    const tags = onePoint ? [] : [...new Set(params.getAll('tag').filter(tag => taxonomy.tagi.includes(tag)))];
     const page = Number.parseInt(params.get('strona'), 10) || 1;
-    const listKey = JSON.stringify([category, tags]);
-    const { tasks, total, page: activePage, pages } = catalog.tasks({ category, tags, page });
-    const pageLink = number => href('zadania', { kategoria: category, tag: tags, strona: number > 1 ? number : null });
+    const listKey = JSON.stringify([category, subcategory, tags, onePoint]);
+    const preserveScroll = lastView === 'zadania' && lastListKey !== listKey;
+    const effectiveTags = subcategory && !tags.includes(subcategory) ? [...tags, subcategory] : tags;
+    const { tasks, total, page: activePage, pages } = catalog.tasks({ category, tags: effectiveTags, onePoint, page });
+    const pageLink = number => href('zadania', { kategoria: category, podkategoria: subcategory, tag: tags,
+      'za-1-pkt': onePoint ? 1 : null,
+      strona: number > 1 ? number : null });
 
     if (lastListKey !== listKey || lastView !== 'zadania') {
-      const options = catalog.taskOptions({ category, tags });
+      const options = catalog.taskOptions({ category, tags, subcategory });
       catalogTags.setSelected(tags);
-      catalogTags.setAvailability(options.tags);
-      find('categories').replaceChildren(...selectCategory(category, [null, ...taxonomy.kategorie], tags, options));
+      catalogTags.setAvailability(options.tags, subcategory ? [subcategory] : []);
+      selectCategory(onePoint ? undefined : category, subcategory, tags, options);
+      updateCategoryLink(onePointLink, onePointCount, href('zadania', { 'za-1-pkt': 1 }), onePoint);
     }
-    if (lastListKey !== listKey && lastView === 'zadania' && matchMedia('(max-width: 680px)').matches) {
-      categoryPanel.open = false;
+    find('catalog-tag-filter').hidden = onePoint;
+    if (onePoint) {
+      onePointSection.open = true;
+      categoryPanel.open = true;
     }
     lastListKey = listKey;
-    find('category-title').textContent = category ?? 'Wszystkie zadania';
+    find('category-title').textContent = onePoint ? onePointTitle
+      : subcategory ? category + ' · ' + subcategory : (category ?? 'Wszystkie zadania');
     find('clear-filters').hidden = !category && tags.length === 0;
     find('result-count').textContent = countText(total);
     find('catalog-tasks').replaceChildren(...(tasks.length ? tasks.map(task => taskCard(catalog, task, links))
@@ -111,6 +187,7 @@ function configure(catalog) {
       element('span', { class: 'muted' }, `Strona ${activePage} z ${pages}`),
       activePage < pages ? element('a', { href: pageLink(activePage + 1) }, 'Następna →') : element('span'),
     );
+    return preserveScroll;
   }
 
   const allPapers = catalog.papers();
@@ -156,6 +233,12 @@ function configure(catalog) {
     const paper = paperById.get(id);
     find('paper-title').textContent = paper?.arkusz ?? 'Arkusz niedostępny';
     const list = find('paper-tasks');
+    const onePoint = find('paper-one-point');
+    const onePointTasks = find('paper-one-point-tasks');
+    onePoint.hidden = !paper?.onePoint;
+    onePoint.open = false;
+    onePointTasks.replaceChildren();
+    onePoint.ontoggle = null;
     find('paper-info').replaceChildren();
     if (!paper) {
       list.replaceChildren(message('Wybierz arkusz z katalogu.'));
@@ -166,6 +249,15 @@ function configure(catalog) {
     sourceLink(paper.zrodlo_arkusz, null, 'Oryginalny arkusz (PDF)'));
     const { tasks } = catalog.tasks({ paper: id, size: paper.total });
     list.replaceChildren(...tasks.map(task => taskCard(catalog, task, links, { showPaper: false })));
+    if (paper.onePoint) {
+      find('paper-one-point-title').textContent = onePointTitle + ' · ' + paper.onePoint;
+      onePoint.ontoggle = () => {
+        if (!onePoint.open || onePointTasks.childElementCount) return;
+        const { tasks: hiddenTasks } = catalog.tasks({ paper: id, onePoint: true, size: paper.onePoint });
+        onePointTasks.replaceChildren(...hiddenTasks.map(task => taskCard(catalog, task, links, { showPaper: false })));
+        fitMath(onePointTasks);
+      };
+    }
   }
 
   function drawSingleTask(params) {
@@ -285,12 +377,14 @@ function configure(catalog) {
     ...notices.map(note => element('p', { class: 'empty-state' }, note)),
     element('div', { class: 'task-list' }, result.tasks.map((task, index) => taskCard(catalog, task, links, { heading: 'Zadanie ' + (index + 1) }))));
     results.hidden = false;
+    fitMath(results);
     if (focus) heading.focus();
   }
 
   function render() {
     const { view, params } = readRoute();
     const nextHash = location.hash;
+    const previousScroll = window.scrollY;
     find('loading').hidden = true;
     for (const name of viewNames) find('view-' + name).hidden = name !== view;
     const activeNav = view === 'arkusz' ? 'arkusze' : view === 'zadanie' ? 'zadania' : view;
@@ -298,13 +392,14 @@ function configure(catalog) {
       if (link.dataset.nav === activeNav) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     }
-    if (view === 'zadania') drawTasks(params);
+    const preserveScroll = view === 'zadania' && drawTasks(params);
     if (view === 'arkusze') drawArchive(params);
     if (view === 'arkusz') drawPaper(params);
     if (view === 'zadanie') drawSingleTask(params);
     if (view === 'generator') drawGenerator();
+    fitMath(find('view-' + view));
     if (lastView && nextHash !== lastViewHash) {
-      if (view !== lastView || !document.activeElement.closest('.catalog-filter')) window.scrollTo({ top: 0 });
+      window.scrollTo({ top: preserveScroll ? previousScroll : 0 });
       if (view !== lastView) find('view-' + view).querySelector('h1').focus({ preventScroll: true });
     }
     lastView = view;
@@ -313,6 +408,13 @@ function configure(catalog) {
 
   for (const view of viewNames) find('view-' + view).querySelector('h1').tabIndex = -1;
   window.addEventListener('hashchange', render);
+  const resizeFormulas = () => fitMath(find('view-' + readRoute().view));
+  let resizeFrame;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(resizeFormulas);
+  });
+  document.fonts.addEventListener('loadingdone', resizeFormulas);
   render();
 }
 

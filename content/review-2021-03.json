@@ -1,10 +1,77 @@
 [
   {
+    "numer": "1",
+    "polecenie": "Które wyrażenie ma wartość równą \\(\\log_2 9\\)?\n\nA. \\(\\frac{1}{\\log_3 4}\\)\nB. \\(\\log_3 4\\)\nC. \\(\\frac{1}{\\log_3\\sqrt2}\\)\nD. \\(\\log_3\\sqrt2\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Pierwsza urna zawiera \\(8\\) kul białych i \\(2\\) czarne, a druga \\(5\\) białych i \\(3\\) czarne. Z jednakowym prawdopodobieństwem wybrano jedną z urn, po czym wylosowano z niej jedną kulę. Kula okazała się czarna. Jakie jest prawdopodobieństwo, że pochodziła z pierwszej urny?\n\nA. \\(\\frac{2}{18}\\)\nB. \\(\\frac{15}{23}\\)\nC. \\(\\frac{8}{23}\\)\nD. \\(\\frac{5}{18}\\)",
+    "strona_zadania": 2
+  },
+  {
     "numer": "3",
-    "polecenie": "Prosta \\(y=\\frac12x+\\frac32\\) jest prostopadła do stycznej do wykresu funkcji \\(f(x)=x^4-3x^3+x^2+x+5\\) w jednym z podanych punktów. Wskaż ten punkt.\n\nA. \\((-1,6)\\)\nB. \\((0,5)\\)\nC. \\((1,5)\\)\nD. \\((2,3)\\)"
+    "polecenie": "Prosta \\(y=\\frac12x+\\frac32\\) jest prostopadła do stycznej do wykresu funkcji \\(f(x)=x^4-3x^3+x^2+x+5\\) w jednym z podanych punktów. Wskaż ten punkt.\n\nA. \\((-1,6)\\)\nB. \\((0,5)\\)\nC. \\((1,5)\\)\nD. \\((2,3)\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "Liczby \\(x\\) i \\(y\\) są sumami wszystkich wyrazów dwóch nieskończonych ciągów geometrycznych. Oba ciągi mają pierwszy wyraz \\(1\\), a ich ilorazy wynoszą odpowiednio \\(\\frac1{\\sqrt3}\\) oraz \\(-\\frac1{\\sqrt3}\\). Ile wynosi \\(x-y\\)?\n\nA. \\(0\\)\nB. \\(\\sqrt3\\)\nC. \\(\\frac2{\\sqrt3-1}\\)\nD. \\(3\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Oblicz, ile jest liczb dziesięciocyfrowych, których cyfry sumują się do \\(13\\) i w których nie występuje zero. Wpisz kolejno cyfrę setek, dziesiątek i jedności wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Udowodnij, że dla każdego \\(x>2\\) i każdego \\(y\\in\\mathbb R\\) zachodzi\n\\[5x^2-6xy+3y^2-2x-4>0.\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "7",
+    "polecenie": "Rozwiąż równanie\n\\[\\sin\\left(x+\\frac{\\pi}{4}\\right)\\cos\\left(x+\\frac{\\pi}{4}\\right)=\\frac{\\sqrt2}{4}.\\]",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Na przeciwprostokątnej \\(AB\\) trójkąta prostokątnego \\(ABC\\) zbudowano kwadrat \\(ABDE\\) (zobacz rysunek). Iloraz pola trójkąta przez pole kwadratu wynosi \\(k\\). Udowodnij, że suma tangensów kątów ostrych trójkąta jest równa \\(\\frac{1}{2k}\\).",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "9",
+    "polecenie": "Czworokąt \\(ABCD\\) wpisano w okrąg o promieniu \\(5\\sqrt2\\). Przekątna \\(BD\\) ma długość \\(10\\), kąty \\(BAD\\) i \\(ADC\\) są ostre, a iloczyn sinusów wszystkich kątów wewnętrznych wynosi \\(\\frac38\\). Oblicz miary kątów wewnętrznych czworokąta.",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "10",
+    "polecenie": "Reszty z dzielenia wielomianu \\(W(x)=x^4+bx^3+cx^2\\) przez dwumiany \\(x-2\\) i \\(x-3\\) wynoszą odpowiednio \\(-8\\) i \\(-18\\). Oblicz resztę z dzielenia \\(W\\) przez \\(x-4\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "11",
+    "polecenie": "Graniastosłup prawidłowy trójkątny \\(ABCDEF\\) ma krawędź podstawy długości \\(4\\) i wysokość \\(6\\) (zobacz rysunek). Oblicz \\(\\sin\\angle AFB\\).",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "12",
+    "polecenie": "Czterowyrazowy ciąg arytmetyczny \\((a,b,c,d)\\) jest rosnący. Kwadrat największego wyrazu wynosi dwa razy tyle co suma kwadratów pozostałych wyrazów. Ponadto \\((a+100,b,c)\\) jest ciągiem geometrycznym. Oblicz \\(a,b,c,d\\).",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "13",
+    "polecenie": "Boki równoległoboku leżą na prostych \\(y=x+b\\), \\(y=x+2b\\), \\(y=b\\) oraz \\(y=2\\), gdzie \\(b\\in\\mathbb R\\setminus\\{0,2\\}\\). Wyznacz wszystkie wartości \\(b\\), dla których pole tego równoległoboku wynosi \\(1\\).",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "14",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(a\\), dla których równanie \\(x^2-2ax+a^3-2a=0\\) ma dwa różne dodatnie rozwiązania.",
+    "strona_zadania": 20
   },
   {
     "numer": "15",
-    "polecenie": "Rozpatrujemy wszystkie trójkąty \\(ABC\\), których wierzchołki \\(A\\) i \\(B\\) leżą na wykresie \\(f(x)=\\frac{9}{x^4}\\) dla \\(x\\ne0\\) i są symetryczne względem osi \\(Oy\\). Wierzchołek \\(C\\) ma współrzędne \\(\\bigl(0,-\\frac13\\bigr)\\) (zobacz rysunek). Oblicz współrzędne \\(A\\) i \\(B\\), dla których pole jest najmniejsze, i podaj to pole."
+    "polecenie": "Rozpatrujemy wszystkie trójkąty \\(ABC\\), których wierzchołki \\(A\\) i \\(B\\) leżą na wykresie \\(f(x)=\\frac{9}{x^4}\\) dla \\(x\\ne0\\) i są symetryczne względem osi \\(Oy\\). Wierzchołek \\(C\\) ma współrzędne \\(\\bigl(0,-\\frac13\\bigr)\\) (zobacz rysunek). Oblicz współrzędne \\(A\\) i \\(B\\), dla których pole jest najmniejsze, i podaj to pole.",
+    "strona_zadania": 22
   }
 ]

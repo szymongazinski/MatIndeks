@@ -1,4 +1,5 @@
 const examTypes = new Set(['glowny', 'dodatkowy']);
+const eligible = task => task.punkty !== 1;
 
 function groupBy(items, getKey) {
   const groups = new Map();
@@ -14,11 +15,12 @@ export function buildProfiles(tasks) {
   const groups = groupBy(tasks.filter(task => examTypes.has(task.typ)), task => task.arkusz_id);
   const profiles = [];
   for (const [id, group] of groups) {
-    if (!group.every(task => task.punkty > 0 && task.kategorie.length)) continue;
-    const points = group.reduce((total, task) => total + task.punkty, 0);
-    if (points !== 50) continue;
+    const selected = group.filter(eligible);
+    if (!selected.length || !selected.every(task => task.punkty > 0 && task.kategorie.length)) continue;
+    if (group.reduce((total, task) => total + task.punkty, 0) !== 50) continue;
+    const points = selected.reduce((total, task) => total + task.punkty, 0);
     profiles.push({ id, label: group[0].arkusz, formula: group[0].formula, points,
-      categories: group.map(task => task.kategorie[0]), pointValues: group.map(task => task.punkty) });
+      categories: selected.map(task => task.kategorie[0]), pointValues: selected.map(task => task.punkty) });
   }
   const newest = Math.max(...profiles.map(profile => profile.formula));
   const current = profiles.filter(profile => profile.formula === newest);
@@ -71,7 +73,7 @@ function fromYears(tasks, years) {
 
 export function generatorAvailability(tasks, { years = [], include = [], exclude = [] }, taxonomy) {
   const tagsActive = include.length || exclude.length;
-  const matching = tasks.filter(task => matchesTags(task, include, exclude));
+  const matching = tasks.filter(task => eligible(task) && matchesTags(task, include, exclude));
   const taggedScope = fromYears(matching, years);
   const candidates = tagsActive ? matching : matching.filter(task => task.punkty > 0);
   const keys = new Map(matching.map(task => [task.id, problemKey(task)]));
@@ -156,7 +158,7 @@ function matchAnyCategory(profile, pool) {
 }
 
 export function generatePaper(tasks, profiles, { years = [], include = [], exclude = [], size, random = Math.random } = {}) {
-  const pool = fromYears(tasks, years).filter(task => matchesTags(task, include, exclude));
+  const pool = fromYears(tasks, years).filter(task => eligible(task) && matchesTags(task, include, exclude));
   if (include.length || exclude.length) {
     const requested = Number.isInteger(size) && size >= 1 ? size : 12;
     const chosen = shuffled(uniqueProblems(pool), random).slice(0, requested);

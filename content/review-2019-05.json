@@ -1,6 +1,77 @@
 [
   {
+    "numer": "1",
+    "polecenie": "Dla \\(x,y>0\\), \\(x\\ne1\\), \\(y\\ne1\\) wskaż wartość wyrażenia\n\\[\\bigl(\\log_{1/x}y\\bigr)\\bigl(\\log_{1/y}x\\bigr).\\]\nA. \\(xy\\)\nB. \\(\\dfrac1{xy}\\)\nC. \\(-1\\)\nD. \\(1\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Ile wynosi \\(\\cos^2 105^\\circ-\\sin^2 105^\\circ\\)?\n\nA. \\(-\\dfrac{\\sqrt3}2\\)\nB. \\(-\\dfrac12\\)\nC. \\(\\dfrac12\\)\nD. \\(\\dfrac{\\sqrt3}2\\)",
+    "strona_zadania": 2
+  },
+  {
     "numer": "3",
-    "polecenie": "Fragment wykresu \\(y=f(x)\\) pokazany na rysunku składa się z dwóch półprostych \\(AD\\) i \\(CE\\) oraz z dwóch odcinków \\(AB\\) i \\(BC\\). Dane są punkty \\(A=(-1,0)\\), \\(B=(1,2)\\), \\(C=(3,0)\\), \\(D=(-4,3)\\) oraz \\(E=(6,3)\\). Wskaż wzór funkcji \\(f\\).\n\nA. \\(f(x)=|x+1|+|x-1|\\)\nB. \\(f(x)=\\bigl||x-1|-2\\bigr|\\)\nC. \\(f(x)=\\bigl||x-1|+2\\bigr|\\)\nD. \\(f(x)=|x-1|+2\\)"
+    "polecenie": "Fragment wykresu funkcji \\(y=f(x)\\) składa się z półprostych \\(AD,CE\\) i odcinków \\(AB,BC\\). Punkty mają współrzędne \\(A=(-1,0)\\), \\(B=(1,2)\\), \\(C=(3,0)\\), \\(D=(-4,3)\\), \\(E=(6,3)\\).\n\n[[rysunek:2019-05-3|Wykres łamany przez D = (−4, 3), A = (−1, 0), B = (1, 2), C = (3, 0) i E = (6, 3).]]\n\nWskaż wzór funkcji \\(f\\).\n\nA. \\(f(x)=|x+1|+|x-1|\\)\nB. \\(f(x)=\\bigl||x-1|-2\\bigr|\\)\nC. \\(f(x)=\\bigl||x-1|+2\\bigr|\\)\nD. \\(f(x)=|x-1|+2\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "Dla zdarzeń \\(A,B\\subseteq\\Omega\\) mamy \\(P(B')=\\dfrac14\\), gdzie \\(B'\\) jest zdarzeniem przeciwnym do \\(B\\), oraz \\(P(A\\mid B)=\\dfrac15\\).\n\nWskaż wartość \\(P(A\\cap B)\\).\n\nA. \\(\\dfrac1{20}\\)\nB. \\(\\dfrac4{15}\\)\nC. \\(\\dfrac3{20}\\)\nD. \\(\\dfrac45\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Oblicz granicę\n\\[\\lim_{n\\to\\infty}\\left(\\frac{9n^3+11n^2}{7n^3+5n^2+3n+1}-\\frac{n^2}{3n^2+1}\\right).\\]\nPodaj kolejno trzy pierwsze cyfry po przecinku w rozwinięciu dziesiętnym wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Z cyfr \\(1,3,5,7,9\\) tworzymy wszystkie pięciocyfrowe liczby naturalne bez powtarzania cyfr. Oblicz sumę tych liczb.",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "7",
+    "polecenie": "Punkt \\(P=(10,2429)\\) leży na paraboli \\(y=2x^2+x+2219\\). Jej styczna w \\(P\\) ma równanie \\(y=ax+b\\). Wyznacz współczynnik \\(b\\).",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Udowodnij, że dla wszystkich \\(x,y,a>0\\) spełniających \\(x<y\\) zachodzi\n\\[\\frac{x+a}{y+a}+\\frac{y}{x}>2.\\]",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "9",
+    "polecenie": "W trójkącie równoramiennym \\(ABC\\) mamy \\(|AC|=|BC|\\). Wybieramy punkt \\(M\\) wewnątrz odcinka \\(AC\\) i punkt \\(N\\) na \\(BC\\) tak, żeby \\(|AM|=|CN|\\). Proste poprowadzone przez \\(M\\) i \\(N\\) prostopadle do podstawy \\(AB\\) przecinają tę podstawę odpowiednio w \\(S\\) i \\(T\\).\n\nUdowodnij, że \\(|ST|=\\tfrac12|AB|\\).",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "10",
+    "polecenie": "Na boku \\(AB\\) trójkąta \\(ABC\\) leży punkt \\(D\\). Dane są \\(|AC|=16\\), \\(|AD|=6\\), \\(|CD|=14\\) i \\(|BC|=|BD|\\). Oblicz obwód trójkąta \\(ABC\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "11",
+    "polecenie": "Rozważ okręgi o równaniach\n\\[x^2+y^2-12x-8y+43=0,\\qquad x^2+y^2-2ax+4y+a^2-77=0.\\]\nWyznacz wszystkie wartości \\(a\\), dla których okręgi mają dokładnie jeden punkt wspólny. Uwzględnij wszystkie przypadki.",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "12",
+    "polecenie": "Ciąg \\((a,b,c)\\) składa się z dodatnich wyrazów i jest arytmetyczny. Ciąg\n\\[\\left(\\frac1a,\\frac{2}{3b},\\frac1{2a+2b+c}\\right)\\]\njest geometryczny. Wyznacz jego iloraz.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "13",
+    "polecenie": "Wielomian\n\\[W(x)=2x^3+(m^3+2)x^2-11x-2(2m+1)\\]\ndzieli się przez \\(x-2\\), a przy dzieleniu przez \\(x+1\\) daje resztę \\(6\\). Oblicz \\(m\\) i dla uzyskanej wartości rozwiąż nierówność \\(W(x)\\le0\\).",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "14",
+    "polecenie": "Rozwiąż równanie\n\\[\\cos x\\left(\\sin\\left(x-\\frac\\pi3\\right)+\\sin\\left(x+\\frac\\pi3\\right)\\right)=\\frac12\\sin x.\\]",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "15",
+    "polecenie": "Wśród graniastosłupów prawidłowych trójkątnych o objętości \\(2\\) znajdź ten o najmniejszym polu powierzchni całkowitej. Wyznacz długości jego krawędzi i oblicz najmniejsze pole.",
+    "strona_zadania": 20
   }
 ]

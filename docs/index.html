@@ -7,10 +7,10 @@
   <title>MatIndeks — matematyka rozszerzona</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./vendor/katex/katex.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=2">
   <script src="./vendor/katex/katex.min.js" defer></script>
   <script src="./vendor/sqljs/sql-wasm.js" defer></script>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/main.js?v=2"></script>
 </head>
 <body>
   <a class="skip-link" href="#tresc">Przejdź do treści</a>
@@ -79,6 +79,10 @@
         <h1 id="paper-title"></h1>
         <div class="paper-info" id="paper-info"></div>
       </div>
+      <details id="paper-one-point" class="paper-one-point paper-task-list" hidden>
+        <summary id="paper-one-point-title">Zadania za 1 pkt</summary>
+        <div id="paper-one-point-tasks" class="task-list"></div>
+      </details>
       <div id="paper-tasks" class="task-list paper-task-list"></div>
     </section>
 

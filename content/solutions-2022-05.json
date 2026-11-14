@@ -1,8 +1,43 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nPonieważ \\(\\sqrt{27}=3^{3/2}\\) i \\(27^{1/6}=\\sqrt3\\), mamy\n\\[\\log_3\\sqrt{27}-\\log_{27}\\sqrt3=\\frac32-\\frac16=\\frac43.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nRozkład \\(x^3-8=(x-2)(x^2+2x+4)\\) daje \\(f(x)=x^2+2x+4\\) w dziedzinie \\(x\\ne2\\). Zatem \\(f'(x)=2x+2\\) i \\(f'(\\frac12)=3\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nKąt \\(\\beta\\) leży w III ćwiartce, więc \\(\\sin\\beta=-\\sqrt{1-\\frac19}=-\\frac{2\\sqrt2}{3}\\). Ze wzoru na sinus różnicy wynika\n\\[\\sin\\left(\\beta-\\frac\\pi3\\right)\n=-\\frac{2\\sqrt2}{3}\\cdot\\frac12+\\frac13\\cdot\\frac{\\sqrt3}{2}\n=\\frac{-2\\sqrt2+\\sqrt3}{6}.\\]",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nKażdą urnę wybieramy z prawdopodobieństwem \\(\\frac12\\). Z pierwszej otrzymamy białą kulę z prawdopodobieństwem \\(\\frac17\\), a z drugiej z prawdopodobieństwem \\(\\frac47\\). Zatem szukane prawdopodobieństwo wynosi \\(\\frac12\\cdot\\frac17+\\frac12\\cdot\\frac47=\\frac5{14}\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Odpowiedź CKE — \\(4,\\ 1,\\ 1\\).**\n\nDzielimy licznik i mianownik przez \\(n^3\\). Otrzymujemy granicę \\((7p-1)/(p+1)\\). Ponieważ \\(p>0\\), równanie \\(\\frac{7p-1}{p+1}=\\frac43\\) przekształcamy do \\(21p-3=4p+4\\), więc \\(p=\\frac7{17}=0{,}411764\\ldots\\). Pierwsze trzy cyfry po przecinku to \\(4,1,1\\).",
+    "strona_rozwiazania": 3
+  },
+  {
     "numer": "6",
     "rozwiazanie": "Niech \\(D=8x^3+4x^2y-2xy^2-y^3\\) będzie różnicą lewej i prawej strony.\n\n**Sposób 1 — różnica sześcianów**\nZe wzoru na różnicę sześcianów i wspólnego czynnika w dwóch pozostałych wyrazach mamy\n\\[D=(2x-y)(4x^2+2xy+y^2)+2xy(2x-y)=(2x-y)(2x+y)^2.\\]\n\n**Sposób 2 — sześcian różnicy**\nRozpoznajemy \\((2x-y)^3=8x^3-12x^2y+6xy^2-y^3\\). Po dodaniu pozostałych wyrazów otrzymujemy\n\\[D=(2x-y)^3+16x^2y-8xy^2=(2x-y)\\big((2x-y)^2+8xy\\big)=(2x-y)(2x+y)^2.\\]\n\n**Sposób 3 — różnica kwadratów**\nGrupujemy wyrazy według czynnika \\(4x^2-y^2\\).\n\\[D=2x(4x^2-y^2)+y(4x^2-y^2)=(2x+y)(2x+y)(2x-y).\\]\n\nW każdym przypadku \\(D\\ge0\\), ponieważ \\(2x-y>0\\) z założenia, a kwadrat \\((2x+y)^2\\) jest nieujemny.",
     "strona_rozwiazania": 5
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób 1 — przypadki według znaku \\(x-3\\)**\n\nGdy \\(x<3\\), równanie przybiera postać \\(3-x=2x+11\\). Daje \\(x=-\\frac83<3\\). Dla \\(x\\ge3\\) dostajemy \\(x-3=2x+11\\), skąd \\(x=-14\\), co nie spełnia założenia tego przypadku.\n\n**Sposób 2 — sprawdzenie dwóch kandydatów**\n\nZ równania wynika \\(x-3=2x+11\\) albo \\(x-3=-2x-11\\). Kandydatami są \\(-14\\) i \\(-\\frac83\\). Dla \\(-14\\) obie strony równania wyjściowego wynoszą odpowiednio \\(17\\) i \\(-17\\). Dla \\(-\\frac83\\) obie wynoszą \\(\\frac{17}3\\).\n\n**Sposób 3 — nieujemna prawa strona**\n\nWarunek \\(2x+11\\ge0\\) daje \\(x\\ge-\\frac{11}2\\). Przy tym założeniu równanie jest równoważne alternatywie \\(x-3=2x+11\\) lub \\(x-3=-2x-11\\). Spośród uzyskanych \\(-14,-\\frac83\\) warunek spełnia tylko \\(-\\frac83\\).\n\nWynik we wszystkich trzech metodach to \\(x=-\\frac83\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(R_1,R_2\\) oznaczają promienie okręgów opisanych odpowiednio na \\(APB\\) i \\(CPD\\), a \\(\\alpha\\) miarę ostrego kąta \\(CPD\\). Kąty \\(CPD\\) i \\(APB\\) są wierzchołkowe, więc mają równą miarę.\n\n**Sposób 1 — podobieństwo trójkątów**\n\nZ równoległości podstaw wynikają równości odpowiednich kątów przy \\(A,C\\) oraz \\(B,D\\). Trójkąty \\(APB\\) i \\(CPD\\) są podobne. Stąd\n\\[\\frac{R_2+3}{|CD|+2}=\\frac{R_2}{|CD|},\\]\nczyli \\(|CD|=\\frac23R_2\\). Twierdzenie sinusów w \\(CPD\\) daje \\(\\sin\\alpha=\\frac{|CD|}{2R_2}=\\frac13\\).\n\n**Sposób 2 — twierdzenie sinusów i proporcja**\n\nTwierdzenie sinusów w dwóch trójkątach daje \\(|AB|=2(R_2+3)\\sin\\alpha\\) i \\(|CD|=2R_2\\sin\\alpha\\). Porównując ilorazy \\(\\frac{|AB|}{2(R_2+3)}=\\frac{|CD|}{2R_2}\\) i korzystając z \\(|AB|=|CD|+2\\), otrzymujemy \\(|CD|=\\frac23R_2\\). Podstawienie do \\(|CD|=2R_2\\sin\\alpha\\) daje \\(\\sin\\alpha=\\frac13\\).\n\n**Sposób 3 — twierdzenie sinusów i odejmowanie**\n\nZ twierdzenia sinusów otrzymujemy \\(|AB|/\\sin\\alpha=2(R_2+3)\\) oraz \\(|CD|/\\sin\\alpha=2R_2\\). Odejmujemy stronami. Wtedy \\((|AB|-|CD|)/\\sin\\alpha=6\\), czyli \\(2/\\sin\\alpha=6\\). Stąd \\(\\sin\\alpha=\\frac13\\).\n\nW sposobach 1–3 z ostrości \\(\\alpha\\) wynika \\(\\cos\\alpha=\\sqrt{1-\\frac19}=\\frac{2\\sqrt2}{3}\\).\n\n**Sposób 4 — kąt wpisany i środkowy**\n\nNiech \\(x=|AB|\\). Podobieństwo \\(APB\\) i \\(CPD\\) daje \\(\\frac{x-2}{x}=\\frac{R_1-3}{R_1}\\), czyli \\(R_1=\\frac32x\\). Kąt środkowy oparty na tym samym łuku \\(AB\\) co ostry kąt \\(APB\\) ma miarę \\(2\\alpha\\). Jeśli \\(S_1\\) jest środkiem okręgu, to twierdzenie cosinusów w \\(AS_1B\\) daje\n\\[x^2=2R_1^2(1-\\cos 2\\alpha)=\\frac92x^2(1-\\cos 2\\alpha).\\]\nStąd \\(\\cos(2\\alpha)=\\frac79\\), więc \\(2\\cos^2\\alpha-1=\\frac79\\). Z ostrości \\(\\alpha\\) otrzymujemy \\(\\cos\\alpha=\\frac{2\\sqrt2}{3}\\).\n\nWspólne zakończenie daje twierdzenie cosinusów w \\(CPD\\).\n\\[|DP|^2+|CP|^2-|CD|^2=2|DP||CP|\\cos\\alpha\n=\\frac{4\\sqrt2}{3}|DP||CP|.\\]",
+    "strona_rozwiazania": 11
   },
   {
     "numer": "9",
@@ -10,8 +45,33 @@
     "strona_rozwiazania": 16
   },
   {
+    "numer": "10",
+    "rozwiazanie": "**Sposób 1 — wyznaczenie ilorazu ciągu**\n\nDla ilorazu \\(q>0\\) postać \\(a_n=675q^{n-1}\\) pozwala skrócić zadaną równość przez \\(675q^{20}\\). Po przeniesieniu składników\n\\[\\frac54q^2-q+\\frac15=0,\\]\nczyli \\((5q-2)^2=0\\). Zatem \\(q=\\frac25\\) i \\(a_3=675(\\frac25)^2=108\\).\n\n**Sposób 2 — wyznaczenie trzeciego wyrazu**\n\nDzieląc zadaną zależność przez \\(q^{20}>0\\), otrzymujemy \\(a_2=\\frac54 a_3+\\frac15 a_1\\). Ponieważ \\(a_2^2=a_1a_3\\), dla \\(t=a_3\\) mamy \\((\\frac54t+135)^2=675t\\). Po rozwinięciu dostajemy\n\\[\\frac{25}{16}t^2-\\frac{675}2t+18225=\\frac{25}{16}(t-108)^2=0.\\]\nZatem \\(a_3=108\\), a z \\(675q^2=108\\) i \\(q>0\\) wynika \\(q=\\frac25\\).\n\nW obu metodach \\(|q|<1\\), więc suma geometryczna wynosi \\(\\frac{675}{1-\\frac25}=1125\\). Jeśli \\(r\\) oznacza różnicę ciągu \\((b_n)\\), to \\(b_4=108\\) daje \\(b_1+3r=108\\), a suma \\(25\\) wyrazów daje \\(25(b_1+12r)=1125\\). Odejmując równania \\(b_1+3r=108\\) i \\(b_1+12r=45\\), otrzymujemy \\(r=-7\\). Zatem \\(b_1=129\\).",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "**Sposób 1 — suma sinusów**\n\nŁączymy pierwszy i trzeci składnik: \\(\\sin x+\\sin(3x)=2\\sin(2x)\\cos x\\). Równanie przyjmuje postać \\(\\sin(2x)(2\\cos x+1)=0\\). W przedziale \\([0,\\pi]\\) pierwszy czynnik znika dla \\(0,\\frac\\pi2,\\pi\\), a drugi dla \\(\\frac{2\\pi}{3}\\).\n\nW pierwszym wariancie łączymy \\(\\sin x+\\sin(2x)=2\\sin(\\frac{3x}2)\\cos(\\frac x2)\\) i używamy \\(\\sin(3x)=2\\sin(\\frac{3x}2)\\cos(\\frac{3x}2)\\). W nawiasie pozostaje suma \\(\\cos(\\frac x2)+\\cos(\\frac{3x}2)=2\\cos x\\cos(\\frac x2)\\). Lewa strona to zatem \\(4\\sin(\\frac{3x}2)\\cos(\\frac x2)\\cos x\\).\n\nW drugim wariancie łączymy \\(\\sin(2x)+\\sin(3x)=2\\sin(\\frac{5x}2)\\cos(\\frac x2)\\), a \\(\\sin x=2\\sin(\\frac x2)\\cos(\\frac x2)\\). Po wyłączeniu \\(2\\cos(\\frac x2)\\) zostaje \\(\\sin(\\frac x2)+\\sin(\\frac{5x}2)=2\\sin(\\frac{3x}2)\\cos x\\). Oba warianty dają ten sam iloczyn. Na \\([0,\\pi]\\) jego trzy czynniki dają odpowiednio \\(\\{0,\\frac{2\\pi}3\\}\\), \\(\\{\\pi\\}\\) i \\(\\{\\frac\\pi2\\}\\).\n\n**Sposób 2 — sinus sumy**\n\nZ \\(\\sin(3x)=\\sin x\\cos(2x)+\\cos x\\sin(2x)\\) oraz wzorów na kąt podwojony otrzymujemy\n\\[\\begin{aligned}\n\\sin x+\\sin(2x)+\\sin(3x)\n&=\\sin x\\,[1+2\\cos x+\\cos(2x)+2\\cos^2x]\\\\\n&=2\\sin x\\cos x\\,(2\\cos x+1).\n\\end{aligned}\\]\nPorównanie czynników z zerem na \\([0,\\pi]\\) daje \\(0,\\pi\\), następnie \\(\\frac\\pi2\\) oraz \\(\\frac{2\\pi}3\\).\n\n**Sposób 3 — sinus różnicy**\n\nRozpisujemy \\(\\sin x=\\sin(2x-x)\\) oraz \\(\\sin(3x)=\\sin(2x+x)\\). Po dodaniu znikają składniki \\(-\\cos(2x)\\sin x\\) i \\(+\\cos(2x)\\sin x\\), zostaje \\(2\\sin(2x)\\cos x\\). Dodajemy \\(\\sin(2x)\\) i rozwiązujemy ten sam iloczyn co w sposobie 1.\n\nZbiór rozwiązań to \\(\\{0,\\frac\\pi2,\\frac{2\\pi}3,\\pi\\}\\).",
+    "strona_rozwiazania": 21
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "**Sposób 1 — wyróżnik i wzory Viète’a**\n\nMamy \\(\\Delta=(m+1)^2-4m=(m-1)^2\\), więc wymóg dwóch różnych pierwiastków daje \\(m\\ne1\\). Iloczyn pierwiastków wynosi \\(m\\), a zatem dla niezerowych pierwiastków \\(m\\ne0\\). Korzystamy też z \\(x_1+x_2=m+1\\). Warunek z zadania staje się\n\\[\\frac{m+1}{m}+2=\\frac{(m+1)^2-2m}{m^2}.\\]\nPo pomnożeniu przez \\(m^2\\) i uproszczeniu dostajemy \\((m+1)(2m-1)=0\\).\n\n**Sposób 2 — rozkład na czynniki**\n\nRównanie ma postać \\((x-1)(x-m)=0\\). Jego pierwiastki \\(1,m\\) są różne i niezerowe, jeśli \\(m\\notin\\{0,1\\}\\). Podstawiając je do warunku, otrzymujemy \\(1+\\frac1m+2=1+\\frac1{m^2}\\), czyli \\(2m^2+m-1=0\\).\n\nW obu metodach \\(m=-1\\) lub \\(m=\\frac12\\) spełnia wszystkie warunki.",
+    "strona_rozwiazania": 26
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Oznaczmy \\(|AD|=a,\\ |AB|=b,\\ |AH|=d,\\ |AF|=e,\\ |FH|=c\\). Z pola trójkąta \\(AFH\\) mamy\n\\[26{,}4=\\tfrac12de\\sin\\alpha=\\tfrac12de\\cdot\\tfrac{12}{13},\\]\nwięc \\(de=57{,}2\\). Kąt jest ostry, dlatego \\(\\cos\\alpha=\\sqrt{1-(12/13)^2}=\\frac5{13}\\). Twierdzenie cosinusów daje\n\\[c^2=d^2+e^2-2de\\cos\\alpha=d^2+e^2-44.\\]\nPonieważ \\(|FH|\\) jest przekątną prostokąta \\(EFGH\\), mamy \\(c^2=a^2+b^2\\). Przekątne ścian bocznych spełniają \\(d^2=a^2+h^2\\) i \\(e^2=b^2+h^2\\). Podstawiamy i dostajemy \\(2h^2=44\\). Wysokość wynosi \\(h=\\sqrt{22}\\).",
+    "strona_rozwiazania": 29
+  },
+  {
     "numer": "14",
     "rozwiazanie": "Ponieważ \\(B,C\\) leżą na \\(y=x-1\\), piszemy \\(B=(u,u-1)\\) i \\(C=(v,v-1)\\).\n\n**Sposób 1 — odległość punktu od prostej**\nWysokość opuszczona z \\(A\\) ma długość \\(d=|-3-2-1|/\\sqrt2=3\\sqrt2\\). Skoro pole wynosi \\(15\\), to \\(|BC|=30/d=5\\sqrt2\\). Z \\(|AC|=|BC|\\) otrzymujemy \\((v+3)^2+(v-3)^2=50\\), czyli \\(v=\\pm4\\). Ponadto \\(|BC|=\\sqrt2|u-v|\\), więc \\(u=v\\pm5\\).\n\n**Sposób 2 — wyznacznik współrzędnych**\nWzór na pole trójkąta daje\n\\[15=\\tfrac12|(u+3)(v-3)-(u-3)(v+3)|=3|v-u|.\\]\nStąd \\(v-u=\\pm5\\), a warunek \\(|AC|=|BC|\\) daje \\((v+3)^2+(v-3)^2=2(v-u)^2=50\\). Łączymy \\(v=\\pm4\\) z dwiema wartościami \\(u=v\\pm5\\).\n\n**Sposób 3 — symetralna podstawy \\(AB\\)**\nŚrodek \\(AB\\) to \\(S=((u-3)/2,(u+1)/2)\\). Dla \\(u=\\pm3\\) podstawa jest pionowa lub pozioma. W obu przypadkach \\(C=(0,-1)\\), a pole to \\(\\tfrac12\\cdot6\\cdot3=9\\). Gdy \\(u\\ne\\pm3\\), symetralna \\(AB\\) ma równanie \\(y=-\\frac{u+3}{u-3}x+u+2\\). Porównując z \\(y=x-1\\), otrzymujemy \\(\\frac{2u}{u-3}v=u+3\\). Dla \\(u=0\\) jest ono sprzeczne, a dla pozostałych \\(u\\) daje \\(v=(u^2-9)/(2u)\\). Wtedy\n\\[|AB|^2=2(u^2+9),\\qquad |SC|^2=\\frac{9(u^2+9)}{2u^2}.\\]\nWarunek \\(|AB|^2|SC|^2=30^2\\) jest równoważny \\((u^2+9)^2=100u^2\\), czyli \\((u-1)(u-9)(u+1)(u+9)=0\\). Dla \\(u=1,9,-1,-9\\) wzór na \\(v\\) daje odpowiednio \\(-4,4,4,-4\\).\n\n**Sposób 4 — spodek wysokości na \\(BC\\)**\nLiczymy \\(|AD|=3\\sqrt2\\) i \\(|BC|=|AC|=5\\sqrt2\\), gdzie \\(D\\) jest rzutem \\(A\\) na prostą \\(BC\\). Prosta \\(AD\\) ma równanie \\(y=-x-1\\), więc \\(D=(0,-1)\\). Z twierdzenia Pitagorasa \\(|CD|=4\\sqrt2\\), czyli \\(v=\\pm4\\). Jeśli \\(D\\) leży między \\(B\\) a \\(C\\), to \\(|BD|=\\sqrt2\\) i \\(u\\) ma wartość bezwzględną \\(1\\) oraz znak przeciwny do \\(v\\). Jeśli \\(D\\) leży poza bokiem \\(BC\\), to \\(|BD|=9\\sqrt2\\) i \\(u\\) ma wartość bezwzględną \\(9\\) oraz ten sam znak co \\(v\\).\n\nWe wszystkich metodach dostajemy cztery pary \\((B,C)\\):\n\\[\\begin{aligned}\n&((-1,-2),(4,3)),\\quad ((9,8),(4,3)),\\\\\n&((1,0),(-4,-5)),\\quad ((-9,-10),(-4,-5)).\n\\end{aligned}\\]",
     "strona_rozwiazania": 33
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Niech \\(a\\) oznacza podstawę, a \\(b\\) ramię. Z obwodu mamy \\(a=18-2b\\). Warunki \\(a>0\\) i \\(2b>a\\) są równoważne \\(b<9\\) i \\(b>\\frac92\\). Dlatego dziedziną szukanej funkcji jest \\((\\frac92,9)\\).\n\n**Sposób 1 — wysokość i pochodna**\n\nTwierdzenie Pitagorasa dla połowy trójkąta daje \\(h^2=b^2-(a/2)^2=18b-81\\), więc\n\\[P(b)=\\frac{a h}{2}=\\frac{(18-2b)\\sqrt{18b-81}}{2}.\\]\nNa dziedzinie \\(P\\) osiąga maksimum w tym samym miejscu co \\(F(b)=4P(b)^2=(18-2b)^2(18b-81)\\). Pochodna to \\(F'(b)=216(b-6)(b-9)\\). W przedziale \\((\\frac92,6)\\) jest dodatnia, a w \\((6,9)\\) ujemna. Maksimum występuje dla \\(b=6\\), wtedy \\(a=6\\).\n\n**Sposób 2 — wzór Herona i nierówność średnich**\n\nPołowa obwodu wynosi \\(9\\). Z wzoru Herona\n\\[P(b)=\\sqrt{9(2b-9)(9-b)^2}\n=\\frac{(18-2b)\\sqrt{18b-81}}2.\\]\nDodatnie liczby \\(2b-9,9-b,9-b\\) mają sumę \\(9\\). Z nierówności średniej arytmetycznej i geometrycznej ich iloczyn jest najwyżej \\(3^3\\), z równością dokładnie wtedy, gdy \\(2b-9=9-b\\), a więc \\(b=6\\). Wtedy \\(a=6\\).\n\nNajwiększe pole ma trójkąt równoboczny o boku \\(6\\) i wynosi ono \\(9\\sqrt3\\).",
+    "strona_rozwiazania": 42
   }
 ]

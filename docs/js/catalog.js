@@ -19,8 +19,8 @@ function readTask(row) {
   return { ...row, kategorie: JSON.parse(row.kategorie), tagi: JSON.parse(row.tagi) };
 }
 
-function filtersFor({ category, tags = [], paper } = {}) {
-  const filters = [];
+function filtersFor({ category, tags = [], paper, onePoint = false } = {}) {
+  const filters = [onePoint ? 'punkty = 1' : 'punkty IS NOT 1'];
   const params = [];
   if (category) {
     filters.push('? IN (SELECT value FROM json_each(kategorie))');
@@ -34,7 +34,7 @@ function filtersFor({ category, tags = [], paper } = {}) {
     filters.push('? IN (SELECT value FROM json_each(tagi))');
     params.push(tag);
   }
-  return { where: filters.length ? `WHERE ${filters.join(' AND ')}` : '', params };
+  return { where: `WHERE ${filters.join(' AND ')}`, params };
 }
 
 export class Catalog {
@@ -61,8 +61,8 @@ export class Catalog {
     }
   }
 
-  tasks({ category, tags = [], paper, size = 15, page = 1 } = {}) {
-    const { where, params } = filtersFor({ category, tags, paper });
+  tasks({ category, tags = [], paper, onePoint = false, size = 15, page = 1 } = {}) {
+    const { where, params } = filtersFor({ category, tags, paper, onePoint });
     const [{ total }] = this.query(`SELECT count(*) AS total FROM zadania ${where}`, params);
     const pages = Math.max(1, Math.ceil(total / size));
     const currentPage = Math.min(pages, Math.max(1, page));
@@ -71,24 +71,30 @@ export class Catalog {
     return { tasks, total, page: currentPage, pages };
   }
 
-  taskOptions({ category, tags = [] } = {}) {
+  taskOptions({ category, tags = [], subcategory } = {}) {
     const { where, params } = filtersFor({ tags });
     const rows = this.query(`SELECT kategorie, tagi FROM zadania ${where}`, params);
     const categoryCounts = new Map();
     const tagCounts = new Map();
+    const tagsByCategory = new Map();
     let total = 0;
     for (const row of rows.map(readTask)) {
-      for (const value of row.kategorie) categoryCounts.set(value, (categoryCounts.get(value) ?? 0) + 1);
-      if (category && !row.kategorie.includes(category)) continue;
+      for (const value of row.kategorie) {
+        categoryCounts.set(value, (categoryCounts.get(value) ?? 0) + 1);
+        if (!tagsByCategory.has(value)) tagsByCategory.set(value, new Map());
+        const group = tagsByCategory.get(value);
+        for (const tag of row.tagi) group.set(tag, (group.get(tag) ?? 0) + 1);
+      }
+      if ((category && !row.kategorie.includes(category)) || (subcategory && !row.tagi.includes(subcategory))) continue;
       total++;
       for (const tag of row.tagi) tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
     }
-    return { total, allCategories: rows.length, categories: categoryCounts, tags: tagCounts };
+    return { total, allCategories: rows.length, categories: categoryCounts, tags: tagCounts, tagsByCategory };
   }
 
   papers({ year, kind } = {}) {
     return this.query(`SELECT arkusz_id, arkusz, rok, miesiac, typ, formula, zrodlo_arkusz,
-      count(*) AS total, sum(punkty) AS points FROM zadania
+      count(*) AS total, sum(punkty) AS points, sum(punkty IS 1) AS onePoint FROM zadania
       WHERE (? IS NULL OR rok = ?) AND (? IS NULL OR typ = ?)
       GROUP BY arkusz_id ORDER BY rok DESC, coalesce(miesiac, 0) DESC, arkusz_id`,
     [year ?? null, year ?? null, paperKinds.includes(kind) ? kind : null, paperKinds.includes(kind) ? kind : null]);
@@ -116,10 +122,11 @@ async function fetchAsset(path) {
 }
 
 export async function loadCatalog() {
-  const [SQL, bytes, taxonomy] = await Promise.all([
+  const [SQL, bytes, taxonomy, subcategories] = await Promise.all([
     window.initSqlJs({ locateFile: name => new URL(`../vendor/sqljs/${name}`, import.meta.url).href }),
-    fetchAsset('../data/zadania.sqlite').then(response => response.arrayBuffer()),
+    fetchAsset('../data/zadania.sqlite?v=2').then(response => response.arrayBuffer()),
     fetchAsset('../data/slowniki.json').then(response => response.json()),
+    fetchAsset('../data/podkategorie.json').then(response => response.json()),
   ]);
-  return new Catalog(new SQL.Database(new Uint8Array(bytes)), taxonomy);
+  return new Catalog(new SQL.Database(new Uint8Array(bytes)), { ...taxonomy, podkategorie: subcategories });
 }

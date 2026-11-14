@@ -1,4 +1,9 @@
 [
+  {"arkusz_id":"2016-06","numer":"12","strona":12,"slug":"2016-06-12-rozw","alt":"Wykres funkcji wykładniczej i jej przesunięcia z wyróżnionymi przedziałami oraz otwartymi końcami."},
+  {"arkusz_id":"2021-05","numer":"13","strona":39,"slug":"2021-05-13-rozw","alt":"Trójkąt prostokątny ABC z kątem prostym przy C i wpisanym okręgiem o promieniu r."},
+  {"arkusz_id":"2021-05","numer":"13","strona":43,"slug":"2021-05-13-rozw-5","alt":"Trójkąt prostokątny ABC. Dwusieczne z A i B przecinają się w środku S wpisanego okręgu. Promień SD jest prostopadły do przeciwprostokątnej AB."},
+  {"arkusz_id":"2022-12","numer":"10","strona":18,"slug":"2022-12-10-rozw","alt":"Ostrosłup ABCDS z przekrojem BCFE. Punkty G i P są środkami AD i BC, R leży na SG, a PR jest wysokością przekroju."},
+  {"arkusz_id":"2023-przykladowy","numer":"10","strona":27,"slug":"2023-przykladowy-10-rozw","alt":"Ostrosłup ABCDS z wysokością SO oraz wysokościami sąsiednich ścian SE i SF. Ich kąt to 2α, a G jest środkiem EF."},
   {"arkusz_id":"2026-05","numer":"4","strona":9,"slug":"2026-05-4-rozw","alt":"Konstrukcja w kwadracie z podpisanymi długościami a i a/2 oraz kątami α przy A i D."},
   {"arkusz_id":"2026-05","numer":"9","strona":38,"slug":"2026-05-9-rozw","alt":"Trójkąt ABC z punktem M na AC, punktami D i E na AB oraz pomocniczymi odcinkami ME i MD."},
   {"arkusz_id":"2026-05","numer":"11","strona":48,"slug":"2026-05-11-rozw","alt":"Czworokąt z przekątną BD długości d. Boki BC i CD oznaczono x i y, a kąt przy C ma 120°."},

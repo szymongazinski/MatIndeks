@@ -1,10 +1,87 @@
 [
   {
-    "numer": "12",
-    "polecenie": "Liczba \\(m\\) jest sumą odwrotności dwóch różnych pierwiastków równania\n\\[k^2x^2+(k-1)x+1=0,\\qquad k\\ne0.\\]\nWyznacz zbiór wartości funkcji określonej wzorem \\(f(x)=2^m\\)."
+    "numer": "1",
+    "polecenie": "Funkcja \\(f\\) określona jest wzorem \\(f(x)=\\left|3+5^{3-x}\\right|-1\\) dla każdej liczby rzeczywistej. Zbiorem wartości funkcji \\(f\\) jest\n\nA. \\((2,+\\infty)\\)\nB. \\(\\langle 1,3\\rangle\\)\nC. \\(\\langle -1,+\\infty)\\)\nD. \\((0,+\\infty)\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Wartość wyrażenia \\(\\sin^2 75^\\circ-\\cos^2 75^\\circ\\) jest równa\n\nA. \\(-\\frac12\\)\nB. \\(\\frac12\\)\nC. \\(-\\frac{\\sqrt3}{2}\\)\nD. \\(\\frac{\\sqrt3}{2}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "3",
+    "polecenie": "W trapezie \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\) dane są: \\(|AD|=6\\), \\(|BC|=12\\), \\(|AC|=10\\) oraz \\(|\\angle ABC|=|\\angle CAD|\\) (zobacz rysunek).\n\nWówczas długość podstawy \\(AB\\) tego trapezu jest równa\n\nA. \\(|AB|=18\\)\nB. \\(|AB|=20\\)\nC. \\(|AB|=22\\)\nD. \\(|AB|=24\\)",
+    "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "W ostrosłupie prawidłowym czworokątnym wszystkie krawędzie mają tę samą długość. Wskaż cosinus kąta nachylenia ściany bocznej do płaszczyzny podstawy.\n\nA. \\(\\frac{\\sqrt3}{3}\\)\nB. \\(\\frac{\\sqrt3}{2}\\)\nC. \\(\\frac12\\)\nD. \\(\\frac13\\)"
+    "polecenie": "W ostrosłupie prawidłowym czworokątnym wszystkie krawędzie mają jednakową długość. Wynika stąd, że cosinus kąta nachylenia ściany bocznej do płaszczyzny podstawy tego ostrosłupa jest równy\n\nA. \\(\\frac{\\sqrt3}{3}\\)\nB. \\(\\frac{\\sqrt3}{2}\\)\nC. \\(\\frac12\\)\nD. \\(\\frac13\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Granica \\(\\displaystyle\\lim_{n\\to\\infty}\\frac{-7n^3+3n}{1+2n+3n^2+4n^5}\\) jest równa\n\nA. \\(-\\infty\\)\nB. \\(-\\frac74\\)\nC. \\(0\\)\nD. \\(+\\infty\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "6",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny \\((a_n)\\) określony dla \\(n\\ge1\\), w którym iloraz jest równy pierwszemu wyrazowi, a suma wszystkich wyrazów tego ciągu jest równa \\(12\\). Oblicz pierwszy wyraz tego ciągu. Zakoduj kolejno pierwsze trzy cyfry po przecinku otrzymanego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "7",
+    "polecenie": "Dane są zdarzenia losowe \\(A,B\\subset\\Omega\\) takie, że \\(P(A)=\\frac27\\) i \\(P(A\\cup B)=\\frac35\\). Oblicz \\(P(B\\setminus A)\\), gdzie zdarzenie \\(B\\setminus A\\) oznacza różnicę zdarzeń \\(B\\) i \\(A\\). Zakoduj kolejno pierwsze trzy cyfry po przecinku rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "8",
+    "polecenie": "Wykaż, że dla \\(a,b,c,d>0\\) prawdziwa jest nierówność \\(\\sqrt{a+b}\\cdot\\sqrt{c+d}\\ge\\sqrt{ac}+\\sqrt{bd}\\).",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "9",
+    "polecenie": "Rozwiąż nierówność \\(\\left|x^2-3x+2\\right|\\ge |x-1|\\).",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "10",
+    "polecenie": "Dany jest ciąg \\((a_n)\\) określony dla każdej liczby całkowitej \\(n\\ge1\\), w którym \\(a_4=4\\) oraz dla każdej liczby \\(n\\ge1\\) prawdziwa jest równość \\(a_{n+1}=a_n+n-4\\). Oblicz pierwszy wyraz ciągu \\((a_n)\\) i ustal, czy ciąg ten jest malejący.",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "11",
+    "polecenie": "Dany jest sześcian \\(ABCDEFGH\\). Przez wierzchołki \\(A\\) i \\(C\\) oraz środek \\(K\\) krawędzi \\(BF\\) poprowadzono płaszczyznę, która przecina przekątną \\(BH\\) w punkcie \\(P\\) (zobacz rysunek).\n\nWykaż, że \\(|BP|:|HP|=1:3\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "12",
+    "polecenie": "Liczba \\(m\\) jest sumą odwrotności dwóch różnych pierwiastków równania\n\\[k^2x^2+(k-1)x+1=0,\\quad\\text{gdzie }k\\ne 0.\\]\nWyznacz zbiór wartości funkcji określonej wzorem \\(f(x)=2^m\\).",
+    "strona_zadania": 11
+  },
+  {
+    "numer": "13",
+    "polecenie": "Rozwiąż nierówność \\((2\\sin x-3)(2\\sin x+1)>0\\) w przedziale \\(x\\in(0,2\\pi)\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "14",
+    "polecenie": "W trójkącie prostokątnym stosunek różnicy długości przyprostokątnych do długości przeciwprostokątnej jest równy \\(\\frac12\\). Oblicz cosinusy kątów ostrych tego trójkąta.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "15",
+    "polecenie": "Oblicz, ile jest wszystkich liczb naturalnych pięciocyfrowych, w których zapisie występują dokładnie trzy cyfry nieparzyste.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "16",
+    "polecenie": "Punkty \\(A=(-7,-2)\\) i \\(B=(4,-7)\\) są wierzchołkami podstawy trójkąta równoramiennego \\(ABC\\), a wysokość opuszczona z wierzchołka \\(A\\) tego trójkąta zawiera się w prostej o równaniu \\(2x+19y+52=0\\). Oblicz współrzędne wierzchołka \\(C\\).",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "17",
+    "polecenie": "Rozpatrujemy wszystkie walce, których pole powierzchni całkowitej jest równe \\(2\\pi\\). Oblicz promień podstawy tego walca, który ma największą objętość. Podaj tę największą objętość.",
+    "strona_zadania": 20
   }
 ]

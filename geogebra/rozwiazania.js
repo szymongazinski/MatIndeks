@@ -214,6 +214,74 @@ function construction2024May9(api, method) {
   }
 }
 
+function construction2016June12(api) {
+  const axis = { thickness: 3 };
+  const grid = { color: api.gray, thickness: 1, layer: 0 };
+  const guides = { color: api.accent, lineType: 1, thickness: 2, layer: 1 };
+  const shifted = { color: api.ink, thickness: 3 };
+  const highlighted = { color: api.accent, thickness: 6, layer: 4 };
+  const boundary = [[-1, 4], [0, 2], [1 / 3, Math.cbrt(4)]];
+  api.vector([-3.24, 0], [5.05, 0], axis);
+  api.vector([0, -.28], [0, 5.48], axis);
+  for (let x = -3; x <= 4; x++) {
+    if (x === 0) continue;
+    api.segment([x, -.08], [x, 5.12], grid);
+    api.label(String(x), [x, -.27]);
+  }
+  for (const y of [1, 2, 3, 4, 5]) {
+    api.segment([-3.18, y], [4.88, y], grid);
+    api.label(String(y), [-.16, y]);
+  }
+  api.curve('t', '(1/2)^t', -2.47, 4.91, { color: [101, 112, 124], thickness: 3 });
+  api.curve('t', '(1/2)^(t-1)', -1.47, 4.91, shifted);
+  api.curve('t', '(1/2)^(t-1)', -1, 0, highlighted);
+  api.curve('t', '(1/2)^(t-1)', 0, 1 / 3, highlighted);
+  for (const [x,y] of boundary) {
+    if (x !== 0) {
+      api.segment([x, 0], [x, y], guides);
+      api.segment([0, y], [x, y], guides);
+    }
+    api.circle([x, y], .069, { color: [255, 255, 255], fill: 1, thickness: 1, layer: 6 });
+    api.dot([x, y], { size: 4, color: api.accent, open: true });
+  }
+  labels(api, [
+    ['0',[-.12,-.27]],['k',[5.04,.2]],['y',[.12,5.45]],
+    ['\\tfrac13',[.34,-.33]],['\\sqrt[3]{4}',[-.26,1.58]],
+    ['y=(\\tfrac12)^k',[-2.19,2.33]],['y=(\\tfrac12)^{k-1}',[2.64,.85]],
+  ]);
+}
+
+function construction2021May13(api, halfAngle) {
+  const a = [4.8, 0], b = [0, 3.6], c = [0, 0];
+  const s = [1.2, 1.2], d = [1.92, 2.16];
+  const auxiliary = { color: api.accent, thickness: 2 };
+  api.lines([a, b, c, a]);
+  api.circle(s, 1.2, { color: api.ink, thickness: 3 });
+  api.angleSquare(c,a,b,.23);
+  api.dot(s, { size: 3 });
+  circularAngle(api,a,b,c,.96,halfAngle ? null : '\\alpha');
+  circularAngle(api,b,c,a,.78,halfAngle ? null : '\\beta');
+  labels(api, [
+    ['A',a,.21,-.12],['B',b,-.13,.16],['C',c,-.16,-.13],
+    ['a',[-.28,1.75]],['b',[2.49,-.25]],
+  ]);
+
+  if (halfAngle) {
+    api.lines([a,s,b], auxiliary);
+    api.segment(s,d, auxiliary);
+    api.angleSquare(d,b,s,.22);
+    api.dot(d, { size: 3 });
+    labels(api, [['S',s,-.22,.09],['D',d,.06,.22],['r',[1.76,1.61]],
+      ['x',[.95,3.12]],['y',[3.42,1.28]],['\\alpha',[4.06,.1]],['\\beta',[.14,3.03]]]);
+    api.dimension([.3,4],[5.1,.4],'c',[2.54,2.64]);
+  } else {
+    const end = [s[0] + 1.2*Math.cos(-.22), s[1] + 1.2*Math.sin(-.22)];
+    api.segment(s,end, auxiliary);
+    api.label('r',[1.83,1.34]);
+    api.label('c',[2.43,2.06]);
+  }
+}
+
 function construction2022May9(api) {
   const style={color:api.accent,thickness:5};
   api.axes(-2.09,3.77,-1.75,1.28,false);
@@ -289,8 +357,82 @@ function construction2023May7(api, method) {
   }
 }
 
+function construction2022December10(api) {
+  const view = (x, y, z = 0) => [x + 0.68 * y, 0.52 * y + 0.72 * z];
+  const a = view(0, 0);
+  const b = view(6, 0);
+  const c = view(6, 6);
+  const d = view(0, 6);
+  const s = view(3, 3, 9);
+  const g = view(0, 3);
+  const p = view(6, 3);
+  const o = view(3, 3);
+  const e = between(a, s, 1 / 5);
+  const f = between(d, s, 1 / 5);
+  const r = between(g, s, 1 / 5);
+  const h = view(3 / 5, 3);
+  const hidden = { lineType: 1, thickness: 2 };
+  const section = { color: api.accent, thickness: 3 };
+  const construction = { color: api.gray, thickness: 2, lineType: 1 };
+
+  api.polygon([b,c,f,e], { color: api.pale, thickness: 1, fill: .36, layer: 1 });
+  api.lines([a,b,c,s,a]);
+  api.lines([a,d,c], hidden);
+  api.segment(d,s, hidden);
+  api.segment(b,s);
+  api.lines([s,g,p], section);
+  api.lines([b,c,f,e,b], section);
+  api.segment(r,p, construction);
+  api.segment(r,h, construction);
+  api.segment(s,o, construction);
+  api.angleSquare(r,s,p,.24);
+  api.angleSquare(h,r,p,.27);
+  circularAngle(api,g,p,s,.57,'\\alpha');
+  labels(api, [
+    ['A',a,-.23,-.27],['B',b,.21,-.27],['C',c,.26,.06],['D',d,-.23,.13],['S',s,.04,.29],
+    ['E',e,-.22,.08],['F',f,.08,.25],['G',g,-.14,-.29],['P',p,.16,-.23],['O',o,.13,-.29],
+    ['R',r,-.16,.26],['H',h,.12,-.30],['h',between(r,p,.54),.14,.28],['a',between(a,b,.5),.04,-.26],
+  ]);
+}
+
+function construction2023Example10(api) {
+  const view = (x, y, z = 0) => [x + 0.72 * y, 0.52 * y + 1.9 * z];
+  const a = view(0, 0);
+  const b = view(6, 0);
+  const c = view(6, 6);
+  const d = view(0, 6);
+  const s = view(3, 3, 3);
+  const o = view(3, 3);
+  const e = between(a,b,.5);
+  const f = between(b,c,.5);
+  const g = between(e,f,.5);
+  const hidden = { lineType: 1, thickness: 2 };
+  const section = { color: api.accent, thickness: 3 };
+  const construction = { color: api.gray, lineType: 1, thickness: 2 };
+
+  api.polygon([e,f,s], { color: api.pale, thickness: 1, fill: .26, layer: 1 });
+  api.lines([a,b,c,s,a]);
+  api.lines([a,d,c], hidden);
+  api.segment(d,s, hidden);
+  api.segment(b,s);
+  api.lines([e,s,f,e], section);
+  api.segment(s,g, section);
+  api.lines([s,o,f], construction);
+  circularAngle(api,s,e,f,1.2,'2\\alpha');
+  labels(api, [
+    ['A',a,-.17,-.23],['B',b,.18,-.23],['C',c,.25,.07],['D',d,-.24,.08],['S',s,.07,.28],
+    ['E',e,.01,-.28],['F',f,.24,-.08],['G',g,.03,-.24],['O',o,-.15,.24],
+    ['h',between(s,e,.51),-.29,.04],['h',between(s,f,.47),.30,.05],['H',between(s,o,.6),-.19,-.06],
+    ['a',between(a,d,.55),-.24,-.13],['a',between(d,c,.64),.03,.28],
+  ]);
+}
+
 Object.assign(window.figureDefinitions, {
+  '2016-06-12-rozw': {bounds:[-3.48,5.4,-.59,5.69],width:675,draw:construction2016June12},
+  '2021-05-13-rozw': {bounds:[-.62,5.32,-.54,4.04],width:440,draw:api=>construction2021May13(api,false)},
+  '2021-05-13-rozw-5': {bounds:[-.62,5.49,-.54,4.31],width:450,draw:api=>construction2021May13(api,true)},
   '2022-05-9-rozw': {bounds:[-2.38,4,-2.05,1.6],width:590,draw:construction2022May9},
+  '2022-12-10-rozw': {bounds:[-.71,10.79,-.76,8.81],width:670,draw:construction2022December10},
   '2023-05-5-rozw-3': {bounds:[-.65,7.68,-.7,4.82],width:620,draw:api=>construction2023May5(api,3)},
   '2023-05-5-rozw-5': {bounds:[-.65,7.89,-.82,4.9],width:630,draw:api=>construction2023May5(api,5)},
   '2023-05-5-rozw-6': {bounds:[-.65,7.68,-.71,4.82],width:620,draw:api=>construction2023May5(api,6)},
@@ -298,6 +440,7 @@ Object.assign(window.figureDefinitions, {
   '2023-05-7-rozw': {bounds:[-.7,6.72,-.66,9.25],width:470,draw:api=>construction2023May7(api,1)},
   '2023-05-7-rozw-4': {bounds:[-.7,6.72,-.66,9.25],width:470,draw:api=>construction2023May7(api,4)},
   '2023-05-7-rozw-5': {bounds:[-.71,7.22,-.75,7.06],width:560,draw:api=>construction2023May7(api,5)},
+  '2023-przykladowy-10-rozw': {bounds:[-.73,11.08,-.74,8.06],width:670,draw:construction2023Example10},
   '2024-05-9-rozw-5': {bounds:[-.88,13.1,-.88,13.18],width:520,draw:api=>construction2024May9(api,5)},
   '2024-05-9-rozw-6': {bounds:[-.88,13.1,-.88,13.18],width:520,draw:api=>construction2024May9(api,6)},
   '2024-05-9-rozw-7': {bounds:[-.88,13.1,-.88,13.18],width:520,draw:api=>construction2024May9(api,7)},

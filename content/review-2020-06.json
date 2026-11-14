@@ -1,18 +1,77 @@
 [
   {
+    "numer": "1",
+    "polecenie": "Dany jest wielomian \\(W(x)=x^{2019}-3x^{2000}+2x+6\\). Wybierz prawdziwe stwierdzenie.\n\nA. Jest podzielny przez \\(x-1\\), a reszta z dzielenia przez \\(x+1\\) wynosi \\(6\\).\nB. Jest podzielny przez \\(x+1\\), a reszta z dzielenia przez \\(x-1\\) wynosi \\(6\\).\nC. Jest podzielny zarówno przez \\(x-1\\), jak i przez \\(x+1\\).\nD. Nie jest podzielny ani przez \\(x-1\\), ani przez \\(x+1\\).",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Ciąg \\((a_n)\\) jest określony wzorem \\(a_n=\\frac{3n^2+7n-5}{11-5n+5n^2}\\) dla liczb naturalnych \\(n\\ge1\\). Wybierz granicę tego ciągu.\n\nA. \\(3\\)\nB. \\(\\frac15\\)\nC. \\(\\frac35\\)\nD. \\(-\\frac5{11}\\)",
+    "strona_zadania": 2
+  },
+  {
     "numer": "3",
-    "polecenie": "W pierwszej urnie są trzy kule białe i siedem czarnych. W drugiej jest jedna kula biała i dziewięć czarnych. Rzucamy symetryczną sześcienną kostką o ścianach oznaczonych od \\(1\\) do \\(6\\). Gdy wypada jedno oczko, losujemy jedną kulę z pierwszej urny. W pozostałych przypadkach losujemy jedną kulę z drugiej urny. Wskaż prawdopodobieństwo otrzymania kuli białej.\n\nA. \\(\\frac{2}{15}\\)\nB. \\(\\frac{1}{5}\\)\nC. \\(\\frac{4}{5}\\)\nD. \\(\\frac{13}{15}\\)"
+    "polecenie": "Pierwsza urna zawiera \\(3\\) kule białe i \\(7\\) czarnych, a druga jedną białą i \\(9\\) czarnych. Rzucamy symetryczną sześcienną kostką o ściankach z liczbami od \\(1\\) do \\(6\\). Gdy wypadnie \\(1\\), losujemy kulę z pierwszej urny. W każdym innym przypadku losujemy kulę z drugiej urny. Jakie jest prawdopodobieństwo wylosowania białej kuli?\n\nA. \\(\\frac2{15}\\)\nB. \\(\\frac15\\)\nC. \\(\\frac45\\)\nD. \\(\\frac{13}{15}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "Po rozwinięciu \\((x\\sqrt2+y\\sqrt3)^4\\) zapisujemy wynik w postaci \\(ax^4+bx^3y+cx^2y^2+dxy^3+ey^4\\). Ile wynosi \\(c\\)?\n\nA. \\(6\\)\nB. \\(36\\)\nC. \\(8\\sqrt6\\)\nD. \\(12\\sqrt6\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "W trójkącie \\(ABC\\) zachodzi \\(|AB|=3|AC|\\) i \\(|BC|=\\frac45|AB|\\). Oblicz cosinus najmniejszego kąta tego trójkąta. Wpisz kolejno pierwszą, drugą i trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(a\\), dla których równanie \\(|x-5|=(a-1)^2-4\\) ma dwa różne dodatnie rozwiązania.",
+    "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "W trójkącie równoramiennym \\(ABC\\) mamy \\(|AC|=|BC|=6\\), a \\(D\\) jest środkiem podstawy \\(AB\\). Okrąg o środku \\(D\\) jest styczny do prostej \\(AC\\) w punkcie \\(M\\). Punkty \\(K\\) i \\(L\\) leżą odpowiednio na bokach \\(AC\\) i \\(BC\\), przy czym \\(|KC|=|LC|=2\\). Odcinek \\(KL\\) jest styczny do okręgu (zobacz rysunek).\n\nWykaż, że \\(\\dfrac{|AM|}{|MC|}=\\dfrac45\\)."
+    "polecenie": "W trójkącie równoramiennym \\(ABC\\) zachodzi \\(|AC|=|BC|=6\\), a \\(D\\) jest środkiem podstawy \\(AB\\). Okrąg o środku \\(D\\) jest styczny do prostej \\(AC\\) w punkcie \\(M\\). Punkty \\(K\\) i \\(L\\) leżą odpowiednio na bokach \\(AC\\) i \\(BC\\) oraz \\(|KC|=|LC|=2\\). Odcinek \\(KL\\) jest styczny do okręgu (zobacz rysunek). Udowodnij, że \\(\\frac{|AM|}{|MC|}=\\frac45\\).",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Liczby \\(a,b>0\\) spełniają \\(a^2+2a=4b^2+4b\\). Udowodnij, że \\(a=2b\\).",
+    "strona_zadania": 8
   },
   {
     "numer": "9",
-    "polecenie": "Rozwiąż równanie \\(3\\cos(2x)+10\\cos^2x=24\\sin x-3\\) dla \\(x\\in[0,2\\pi]\\)."
+    "polecenie": "Rozwiąż równanie \\(3\\cos(2x)+10\\cos^2x=24\\sin x-3\\) dla \\(x\\in[0,2\\pi]\\).",
+    "strona_zadania": 9
+  },
+  {
+    "numer": "10",
+    "polecenie": "Suma trzech wyrazów ciągu geometrycznego \\((a_1,a_2,a_3)\\) wynosi \\(\\frac{21}{4}\\). Liczby \\(a_1,a_2,a_3\\) są odpowiednio czwartym, drugim i pierwszym wyrazem rosnącego ciągu arytmetycznego. Oblicz \\(a_1\\).",
+    "strona_zadania": 10
   },
   {
     "numer": "11",
-    "polecenie": "Dane jest równanie \\(x^2-(3m+2)x+2m^2+7m-15=0\\) z niewiadomą \\(x\\). Wyznacz wszystkie wartości \\(m\\), dla których równanie ma dwa różne pierwiastki \\(x_1,x_2\\) spełniające warunek \\(2x_1^2+5x_1x_2+2x_2^2=2\\)."
+    "polecenie": "Wyznacz wszystkie wartości \\(m\\), dla których równanie\n\\[x^2-(3m+2)x+2m^2+7m-15=0\\]\nma dwa różne rozwiązania \\(x_1,x_2\\) spełniające \\(2x_1^2+5x_1x_2+2x_2^2=2\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "12",
+    "polecenie": "Prosta \\(x+y-10=0\\) przecina okrąg \\(x^2+y^2-8x-6y+8=0\\) w punktach \\(K,L\\). Niech \\(S\\) będzie środkiem cięciwy \\(KL\\). Wyznacz równanie obrazu okręgu w jednokładności o środku \\(S\\) i skali \\(-3\\).",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "13",
+    "polecenie": "Oblicz liczbę siedmiocyfrowych liczb naturalnych, których zapis dziesiętny zawiera dokładnie trzy jedynki i dwie dwójki.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "14",
+    "polecenie": "Ostrosłup czworokątny \\(ABCDS\\) ma w podstawie trapez \\(ABCD\\) o podstawach \\(AB\\parallel CD\\). Długości ramion to \\(|AD|=10\\) i \\(|BC|=16\\), a \\(\\angle ABC=30^\\circ\\). Każda ściana boczna tworzy z płaszczyzną podstawy ten sam kąt \\(\\alpha\\), dla którego \\(\\tan\\alpha=\\frac92\\). Oblicz objętość ostrosłupa.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "15",
+    "polecenie": "Prostokątny ekran smartfona ma pole \\(60\\,\\mathrm{cm}^2\\). Odległość ekranu od każdego z krótszych brzegów telefonu ma wynosić \\(0{,}5\\,\\mathrm{cm}\\), a od każdego z dłuższych \\(0{,}3\\,\\mathrm{cm}\\) (zobacz rysunek). Wyznacz wymiary ekranu tak, aby pole ekranu wraz z obramowaniem było najmniejsze.",
+    "strona_zadania": 20
   }
 ]

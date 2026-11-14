@@ -1,0 +1,74 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Są dwie urny po \\(5\\) kul. W pierwszej znajdują się \\(1\\) biała i \\(4\\) czarne, a w drugiej \\(3\\) białe i \\(2\\) czarne. Rzucamy symetryczną sześcienną kostką. Gdy wypadną \\(1\\) albo \\(2\\) oczka, losujemy kulę z pierwszej urny. Gdy wypadną co najmniej \\(3\\) oczka, losujemy kulę z drugiej. Ile wynosi prawdopodobieństwo wylosowania białej kuli?\n\nA. \\(\\tfrac1{15}\\)\nB. \\(\\tfrac25\\)\nC. \\(\\tfrac7{15}\\)\nD. \\(\\tfrac35\\)"
+  },
+  {
+    "numer": "2",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny \\((a_n)\\), w którym\n\\[a_n=\\frac{3}{(\\sqrt2)^n}\\qquad(n=1,2,3,\\ldots).\\]\nIle wynosi suma wszystkich jego wyrazów?\n\nA. \\(\\dfrac{1}{\\sqrt2-1}\\)\nB. \\(\\dfrac{\\sqrt2}{\\sqrt2-1}\\)\nC. \\(\\dfrac{2}{\\sqrt2-1}\\)\nD. \\(\\dfrac{3}{\\sqrt2-1}\\)"
+  },
+  {
+    "numer": "3",
+    "polecenie": "Która liczba jest równa wyrażeniu\n\\[\\frac{27^{665}\\cdot\\sqrt[3]{3^{-92}}}{(\\tfrac13)^{152/3}}?\\]\n\nA. \\(3^{725}\\)\nB. \\(3^{1995}\\)\nC. \\(3^{2015}\\)\nD. \\(3^{2045}\\)"
+  },
+  {
+    "numer": "4",
+    "polecenie": "Okrąg \\(o_1\\) ma równanie \\(x^2+(y-1)^2=25\\), a okrąg \\(o_2\\) ma równanie \\((x-1)^2+y^2=9\\). Określ ich wzajemne położenie.\n\nA. Okręgi przecinają się w dwóch punktach.\nB. Okręgi są styczne.\nC. Okręgi nie mają punktów wspólnych, a \\(o_1\\) leży w całości wewnątrz \\(o_2\\).\nD. Okręgi nie mają punktów wspólnych, a \\(o_2\\) leży w całości wewnątrz \\(o_1\\)."
+  },
+  {
+    "numer": "5",
+    "polecenie": "Które wyrażenie jest równe \\(\\sin\\alpha+\\sin(3\\alpha)\\) dla każdego \\(\\alpha\\)?\n\nA. \\(\\sin(4\\alpha)\\)\nB. \\(2\\sin(4\\alpha)\\)\nC. \\(2\\sin(2\\alpha)\\cos\\alpha\\)\nD. \\(2\\sin\\alpha\\cos(2\\alpha)\\)"
+  },
+  {
+    "numer": "6",
+    "polecenie": "Liczba \\(n\\) jest najmniejszą liczbą całkowitą spełniającą równanie \\(2|x+57|=|x-39|\\). Zakoduj kolejno cyfry setek, dziesiątek i jedności liczby \\(|n|\\)."
+  },
+  {
+    "numer": "7",
+    "polecenie": "Oblicz granicę\n\\[\\lim_{n\\to\\infty}\\frac{3n^2-5n+2}{(8n+7)(n+4)}.\\]\nZakoduj trzy pierwsze cyfry po przecinku w jej rozwinięciu dziesiętnym."
+  },
+  {
+    "numer": "8",
+    "polecenie": "Dana jest funkcja \\(f(x)=\\dfrac{x-8}{x^2+6}\\) dla \\(x\\in\\mathbb R\\). Oblicz \\(f'(\\tfrac12)\\). Zakoduj trzy pierwsze cyfry po przecinku w rozwinięciu dziesiętnym wyniku."
+  },
+  {
+    "numer": "9",
+    "polecenie": "Oblicz\n\\[\\log_3\\sqrt[4]{27}-\\log_3\\!\\left(\\log_3\\sqrt[3]{\\sqrt[3]{3}}\\right).\\]\nZakoduj cyfrę jedności i dwie pierwsze cyfry po przecinku w rozwinięciu dziesiętnym wyniku."
+  },
+  {
+    "numer": "10",
+    "polecenie": "Punkty \\(P_1,P_2,\\ldots,P_{24}\\) dzielą okrąg na \\(24\\) równe łuki. Punkt \\(A\\) jest przecięciem cięciw \\(P_{11}P_{22}\\) i \\(P_1P_{16}\\).\n\n[[rysunek:2015-przykladowy-10|Okrąg z 24 równo rozmieszczonymi punktami. Cięciwy P₁P₁₆ i P₁₁P₂₂ przecinają się w A.]]\n\nUdowodnij, że \\(\\angle P_{16}AP_{11}=60^\\circ\\)."
+  },
+  {
+    "numer": "11",
+    "polecenie": "Udowodnij, że dla wszystkich \\(x,m\\in\\mathbb R\\) zachodzi nierówność\n\\[20x^2-24mx+18m^2\\ge4x+12m-5.\\]"
+  },
+  {
+    "numer": "12",
+    "polecenie": "W doświadczeniu Janka może wypaść liczba \\(k\\) ze zbioru \\(\\{0,1,2,3,4,5,6\\}\\). Jej prawdopodobieństwo wynosi \\(p_k=\\frac1{64}\\binom6k\\). Zdarzenie \\(A\\) oznacza wynik ze zbioru \\(\\{1,3,5\\}\\), a \\(B\\) wynik ze zbioru \\(\\{2,3,4,5,6\\}\\).\n\nOblicz \\(P(A\\mid B)\\)."
+  },
+  {
+    "numer": "13",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których prosta \\(y=mx+(2m+3)\\) ma dokładnie dwa punkty wspólne z okręgiem o środku \\(S=(0,0)\\) i promieniu \\(3\\)."
+  },
+  {
+    "numer": "14",
+    "polecenie": "Na paraboli \\(y=x^2+1\\) leży punkt \\(A\\) o pierwszej współrzędnej równej \\(3\\). Wyznacz równanie stycznej do paraboli w tym punkcie."
+  },
+  {
+    "numer": "15",
+    "polecenie": "Ostrosłup prawidłowy czworokątny ma krawędź podstawy długości \\(a\\). Kąt między krawędzią boczną a krawędzią podstawy ma miarę \\(\\alpha>45^\\circ\\).\n\n[[rysunek:2015-przykladowy-15|Ostrosłup prawidłowy czworokątny z zaznaczonym bokiem podstawy długości a i kątem α między krawędziami.]]\n\nOblicz objętość ostrosłupa."
+  },
+  {
+    "numer": "16",
+    "polecenie": "W trójkącie \\(ABC\\) punkty \\(M\\) i \\(L\\) leżą odpowiednio na \\(AB\\) i \\(AC\\) oraz spełniają \\(|MB|=2|AM|\\) i \\(|LC|=3|AL|\\). Odcinki \\(BL\\) i \\(CM\\) przecinają się w \\(S\\), a półprosta \\(AS\\) przecina \\(BC\\) w \\(K\\).\n\n[[rysunek:2015-przykladowy-16|Trójkąt ABC. Odcinki AK, BL i CM przecinają się w S.]]\n\nPole \\(ABC\\) wynosi \\(660\\). Oblicz pola trójkątów \\(AMS\\), \\(ALS\\), \\(BMS\\) i \\(CLS\\)."
+  },
+  {
+    "numer": "17",
+    "polecenie": "Oblicz, ile jest stucyfrowych liczb naturalnych, których cyfry sumują się do \\(4\\)."
+  },
+  {
+    "numer": "18",
+    "polecenie": "Z każdego rogu prostokątnego kartonu o wymiarach \\(80\\ \\mathrm{cm}\\times50\\ \\mathrm{cm}\\) wycięto taki sam kwadrat. Karton zagięto wzdłuż przerywanych linii, tworząc prostopadłościenne pudełko bez pokrywki.\n\n[[rysunek:2015-przykladowy-18|Prostokątny karton 80 cm na 50 cm z czterema wycinanymi kwadratami i przerywanymi liniami zgięcia.]]\n\nWyznacz długość boku wycinanego kwadratu, dla której objętość pudełka jest największa, i oblicz tę objętość."
+  }
+]

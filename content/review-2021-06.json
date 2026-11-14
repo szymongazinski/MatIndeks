@@ -1,6 +1,77 @@
 [
   {
+    "numer": "1",
+    "polecenie": "Wskaż wartość wyrażenia \\(\\bigl((\\sqrt3-1)^2-(\\sqrt3+1)^2\\bigr)^3\\).\n\nA. \\(512\\)\nB. \\(0\\)\nC. \\(-24\\sqrt3\\)\nD. \\(-192\\sqrt3\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Granice\n\\[\\lim_{n\\to\\infty}\\frac{an^2+bn+4}{n+1}\n\\qquad\\text{i}\\qquad\n\\lim_{n\\to\\infty}\\frac{n+1}{an^2+bn+4}\\]\nsą równe. Co stąd wynika?\n\nA. \\(a=0\\) i \\(b=0\\)\nB. \\(|a|=1\\) i \\(b=0\\)\nC. \\(|a|=1\\) i \\(|b|=1\\)\nD. \\(a=0\\) i \\(|b|=1\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "3",
+    "polecenie": "Dla jakich wartości \\(m\\) wektory \\(\\vec a=[m-2,m+2]\\) oraz \\(\\vec b=[m^{1{,}5},2^{1{,}5}]\\) mają równe długości?\n\nA. \\(m=0\\) lub \\(m=4\\)\nB. \\(m=0\\) lub \\(m=2\\)\nC. \\(m=2\\)\nD. \\(m=2\\) lub \\(m=4\\)",
+    "strona_zadania": 2
+  },
+  {
     "numer": "4",
-    "polecenie": "Na rysunku przedstawiono fragment wykresu funkcji \\(f\\) określonej dla każdego \\(x\\in\\mathbb R\\). Wskaż wzór funkcji.\n\nA. \\(f(x)=2\\sin(2x)\\)\nB. \\(f(x)=2\\pi\\sin(2x)\\)\nC. \\(f(x)=2\\sin\\!\\left(\\frac{x}{2}\\right)\\)\nD. \\(f(x)=2\\pi\\sin\\!\\left(\\frac{x}{2}\\right)\\)"
+    "polecenie": "Na rysunku przedstawiono fragment wykresu funkcji \\(f\\) określonej na \\(\\mathbb R\\). Wybierz wzór funkcji \\(f\\).\n\nA. \\(f(x)=2\\sin(2x)\\)\nB. \\(f(x)=2\\pi\\sin(2x)\\)\nC. \\(f(x)=2\\sin\\left(\\frac{x}{2}\\right)\\)\nD. \\(f(x)=2\\pi\\sin\\left(\\frac{x}{2}\\right)\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Iloraz wielomianu \\(5x^3-7x^2-4x-4\\) przez dwumian \\(x-2\\) ma postać \\(ax^2+bx+c\\). Wpisz kolejno wartości współczynników \\(a,b,c\\).",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Niech \\(\\log_2 9=c\\). Udowodnij, że \\(\\log_3 54=\\frac{3c+2}{c}\\).",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "7",
+    "polecenie": "Na boku \\(AB\\) trójkąta \\(ABC\\) obrano kolejno punkty \\(D,E,F\\) tak, że \\(|AD|=|DE|=|EF|=2|FB|\\). Na bokach \\(AC\\) i \\(BC\\) leżą odpowiednio \\(G\\) i \\(H\\), przy czym \\(DG\\parallel EC\\) oraz \\(FH\\parallel EC\\) (zobacz rysunek). Udowodnij, że jeżeli pole trójkąta \\(FBH\\) wynosi \\(S\\), to pole trójkąta \\(ADG\\) wynosi \\(3S\\).",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Rozwiąż równanie \\(2\\cos^2x-\\cos x=\\sin(2x)-\\sin x\\) dla \\(x\\in[0,2\\pi]\\).",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "9",
+    "polecenie": "Dane są proste \\(k\\colon x-2y=0\\) oraz \\(l\\colon 2x+y-1=0\\). Punkt \\(P\\) leży na prostej \\(y=x+4\\). Odległość \\(P\\) od \\(k\\) jest dwukrotnie większa od jego odległości od \\(l\\). Oblicz współrzędne \\(P\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "10",
+    "polecenie": "Sześcian \\(ABCDEFGH\\) ma krawędź długości \\(2\\). Punkt \\(S\\) jest środkiem krawędzi \\(DH\\) (zobacz rysunek). Oblicz miarę najmniejszego kąta wewnętrznego trójkąta \\(CFS\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "11",
+    "polecenie": "W programie telewizyjnym uczestniczy trzech sportowców oraz pewna liczba aktorów. Fotele ustawiono w jednym rzędzie, po jednym dla każdej osoby. Uczestnicy zajmują miejsca losowo. Prawdopodobieństwo, że cała trójka sportowców usiądzie obok siebie, wynosi \\(\\frac1{15}\\). Oblicz liczbę aktorów.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "12",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[(x-3)\\bigl(x^2+(m-1)x-6m^2+2m\\bigr)=0\\]\nma dokładnie dwa rozwiązania.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "13",
+    "polecenie": "Dana jest funkcja \\(f(x)=\\frac{x^3+k}{x}\\) dla \\(x\\in\\mathbb R\\setminus\\{0\\}\\). Wyznacz \\(k\\), dla którego prosta \\(y=-x\\) jest styczna do wykresu \\(f\\).",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "14",
+    "polecenie": "Czworokąt \\(ABCD\\) opisano na okręgu. Bok \\(AD\\) ma długość dwukrotnie większą od boku \\(AB\\), a przekątna \\(BD\\) ma długość \\(6\\). Ponadto \\(\\cos\\angle ADB=\\frac78\\), \\(\\angle BCD=90^\\circ\\) oraz \\(|AB|>\\sqrt{15}\\). Oblicz długość boku \\(BC\\).",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozważmy wszystkie trójkąty prostokątne \\(ABC\\) o przeciwprostokątnej \\(AB\\) i obwodzie \\(4\\). Niech \\(x=|AC|\\).\n\na) Udowodnij, że pole trójkąta określa wzór\n\\[P(x)=\\frac{x(4-2x)}{4-x}.\\]\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu oraz to pole.",
+    "strona_zadania": 22
   }
 ]

@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Równanie \\(\\left||x-4|-2\\right|=2\\) ma dokładnie\n\nA. dwa rozwiązania rzeczywiste.\nB. jedno rozwiązanie rzeczywiste.\nC. cztery rozwiązania rzeczywiste.\nD. trzy rozwiązania rzeczywiste.",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Liczba \\(\\log_4 25+\\log_2 10\\) jest równa\n\nA. \\(\\log_2 15\\)\nB. \\(\\log_2 50\\)\nC. \\(\\log_2 210\\)\nD. \\(\\log_2 635\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "3",
+    "polecenie": "Punkt \\(P'=(3,-3)\\) jest obrazem punktu \\(P=(1,3)\\) w jednokładności o środku w punkcie \\(S=(-2,12)\\). Skala tej jednokładności jest równa\n\nA. \\(\\frac35\\)\nB. \\(\\frac53\\)\nC. \\(2\\)\nD. \\(3\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "Funkcja \\(f(x)=\\displaystyle\\frac{x}{2x-8}\\) jest określona dla każdej liczby rzeczywistej \\(x\\ne4\\).\n\nWówczas pochodna tej funkcji dla argumentu \\(x=\\sqrt2+4\\) jest równa\n\nA. \\(-\\frac16\\)\nB. \\(\\frac{\\sqrt2+2}{\\sqrt2}\\)\nC. \\(-1\\)\nD. \\(2\\sqrt2\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny, w którym iloraz jest trzy razy większy od pierwszego wyrazu, a suma wszystkich wyrazów tego ciągu jest równa \\(\\frac14\\). Pierwszy wyraz tego ciągu jest równy\n\nA. \\(\\frac37\\)\nB. \\(\\frac17\\)\nC. \\(\\frac73\\)\nD. \\(7\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "6",
+    "polecenie": "Funkcja kwadratowa \\(f(x)=-x^2+bx+c\\) ma dwa miejsca zerowe: \\(x_1=-1\\) i \\(x_2=12\\). Oblicz największą wartość tej funkcji. Zakoduj kolejno, od lewej do prawej, cyfrę jedności i pierwsze dwie cyfry po przecinku rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "7",
+    "polecenie": "Udowodnij, że dla każdej liczby rzeczywistej \\(x\\) i dla każdej liczby rzeczywistej \\(y\\) prawdziwa jest nierówność\n\\[5x^2+y^2-4xy+6x+9\\ge0.\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "8",
+    "polecenie": "Miary kątów trójkąta \\(ABC\\) są równe \\(\\alpha=|\\angle BAC|\\), \\(\\beta=|\\angle ABC|\\) i \\(\\gamma=|\\angle ACB|\\). Punkt \\(S\\) jest środkiem okręgu wpisanego w ten trójkąt, a proste zawierające odcinki \\(AS\\) i \\(BS\\) przecinają boki \\(BC\\) i \\(AC\\) tego trójkąta w punktach odpowiednio \\(D\\) i \\(E\\) (zobacz rysunek).\n\nWykaż, że jeżeli \\(\\alpha+\\beta=2\\gamma\\), to na czworokącie \\(DCES\\) można opisać okrąg.",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "9",
+    "polecenie": "Z cyfr \\(0,1,2\\) tworzymy pięciocyfrowe liczby całkowite dodatnie podzielne przez \\(15\\). Oblicz, ile możemy utworzyć takich liczb.",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "10",
+    "polecenie": "Ciąg \\((a_n)\\) jest arytmetyczny, a ciąg \\((b_n)\\) jest geometryczny. Pierwszy wyraz \\(a_1\\) ciągu arytmetycznego jest ilorazem ciągu geometrycznego \\((b_n)\\). Wyrazy ciągu \\((a_n)\\) są liczbami całkowitymi, a suma ośmiu początkowych wyrazów tego ciągu jest równa \\(124\\). Natomiast pierwszy wyraz \\(b_1\\) ciągu geometrycznego jest różnicą ciągu arytmetycznego \\((a_n)\\). Suma dwóch pierwszych wyrazów ciągu geometrycznego \\((b_n)\\) jest równa \\(18\\). Wyznacz te ciągi.",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "11",
+    "polecenie": "Rozwiąż równanie \\(3\\sin\\left(x-\\frac{\\pi}{4}\\right)+\\cos\\left(x+\\frac{\\pi}{4}\\right)=1\\) w przedziale \\(\\langle 0,2\\pi\\rangle\\).",
+    "strona_zadania": 9
+  },
+  {
+    "numer": "12",
+    "polecenie": "Prosta \\(l\\), na której leży punkt \\(P=(8,2)\\), tworzy z dodatnimi półosiami układu współrzędnych trójkąt prostokątny o polu równym \\(36\\). Wyznacz równanie prostej \\(l\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "13",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie \\(x^2-3mx+2m^2+1=0\\) ma dwa różne rozwiązania takie, że każde należy do przedziału \\((-\\infty,3)\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "14",
+    "polecenie": "Trapez równoramienny \\(ABCD\\) o ramieniu długości \\(6\\) jest wpisany w okrąg, przy czym dłuższa podstawa \\(AB\\) trapezu, o długości \\(12\\), jest średnicą tego okręgu. Przekątne \\(AC\\) i \\(BD\\) trapezu przecinają się w punkcie \\(P\\). Oblicz pole koła wpisanego w trójkąt \\(ABP\\).",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozpatrujemy wszystkie prostopadłościany o objętości \\(8\\), których stosunek długości dwóch krawędzi wychodzących z tego samego wierzchołka jest równy \\(1:2\\) oraz suma długości wszystkich dwunastu krawędzi jest mniejsza od \\(28\\). Wyznacz pole powierzchni całkowitej prostopadłościanu jako funkcję długości jednej z jego krawędzi. Wyznacz dziedzinę tej funkcji. Oblicz wymiary tego spośród rozpatrywanych prostopadłościanów, którego pole powierzchni całkowitej jest najmniejsze.",
+    "strona_zadania": 16
+  }
+]

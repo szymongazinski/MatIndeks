@@ -1,7 +1,77 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nZ własności logarytmów dostajemy \\(\\log_5 40=\\log_5(2^3\\cdot5)=3a+1\\) i \\(\\log_5 18=\\log_5(2\\cdot3^2)=a+2b\\). Zmiana podstawy daje\n\\[\\log_{18}40=\\frac{3a+1}{2b+a}.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nLicznik rozkłada się na \\(\\frac12(x+3)(x+4)\\), a mianownik na \\((5-x)(x+3)\\). W pobliżu \\(-3\\) dla \\(x\\ne-3\\) skracamy \\(x+3\\) i obliczamy\n\\[\\lim_{x\\to-3}\\frac{x+4}{2(5-x)}=\\frac1{16}.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nWarunek, że obie współrzędne sumy wektorów są zerami, daje \\(2m+n+3=0\\) i \\(m+\\frac23 n+3=0\\). Podstawiając \\(n=-3-2m\\) do drugiego równania, otrzymujemy \\(1-\\frac m3=0\\). Stąd \\(m=3\\) i \\(n=-9\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź w kluczu CKE — A, czyli \\(5\\).**\n\nJeżeli \\(\\gamma\\) jest kątem między bokami długości \\(5\\) i \\(8\\), to \\(12=\\frac12\\cdot5\\cdot8\\sin\\gamma\\), zatem \\(\\sin\\gamma=\\frac35\\). Z założonej ostrości tego kąta wynika \\(\\cos\\gamma=\\frac45\\). Z twierdzenia cosinusów dla trzeciego boku \\(c\\) mamy\n\\[c^2=5^2+8^2-2\\cdot5\\cdot8\\cdot\\frac45=25,\\]\nczyli \\(c=5\\).\n\n**Rozbieżność w treści CKE.** Trójkąt o bokach \\(5,5,8\\) jest rozwartokątny, ponieważ \\(8^2>5^2+5^2\\). Przy wszystkich warunkach z arkusza żaden trójkąt nie spełnia polecenia.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Odpowiedź CKE — \\(1,\\ 7,\\ 9\\).**\n\nPo ograniczeniu wyboru do \\(240\\) mężczyzn mamy \\(43\\) osoby w wieku przedemerytalnym. Szukane prawdopodobieństwo wynosi \\(\\frac{43}{240}=0{,}179166\\ldots\\), więc wpisujemy \\(1,7,9\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Różnica lewej i prawej strony wynosi\n\\[\\begin{aligned}\nx^4+y^4-xy(x^2+y^2)\n&=x^3(x-y)-y^3(x-y)\\\\\n&=(x-y)(x^3-y^3)\\\\\n&=(x-y)^2(x^2+xy+y^2).\n\\end{aligned}\\]\nPierwszy czynnik jest dodatni, gdy \\(x\\ne y\\). Dla \\(xy>0\\) drugi czynnik można zapisać jako \\((x-y)^2+3xy>0\\). Dla \\(xy<0\\) korzystamy z \\((x+y)^2-xy>0\\). Gdy jedna z liczb jest zerem, drugi czynnik jest kwadratem drugiej, niezerowej liczby. Iloczyn jest więc dodatni.\n\nWariant z funkcją kwadratową. Gdy \\(y\\ne0\\), trójmian \\(x^2+xy+y^2\\) ma dodatni współczynnik przy \\(x^2\\) i wyróżnik \\(-3y^2<0\\), więc jest dodatni. Dla \\(y=0\\) mamy \\(x\\ne0\\) i \\(x^2>0\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób 1 — parzystość pierwszej cyfry**\n\nJeśli pierwsza cyfra jest nieparzysta, wybieramy ją na \\(5\\) sposobów. Wśród czterech pozostałych miejsc wybieramy jedno na drugą cyfrę nieparzystą. Na każdym późniejszym miejscu wybór cyfry o ustalonej parzystości ma \\(5\\) możliwości. Daje to \\(5\\cdot4\\cdot5^4=12\\,500\\) liczb.\n\nJeśli pierwsza cyfra jest parzysta, są \\(4\\) możliwości, bo nie może to być \\(0\\). Wybieramy dwa z pozostałych czterech miejsc na cyfry nieparzyste, a potem każdą z czterech cyfr na \\(5\\) sposobów. Daje to \\(4\\binom42 5^4=15\\,000\\) liczb. Razem \\(27\\,500\\).\n\n**Sposób 2 — odjęcie napisów zaczynających się od zera**\n\nNapisów pięciocyfrowych o dwóch cyfrach nieparzystych jest \\(\\binom52 5^5=31\\,250\\). Wśród nich \\(\\binom42 5^4=3750\\) zaczyna się od zera, bo wtedy obie nieparzyste cyfry muszą znaleźć się na czterech ostatnich miejscach. Wynik to \\(31\\,250-3750=27\\,500\\).",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(D(x)=(2x+1)(2x+3)\\). Dziedzina wyklucza \\(-\\frac32\\) i \\(-\\frac12\\). Po przeniesieniu prawej strony na lewą licznik po sprowadzeniu do wspólnego mianownika to\n\\[(3x+1)(2x+3)-(3x+4)(2x+1)=-1.\\]\n\n**Sposób 1 — znak ilorazu**\n\nOtrzymujemy \\(-1/D(x)\\le0\\), co w dziedzinie zachodzi dokładnie wtedy, gdy \\(D(x)>0\\). Iloczyn dwóch rosnących czynników jest dodatni poza przedziałem ich miejsc zerowych.\n\n**Sposób 2 — mnożenie przez dodatni kwadrat**\n\nMnożymy nierówność z różnicą ułamków przez \\(D(x)^2>0\\). Po wyłączeniu \\(D(x)\\) i użyciu obliczonego licznika otrzymujemy \\(-D(x)\\le0\\). Z wykluczeniem jego miejsc zerowych daje to \\(D(x)>0\\).\n\n**Sposób 3 — mnożenie według znaku mianowników**\n\nDla \\(x<-\\frac32\\) lub \\(x>-\\frac12\\) mamy \\(D(x)>0\\). Po pomnożeniu przez \\(D(x)\\) otrzymujemy prawdę \\(-1\\le0\\). Dla \\(-\\frac32<x<-\\frac12\\) mnożnik jest ujemny i znak nierówności zmienia zwrot. Warunek \\(-1\\ge0\\) jest sprzeczny.\n\nKażda metoda daje \\(x\\in(-\\infty,-\\frac32)\\cup(-\\frac12,\\infty)\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "**Sposób 1 — podobieństwo trójkątów**\n\nOznaczamy przez \\(H\\) wysokość trapezu, a przez \\(h\\) odległość \\(O\\) od podstawy \\(AB\\). Z równoległości \\(AD\\parallel A'O\\) wynika podobieństwo \\(ABD\\) i \\(A'BO\\), więc \\(\\frac{|AB|}{|A'B|}=\\frac Hh\\). Równoległość \\(BC\\parallel B'O\\) daje podobieństwo \\(ABC\\) i \\(AB'O\\), więc \\(\\frac{|AB|}{|AB'|}=\\frac Hh\\). Stąd \\(|A'B|=|AB'|\\). Odejmujemy te długości od \\(|AB|\\) i otrzymujemy \\(|AA'|=|BB'|\\).\n\n**Sposób 2 — pola równoległoboków**\n\nNiech \\(F\\) będzie przecięciem \\(A'O\\) z \\(CD\\), a \\(E\\) przecięciem \\(B'O\\) z \\(CD\\). Niech \\(h_1,h_2\\) oznaczają odległości \\(O\\) od podstaw i \\(H=h_1+h_2\\). Trójkąty \\(AOD\\) i \\(BOC\\) mają równe pola \\(p\\). Wynika to z odjęcia wspólnego trójkąta \\(ABO\\) od trójkątów \\(ABD\\) i \\(ABC\\), których pola są równe.\n\nOznaczmy \\(a=|AA'|\\) i \\(b=|BB'|\\). Równoległobok \\(AA'FD\\) ma pole \\(aH\\) i składa się z trzech trójkątów o polach \\(\\frac12 a h_1,p,\\frac12 a h_2\\). Zatem \\(aH=\\frac12 aH+p\\), więc \\(p=\\frac12aH\\). Tak samo z równoległoboku \\(BB'EC\\) wynika \\(p=\\frac12 bH\\). Wobec \\(H>0\\) otrzymujemy \\(a=b\\).",
+    "strona_rozwiazania": 12
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Podciągi o indeksach nieparzystych i parzystych są geometryczne z ilorazem \\(q^2<1\\). Ich pierwsze wyrazy to kolejno \\(q,q^2\\), a sumy wynoszą\n\\[S_N=\\frac{q}{1-q^2},\\qquad S_P=\\frac{q^2}{1-q^2}.\\]\nWarunek \\(S_P\\ne0\\) wyklucza \\(q=0\\). Równanie z zadania ma postać\n\\[\\frac1q=\\frac{q-q^2}{1-q^2}=\\frac q{1+q}.\\]\nStąd \\(q^2-q-1=0\\), więc \\(q=\\frac{1-\\sqrt5}{2}\\) lub \\(q=\\frac{1+\\sqrt5}{2}\\). Tylko \\(q=\\frac{1-\\sqrt5}{2}\\) spełnia \\(|q|<1\\).",
+    "strona_rozwiazania": 14
+  },
+  {
     "numer": "11",
     "rozwiazanie": "**Sposób 1 — sinus sumy**\nDzielimy przez \\(2\\) i zastępujemy \\(\\tfrac12\\) przez \\(\\sin\\tfrac\\pi6\\), a \\(\\tfrac{\\sqrt3}2\\) przez \\(\\cos\\tfrac\\pi6\\). Zatem \\(\\sin(\\frac\\pi6+3x)=-\\frac12\\). Rozwiązujemy dwa równania\n\\[\\tfrac\\pi6+3x=\\tfrac{7\\pi}{6}+2k\\pi\\qquad\\text{lub}\\qquad\\tfrac\\pi6+3x=-\\tfrac\\pi6+2k\\pi,\\]\ngdzie \\(k\\in\\mathbb Z\\). Stąd \\(x=\\frac\\pi3+\\frac{2k\\pi}3\\) lub \\(x=-\\frac\\pi9+\\frac{2k\\pi}3\\).\n\n**Sposób 2 — cosinus różnicy**\nPo podzieleniu przez \\(2\\) przedstawiamy współczynniki jako \\(\\cos\\frac\\pi3\\) i \\(\\sin\\frac\\pi3\\). Z równania \\(\\cos(3x-\\frac\\pi3)=-\\frac12\\) wynika, że \\(3x-\\frac\\pi3=\\frac{2\\pi}3+2k\\pi\\) lub \\(3x-\\frac\\pi3=\\frac{4\\pi}3+2k\\pi\\). Dostajemy \\(x=\\frac\\pi3+\\frac{2k\\pi}3\\) lub \\(x=\\frac{5\\pi}9+\\frac{2k\\pi}3\\).\n\n**Sposób 3 — podniesienie do kwadratu i sprawdzenie**\nPodnosimy \\(\\cos(3x)+\\sqrt3\\sin(3x)=-1\\) do kwadratu. Po użyciu jedynki trygonometrycznej mamy\n\\[2\\sin(3x)\\big(\\sin(3x)+\\sqrt3\\cos(3x)\\big)=0.\\]\nZ pierwszego czynnika dostajemy \\(3x=k\\pi\\). Wtedy lewa strona równania przed podniesieniem do kwadratu to \\((-1)^k\\), więc odpowiadają mu nieparzyste \\(k\\). W drugim czynniku \\(\\cos(3x)\\) musi być niezerowy, bo inaczej \\(\\sin(3x)\\ne0\\). Dzieląc przez \\(\\cos(3x)\\), dostajemy \\(\\tan(3x)=-\\sqrt3\\), stąd \\(3x=-\\frac\\pi3+k\\pi\\). Dla tych liczb lewa strona przed podniesieniem do kwadratu jest równa \\((-1)^k(\\frac12-\\frac32)=-(-1)^k\\). Wybieramy parzyste \\(k\\).\n\nZ każdego sposobu wybieramy rozwiązania w domkniętym przedziale \\([0,\\pi]\\). Są to \\(\\frac\\pi3,\\frac{5\\pi}9,\\pi\\).",
     "strona_rozwiazania": 17
+  },
+  {
+    "numer": "12",
+    "strona_rozwiazania": 22,
+    "rozwiazanie": "Ponieważ kąt środkowy \\(COD\\) ma miarę \\(2\\alpha\\), kąt wpisany \\(DBC\\) oparty na tym samym łuku ma miarę \\(\\alpha\\). Z twierdzenia sinusów w trójkącie \\(BCD\\), wpisanym w okrąg o promieniu \\(R\\), dostajemy\n\\[\\frac{|CD|}{\\sin\\alpha}=2R,\\qquad |CD|=2R\\sin\\alpha.\\]\n\nTrójkąty \\(AOD\\) i \\(BOC\\) są przystające. Ponieważ \\(A,O,B\\) leżą na jednej prostej, mamy\n\\[|\\angle BOC|=\\frac{180^\\circ-2\\alpha}{2}=90^\\circ-\\alpha.\\]\nWysokość \\(h\\) trapezu to odległość \\(C\\) od \\(AB\\), zatem \\(h=R\\sin(90^\\circ-\\alpha)=R\\cos\\alpha\\).\n\nW trójkącie \\(BOC\\) twierdzenie cosinusów daje\n\\[|BC|^2=2R^2-2R^2\\cos(90^\\circ-\\alpha)=2R^2(1-\\sin\\alpha).\\]\nRzutem przekątnej \\(B_1C\\) na podstawę jest \\(BC\\), więc dla wysokości graniastosłupa \\(H\\) mamy\n\\[H=|BC|\\tan\\alpha=R\\sqrt{2-2\\sin\\alpha}\\tan\\alpha.\\]\n\nSzukana objętość jest iloczynem pola trapezu i wysokości graniastosłupa. Po podstawieniu:\n\\[V=\\frac{2R+2R\\sin\\alpha}{2}\\,R\\cos\\alpha\\,R\\sqrt{2-2\\sin\\alpha}\\tan\\alpha.\\]\nStąd \\(V=R^3\\sin\\alpha\\,(1+\\sin\\alpha)\\sqrt{2-2\\sin\\alpha}\\).\n\nW kryteriach punktowania na stronie 22 przed przykładowym rozwiązaniem CKE wpisano przez pomyłkę \\(1-\\sin\\alpha\\) zamiast \\(1+\\sin\\alpha\\). Pełne rozwiązanie w PDF podaje powyższy poprawny wynik."
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Jednym z pierwiastków jest \\(x_3=4\\). Oznaczmy \\(Q_m(x)=x^2+(m-3)x+m^2-m-6\\). Pozostałe dwa pierwiastki muszą być rzeczywiste, różne i różne od \\(4\\). Wyróżnik wynosi\n\\[\\Delta=(m-3)^2-4(m^2-m-6)=(m-3)(-3m-11).\\]\nWarunek \\(\\Delta>0\\) daje \\(-\\frac{11}3<m<3\\). Ponadto \\(Q_m(4)=m^2+3m-2\\ne0\\), więc \\(m\\ne\\frac{-3\\pm\\sqrt{17}}2\\).\n\nDla pierwiastków \\(Q_m\\) mamy \\(x_1+x_2=3-m\\) i \\(x_1x_2=m^2-m-6\\). Nierówność z zadania, po podstawieniu \\(x_3=4\\) i użyciu \\(x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2\\), jest równoważna\n\\[\\begin{aligned}\n0&<6x_1x_2-(x_1+x_2)^2+5m+35\\\\\n&=6(m^2-m-6)-(3-m)^2+5m+35\\\\\n&=5(m-1)(m+2).\n\\end{aligned}\\]\nStąd \\(m<-2\\) lub \\(m>1\\). Bierzemy część wspólną warunków. Liczba \\(\\frac{-3+\\sqrt{17}}2\\) leży między \\(-2\\) a \\(1\\), więc już jest wykluczona. Ostatecznie\n\\[m\\in\\left(-\\frac{11}3,\\frac{-3-\\sqrt{17}}2\\right)\n\\cup\\left(\\frac{-3-\\sqrt{17}}2,-2\\right)\\cup(1,3).\\]",
+    "strona_rozwiazania": 25
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Punkty wspólne okręgów wyznaczamy z przecięcia \\(o_1\\) i prostej \\(k\\). Po podstawieniu \\(y=-3x-6\\) dostajemy \\(5x^2+24x+19=0\\), więc punkty to \\(A=(-\\frac{19}5,\\frac{27}5)\\) i \\(B=(-1,-3)\\). Niech \\(S_2=(a,b)\\) będzie środkiem \\(o_2\\).\n\n**Sposób 1 — prosta przechodząca przez środki**\n\nŚrodki okręgów leżą na symetralnej wspólnej cięciwy \\(AB\\), czyli na prostej prostopadłej do \\(k\\) i przechodzącej przez \\(S_1=(6,4)\\). Ma ona równanie \\(y=\\frac13x+2\\), więc \\(b=\\frac a3+2\\). Z warunku \\(|BS_2|=2\\sqrt5\\) wynika\n\\[(a+1)^2+\\left(\\frac a3+5\\right)^2=20,\\]\nczyli \\(5a^2+24a+27=0\\). Dostajemy \\(a=-3\\) lub \\(a=-\\frac95\\), a więc \\(S_2=(-3,1)\\) lub \\(S_2=(-\\frac95,\\frac75)\\).\n\n**Sposób 2 — warunki odległości od obu punktów**\n\nZ \\(|AS_2|^2=|BS_2|^2=20\\) mamy\n\\[\\begin{cases}\n(a+1)^2+(b+3)^2=20,\\\\\n(a+\\frac{19}5)^2+(b-\\frac{27}5)^2=20.\n\\end{cases}\\]\nOdejmując równania, otrzymujemy \\(a=3b-6\\). Podstawienie do pierwszego daje \\(10b^2-24b+14=0\\), więc \\(b=1\\) lub \\(b=\\frac75\\). Otrzymujemy te same dwa punkty.\n\nWyrażenie \\(3x+y+6\\) ma wartość dodatnią w \\(S_1=(6,4)\\) oraz w kandydacie \\((-\\frac95,\\frac75)\\), a w \\((-3,1)\\) ma wartość \\(-2\\). Po przeciwnych stronach \\(k\\) są więc \\(S_1\\) i \\((-3,1)\\). Szukany okrąg ma równanie\n\\[(x+3)^2+(y-1)^2=20.\\]",
+    "strona_rozwiazania": 30
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "**a) Wzór na pole**\n\nNiech \\(S\\) będzie środkiem okręgu, \\(D\\) środkiem podstawy \\(AB\\), \\(a=|AB|\\) i \\(b=|AC|=|BC|\\). Ponieważ \\(ABC\\) jest ostrokątny, \\(S\\) leży wewnątrz trójkąta. Zatem \\(SD=x\\) i \\(SC=1\\) dają wysokość \\(|CD|=x+1\\). Z twierdzenia Pitagorasa w \\(SDB\\) dostajemy \\(a/2=\\sqrt{1-x^2}\\). Stąd\n\\[P(x)=\\frac a2|CD|=(x+1)\\sqrt{1-x^2}.\\]\n\nWariant ze wzorem Herona daje \\(P=\\frac a4\\sqrt{4b^2-a^2}\\). Z \\(BCD\\) mamy \\(b^2=(x+1)^2+a^2/4\\), więc \\(4b^2-a^2=4(x+1)^2\\). Po podstawieniu \\(a/2=\\sqrt{1-x^2}\\) otrzymujemy ten sam wzór.\n\n**b) Dziedzina**\n\nOstrość trójkąta daje \\(x>0\\), a podstawa jako niezerowa cięciwa wymaga \\(x<1\\). Dla każdego \\(x\\in(0,1)\\) można wybrać taką cięciwę i wziąć za trzeci wierzchołek punkt okręgu na jej symetralnej po stronie środka. Środek leży we wnętrzu powstałego trójkąta, więc trójkąt jest ostrokątny. Dziedzina to \\((0,1)\\).\n\n**c) Sposób 1 — pochodna kwadratu pola**\n\nNiech \\(f(x)=P(x)^2=(x+1)^2(1-x^2)=-x^4-2x^3+2x+1\\). Pochodna \\(f'(x)=2(x+1)^2(1-2x)\\) jest dodatnia dla \\(0<x<\\frac12\\) i ujemna dla \\(\\frac12<x<1\\). Zatem \\(P\\) osiąga maksimum dla \\(x=\\frac12\\), a \\(P(\\frac12)=\\frac{3\\sqrt3}4\\).\n\n**c) Sposób 2 — porównanie trójkątów wpisanych**\n\nW dowolnym nierównobocznym trójkącie wpisanym w okrąg możemy nazwać wierzchołki \\(E,F,G\\) tak, że z dwóch łuków wychodzących z \\(E\\) łuk do \\(F\\) jest krótszy od jednej trzeciej obwodu okręgu, a łuk do \\(G\\) dłuższy. Niech \\(E'\\) będzie odbiciem \\(E\\) względem symetralnej cięciwy \\(FG\\). Łuki od \\(F\\) do \\(G\\) przez \\(E\\) lub \\(E'\\) mają tę samą długość, a odległość od prostej \\(FG\\) wzdłuż tego łuku rośnie do jego środka i potem maleje symetrycznie. Zatem każdy punkt leżący między \\(E\\) a \\(E'\\) na tym łuku daje większe pole trójkąta o podstawie \\(FG\\) niż \\(E\\). Wybieramy \\(P\\) między \\(E\\) a \\(E'\\) tak, by łuk \\(PG\\) miał jedną trzecią obwodu. Możemy to zrobić, bo przy \\(E'\\) długość łuku do \\(G\\) jest równa pierwotnej długości łuku \\(EF\\).\n\nJeżeli pozostałe łuki \\(PF\\) i \\(FG\\) są równe, trójkąt \\(PFG\\) jest równoboczny. Jeśli się różnią, stosujemy to samo przesunięcie do \\(F\\), pozostawiając \\(P,G\\) na miejscu. Otrzymujemy trójkąt równoboczny o jeszcze większym polu. Zatem największe pole ma trójkąt równoboczny. Przy promieniu \\(1\\) jego bok ma długość \\(\\sqrt3\\), a wysokość \\(\\frac32\\). Dostajemy \\(x=\\frac32-1=\\frac12\\) i \\(P=\\frac{3\\sqrt3}4\\).\n\n**c) Wariant z nierównością średnich**\n\nCztery dodatnie liczby \\(\\frac{x+1}{3},\\frac{x+1}{3},\\frac{x+1}{3},1-x\\) mają sumę \\(2\\). Nierówność średnich daje\n\\[\\frac{P(x)^2}{27}=\\left(\\frac{x+1}{3}\\right)^3(1-x)\\le\\left(\\frac12\\right)^4.\\]\nZatem \\(P(x)\\le\\frac{3\\sqrt3}{4}\\). Równość zachodzi dokładnie dla \\(\\frac{x+1}{3}=1-x\\), czyli dla \\(x=\\frac12\\).",
+    "strona_rozwiazania": 36
   }
 ]
