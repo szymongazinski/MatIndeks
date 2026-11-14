@@ -86,5 +86,8 @@ test('published geometry categories describe the question and tags describe the 
   assert.deepEqual(optimization.kategorie, ['Optymalizacja funkcji']);
   assert.ok(!optimization.tagi.includes(rightTriangle));
   assert.ok(optimization.tagi.includes('Pochodna funkcji wymiernej'));
+  const trapezoid = catalog.task('2018-05-15');
+  assert.deepEqual(trapezoid.kategorie, ['Optymalizacja funkcji']);
+  assert.ok(trapezoid.tagi.includes('Okrąg wpisany w czworokąt'));
   database.close();
 });

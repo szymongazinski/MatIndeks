@@ -1,4 +1,4 @@
-import { kindLabels, suggestTags } from './catalog.js?v=6';
+import { kindLabels, suggestTags } from './catalog.js?v=7';
 
 export function element(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);

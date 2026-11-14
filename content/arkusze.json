@@ -2829,8 +2829,7 @@
     "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\na) Wyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji.\nb) Wyznacz wysokość graniastosłupa o największej objętości.\n\nZapisz obliczenia.\n\n[[rysunek:2023-06-13|Graniastosłup prawidłowy czworokątny z odcinkiem d od środka O dolnej podstawy do wierzchołka H.]]",
     "rozwiazanie": "Niech \\(a\\) będzie krawędzią kwadratowej podstawy. Mamy \\(|OD|=a\\sqrt2/2\\). W trójkącie prostokątnym \\(ODH\\) zachodzi \\(d^2=h^2+a^2/2\\), więc\n\\[a^2=2(d^2-h^2),\\qquad V(h)=2(d^2-h^2)h.\\]\nWarunki \\(a>0\\) i \\(h>0\\) dają dziedzinę \\(h\\in(0,d)\\).\n\nPochodna \\(V'(h)=2(d^2-3h^2)\\) znika w tej dziedzinie tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia przed tym punktem i ujemna za nim, więc objętość jest największa przy wysokości \\(h=d/\\sqrt3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -3929,8 +3928,7 @@
     "polecenie": "Rozważ wszystkie ostrokątne trójkąty równoramienne \\(ABC\\) o ramionach \\(|AC|=|BC|\\), wpisane w okrąg o promieniu \\(1\\). Niech \\(x\\) oznacza odległość środka okręgu od \\(AB\\).\n\na) Wykaż, że pole jest równe \\(P(x)=(x+1)\\sqrt{1-x^2}\\).\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz \\(x\\) dla trójkąta o największym polu i podaj to pole.",
     "rozwiazanie": "**a) Wzór na pole**\n\nNiech \\(S\\) będzie środkiem okręgu, \\(D\\) środkiem podstawy \\(AB\\), \\(a=|AB|\\) i \\(b=|AC|=|BC|\\). Ponieważ \\(ABC\\) jest ostrokątny, \\(S\\) leży wewnątrz trójkąta. Zatem \\(SD=x\\) i \\(SC=1\\) dają wysokość \\(|CD|=x+1\\). Z twierdzenia Pitagorasa w \\(SDB\\) dostajemy \\(a/2=\\sqrt{1-x^2}\\). Stąd\n\\[P(x)=\\frac a2|CD|=(x+1)\\sqrt{1-x^2}.\\]\n\nWariant ze wzorem Herona daje \\(P=\\frac a4\\sqrt{4b^2-a^2}\\). Z \\(BCD\\) mamy \\(b^2=(x+1)^2+a^2/4\\), więc \\(4b^2-a^2=4(x+1)^2\\). Po podstawieniu \\(a/2=\\sqrt{1-x^2}\\) otrzymujemy ten sam wzór.\n\n**b) Dziedzina**\n\nOstrość trójkąta daje \\(x>0\\), a podstawa jako niezerowa cięciwa wymaga \\(x<1\\). Dla każdego \\(x\\in(0,1)\\) można wybrać taką cięciwę i wziąć za trzeci wierzchołek punkt okręgu na jej symetralnej po stronie środka. Środek leży we wnętrzu powstałego trójkąta, więc trójkąt jest ostrokątny. Dziedzina to \\((0,1)\\).\n\n**c) Sposób 1 — pochodna kwadratu pola**\n\nNiech \\(f(x)=P(x)^2=(x+1)^2(1-x^2)=-x^4-2x^3+2x+1\\). Pochodna \\(f'(x)=2(x+1)^2(1-2x)\\) jest dodatnia dla \\(0<x<\\frac12\\) i ujemna dla \\(\\frac12<x<1\\). Zatem \\(P\\) osiąga maksimum dla \\(x=\\frac12\\), a \\(P(\\frac12)=\\frac{3\\sqrt3}4\\).\n\n**c) Sposób 2 — porównanie trójkątów wpisanych**\n\nW dowolnym nierównobocznym trójkącie wpisanym w okrąg możemy nazwać wierzchołki \\(E,F,G\\) tak, że z dwóch łuków wychodzących z \\(E\\) łuk do \\(F\\) jest krótszy od jednej trzeciej obwodu okręgu, a łuk do \\(G\\) dłuższy. Niech \\(E'\\) będzie odbiciem \\(E\\) względem symetralnej cięciwy \\(FG\\). Łuki od \\(F\\) do \\(G\\) przez \\(E\\) lub \\(E'\\) mają tę samą długość, a odległość od prostej \\(FG\\) wzdłuż tego łuku rośnie do jego środka i potem maleje symetrycznie. Zatem każdy punkt leżący między \\(E\\) a \\(E'\\) na tym łuku daje większe pole trójkąta o podstawie \\(FG\\) niż \\(E\\). Wybieramy \\(P\\) między \\(E\\) a \\(E'\\) tak, by łuk \\(PG\\) miał jedną trzecią obwodu. Możemy to zrobić, bo przy \\(E'\\) długość łuku do \\(G\\) jest równa pierwotnej długości łuku \\(EF\\).\n\nJeżeli pozostałe łuki \\(PF\\) i \\(FG\\) są równe, trójkąt \\(PFG\\) jest równoboczny. Jeśli się różnią, stosujemy to samo przesunięcie do \\(F\\), pozostawiając \\(P,G\\) na miejscu. Otrzymujemy trójkąt równoboczny o jeszcze większym polu. Zatem największe pole ma trójkąt równoboczny. Przy promieniu \\(1\\) jego bok ma długość \\(\\sqrt3\\), a wysokość \\(\\frac32\\). Dostajemy \\(x=\\frac32-1=\\frac12\\) i \\(P=\\frac{3\\sqrt3}4\\).\n\n**c) Wariant z nierównością średnich**\n\nCztery dodatnie liczby \\(\\frac{x+1}{3},\\frac{x+1}{3},\\frac{x+1}{3},1-x\\) mają sumę \\(2\\). Nierówność średnich daje\n\\[\\frac{P(x)^2}{27}=\\left(\\frac{x+1}{3}\\right)^3(1-x)\\le\\left(\\frac12\\right)^4.\\]\nZatem \\(P(x)\\le\\frac{3\\sqrt3}{4}\\). Równość zachodzi dokładnie dla \\(\\frac{x+1}{3}=1-x\\), czyli dla \\(x=\\frac12\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta równobocznego",
@@ -4320,8 +4318,7 @@
     "polecenie": "Rozważ wszystkie trójkąty równoramienne o obwodzie \\(18\\).\n\na) Wykaż, że pole trójkąta o ramieniu długości \\(b\\) jest określone wzorem \\(P(b)=\\frac{(18-2b)\\sqrt{18b-81}}{2}\\).\nb) Wyznacz dziedzinę funkcji \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu.",
     "rozwiazanie": "Niech \\(a\\) oznacza podstawę, a \\(b\\) ramię. Z obwodu mamy \\(a=18-2b\\). Warunki \\(a>0\\) i \\(2b>a\\) są równoważne \\(b<9\\) i \\(b>\\frac92\\). Dlatego dziedziną szukanej funkcji jest \\((\\frac92,9)\\).\n\n**Sposób 1 — wysokość i pochodna**\n\nTwierdzenie Pitagorasa dla połowy trójkąta daje \\(h^2=b^2-(a/2)^2=18b-81\\), więc\n\\[P(b)=\\frac{a h}{2}=\\frac{(18-2b)\\sqrt{18b-81}}{2}.\\]\nNa dziedzinie \\(P\\) osiąga maksimum w tym samym miejscu co \\(F(b)=4P(b)^2=(18-2b)^2(18b-81)\\). Pochodna to \\(F'(b)=216(b-6)(b-9)\\). W przedziale \\((\\frac92,6)\\) jest dodatnia, a w \\((6,9)\\) ujemna. Maksimum występuje dla \\(b=6\\), wtedy \\(a=6\\).\n\n**Sposób 2 — wzór Herona i nierówność średnich**\n\nPołowa obwodu wynosi \\(9\\). Z wzoru Herona\n\\[P(b)=\\sqrt{9(2b-9)(9-b)^2}\n=\\frac{(18-2b)\\sqrt{18b-81}}2.\\]\nDodatnie liczby \\(2b-9,9-b,9-b\\) mają sumę \\(9\\). Z nierówności średniej arytmetycznej i geometrycznej ich iloczyn jest najwyżej \\(3^3\\), z równością dokładnie wtedy, gdy \\(2b-9=9-b\\), a więc \\(b=6\\). Wtedy \\(a=6\\).\n\nNajwiększe pole ma trójkąt równoboczny o boku \\(6\\) i wynosi ono \\(9\\sqrt3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -5008,8 +5005,7 @@
     "polecenie": "Rozważmy wszystkie trójkąty prostokątne \\(ABC\\) o przeciwprostokątnej \\(AB\\) i obwodzie \\(4\\). Niech \\(x=|AC|\\).\n\na) Udowodnij, że pole trójkąta określa wzór\n\\[P(x)=\\frac{x(4-2x)}{4-x}.\\]\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu oraz to pole.",
     "rozwiazanie": "Niech \\(b=|BC|\\) i \\(c=|AB|\\). Obwód wynosi \\(4\\), więc \\(c=4-x-b\\). Z twierdzenia Pitagorasa\n\\[(4-x-b)^2=x^2+b^2.\\]\nPo uporządkowaniu \\(b(4-x)=8-4x\\), więc \\(b=\\frac{8-4x}{4-x}\\). Dla \\(0<x<4\\) warunek \\(b>0\\) daje \\(x<2\\).\n\nDla każdego \\(x\\in(0,2)\\) otrzymujemy dodatnie \\(b\\) oraz \\(c=4-x-b=\\frac{x^2-4x+8}{4-x}>0\\). Zachodzi wtedy \\(c^2=x^2+b^2\\), więc takie boki tworzą trójkąt prostokątny o obwodzie \\(4\\). Dziedzina to \\((0,2)\\). Pole wynosi\n\\[P(x)=\\frac{xb}{2}=\\frac{x(4-2x)}{4-x}.\\]\nPochodna ma postać \\(P'(x)=\\frac{2x^2-16x+16}{(4-x)^2}\\). Jej licznik znika dla \\(4-2\\sqrt2\\) oraz \\(4+2\\sqrt2\\). Tylko \\(4-2\\sqrt2\\) należy do dziedziny. Wcześniej pochodna jest dodatnia, a później ujemna, więc jest to punkt maksimum.\n\nDla \\(x=4-2\\sqrt2\\) otrzymujemy \\(b=x\\) i \\(c=x\\sqrt2=4\\sqrt2-4\\). Największe pole wynosi\n\\[P_{\\max}=\\tfrac12(4-2\\sqrt2)^2=4(3-2\\sqrt2).\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -6943,8 +6939,7 @@
     "polecenie": "Rozważamy drewniane szkielety wykonane z listewek i mające kształt pokazany na rysunku. Każda listewka jest prostopadłościanem o podstawie w kształcie kwadratu o boku \\(x\\). Wymiary szkieletu podano na rysunku.\n\n[[rysunek:2020-04-15|Drewniany szkielet prostopadłościanu. Dwie krawędzie mają długość 6, jedna ma długość 10−2x. Kwadratowy przekrój listewki ma bok x.]]\n\na) Zapisz objętość \\(V\\) drewna potrzebnego do budowy szkieletu jako funkcję \\(x\\).\n\nb) Wyznacz dziedzinę funkcji \\(V\\).\n\nc) Wyznacz \\(x\\), dla którego szkielet jest najcięższy, czyli \\(V\\) jest największa. Oblicz największą objętość.",
     "rozwiazanie": "Każda z \\(12\\) listewek ma pole przekroju \\(x^2\\). Licząc każdą wspólną część na łączeniu tylko raz, możemy podzielić drewno na cztery elementy pionowe długości \\(6-2x\\), cztery równoległe do płaszczyzny rysunku długości \\(10-3x\\) i cztery prostopadłe do niej długości \\(6-x\\). Stąd\n\\[V(x)=4x^2\\bigl[(6-2x)+(10-3x)+(6-x)\\bigr]\n=8(11x^2-3x^3).\\]\n\nWarunki geometryczne to \\(x>0\\), \\(6\\ge2x\\) i \\(10-2x\\ge2x\\). Zatem \\(D_V=(0,\\frac52]\\). CKE dopuszcza również \\((0,\\frac52)\\), jeśli wykluczamy graniczny przypadek z zanikiem otworu.\n\nPochodna wynosi \\(V'(x)=8x(22-9x)\\). W dziedzinie jedynym miejscem zerowym jest \\(x=\\frac{22}{9}\\). Przed nim pochodna jest dodatnia, za nim ujemna, więc tam szkielet ma największą objętość:\n\\[V\\!\\left(\\frac{22}{9}\\right)=8\\left(\\frac{22}{9}\\right)^2\n\\left(11-3\\cdot\\frac{22}{9}\\right)=\\frac{42592}{243}.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Graniastosłup"
@@ -7322,8 +7317,7 @@
     "polecenie": "Dany jest okrąg o środku \\(S\\) i promieniu \\(18\\). Rozważamy pary okręgów o środkach \\(S_1,S_2\\) i promieniach odpowiednio \\(x,2x\\), przy czym:\n• okręgi o środkach \\(S_1,S_2\\) są styczne zewnętrznie,\n• każdy z nich jest styczny wewnętrznie do okręgu o środku \\(S\\),\n• punkty \\(S,S_1,S_2\\) są niewspółliniowe.\n\nDla trójkąta o bokach \\(a,b,c\\) i połowie obwodu \\(p\\) można skorzystać ze wzoru Herona\n\\[P=\\sqrt{p(p-a)(p-b)(p-c)}.\\]\n\nZapisz pole trójkąta \\(SS_1S_2\\) jako funkcję \\(x\\) i podaj jej dziedzinę. Wyznacz długości boków trójkąta o maksymalnym polu oraz oblicz to pole.",
     "rozwiazanie": "Styczność wewnętrzna daje \\(|SS_1|=18-x\\) i \\(|SS_2|=18-2x\\), a styczność zewnętrzna \\(|S_1S_2|=3x\\). Połowa obwodu trójkąta środków wynosi \\(p=18\\). Ze wzoru Herona dostajemy\n\\[P(x)=\\sqrt{18\\cdot x\\cdot 2x\\cdot(18-3x)}\n=\\sqrt{108x^2(6-x)}.\\]\nNiewspółliniowość oraz dodatnie promienie wymagają \\(x>0\\), a nierówność trójkąta \\(3x<(18-x)+(18-2x)\\) daje \\(x<6\\). Dla \\(0<x<6\\) pozostałe nierówności trójkąta także są spełnione, więc dziedzina to \\((0,6)\\).\n\nPierwiastek jest rosnący, więc maksymalizujemy \\(F(x)=P(x)^2/108=x^2(6-x)\\). Pochodna \\(F'(x)=3x(4-x)\\) jest dodatnia dla \\(0<x<4\\) i ujemna dla \\(4<x<6\\). Maksimum wypada przy \\(x=4\\). Boki trójkąta mają długości \\(14,10,12\\), a największe pole to\n\\[P(4)=\\sqrt{108\\cdot16\\cdot2}=24\\sqrt6.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Wzajemne położenie dwóch okręgów względem siebie",
@@ -8097,8 +8091,7 @@
     "polecenie": "Rozważamy drewniane szkielety wykonane z listewek i mające kształt pokazany na rysunku. Każda listewka jest prostopadłościanem o podstawie w kształcie kwadratu o boku \\(x\\). Wymiary szkieletu podano na rysunku.\n\n[[rysunek:2018-06-15|Drewniany szkielet prostopadłościanu. Dwie krawędzie mają długość 6, jedna ma długość 10−2x. Kwadratowy przekrój listewki ma bok x.]]\n\na) Zapisz objętość \\(V\\) drewna potrzebnego do budowy szkieletu jako funkcję \\(x\\).\n\nb) Wyznacz dziedzinę funkcji \\(V\\).\n\nc) Wyznacz \\(x\\), dla którego szkielet jest najcięższy, czyli \\(V\\) jest największa. Oblicz największą objętość.",
     "rozwiazanie": "Każda z \\(12\\) listewek ma pole przekroju \\(x^2\\). Licząc każdą wspólną część na łączeniu tylko raz, możemy podzielić drewno na cztery elementy pionowe długości \\(6-2x\\), cztery równoległe do płaszczyzny rysunku długości \\(10-3x\\) i cztery prostopadłe do niej długości \\(6-x\\). Stąd\n\\[V(x)=4x^2\\bigl[(6-2x)+(10-3x)+(6-x)\\bigr]\n=8(11x^2-3x^3).\\]\n\nWarunki geometryczne to \\(x>0\\), \\(6\\ge2x\\) i \\(10-2x\\ge2x\\). Zatem \\(D_V=(0,\\frac52]\\). CKE dopuszcza również \\((0,\\frac52)\\), jeśli wykluczamy graniczny przypadek z zanikiem otworu.\n\nPochodna wynosi \\(V'(x)=8x(22-9x)\\). W dziedzinie jedynym miejscem zerowym jest \\(x=\\frac{22}{9}\\). Przed nim pochodna jest dodatnia, za nim ujemna, więc tam szkielet ma największą objętość:\n\\[V\\!\\left(\\frac{22}{9}\\right)=8\\left(\\frac{22}{9}\\right)^2\n\\left(11-3\\cdot\\frac{22}{9}\\right)=\\frac{42592}{243}.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Graniastosłup"
@@ -8479,8 +8472,7 @@
     "polecenie": "Rozważamy trapezy równoramienne, w które można wpisać okrąg. Suma długości ich dłuższej podstawy \\(a\\) oraz wysokości wynosi \\(2\\).\n\na) Wyznacz wszystkie wartości \\(a\\) odpowiadające takim trapezom.\n\nb) Wykaż, że obwód w zależności od \\(a\\) jest równy\n\\[L(a)=\\frac{4a^2-8a+8}{a}.\\]\n\nc) Oblicz tangens kąta ostrego trapezu o najmniejszym obwodzie.",
     "rozwiazanie": "Niech \\(b\\) będzie krótszą podstawą, \\(c\\) długością ramienia, a \\(h=2-a\\) wysokością. Z równości sum przeciwległych boków czworokąta opisanego na okręgu mamy \\(a+b=2c\\). Rzut ramienia na dłuższą podstawę ma długość \\(p=(a-b)/2\\). Zatem\n\\[\nh^2=c^2-p^2=\\left(\\frac{a+b}{2}\\right)^2-\\left(\\frac{a-b}{2}\\right)^2=ab.\n\\]\n\n[[rysunek:2018-05-15-rozw|Trapez równoramienny z wpisanym okręgiem, podstawami a i b, ramionami c oraz wysokością h. Odcinek FB ma długość p.]]\n\n**a)** Ponieważ \\(b<a\\) i \\(h>0\\), zachodzi \\(0<h<a\\), więc \\(1<a<2\\). Dla każdego \\(a\\) z tego przedziału bierzemy trapez równoramienny o podstawach \\(a\\) i \\(b=(2-a)^2/a\\) oraz wysokości \\(h=2-a\\). Mamy \\(0<b<a\\) i \\(c=(a+b)/2\\). Punkt na osi symetrii w połowie wysokości jest odległy od obu podstaw o \\(h/2\\), a od każdej prostej zawierającej ramię o \\((a+b)h/(4c)=h/2\\). Okrąg o takim środku i promieniu \\(h/2\\) jest więc wpisany w trapez.\n\n**b)** Z \\(h^2=ab\\) wynika \\(b=(2-a)^2/a\\). Podstawiając do obwodu, otrzymujemy\n\\[\nL(a)=a+b+2c=2(a+b)=2\\left(a+\\frac{(2-a)^2}{a}\\right)\n=\\frac{4a^2-8a+8}{a}.\n\\]\n\n**c)** Pochodna \\(L'(a)=4-8/a^2\\) jest ujemna na \\((1,\\sqrt2)\\) i dodatnia na \\((\\sqrt2,2)\\), więc najmniejszy obwód występuje przy \\(a=\\sqrt2\\). Wówczas \\(p=(a-b)/2=2-2/a=2-\\sqrt2\\), a \\(h=2-\\sqrt2\\). Tangens kąta ostrego trapezu jest równy \\(h/p=1\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Trapez",
@@ -8864,8 +8856,7 @@
     "polecenie": "Rozpatrujemy wszystkie prostopadłościany o objętości \\(8\\), których stosunek długości dwóch krawędzi wychodzących z tego samego wierzchołka jest równy \\(1:2\\) oraz suma długości wszystkich dwunastu krawędzi jest mniejsza od \\(28\\). Wyznacz pole powierzchni całkowitej prostopadłościanu jako funkcję długości jednej z jego krawędzi. Wyznacz dziedzinę tej funkcji. Oblicz wymiary tego spośród rozpatrywanych prostopadłościanów, którego pole powierzchni całkowitej jest najmniejsze.",
     "rozwiazanie": "**Sposób I — krótsza krawędź z pary w stosunku \\(1:2\\)**\nNiech długości tej pary wynoszą \\(x,2x\\). Objętość \\(8\\) wymaga trzeciej krawędzi \\(4/x^2\\). Stąd pole całkowite to\n\\[P(x)=2\\left(2x^2+\\frac4x+\\frac8x\\right)=4x^2+\\frac{24}{x}.\\]\nDla \\(x>0\\) warunek sumy krawędzi daje \\(4(3x+4/x^2)<28\\), czyli\n\\[3x^3-7x^2+4=(x-1)(x-2)(3x+2)<0.\\]\nDziedzina to \\(1<x<2\\). Pochodna \\(P'(x)=8(x^3-3)/x^2\\) jest ujemna do \\(x=\\sqrt[3]3\\) i dodatnia po nim. Dlatego minimum wypada dla krawędzi \\(\\sqrt[3]3,\\ 2\\sqrt[3]3,\\ 4/\\sqrt[3]9\\).\n\n**Sposób II — trzecia krawędź**\nNiech długość trzeciej krawędzi wynosi \\(h>0\\), a pozostałych \\(x,2x\\). Z \\(2x^2h=8\\) wynika \\(x=2/\\sqrt h\\). Wobec tego\n\\[P(h)=4x^2+6xh=\\frac{16}{h}+12\\sqrt h.\\]\nWarunek sumy długości daje \\(3x+h<7\\), czyli \\(h+6/\\sqrt h<7\\). Podstawiając \\(t=\\sqrt h>0\\), dostajemy\n\\[t^3-7t+6=(t-1)(t-2)(t+3)<0.\\]\nStąd \\(1<t<2\\), czyli \\(h\\in(1,4)\\). Pochodna ma postać \\(P'(h)=(6h\\sqrt h-16)/h^2\\). Jest ujemna przed jedynym miejscem zerowym \\(h=4/\\sqrt[3]9\\) i dodatnia po nim. Po podstawieniu mamy \\(x=\\sqrt[3]3,\\ 2x=2\\sqrt[3]3\\).\n\nW kluczu CKE podczas drugiego sposobu pojawia się rozkład innego wielomianu, skopiowany z pierwszego sposobu. Do dziedziny \\(h\\in(1,4)\\) prowadzi rozkład wielomianu \\(t^3-7t+6\\) podany powyżej.",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Graniastosłup",
@@ -10061,8 +10052,7 @@
     "polecenie": "Parabola \\(y=2-\\frac12x^2\\) przecina oś \\(Ox\\) w \\(A=(-2,0)\\) i \\(B=(2,0)\\). Rozważamy trapezy równoramienne \\(ABCD\\) o dłuższej podstawie \\(AB\\), których końce \\(C,D\\) krótszej podstawy leżą na paraboli (zobacz rysunek).\n\n[[rysunek:2016-05-16|Parabola przecina oś poziomą w A i B. Krótsza podstawa trapezu ABCD ma końce C i D na paraboli.]]\n\nWyznacz pole \\(ABCD\\) w zależności od pierwszej współrzędnej \\(C\\). Oblicz współrzędne \\(C\\) dla trapezu o największym polu.",
     "rozwiazanie": "Niech \\(C=(x,2-\\tfrac12x^2)\\). Ponieważ \\(C\\) leży po prawej stronie osi symetrii trapezu, \\(0<x<2\\). Podstawy wynoszą \\(4\\) i \\(2x\\), a wysokość \\(2-\\tfrac12x^2\\), więc\n\\[P(x)=(2+x)(2-\\tfrac12x^2).\\]\n\n**Sposób 1 — pochodna**\n\n\\[P'(x)=2-2x-\\tfrac32x^2=-\\tfrac32(x-\\tfrac23)(x+2).\\]\nPochodna jest dodatnia przed \\(x=2/3\\) i ujemna po nim. Maksimum występuje w \\(x=2/3\\).\n\n**Sposób 2 — nierówność między średnimi**\n\nZapisujemy \\(P(x)=2(1+x/2)(1+x/2)(2-x)\\). Trzy dodatnie czynniki w nawiasach mają stałą sumę \\(4\\), więc ich iloczyn jest największy, gdy wszystkie są równe. Równanie \\(1+x/2=2-x\\) również daje \\(x=2/3\\).\n\nWierzchołek \\(C=(2/3,16/9)\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Trapez",
