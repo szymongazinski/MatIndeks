@@ -1,6 +1,24 @@
 const examTypes = new Set(['glowny', 'dodatkowy']);
 const eligible = task => task.punkty !== 1;
 
+export const balancedRules = {
+  required: ['Równania kwadratowe z parametrem', 'Ciągi', 'Równania trygonometryczne',
+    'Geometria analityczna', 'Geometria przestrzenna', 'Optymalizacja funkcji'],
+  plane: { category: 'Planimetria', weights: { 2: 85, 3: 15 } },
+  choice: ['Kombinatoryka', 'Prawdopodobieństwo'],
+  proof: { categories: ['Dowodzenie równań / nierówności', 'Dowodzenie podzielności'], chance: .65 },
+  short: {
+    categories: ['Funkcja wykładnicza', 'Własności logarytmu', 'Własności wielomianów',
+      'Granice', 'Styczna do wykresu funkcji'],
+    weights: { 0: 10, 1: 15, 2: 60, 3: 15 },
+  },
+  targetPoints: 50,
+};
+
+const { required, plane, choice, proof, short, targetPoints } = balancedRules;
+const balancedCategories = new Set([...required, plane.category, ...choice, ...proof.categories, ...short.categories]);
+const balancedCandidate = task => task.punkty > 1 && balancedCategories.has(task.kategorie[0]);
+
 function groupBy(items, getKey) {
   const groups = new Map();
   for (const item of items) {
@@ -49,6 +67,7 @@ function shuffled(values, random) {
 
 function problemKey(task) {
   if (task.numer != null && ['2018-06', '2020-04'].includes(task.arkusz_id)) return 'repeated:' + task.numer;
+  if (task.id === '2020-07-13' || task.id === '2019-06-6') return 'repeated:2019-06-6';
   const text = task.polecenie?.replace(/\s+/g, ' ').trim();
   return text && text !== '[[zrodlo]]' ? 'text:' + text : 'id:' + task.id;
 }
@@ -71,11 +90,22 @@ function fromYears(tasks, years) {
   return selected.size ? tasks.filter(task => selected.has(task.rok)) : tasks;
 }
 
+function requiredGroups(byCategory) {
+  const categories = required.map(label => ({ label, count: 1, tasks: byCategory.get(label) ?? [] }));
+  const planar = { label: plane.category, count: 2, tasks: byCategory.get(plane.category) ?? [] };
+  const joint = { label: choice.join(' lub '), count: 1, tasks: choice.flatMap(label => byCategory.get(label) ?? []) };
+  return [...categories, planar, joint];
+}
+
+function unfilled(groups) {
+  return groups.flatMap(({ label, count, tasks }) => Array(Math.max(0, count - tasks.length)).fill(label));
+}
+
 export function generatorAvailability(tasks, { years = [], include = [], exclude = [] }, taxonomy) {
   const tagsActive = include.length || exclude.length;
   const matching = tasks.filter(task => eligible(task) && matchesTags(task, include, exclude));
   const taggedScope = fromYears(matching, years);
-  const candidates = tagsActive ? matching : matching.filter(task => task.punkty > 0);
+  const candidates = tagsActive ? matching : matching.filter(balancedCandidate);
   const keys = new Map(matching.map(task => [task.id, problemKey(task)]));
   const count = rows => new Set(rows.map(task => keys.get(task.id))).size;
   const yearCounts = new Map(taxonomy.years.map(year => {
@@ -88,76 +118,82 @@ export function generatorAvailability(tasks, { years = [], include = [], exclude
     includeCounts.set(tag, count(taggedScope.filter(task => task.tagi.includes(tag))));
     excludeCounts.set(tag, count(taggedScope.filter(task => !task.tagi.includes(tag))));
   }
-  return { yearCounts, includeCounts, excludeCounts, total: count(fromYears(candidates, years)) };
+  const selected = fromYears(candidates, years);
+  const missingRequired = tagsActive ? [] : unfilled(requiredGroups(groupBy(uniqueProblems(selected), task => task.kategorie[0])));
+  return { yearCounts, includeCounts, excludeCounts, total: count(selected), missingRequired };
 }
 
-function choicesByPoints(tasks, required) {
-  const byCount = Array.from({ length: required + 1 }, () => new Map());
+function weightedCount(weights, limit, random) {
+  const possible = Object.entries(weights).map(([count, weight]) => [Number(count), weight])
+    .filter(([count]) => count <= limit);
+  if (!possible.length) return 0;
+  let ticket = random() * possible.reduce((total, [, weight]) => total + weight, 0);
+  for (const [count, weight] of possible) {
+    ticket -= weight;
+    if (ticket < 0) return count;
+  }
+  return possible.at(-1)[0];
+}
+
+function choicesByPoints(candidateGroups, countNeeded) {
+  const byCount = Array.from({ length: countNeeded + 1 }, () => new Map());
   byCount[0].set(0, []);
-  for (const task of tasks) {
-    for (let count = required; count > 0; count--) {
+  for (const candidates of candidateGroups) {
+    for (let count = countNeeded; count > 0; count--) {
       for (const [points, chosen] of byCount[count - 1]) {
-        const total = points + task.punkty;
-        if (!byCount[count].has(total)) byCount[count].set(total, [...chosen, task]);
+        for (const task of candidates) {
+          const total = points + task.punkty;
+          if (!byCount[count].has(total)) byCount[count].set(total, [...chosen, task]);
+        }
       }
     }
   }
-  return byCount[required];
+  return byCount[countNeeded];
 }
 
-function matchPrimary(profile, pool) {
-  const byCategory = groupBy(pool, task => task.kategorie[0]);
-  const requirements = groupBy(profile.categories, category => category);
-  for (const [category, entries] of requirements) {
-    if ((byCategory.get(category)?.length ?? 0) < entries.length) return null;
-  }
-
+function chooseTasks(groups, random) {
   let choices = new Map([[0, []]]);
-  for (const [category, entries] of requirements) {
+  for (const { candidates, count } of groups) {
     const next = new Map();
-    for (const [points, selected] of choicesByPoints(byCategory.get(category), entries.length)) {
+    for (const [points, selected] of choicesByPoints(candidates, count)) {
       for (const [previous, groups] of choices) {
         const total = points + previous;
-        if (!next.has(total)) next.set(total, [...groups, [category, selected]]);
+        if (!next.has(total)) next.set(total, [...groups, ...selected]);
       }
     }
     choices = next;
   }
-  const closest = [...choices.keys()].sort((left, right) =>
-    Math.abs(left - profile.points) - Math.abs(right - profile.points))[0];
-  const selection = new Map(choices.get(closest));
-  return profile.categories.map(category => selection.get(category).shift());
+  const totals = [...choices.keys()];
+  const distance = Math.min(...totals.map(points => Math.abs(points - targetPoints)));
+  const closest = totals.filter(points => Math.abs(points - targetPoints) === distance);
+  const points = closest[Math.floor(random() * closest.length)];
+  return { tasks: choices.get(points), points };
 }
 
-function matchAnyCategory(profile, pool) {
-  const options = profile.categories.map((category, index) => {
-    const target = profile.pointValues[index];
-    return pool.filter(task => task.kategorie.includes(category)).sort((left, right) =>
-      Number(left.kategorie[0] !== category) - Number(right.kategorie[0] !== category)
-      || Math.abs(left.punkty - target) - Math.abs(right.punkty - target));
+function drawBalanced(pool, random) {
+  const byCategory = groupBy(uniqueProblems(pool.filter(balancedCandidate)), task => task.kategorie[0]);
+  const groups = requiredGroups(byCategory);
+  const missing = unfilled(groups);
+  const planimetry = groups.find(group => group.label === plane.category);
+  planimetry.count = weightedCount(plane.weights, planimetry.tasks.length, random) || planimetry.count;
+  const shortCandidates = short.categories.map(label => byCategory.get(label)).filter(Boolean);
+  const shortCount = weightedCount(short.weights, shortCandidates.length, random);
+  const includeProof = random() < proof.chance;
+  const proofs = proof.categories.flatMap(label => byCategory.get(label) ?? []);
+
+  const selections = groups.map(({ tasks, count }) => ({
+    count: Math.min(count, tasks.length),
+    candidates: shuffled(tasks, random).map(task => [task]),
+  }));
+  if (includeProof && proofs.length) selections.push({ count: 1, candidates: shuffled(proofs, random).map(task => [task]) });
+  if (shortCount) selections.push({
+    count: shortCount,
+    candidates: shuffled(shortCandidates, random).map(tasks => shuffled(tasks, random)),
   });
-  const assignment = new Map();
-  const selection = new Array(options.length).fill(null);
-
-  function assign(index, tried) {
-    for (const task of options[index]) {
-      if (tried.has(task.id)) continue;
-      tried.add(task.id);
-      const previous = assignment.get(task.id);
-      if (previous !== undefined && !assign(previous, tried)) continue;
-      assignment.set(task.id, index);
-      selection[index] = task;
-      return true;
-    }
-    return false;
-  }
-
-  const order = [...options.keys()].sort((left, right) => options[left].length - options[right].length);
-  for (const index of order) assign(index, new Set());
-  return selection;
+  return { mode: 'balanced', ...chooseTasks(selections, random), missing };
 }
 
-export function generatePaper(tasks, profiles, { years = [], include = [], exclude = [], size, random = Math.random } = {}) {
+export function generatePaper(tasks, { years = [], include = [], exclude = [], size, random = Math.random } = {}) {
   const pool = fromYears(tasks, years).filter(task => eligible(task) && matchesTags(task, include, exclude));
   if (include.length || exclude.length) {
     const requested = Number.isInteger(size) && size >= 1 ? size : 12;
@@ -166,13 +202,5 @@ export function generatePaper(tasks, profiles, { years = [], include = [], exclu
       points: chosen.every(task => task.punkty != null) ? chosen.reduce((sum, task) => sum + task.punkty, 0) : null };
   }
 
-  const profile = profiles[Math.floor(random() * profiles.length)];
-  if (!profile) return { mode: 'balanced', tasks: [], missing: [], profile: null };
-  const scored = shuffled(uniqueProblems(pool.filter(task => task.punkty > 0)), random);
-  const selection = matchPrimary(profile, scored) ?? matchAnyCategory(profile, scored);
-  const chosen = selection.filter(Boolean);
-  return { mode: 'balanced', tasks: chosen, profile,
-    secondary: selection.some((task, index) => task && task.kategorie[0] !== profile.categories[index]),
-    missing: profile.categories.filter((_, index) => !selection[index]),
-    points: chosen.reduce((sum, task) => sum + task.punkty, 0) };
+  return drawBalanced(pool, random);
 }

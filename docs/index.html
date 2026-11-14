@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style.css?v=4">
   <script src="./vendor/katex/katex.min.js" defer></script>
   <script src="./vendor/sqljs/sql-wasm.js" defer></script>
-  <script type="module" src="./js/main.js?v=4"></script>
+  <script type="module" src="./js/main.js?v=5"></script>
 </head>
 <body>
   <a class="skip-link" href="#tresc">Przejdź do treści</a>
@@ -114,7 +114,7 @@
     <section id="view-generator" hidden aria-labelledby="generator-title">
       <div class="page-head">
         <h1 id="generator-title">Generator arkusza</h1>
-        <p>Wylosuj zestaw z rozkładem kategorii z arkuszy CKE albo dobierz zadania według tagów.</p>
+        <p>Wylosuj arkusz według rozkładu tematów albo wybierz tagi do ćwiczenia.</p>
       </div>
       <div class="generator-layout">
         <form id="generator-form" class="filter-box generator-form">
@@ -137,6 +137,7 @@
             <button type="reset" class="button button-quiet">Wyczyść wybór</button>
           </div>
         <p class="field-note generator-count" id="generator-pool" aria-live="polite"></p>
+        <p class="field-note generator-count" id="generator-shortage" aria-live="polite" hidden></p>
         </form>
         <aside class="generator-aside">
           <div class="frequency-panel" id="frequency-panel"></div>

@@ -1,5 +1,5 @@
 import { kindLabels, loadCatalog } from './catalog.js?v=4';
-import { buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=2';
+import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=5';
 import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=3';
 
 const find = id => document.getElementById(id);
@@ -286,7 +286,6 @@ function configure(catalog) {
   }
 
   let candidates;
-  let profiles;
   const years = find('generator-years');
   const form = find('generator-form');
   const results = find('generator-results');
@@ -319,25 +318,48 @@ function configure(catalog) {
     const limit = Math.min(Math.max(1, availability.total), 50);
     size.max = limit;
     if (Number(size.value) > limit) size.value = limit;
-    submit.disabled = !availability.total || (!profiles.length && !tagsSelected);
+    submit.disabled = !availability.total || availability.missingRequired.length > 0;
     find('generator-pool').textContent = 'Dostępna pula · ' + countText(availability.total);
+    const shortage = find('generator-shortage');
+    const missing = availability.missingRequired;
+    shortage.hidden = missing.length === 0;
+    shortage.textContent = missing.length ? 'Brak zadań z wymaganych kategorii: ' + missingCategories(missing)
+      + '. Wybierz szerszy zakres lat lub losuj według tagów.' : '';
     const options = { ...filter, size: tagsSelected ? size.valueAsNumber : undefined };
-    if (!results.hidden && !submit.disabled && (size.disabled || size.validity.valid)
-        && JSON.stringify(options) !== lastDrawFilter) drawSample(options);
+    if (results.hidden) return;
+    if (submit.disabled) {
+      results.hidden = true;
+      results.replaceChildren();
+      lastDrawFilter = null;
+    } else if ((size.disabled || size.validity.valid) && JSON.stringify(options) !== lastDrawFilter) {
+      drawSample(options);
+    }
+  }
+
+  function missingCategories(categories) {
+    const counts = new Map();
+    for (const category of categories) counts.set(category, (counts.get(category) ?? 0) + 1);
+    return [...counts].map(([category, count]) => count > 1 ? `${category} (${count})` : category).join(', ');
   }
 
   function drawGenerator() {
     if (candidates) return;
     candidates = catalog.candidates();
-    profiles = buildProfiles(candidates);
+    const profiles = buildProfiles(candidates);
     updateGeneratorOptions();
     const formula = profiles.length && profiles.every(profile => profile.formula === profiles[0].formula)
       ? ` w formule ${profiles[0].formula}` : '';
     const summary = `Liczba arkuszy z terminów głównego i dodatkowego${formula} — ${profiles.length}.`;
     const panel = find('frequency-panel');
-    panel.append(element('h2', {}, 'Rozkład kategorii'), element('p', { class: 'muted' }, profiles.length
-      ? 'Generator losuje rozkład jednego z arkuszy CKE. Zawężenie lat zmienia pulę zadań.'
-      : 'Rozkład pojawi się po wczytaniu pełnych arkuszy CKE.'));
+    const { required, choice, short, targetPoints } = balancedRules;
+    panel.append(element('h2', {}, 'Zasady losowania'),
+      element('ul', { class: 'draw-rules' },
+        element('li', {}, 'Po jednym zadaniu z następujących działów — ' + required.join(', ') + '.'),
+        element('li', {}, 'Z planimetrii zwykle dwa zadania, czasem trzy.'),
+        element('li', {}, 'Jedno zadanie z grupy „' + choice.join('” lub „') + '”.'),
+        element('li', {}, 'Najwyżej jedno zadanie na dowodzenie.'),
+        element('li', {}, 'Zwykle dwa, maksymalnie trzy z następujących działów — ' + short.categories.join(', ') + '.')),
+      element('p', { class: 'muted' }, `Dobór dąży do ${targetPoints} pkt w ramach wylosowanego rozkładu i wybranych lat.`));
     if (!profiles.length) return;
     const percentage = new Intl.NumberFormat('pl', { style: 'percent', maximumFractionDigits: 1 });
     const average = new Intl.NumberFormat('pl', { maximumFractionDigits: 2 });
@@ -345,7 +367,7 @@ function configure(catalog) {
       element('tr', {}, element('th', { scope: 'row' }, row.category),
         element('td', { class: 'table-number' }, percentage.format(row.papers / profiles.length)),
         element('td', { class: 'table-number' }, average.format(row.average))));
-    panel.append(element('details', { class: 'frequency-details' }, element('summary', {}, 'Sprawdź częstość występowania'),
+    panel.append(element('details', { class: 'frequency-details' }, element('summary', {}, 'Częstości w arkuszach CKE'),
       element('p', { class: 'field-note' }, summary, ' W analizie liczy się główna kategoria zadania.'),
       element('div', { class: 'table-wrap' }, element('table', { class: 'frequency-table', 'aria-label': 'Częstość występowania kategorii' },
         element('thead', {}, element('tr', {}, ['Kategoria', '% arkuszy', 'Śr. zadań'].map(label => element('th', { scope: 'col' }, label)))),
@@ -371,21 +393,15 @@ function configure(catalog) {
   });
 
   function drawSample(options, focus = false) {
-    const result = generatePaper(candidates, profiles, options);
+    const result = generatePaper(candidates, options);
     lastDrawFilter = JSON.stringify(options);
     const heading = element('h2', { tabindex: '-1' }, 'Wylosowany arkusz');
-    const details = [countText(result.tasks.length), result.points == null ? null : pointsText(result.points),
-      result.profile ? 'Rozkład: ' + result.profile.label : null].filter(Boolean).join(' · ');
+    const details = [countText(result.tasks.length), result.points == null ? null : pointsText(result.points)].filter(Boolean).join(' · ');
     const notices = [];
     if (result.mode === 'balanced') {
-      if (!result.profile) notices.push('Brak pełnych arkuszy potrzebnych do wyznaczenia rozkładu.');
       if (result.missing.length) {
-        const shortage = new Map();
-        for (const category of result.missing) shortage.set(category, (shortage.get(category) ?? 0) + 1);
-        notices.push('W wybranych latach brakuje zadań do wypełnienia rozkładu: ' + [...shortage].map(([category, count]) =>
-          category + (count > 1 ? ` (${count})` : '')).join(', ') + '.');
+        notices.push('Brak zadań z wymaganych kategorii: ' + missingCategories(result.missing) + '.');
       }
-      if (result.secondary) notices.push('Część zadań pasuje do rozkładu przez swoją dodatkową kategorię.');
     } else if (result.tasks.length < result.requested) {
       notices.push(result.tasks.length ? 'W puli jest mniej zadań niż wybrano.' : 'Brak zadań dla wybranych lat i tagów.');
     }

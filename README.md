@@ -6,11 +6,13 @@ Baza zadań z matury rozszerzonej z matematyki. Obejmuje główne i dodatkowe te
 
 Każde zadanie prowadzi do oryginalnego PDF-u i strony rozwiązania CKE. Rozwiązania przedstawiają metody CKE własnymi słowami. W zadaniach zamkniętych klucz CKE może zawierać samą literę odpowiedzi. W plikach CKE dostępne są też dodatkowe szkice pomocnicze do niektórych wariantów rozwiązań. [Archiwum arkusze.pl](https://arkusze.pl/matematyka-matura-poziom-rozszerzony/) · [Zbiór zadań CKE](https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2023/materialy_dodatkowe/matematyka/Matematyka%20-%20zbior%20zadan%20na%20poziomie%20rozszerzonym.pdf)
 
-Przycisk przy kategorii rozwija przypisane jej tagi tematyczne. Wybór tagu z tego menu zawęża wyniki w ramach kategorii. Zadania za 1 pkt są dostępne w zwijanym dziale w katalogu i w odpowiednich arkuszach. Wyszukiwarka i generator korzystają z pozostałych zadań.
+Kategorie odpowiadają celowi polecenia. Tagi opisują badany motyw lub narzędzie użyte w co najmniej jednej metodzie rozwiązania danego podpunktu. Przycisk przy kategorii rozwija jej tagi tematyczne. Katalog i archiwum mają sortowanie po roku i terminie w obu kierunkach. Zadania za 1 pkt są dostępne w zwijanym dziale w katalogu i w odpowiednich arkuszach. Wyszukiwarka i generator korzystają z pozostałych zadań.
 
 ## Generator
 
-Pełne arkusze główne i dodatkowe w formule 2023 wyznaczają częstości głównych kategorii. Generator losuje rozkład jednego z tych arkuszy, dobiera zadania z wybranych lat i szuka sumy możliwie bliskiej 50 pkt. Gdy kilku zadań brakuje w wybranej puli, podaje brakujące kategorie. Wybrane tagi włączają losowanie z puli spełniającej wszystkie uwzględniane tagi i wolnej od wykluczanych tagów.
+Generator losuje po jednym zadaniu z równań kwadratowych z parametrem, ciągów, równań trygonometrycznych, geometrii analitycznej, geometrii przestrzennej i optymalizacji. Losuje też dwa zadania z planimetrii (85% losowań) lub trzy (15%) i jedno zadanie z kombinatoryki albo prawdopodobieństwa. Dodatkowo może losować jedno zadanie na dowodzenie (65%) oraz od zera do trzech zadań z różnych krótszych działów (odpowiednio 10%, 15%, 60% i 15%). Wagi liczności dotyczą puli, w której wszystkie liczności są możliwe. Każde zadanie liczy się do swojej głównej kategorii. Dla wylosowanej liczby zadań generator dobiera punktację najbliższą 50.
+
+Wybrane lata ograniczają pulę. Gdy zabraknie zadań z wymaganych działów, generator wskazuje braki i pozwala zmienić lata. Wybór tagów uruchamia losowanie z puli pasującej do wszystkich uwzględnianych tagów, z pominięciem zadań z wykluczanymi tagami. Częstości z arkuszy CKE są dostępne w generatorze do wglądu.
 
 ## Dane i uruchomienie
 
