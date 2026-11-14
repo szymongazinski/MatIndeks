@@ -60,8 +60,13 @@
     "strona_zadania": 22
   },
   {
-    "numer": "13",
-    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\na) Wyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji.\nb) Wyznacz wysokość graniastosłupa o największej objętości.\n\nZapisz obliczenia.",
+    "numer": "13a",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\nWyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji. Zapisz obliczenia.",
+    "strona_zadania": 24
+  },
+  {
+    "numer": "13b",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\nZ części a) wiadomo, że objętość graniastosłupa o wysokości \\(h\\) wynosi\n\\[V(h)=2(d^2-h^2)h,\\qquad h\\in(0,d).\\]\nWyznacz wysokość graniastosłupa o największej objętości. Zapisz obliczenia.",
     "strona_zadania": 24
   }
 ]

@@ -1,6 +1,6 @@
-import { kindLabels, loadCatalog } from './catalog.js?v=7';
-import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=6';
-import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=8';
+import { kindLabels, loadCatalog } from './catalog.js?v=8';
+import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=7';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=9';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];
@@ -278,15 +278,22 @@ function configure(catalog) {
   }
 
   function drawSingleTask(params) {
-    const task = catalog.task(params.get('id'));
-    find('task-title').textContent = task ? 'Zadanie ' + task.numer : 'Zadanie niedostępne';
+    const id = params.get('id');
+    const split = id === '2023-06-13';
+    const ids = split ? [id + 'a', id + 'b'] : [id];
+    const tasks = ids.map(value => catalog.task(value)).filter(Boolean);
+    const [task] = tasks;
+    find('task-title').textContent = task ? 'Zadanie ' + (split ? '13' : task.numer) : 'Zadanie niedostępne';
     find('task-paper').replaceChildren(...(task ? [element('a', { href: links.paper(task.arkusz_id) }, task.arkusz)] : []));
-    find('single-task').replaceChildren(task ? taskCard(catalog, task, links, { showPaper: false, showReview: true })
-      : message('Wybierz zadanie z katalogu.'));
+    const cards = tasks.map(item => taskCard(catalog, item, links, { showPaper: false, showReview: true }));
+    find('single-task').replaceChildren(...(cards.length ? cards : [message('Wybierz zadanie z katalogu.')]));
   }
 
   let candidates;
   const years = find('generator-years');
+  const categories = find('generator-categories');
+  const categoryMode = find('generator-category-mode');
+  const latestFormula = find('generator-latest-formula');
   const form = find('generator-form');
   const results = find('generator-results');
   const size = find('generator-size');
@@ -294,45 +301,93 @@ function configure(catalog) {
   let lastDrawFilter;
   const include = new TagPicker(find('include-tag-filter'), 'Uwzględnij tagi', taxonomy.tagi, updateGeneratorOptions);
   const exclude = new TagPicker(find('exclude-tag-filter'), 'Wyklucz tagi', taxonomy.tagi, updateGeneratorOptions);
-  const yearBoxes = catalog.years.map(year => element('input', { type: 'checkbox', name: 'rok', value: year }));
-  years.append(...yearBoxes.map(input => element('label', { class: 'year-option' }, input, ' ' + input.value)));
-  const selectedYears = () => yearBoxes.filter(input => input.checked).map(input => Number(input.value));
-  const currentFilter = () => ({ years: selectedYears(), include: include.selected, exclude: exclude.selected });
-  years.addEventListener('change', updateGeneratorOptions);
-  size.addEventListener('change', updateGeneratorOptions);
+
+  function addChoices(container, labels, name) {
+    return labels.map(value => {
+      const input = element('input', { type: 'checkbox', name, value });
+      container.append(element('label', { class: 'generator-option' }, input, String(value)));
+      return input;
+    });
+  }
+
+  const yearBoxes = addChoices(years, catalog.years, 'rok');
+  const categoryBoxes = addChoices(categories, taxonomy.kategorie, 'kategoria');
+  const selectedValues = boxes => boxes.filter(input => input.checked).map(input => input.value);
+  const generatorTaxonomy = { years: catalog.years, tags: taxonomy.tagi, categories: taxonomy.kategorie };
+  const currentFilter = () => categoryMode.checked
+    ? { mode: 'categories', categories: selectedValues(categoryBoxes), include: include.selected, exclude: exclude.selected }
+    : { mode: 'balanced', years: selectedValues(yearBoxes).map(Number), latestFormulaOnly: latestFormula.checked };
+  const drawOptions = () => ({ ...currentFilter(), size: size.disabled ? undefined : size.valueAsNumber });
+
+  for (const control of [years, latestFormula, size]) control.addEventListener('change', updateGeneratorOptions);
+  categories.addEventListener('change', () => {
+    if (!categoryBoxes.some(input => input.checked)) {
+      include.reset();
+      exclude.reset();
+    }
+    updateGeneratorOptions();
+  });
+  find('generator-modes').addEventListener('change', () => {
+    clearDraw();
+    updateGeneratorOptions();
+  });
+
+  function clearDraw() {
+    results.hidden = true;
+    results.replaceChildren();
+    lastDrawFilter = null;
+  }
+
+  function setChoiceAvailability(input, remaining, allowClear = false) {
+    input.disabled = !remaining && !allowClear;
+    const empty = allowClear ? 'Wyczyść wybór kategorii' : 'Brak pasujących zadań';
+    input.parentElement.title = remaining ? countText(remaining) + ' po zmianie wyboru' : empty;
+  }
 
   function updateGeneratorOptions() {
     if (!candidates) return;
     const filter = currentFilter();
-    const availability = generatorAvailability(candidates, filter, { years: catalog.years, tags: taxonomy.tagi });
-    include.setAvailability(availability.includeCounts);
-    exclude.setAvailability(availability.excludeCounts);
-    for (const input of yearBoxes) {
-      const remaining = availability.yearCounts.get(Number(input.value));
-      input.disabled = remaining === 0;
-      input.parentElement.title = remaining ? countText(remaining) + ' po zmianie wyboru' : 'Brak pasujących zadań';
+    const byCategory = filter.mode === 'categories';
+    const categoryCount = filter.categories?.length ?? 0;
+    const availability = generatorAvailability(candidates, filter, generatorTaxonomy);
+    find('generator-balanced').hidden = byCategory;
+    find('generator-by-category').hidden = !byCategory;
+    find('generator-aside').hidden = byCategory;
+    find('generator-tags').disabled = !categoryCount;
+    size.disabled = !byCategory;
+    submit.textContent = byCategory ? 'Wylosuj zadania' : 'Wylosuj arkusz';
+    if (byCategory) {
+      const omitted = taxonomy.tagi.filter(tag => !availability.categoryTags.has(tag));
+      include.setAvailability(availability.includeCounts, [...omitted, ...exclude.selected]);
+      exclude.setAvailability(availability.excludeCounts, [...omitted, ...include.selected]);
+      for (const input of categoryBoxes) {
+        setChoiceAvailability(input, availability.categoryCounts.get(input.value), input.checked && categoryCount === 1);
+      }
+      const limit = Math.min(availability.total || 50, 50);
+      size.max = limit;
+      if (Number(size.value) > limit) size.value = limit;
+    } else {
+      for (const input of yearBoxes) {
+        setChoiceAvailability(input, availability.yearCounts.get(Number(input.value)));
+        if (input.disabled) input.checked = false;
+      }
+      find('year-note').textContent = latestFormula.checked ? 'Bez zaznaczenia losujesz ze wszystkich lat nowej formuły.'
+        : 'Bez zaznaczenia losujesz ze wszystkich lat.';
     }
-    const tagsSelected = filter.include.length + filter.exclude.length > 0;
-    find('sample-size').hidden = !tagsSelected;
-    size.disabled = !tagsSelected;
-    const limit = Math.min(Math.max(1, availability.total), 50);
-    size.max = limit;
-    if (Number(size.value) > limit) size.value = limit;
     submit.disabled = !availability.total || availability.missingRequired.length > 0;
-    find('generator-pool').textContent = 'Dostępna pula · ' + countText(availability.total);
+    find('generator-pool').textContent = byCategory && !categoryCount ? 'Wybierz co najmniej jedną kategorię.'
+      : 'Dostępna pula · ' + countText(availability.total);
     const shortage = find('generator-shortage');
     const missing = availability.missingRequired;
     shortage.hidden = missing.length === 0;
     shortage.textContent = missing.length ? 'Brak zadań z wymaganych kategorii: ' + missingCategories(missing)
-      + '. Wybierz szerszy zakres lat lub losuj według tagów.' : '';
-    const options = { ...filter, size: tagsSelected ? size.valueAsNumber : undefined };
+      + '. Wybierz szerszy zakres lat lub losuj według kategorii.' : '';
     if (results.hidden) return;
     if (submit.disabled) {
-      results.hidden = true;
-      results.replaceChildren();
-      lastDrawFilter = null;
-    } else if ((size.disabled || size.validity.valid) && JSON.stringify(options) !== lastDrawFilter) {
-      drawSample(options);
+      clearDraw();
+    } else if (size.disabled || size.validity.valid) {
+      const options = drawOptions();
+      if (JSON.stringify(options) !== lastDrawFilter) drawSample(options);
     }
   }
 
@@ -368,7 +423,7 @@ function configure(catalog) {
         element('td', { class: 'table-number' }, percentage.format(row.papers / profiles.length)),
         element('td', { class: 'table-number' }, average.format(row.average))));
     panel.append(element('details', { class: 'frequency-details' }, element('summary', {}, 'Częstości w arkuszach CKE'),
-      element('p', { class: 'field-note' }, summary, ' Zliczamy główne kategorie oraz tematy wymagane wprost w osobnych podpunktach.'),
+      element('p', { class: 'field-note' }, summary, ' Zliczamy główne kategorie zadań i wydzielonych podpunktów.'),
       element('div', { class: 'table-wrap' }, element('table', { class: 'frequency-table', 'aria-label': 'Częstość występowania kategorii' },
         element('thead', {}, element('tr', {}, ['Kategoria', '% arkuszy', 'Śr. zadań'].map(label => element('th', { scope: 'col' }, label)))),
         element('tbody', {}, rows)))));
@@ -376,26 +431,25 @@ function configure(catalog) {
 
   form.addEventListener('reset', event => {
     event.preventDefault();
-    for (const input of yearBoxes) input.checked = false;
+    for (const input of [...yearBoxes, ...categoryBoxes]) input.checked = false;
+    latestFormula.checked = false;
     size.value = size.defaultValue;
     include.reset();
     exclude.reset();
-    results.hidden = true;
-    results.replaceChildren();
-    lastDrawFilter = null;
+    clearDraw();
     updateGeneratorOptions();
   });
 
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (submit.disabled) return;
-    drawSample({ ...currentFilter(), size: size.disabled ? undefined : size.valueAsNumber }, true);
+    drawSample(drawOptions(), true);
   });
 
   function drawSample(options, focus = false) {
     const result = generatePaper(candidates, options);
     lastDrawFilter = JSON.stringify(options);
-    const heading = element('h2', { tabindex: '-1' }, 'Wylosowany arkusz');
+    const heading = element('h2', { tabindex: '-1' }, result.mode === 'balanced' ? 'Wylosowany arkusz' : 'Wylosowane zadania');
     const details = [countText(result.tasks.length), result.points == null ? null : pointsText(result.points)].filter(Boolean).join(' · ');
     const notices = [];
     if (result.mode === 'balanced') {
@@ -403,7 +457,7 @@ function configure(catalog) {
         notices.push('Brak zadań z wymaganych kategorii: ' + missingCategories(result.missing) + '.');
       }
     } else if (result.tasks.length < result.requested) {
-      notices.push(result.tasks.length ? 'W puli jest mniej zadań niż wybrano.' : 'Brak zadań dla wybranych lat i tagów.');
+      notices.push(result.tasks.length ? 'W puli jest mniej zadań niż wybrano.' : 'Brak zadań dla wybranych kategorii i tagów.');
     }
     results.replaceChildren(element('div', { class: 'results-head' }, element('div', {}, heading,
       element('p', { class: 'muted results-count' }, details))),

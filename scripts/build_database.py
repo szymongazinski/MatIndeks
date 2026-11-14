@@ -97,7 +97,7 @@ def validate(rows, dictionary, figures):
     by_sheet = {}
     for row in rows:
         key = row["id"]
-        if not re.fullmatch(r"\d+(?:\.\d+)?", row["numer"]) or row["typ"] not in TYPES:
+        if not re.fullmatch(r"\d+(?:\.\d+|[a-z])?", row["numer"]) or row["typ"] not in TYPES:
             raise ValueError(f"Nieprawidłowy numer albo typ: {key}")
         for field in JSON_FIELDS:
             labels = row[field]

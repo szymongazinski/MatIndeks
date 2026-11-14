@@ -93,13 +93,19 @@ test('published geometry categories describe the question and tags describe the 
   database.close();
 });
 
-test('the eight 2023–2026 papers include solid geometry in a separately requested part of an optimization problem', async () => {
+test('the June 2023 parts are independent catalog tasks and solid geometry appears in all eight 2023–2026 papers', async () => {
   const database = new SQL.Database(await readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)));
   const catalog = new Catalog(database, {});
+  const june = catalog.tasks({ paper: '2023-06' }).tasks.slice(-2);
+  assert.deepEqual(june.map(({ numer, punkty, kategorie }) => [numer, punkty, kategorie]), [
+    ['13a', 3, ['Geometria przestrzenna']], ['13b', 3, ['Optymalizacja funkcji']],
+  ]);
+  assert.equal(june[0].polecenie.split('\n\n')[0], june[1].polecenie.split('\n\n')[0]);
+  assert.ok(june.every(task => task.polecenie.includes('[[rysunek:2023-06-13|')));
+  assert.equal(catalog.papers({ year: 2023, kind: 'dodatkowy' })[0].points, 50);
   const profiles = buildProfiles(catalog.candidates().filter(task => task.rok >= 2023 && task.rok <= 2026));
   const category = 'Geometria przestrzenna';
   assert.equal(profiles.length, 8);
   assert.deepEqual(frequencies(profiles, [category]), [{ category, papers: 8, average: 11 / 8 }]);
-  assert.deepEqual(catalog.task('2023-06-13').kategorie, ['Optymalizacja funkcji']);
   database.close();
 });

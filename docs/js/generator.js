@@ -1,11 +1,6 @@
 const examTypes = new Set(['glowny', 'dodatkowy']);
 const eligible = task => task.punkty !== 1;
 
-// Topics explicitly asked about in a subpart that CKE scores as part of a larger task.
-const examSubpartTopics = new Map([
-  ['2023-06-13', ['Geometria przestrzenna']], // Part a) asks for the prism's volume as a function of its height.
-]);
-
 export const balancedRules = {
   required: ['Równania kwadratowe z parametrem', 'Ciągi', 'Równania trygonometryczne',
     'Geometria analityczna', 'Geometria przestrzenna', 'Optymalizacja funkcji'],
@@ -42,8 +37,7 @@ export function buildProfiles(tasks) {
     if (!selected.length || !selected.every(task => task.punkty > 0 && task.kategorie.length)) continue;
     if (group.reduce((total, task) => total + task.punkty, 0) !== 50) continue;
     const points = selected.reduce((total, task) => total + task.punkty, 0);
-    const categories = selected.flatMap(task =>
-      [...new Set([task.kategorie[0], ...(examSubpartTopics.get(task.id) ?? [])])]);
+    const categories = selected.map(task => task.kategorie[0]);
     profiles.push({ id, label: group[0].arkusz, formula: group[0].formula, points,
       categories, pointValues: selected.map(task => task.punkty) });
   }
@@ -97,6 +91,22 @@ function fromYears(tasks, years) {
   return selected.size ? tasks.filter(task => selected.has(task.rok)) : tasks;
 }
 
+function fromCategories(tasks, categories) {
+  const selected = new Set(categories);
+  return tasks.filter(task => task.kategorie.some(category => selected.has(category)));
+}
+
+function balancedScope(tasks, years, latestFormulaOnly) {
+  const formula = latestFormulaOnly ? Math.max(...tasks.map(task => task.formula)) : null;
+  const matching = latestFormulaOnly ? tasks.filter(task => task.formula === formula && task.rok >= formula) : tasks;
+  const allowedYears = latestFormulaOnly ? new Set(matching.map(task => task.rok)) : null;
+  return {
+    candidates: matching.filter(balancedCandidate),
+    years: allowedYears ? years.filter(year => allowedYears.has(year)) : years,
+    allowedYears,
+  };
+}
+
 function requiredGroups(byCategory) {
   const categories = required.map(label => ({ label, count: 1, tasks: byCategory.get(label) ?? [] }));
   const planar = { label: plane.category, count: 2, tasks: byCategory.get(plane.category) ?? [] };
@@ -108,26 +118,48 @@ function unfilled(groups) {
   return groups.flatMap(({ label, count, tasks }) => Array(Math.max(0, count - tasks.length)).fill(label));
 }
 
-export function generatorAvailability(tasks, { years = [], include = [], exclude = [] }, taxonomy) {
-  const tagsActive = include.length || exclude.length;
-  const matching = tasks.filter(task => eligible(task) && matchesTags(task, include, exclude));
-  const taggedScope = fromYears(matching, years);
-  const candidates = tagsActive ? matching : matching.filter(balancedCandidate);
-  const keys = new Map(matching.map(task => [task.id, problemKey(task)]));
+function toggled(selection, value) {
+  return selection.includes(value) ? selection.filter(item => item !== value) : [...selection, value];
+}
+
+function countsBy(values, count = () => 0) {
+  return new Map(values.map(value => [value, count(value)]));
+}
+
+export function generatorAvailability(tasks, {
+  mode = 'balanced', years = [], latestFormulaOnly = false, categories = [], include = [], exclude = [],
+} = {}, { years: allYears = [], tags = [], categories: allCategories = [] } = {}) {
+  const keys = new Map(tasks.map(task => [task.id, problemKey(task)]));
   const count = rows => new Set(rows.map(task => keys.get(task.id))).size;
-  const yearCounts = new Map(taxonomy.years.map(year => {
-    const nextYears = years.includes(year) ? years.filter(value => value !== year) : [...years, year];
-    return [year, count(fromYears(candidates, nextYears))];
-  }));
-  const includeCounts = new Map();
-  const excludeCounts = new Map();
-  for (const tag of taxonomy.tags) {
-    includeCounts.set(tag, count(taggedScope.filter(task => task.tagi.includes(tag))));
-    excludeCounts.set(tag, count(taggedScope.filter(task => !task.tagi.includes(tag))));
+  if (mode === 'categories') {
+    const candidates = tasks.filter(eligible);
+    const matching = candidates.filter(task => matchesTags(task, include, exclude));
+    const selected = fromCategories(matching, categories);
+    return {
+      total: count(selected),
+      missingRequired: [],
+      categoryTags: new Set(fromCategories(candidates, categories).flatMap(task => task.tagi)),
+      categoryCounts: countsBy(allCategories, category => count(fromCategories(matching, toggled(categories, category)))),
+      includeCounts: countsBy(tags, tag => count(selected.filter(task => task.tagi.includes(tag)))),
+      excludeCounts: countsBy(tags, tag => count(selected.filter(task => !task.tagi.includes(tag)))),
+      yearCounts: countsBy(allYears),
+    };
   }
-  const selected = fromYears(candidates, years);
-  const missingRequired = tagsActive ? [] : unfilled(requiredGroups(groupBy(uniqueProblems(selected), task => task.kategorie[0])));
-  return { yearCounts, includeCounts, excludeCounts, total: count(selected), missingRequired };
+
+  const { candidates, years: selectedYears, allowedYears } = balancedScope(tasks, years, latestFormulaOnly);
+  const selected = fromYears(candidates, selectedYears);
+  return {
+    total: count(selected),
+    missingRequired: unfilled(requiredGroups(groupBy(uniqueProblems(selected), task => task.kategorie[0]))),
+    categoryTags: new Set(),
+    categoryCounts: countsBy(allCategories),
+    includeCounts: countsBy(tags),
+    excludeCounts: countsBy(tags),
+    yearCounts: countsBy(allYears, year => {
+      if (allowedYears && !allowedYears.has(year)) return 0;
+      return count(fromYears(candidates, toggled(selectedYears, year)));
+    }),
+  };
 }
 
 function weightedCount(weights, limit, random) {
@@ -178,7 +210,7 @@ function chooseTasks(groups, random) {
 }
 
 function drawBalanced(pool, random) {
-  const byCategory = groupBy(uniqueProblems(pool.filter(balancedCandidate)), task => task.kategorie[0]);
+  const byCategory = groupBy(uniqueProblems(pool), task => task.kategorie[0]);
   const groups = requiredGroups(byCategory);
   const missing = unfilled(groups);
   const planimetry = groups.find(group => group.label === plane.category);
@@ -200,14 +232,18 @@ function drawBalanced(pool, random) {
   return { mode: 'balanced', ...chooseTasks(selections, random), missing };
 }
 
-export function generatePaper(tasks, { years = [], include = [], exclude = [], size, random = Math.random } = {}) {
-  const pool = fromYears(tasks, years).filter(task => eligible(task) && matchesTags(task, include, exclude));
-  if (include.length || exclude.length) {
+export function generatePaper(tasks, {
+  mode = 'balanced', years = [], latestFormulaOnly = false, categories = [], include = [], exclude = [],
+  size, random = Math.random,
+} = {}) {
+  if (mode === 'categories') {
+    const pool = fromCategories(tasks, categories).filter(task => eligible(task) && matchesTags(task, include, exclude));
     const requested = Number.isInteger(size) && size >= 1 ? size : 12;
     const chosen = shuffled(uniqueProblems(pool), random).slice(0, requested);
-    return { mode: 'tags', tasks: chosen, requested,
+    return { mode: 'categories', tasks: chosen, requested,
       points: chosen.every(task => task.punkty != null) ? chosen.reduce((sum, task) => sum + task.punkty, 0) : null };
   }
 
-  return drawBalanced(pool, random);
+  const { candidates, years: selectedYears } = balancedScope(tasks, years, latestFormulaOnly);
+  return drawBalanced(fromYears(candidates, selectedYears), random);
 }

@@ -7,10 +7,10 @@
   <title>MatIndeks — matematyka rozszerzona</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./vendor/katex/katex.min.css">
-  <link rel="stylesheet" href="./style.css?v=5">
+  <link rel="stylesheet" href="./style.css?v=6">
   <script src="./vendor/katex/katex.min.js" defer></script>
   <script src="./vendor/sqljs/sql-wasm.js" defer></script>
-  <script type="module" src="./js/main.js?v=8"></script>
+  <script type="module" src="./js/main.js?v=9"></script>
 </head>
 <body>
   <a class="skip-link" href="#tresc">Przejdź do treści</a>
@@ -114,32 +114,48 @@
     <section id="view-generator" hidden aria-labelledby="generator-title">
       <div class="page-head">
         <h1 id="generator-title">Generator arkusza</h1>
-        <p>Wylosuj arkusz według rozkładu tematów albo wybierz tagi do ćwiczenia.</p>
+        <p>Wylosuj pełny arkusz albo ćwicz wybrane kategorie.</p>
       </div>
       <div class="generator-layout">
         <form id="generator-form" class="filter-box generator-form">
-        <fieldset class="generator-years">
-            <legend>Lata zadań</legend>
-            <p class="field-note" id="year-note">Bez zaznaczenia losujesz z wszystkich lat.</p>
-            <div id="generator-years" class="year-list" aria-describedby="year-note"></div>
+          <fieldset id="generator-modes">
+            <legend>Tryb losowania</legend>
+            <div class="generator-options">
+              <label class="generator-option"><input type="radio" name="tryb" value="balanced" checked> Pełny arkusz</label>
+              <label class="generator-option"><input type="radio" name="tryb" value="categories" id="generator-category-mode"> Według kategorii</label>
+            </div>
           </fieldset>
-          <div class="generator-tag-filters">
-            <div id="include-tag-filter"></div>
-            <div id="exclude-tag-filter"></div>
-          </div>
-          <div id="sample-size" hidden>
-            <label for="generator-size">Liczba zadań</label>
-          <input type="number" id="generator-size" min="1" max="50" value="12" aria-describedby="sample-size-note" required>
-          <p class="field-note" id="sample-size-note">Wybór tagów uruchamia losowanie z przefiltrowanej puli.</p>
+          <fieldset id="generator-balanced" class="generator-section">
+            <legend>Lata zadań</legend>
+            <label class="generator-formula"><input type="checkbox" id="generator-latest-formula"> Tylko nowa formuła</label>
+            <p class="field-note" id="year-note">Bez zaznaczenia losujesz ze wszystkich lat.</p>
+            <div id="generator-years" class="generator-options" aria-describedby="year-note"></div>
+          </fieldset>
+          <div id="generator-by-category" class="generator-section" hidden>
+            <fieldset>
+              <legend>Kategorie</legend>
+              <div class="generator-category-list" id="generator-categories"></div>
+            </fieldset>
+            <fieldset id="generator-tags" class="generator-section" disabled>
+              <legend>Tagi (opcjonalnie)</legend>
+              <div class="generator-tag-filters">
+                <div id="include-tag-filter"></div>
+                <div id="exclude-tag-filter"></div>
+              </div>
+            </fieldset>
+            <div id="sample-size">
+              <label for="generator-size">Liczba zadań</label>
+              <input type="number" id="generator-size" min="1" max="50" value="12" required disabled>
+            </div>
           </div>
           <div class="generator-actions">
-            <button type="submit" class="button button-primary">Wylosuj arkusz</button>
+            <button type="submit" class="button button-primary" disabled>Wylosuj arkusz</button>
             <button type="reset" class="button button-quiet">Wyczyść wybór</button>
           </div>
-        <p class="field-note generator-count" id="generator-pool" aria-live="polite"></p>
-        <p class="field-note generator-count" id="generator-shortage" aria-live="polite" hidden></p>
+          <p class="field-note generator-count" id="generator-pool" aria-live="polite"></p>
+          <p class="field-note generator-count" id="generator-shortage" aria-live="polite" hidden></p>
         </form>
-        <aside class="generator-aside">
+        <aside class="generator-aside" id="generator-aside">
           <div class="frequency-panel" id="frequency-panel"></div>
         </aside>
       </div>

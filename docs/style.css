@@ -576,14 +576,24 @@ table tbody tr:nth-child(even) { background: #f7fafb; }
   gap: 1.25rem;
 }
 
+.generator-layout:has(.generator-aside[hidden]) { grid-template-columns: minmax(0, 1fr); }
 .generator-form, .frequency-panel { padding: .87rem; }
 .generator-form fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
 .generator-form legend { padding: 0; font-weight: 670; }
+.generator-form .generator-section { margin-top: 1rem; }
 .field-note { color: var(--muted); font-size: .86rem; }
-.year-list { display: flex; gap: .24rem .44rem; flex-wrap: wrap; margin-top: .47rem; }
-.year-option {
+.generator-formula { display: inline-flex; align-items: center; gap: .32rem; margin-block: .32rem .18rem; }
+.generator-options { display: flex; gap: .24rem .44rem; flex-wrap: wrap; margin-top: .47rem; }
+.generator-category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: .24rem .44rem;
+  margin-top: .47rem;
+}
+.generator-option {
   display: flex;
   align-items: center;
+  gap: .32rem;
   padding: .24rem .48rem;
   border: 1px solid var(--line);
   border-radius: 4px;
@@ -591,12 +601,12 @@ table tbody tr:nth-child(even) { background: #f7fafb; }
   cursor: pointer;
 }
 
-.year-option:has(input:checked) { background: var(--pale); border-color: var(--field-line); }
-.year-option:has(input:disabled) { color: var(--muted); background: #f3f6f7; cursor: default; }
-.generator-tag-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: 1rem; }
+.generator-option input { flex: none; }
+.generator-option:has(input:checked) { background: var(--pale); border-color: var(--field-line); }
+.generator-option:has(input:disabled) { color: var(--muted); background: #f3f6f7; cursor: default; }
+.generator-tag-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: .35rem; }
 #sample-size { margin-top: 1rem; }
 #generator-size { width: 4.5rem; margin-left: .4rem; }
-#sample-size p { margin-top: .3rem; }
 .generator-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .generator-count { margin-top: .45rem; }
 .frequency-panel h2 { font-size: 1.17rem; }

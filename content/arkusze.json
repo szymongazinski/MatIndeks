@@ -2813,28 +2813,51 @@
     "sprawdzone_rozwiazanie": 1
   },
   {
-    "id": "2023-06-13",
-    "numer": "13",
+    "id": "2023-06-13a",
+    "numer": "13a",
     "arkusz_id": "2023-06",
     "arkusz": "Czerwiec 2023",
     "rok": 2023,
     "miesiac": 6,
     "typ": "dodatkowy",
     "formula": 2023,
-    "punkty": 6,
+    "punkty": 3,
     "strona_zadania": 24,
     "strona_rozwiazania": 29,
     "zrodlo_arkusz": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona.pdf",
     "zrodlo_rozwiazanie": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
-    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\na) Wyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji.\nb) Wyznacz wysokość graniastosłupa o największej objętości.\n\nZapisz obliczenia.\n\n[[rysunek:2023-06-13|Graniastosłup prawidłowy czworokątny z odcinkiem d od środka O dolnej podstawy do wierzchołka H.]]",
-    "rozwiazanie": "Niech \\(a\\) będzie krawędzią kwadratowej podstawy. Mamy \\(|OD|=a\\sqrt2/2\\). W trójkącie prostokątnym \\(ODH\\) zachodzi \\(d^2=h^2+a^2/2\\), więc\n\\[a^2=2(d^2-h^2),\\qquad V(h)=2(d^2-h^2)h.\\]\nWarunki \\(a>0\\) i \\(h>0\\) dają dziedzinę \\(h\\in(0,d)\\).\n\nPochodna \\(V'(h)=2(d^2-3h^2)\\) znika w tej dziedzinie tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia przed tym punktem i ujemna za nim, więc objętość jest największa przy wysokości \\(h=d/\\sqrt3\\).",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\nWyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji. Zapisz obliczenia.\n\n[[rysunek:2023-06-13|Graniastosłup prawidłowy czworokątny z odcinkiem d od środka O dolnej podstawy do wierzchołka H.]]",
+    "rozwiazanie": "Niech \\(a\\) będzie długością krawędzi kwadratowej podstawy. Mamy \\(|OD|=a\\sqrt2/2\\). W trójkącie prostokątnym \\(ODH\\) z twierdzenia Pitagorasa otrzymujemy \\(d^2=h^2+a^2/2\\), więc\n\\[a^2=2(d^2-h^2),\\qquad V(h)=a^2h=2(d^2-h^2)h.\\]\nWarunki \\(a>0\\) i \\(h>0\\) dają \\(0<h<d\\). Dla każdego takiego \\(h\\) można dobrać dodatnią długość \\(a\\) zgodnie z tym wzorem. Dziedziną funkcji \\(V\\) jest \\((0,d)\\).\n\n**Punktacja**\nCKE ocenia całe zadanie 13 łącznie w skali 0–6 pkt. W katalogu 3 pkt za część a) odpowiadają etapom do wyznaczenia wzoru funkcji \\(V\\) i jej dziedziny włącznie.",
     "kategorie": [
-      "Optymalizacja funkcji"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
       "Graniastosłup"
     ],
+    "sprawdzone_polecenie": 1,
+    "sprawdzone_rozwiazanie": 1
+  },
+  {
+    "id": "2023-06-13b",
+    "numer": "13b",
+    "arkusz_id": "2023-06",
+    "arkusz": "Czerwiec 2023",
+    "rok": 2023,
+    "miesiac": 6,
+    "typ": "dodatkowy",
+    "formula": 2023,
+    "punkty": 3,
+    "strona_zadania": 24,
+    "strona_rozwiazania": 30,
+    "zrodlo_arkusz": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona.pdf",
+    "zrodlo_rozwiazanie": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\nZ części a) wiadomo, że objętość graniastosłupa o wysokości \\(h\\) wynosi\n\\[V(h)=2(d^2-h^2)h,\\qquad h\\in(0,d).\\]\nWyznacz wysokość graniastosłupa o największej objętości. Zapisz obliczenia.\n\n[[rysunek:2023-06-13|Graniastosłup prawidłowy czworokątny z odcinkiem d od środka O dolnej podstawy do wierzchołka H.]]",
+    "rozwiazanie": "Pochodna \\(V^\\prime(h)=2(d^2-3h^2)\\) zeruje się w dziedzinie \\((0,d)\\) tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia dla \\(0<h<d/\\sqrt3\\) i ujemna dla \\(d/\\sqrt3<h<d\\). Zatem \\(V\\) osiąga maksimum dla \\(h=d/\\sqrt3\\).\n\n**Punktacja**\nCKE ocenia całe zadanie 13 łącznie w skali 0–6 pkt. W katalogu 3 pkt za część b) odpowiadają kolejnym etapom po wyznaczeniu wzoru i dziedziny, od obliczenia pochodnej do uzasadnienia maksimum.",
+    "kategorie": [
+      "Optymalizacja funkcji"
+    ],
+    "tagi": [],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },

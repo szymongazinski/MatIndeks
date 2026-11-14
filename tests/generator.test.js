@@ -60,6 +60,16 @@ test('profiles use complete main and additional papers in the latest supported f
   assert.ok(profiles.every(profile => profile.categories.includes(parameter)));
 });
 
+test('profiles count the primary category of each recorded task or subpart once', () => {
+  const whole = task('2023-06-13', 2023, '2023-06', optimization, 50);
+  assert.deepEqual(buildProfiles([whole])[0].categories, [optimization]);
+  const parts = [
+    { ...whole, id: '2023-06-13a', kategorie: [spatial], punkty: 2 },
+    { ...whole, id: '2023-06-13b', punkty: 48 },
+  ];
+  assert.deepEqual(buildProfiles(parts)[0].categories, [spatial, optimization]);
+});
+
 test('year selection keeps required topics and caps the optional quotas to what the pool offers', () => {
   const restricted = papersPool.filter(item => item.id !== '8' && item.kategorie[0] !== tangent
     && item.kategorie[0] !== limits && item.kategorie[0] !== logarithm
@@ -70,6 +80,31 @@ test('year selection keeps required topics and caps the optional quotas to what 
   assert.equal(result.tasks.filter(item => item.kategorie[0] === plane).length, 2);
   assert.equal(result.tasks.filter(item => [exponential, polynomial].includes(item.kategorie[0])).length, 2);
   assert.deepEqual(result.missing, []);
+});
+
+test('balanced mode only applies year filters when sample options are also present', () => {
+  const result = generatePaper(tasks, { mode: 'balanced', years: [2018], categories: [plane],
+    include: [viète], exclude: [similarity], size: 1, random: () => 0 });
+  assert.equal(result.mode, 'balanced');
+  assert.deepEqual(result.tasks.map(item => item.id), ['c1']);
+});
+
+test('latest-formula mode uses the newest formula and its years derived from the tasks', () => {
+  const candidates = [
+    task('legacy', 2039, '2039-05', spatial, 6),
+    task('pilot', 2041, '2041-12', sequences, 4, [], { formula: 2042 }),
+    task('legacy-overlap', 2042, '2042-05-old', parameter, 5),
+    task('launch', 2042, '2042-05', plane, 4, [], { formula: 2042 }),
+    task('later', 2043, '2043-05', spatial, 6, [], { formula: 2042 }),
+  ];
+  const options = { years: [2039, 2041], latestFormulaOnly: true, random: () => 0 };
+  const result = generatePaper(candidates, options);
+  assert.deepEqual(result.tasks.map(item => item.id).sort(), ['later', 'launch']);
+  const availability = generatorAvailability(candidates, options, { years: [2039, 2041, 2042, 2043] });
+  assert.equal(availability.total, 2);
+  assert.deepEqual([...availability.yearCounts], [[2039, 0], [2041, 0], [2042, 1], [2043, 1]]);
+  const narrowed = generatePaper(candidates, { ...options, years: [2039, 2042] });
+  assert.deepEqual(narrowed.tasks.map(item => item.id), ['launch']);
 });
 
 test('required slots remain missing when they only occur among secondary categories', () => {
@@ -118,13 +153,28 @@ test('point selection finds an exact 50 and varies the task set across equally s
   assert.equal(withoutExact.points, 48);
 });
 
-test('tag filters use all requested and none excluded, with a uniform sample without replacement', () => {
-  const filtered = generatePaper(tasks, { include: [viète], exclude: [similarity], size: 10, random: () => 0 });
-  assert.equal(filtered.mode, 'tags');
+test('category samples accept any selected category, including secondary categories, across years', () => {
+  const candidates = tasks.map(item => item.id === 'c1' ? { ...item, kategorie: [sequences, plane] } : item);
+  const result = generatePaper(candidates, { mode: 'categories', categories: [parameter, plane],
+    years: [2026], latestFormulaOnly: true, size: 10, random: () => 0 });
+  assert.deepEqual(result.tasks.map(item => item.id).sort(), ['a1', 'a2', 'b1', 'b3', 'c1', 'd1']);
+  assert.equal(result.points, null);
+});
+
+test('category samples apply all requested tags and veto excluded tags', () => {
+  const options = { mode: 'categories', categories: [parameter, plane], size: 10, random: () => 0 };
+  const filtered = generatePaper(tasks, { ...options, include: [viète], exclude: [similarity] });
+  assert.equal(filtered.mode, 'categories');
   assert.deepEqual(new Set(filtered.tasks.map(item => item.id)), new Set(['a1', 'b1']));
   assert.equal(filtered.requested, 10);
-  const all = generatePaper(tasks, { include: [viète, similarity], years: [2026], random: () => 0 });
+  assert.equal(filtered.points, 50);
+  const all = generatePaper(tasks, { ...options, include: [viète, similarity] });
   assert.deepEqual(all.tasks.map(item => item.id), ['b3']);
+});
+
+test('the category sample requires a category even when a tag is given', () => {
+  const result = generatePaper(tasks, { mode: 'categories', include: [viète] });
+  assert.deepEqual(result, { mode: 'categories', tasks: [], requested: 12, points: 0 });
 });
 
 test('autocomplete matches Polish letters even when they were typed without accents', () => {
@@ -132,52 +182,69 @@ test('autocomplete matches Polish letters even when they were typed without acce
   assert.deepEqual(suggestTags([similarity, parameter], '', [similarity]), [parameter]);
 });
 
-test('available generator filters reflect the proposed selection and preserve a nonempty pool', () => {
-  const options = generatorAvailability(tasks, { years: [2025, 2026], include: [viète], exclude: [similarity] },
-    { years: [2025, 2026, 2018], tags: [viète, similarity] });
-  assert.equal(options.total, 2);
-  assert.equal(options.includeCounts.get(similarity), 0);
-  assert.equal(options.excludeCounts.get(viète), 0);
-  const narrowed = generatorAvailability(tasks, { years: [2018, 2026], include: [viète], exclude: [] },
-    { years: [2026, 2018, 2025], tags: [viète, similarity] });
-  assert.equal(narrowed.yearCounts.get(2026), 0);
-  assert.equal(narrowed.yearCounts.get(2018), 2);
-  assert.equal(narrowed.yearCounts.get(2025), 3);
-  assert.equal(narrowed.includeCounts.get(similarity), 1);
-  assert.equal(narrowed.excludeCounts.get(similarity), 1);
+test('category counts show the pool left after each toggle', () => {
+  const taxonomy = { categories: [parameter, plane, sequences] };
+  const select = options => generatorAvailability(tasks, { mode: 'categories', ...options }, taxonomy);
+  const empty = select({});
+  assert.equal(empty.total, 0);
+  assert.deepEqual([...empty.categoryCounts], [[parameter, 2], [plane, 3], [sequences, 2]]);
+  const sole = select({ categories: [parameter] });
+  assert.equal(sole.categoryCounts.get(parameter), 0);
+  const narrowed = select({ categories: [parameter, plane], include: [viète] });
+  assert.equal(narrowed.total, 3);
+  assert.deepEqual([...narrowed.categoryCounts], [[parameter, 1], [plane, 2], [sequences, 3]]);
 });
 
-test('balanced availability counts only rule-eligible tasks but still suggests tags from the full pool', () => {
+test('tag availability is limited to the selected categories and feasible combinations', () => {
+  const otherTag = 'Tag spoza tych kategorii';
+  const candidates = tasks.map(item => item.id === 'c1' ? { ...item, tagi: [otherTag] } : item);
+  const taxonomy = { years: [2018, 2025, 2026], tags: [viète, similarity, otherTag], categories: [parameter, plane, sequences] };
+  const empty = generatorAvailability(candidates, { mode: 'categories' }, taxonomy);
+  assert.deepEqual(empty.categoryTags, new Set());
+  assert.deepEqual([...empty.includeCounts.values()], [0, 0, 0]);
+  assert.deepEqual([...empty.excludeCounts.values()], [0, 0, 0]);
+  const narrowed = generatorAvailability(candidates, { mode: 'categories', categories: [parameter, plane],
+    years: [2018], latestFormulaOnly: true, include: [viète] }, taxonomy);
+  assert.equal(narrowed.total, 3);
+  assert.deepEqual(narrowed.categoryTags, new Set([viète, similarity]));
+  assert.equal(narrowed.includeCounts.get(otherTag), 0);
+  assert.equal(narrowed.includeCounts.get(similarity), 1);
+  assert.equal(narrowed.excludeCounts.get(similarity), 2);
+  assert.equal(narrowed.excludeCounts.get(viète), 0);
+});
+
+test('balanced availability counts only rule-eligible tasks and ignores sample options', () => {
   const candidates = [...papersPool, task('other', 2025, 'próba', 'Różne', 2, [similarity])];
-  const taxonomy = { years: [2025, 2026], tags: [similarity] };
-  const all = generatorAvailability(candidates, {}, taxonomy);
+  const taxonomy = { years: [2025, 2026], tags: [similarity], categories: ['Różne'] };
+  const all = generatorAvailability(candidates, { categories: ['Różne'], include: [similarity] }, taxonomy);
   assert.equal(all.total, 18);
   assert.equal(all.yearCounts.get(2025), 0);
-  assert.equal(all.includeCounts.get(similarity), 1);
+  assert.equal(all.includeCounts.get(similarity), 0);
+  assert.deepEqual(all.categoryTags, new Set());
   assert.deepEqual(all.missingRequired, []);
   const narrowed = generatorAvailability(candidates, { years: [2025] }, taxonomy);
   assert.equal(narrowed.total, 0);
   assert.equal(narrowed.yearCounts.get(2025), 18);
   assert.ok(narrowed.missingRequired.includes('Kombinatoryka lub Prawdopodobieństwo'));
   assert.equal(narrowed.missingRequired.filter(category => category === plane).length, 2);
-  assert.equal(narrowed.includeCounts.get(similarity), 1);
 });
 
-test('identical problems across known papers are counted once in tagged and balanced pools', () => {
+test('identical problems across known papers are counted once in category and balanced pools', () => {
   const copies = [
     task('2019-06-6', 2019, '2019-06', combinatorics, 2, [viète], { numer: '6', polecenie: 'Sformułowanie A' }),
     task('2020-07-13', 2020, '2020-07', combinatorics, 4, [viète], { numer: '13', polecenie: 'Sformułowanie B' }),
     task('2018-06-8', 2018, '2018-06', plane, 3, [viète], { numer: '8', polecenie: 'Sformułowanie C' }),
     task('2020-04-8', 2020, '2020-04', plane, 3, [viète], { numer: '8', polecenie: 'Sformułowanie D' }),
   ];
-  const tagged = generatePaper(copies, { include: [viète], random: () => 0 });
+  const options = { mode: 'categories', categories: [combinatorics, plane], include: [viète], random: () => 0 };
+  const tagged = generatePaper(copies, options);
   assert.equal(tagged.tasks.length, 2);
   const balanced = generatePaper(copies, { random: () => .99 });
   assert.equal(balanced.tasks.filter(item => item.kategorie[0] === plane).length, 1);
   assert.equal(balanced.missing.filter(category => category === plane).length, 1);
-  const options = generatorAvailability(copies, {}, { years: [2018, 2019, 2020], tags: [viète] });
-  assert.equal(options.total, 2);
-  assert.equal(options.includeCounts.get(viète), 2);
+  const availability = generatorAvailability(copies, options, { tags: [viète], categories: [combinatorics, plane] });
+  assert.equal(availability.total, 2);
+  assert.equal(availability.includeCounts.get(viète), 2);
 });
 
 test('one-point tasks contribute to neither generator mode, tag availability nor topic slots', () => {
@@ -188,10 +255,12 @@ test('one-point tasks contribute to neither generator mode, tag availability nor
   const profiles = buildProfiles(items);
   assert.deepEqual(profiles[0].categories, [parameter]);
   assert.equal(profiles[0].points, 49);
-  const options = generatorAvailability(items, {}, { years: [2018], tags: [similarity, viète] });
+  const categories = { mode: 'categories', categories: [parameter, plane] };
+  const options = generatorAvailability(items, categories, { tags: [similarity, viète] });
   assert.equal(options.total, 1);
   assert.equal(options.includeCounts.get(similarity), 0);
-  assert.deepEqual(generatePaper(items, { include: [similarity] }).tasks, []);
-  assert.deepEqual(generatePaper(items, { exclude: [viète] }).tasks, []);
+  assert.deepEqual(options.categoryTags, new Set([viète]));
+  assert.deepEqual(generatePaper(items, { ...categories, include: [similarity] }).tasks, []);
+  assert.deepEqual(generatePaper(items, { ...categories, exclude: [viète] }).tasks, []);
   assert.deepEqual(generatePaper(items, { random: () => 0 }).tasks.map(task => task.id), ['open']);
 });
