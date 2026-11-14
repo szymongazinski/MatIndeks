@@ -1,0 +1,67 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Sklep AGD sprzedaje pralki wysyłkowo. Prawdopodobieństwo, że pralka wysłana przez sklep ulegnie uszkodzeniu podczas transportu, jest równe \\(0{,}02\\).\n\nOblicz prawdopodobieństwo, że z dziesięciu pralek wysłanych dziesięciu klientom podczas transportu uszkodzi się co najwyżej jedna. Wynik podaj w postaci dziesiętnej zaokrąglonej do części tysięcznych. Zapisz obliczenia.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "2",
+    "polecenie": "Wykaż, że dla \\(a=\\log_2 14\\) oraz \\(b=\\log_{\\sqrt2}27\\) zachodzi\n\\[\\log_7 54=\\frac{b+2}{2a-2}.\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "3",
+    "polecenie": "Ile jest sześciocyfrowych liczb naturalnych, w których iloczyn cyfr zapisu dziesiętnego jest parzysty i mniejszy od \\(5\\)? Zapisz obliczenia.",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "4",
+    "polecenie": "W prostokącie \\(ABCD\\) zachodzi \\(|AB|=2|AD|\\). Na bokach \\(AB,BC,CD,DA\\) leżą odpowiednio \\(K,L,M,N\\), po jednym punkcie na każdym boku, przy czym żaden nie jest wierzchołkiem prostokąta. Czworokąt \\(KLMN\\) jest trapezem prostokątnym o wysokości \\(LM\\) równoległej do przekątnej \\(BD\\) prostokąta.\n\nWykaż, że pole trójkąta \\(MDN\\) jest \\(16\\) razy większe od pola \\(KBL\\).",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "5",
+    "polecenie": "Wyznacz wszystkie wartości \\(m\\), dla których równanie\n\\[x^2+2mx+2m-1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające\n\\[m(x_1^2+x_2^2)=3mx_1x_2+2.\\]\nZapisz obliczenia.",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "6",
+    "polecenie": "Rozwiąż w przedziale \\([0,\\pi]\\) równanie\n\\[\\cos(2x)+2\\cos^2(3x)+\\cos(4x)=0.\\]\nZapisz obliczenia.",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "7",
+    "polecenie": "Czworokąt wypukły \\(ABCD\\) wpisano w okrąg. Długości boków są równe \\(|AB|=3,\\ |BC|=3,\\ |CD|=5,\\ |DA|=8\\).\n\nOblicz promień okręgu. Zapisz obliczenia.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "8",
+    "polecenie": "Dla \\(a,b,c\\in\\mathbb R\\) niech \\(f(x)=x^3+ax^2+bx+c\\). Wielomian ma miejsce zerowe \\(x=-2\\). Styczna do wykresu \\(f\\) w punkcie o odciętej \\(-2\\) przecina ten wykres w punkcie \\(P=(1,9)\\).\n\nWyznacz wzór \\(f\\) i zapisz obliczenia.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "9",
+    "polecenie": "Ciąg \\((a_n)_{n\\ge1}\\) jest arytmetyczny i rosnący. Zachodzą \\(a_6=15\\) i \\(a_{15}=a_3(a_8-6)\\). Ciąg \\((b_n)_{n\\ge1}\\) jest geometryczny i ma \\(b_1=a_{11}\\) oraz \\(b_2=a_6\\).\n\nOblicz sumę wszystkich wyrazów \\((b_n)\\). Zapisz obliczenia.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "10",
+    "polecenie": "Dany jest ostrosłup prawidłowy trójkątny \\(ABCD\\) o podstawie \\(ABC\\). Płaszczyzna zawierająca \\(AB\\) i prostopadła do krawędzi \\(CD\\) przecina \\(CD\\) w punkcie \\(E\\), dla którego \\(|CE|/|DE|=3/11\\).\n\nWyznacz stosunek pola powierzchni całkowitej ostrosłupa do pola \\(ABC\\). Zapisz obliczenia.",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "11",
+    "polecenie": "W układzie kartezjańskim równoległobok \\(ABCD\\) ma wierzchołki \\(A=(-8,-1),\\ D=(-13,9)\\) i środek symetrii \\(M=(-9/2,1)\\). Okrąg \\(\\mathcal O\\) przechodzi przez początek układu i jest styczny do prostych zawierających \\(AB\\) i \\(BC\\). Druga współrzędna jego środka jest ujemna.\n\nWyznacz równanie \\(\\mathcal O\\) i zapisz obliczenia.",
+    "strona_zadania": 22
+  },
+  {
+    "numer": "12.1",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe trójkątne o polu powierzchni całkowitej \\(24\\sqrt3\\). Wykaż, że objętość graniastosłupa o krawędzi podstawy \\(a\\) jest równa\n\\[V(a)=6a-\\frac18a^3.\\]",
+    "strona_zadania": 25
+  },
+  {
+    "numer": "12.2",
+    "polecenie": "Graniastosłupy prawidłowe trójkątne mają pole powierzchni całkowitej \\(24\\sqrt3\\). Ich objętość w zależności od długości \\(a\\) krawędzi podstawy jest dana wzorem\n\\[V(a)=6a-\\frac18a^3,\\qquad a\\in(0,4\\sqrt3).\\]\nWyznacz długość krawędzi podstawy graniastosłupa o największej objętości. Oblicz tę objętość i zapisz obliczenia.",
+    "strona_zadania": 26
+  }
+]

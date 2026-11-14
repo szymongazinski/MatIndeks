@@ -1,0 +1,92 @@
+[
+  {
+    "numer": "1",
+    "strona_rozwiazania": 2,
+    "rozwiazanie": "**Sposób I — drzewo**\nPierwsza urna jest wybierana w dwóch z sześciu wyników rzutu, druga w czterech. Na gałęziach pierwszej urny prawdopodobieństwa białej i czarnej kuli to \\(1/5\\) i \\(4/5\\), a na gałęziach drugiej \\(3/5\\) i \\(2/5\\). Sumujemy iloczyny w dwóch ścieżkach prowadzących do białej kuli.\n\\[\\frac13\\cdot\\frac15+\\frac23\\cdot\\frac35=\\frac7{15}.\\]\n\n**Sposób II — prawdopodobieństwo całkowite**\nNiech \\(U_1,U_2\\) oznaczają wybór pierwszej i drugiej urny, a \\(B\\) wylosowanie białej kuli. Zdarzenia \\(U_1,U_2\\) są rozłączne i wyczerpują wszystkie możliwości. Zatem\n\\[P(B)=P(B\\mid U_1)P(U_1)+P(B\\mid U_2)P(U_2)\n=\\frac15\\cdot\\frac13+\\frac35\\cdot\\frac23=\\frac7{15}.\\]\nPoprawna odpowiedź to **C**."
+  },
+  {
+    "numer": "2",
+    "strona_rozwiazania": 3,
+    "rozwiazanie": "Pierwszy wyraz ciągu to \\(a_1=3/\\sqrt2\\), a iloraz \\(q=1/\\sqrt2\\). Ponieważ \\(|q|<1\\), suma jest równa\n\\[\\frac{a_1}{1-q}=\\frac{3/\\sqrt2}{1-1/\\sqrt2}=\\frac3{\\sqrt2-1}.\\]\nPoprawna odpowiedź to **D**."
+  },
+  {
+    "numer": "3",
+    "strona_rozwiazania": 4,
+    "rozwiazanie": "Sprowadzamy potęgi do wspólnej podstawy \\(3\\).\n\\[\\frac{27^{665}\\sqrt[3]{3^{-92}}}{(1/3)^{152/3}}\n=3^{3\\cdot665-92/3+152/3}=3^{1995+20}=3^{2015}.\\]\nPoprawna odpowiedź to **C**."
+  },
+  {
+    "numer": "4",
+    "strona_rozwiazania": 4,
+    "rozwiazanie": "**Sposób I — szkic**\nRysujemy w jednym układzie okrąg o środku \\((0,1)\\) i promieniu \\(5\\) oraz okrąg o środku \\((1,0)\\) i promieniu \\(3\\). Drugi mieści się w całości wewnątrz pierwszego.\n\n**Sposób II — porównanie odległości z różnicą promieni**\nOdległość środków wynosi \\(\\sqrt{(1-0)^2+(0-1)^2}=\\sqrt2\\), a różnica promieni \\(5-3=2\\). Ponieważ \\(\\sqrt2<2\\), drugi okrąg ma każdy punkt w odległości mniejszej niż \\(5\\) od środka pierwszego. Brak punktów wspólnych.\n\nPoprawna odpowiedź to **D**."
+  },
+  {
+    "numer": "5",
+    "strona_rozwiazania": 5,
+    "rozwiazanie": "**Sposób I — wzór na sumę sinusów**\nZe wzoru \\(\\sin u+\\sin v=2\\sin((u+v)/2)\\cos((u-v)/2)\\) dla \\(u=3\\alpha,\\ v=\\alpha\\) otrzymujemy \\(2\\sin(2\\alpha)\\cos\\alpha\\).\n\n**Sposób II — wzór na sinus sumy i podwojony kąt**\nObliczamy\n\\[\\sin(3\\alpha)=\\sin(\\alpha+2\\alpha)\n=\\sin\\alpha\\cos(2\\alpha)+\\cos\\alpha\\sin(2\\alpha)\n=\\sin\\alpha(4\\cos^2\\alpha-1).\\]\nPo dodaniu \\(\\sin\\alpha\\) dostajemy \\(4\\sin\\alpha\\cos^2\\alpha=2\\sin(2\\alpha)\\cos\\alpha\\).\n\nPoprawna odpowiedź to **C**."
+  },
+  {
+    "numer": "6",
+    "strona_rozwiazania": 6,
+    "rozwiazanie": "**Sposób I — odległości**\nNa osi liczbowej \\(A=-57\\), \\(B=39\\) i \\(|AB|=96\\). Warunek \\(2|x+57|=|x-39|\\) oznacza, że odległość od \\(x\\) do \\(B\\) jest dwa razy większa niż odległość do \\(A\\). Na lewo od \\(A\\) trzeba odłożyć \\(96\\), co daje \\(-153\\). Między \\(A\\) i \\(B\\) trzeba odłożyć od \\(A\\) jedną trzecią \\(96\\), co daje \\(-25\\). Na prawo od \\(B\\) odległość do \\(B\\) jest mniejsza.\n\n**Sposób II — przedziały**\nDla \\(x\\le-57\\) mamy \\(2(-x-57)=39-x\\), stąd \\(x=-153\\). Dla \\(-57<x<39\\) mamy \\(2(x+57)=39-x\\), stąd \\(x=-25\\). Dla \\(x\\ge39\\) równanie \\(2(x+57)=x-39\\) prowadzi do liczby spoza przedziału. Do wyznaczenia minimum wystarczy też pierwszy przedział, skoro znalezione w nim rozwiązanie jest jedyne i leży na lewo od pozostałych przedziałów.\n\n**Sposób III — równość modułów**\nWarunek jest równoważny \\(2(x+57)=x-39\\) lub \\(2(x+57)=39-x\\). Stąd odpowiednio \\(-153\\) lub \\(-25\\).\n\nNajmniejsza liczba całkowita to \\(n=-153\\), zatem dla \\(|n|\\) kodujemy \\(1,5,3\\)."
+  },
+  {
+    "numer": "7",
+    "strona_rozwiazania": 8,
+    "rozwiazanie": "Dzielimy licznik oraz oba czynniki mianownika przez odpowiednie potęgi \\(n\\).\n\\[\\lim_{n\\to\\infty}\\frac{3n^2-5n+2}{(8n+7)(n+4)}\n=\\lim_{n\\to\\infty}\\frac{3-5/n+2/n^2}{(8+7/n)(1+4/n)}\n=\\frac38=0{,}375.\\]\nKodujemy \\(3,7,5\\)."
+  },
+  {
+    "numer": "8",
+    "strona_rozwiazania": 9,
+    "rozwiazanie": "Z reguły różniczkowania ilorazu:\n\\[f'(x)=\\frac{x^2+6-2x(x-8)}{(x^2+6)^2}\n=\\frac{-x^2+16x+6}{(x^2+6)^2}.\\]\nDla \\(x=\\tfrac12\\) licznik to \\(55/4\\) i mianownik to \\((25/4)^2\\), więc \\(f'(\\tfrac12)=44/125=0{,}352\\). Kodujemy \\(3,5,2\\)."
+  },
+  {
+    "numer": "9",
+    "strona_rozwiazania": 9,
+    "rozwiazanie": "Mamy \\(\\log_3\\sqrt[4]{27}=\\tfrac34\\). Ponadto\n\\[\\sqrt[3]{\\sqrt[3]{3}}=3^{1/9},\\qquad\n\\log_3\\bigl(\\log_3(3^{1/9})\\bigr)\n=\\log_3(1/9)=-2.\\]\nRóżnica wynosi \\(\\tfrac34-(-2)=\\tfrac{11}4=2{,}75\\), więc kodujemy \\(2,7,5\\)."
+  },
+  {
+    "numer": "10",
+    "strona_rozwiazania": 10,
+    "rozwiazanie": "**Sposób I — kąty w trójkącie**\nDorysowujemy cięciwę \\(P_1P_{11}\\). Kąt \\(P_{11}P_1P_{16}\\) jest wpisany i oparty na łuku o \\(5\\) z \\(24\\) równych części okręgu, więc ma miarę \\(\\tfrac12\\cdot\\tfrac5{24}\\cdot360^\\circ=37{,}5^\\circ\\). Kąt \\(P_1P_{11}P_{22}\\) opiera się na \\(3\\) częściach, więc ma \\(22{,}5^\\circ\\). W trójkącie \\(AP_1P_{11}\\) kąt przy \\(A\\) wynosi \\(180^\\circ-37{,}5^\\circ-22{,}5^\\circ=120^\\circ\\). Ponieważ \\(AP_1\\) i \\(AP_{16}\\) są przeciwnymi półprostymi, szukany kąt ma \\(180^\\circ-120^\\circ=60^\\circ\\).\n\n**Sposób II — równoległe cięciwy**\nŁuki \\(P_{22}P_1\\) i \\(P_8P_{11}\\) mają tę samą długość, więc odpowiednie kąty wpisane są równe. Z równości kątów naprzemianległych wynika \\(P_1P_8\\parallel P_{11}P_{22}\\). Kąt \\(P_{11}AP_{16}\\) ma zatem tę samą miarę co \\(P_8P_1P_{16}\\). Ten ostatni jest wpisany i oparty na \\(8/24\\) okręgu, więc wynosi \\(\\tfrac12\\cdot\\tfrac8{24}\\cdot360^\\circ=60^\\circ\\)."
+  },
+  {
+    "numer": "11",
+    "strona_rozwiazania": 12,
+    "rozwiazanie": "Różnica lewej i prawej strony to \\(W=20x^2-24mx+18m^2-4x-12m+5\\).\n\n**Sposób I — suma kwadratów**\nRozkładamy\n\\[W=(2x-1)^2+(3m-2)^2+(4x-3m)^2.\\]\nKażdy składnik jest nieujemny.\n\n**Sposób II — wyróżnik**\nDla dowolnego \\(m\\) traktujemy \\(W=20x^2-(24m+4)x+(18m^2-12m+5)\\) jako trójmian zmiennej \\(x\\). Współczynnik przy \\(x^2\\) jest dodatni, a wyróżnik\n\\[\\Delta=(24m+4)^2-80(18m^2-12m+5)=-96(3m-2)^2\\]\njest niedodatni. Stąd \\(W\\ge0\\) dla każdego \\(x\\) i każdego \\(m\\)."
+  },
+  {
+    "numer": "12",
+    "strona_rozwiazania": 14,
+    "rozwiazanie": "Z wartości \\(\\binom6k\\) dla \\(k=0,1,\\ldots,6\\) otrzymujemy kolejno \\(64p_k=1,6,15,20,15,6,1\\). Wyniki sprzyjające \\(A\\cap B\\) to \\(3\\) i \\(5\\), a sprzyjające \\(B\\) to \\(2,3,4,5,6\\). Stąd \\(P(A\\cap B)=26/64\\) i \\(P(B)=57/64\\), więc\n\\[P(A\\mid B)=\\frac{26/64}{57/64}=\\frac{26}{57}.\\]"
+  },
+  {
+    "numer": "13",
+    "strona_rozwiazania": 15,
+    "rozwiazanie": "**Sposób I — punkty przecięcia**\nPodstawiamy \\(y=mx+2m+3\\) do \\(x^2+y^2=9\\). Dostajemy\n\\[(m^2+1)x^2+2m(2m+3)x+4m^2+12m=0.\\]\nJest to równanie kwadratowe dla każdego \\(m\\), a różnym wartościom \\(x\\) odpowiadają różne punkty. Wyróżnik wynosi\n\\[\\Delta=4m^2(2m+3)^2-4(m^2+1)(4m^2+12m)=4m(5m-12).\\]\nDwa punkty przecięcia istnieją dokładnie wtedy, gdy \\(\\Delta>0\\).\n\n**Sposób II — odległość od środka**\nProsta przecina okrąg w dwóch punktach, jeżeli jej odległość od \\((0,0)\\) jest mniejsza niż \\(3\\). Z \\(mx-y+2m+3=0\\) mamy \\(d=|2m+3|/\\sqrt{m^2+1}\\). Warunek \\(d<3\\), po pomnożeniu przez dodatni mianownik i podniesieniu obu nieujemnych stron do kwadratu, daje \\((2m+3)^2<9(m^2+1)\\), czyli \\(m(5m-12)>0\\). Można też wcześniej rozpatrzyć dwa przedziały względem \\(-3/2\\). Dla \\(m<-3/2\\) wszystkie wartości spełniają warunek, a dla \\(m\\ge-3/2\\) zostaje \\([-3/2,0)\\cup(12/5,\\infty)\\).\n\nW obu sposobach wynik to \\(m\\in(-\\infty,0)\\cup(12/5,\\infty)\\)."
+  },
+  {
+    "numer": "14",
+    "strona_rozwiazania": 17,
+    "rozwiazanie": "Punkt styczności to \\(A=(3,10)\\).\n\n**Sposób I — pochodna**\nDla \\(f(x)=x^2+1\\) mamy \\(f'(x)=2x\\). Styczna ma nachylenie \\(f'(3)=6\\) i przechodzi przez \\((3,10)\\), więc \\(y-10=6(x-3)\\).\n\n**Sposób II — pojedyncze przecięcie**\nSzukamy prostej \\(y=ax+10-3a\\) przez \\(A\\). Ma ona z parabolą jeden punkt wspólny, gdy równanie \\(x^2-ax+3a-9=0\\) ma podwójny pierwiastek. Z \\(\\Delta=a^2-12a+36=(a-6)^2=0\\) wynika \\(a=6\\).\n\nW obu przypadkach otrzymujemy \\(y=6x-8\\)."
+  },
+  {
+    "numer": "15",
+    "strona_rozwiazania": 19,
+    "rozwiazanie": "**Sposób I — wysokość ściany**\nNiech \\(h\\) będzie wysokością ściany bocznej, a \\(H\\) wysokością ostrosłupa. Połowa ściany bocznej daje \\(h=\\tfrac a2\\tan\\alpha\\). Odległość środka kwadratu od środka boku wynosi \\(a/2\\), więc\n\\[H=\\sqrt{h^2-(a/2)^2}=\\frac a2\\sqrt{\\tan^2\\alpha-1}.\\]\nStąd \\(V=\\tfrac13a^2H=\\tfrac{a^3}{6}\\sqrt{\\tan^2\\alpha-1}\\). Ponieważ \\(\\tan^2\\alpha-1=-\\cos(2\\alpha)/\\cos^2\\alpha\\), można zapisać wynik również w postaci poniżej.\n\n**Sposób II — krawędź boczna**\nW połowie ściany bocznej krawędź boczna \\(b\\) jest przeciwprostokątną, więc \\(b=a/(2\\cos\\alpha)\\). Odległość od środka podstawy do wierzchołka podstawy to \\(a/\\sqrt2\\). Z twierdzenia Pitagorasa\n\\[H=\\sqrt{b^2-a^2/2}=\\frac{a\\sqrt{-\\cos(2\\alpha)}}{2\\cos\\alpha},\\]\na zatem \\(V=\\tfrac{a^3\\sqrt{-\\cos(2\\alpha)}}{6\\cos\\alpha}\\)."
+  },
+  {
+    "numer": "16",
+    "strona_rozwiazania": 22,
+    "rozwiazanie": "Niech \\(x=P_{AMS}\\) i \\(y=P_{ALS}\\). Trójkąty o wspólnej wysokości mają pola w stosunku długości podstaw. Na boku \\(AB\\) stosunek \\(|AM|:|MB|=1:2\\) daje \\(P_{AMC}=660/3=220\\) i \\(P_{BMS}=2x\\). Na boku \\(AC\\) stosunek \\(|AL|:|LC|=1:3\\) daje \\(P_{ALB}=660/4=165\\) i \\(P_{CLS}=3y\\).\n\nRozkładając większe trójkąty, otrzymujemy\n\\[P_{AMC}=x+y+3y=220,\\qquad P_{ALB}=x+y+2x=165.\\]\nUkład \\(x+4y=220,\\ 3x+y=165\\) daje \\(x=40,\\ y=45\\). Szukane pola \\(AMS,ALS,BMS,CLS\\) wynoszą kolejno \\(40,45,80,135\\)."
+  },
+  {
+    "numer": "17",
+    "strona_rozwiazania": 25,
+    "rozwiazanie": "**Liczenie według cyfr**\nPierwsza cyfra jest dodatnia, wszystkie niewymienione cyfry to zera. Gdy pierwsza cyfra to \\(4\\), istnieje jedna liczba. Gdy po pierwszej cyfrze występuje dokładnie jedna niezerowa cyfra, pary wartości to \\(3,1\\), \\(2,2\\) lub \\(1,3\\), po \\(99\\) wyborów miejsca dla każdej pary. Przy dwóch dalszych niezerowych cyfrach po pierwszej cyfrze \\(2\\) występują dwie jedynki, co daje \\(\\binom{99}2\\). Po pierwszej cyfrze \\(1\\) mogą wystąpić jedynka i dwójka w dowolnym porządku, więc dostajemy \\(2\\binom{99}2\\). Przy trzech dalszych niezerowych cyfrach wszystkie są jedynkami, łącznie z pierwszą cyfrą, co daje \\(\\binom{99}3\\). Suma wynosi\n\\[1+3\\cdot99+3\\binom{99}2+\\binom{99}3=171700.\\]\n\n**Wariant z uwagi CKE — suma cyfr**\nOdejmując \\(1\\) od pierwszej cyfry, otrzymujemy \\(100\\) nieujemnych składników o sumie \\(3\\). Żaden nie przekracza \\(3\\), więc po przywróceniu pierwszej cyfry każdy układ reprezentuje liczbę stucyfrową. Rozmieszczenie \\(3\\) jednostek w \\(100\\) miejscach daje \\(\\binom{102}3=171700\\)."
+  },
+  {
+    "numer": "18",
+    "strona_rozwiazania": 28,
+    "rozwiazanie": "**Sposób I — wysokość pudełka**\nNiech \\(x\\) oznacza bok wycinanego kwadratu. Wymiary pudełka to \\(x,80-2x,50-2x\\), więc \\(V(x)=4(x^3-65x^2+1000x)\\), gdzie \\(0<x<25\\). Pochodna to \\(4(3x^2-130x+1000)=4(x-10)(3x-100)\\). W dziedzinie jest dodatnia do \\(x=10\\) i ujemna po \\(x=10\\). Maksimum to \\(V(10)=10\\cdot60\\cdot30=18000\\ \\mathrm{cm}^3\\).\n\n**Sposób II — długość podstawy**\nNiech \\(u\\) oznacza długość podstawy. Pozostałe wymiary to \\(u-30\\) i \\((80-u)/2\\). W dziedzinie \\(30<u<80\\) mamy\n\\[V(u)=\\tfrac12u(u-30)(80-u),\\qquad V'(u)=-\\tfrac32u^2+110u-1200.\\]\nMiejsca zerowe pochodnej to \\(40/3\\) i \\(60\\), z czego tylko \\(60\\) należy do dziedziny. Pochodna zmienia tam znak z dodatniego na ujemny. Bok naroża to \\((80-60)/2=10\\) cm, a maksymalna objętość \\(18000\\ \\mathrm{cm}^3\\).\n\n**Sposób III — szerokość podstawy**\nNiech \\(v\\) będzie szerokością podstawy. Wtedy długość to \\(v+30\\), a wysokość \\((50-v)/2\\), gdzie \\(0<v<50\\). Mamy\n\\[V(v)=\\tfrac12v(v+30)(50-v)=-\\tfrac12v^3+10v^2+750v,\\qquad V'(v)=-\\tfrac32v^2+20v+750.\\]\nPochodna ma miejsca zerowe \\(-50/3\\) i \\(30\\). W dziedzinie jest dodatnia przed \\(30\\) i ujemna po \\(30\\), więc bok naroża to \\((50-30)/2=10\\) cm, a maksymalna objętość to \\(18000\\ \\mathrm{cm}^3\\)."
+  }
+]

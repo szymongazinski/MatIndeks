@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "15",
+    "rozwiazanie": "Niech \\(O\\) będzie środkiem podstawy, \\(a=|BC|\\), \\(b=|SC|\\), \\(H=|SO|=5\\). Oznaczmy środek \\(BC\\) przez \\(E\\), a spodek prostopadłej z \\(B\\) na \\(SC\\) przez \\(F\\). Przekrój prostopadły do wspólnej krawędzi \\(SC\\) daje \\(\\angle BFD=120^\\circ\\), a symetria względem płaszczyzny \\(SOC\\) daje \\(\\angle BFO=60^\\circ\\). Ponieważ \\(OB\\perp OF\\), mamy \\(|BF|=|BO|/\\sin60^\\circ=a\\sqrt6/3\\).\n\nTrójkąty prostokątne \\(SEC\\) i \\(BFC\\) mają wspólny kąt przy \\(C\\), więc \\(|SE|/|SC|=|BF|/|BC|=\\sqrt6/3\\). Z twierdzenia Pitagorasa w \\(EOS\\) i \\(BOS\\) dostajemy\n\\[25+\\frac{a^2}{4}=\\frac{2b^2}{3},\\qquad 25+\\frac{a^2}{2}=b^2.\\]\nPo podstawieniu \\(a^2=100\\) i \\(b^2=75\\). Stąd\n\\[V=\\frac13a^2H=\\frac{500}{3}.\\]",
+    "strona_rozwiazania": 30
+  }
+]

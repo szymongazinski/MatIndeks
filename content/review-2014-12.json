@@ -1,0 +1,18 @@
+[
+  {
+    "numer": "8",
+    "polecenie": "Oblicz granicę \\[\\lim_{n\\to\\infty}\\left(\\frac{n^2}{n+2}-\\frac{(n+2)^2}{n+444}\\right).\\]"
+  },
+  {
+    "numer": "11",
+    "polecenie": "Wyznacz wszystkie liczby rzeczywiste \\(x\\) spełniające równanie \\(\\sin(5x)-\\sin x=0\\)."
+  },
+  {
+    "numer": "6",
+    "polecenie": "Dane są liczby \\(a,b\\) spełniające \\(a-b=4\\) i \\(ab=7\\). Oblicz \\(a^3b+ab^3\\). Zakoduj kolejno cyfry setek, dziesiątek i jedności wyniku."
+  },
+  {
+    "numer": "15",
+    "polecenie": "Punkt \\(E\\) jest środkiem boku \\(BC\\) prostokąta \\(ABCD\\), w którym \\(|AB|>|BC|\\). Punkt \\(F\\) leży na boku \\(CD\\) i \\(\\angle AEF=90^\\circ\\). Udowodnij, że \\(\\angle BAE=\\angle EAF\\)."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "**Sposób I — równania wykładnicze**\nZ \\(Q(4)=2\\) oraz \\(Q(6)=18\\) wynika, że \\(2=Q_0\\beta^{-4}\\) i \\(18=Q_0\\beta^{-6}\\). Dzielimy równania stronami. Otrzymujemy \\(\\beta^2=\\frac19\\), więc \\(\\beta=\\frac13\\). Z pierwszego równania \\(Q_0=\\frac{2}{81}\\). Zatem \\(Q(5)=\\frac{2}{81}\\cdot 3^5=6\\) milikulombów.\n\n**Sposób II — ciąg geometryczny**\nWartości \\(Q(0),Q(1),Q(2),\\ldots\\) tworzą dodatni ciąg geometryczny o ilorazie \\(1/\\beta\\). Stąd \\(Q(5)^2=Q(4)Q(6)=2\\cdot18\\). Szukany ładunek wynosi \\(6\\) milikulombów.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Niech \\(D,E\\) będą punktami styczności okręgu do boków \\(AC,BC\\), a \\(S\\) jego środkiem. Z własności odcinków stycznych wychodzących z \\(C\\) mamy \\(|CD|=|CE|\\).\n\n[[rysunek:2024-12-2-rozw|Trójkąt ABC z punktami styczności D i E, środkiem okręgu S oraz punktami przecięcia M i N]]\n\n**Sposób I — przystawanie trójkątów**\nTrójkąt \\(MNS\\) jest równoramienny, bo \\(|MS|=|NS|\\). Jego kąty przy \\(M,N\\) są równe, więc równe są ich kąty przyległe \\(SMA\\) i \\(SNB\\). Z warunku \\(|AM|=|BN|\\) oraz cechy bok–kąt–bok wynika przystawanie trójkątów \\(AMS\\) i \\(BNS\\). Zatem \\(|AS|=|BS|\\). Skoro \\(|DS|=|ES|\\) i oba promienie są prostopadłe do odpowiednich stycznych, twierdzenie Pitagorasa daje \\(|AD|=|BE|\\). Dodając równe odcinki \\(CD,CE\\), otrzymujemy \\(|AC|=|BC|\\).\n\n**Sposób II — odcinki siecznej i stycznej**\nZ \\(|AM|=|BN|\\) mamy też \\(|AN|=|AM|+|MN|=|BN|+|MN|=|BM|\\). Potęgi punktów \\(A,B\\) względem okręgu spełniają więc\n\\[|AD|^2=|AM|\\cdot|AN|=|BN|\\cdot|BM|=|BE|^2.\\]\nWobec tego \\(|AC|=|AD|+|CD|=|BE|+|CE|=|BC|\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Oznaczmy promień podstawy przez \\(r\\), a wysokość przez \\(h\\). Dane dają \\(2rh=12\\sqrt3\\) i \\(2\\pi r^2+2\\pi rh=12\\pi(\\sqrt3+1)\\). Podstawiamy \\(rh=6\\sqrt3\\) do wzoru na pole. Stąd \\(2\\pi r^2=12\\pi\\), czyli \\(r=\\sqrt6\\) oraz \\(h=6\\sqrt3/\\sqrt6=3\\sqrt2\\).\n\\[V=\\pi r^2h=18\\pi\\sqrt2.\\]",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Korzystając z praw działań na logarytmach, upraszczamy mianowniki.\n\\[\\begin{aligned}\n\\log_2 35+1&=\\log_2(35\\cdot2)=\\log_2 70,\\\\\n\\log_7 140-\\log_7 2&=\\log_7(140/2)=\\log_7 70,\\\\\n\\log_5 7+\\log_5 2+1&=\\log_5(7\\cdot2\\cdot5)=\\log_5 70.\n\\end{aligned}\\]\nZamiana podstawy i wzór na logarytm iloczynu dają\n\\[\\frac{1}{\\log_2 70}+\\frac{1}{\\log_7 70}+\\frac{1}{\\log_5 70}=\\log_{70}2+\\log_{70}7+\\log_{70}5=\\log_{70}70=1.\\]",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Niech \\(A\\) oznacza dobrą znajomość niemieckiego, a \\(B\\) wyższe wykształcenie. Mamy \\(P(B)=0{,}35\\), \\(P(B^c)=0{,}65\\), \\(P(A\\mid B)=0{,}70\\) i \\(P(A\\mid B^c)=0{,}40\\). Ze wzoru Bayesa otrzymujemy\n\\[P(B\\mid A)=\\frac{0{,}35\\cdot0{,}70}{0{,}35\\cdot0{,}70+0{,}65\\cdot0{,}40}=\\frac{49}{101}\\approx0{,}49.\\]",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Odejmujemy z obu stron \\(|2-x|=|x-2|\\). Pozostaje \\(|4x-8|=|x+2|+4\\).\n\n**Sposób I — przedziały wyznaczone przez wartości bezwzględne**\nZapisujemy lewą stronę jako \\(4|x-2|\\). Dla \\(x<-2\\) mamy \\(-4x+8=-x-2+4\\), skąd \\(x=2\\) poza przedziałem. Dla \\(-2\\le x<2\\) mamy \\(-4x+8=x+2+4\\), skąd \\(x=\\frac25\\). Dla \\(x\\ge2\\) mamy \\(4x-8=x+2+4\\), skąd \\(x=\\frac{14}{3}\\). Obie ostatnie wartości należą do odpowiednich przedziałów.\n\n**Sposób II — alternatywa równań**\nPrawa strona jest dodatnia. Rozdzielamy równanie według tego, czy \\(4x-8\\) jest równe \\(|x+2|+4\\), czy \\(-|x+2|-4\\). Pierwsza możliwość daje \\(|x+2|=4x-12\\). Potrzebujemy \\(x\\ge3\\), a równania \\(x+2=\\pm(4x-12)\\) prowadzą do \\(\\frac{14}{3}\\) lub \\(2\\). Zostaje \\(\\frac{14}{3}\\). Druga możliwość daje \\(|x+2|=4-4x\\), stąd \\(x\\le1\\). Równania \\(x+2=\\pm(4-4x)\\) dają \\(\\frac25\\) lub \\(2\\). Zostaje \\(\\frac25\\).\n\nZbiór rozwiązań to \\(\\left\\{\\frac25,\\frac{14}{3}\\right\\}\\).",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Z równości odległości od \\(A,B\\) wynika, że \\(C\\) leży na symetralnej \\(AB\\). Prosta \\(AB\\) ma współczynnik kierunkowy \\(-\\frac13\\), więc symetralna ma współczynnik \\(3\\) i przechodzi przez środek \\((0,6)\\). Jej równanie to \\(y=3x+6\\).\n\nPodstawiamy do równania okręgu.\n\\[(x+1)^2+(3x+3)^2=50\\quad\\Longleftrightarrow\\quad(x+1)^2=5.\\]\nDla \\(x=\\sqrt5-1\\) otrzymujemy \\(y=3+3\\sqrt5\\), a dla \\(x=-\\sqrt5-1\\) otrzymujemy \\(y=3-3\\sqrt5\\). Punkt \\(C\\) może być równy \\((\\sqrt5-1,3+3\\sqrt5)\\) albo \\((-\\sqrt5-1,3-3\\sqrt5)\\).",
+    "strona_rozwiazania": 12
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Liczby nieparzyste w liczniku tworzą ciąg arytmetyczny o pierwszym wyrazie \\(1\\) i różnicy \\(2\\). Ostatni, \\(2n+1\\), jest wyrazem numer \\(n+1\\). Stąd suma wynosi \\(\\frac{1+(2n+1)}2(n+1)=(n+1)^2\\). Ponadto \\(\\binom n2=\\frac{n(n-1)}2\\), więc\n\\[\\lim_{n\\to+\\infty}\\frac{(n+1)^2}{\\binom n2}=\\lim_{n\\to+\\infty}\\frac{2+4/n+2/n^2}{1-1/n}=2.\\]",
+    "strona_rozwiazania": 14
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "**Sposób I — równanie kwadratowe w \\(\\sin(2x)\\)**\nZ \\(\\sin^4x+\\cos^4x=(\\sin^2x+\\cos^2x)^2-2\\sin^2x\\cos^2x\\) i \\(2\\sin x\\cos x=\\sin(2x)\\) dostajemy \\(1-\\frac12\\sin^2(2x)=\\frac12\\sin(2x)\\). Stąd \\((\\sin(2x)-1)(\\sin(2x)+2)=0\\). Drugi czynnik nie może znikać. Pierwszy daje \\(x=\\frac\\pi4+k\\pi\\) dla \\(k\\in\\mathbb Z\\).\n\n**Sposób II — nierówność średnich**\nŚrednia kwadratowa liczb \\(\\sin^2x,\\cos^2x\\) jest co najmniej równa ich średniej arytmetycznej \\(\\frac12\\). Dla rozwiązania \\(\\sin^4x+\\cos^4x=\\sin x\\cos x\\), a zatem \\(\\sqrt{\\sin x\\cos x/2}\\ge\\frac12\\). Stąd \\(\\sin(2x)\\ge1\\), czyli \\(\\sin(2x)=1\\). Dla każdego z kandydatów \\(x=\\frac\\pi4+k\\pi\\) mamy \\(\\sin^2x=\\cos^2x=\\frac12\\) oraz \\(\\sin x\\cos x=\\frac12\\). Równanie wyjściowe jest spełnione, bo \\(\\frac14+\\frac14=\\frac12\\).\n\n**Sposób III — grupowanie**\nZastępujemy \\(\\sin x\\cos x\\) przez \\(\\sin x\\cos x(\\sin^2x+\\cos^2x)\\). Po przeniesieniu wyrazów i grupowaniu mamy\n\\[(\\sin^3x-\\cos^3x)(\\sin x-\\cos x)=0.\\]\nOba czynniki zerują się dokładnie wtedy, gdy \\(\\sin x=\\cos x\\). W tym przypadku \\(\\cos x\\ne0\\), więc równanie ma postać \\(\\tan x=1\\), czyli \\(x=\\frac\\pi4+k\\pi\\).\n\nDo przedziału \\([-\\pi,2\\pi]\\) należą \\(-\\frac{3\\pi}4,\\frac\\pi4,\\frac{5\\pi}4\\).",
+    "strona_rozwiazania": 17
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Niech \\(r\\) będzie różnicą ciągu arytmetycznego. Równanie \\((a_1+2r)+(a_1+4r)=10\\) daje \\(a_1=5-3r\\). Z własności trzech kolejnych wyrazów ciągu geometrycznego wynika\n\\[(a_4-1)^2=-\\tfrac18 a_7(2a_1+4).\\]\nPo podstawieniu \\(a_4=5,\\ a_7=5+3r,\\ a_1=5-3r\\) dostajemy \\(16=-\\frac18(3r+5)(14-6r)\\), czyli \\(18r^2-12r-198=0\\). Rozwiązania to \\(r=-3\\) i \\(r=\\frac{11}3\\). Ciąg jest malejący, więc wybieramy \\(r=-3\\), dla którego \\(a_1=14\\) i \\(a_3+a_5=8+2=10\\). Szukane wyrazy to \\(32,4,\\frac12\\), które mają stały iloraz \\(\\frac18\\).",
+    "strona_rozwiazania": 20
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Dwa różne miejsca zerowe istnieją wtedy, gdy\n\\[\\Delta=4m^2-4m-3=4\\left(m+\\tfrac12\\right)\\left(m-\\tfrac32\\right)>0,\\]\nczyli \\(m<-\\frac12\\) albo \\(m>\\frac32\\). Ze wzorów Viète’a mamy \\(x_1+x_2=3\\) i \\(x_1x_2=-m^2+m+3\\). Warunek zadania jest równoważny \\(3|x_1-x_2|\\le12\\), czyli \\((x_1-x_2)^2\\le16\\). Ponieważ \\((x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2\\), dostajemy \\(4m^2-4m-19\\le0\\). Korzenie tego trójmianu to \\(\\frac{1-2\\sqrt5}2\\) i \\(\\frac{1+2\\sqrt5}2\\), więc nierówność zachodzi w przedziale domkniętym między nimi. Przecinając go z warunkiem \\(\\Delta>0\\), otrzymujemy\n\\[m\\in\\left[\\frac{1-2\\sqrt5}2,-\\frac12\\right)\\cup\\left(\\frac32,\\frac{1+2\\sqrt5}2\\right].\\]",
+    "strona_rozwiazania": 23
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Oznaczamy \\(|AD|=|BD|=c\\), \\(|BC|=a\\), \\(|AC|=b\\) i \\(|CD|=d\\).\n\n**Sposób I — trapez równoramienny**\nNiech \\(F\\) będzie odbiciem \\(C\\) względem symetralnej \\(AB\\), a \\(E\\) spodkiem prostopadłej z \\(C\\) do \\(AB\\). [[rysunek:2024-12-12-rozw-1|Trapez ABFC otrzymany przez odbicie punktu C względem symetralnej AB]]\n\nCzworokąt \\(ABFC\\) jest trapezem równoramiennym. Z równoległości \\(CF\\) do \\(AB\\) i równości kątów przy podstawie mamy \\(\\angle BCF=\\alpha\\) oraz \\(\\angle CBF=2\\alpha-\\alpha=\\alpha\\). Zatem \\(|CF|=|BF|=b\\). Oś symetrii przechodzi przez \\(D\\), więc \\(|ED|=\\frac12|CF|=\\frac b2\\). Ostatecznie\n\\[\\frac{\\tan\\beta}{\\sin(2\\alpha)}=\\frac{|CE|/|ED|}{|CE|/b}=\\frac b{|ED|}=2.\\]\n\n**Sposób II — twierdzenie sinusów w trójkątach \\(ABC\\) i \\(ADC\\)**\n[[rysunek:2024-12-12-rozw-2|Trójkąt ABC ze środkową CD i długościami odcinków a, b, c, d]]\n\nTwierdzenie sinusów daje dwie równości \\(b/c=2\\sin\\alpha/\\sin(3\\alpha)\\) i \\(b/c=\\sin\\beta/\\sin(2\\alpha+\\beta)\\). Porównujemy je i rozwijamy sinusy sum.\n\\[\\begin{aligned}\n2\\sin\\alpha\\sin(2\\alpha+\\beta)&=\\sin\\beta\\sin(3\\alpha),\\\\\n2\\sin\\alpha\\sin(2\\alpha)\\cos\\beta&=\\sin\\beta\\big(\\sin(2\\alpha)\\cos\\alpha-\\cos(2\\alpha)\\sin\\alpha\\big)\\\\\n&=\\sin\\beta\\sin\\alpha.\n\\end{aligned}\\]\nDzieląc przez \\(\\sin\\alpha\\ne0\\), otrzymujemy \\(2\\sin(2\\alpha)\\cos\\beta=\\sin\\beta\\), skąd wynika szukany iloraz \\(2\\).\n\n**Sposób III — wysokość i twierdzenie Pitagorasa**\nNiech \\(E\\) będzie spodkiem wysokości z \\(C\\) na \\(AB\\). Oznaczamy \\(h=|CE|\\), \\(x=|DE|\\). Wysokość \\(h\\) spełnia \\(|AE|=h/\\tan(2\\alpha)<h/\\tan\\alpha=|BE|\\), więc \\(E\\) leży między \\(A\\) a \\(D\\). [[rysunek:2024-12-12-rozw-3|Trójkąt ABC z wysokością CE opuszczoną na bok AB]]\n\nWtedy szukany iloraz to \\((h/x)/(h/b)=b/x\\). Twierdzenie sinusów i wzór na sinus podwojonego kąta dają \\(b/\\sin\\alpha=a/\\sin(2\\alpha)\\), skąd \\(\\cos\\alpha=a/(2b)\\). Natomiast w trójkącie \\(EBC\\) mamy \\(\\cos\\alpha=(c+x)/a\\), zatem \\(a^2=2b(c+x)\\). Twierdzenie Pitagorasa daje jednocześnie\n\\[a^2-b^2=(h^2+(c+x)^2)-(h^2+(c-x)^2)=4cx.\\]\nPołączenie tych równości prowadzi do \\((b-2x)(2c-b)=0\\). Gdyby \\(b=2c=|AB|\\), to \\(\\alpha=180^\\circ-3\\alpha\\), a kąt przy \\(A\\) wynosiłby \\(90^\\circ\\). Ostrokątność wyklucza ten przypadek, więc \\(b=2x\\) i iloraz to \\(2\\).\n\n**Sposób IV — twierdzenie cosinusów i twierdzenie sinusów**\nStosując twierdzenie cosinusów do trójkątów \\(BCD,ADC\\), odejmujemy otrzymane równości, aby uzyskać \\(a^2-b^2=4cd\\cos\\beta\\). Twierdzenie sinusów w \\(ADC\\) daje \\(\\sin\\beta=b\\sin(2\\alpha)/d\\). Stąd\n\\[\\frac{\\tan\\beta}{\\sin(2\\alpha)}=\\frac{4bc}{a^2-b^2}.\\]\nTwierdzenie sinusów w \\(ABC\\) daje \\(\\sin(3\\alpha)=2c\\sin\\alpha/b\\) i \\(\\sin(2\\alpha)=a\\sin\\alpha/b\\), więc \\(\\cos\\alpha=a/(2b)\\). Rozwijając \\(\\sin(3\\alpha)=\\sin(2\\alpha)\\cos\\alpha+\\cos(2\\alpha)\\sin\\alpha\\) i dzieląc przez \\(\\sin\\alpha\\), mamy\n\\[\\frac{2c}{b}=\\frac{a^2}{2b^2}+2\\left(\\frac a{2b}\\right)^2-1=\\frac{a^2}{b^2}-1.\\]\nZatem \\(a^2-b^2=2bc\\), co daje \\(\\frac{4bc}{2bc}=2\\).",
+    "strona_rozwiazania": 27
+  },
+  {
+    "numer": "13.1",
+    "rozwiazanie": "Z równania \\(12x-84=0\\) wynika \\(B=(7,0)\\), a z \\(f(0)=\\frac{21}2\\) wynika \\(D=(0,\\frac{21}2)\\). Punkt \\(C\\) ma postać \\(\\left(x,\\frac{12x-84}{x-8}\\right)\\) dla \\(x\\in(0,7)\\). Pole czworokąta jest sumą pól trójkątów \\(OCD\\) i \\(OBC\\).\n\\[P(x)=\\frac12\\cdot\\frac{21}{2}x+\\frac12\\cdot7\\cdot\\frac{12x-84}{x-8}=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}.\\]",
+    "strona_rozwiazania": 32
+  },
+  {
+    "numer": "13.2",
+    "rozwiazanie": "Dla \\(x\\in(0,7)\\) pochodna wynosi\n\\[P'(x)=\\frac{21}{4}\\cdot\\frac{x^2-16x+56}{(x-8)^2}.\\]\nLicznik ma pierwiastki \\(8-2\\sqrt2\\) i \\(8+2\\sqrt2\\), z których tylko pierwszy należy do dziedziny. Pochodna jest dodatnia przed tym punktem i ujemna za nim, więc pole jest największe dla \\(x=8-2\\sqrt2\\). Druga współrzędna to\n\\[f(8-2\\sqrt2)=\\frac{12-24\\sqrt2}{-2\\sqrt2}=12-3\\sqrt2.\\]\nSzukany wierzchołek to \\(C=(8-2\\sqrt2,12-3\\sqrt2)\\).",
+    "strona_rozwiazania": 34
+  }
+]

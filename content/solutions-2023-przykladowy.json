@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "5",
+    "rozwiazanie": "**Sposób 1 — środkowa liczba**\nZapisujemy liczby jako \\(a-1,a,a+1\\), gdzie \\(a\\) jest parzysta. Z rozwinięcia sześcianów wynika\n\\[(a-1)^3+a^3+(a+1)^3=3a(a^2+2).\\]\nIloczyn \\(3a(a^2+2)\\) jest podzielny przez \\(4\\), ponieważ \\(3a\\) i \\(a^2+2\\) są parzyste. Jeżeli \\(a\\) ma resztę \\(0\\) modulo \\(3\\), to \\(3a\\) jest podzielne przez \\(9\\). Jeżeli reszta wynosi \\(1\\) lub \\(2\\), wówczas \\(a^2\\) daje resztę \\(1\\) i \\(a^2+2\\) jest podzielne przez \\(3\\). Wtedy całe \\(3a(a^2+2)\\) też jest podzielne przez \\(9\\). Liczby \\(4\\) i \\(9\\) są względnie pierwsze, więc suma dzieli się przez \\(36\\).\n\n**Sposób 2 — postać liczb modulo \\(4\\)**\nTrzy kolejne liczby niepodzielne przez \\(4\\) mają postać \\(4k+1,4k+2,4k+3\\) dla \\(k\\in\\mathbb{Z}\\). Rozwijamy sumę.\n\\[\\begin{aligned}\n(4k+1)^3+(4k+2)^3+(4k+3)^3&=192k^3+288k^2+168k+36\\\\\n&=36(5k^3+8k^2+4k+1)+12k(k^2+2).\n\\end{aligned}\\]\nDla \\(k=3m\\) dzielnikiem \\(k\\) jest \\(3\\). Dla \\(k=3m+1\\) mamy \\(k^2+2=3(3m^2+2m+1)\\); dla \\(k=3m+2\\) mamy \\(k^2+2=3(3m^2+4m+2)\\). Zatem \\(k(k^2+2)\\) jest zawsze podzielne przez \\(3\\). Oba składniki ostatniej sumy dzielą się przez \\(36\\).",
+    "strona_rozwiazania": 10
+  }
+]

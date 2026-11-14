@@ -1,0 +1,67 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "W schemacie Bernoulliego o \\(10\\) próbach sukcesem jest uszkodzenie pralki, z prawdopodobieństwem \\(p=0{,}02\\). Dodajemy przypadki z zerową i jedną uszkodzoną pralką:\n\\[\\binom{10}{0}(0{,}98)^{10}+\\binom{10}{1}(0{,}02)(0{,}98)^9=1{,}18(0{,}98)^9\\approx0{,}984.\\]",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Sposób I — przekształcenie lewej strony**\nMamy \\(a-1=\\log_2(14/2)=\\log_2 7\\) oraz \\(\\log_2 27=b/2\\). Zatem\n\\[\\log_7 54=\\frac{\\log_2 27+\\log_2 2}{\\log_2 14-\\log_2 2}=\\frac{b/2+1}{a-1}=\\frac{b+2}{2a-2}.\\]\n\n**Sposób II — przekształcenie prawej strony**\nPo zamianie podstawy \\(\\log_{\\sqrt2}27=\\frac{\\log_2 27}{\\log_2\\sqrt2}=2\\log_2 27\\). Stąd\n\\[\\frac{b+2}{2a-2}=\\frac{\\log_2 27+1}{\\log_2 14-1}=\\frac{\\log_2 54}{\\log_2 7}=\\log_7 54.\\]\n\n**Sposób III — równanie wykładnicze o podstawie \\(2\\)**\nNiech \\(x=\\log_7 54\\). Definicja logarytmu daje \\(7=2^{a-1}\\) i \\(27=2^{b/2}\\). Równanie \\(7^x=54\\) zapisujemy więc \\(2^{(a-1)x}=2^{b/2+1}\\), skąd \\(x=(b+2)/(2a-2)\\).\n\n**Sposób IV — zapis \\(54\\) jako potęgi \\(7\\)**\nZ \\(7=2^{a-1}\\) mamy \\(2=7^{1/(a-1)}\\). Ponieważ \\(54=27\\cdot2=2^{b/2+1}\\), otrzymujemy \\(54=7^{(b+2)/(2a-2)}\\). Definicja logarytmu kończy dowód.",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Iloczyn cyfr może być równy \\(0,2\\) lub \\(4\\). Dla \\(4\\) wybieramy dwie pozycje dla dwójek spośród sześciu lub jedną pozycję dla czwórki. Pozostałe cyfry to jedynki. Daje to \\(\\binom62+6=21\\) liczb. Dla \\(2\\) wybieramy jedną pozycję na dwójkę, co daje \\(6\\) liczb.\n\nDla iloczynu \\(0\\) wśród pięciu dalszych cyfr musi pojawić się zero. Liczb sześciocyfrowych jest \\(9\\cdot10^5\\), a zapisów bez zera \\(9^6\\). Różnica wynosi \\(368\\,559\\).\n\n**Wariant z uwagi CKE**\nDla dokładnie \\(k\\) zer wybieramy ich miejsca wśród pięciu ostatnich pozycji i pozostałe cyfry wybieramy z \\(1,\\ldots,9\\). Sumując \\(\\binom5k9^{6-k}\\) dla \\(k=1,\\ldots,5\\), otrzymujemy \\(295\\,245+65\\,610+7290+405+9=368\\,559\\).\n\nŁączny wynik to \\(21+6+368\\,559=368\\,586\\).",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Sposób I — proporcje odcinków i skala podobieństwa**\nNiech \\(a=|AD|\\), stąd \\(|AB|=2a\\). Trójkąty \\(MDN\\) i \\(KBL\\) są prostokątne i podobne, bo \\(MN\\parallel KL\\) daje \\(\\angle DMN=\\angle BKL\\). Z \\(ML\\parallel DB\\) otrzymujemy \\(|DM|/|LB|=|MC|/|LC|\\), czyli\n\\[\\frac{|DM|}{|LB|}=\\frac{2a-|DM|}{a-|LB|}.\\]\nStąd \\(|DM|=2|LB|\\). Ponieważ \\(MN\\perp DB\\), trójkąty \\(MDN\\) i \\(BCD\\) są podobne z odpowiadającymi bokami \\(DM\\) i \\(BC\\), \\(DN\\) i \\(CD\\). Wynika \\(|DN|=2|DM|=4|LB|\\). Skala \\(MDN\\) do \\(KBL\\) wynosi \\(4\\), więc stosunek pól to \\(16\\).\n\n**Sposób II — wysokości na przeciwprostokątnych**\nNiech \\(E=DB\\cap MN\\), \\(F=DB\\cap KL\\) i \\(|DE|=2u\\). Trójkąt \\(DEM\\) jest podobny do \\(DCB\\), więc \\(|ME|=|DE|/2=u\\). Czworokąt \\(MEFL\\) jest prostokątem, stąd \\(|FL|=u\\). Trójkąt \\(FBL\\) jest podobny do \\(EMD\\), bo kąt \\(FLB\\) ma miarę kąta \\(MDE\\), więc \\(|FB|/|FL|=|ME|/|DE|=1/2\\). Odcinki \\(DE\\) i \\(BF\\) są odpowiadającymi wysokościami podobnych trójkątów \\(MDN\\) i \\(KBL\\). Ich stosunek to \\(2u/(u/2)=4\\). Stosunek pól wynosi \\(4^2=16\\).\n\n**Sposób III — współrzędne**\nUstawmy \\(A=(0,0)\\), \\(B=(2a,0)\\), \\(C=(2a,a)\\), \\(D=(0,a)\\). Prosta \\(ML\\) ma równanie \\(y=-x/2+c\\) dla \\(a<c<2a\\). Stąd \\(M=(2c-2a,a)\\) i \\(L=(2a,c-a)\\). Proste \\(MN,KL\\) mają współczynnik \\(2\\), więc ich przecięcia z osiami dają \\(N=(0,5a-4c)\\) i \\(K=((5a-c)/2,0)\\). Przy \\(t=c-a>0\\) przyprostokątne \\(MDN\\) mają długości \\(2t,4t\\); przyprostokątne \\(KBL\\) mają długości \\(t/2,t\\). Stosunek pól to \\((2t\\cdot4t)/((t/2)t)=16\\).",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Sposób I — wzory Viète’a dla sumy i iloczynu**\nWyróżnik \\(4(m-1)^2\\) jest dodatni dla \\(m\\ne1\\). Mamy \\(x_1+x_2=-2m\\) i \\(x_1x_2=2m-1\\). Warunek zadania daje\n\\[m\\big((-2m)^2-2(2m-1)\\big)=3m(2m-1)+2.\\]\nRównoważnie \\(4m^3-10m^2+5m-2=(m-2)(4m^2-2m+1)=0\\). Drugi czynnik to \\(3m^2+(m-1)^2>0\\), więc \\(m=2\\).\n\n**Sposób II — wyznaczenie pierwiastków**\nPodstawiając \\(-1\\) do równania, zawsze otrzymujemy zero. Suma pierwiastków daje drugi pierwiastek \\(1-2m\\). Są różne, gdy \\(m\\ne1\\). Bezpośrednie podstawienie do warunku zadania daje\n\\[m\\big(1+(1-2m)^2\\big)=3m(-1)(1-2m)+2.\\]\nPo uporządkowaniu znów zostaje \\((m-2)(4m^2-2m+1)=0\\). Wyróżnik drugiego czynnika jest ujemny, więc jedynym rozwiązaniem jest \\(m=2\\), które spełnia warunek \\(m\\ne1\\).",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "**Sposób I — cosinus sumy i różnicy**\nRozpisujemy \\(\\cos(3x-x)+\\cos(3x+x)=2\\cos(3x)\\cos x\\). Po dodaniu \\(2\\cos^2(3x)\\) równanie jest równoważne\n\\[2\\cos(3x)(\\cos x+\\cos(3x))=0.\\]\nDla pierwszego czynnika mamy \\(x=\\pi/6+k\\pi/3\\). Dla drugiego z \\(\\cos(3x)=\\cos(\\pi+x)\\) wynika \\(3x=\\pm(\\pi+x)+2k\\pi\\), czyli \\(x=\\pi/2+k\\pi\\) lub \\(x=-\\pi/4+k\\pi/2\\), przy \\(k\\in\\mathbb Z\\).\n\n**Sposób II — suma cosinusów**\nWzór na sumę cosinusów od razu daje \\(\\cos(2x)+\\cos(4x)=2\\cos(3x)\\cos x\\). Znowu mamy \\(\\cos(3x)=0\\) lub \\(\\cos x+\\cos(3x)=0\\). Druga suma to \\(2\\cos(2x)\\cos x\\), zatem drugi warunek daje \\(x=\\pi/4+k\\pi/2\\) albo \\(x=\\pi/2+k\\pi\\), przy \\(k\\in\\mathbb Z\\).\n\nPo ograniczeniu do \\([0,\\pi]\\) z obu sposobów otrzymujemy\n\\[\\left\\{\\frac\\pi6,\\frac\\pi4,\\frac\\pi2,\\frac{3\\pi}4,\\frac{5\\pi}6\\right\\}.\\]",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób I — przekątna \\(BD\\)**\nNiech \\(\\alpha=\\angle BAD\\). Z warunku wpisania \\(\\angle BCD=180^\\circ-\\alpha\\), więc twierdzenie cosinusów w \\(ABD\\) i \\(BCD\\) daje\n\\[|BD|^2=73-48\\cos\\alpha=34+30\\cos\\alpha.\\]\nStąd \\(\\cos\\alpha=1/2,\\ \\alpha=60^\\circ\\) i \\(|BD|=7\\). Z twierdzenia sinusów w \\(ABD\\) mamy \\(2R=7/\\sin60^\\circ\\), więc \\(R=7\\sqrt3/3\\).\n\n**Sposób II — przekątna \\(AC\\)**\nPonieważ \\(|AB|=|BC|\\), niech \\(\\delta=\\angle BAC=\\angle ACB\\). Kąty \\(ADB\\) i \\(ACB\\) są oparte na tym samym łuku \\(AB\\), a kąty \\(BDC\\) i \\(BAC\\) na łuku \\(BC\\). Zatem \\(\\angle ADC=2\\delta\\). Przy \\(e=|AC|\\) twierdzenie cosinusów w \\(ADC\\) daje\n\\[e^2=89-80\\cos(2\\delta)=169-160\\cos^2\\delta.\\]\nZ równoramiennego \\(ABC\\) mamy \\(e=6\\cos\\delta\\). Wynika \\(\\cos\\delta=13/14\\), bo \\(\\delta\\) jest ostry, i \\(\\sin\\delta=3\\sqrt3/14\\). Z twierdzenia sinusów w \\(ABC\\) mamy \\(2R=3/\\sin\\delta\\), więc \\(R=7\\sqrt3/3\\).\n\n**Sposób III — odbicie względem \\(BD\\)**\nJak w sposobie II wynika, że \\(BD\\) jest dwusieczną kąta \\(ADC\\). Odbijmy \\(C\\) względem \\(BD\\), uzyskując \\(C'\\) na \\(AD\\). Mamy \\(|DC'|=|DC|=5,\\ |BC'|=|BC|=3\\) oraz \\(|AC'|=8-5=3\\). Trójkąt \\(ABC'\\) ma trzy boki długości \\(3\\), więc \\(\\angle BAD=60^\\circ\\). Z twierdzeń cosinusów i sinusów w \\(ABD\\) otrzymujemy \\(|BD|=7\\) oraz \\(2R=7/\\sin60^\\circ\\). Zatem \\(R=7\\sqrt3/3\\).",
+    "strona_rozwiazania": 19
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Styczna przechodzi przez \\(A=(-2,0)\\) i \\(P=(1,9)\\), więc ma równanie \\(g(x)=3(x+2)\\). Stąd \\(f'(-2)=3\\) oraz \\(f(-2)=0,\\ f(1)=9\\).\n\n**Sposób I — współczynniki wielomianu**\nZ \\(f'(-2)=12-4a+b=3\\) otrzymujemy \\(b=4a-9\\). Po podstawieniu do \\(f(-2)=0\\) mamy \\(c=4a-10\\). Ostatni warunek daje \\(1+a+(4a-9)+(4a-10)=9\\). Stąd \\(a=3,b=3,c=2\\).\n\n**Sposób II — wyłączenie czynnika \\(x+2\\)**\nPonieważ \\(-2\\) jest pierwiastkiem, zapisujemy \\(f(x)=(x+2)(x^2+dx+e)\\). Z \\(f'(-2)=3\\) wynika \\(4-2d+e=3\\), więc \\(e=2d-1\\). Warunek \\(f(1)=9\\) daje \\(3(1+d+e)=9\\), skąd \\(d=e=1\\).\n\n**Sposób III — różnica wielomianu i stycznej**\nNiech \\(h=f-g\\). Mamy \\(h(-2)=h'(-2)=0\\), więc \\(x+2\\) jest czynnikiem co najmniej dwukrotnej krotności. Z \\(h(1)=0\\) i współczynnika wiodącego \\(1\\) dostajemy \\(h(x)=(x+2)^2(x-1)\\). Po dodaniu \\(g(x)=3(x+2)\\) mamy \\(f(x)=(x+2)(x^2+x+1)\\).\n\nKażda postać daje \\(f(x)=x^3+3x^2+3x+2\\).",
+    "strona_rozwiazania": 25
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Niech \\(r>0\\) będzie różnicą \\((a_n)\\). Z warunku dla \\(a_{15}\\), przy \\(a_6=15\\), otrzymujemy\n\\[15+9r=(15-3r)(9+2r),\\qquad r^2+r-20=0.\\]\nZ pierwiastków \\(-5,4\\) tylko \\(4\\) jest dodatni. Wtedy \\(b_1=a_{11}=15+5r=35\\), \\(b_2=15\\) i iloraz \\(q=3/7\\). Ponieważ \\(|q|<1\\), suma wszystkich wyrazów wynosi \\(35/(1-3/7)=245/4\\).",
+    "strona_rozwiazania": 27
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Niech \\(|CE|=3u,\\ |ED|=11u\\), gdzie \\(u>0\\). Krawędzie boczne mają więc długość \\(14u\\). Z prostopadłości płaszczyzny \\(ABE\\) do \\(CD\\) mamy \\(BE\\perp CD\\).\n\n**Sposób I — przekrój przez \\(B,C,D\\)**\nZ twierdzenia Pitagorasa w \\(BED\\) dostajemy \\(|BE|=\\sqrt{(14u)^2-(11u)^2}=5\\sqrt3\\,u\\), a w \\(BCE\\) mamy \\(|BC|=\\sqrt{(3u)^2+(5\\sqrt3\\,u)^2}=2\\sqrt{21}\\,u\\). Pole boczne wynosi \\(3\\cdot\\frac12|CD||BE|=105\\sqrt3\\,u^2\\), a pole równobocznej podstawy \\(21\\sqrt3\\,u^2\\).\n\n**Sposób II — wysokość ściany bocznej**\nNiech \\(F\\) będzie środkiem \\(BC\\). Trójkąty \\(CEB\\) i \\(CFD\\) są prostokątne i mają wspólny kąt przy \\(C\\). Z podobieństwa, przy \\(a=|BC|\\), mamy \\(3u/a=(a/2)/(14u)\\). Stąd \\(a=2\\sqrt{21}\\,u\\), a \\(|DF|=\\sqrt{(14u)^2-(a/2)^2}=5\\sqrt7\\,u\\). Pole boczne to \\(3a|DF|/2=105\\sqrt3\\,u^2\\), a pole podstawy \\(21\\sqrt3\\,u^2\\).\n\n**Sposób III — przekrój przez oś ostrosłupa**\nNiech \\(G\\) będzie środkiem \\(AB\\), a \\(O\\) spodkiem wysokości ostrosłupa. W równobocznym \\(ABC\\) mamy \\(|CG|=a\\sqrt3/2\\) i \\(|CO|=(2/3)|CG|=a\\sqrt3/3\\). Trójkąty \\(CEG\\) i \\(COD\\) są podobne, bo są prostokątne i mają wspólny kąt przy \\(C\\). Zatem \\(3u/|CG|=|CO|/(14u)\\), co daje \\(a=2\\sqrt{21}\\,u\\). Z trójkąta \\(DGB\\) mamy \\(|DG|=\\sqrt{(14u)^2-(a/2)^2}=5\\sqrt7\\,u\\). Otrzymujemy te same pola co w sposobie II.\n\nW każdym sposobie stosunek pola całkowitego do pola podstawy wynosi \\((105+21)/21=6\\).",
+    "strona_rozwiazania": 29
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Ze środka przekątnych \\(M\\) mamy \\(B=2M-D=(4,-7)\\), \\(C=2M-A=(-1,3)\\). Stąd \\(AB\\) i \\(BC\\) mają równania \\(y=-x/2-5\\) i \\(y=-2x+1\\). Początek układu leży wewnątrz kąta \\(ABC\\). Ponieważ okrąg przechodzi przez początek i jest styczny do obu tych prostych, jego środek też leży w tym kącie i należy do jego dwusiecznej.\n\n**Sposób I — trójkąt równoramienny i rzut**\nZnajdujemy punkt \\(E\\) na półprostej \\(BC\\) z \\(|BE|=|BA|=\\sqrt{180}\\). Po przecięciu okręgu \\((x-4)^2+(y+7)^2=180\\) z \\(BC\\) otrzymujemy \\(E=(-2,5)\\); drugie przecięcie leży po przeciwnej stronie \\(B\\). W równoramiennym \\(ABE\\) dwusieczna przechodzi przez środek \\(AE\\), czyli \\((-5,2)\\). Ma równanie \\(y=-x-3\\). Dla \\(S=(t,-t-3)\\) rzut \\(T\\) na \\(BC\\) jest przecięciem \\(y=\\tfrac12(x-t)-t-3\\) i \\(y=-2x+1\\), zatem \\(T=((3t+8)/5,(-6t-11)/5)\\). Mamy \\(|ST|^2=(t-4)^2/5\\).\n\n**Sposób II — współczynniki kierunkowe i kąt**\nWspółczynniki prostych \\(AB,BC\\) to \\(-1/2,-2\\). Jeżeli \\(\\angle ABC=2\\alpha\\), wzór na tangens różnicy daje \\(\\tan(2\\alpha)=3/4\\), a wzór na tangens podwojonego kąta i ostrość \\(\\alpha\\) dają \\(\\tan\\alpha=1/3\\). Współczynnik dwusiecznej wynosi \\(\\frac{-2+1/3}{1+2/3}=-1\\), stąd \\(S=(t,-t-3)\\). Z \\(\\sin\\alpha=1/\\sqrt{10}\\) dostajemy \\(|ST|^2=|SB|^2/10=2(t-4)^2/10\\).\n\n**Sposób III — odległości od prostych**\nPorównujemy odległości dowolnego punktu \\((x,y)\\) od \\(AB\\) i \\(BC\\):\n\\[|x+2y+10|=|2x+y-1|.\\]\nRozwiązania tej równości tworzą dwusieczne \\(y=x-11\\) i \\(y=-x-3\\). W kącie zawierającym początek działa \\(y=-x-3\\), bo wyrażenia pod wartościami bezwzględnymi mają tam znaki odpowiednio \\(+\\) i \\(-\\). Dla \\(S=(t,-t-3)\\) promień to odległość od \\(BC\\), czyli \\(|t-4|/\\sqrt5\\).\n\n**Równanie okręgu**\nW każdym sposobie kwadrat promienia to \\(t^2+(t+3)^2=(t-4)^2/5\\), bo początek układu leży na okręgu. Po uporządkowaniu mamy \\(9t^2+38t+29=0\\), więc \\(t=-1\\) lub \\(-29/9\\). Warunek \\(-t-3<0\\) daje \\(t=-1\\). Zatem \\(S=(-1,-2)\\), \\(r^2=5\\), a równanie ma postać\n\\[(x+1)^2+(y+2)^2=5.\\]",
+    "strona_rozwiazania": 36
+  },
+  {
+    "numer": "12.1",
+    "rozwiazanie": "Dla wysokości graniastosłupa \\(H\\) powierzchnia składa się z dwóch równobocznych podstaw i trzech prostokątów. Wobec tego\n\\[24\\sqrt3=2\\cdot\\frac{a^2\\sqrt3}{4}+3aH,\\qquad H=\\frac{48\\sqrt3-a^2\\sqrt3}{6a}.\\]\nMnożąc \\(H\\) przez pole podstawy \\(a^2\\sqrt3/4\\), otrzymujemy \\(V(a)=6a-a^3/8\\).",
+    "strona_rozwiazania": 43
+  },
+  {
+    "numer": "12.2",
+    "rozwiazanie": "Dla \\(0<a<4\\sqrt3\\) mamy \\(V'(a)=6-3a^2/8\\). Pochodna jest dodatnia dla \\(0<a<4\\) i ujemna dla \\(4<a<4\\sqrt3\\). Zatem maksimum wypada przy krawędzi podstawy \\(a=4\\), a największa objętość to \\(V(4)=6\\cdot4-4^3/8=16\\).",
+    "strona_rozwiazania": 45
+  }
+]

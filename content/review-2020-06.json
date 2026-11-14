@@ -1,0 +1,18 @@
+[
+  {
+    "numer": "3",
+    "polecenie": "W pierwszej urnie są trzy kule białe i siedem czarnych. W drugiej jest jedna kula biała i dziewięć czarnych. Rzucamy symetryczną sześcienną kostką o ścianach oznaczonych od \\(1\\) do \\(6\\). Gdy wypada jedno oczko, losujemy jedną kulę z pierwszej urny. W pozostałych przypadkach losujemy jedną kulę z drugiej urny. Wskaż prawdopodobieństwo otrzymania kuli białej.\n\nA. \\(\\frac{2}{15}\\)\nB. \\(\\frac{1}{5}\\)\nC. \\(\\frac{4}{5}\\)\nD. \\(\\frac{13}{15}\\)"
+  },
+  {
+    "numer": "7",
+    "polecenie": "W trójkącie równoramiennym \\(ABC\\) mamy \\(|AC|=|BC|=6\\), a \\(D\\) jest środkiem podstawy \\(AB\\). Okrąg o środku \\(D\\) jest styczny do prostej \\(AC\\) w punkcie \\(M\\). Punkty \\(K\\) i \\(L\\) leżą odpowiednio na bokach \\(AC\\) i \\(BC\\), przy czym \\(|KC|=|LC|=2\\). Odcinek \\(KL\\) jest styczny do okręgu (zobacz rysunek).\n\nWykaż, że \\(\\dfrac{|AM|}{|MC|}=\\dfrac45\\)."
+  },
+  {
+    "numer": "9",
+    "polecenie": "Rozwiąż równanie \\(3\\cos(2x)+10\\cos^2x=24\\sin x-3\\) dla \\(x\\in[0,2\\pi]\\)."
+  },
+  {
+    "numer": "11",
+    "polecenie": "Dane jest równanie \\(x^2-(3m+2)x+2m^2+7m-15=0\\) z niewiadomą \\(x\\). Wyznacz wszystkie wartości \\(m\\), dla których równanie ma dwa różne pierwiastki \\(x_1,x_2\\) spełniające warunek \\(2x_1^2+5x_1x_2+2x_2^2=2\\)."
+  }
+]

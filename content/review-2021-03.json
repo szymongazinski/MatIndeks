@@ -1,0 +1,10 @@
+[
+  {
+    "numer": "3",
+    "polecenie": "Prosta \\(y=\\frac12x+\\frac32\\) jest prostopadła do stycznej do wykresu funkcji \\(f(x)=x^4-3x^3+x^2+x+5\\) w jednym z podanych punktów. Wskaż ten punkt.\n\nA. \\((-1,6)\\)\nB. \\((0,5)\\)\nC. \\((1,5)\\)\nD. \\((2,3)\\)"
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozpatrujemy wszystkie trójkąty \\(ABC\\), których wierzchołki \\(A\\) i \\(B\\) leżą na wykresie \\(f(x)=\\frac{9}{x^4}\\) dla \\(x\\ne0\\) i są symetryczne względem osi \\(Oy\\). Wierzchołek \\(C\\) ma współrzędne \\(\\bigl(0,-\\frac13\\bigr)\\) (zobacz rysunek). Oblicz współrzędne \\(A\\) i \\(B\\), dla których pole jest najmniejsze, i podaj to pole."
+  }
+]

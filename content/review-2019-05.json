@@ -1,0 +1,6 @@
+[
+  {
+    "numer": "3",
+    "polecenie": "Fragment wykresu \\(y=f(x)\\) pokazany na rysunku składa się z dwóch półprostych \\(AD\\) i \\(CE\\) oraz z dwóch odcinków \\(AB\\) i \\(BC\\). Dane są punkty \\(A=(-1,0)\\), \\(B=(1,2)\\), \\(C=(3,0)\\), \\(D=(-4,3)\\) oraz \\(E=(6,3)\\). Wskaż wzór funkcji \\(f\\).\n\nA. \\(f(x)=|x+1|+|x-1|\\)\nB. \\(f(x)=\\bigl||x-1|-2\\bigr|\\)\nC. \\(f(x)=\\bigl||x-1|+2\\bigr|\\)\nD. \\(f(x)=|x-1|+2\\)"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "numer": "6",
+    "polecenie": "Wśród \\(10\\,000\\) mieszkańców pewnego miasta przeprowadzono sondaż dotyczący budowy publicznego przedszkola. Uzyskano następujące wyniki.\n\\[\\begin{array}{l|r|r}\n\\text{Badana grupa}&\\text{Popiera budowę}&\\text{Nie popiera budowy}\\\\ \\hline\n\\text{Kobiety}&5140&1860\\\\\n\\text{Mężczyźni}&2260&740\n\\end{array}\\]\nOblicz prawdopodobieństwo, że wybrana losowo osoba spośród ankietowanych popiera budowę przedszkola, jeżeli wiadomo, że jest mężczyzną. Zakoduj trzy pierwsze cyfry po przecinku w nieskończonym rozwinięciu dziesiętnym wyniku."
+  }
+]

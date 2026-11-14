@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Ile wynosi \\(\\log_3\\sqrt{27}-\\log_{27}\\sqrt3\\)? Wybierz jedną odpowiedź.\n\nA. \\(\\frac43\\)\nB. \\(\\frac12\\)\nC. \\(\\frac{11}{12}\\)\nD. \\(3\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Dla \\(x\\ne2\\) funkcja \\(f\\) jest określona wzorem \\(f(x)=\\frac{x^3-8}{x-2}\\). Ile wynosi \\(f'(1/2)\\)? Wybierz jedną odpowiedź.\n\nA. \\(\\frac34\\)\nB. \\(\\frac94\\)\nC. \\(3\\)\nD. \\(\\frac{54}{8}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "3",
+    "polecenie": "Załóżmy, że \\(\\cos\\beta=-\\frac13\\) oraz \\(\\beta\\in(\\pi,3\\pi/2)\\). Wybierz wartość wyrażenia \\(\\sin(\\beta-\\pi/3)\\).\n\nA. \\(\\frac{-2\\sqrt2+\\sqrt3}{6}\\)\nB. \\(\\frac{2\\sqrt6+1}{6}\\)\nC. \\(\\frac{2\\sqrt2+\\sqrt3}{6}\\)\nD. \\(\\frac{1-2\\sqrt6}{6}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "W pierwszej urnie jest jedna kula biała i sześć czarnych, a w drugiej cztery białe i trzy czarne. Rzucamy raz symetryczną monetą. Po reszce losujemy kulę z pierwszej urny, po orle z drugiej.\n\nJakie jest prawdopodobieństwo wylosowania białej kuli? Wybierz jedną odpowiedź.\n\nA. \\(\\frac5{14}\\)\nB. \\(\\frac9{14}\\)\nC. \\(\\frac57\\)\nD. \\(\\frac67\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "Niech \\(p>0\\) będzie liczbą rzeczywistą. Dla każdej liczby naturalnej \\(n\\ge1\\) dany jest ciąg\n\\[a_n=\\frac{(7p-1)n^3+5pn-3}{(p+1)n^3+n^2+p}.\\]\nOblicz \\(p\\), dla którego granica ciągu jest równa \\(\\frac43\\). Podaj kolejno pierwszą, drugą i trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Wykaż, że dla dowolnych liczb rzeczywistych \\(x,y\\) spełniających \\(2x>y\\) zachodzi\n\\[7x^3+4x^2y\\ge y^3+2xy^2-x^3.\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "7",
+    "polecenie": "Rozwiąż równanie \\(|x-3|=2x+11\\).",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Punkt \\(P\\) jest przecięciem przekątnych trapezu \\(ABCD\\). Podstawa \\(CD\\) jest o \\(2\\) krótsza od \\(AB\\). Promień okręgu opisanego na ostrokątnym trójkącie \\(CPD\\) jest o \\(3\\) mniejszy od promienia okręgu opisanego na \\(APB\\).\n\nWykaż, że\n\\[|DP|^2+|CP|^2-|CD|^2=\\frac{4\\sqrt2}{3}|DP||CP|.\\]",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "9",
+    "polecenie": "Reszta z dzielenia wielomianu \\(W(x)=4x^3-6x^2-(5m+1)x-2m\\) przez \\(x+2\\) wynosi \\(-30\\).\n\nWyznacz \\(m\\) i dla tej wartości rozwiąż nierówność \\(W(x)\\ge0\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "10",
+    "polecenie": "Ciąg geometryczny \\((a_n)_{n\\ge1}\\) ma same dodatnie wyrazy. Zachodzą \\(a_1=675\\) i \\(a_{22}=\\frac54a_{23}+\\frac15a_{21}\\). Ciąg \\((b_n)_{n\\ge1}\\) jest arytmetyczny. Suma wszystkich wyrazów \\((a_n)\\) jest równa sumie początkowych dwudziestu pięciu wyrazów \\((b_n)\\). Ponadto \\(a_3=b_4\\).\n\nOblicz \\(b_1\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "11",
+    "polecenie": "Rozwiąż równanie \\(\\sin x+\\sin(2x)+\\sin(3x)=0\\) w przedziale \\([0,\\pi]\\).",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "12",
+    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie \\(x^2-(m+1)x+m=0\\) ma dwa różne niezerowe rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające\n\\[\\frac1{x_1}+\\frac1{x_2}+2=\\frac1{x_1^2}+\\frac1{x_2^2}.\\]",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "13",
+    "polecenie": "Graniastosłup prosty \\(ABCDEFGH\\) ma prostokątną podstawę \\(ABCD\\). Przekątne \\(AH,AF\\) ścian bocznych tworzą kąt ostry \\(\\alpha\\) o sinusie \\(12/13\\). Pole trójkąta \\(AFH\\) wynosi \\(26{,}4\\).\n\nOblicz wysokość \\(h\\) tego graniastosłupa.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "14",
+    "polecenie": "Punkt \\(A=(-3,2)\\) jest wierzchołkiem trójkąta \\(ABC\\) o równych ramionach \\(AC,BC\\) i polu \\(15\\). Bok \\(BC\\) leży na prostej \\(y=x-1\\).\n\nOblicz współrzędne \\(B\\) oraz \\(C\\).",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozważ wszystkie trójkąty równoramienne o obwodzie \\(18\\).\n\na) Wykaż, że pole trójkąta o ramieniu długości \\(b\\) jest określone wzorem \\(P(b)=\\frac{(18-2b)\\sqrt{18b-81}}{2}\\).\nb) Wyznacz dziedzinę funkcji \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu.",
+    "strona_zadania": 22
+  }
+]

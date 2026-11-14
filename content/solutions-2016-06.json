@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "14",
+    "rozwiazanie": "Niech \\(a>b\\) będą przyprostokątnymi, \\(c\\) przeciwprostokątną, \\(\\alpha\\) kątem naprzeciw \\(a\\), a \\(\\beta=90^\\circ-\\alpha\\). Mamy \\((a-b)/c=\\frac12\\).\n\n**Sposób I — funkcje trygonometryczne**\nMamy \\(\\sin\\alpha-\\cos\\alpha=\\frac12\\). Podstawienie \\(\\sin\\alpha=\\cos\\alpha+\\frac12\\) do jedynki trygonometrycznej daje \\(2\\cos^2\\alpha+\\cos\\alpha-\\frac34=0\\). Z dwóch pierwiastków dodatni jest \\(\\cos\\alpha=\\frac{\\sqrt7-1}{4}\\). Stąd \\(\\cos\\beta=\\sin\\alpha=\\frac{\\sqrt7+1}{4}\\).\n\n**Sposób II — twierdzenie Pitagorasa**\nMamy \\(a=b+c/2\\), więc \\((b+c/2)^2+b^2=c^2\\), czyli \\(3c^2-4bc-8b^2=0\\). Dodatni pierwiastek to \\(c=\\frac{2b(1+\\sqrt7)}{3}\\), a zatem \\(a=\\frac{b(4+\\sqrt7)}{3}\\). Po uproszczeniu otrzymujemy \\(\\cos\\alpha=b/c=\\frac{\\sqrt7-1}{4}\\) i \\(\\cos\\beta=a/c=\\frac{\\sqrt7+1}{4}\\).",
+    "strona_rozwiazania": 16
+  }
+]

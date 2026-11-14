@@ -1,0 +1,62 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Dane są liczby \\(a=\\log_2 3\\) i \\(b=\\log_3 7\\). Wyraź \\(\\log_4 49\\) za pomocą \\(a\\) i \\(b\\). Zapisz obliczenia.",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\frac{x^2+3}{x-1}\\) dla \\(x\\in\\mathbb R\\setminus\\{1\\}\\). Podaj równanie stycznej do jej wykresu w punkcie \\(P=(-3,-3)\\). Zapisz obliczenia.",
+    "strona_zadania": 3
+  },
+  {
+    "numer": "3",
+    "polecenie": "W nieskończonym ciągu geometrycznym \\((a_n)_{n\\ge1}\\) suma trzech pierwszych wyrazów wynosi \\(7\\), a suma \\(S\\) wszystkich wyrazów wynosi \\(8\\). Niech \\(S_n\\) oznacza sumę \\(n\\) pierwszych wyrazów. Wyznacz wszystkie \\(n\\), dla których\n\\[\\left|\\frac{S-S_n}{S_n}\\right|<0{,}001.\\]\nZapisz obliczenia.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "4",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\in\\mathbb R\\), dla których równanie\n\\[(x-6)\\bigl[(m-2)x^2-4(m+3)x+m+1\\bigr]=0\\]\nma trzy różne pierwiastki rzeczywiste o tym samym znaku. Zapisz obliczenia.",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "5",
+    "polecenie": "Wykaż podzielność przez \\(36\\) sumy sześcianów trzech kolejnych liczb całkowitych, z których każda jest niepodzielna przez \\(4\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "6.1",
+    "polecenie": "Brzeg jeziora zamykają łuki wykresów \\(f(x)=x^2\\) i \\(g(x)=-\\frac12(x-\\frac12)^2+4\\) między ich punktami przecięcia. Początek toru regatowego to punkt \\(P=(-1,1)\\) na brzegu (zobacz rysunek). Niech \\(R\\) będzie dowolnym punktem wykresu \\(g\\) o pierwszej współrzędnej \\(x\\). Udowodnij, że\n\\[|PR|=\\sqrt{\\frac14x^4-\\frac12x^3-\\frac{13}{8}x^2+\\frac{39}{8}x+\\frac{593}{64}}.\\]",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "6.2",
+    "polecenie": "Brzeg jeziora zamykają łuki wykresów \\(f(x)=x^2\\) i \\(g(x)=-\\frac12(x-\\frac12)^2+4\\) między ich punktami przecięcia. Początek toru regatowego to punkt \\(P=(-1,1)\\) na brzegu (zobacz rysunek). Wyznacz współrzędne punktu \\(K\\) na brzegu, dla którego długość toru \\(|PK|\\) jest największa. Oblicz tę długość i zapisz obliczenia.\n\nMożesz skorzystać z tego, że dla dowolnego punktu \\(R\\) wykresu \\(g\\) o pierwszej współrzędnej \\(x\\) zachodzi\n\\[|PR|=\\sqrt{\\frac14x^4-\\frac12x^3-\\frac{13}{8}x^2+\\frac{39}{8}x+\\frac{593}{64}}.\\]",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "7",
+    "polecenie": "Rozwiąż równanie \\(\\sin(3x)=2\\sin x\\) dla \\(x\\in[0,\\pi]\\). Zapisz obliczenia.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "8",
+    "polecenie": "Trapez równoramienny \\(ABCD\\) ma podstawy \\(AB\\) i \\(CD\\), przy czym \\(|AB|>|CD|\\). Jego obwód wynosi \\(l\\), a przekątna \\(AC\\) ma długość \\(d\\). Można wpisać okrąg w ten trapez i opisać okrąg na nim (zobacz rysunek). Wykaż, że promień okręgu opisanego wynosi\n\\[R=\\frac{d l}{2\\sqrt{16d^2-l^2}}.\\]",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "9",
+    "polecenie": "Punkt \\(A=(9,12)\\) jest wierzchołkiem trójkąta \\(ABC\\). Prosta \\(k\\colon y=\\frac12x\\) zawiera dwusieczną kąta \\(ABC\\). W trójkąt \\(ABC\\) wpisany jest okrąg \\(\\mathcal O\\colon(x-8)^2+(y-4)^2=16\\). Wyznacz współrzędne punktu styczności prostej \\(BC\\) z okręgiem \\(\\mathcal O\\). Zapisz obliczenia.",
+    "strona_zadania": 22
+  },
+  {
+    "numer": "10",
+    "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) ma podstawę \\(ABCD\\), a pole jego powierzchni bocznej wynosi \\(P\\). Kąt między odcinkami będącymi wysokościami dwóch sąsiednich ścian bocznych, poprowadzonymi z \\(S\\), ma miarę \\(2\\alpha\\). Objętość ostrosłupa wynosi \\(\\sqrt{kP^3\\sin\\alpha\\cos(2\\alpha)}\\), gdzie \\(k\\) jest stałą liczbową. Wyznacz \\(k\\) i zapisz obliczenia.",
+    "strona_zadania": 26
+  },
+  {
+    "numer": "11",
+    "polecenie": "Na egzaminie jest \\(15\\) zadań. W każdym jest jedna poprawna odpowiedź spośród czterech podanych. Aby zdać, trzeba odpowiedzieć poprawnie na co najmniej \\(11\\) zadań. Student losował odpowiedź w każdym zadaniu, a każda odpowiedź była jednakowo prawdopodobna. Oblicz prawdopodobieństwo, że student zdał egzamin. Zapisz obliczenia.",
+    "strona_zadania": 30
+  }
+]

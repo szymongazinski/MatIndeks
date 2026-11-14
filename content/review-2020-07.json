@@ -1,0 +1,10 @@
+[
+  {
+    "numer": "9",
+    "polecenie": "Rozwiąż równanie \\[4\\sin^3x+\\sin(2x)=2\\sin^2x\\,(2\\cos x+1).\\]"
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozpatrujemy wszystkie ostrosłupy prawidłowe czworokątne, w których suma promienia okręgu opisanego na podstawie i długości krawędzi bocznej wynosi \\(d\\). Wyznacz długość krawędzi podstawy tego ostrosłupa, który ma największą objętość, i oblicz tę objętość."
+  }
+]

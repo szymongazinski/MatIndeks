@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zadania z matury rozszerzonej z matematyki. Kategorie, tagi, arkusze CKE i generator zestawów.">
+  <title>MatIndeks — matematyka rozszerzona</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./vendor/katex/katex.min.js" defer></script>
+  <script src="./vendor/sqljs/sql-wasm.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="wrap header-content">
+      <a class="brand" href="#zadania" aria-label="MatIndeks — strona główna">
+        <span class="brand-mark" aria-hidden="true">M<span>i</span></span>
+        <span>Mat<span class="brand-accent">Indeks</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Menu główne">
+        <a href="#zadania" data-nav="zadania" aria-current="page">Zadania</a>
+        <a href="#arkusze" data-nav="arkusze">Arkusze</a>
+        <a href="#generator" data-nav="generator">Generator</a>
+      </nav>
+      <label class="tag-preference"><input type="checkbox" id="show-tags" checked> Pokaż tagi przy zadaniach</label>
+    </div>
+  </header>
+
+  <main id="tresc" class="wrap" tabindex="-1">
+    <section id="loading" class="page-status" aria-live="polite">
+      <p>Wczytywanie zadań…</p>
+    </section>
+
+    <section id="view-zadania" hidden aria-labelledby="catalog-title">
+      <div class="page-head">
+        <h1 id="catalog-title">Zadania maturalne</h1>
+        <p>Matematyka rozszerzona · zadania CKE według zagadnień</p>
+      </div>
+      <div class="catalog-layout">
+        <aside class="category-panel">
+          <details id="category-panel" open>
+            <summary>Kategorie</summary>
+            <nav class="category-list" id="categories" aria-label="Kategorie zadań"></nav>
+          </details>
+        </aside>
+        <div class="catalog-content">
+          <div class="catalog-filter" id="catalog-tag-filter"></div>
+          <div class="results-head">
+            <div>
+              <h2 id="category-title">Wszystkie zadania</h2>
+              <p class="muted results-count" id="result-count" aria-live="polite"></p>
+            </div>
+            <a href="#zadania" id="clear-filters" hidden>Wyczyść filtry</a>
+          </div>
+          <div class="task-list" id="catalog-tasks"></div>
+          <nav class="pagination" id="pagination" aria-label="Strony wyników"></nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-arkusze" hidden aria-labelledby="archive-title">
+      <div class="page-head">
+        <h1 id="archive-title">Arkusze maturalne</h1>
+        <p>Wybierz arkusz CKE, aby zobaczyć wszystkie zadania w oryginalnej kolejności.</p>
+      </div>
+      <div class="archive-filters filter-box">
+        <div><label for="archive-year">Rok</label><select id="archive-year"><option value="">Wszystkie lata</option></select></div>
+        <div><label for="archive-kind">Rodzaj arkusza</label><select id="archive-kind"><option value="">Wszystkie rodzaje</option></select></div>
+      </div>
+      <div id="archive-papers"></div>
+    </section>
+
+    <section id="view-arkusz" hidden aria-labelledby="paper-title">
+      <div class="page-head">
+        <a class="back-link" href="#arkusze">← Wszystkie arkusze</a>
+        <h1 id="paper-title"></h1>
+        <div class="paper-info" id="paper-info"></div>
+      </div>
+      <div id="paper-tasks" class="task-list paper-task-list"></div>
+    </section>
+
+    <section id="view-zadanie" hidden aria-labelledby="task-title">
+      <div class="page-head">
+        <a class="back-link" href="#zadania">← Katalog zadań</a>
+        <h1 id="task-title"></h1>
+        <p id="task-paper"></p>
+      </div>
+      <div id="single-task" class="task-list paper-task-list"></div>
+    </section>
+
+    <section id="view-generator" hidden aria-labelledby="generator-title">
+      <div class="page-head">
+        <h1 id="generator-title">Generator arkusza</h1>
+        <p>Wylosuj zestaw z rozkładem kategorii z arkuszy CKE albo dobierz zadania według tagów.</p>
+      </div>
+      <div class="generator-layout">
+        <form id="generator-form" class="filter-box generator-form">
+        <fieldset class="generator-years">
+            <legend>Lata zadań</legend>
+            <p class="field-note" id="year-note">Bez zaznaczenia losujesz z wszystkich lat.</p>
+            <div id="generator-years" class="year-list" aria-describedby="year-note"></div>
+          </fieldset>
+          <div class="generator-tag-filters">
+            <div id="include-tag-filter"></div>
+            <div id="exclude-tag-filter"></div>
+          </div>
+          <div id="sample-size" hidden>
+            <label for="generator-size">Liczba zadań</label>
+          <input type="number" id="generator-size" min="1" max="50" value="12" aria-describedby="sample-size-note" required>
+          <p class="field-note" id="sample-size-note">Wybór tagów uruchamia losowanie z przefiltrowanej puli.</p>
+          </div>
+          <div class="generator-actions">
+            <button type="submit" class="button button-primary">Wylosuj arkusz</button>
+            <button type="reset" class="button button-quiet">Wyczyść wybór</button>
+          </div>
+        <p class="field-note generator-count" id="generator-pool" aria-live="polite"></p>
+        </form>
+        <aside class="generator-aside">
+          <div class="frequency-panel" id="frequency-panel"></div>
+        </aside>
+      </div>
+      <div class="generator-results" id="generator-results" hidden></div>
+    </section>
+
+    <noscript>Włącz JavaScript, aby otworzyć bazę zadań.</noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-content">
+      <span>MatIndeks · matematyka rozszerzona</span>
+      <a href="https://arkusze.pl/matematyka-matura-poziom-rozszerzony/" target="_blank" rel="noopener noreferrer">Archiwum arkusze.pl</a>
+    </div>
+  </footer>
+</body>
+</html>

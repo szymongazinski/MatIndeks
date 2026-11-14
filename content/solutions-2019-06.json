@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "10",
+    "rozwiazanie": "Kąt wewnętrzny \\(n\\)-kąta foremnego ma miarę \\(180^\\circ(n-2)/n\\). Dla \\((n+2)\\)-kąta miara wynosi \\(180^\\circ n/(n+2)\\). Z ich różnicy dostajemy \\[\\frac{90n}{n+2}=\\frac{90(n-2)}n+1.\\] Po pomnożeniu przez \\(n(n+2)\\) i uproszczeniu mamy \\(n^2+2n-360=0\\), czyli \\((n-18)(n+20)=0\\). Z warunku \\(n\\ge3\\) zostaje \\(n=18\\).",
+    "strona_rozwiazania": 9
+  }
+]

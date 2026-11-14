@@ -1,0 +1,72 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "W granicy \\(t\\to+\\infty\\) składnik \\(2^{-0{,}05t}\\) dąży do zera, więc \\(b=m_0/9\\). Z \\(m(0)=m_0\\) wynika \\(a=8m_0/9\\). Po przereagowaniu \\(87{,}5\\%\\) zostaje \\(m_0/8\\), stąd\n\\[\\frac18=\\frac89\\,2^{-0{,}05t}+\\frac19,\\qquad 2^{-0{,}05t}=\\frac1{64}=2^{-6}.\\]\nZatem \\(t=6/0{,}05=120\\) sekund.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Sposób I — skrócenie ułamka**\nDla \\(-3<x<3\\) mamy \\(|x-3|=-(x-3)\\) oraz \\(x^2-9=(x-3)(x+3)\\). Ułamek upraszcza się do \\(-1/(x+3)\\), którego granica przy \\(x\\to3^-\\) to \\(-1/6\\).\n\n**Sposób II — definicja granicy**\nDla \\(\\varepsilon>0\\) wybieramy \\(\\delta=6\\varepsilon/(1+\\varepsilon)\\in(0,6)\\). Jeśli \\(3-\\delta<x<3\\), to\n\\[\\left|\\frac{|x-3|}{x^2-9}+\\frac16\\right|\n=\\frac{|x-3|}{6(x+3)}\n<\\frac{\\delta}{6(6-\\delta)}=\\frac{\\varepsilon}{6}<\\varepsilon.\\]\nZatem granica lewostronna wynosi \\(-1/6\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Równanie \\(f(x_0)=5\\) daje \\(2x_0+1=5(x_0-4)\\), czyli \\(x_0=7\\). Z reguły ilorazu mamy \\(f'(x)=-9/(x-4)^2\\), więc \\(f'(7)=-1\\). Styczna przechodzi przez \\(P=(7,5)\\), zatem \\(y-5=-(x-7)\\), czyli \\(y=-x+12\\).",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Wszystkie \\(2^{10}\\) ciągów wyników są jednakowo prawdopodobne. Warunek trzech orłów jest spełniony w \\(\\binom{10}{3}=120\\) ciągach. Blok trzech kolejnych orłów może zaczynać się na jednej z ośmiu pozycji, a poza blokiem wówczas wypadają same reszki. Szukane prawdopodobieństwo warunkowe wynosi \\(8/120=1/15\\).\n\n**Wariant z uwagi CKE**\nPrawdopodobieństwo dokładnie trzech orłów możemy policzyć w schemacie Bernoulliego: \\(\\binom{10}{3}(1/2)^{10}=120/2^{10}\\). Prawdopodobieństwo dokładnie trzech orłów wypadających kolejno wynosi \\(8/2^{10}\\). Iloraz ponownie daje \\(1/15\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Sposób I — wspólny mianownik**\nMnożymy przez dodatnie \\(3(2a+b)(a+2b)\\). Po uporządkowaniu otrzymujemy \\(9a+9b-8a^2-20ab-8b^2\\ge0\\). Podstawiamy \\(b=1-a\\), co daje \\((2a-1)^2\\ge0\\).\n\n**Sposób II — obliczenia symetryczne**\nMamy \\(2a+b=1+a\\) i \\(a+2b=1+b\\). Po usunięciu dodatnich mianowników nierówność jest równoważna \\(3(1+b)+3(1+a)\\ge4(1+a)(1+b)\\). Z \\(a+b=1\\) wynika \\(1\\ge4ab\\), czyli \\((a+b)^2-4ab=(a-b)^2\\ge0\\).\n\n**Sposób III — średnie arytmetyczna i harmoniczna**\nDla liczb dodatnich \\(u=1/(2a+b)\\), \\(v=1/(a+2b)\\) mamy \\((u+v)/2\\ge2/(1/u+1/v)\\). Wartość \\(1/u+1/v=3(a+b)\\) jest równa \\(3\\), więc \\(u+v\\ge4/3\\).\n\n**Sposób IV — podstawienie na początku**\nOd razu zastępujemy \\(b\\) przez \\(1-a\\). Mianowniki \\(1+a\\) i \\(2-a\\) są dodatnie dla \\(0<a<1\\). Nierówność \\(1/(1+a)+1/(2-a)\\ge4/3\\) daje \\(9\\ge4(1+a)(2-a)\\), czyli \\((2a-1)^2\\ge0\\).",
+    "strona_rozwiazania": 10
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Niech \\(c\\) oznacza długość ramienia trapezu, a \\(h\\) jego wysokość.\n\n**Sposób I — wysokość trapezu**\nZ własności czworokąta opisanego na okręgu \\(2c=a+b\\). Zrzutowanie końców krótszej podstawy na dłuższą daje po bokach odcinki długości \\((a-b)/2\\). Twierdzenie Pitagorasa daje \\(h^2=c^2-(a-b)^2/4=ab\\). Pole to \\((a+b)\\sqrt{ab}/2\\), większe od \\(ab\\) z nierówności między średnimi dla \\(a\\ne b\\).\n\n**Sposób II — promień wpisanego okręgu**\nNiech \\(S\\) będzie środkiem okręgu, a \\(L\\) punktem styczności na prawym ramieniu \\(BC\\). Równość odcinków stycznych i symetria dają \\(|BL|=a/2,\\ |CL|=b/2\\). Proste \\(BS,CS\\) są dwusiecznymi. Kąty przy ramieniu sumują się do \\(180^\\circ\\), więc \\(\\angle BSC=90^\\circ\\). Wysokość \\(SL\\) na przeciwprostokątną to promień \\(r=\\sqrt{|BL||CL|}=\\sqrt{ab}/2\\). Zatem \\(h=2r=\\sqrt{ab}\\). Pole przewyższa \\(ab\\), bo \\((a+b)/2-\\sqrt{ab}=(\\sqrt a-\\sqrt b)^2/2>0\\).\n\n**Sposób III — wzór na pole czworokąta**\nW trapezie równoramiennym można opisać okrąg, a z treści można też wpisać okrąg. Wzór Brahmagupty oraz \\(a+b=2c\\) dają\n\\[P=\\sqrt{(s-a)(s-b)(s-c)^2}=\\sqrt{ab}\\,c,\\qquad s=a+b=2c.\\]\nPo podstawieniu \\(c=(a+b)/2\\) dostajemy \\(P>ab\\) z nierówności między średnimi.",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Wyrazy o nieparzystych indeksach tworzą ciąg geometryczny o pierwszym wyrazie \\(a_1\\) i ilorazie \\(q^2\\), gdzie \\(q\\) to iloraz \\((a_n)\\). Suma \\(16\\) wymaga \\(a_1\\ne0\\) i \\(|q|<1\\), a daje \\(a_1/(1-q^2)=16\\).\n\n**Sposób I — najpierw iloraz**\nZ \\(a_1+a_1q^2=\\frac52a_1q\\) po podzieleniu przez \\(a_1\\) zostaje \\(q^2-\\frac52q+1=0\\). Pierwiastki to \\(2\\) i \\(1/2\\), więc \\(|q|<1\\) pozostawia \\(1/2\\). Wtedy \\(a_1=16(1-q^2)=12\\).\n\n**Sposób II — najpierw pierwszy wyraz**\nWyrażamy \\(a_1=16(1-q^2)\\) z sumy i wstawiamy do drugiego równania. Po wymnożeniu i rozkładzie daje to \\((q^2-1)(-16q^2+40q-16)=0\\). Spośród \\(-1,1,2,1/2\\) tylko \\(1/2\\) spełnia \\(|q|<1\\), a wtedy \\(a_1=12\\).\n\nW obu przypadkach \\(a_n=12(1/2)^{n-1}\\).",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Dane boki to \\(|BC|=4\\sqrt3\\), \\(|AB|=6\\), a średnica okręgu wynosi \\(8\\).\n\n**Sposób I — kąt przy \\(A\\) i twierdzenie cosinusów**\nZ twierdzenia sinusów \\(\\sin\\angle BAC=\\sqrt3/2\\). Krótszy łuk \\(BC\\) ma miarę \\(120^\\circ\\) i stanowi jedną trzecią obwodu. Trzeci punkt \\(D\\) trójkąta równobocznego \\(BCD\\) dzieli pozostałe dwie trzecie obwodu na dwa równe krótsze łuki. Jeśli \\(A\\) leżałby wewnątrz łuku \\(BD\\) lub \\(CD\\) o mierze \\(120^\\circ\\), odpowiednio \\(AC\\) lub \\(AB\\) przekroczyłby długość \\(BC\\), bo krótszy łuk łączący te punkty miałby więcej niż \\(120^\\circ\\). Ponadto \\(A\\ne D\\), bo \\(|AB|=6\\). Zatem \\(A\\) leży na krótszym łuku \\(BC\\), skąd \\(\\angle BAC=120^\\circ\\). Dla \\(z=|AC|\\) twierdzenie cosinusów daje \\(48=z^2+36+6z\\). Dodatni pierwiastek to \\(z=\\sqrt{21}-3\\).\n\n**Sposób II — wysokość z \\(A\\)**\nZ twierdzenia sinusów \\(\\sin\\angle ACB=6/8=3/4\\). Kąt przy \\(C\\) jest ostry, bo \\(AB\\) nie jest najdłuższym bokiem. Oznaczmy spodek wysokości z \\(A\\) przez \\(E\\) i \\(|AE|=3u\\). Wtedy \\(|AC|=4u,\\ |EC|=\\sqrt7u,\\ |BE|=4\\sqrt3-\\sqrt7u\\). Punkt \\(E\\) jest między \\(B\\) i \\(C\\), ponieważ oba kąty przy tych wierzchołkach są ostre. Z twierdzenia Pitagorasa w \\(AEB\\) mamy \\((4\\sqrt3-\\sqrt7u)^2+9u^2=36\\). Rozwiązania dają \\(4u=\\sqrt{21}\\pm3\\). Większe przekracza \\(4\\sqrt3\\), więc \\(|AC|=\\sqrt{21}-3\\).\n\n**Sposób III — trzy zastosowania twierdzenia sinusów**\nJak w sposobie I otrzymujemy \\(\\angle BAC=120^\\circ\\). Z twierdzenia sinusów znamy \\(\\sin\\angle ACB=3/4\\) i \\(\\cos\\angle ACB=\\sqrt7/4\\). Wzór na sinus sumy kątów przy \\(A,C\\) daje \\(\\sin\\angle ABC=(\\sqrt{21}-3)/8\\). Z twierdzenia sinusów \\(|AC|=8\\sin\\angle ABC=\\sqrt{21}-3\\).\n\n**Wariant ze wskazówki CKE**\nZamiast sinusa kąta \\(ABC\\) można policzyć \\(\\cos\\angle ABC=(\\sqrt7+3\\sqrt3)/8\\) ze wzoru na cosinus sumy. Twierdzenie cosinusów daje \\(|AC|=\\sqrt{30-6\\sqrt{21}}=\\sqrt{21}-3\\).",
+    "strona_rozwiazania": 21
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "**Sposób I — rozwinięcie sinusów sumy i różnicy**\nZapisujemy \\(6x=5x+x\\) i \\(4x=5x-x\\). Po rozwinięciu obu sinusów składniki z \\(\\cos(5x)\\sin x\\) znoszą się. Równanie przyjmuje postać \\(\\sin(5x)(2\\cos x+\\sqrt3)=0\\).\n\n**Sposób II — wzór na sumę sinusów**\nBezpośrednio \\(\\sin(6x)+\\sin(4x)=2\\sin(5x)\\cos x\\), więc otrzymujemy ten sam iloczyn.\n\nW każdym sposobie rozwiązujemy \\(\\sin(5x)=0\\) lub \\(\\cos x=-\\sqrt3/2\\). Dostajemy \\(x=k\\pi/5\\) lub \\(x=\\pm5\\pi/6+2k\\pi\\), gdzie \\(k\\in\\mathbb Z\\).",
+    "strona_rozwiazania": 25
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Oznaczmy przez \\(H\\) wysokość graniastosłupa oraz przez \\(\\alpha\\) ostry kąt między dwiema przekątnymi ścian bocznych. Z \\(\\sin\\alpha=\\sqrt{11}/6\\) mamy \\(\\cos\\alpha=5/6\\). Przekątne mają długość \\(d=\\sqrt{H^2+a^2}\\), a ich końce naprzeciw wspólnego wierzchołka oddalone są o \\(a\\). Z twierdzenia cosinusów\n\\[a^2=2d^2(1-\\cos\\alpha)=(H^2+a^2)/3,\\]\nwięc \\(H=a\\sqrt2\\). Powierzchnia składa się z dwóch podstaw i trzech ścian bocznych, zatem\n\\[P=2\\cdot\\frac{a^2\\sqrt3}{4}+3aH=\\frac{a^2\\sqrt3}{2}+3a^2\\sqrt2.\\]",
+    "strona_rozwiazania": 27
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Z przecięcia \\(y=x^2-2x-8\\) z \\(y=-3x-2\\) mamy \\(x^2+x-6=0\\). Stąd \\(A=(-3,7)\\) i \\(B=(2,-8)\\), bo odcięta \\(A\\) jest ujemna. Niech \\(C=(t,1-t/2)\\), \\(t>0\\). Warunek odległości od \\(AB\\) daje\n\\[\\frac{|3t+1-t/2+2|}{\\sqrt{10}}=\\frac{9\\sqrt{10}}5,\\qquad |5t/2+3|=18.\\]\nDodatnią odciętą jest \\(t=6\\), więc \\(C=(6,-2)\\). Zatem \\(|BC|=\\sqrt{4^2+6^2}=2\\sqrt{13}\\).",
+    "strona_rozwiazania": 29
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Równanie jest kwadratowe dla \\(m\\ne3\\). Wyróżnik \\((m+1)^2(13-4m)\\) jest dodatni, gdy \\(m<13/4\\) i \\(m\\ne-1\\). Z warunku na pierwiastki mamy \\((x_1+x_2)^2-3x_1x_2=7\\). Ze wzorów Viète’a wynika\n\\[\\left(\\frac{m+1}{m-3}\\right)^2-3\\frac{(m+1)^2}{m-3}=7.\\]\nMnożąc przez \\((m-3)^2\\) dostajemy \\(-3m^3-3m^2+59m-53=0\\).\n\n**Sposób I — grupowanie**\nLewą stronę zapisujemy jako \\(-3m(m^2-1)-3m(m-1)+53(m-1)\\). Rozkład to \\((m-1)(-3m^2-6m+53)=0\\).\n\n**Sposób II — dzielenie wielomianu**\nWielomian zeruje się w \\(m=1\\). Dzieląc przez \\(m-1\\) schematem Hornera, otrzymujemy współczynniki ilorazu \\(-3,-6,53\\) i resztę \\(0\\).\n\nRozwiązania równania to \\(1\\) oraz \\((-3\\pm2\\sqrt{42})/3\\). Rozwiązanie z plusem przekracza \\(13/4\\). Pozostałe spełniają wszystkie warunki, zatem\n\\[m\\in\\left\\{1,\\frac{-3-2\\sqrt{42}}3\\right\\}.\\]",
+    "strona_rozwiazania": 32
+  },
+  {
+    "numer": "13.1",
+    "rozwiazanie": "Podstawa jest trójkątem równobocznym o boku \\(a=R\\sqrt3\\), więc ma pole \\(a^2\\sqrt3/4=3R^2\\sqrt3/4\\). Wysokość ostrosłupa wynosi \\(6-R\\). Z wzoru na objętość\n\\[V(R)=\\frac13\\cdot\\frac{3R^2\\sqrt3}{4}(6-R)=\\frac{\\sqrt3}{4}(6R^2-R^3).\\]",
+    "strona_rozwiazania": 35
+  },
+  {
+    "numer": "13.2",
+    "rozwiazanie": "**Sposób I — pochodna**\nMamy \\(V'(R)=\\frac{3\\sqrt3}{4}R(4-R)\\), dodatnią dla \\(0<R<4\\) i ujemną dla \\(4<R<6\\). Wobec tego \\(V(4)=8\\sqrt3\\) jest największą objętością.\n\n**Sposób II — nierówność między średnimi**\nLiczby \\(R,R,12-2R\\) są dodatnie i mają średnią arytmetyczną \\(4\\). Ich iloczyn nie przekracza \\(4^3=64\\), więc \\(R^2(6-R)\\le32\\). Równość zachodzi wtedy, gdy \\(R=12-2R\\), czyli \\(R=4\\). Stąd \\(V(4)=8\\sqrt3\\).",
+    "strona_rozwiazania": 37
+  }
+]

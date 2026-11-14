@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Niech \\(a=\\log_5 2\\) i \\(b=\\log_5 3\\). Wybierz wartość \\(\\log_{18}40\\).\n\nA. \\(\\frac{3a+1}{a+b}\\)\nB. \\(\\frac{2a+1}{a+b}\\)\nC. \\(\\frac{2a+1}{a+2b}\\)\nD. \\(\\frac{3a+1}{2b+a}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "2",
+    "polecenie": "Wybierz wartość granicy\n\\[\\lim_{x\\to-3}\\frac{0{,}5x^2+3{,}5x+6}{-x^2+2x+15}.\\]\n\nA. \\(-\\frac18\\)\nB. \\(\\frac1{16}\\)\nC. \\(-\\frac1{16}\\)\nD. \\(\\frac74\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "3",
+    "polecenie": "Suma wektorów \\(\\vec a=[2+2m,\\frac23n+1]\\) i \\(\\vec b=[n+1,m+2]\\) to \\([0,0]\\). Wskaż właściwe wartości \\(m,n\\).\n\nA. \\(m=1,\\ n=3\\)\nB. \\(m=-9,\\ n=-21\\)\nC. \\(m=3,\\ n=-9\\)\nD. \\(m=-1,\\ n=0\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "4",
+    "polecenie": "Pole trójkąta ostrokątnego o dwóch bokach długości \\(5\\) i \\(8\\) wynosi \\(12\\). Wybierz długość trzeciego boku.\n\nA. \\(5\\)\nB. \\(8\\)\nC. \\(\\sqrt{41}\\)\nD. \\(\\sqrt{143}\\)",
+    "strona_zadania": 2
+  },
+  {
+    "numer": "5",
+    "polecenie": "W firmie pracuje \\(390\\) osób, w tym \\(150\\) kobiet i \\(240\\) mężczyzn. W wieku przedemerytalnym jest \\(21\\) kobiet i \\(43\\) mężczyzn.\n\nOblicz prawdopodobieństwo, że losowo wybrany pracownik jest w wieku przedemerytalnym, jeśli wiadomo, że jest mężczyzną. Podaj kolejno pierwszą, drugą i trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "6",
+    "polecenie": "Wykaż, że dla dowolnych liczb rzeczywistych \\(x\\ne y\\) zachodzi\n\\[x^4+y^4>xy(x^2+y^2).\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "7",
+    "polecenie": "Ile jest pięciocyfrowych liczb naturalnych, w których zapisie dziesiętnym występują dokładnie dwie cyfry nieparzyste?",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "8",
+    "polecenie": "Rozwiąż nierówność\n\\[\\frac{3x+1}{2x+1}\\le\\frac{3x+4}{2x+3}.\\]",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "9",
+    "polecenie": "Trapez \\(ABCD\\) ma podstawy \\(AB,CD\\). Przez punkt przecięcia przekątnych \\(O\\) prowadzimy równoległą do \\(BC\\), która przecina \\(AB\\) w \\(B'\\), oraz równoległą do \\(AD\\), która przecina \\(AB\\) w \\(A'\\).\n\nWykaż, że \\(|AA'|=|BB'|\\).",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "10",
+    "polecenie": "Nieskończony ciąg geometryczny \\((a_n)_{n\\ge1}\\) ma pierwszy wyraz równy ilorazowi \\(q\\) i \\(|q|<1\\). Niech \\(S_N\\) oznacza sumę wyrazów o nieparzystych indeksach, a \\(S_P\\) sumę wyrazów o parzystych indeksach. Wiadomo, że \\(\\frac{S_N}{S_P}=S_N-S_P\\).\n\nOblicz \\(q\\).",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "11",
+    "polecenie": "Rozwiąż w przedziale \\([0,\\pi]\\) równanie\n\\[\\cos(3x)+\\sqrt3\\sin(3x)+1=0.\\]",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "12",
+    "polecenie": "Podstawa graniastosłupa prostego \\(ABCDA_1B_1C_1D_1\\) jest trapezem równoramiennym \\(ABCD\\) wpisanym w okrąg o środku \\(O\\) i promieniu \\(R\\). Dłuższa podstawa \\(AB\\) jest średnicą okręgu. Krótsza podstawa jest cięciwą odpowiadającą kątowi środkowemu \\(2\\alpha\\). Przekątna ściany bocznej zawierającej ramię trapezu tworzy z płaszczyzną podstawy kąt \\(\\alpha\\).\n\nWyznacz objętość graniastosłupa w zależności od \\(R\\) i \\(\\alpha\\).",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "13",
+    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(x-4)\\big[x^2+(m-3)x+m^2-m-6\\big]=0\\]\nma trzy różne pierwiastki rzeczywiste \\(x_1,x_2,x_3\\) spełniające\n\\[x_1x_2x_3>x_1^2+x_2^2+x_3^2-5m-51.\\]",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "14",
+    "polecenie": "Dany jest okrąg \\(o_1\\colon (x-6)^2+(y-4)^2=98\\) oraz okrąg \\(o_2\\) o promieniu \\(2\\sqrt5\\). Środki leżą po przeciwnych stronach prostej \\(k\\colon y=-3x-6\\), a wszystkie punkty wspólne okręgów leżą na \\(k\\).\n\nWyznacz równanie \\(o_2\\).",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "15",
+    "polecenie": "Rozważ wszystkie ostrokątne trójkąty równoramienne \\(ABC\\) o ramionach \\(|AC|=|BC|\\), wpisane w okrąg o promieniu \\(1\\). Niech \\(x\\) oznacza odległość środka okręgu od \\(AB\\).\n\na) Wykaż, że pole jest równe \\(P(x)=(x+1)\\sqrt{1-x^2}\\).\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz \\(x\\) dla trójkąta o największym polu i podaj to pole.",
+    "strona_zadania": 22
+  }
+]

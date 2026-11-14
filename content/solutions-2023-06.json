@@ -1,0 +1,67 @@
+[
+  {
+    "numer": "1",
+    "strona_rozwiazania": 2,
+    "rozwiazanie": "Korzystamy z równości \\(4=2^2\\) oraz tożsamości \\(2^{\\log_2 45}=45\\). Stąd\n\\[a=(2^2)^{\\log_2 45}=45^2=2025.\\]\nZe zmiany podstawy \\(\\log_9 2023=\\log_3 2023/\\log_3 9\\) wynika \\(b=\\log_3 9=2\\). Zatem \\(a-b=2023\\)."
+  },
+  {
+    "numer": "2",
+    "strona_rozwiazania": 3,
+    "rozwiazanie": "Wszystkich kolejek jest \\(n!\\).\n\n**Liczenie blokiem**\nTrzy sąsiednie osoby traktujemy jak jeden blok. Razem z pozostałymi osobami daje to \\(n-2\\) obiektów, które ustawiamy na \\((n-2)!\\) sposobów. Kolejność wewnątrz bloku można wybrać na \\(3!\\) sposobów.\n\n**Inne liczenie**\nPoczątek bloku wybieramy na \\(n-2\\) sposobów, jego wewnętrzny porządek na \\(3!\\), a kolejność pozostałych osób na \\((n-3)!\\). Iloczyn \\((n-2)3!(n-3)!\\) ponownie daje \\(3!(n-2)!\\).\n\nWarunek to \\(n!=12\\cdot3!(n-2)!\\), czyli \\(n(n-1)=72\\). Ponieważ \\((n-9)(n+8)=0\\) i \\(n\\ge3\\), zostaje \\(n=9\\)."
+  },
+  {
+    "numer": "3",
+    "strona_rozwiazania": 5,
+    "rozwiazanie": "W schemacie Bernoulliego dla siedmiu dni prawdopodobieństwo awarii wynosi \\(p=\\tfrac1{10}\\), a braku awarii \\(q=\\tfrac9{10}\\). Sumujemy prawdopodobieństwa dla zera, jednego i dwóch dni z awarią.\n\\[P(A)=\\sum_{k=0}^{2}\\binom7k p^kq^{7-k}\n=\\frac{9^7+7\\cdot9^6+21\\cdot9^5}{10^7}\n=0{,}9743085\\approx0{,}97.\\]"
+  },
+  {
+    "numer": "4",
+    "strona_rozwiazania": 6,
+    "rozwiazanie": "Ponieważ \\(P=(x_0,18)\\) leży na wykresie, mamy\n\\[0=2x_0^3-4x_0^2+9x_0-18=(x_0-2)(2x_0^2+9).\\]\nDrugi czynnik jest dodatni, więc \\(x_0=2\\). Pochodna \\(f'(x)=6x^2-8x+9\\) przyjmuje w \\(2\\) wartość \\(17\\). Styczna przechodzi przez \\((2,18)\\), więc \\(y-18=17(x-2)\\), czyli \\(y=17x-16\\)."
+  },
+  {
+    "numer": "5",
+    "strona_rozwiazania": 10,
+    "rozwiazanie": "**Sposób I — rozkład wielomianu**\nPo pomnożeniu przez \\(a>0\\) otrzymujemy równoważny warunek \\(W(a)=a^3-12a+16\\ge0\\). Liczba \\(2\\) jest pierwiastkiem \\(W\\), więc\n\\[W(a)=(a-2)(a^2+2a-8)=(a-2)^2(a+4)\\ge0.\\]\nRozkład można też otrzymać przez grupowanie:\n\\[a(a^2-16)+4(a+4)=(a+4)(a^2-4a+4).\\]\n\n**Sposób II — średnie arytmetyczna i geometryczna**\nDla dodatnich liczb \\(a^2,8/a,8/a\\) zachodzi\n\\[\\frac{a^2+16/a}{3}\\ge\\sqrt[3]{a^2(8/a)(8/a)}=4.\\]\nMnożąc przez \\(3\\), otrzymujemy tezę.\n\n**Sposób III — pochodna**\nDla \\(f(a)=a^2+16/a\\) mamy \\(f'(a)=(2a^3-16)/a^2\\). Pochodna jest ujemna dla \\(0<a<2\\) i dodatnia dla \\(a>2\\). Minimum wynosi \\(f(2)=12\\), zatem nierówność jest prawdziwa dla każdego \\(a>0\\)."
+  },
+  {
+    "numer": "6",
+    "strona_rozwiazania": 12,
+    "rozwiazanie": "Oznaczmy \\(x=|BP|\\). Odcinki styczne z jednego punktu mają równe długości, więc \\(|BD|=x\\). Z założenia \\(|CD|=2|BD|=2x\\), a więc również \\(|CQ|=2x\\). Ponadto \\(|AQ|=5|BP|=5x\\), zatem\n\\[|AC|=|AQ|-|CQ|=5x-2x=3x,\\qquad\n|BC|=|BD|+|CD|=x+2x=3x.\\]\nRówność \\(|AC|=|BC|\\) dowodzi, że trójkąt \\(ABC\\) jest równoramienny."
+  },
+  {
+    "numer": "7",
+    "strona_rozwiazania": 14,
+    "rozwiazanie": "Pierwszy wyraz wynosi \\(2x\\), a iloraz \\(q=-3/(x-1)\\). Ponieważ \\(x\\ne0,1\\), zbieżność zachodzi wtedy i tylko wtedy, gdy \\(|q|<1\\), czyli \\(|x-1|>3\\). Dostajemy \\(x\\in(-\\infty,-2)\\cup(4,+\\infty)\\).\n\nDla takiego \\(x\\) suma szeregu to\n\\[\\frac{2x}{1-q}=\\frac{2x(x-1)}{x+2}.\\]\nPrzyrównanie do \\(15/2\\) daje \\(4x^2-19x-30=0\\). Pierwiastki to \\(6\\) i \\(-5/4\\), ale warunek zbieżności spełnia tylko \\(x=6\\)."
+  },
+  {
+    "numer": "8",
+    "strona_rozwiazania": 15,
+    "rozwiazanie": "**Sposób I — równość sinusów**\nPonieważ \\(-\\cos x=\\sin(x-\\pi/2)\\), równanie przyjmuje postać \\(\\sin(5x)=\\sin(x-\\pi/2)\\). Wtedy\n\\[5x=x-\\frac\\pi2+2k\\pi\n\\quad\\text{lub}\\quad\n5x=\\frac{3\\pi}{2}-x+2k\\pi,\\qquad k\\in\\mathbb Z.\\]\n\n**Sposób II — wzór na sumę sinusów**\nPodstawiamy \\(\\cos x=\\sin(\\pi/2-x)\\). Z równania\n\\[2\\sin(2x+\\pi/4)\\cos(3x-\\pi/4)=0\\]\notrzymujemy \\(2x+\\pi/4=k\\pi\\) lub \\(3x-\\pi/4=\\pi/2+k\\pi\\).\n\nObie drogi dają \\(x=-\\pi/8+k\\pi/2\\) lub \\(x=\\pi/4+k\\pi/3\\). Po ograniczeniu do \\([-\\pi/2,\\pi/2]\\) zostają\n\\[\\left\\{-\\frac{5\\pi}{12},-\\frac{\\pi}{8},-\\frac{\\pi}{12},\\frac{\\pi}{4},\\frac{3\\pi}{8}\\right\\}.\\]"
+  },
+  {
+    "numer": "9",
+    "strona_rozwiazania": 17,
+    "rozwiazanie": "Prosta \\(4x-3y+2=0\\) przechodzi przez środek \\(S=(1,2)\\), więc \\(AB\\) jest średnicą długości \\(10\\). Z \\(|AD|=4|DB|\\) dostajemy \\(|AD|=8\\) i \\(|DB|=2\\).\n\n**Sposób I — wysokość w trójkącie prostokątnym**\nKąt \\(ACB\\) jest prosty jako wpisany i oparty na średnicy. Stosujemy zależność między wysokością na przeciwprostokątną a powstałymi odcinkami: \\(|CD|=\\sqrt{|AD||DB|}=4\\). Pole wynosi \\(\\tfrac12\\cdot10\\cdot4=20\\).\n\n**Sposób II — współrzędne**\nWyznaczamy końce średnicy jako przecięcia prostej z okręgiem. Z \\(x=(3y-2)/4\\) i równania okręgu wynika \\((y-2)^2=16\\). Przyjmujemy \\(A=(-2,-2)\\), \\(B=(4,6)\\). Ponieważ \\(\\overrightarrow{AD}=\\tfrac45\\overrightarrow{AB}\\), mamy \\(D=(14/5,22/5)\\). Prosta prostopadła do \\(AB\\) przez \\(D\\) ma równanie \\(y=-3x/4+13/2\\). Po podstawieniu do równania okręgu otrzymujemy \\((x-6)(5x+2)=0\\), czyli \\(C=(6,2)\\) lub \\(C=(-2/5,34/5)\\). W obu przypadkach \\(|CD|=4\\).\n\nPrzy odwrotnym oznaczeniu \\(A\\) i \\(B\\) mamy \\(D=(-4/5,-2/5)\\) oraz prostą \\(y=-3x/4-1\\). Daje to \\(C=(-4,2)\\) lub \\(C=(12/5,-14/5)\\), wciąż z \\(|CD|=4\\). Pole w każdym przypadku wynosi \\(20\\)."
+  },
+  {
+    "numer": "10",
+    "strona_rozwiazania": 21,
+    "rozwiazanie": "Równanie ma dwa różne pierwiastki rzeczywiste, gdy \\(m\\ne0\\) i\n\\[\\Delta=(m+1)^2-4m(-2m+3)=(m-1)(9m-1)>0.\\]\nStąd \\(m<1/9\\) lub \\(m>1\\), z wykluczeniem \\(m=0\\). Pierwiastki są niezerowe, gdy \\(m\\ne3/2\\).\n\nDla \\(s=x_1+x_2=(m+1)/m\\) i \\(p=x_1x_2=(-2m+3)/m\\) warunek ma postać \\((s^2-2p)/p^2<1\\). Po pomnożeniu przez dodatnie \\(m^2p^2\\) dostajemy\n\\[(m+1)^2-2m(-2m+3)<(-2m+3)^2,\\]\nczyli \\(m^2+8m-8<0\\), a więc \\(m\\in(-4-2\\sqrt6,-4+2\\sqrt6)\\). Ponieważ \\(1/9<-4+2\\sqrt6<1\\), przecięcie warunków daje\n\\[m\\in(-4-2\\sqrt6,0)\\cup(0,1/9).\\]"
+  },
+  {
+    "numer": "11",
+    "strona_rozwiazania": 24,
+    "rozwiazanie": "**Sposób I — pierwszy wyraz**\nPodstawiamy \\(c=b+6\\) do warunku arytmetyczności \\(4b=2a+c+1\\). Otrzymujemy \\(b=(2a+7)/3\\) oraz \\(c=(2a+25)/3\\). Równość \\(b^2=ac\\) daje\n\\[(2a+7)^2=a(6a+75)\\quad\\Longleftrightarrow\\quad\n2a^2+47a-49=0.\\]\nStąd \\(a=1\\) lub \\(a=-49/2\\). Dodatniość wyrazów oznacza \\(a=1\\), więc \\(b=3\\) i \\(c=9\\).\n\n**Sposób II — iloraz**\nPiszemy \\(b=aq,\\ c=aq^2\\). Warunek \\(c-b=6\\) daje \\(a=6/(q^2-q)\\), gdzie \\(q\\ne0,1\\). Drugi warunek to \\(4aq=2a+aq^2+1\\). Po podstawieniu \\(a\\) i uproszczeniu\n\\[7q^2-25q+12=(q-3)(7q-4)=0.\\]\nDla \\(q=4/7\\) otrzymalibyśmy \\(a<0\\), więc \\(q=3\\). Wówczas \\(a=1,\\ b=3,\\ c=9\\).\n\nSprawdzamy, że \\((1,3,9)\\) jest geometryczny o dodatnich wyrazach, a \\((2,6,10)\\) arytmetyczny. Zachodzi \\(9-3=6\\)."
+  },
+  {
+    "numer": "12",
+    "strona_rozwiazania": 27,
+    "rozwiazanie": "Z prostych kątów \\(BAD\\) i \\(BCD\\) wynika, że \\(BD\\) jest średnicą okręgu. Mamy \\(|BD|=8\\), a z danych \\(|DE|=2,\\ |BE|=6,\\ |AE|=4\\). Niech \\(S\\) będzie środkiem okręgu i \\(P\\) rzutem \\(A\\) na \\(BD\\). Ponieważ \\(|AS|=|AE|=4\\), rzut \\(P\\) jest środkiem odcinka \\(ES\\). Stąd \\(|EP|=|PS|=1,\\ |DP|=3,\\ |BP|=5\\). Z twierdzenia Pitagorasa:\n\\[|AP|^2=4^2-1^2=15,\\quad |AB|^2=15+25=40,\\quad |AD|^2=15+9=24.\\]\nTrójkąty \\(DEC\\) i \\(AEB\\) są podobne. Równość kątów \\(DCE\\) i \\(ABE\\) wynika z oparcia na łuku \\(AD\\), a kąty przy \\(E\\) są wierzchołkowe. Z proporcji \\(|DE|/|AE|=|CD|/|AB|=1/2\\) otrzymujemy \\(|CD|=\\sqrt{10}\\). W trójkącie prostokątnym \\(BCD\\) zachodzi \\(|BC|^2=64-10=54\\).\n\n**Wariant dla \\(CD\\) i \\(BC\\) — przecinające się cięciwy**\nMamy \\(|AE||CE|=|BE||DE|=12\\), więc \\(|CE|=3\\). Z \\(AEP\\) otrzymujemy \\(\\cos\\angle AEP=1/4\\). Kąt \\(DEC\\) ma ten sam cosinus, a \\(BEC\\) jest jego dopełnieniem do \\(180^\\circ\\). Twierdzenie cosinusów daje \\(|CD|^2=2^2+3^2-2\\cdot2\\cdot3/4=10\\) oraz \\(|BC|^2=6^2+3^2+2\\cdot6\\cdot3/4=54\\).\n\n**Wariant dla \\(AB\\) i \\(AD\\) — twierdzenie cosinusów**\nDla \\(\\beta=\\angle AEB\\) zachodzi \\(|AB|^2=6^2+4^2-2\\cdot6\\cdot4\\cos\\beta\\) oraz \\(|AD|^2=2^2+4^2+2\\cdot2\\cdot4\\cos\\beta\\). Ich suma jest równa \\(8^2\\), więc \\(\\cos\\beta=1/4\\). Stąd odpowiednio \\(40\\) i \\(24\\) jako kwadraty długości.\n\nOstatecznie\n\\[|AB|=2\\sqrt{10},\\quad |BC|=3\\sqrt6,\\quad |CD|=\\sqrt{10},\\quad |AD|=2\\sqrt6.\\]"
+  },
+  {
+    "numer": "13",
+    "strona_rozwiazania": 29,
+    "rozwiazanie": "Niech \\(a\\) będzie krawędzią kwadratowej podstawy. Mamy \\(|OD|=a\\sqrt2/2\\). W trójkącie prostokątnym \\(ODH\\) zachodzi \\(d^2=h^2+a^2/2\\), więc\n\\[a^2=2(d^2-h^2),\\qquad V(h)=2(d^2-h^2)h.\\]\nWarunki \\(a>0\\) i \\(h>0\\) dają dziedzinę \\(h\\in(0,d)\\).\n\nPochodna \\(V'(h)=2(d^2-3h^2)\\) znika w tej dziedzinie tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia przed tym punktem i ujemna za nim, więc objętość jest największa przy wysokości \\(h=d/\\sqrt3\\)."
+  }
+]

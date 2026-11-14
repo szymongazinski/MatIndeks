@@ -1,0 +1,72 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "W chwili \\(t=0\\) kawa ma temperaturę \\(80^\\circ\\mathrm C\\), a stała temperatura otoczenia wynosi \\(20^\\circ\\mathrm C\\). Jej temperaturę w stopniach Celsjusza po \\(t\\) minutach opisuje wzór\n\\[T(t)=(T_p-T_z)k^{-t}+T_z,\\qquad t\\ge0.\\]\nLiczby \\(T_p,T_z\\) oznaczają temperaturę początkową kawy i temperaturę otoczenia, a \\(k\\) jest stałą charakterystyczną dla cieczy. Po dziesięciu minutach kawa ma \\(65^\\circ\\mathrm C\\).\n\nOblicz jej temperaturę po kolejnych pięciu minutach. Podaj ją w stopniach Celsjusza, zaokrągloną do jedności, i zapisz obliczenia.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "2",
+    "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{x\\to2^-}\\frac{x^3-8}{(x-2)^2}.\\]",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "3",
+    "polecenie": "W zakładzie mleczarskim śmietanę pakuje się w opakowania po \\(200\\) gramów. W losowym opakowaniu zawartość tłuszczu jest mniejsza niż \\(36\\%\\) z prawdopodobieństwem \\(0{,}01\\). Do kontroli losujemy \\(10\\) opakowań.\n\nOblicz prawdopodobieństwo, że tę niższą zawartość tłuszczu ma co najwyżej jedno z kontrolowanych opakowań. Wynik podaj dziesiętnie, z dokładnością do części tysięcznych. Zapisz obliczenia.",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "4",
+    "polecenie": "Dla \\(x\\ne0\\) dana jest funkcja \\(f(x)=(x^3-3x+2)/x\\). Prosta \\(y=ax+b\\) jest styczna do wykresu \\(f\\) w punkcie o odciętej \\(2\\).\n\nOblicz \\(a,b\\) i zapisz obliczenia.",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "5",
+    "polecenie": "Wykaż, że dla \\(a=\\log_5 4\\) oraz \\(b=\\log_4 3\\) zachodzi\n\\[\\log_{12}80=\\frac{2a+1}{a(1+b)}.\\]",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "6",
+    "polecenie": "Rozważ liczby naturalne, w których zapisie dziesiętnym wszystkie cyfry są różne, dokładnie trzy są nieparzyste i dokładnie dwie parzyste. Ile jest takich liczb? Zapisz obliczenia.",
+    "strona_zadania": 9
+  },
+  {
+    "numer": "7",
+    "polecenie": "Rosnący ciąg geometryczny \\((x,y,z)\\) ma sumę wyrazów \\(105\\). Liczby \\(x,y,z\\) są odpowiednio pierwszym, drugim i szóstym wyrazem ciągu arytmetycznego \\((a_n)_{n\\ge1}\\).\n\nOblicz \\(x,y,z\\) i zapisz obliczenia.",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "8",
+    "polecenie": "Trójkąt \\(ABC\\) nie jest równoramienny, a kąt \\(ABC\\) ma dwukrotnie większą miarę niż \\(BAC\\). Wykaż, że\n\\[|AC|^2=|BC|^2+|AB||BC|.\\]",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "9",
+    "polecenie": "W kwadracie \\(ABCD\\) o boku \\(a\\) punkt \\(E\\) jest środkiem \\(CD\\). Przekątna \\(BD\\) przecina \\(AE\\) w \\(F\\) oraz \\(AC\\) w \\(G\\), dzieląc trójkąt \\(ACE\\) na trójkąt \\(AGF\\) i czworokąt \\(CEFG\\).\n\nWyznacz pola obu tych figur i zapisz obliczenia.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "10",
+    "polecenie": "Rozwiąż w przedziale \\([0,2\\pi]\\) równanie\n\\[\\sin(4x)-\\sin(2x)=4\\cos^2x-3.\\]\nZapisz obliczenia.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "11",
+    "polecenie": "Środek \\(S\\) okręgu o promieniu \\(\\sqrt5\\) leży na prostej \\(y=x+1\\). Punkt \\(A=(1,2)\\) leży poza okręgiem. Dwie styczne poprowadzone z \\(A\\) dotykają okręgu w punktach \\(B,C\\). Pole czworokąta \\(ABSC\\) wynosi \\(15\\).\n\nWyznacz wszystkie możliwe współrzędne \\(S\\) i zapisz obliczenia.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "12",
+    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[x^2-(3m+1)x+2m^2+m+1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające warunek\n\\[x_1^3+x_2^3+3x_1x_2(x_1+x_2-3)\\le3m-7.\\]\nZapisz obliczenia.",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "13.1",
+    "polecenie": "Rozważ graniastosłupy prawidłowe trójkątne o objętości \\(3456\\) i krawędzi podstawy \\(a\\) nie dłuższej niż \\(8\\sqrt3\\). Wykaż, że pole powierzchni całkowitej jest równe\n\\[P(a)=\\frac{a^2\\sqrt3}{2}+\\frac{13824\\sqrt3}{a}.\\]",
+    "strona_zadania": 23
+  },
+  {
+    "numer": "13.2",
+    "polecenie": "Rozważ graniastosłupy prawidłowe trójkątne o objętości \\(3456\\). Pole powierzchni całkowitej w zależności od długości \\(a\\) krawędzi podstawy jest dane wzorem\n\\[P(a)=\\frac{a^2\\sqrt3}{2}+\\frac{13824\\sqrt3}{a},\\qquad a\\in(0,8\\sqrt3].\\]\nWyznacz długość krawędzi podstawy, przy której pole powierzchni całkowitej jest najmniejsze. Zapisz obliczenia i podaj to pole.",
+    "strona_zadania": 24
+  }
+]

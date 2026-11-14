@@ -1,0 +1,72 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Reakcja chemiczna zaczyna się w chwili \\(t=0\\). Masa związku \\(A\\), wyrażona w gramach, zmienia się zgodnie ze wzorem\n\\[m(t)=a\\cdot2^{-0{,}05t}+b,\\qquad t\\ge0,\\]\ngdzie \\(t\\) to czas w sekundach, a \\(a,b\\) są współczynnikami liczbowymi. Masa początkowa wynosi \\(m_0\\), a masa w stanie równowagi, gdy \\(t\\to\\infty\\), jest równa \\(m_0/9\\).\n\nOblicz, po ilu sekundach od rozpoczęcia reakcji przereagowało \\(87{,}5\\%\\) masy początkowej. Zapisz obliczenia.",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "2",
+    "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{x\\to3^-}\\frac{|x-3|}{x^2-9}.\\]",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "3",
+    "polecenie": "Dla każdej liczby rzeczywistej \\(x\\ne4\\) niech \\(f(x)=(2x+1)/(x-4)\\). Punkt \\(P=(x_0,5)\\) należy do wykresu \\(f\\).\n\nOblicz \\(x_0\\) oraz wyznacz równanie stycznej do wykresu w \\(P\\). Zapisz obliczenia.",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "4",
+    "polecenie": "Wykonujemy dziesięć rzutów symetryczną monetą. Wiadomo, że orzeł wypadł dokładnie trzy razy. Oblicz prawdopodobieństwo, że wszystkie trzy orły wypadły w kolejnych rzutach. Zapisz obliczenia.",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "5",
+    "polecenie": "Udowodnij, że dla dowolnych \\(a,b>0\\) spełniających \\(a+b=1\\) zachodzi\n\\[\\frac1{2a+b}+\\frac1{a+2b}\\ge \\frac43.\\]",
+    "strona_zadania": 9
+  },
+  {
+    "numer": "6",
+    "polecenie": "W trapez równoramienny o podstawach długości \\(a,b\\), gdzie \\(a>b\\), można wpisać okrąg. Wykaż, że pole trapezu przekracza \\(ab\\).",
+    "strona_zadania": 11
+  },
+  {
+    "numer": "7",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny \\((a_n)_{n\\ge1}\\). Suma jego wyrazów o nieparzystych indeksach wynosi\n\\[a_1+a_3+a_5+\\cdots=16.\\]\nPonadto \\(a_1+a_3=\\frac52a_2\\). Wyznacz wzór na \\(n\\)-ty wyraz ciągu i zapisz obliczenia.",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "8",
+    "polecenie": "W okrąg o promieniu \\(4\\) wpisano trójkąt \\(ABC\\). Zachodzi \\(|AB|=6\\), a najdłuższy bok \\(BC\\) ma długość \\(4\\sqrt3\\).\n\nOblicz długość \\(AC\\) i zapisz obliczenia.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "9",
+    "polecenie": "Rozwiąż równanie i zapisz obliczenia.\n\\[\\sin(6x)+\\sqrt3\\sin(5x)+\\sin(4x)=0.\\]",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "10",
+    "polecenie": "Podstawa graniastosłupa prawidłowego trójkątnego ma krawędź długości \\(a\\). Sinus kąta między przekątnymi ścian bocznych wychodzącymi z tego samego wierzchołka jest równy \\(\\sqrt{11}/6\\).\n\nWyznacz pole powierzchni całkowitej graniastosłupa. Zapisz obliczenia.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "11",
+    "polecenie": "Prosta \\(3x+y+2=0\\) przecina parabolę \\(y=x^2-2x-8\\) w dwóch kolejnych wierzchołkach \\(A,B\\) równoległoboku \\(ABCD\\). Punkt \\(A\\) ma odciętą ujemną. Punkt \\(C\\) leży na prostej \\(y=-x/2+1\\) i ma odciętą dodatnią. Odległość \\(C\\) od prostej \\(AB\\) wynosi \\(9\\sqrt{10}/5\\).\n\nOblicz długość boku \\(BC\\) i zapisz obliczenia.",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "12",
+    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(3-m)x^2+(m+1)x-(m+1)^2=0\\]\nma dwa różne rzeczywiste rozwiązania \\(x_1,x_2\\) spełniające \\(x_1^2+x_2^2=x_1x_2+7\\). Zapisz obliczenia.",
+    "strona_zadania": 22
+  },
+  {
+    "numer": "13.1",
+    "polecenie": "W ostrosłupie prawidłowym trójkątnym suma wysokości ostrosłupa i promienia \\(R\\) okręgu opisanego na podstawie wynosi \\(6\\). Wykaż, że objętość takiego ostrosłupa wyraża się wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}(6R^2-R^3).\\]",
+    "strona_zadania": 26
+  },
+  {
+    "numer": "13.2",
+    "polecenie": "Rozpatrujemy ostrosłupy prawidłowe trójkątne, w których suma wysokości ostrosłupa i promienia \\(R\\) okręgu opisanego na podstawie wynosi \\(6\\). Objętość jest dana wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}(6R^2-R^3),\\qquad R\\in(0,6).\\]\nOblicz promień \\(R\\) dla ostrosłupa o największej objętości. Zapisz obliczenia i podaj tę objętość.",
+    "strona_zadania": 27
+  }
+]

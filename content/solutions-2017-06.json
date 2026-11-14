@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "15",
+    "strona_rozwiazania": 23,
+    "rozwiazanie": "**Sposób I — krótsza krawędź z pary w stosunku \\(1:2\\)**\nNiech długości tej pary wynoszą \\(x,2x\\). Objętość \\(8\\) wymaga trzeciej krawędzi \\(4/x^2\\). Stąd pole całkowite to\n\\[P(x)=2\\left(2x^2+\\frac4x+\\frac8x\\right)=4x^2+\\frac{24}{x}.\\]\nDla \\(x>0\\) warunek sumy krawędzi daje \\(4(3x+4/x^2)<28\\), czyli\n\\[3x^3-7x^2+4=(x-1)(x-2)(3x+2)<0.\\]\nDziedzina to \\(1<x<2\\). Pochodna \\(P'(x)=8(x^3-3)/x^2\\) jest ujemna do \\(x=\\sqrt[3]3\\) i dodatnia po nim. Dlatego minimum wypada dla krawędzi \\(\\sqrt[3]3,\\ 2\\sqrt[3]3,\\ 4/\\sqrt[3]9\\).\n\n**Sposób II — trzecia krawędź**\nNiech długość trzeciej krawędzi wynosi \\(h>0\\), a pozostałych \\(x,2x\\). Z \\(2x^2h=8\\) wynika \\(x=2/\\sqrt h\\). Wobec tego\n\\[P(h)=4x^2+6xh=\\frac{16}{h}+12\\sqrt h.\\]\nWarunek sumy długości daje \\(3x+h<7\\), czyli \\(h+6/\\sqrt h<7\\). Podstawiając \\(t=\\sqrt h>0\\), dostajemy\n\\[t^3-7t+6=(t-1)(t-2)(t+3)<0.\\]\nStąd \\(1<t<2\\), czyli \\(h\\in(1,4)\\). Pochodna ma postać \\(P'(h)=(6h\\sqrt h-16)/h^2\\). Jest ujemna przed jedynym miejscem zerowym \\(h=4/\\sqrt[3]9\\) i dodatnia po nim. Po podstawieniu mamy \\(x=\\sqrt[3]3,\\ 2x=2\\sqrt[3]3\\).\n\nW kluczu CKE podczas drugiego sposobu pojawia się rozkład innego wielomianu, skopiowany z pierwszego sposobu. Do dziedziny \\(h\\in(1,4)\\) prowadzi rozkład wielomianu \\(t^3-7t+6\\) podany powyżej."
+  }
+]

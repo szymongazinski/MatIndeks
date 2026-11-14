@@ -1,0 +1,72 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "Ponieważ \\(16=4^2\\), wzory na logarytm potęgi i ilorazu dają\n\\[a=4^{\\,\\log_4 36-4\\log_4 3}=4^{\\,\\log_4(36/81)}=\\frac{36}{81}.\\]\nSprowadzamy logarytmy we wzorze na \\(b\\) do podstawy \\(3\\):\n\\[b=\\frac{\\log_3 9}{\\log_3 2}\\cdot\\log_3 5\\cdot\\frac{\\log_3 8}{\\log_3 5}=\\frac{2\\cdot3\\log_3 2}{\\log_3 2}=6.\\]\nStąd \\(\\frac{a}{2b}=\\frac{36}{81\\cdot12}=\\frac1{27}=3^{-3}\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Pierwszą pozycję zajmuje \\(2\\). Spośród ośmiu wolnych miejsc wybieramy trzy dla czwórek na \\(\\binom83\\) sposobów. Spośród pięciu pozostałych wybieramy dwa miejsca dla ósemek na \\(\\binom52\\) sposobów. Na trzech pozostałych pozycjach ustawiamy różne cyfry wybrane z \\(1,3,5,7,9\\), co daje \\(5\\cdot4\\cdot3\\) możliwości. Łącznie mamy\n\\[\\binom83\\binom52\\cdot5\\cdot4\\cdot3=33\\,600\\]\nkodów.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Dla \\(x\\ne1\\) reguła różniczkowania ilorazu daje\n\\[f'(x)=\\frac{(2ax+1)(x-1)-(ax^2+x)}{(x-1)^2}=\\frac{ax^2-2ax-1}{(x-1)^2}.\\]\nPunkt \\(x=a\\) wymaga \\(a\\ne1\\). Stawiamy \\(\\frac{a^3-2a^2-1}{(a-1)^2}=-a/2\\). Po usunięciu mianownika mamy \\(3a^3-6a^2+a-2=(3a^2+1)(a-2)=0\\). Pierwszy czynnik jest dodatni, więc jedynym wynikiem jest \\(a=2\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Sposób I — suma trzech kwadratów**\nPodwajamy różnicę prawej i lewej strony:\n\\[2(x^2+y^2+1-xy-x-y)=(x-y)^2+(x-1)^2+(y-1)^2.\\]\nWszystkie kwadraty są nieujemne.\n\n**Sposób II — wyróżnik**\nDla ustalonego \\(y\\) różnica stron jest trójmianem \\(x^2-(y+1)x+y^2-y+1\\). Współczynnik przy \\(x^2\\) wynosi \\(1\\), a wyróżnik to\n\\[\\Delta=(y+1)^2-4(y^2-y+1)=-3(y-1)^2\\le0.\\]\nTrójmian przyjmuje więc wyłącznie wartości nieujemne.\n\n**Sposób III — zamiana zmiennych**\nRóżnica stron to \\((x-y)^2+(x-1)(y-1)\\). Dla \\(u=x-1,\\ v=y-1\\) wyrażenie upraszcza się do\n\\[u^2-uv+v^2=(u-v/2)^2+3v^2/4\\ge0.\\]",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Jeśli \\(p\\) przechodzi przez \\(C\\), to \\(K=L=C\\) i obie miary wynoszą \\(0^\\circ\\). W pozostałych przypadkach zastosujmy jeden z poniższych sposobów.\n\n**Sposób I — okrąg na czworokącie \\(DBLK\\)**\nWysokość \\(CD\\) jest osią symetrii \\(ABC\\), stąd \\(\\angle KAC=\\angle KBC=\\angle KBL\\). Kąty \\(KDB\\) i \\(BLK\\) są proste, więc \\(D,L\\) leżą na okręgu o średnicy \\(BK\\). Kąty wpisane \\(KBL\\) i \\(KDL\\) są oparte na tym samym łuku \\(KL\\). Zatem \\(\\angle KAC=\\angle KDL\\).\n\n**Sposób II — dwa okręgi**\nNiech \\(M\\) będzie punktem przecięcia \\(p\\) z prostą \\(AB\\). Kąty \\(MDC\\) i \\(MLC\\) są proste. Punkty \\(D,L\\) leżą więc na okręgu o średnicy \\(MC\\). W tym okręgu \\(\\angle LMD=\\angle LCD\\), bo oba kąty są oparte na \\(LD\\). Przez dwusieczność \\(CD\\) zachodzi \\(\\angle LCD=\\angle KCA\\), a \\(\\angle LMD=\\angle KMA\\), więc \\(M,A,K,C\\) również są współokręgowe. Na drugim okręgu kąty oparte na \\(KC\\) dają \\(\\angle KAC=\\angle KMC\\). Na pierwszym okręgu kąty oparte na \\(LC\\) dają \\(\\angle LMC=\\angle LDC\\). Ponieważ promienie kątów z \\(M\\) do \\(L,K\\) się pokrywają, a promienie z \\(D\\) do \\(C,K\\) również, otrzymujemy \\(\\angle KAC=\\angle KDL\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "**Sposób I — wzór Bayesa**\nNiech \\(A_i\\) oznacza pochodzenie chleba z \\(\\mathcal P_i\\), a \\(B\\) bycie bochenkiem razowym. Rozkład pochodzenia daje \\(P(A_1)=2/9,\\ P(A_2)=3/9,\\ P(A_3)=4/9\\). Z twierdzenia o prawdopodobieństwie całkowitym otrzymujemy\n\\[P(B)=\\frac29\\cdot\\frac{10}{100}+\\frac39\\cdot\\frac{12}{100}+\\frac49\\cdot\\frac{15}{100}=\\frac{116}{900}.\\]\nWzór Bayesa daje \\(P(A_1\\mid B)=\\frac{(2/9)(10/100)}{116/900}=\\frac5{29}\\).\n\n**Sposób II — liczba bochenków**\nDostawy mają liczebności \\(2n,3n,4n\\). Razowych bochenków jest odpowiednio \\(0{,}2n\\), \\(0{,}36n\\) i \\(0{,}6n\\). W losowaniu uwarunkowanym na chleb razowy mamy więc \\(1{,}16n\\) jednakowo prawdopodobnych bochenków, z których \\(0{,}2n\\) pochodzi z \\(\\mathcal P_1\\). Szukany iloraz to \\(0{,}2n/(1{,}16n)=5/29\\).",
+    "strona_rozwiazania": 10
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Niech \\(q\\) będzie ilorazem. Ponieważ suma ciągu jest skończona i niezerowa, \\(|q|<1\\) oraz \\(a_1/(1-q)=14\\), więc \\(a_1=14(1-q)\\). Ciąg sześcianów ma pierwszy wyraz \\(a_1^3\\) i iloraz \\(q^3\\), zatem \\(a_1^3/(1-q^3)=392\\). Po podstawieniu \\(a_1\\) i skróceniu \\(1-q\\) dostajemy\n\\[7(1-q)^2=1+q+q^2,\\qquad 6q^2-15q+6=0.\\]\nPierwiastki to \\(1/2,2\\). Z warunku zbieżności wynika \\(q=1/2\\), a wtedy \\(a_1=7\\) i\n\\[a_n=7\\left(\\frac12\\right)^{n-1}.\\]",
+    "strona_rozwiazania": 12
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "**Sposób I — różnica i pierwszy wyraz**\nNiech \\(r\\) będzie różnicą \\((x,y,z-4)\\). Mamy \\(y=x+r,\\ z=x+2r+4\\). Z \\((x+r)^2=x(x+2r+4)\\) wynika \\(r^2=4x\\). Z \\((x+r-1)^2=x(x+2r-1)\\) wynika \\(x=(r-1)^2\\). Po eliminacji \\(x\\) otrzymujemy \\(3r^2-8r+4=0\\), czyli \\(r=2\\) lub \\(r=2/3\\).\n\n**Sposób Ia — różnica i środkowy wyraz**\nZapisujemy \\(x=y-r,\\ z=y+r+4\\). Warunek \\(y^2=(y-r)(y+r+4)\\) daje \\(r^2+4r=4y\\). Warunek \\((y-1)^2=(y-r)(y+r-1)\\) daje \\(y=r^2-r+1\\). Po eliminacji \\(y\\) znów mamy \\(3r^2-8r+4=0\\).\n\n**Sposób II — eliminacja bez ilorazu ani różnicy**\nMamy \\(y^2=xz\\), \\(2y=x+z-4\\) i \\((y-1)^2=x(z-5)\\). Odejmując trzecie równanie od pierwszego, otrzymujemy \\(2y-1=5x\\), a z drugiego \\(z=4x+5\\). Podstawiamy do \\(y^2=xz\\):\n\\[\\left(\\frac{5x+1}2\\right)^2=x(4x+5),\\]\nczyli \\(9x^2-10x+1=0\\). Zatem \\(x=1\\) lub \\(x=1/9\\).\n\n**Sposób III — iloraz pierwszego ciągu**\nNiech \\(q\\) będzie ilorazem \\((x,y,z)\\). Wówczas \\(y=xq,\\ z=xq^2\\). Warunek arytmetyczności daje \\(x(q-1)^2=4\\), a geometryczność \\((x,y-1,z-5)\\) daje \\((xq-1)^2=x(xq^2-5)\\), czyli \\(x(2q-5)=1\\). Po eliminacji \\(x\\) mamy \\((q-1)^2=4(2q-5)\\), zatem \\(q=3\\) lub \\(q=7\\).\n\n**Wyniki i sprawdzenie**\nKażdy sposób prowadzi do \\((x,y,z)=(1,3,9)\\) lub \\((1/9,7/9,49/9)\\). Dla pierwszej trójki po zmianach otrzymujemy \\((1,3,5)\\), a następnie \\((1,2,4)\\). Dla drugiej otrzymujemy \\((1/9,7/9,13/9)\\) oraz \\((1/9,-2/9,4/9)\\). W obu przypadkach zachodzą wymagane własności ciągów.",
+    "strona_rozwiazania": 15
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Kąt \\(ABC\\) jest prosty, więc \\(AC\\) jest średnicą okręgu, a \\(ADC\\) również jest kątem prostym. Ponieważ \\(|AC|^2=4^2+7^2=65\\) i \\(P_{ABC}=\\frac12\\cdot4\\cdot7=14\\), pole trójkąta \\(ACD\\) wynosi \\(4\\).\n\n**Sposób I — suma przyprostokątnych**\nDla \\(c=|CD|,\\ d=|AD|\\) mamy \\(c^2+d^2=65\\) oraz \\(cd=8\\). Stąd \\((c+d)^2=81\\) i \\(c+d=9\\). Jeżeli dodatkowo wyznaczymy długości, są to \\(1,8\\) w dowolnej kolejności, bo rozwiązują \\(t^2-9t+8=0\\).\n\n**Sposób II — wysokość na przeciwprostokątną**\nNiech \\(E\\) będzie rzutem \\(D\\) na \\(AC\\). Z wzoru na pole mamy \\(|DE|=8/\\sqrt{65}\\). Podobieństwo trójkątów przy \\(DE\\) daje \\(|DE|^2=|AE||EC|\\). Dla \\(t=|AE|\\) otrzymujemy \\(t(\\sqrt{65}-t)=64/65\\), zatem \\(t=1/\\sqrt{65}\\) lub \\(64/\\sqrt{65}\\). Z twierdzenia Pitagorasa \\(|AD|^2=|DE|^2+t^2\\), \\(|CD|^2=|DE|^2+(\\sqrt{65}-t)^2\\), więc przyprostokątne są równe \\(1\\) i \\(8\\) w dowolnej kolejności.\n\nObwód w obu przypadkach wynosi \\(4+7+1+8=20\\).",
+    "strona_rozwiazania": 19
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Rozwijamy \\(\\sin(2x)=2\\sin x\\cos x\\). Po przeniesieniu \\(\\frac12\\) na lewą stronę i grupowaniu dostajemy\n\\[(\\sin x-\\tfrac12)(2\\cos x+1)=0.\\]\nPierwszy czynnik znika dla \\(x=\\pi/6+2k\\pi\\) oraz \\(x=5\\pi/6+2k\\pi\\). Drugi daje \\(x=\\pm2\\pi/3+2k\\pi\\). We wszystkich rodzinach \\(k\\in\\mathbb Z\\).",
+    "strona_rozwiazania": 24
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Warunek dwóch różnych pierwiastków to \\(\\Delta=m^2-4m>0\\), czyli \\(m<0\\) lub \\(m>4\\). Ze wzorów Viète’a suma pierwiastków to \\(-m\\), a iloczyn to \\(m\\). Przekształcamy warunek:\n\\[\\begin{aligned}\nx_1^4+x_2^4+4x_1^3x_2^3\n&=\\big((x_1+x_2)^2-2x_1x_2\\big)^2\\\\\n&\\quad-2(x_1x_2)^2+4(x_1x_2)^3\\\\\n&=(m^2-2m)^2-2m^2+4m^3=m^4+2m^2.\n\\end{aligned}\\]\nNierówność \\(m^4+2m^2-3=(m^2-1)(m^2+3)\\ge0\\) daje \\(|m|\\ge1\\). Łącząc warunki, otrzymujemy \\(m\\in(-\\infty,-1]\\cup(4,\\infty)\\).",
+    "strona_rozwiazania": 26
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Niech \\(a\\) oznacza krawędź podstawy, \\(P\\) środek \\(KL\\), \\(Q\\) środek \\(CD\\), a \\(R\\) środek \\(MN\\). Przekrój prostopadły do \\(KL\\) przez \\(P,Q,S\\) zawiera \\(R\\). Mamy \\(|PQ|=a/2\\), \\(PS\\) jest wysokością ostrosłupa, a \\(PR\\) wysokością trapezu. Ponieważ płaszczyzna przekroju \\(KLMN\\) jest prostopadła do ściany \\(CDS\\), w tym przekroju osiowym \\(PR\\perp QS\\). Kąt między \\(PR\\) a \\(PQ\\) wynosi \\(30^\\circ\\).\n\nZ dwóch trójkątów prostokątnych \\(PQR\\) i \\(PQS\\) otrzymujemy \\(|QR|=a/4,\\ |PR|=a\\sqrt3/4,\\ |QS|=a,\\ |PS|=a\\sqrt3/2\\). Stąd \\(|RS|=3a/4\\). Warunek objętości \\(\\frac13a^2\\cdot a\\sqrt3/2=36\\sqrt3\\) daje \\(a=6\\).\n\nTrójkąty \\(NMS\\) i \\(DCS\\) są podobne w skali \\(|RS|/|QS|=3/4\\), zatem \\(|MN|=9/2\\). Krótszą i dłuższą podstawę trapezu łączy wysokość \\(|PR|=6\\sqrt3/4\\). Pole wynosi\n\\[\\frac12\\left(6+\\frac92\\right)\\frac{6\\sqrt3}{4}=\\frac{63\\sqrt3}{8}.\\]",
+    "strona_rozwiazania": 27
+  },
+  {
+    "numer": "13.1",
+    "rozwiazanie": "Prosta przechodząca przez \\(K=(1,2)\\) ma równanie \\(y=a(x-1)+2\\). Jej przecięcie z osią \\(Oy\\) to \\(B=(0,2-a)\\), a z osią \\(Ox\\) to \\(A=((a-2)/a,0)\\). Obie współrzędne przecięcia są dodatnie, więc \\(a<0\\). Pole wynosi\n\\[P(a)=\\frac12\\cdot\\frac{a-2}{a}(2-a)=\\frac{-a^2+4a-4}{2a}.\\]",
+    "strona_rozwiazania": 29
+  },
+  {
+    "numer": "13.2",
+    "rozwiazanie": "**Sposób I — pochodna**\nDla \\(a<0\\) pochodna pola wynosi \\(P'(a)=(-2a^2+8)/(2a)^2\\). Jest ujemna dla \\(a<-2\\), zeruje się w \\(-2\\) i jest dodatnia dla \\(-2<a<0\\). Minimum wypada więc dla \\(a=-2\\).\n\n**Sposób II — nierówność między średnimi**\nMamy \\(P(a)=2-a/2-2/a\\). Dwie liczby \\(-a/2\\) i \\(-2/a\\) są dodatnie, a ich iloczyn wynosi \\(1\\). Ich suma jest więc nie mniejsza niż \\(2\\), z równością wtedy, gdy \\(-a/2=-2/a\\). Przy \\(a<0\\) daje to wyłącznie \\(a=-2\\).\n\nSzukana prosta ma nachylenie \\(-2\\) i przechodzi przez \\(K=(1,2)\\), zatem jej równanie to \\(y=-2x+4\\).",
+    "strona_rozwiazania": 31
+  }
+]

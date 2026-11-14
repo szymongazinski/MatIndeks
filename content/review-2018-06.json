@@ -1,0 +1,6 @@
+[
+  {
+    "numer": "15",
+    "polecenie": "Rozpatrujemy drewniane szkielety o kształcie i wymiarach przedstawionych na rysunku. Każda z listewek jest prostopadłościanem o podstawie kwadratu o boku \\(x\\).\n\na) Wyznacz objętość \\(V\\) drewna potrzebnego do budowy szkieletu jako funkcję \\(x\\).\nb) Wyznacz dziedzinę funkcji \\(V\\).\nc) Oblicz wartość \\(x\\), dla której szkielet jest najcięższy, czyli funkcja \\(V\\) przyjmuje największą wartość."
+  }
+]

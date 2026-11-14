@@ -1,0 +1,10 @@
+[
+  {
+    "numer": "12",
+    "polecenie": "Liczba \\(m\\) jest sumą odwrotności dwóch różnych pierwiastków równania\n\\[k^2x^2+(k-1)x+1=0,\\qquad k\\ne0.\\]\nWyznacz zbiór wartości funkcji określonej wzorem \\(f(x)=2^m\\)."
+  },
+  {
+    "numer": "4",
+    "polecenie": "W ostrosłupie prawidłowym czworokątnym wszystkie krawędzie mają tę samą długość. Wskaż cosinus kąta nachylenia ściany bocznej do płaszczyzny podstawy.\n\nA. \\(\\frac{\\sqrt3}{3}\\)\nB. \\(\\frac{\\sqrt3}{2}\\)\nC. \\(\\frac12\\)\nD. \\(\\frac13\\)"
+  }
+]

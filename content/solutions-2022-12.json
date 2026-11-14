@@ -1,0 +1,7 @@
+[
+  {
+    "numer": "5",
+    "rozwiazanie": "Tangens jest określony dla \\(x\\ne\\frac\\pi2+k\\pi\\), gdzie \\(k\\in\\mathbb Z\\). W tej dziedzinie \\(\\sin x=\\tan x\\cos x\\), więc równanie możemy zapisać jako\n\\[(3\\tan x+\\sqrt3)(2\\cos x+1)=0.\\]\nPierwszy czynnik jest zerem, gdy \\(\\tan x=-\\frac{\\sqrt3}{3}\\), czyli dla \\(x=-\\frac\\pi6+k\\pi\\). Drugi czynnik jest zerem, gdy \\(\\cos x=-\\frac12\\), czyli dla \\(x=\\frac{2\\pi}{3}+2k\\pi\\) lub \\(x=-\\frac{2\\pi}{3}+2k\\pi\\). Wszystkie wymienione wartości należą do dziedziny i dają zbiór rozwiązań dla \\(k\\in\\mathbb Z\\).",
+    "strona_rozwiazania": 8
+  }
+]

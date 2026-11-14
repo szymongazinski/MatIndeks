@@ -1,0 +1,12 @@
+[
+  {
+    "numer": "7",
+    "rozwiazanie": "Zapisujemy równanie prostej w postaci ogólnej \\(-3x+4y+\\frac{122}{7}=0\\). Promień jest odległością środka \\(S=(1,-4)\\) od tej prostej. Otrzymujemy \\[r=\\frac{|-3-16+122/7|}{\\sqrt{3^2+4^2}}=\\frac{11}{35}.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Ustalmy liczbę wystąpień cyfry \\(2\\). Gdy dana pozycja nie jest zajęta przez \\(2\\), na początku jest \\(8\\) możliwości, na każdej z trzech środkowych pozycji jest \\(9\\) możliwości, a na końcu są \\(4\\), czyli \\(0,4,6,8\\).\n\nBez dwójek mamy \\(8\\cdot9^3\\cdot4=23\\,328\\) liczb.\n\nZ jedną dwójką liczymy trzy możliwości położenia tej cyfry. Na początku daje \\(9^3\\cdot4=2916\\) liczb, na każdej ze środkowych pozycji daje \\(8\\cdot9^2\\cdot4=2592\\), a na końcu daje \\(8\\cdot9^3=5832\\). Razem otrzymujemy \\(2916+3\\cdot2592+5832=16\\,524\\).\n\nDwie dwójki mogą zajmować następujące pozycje.\n\n• Pierwsza i jedna ze środkowych dają \\(3\\cdot9^2\\cdot4=972\\) liczb.\n• Pierwsza i ostatnia dają \\(9^3=729\\) liczb.\n• Dwie środkowe dają \\(3\\cdot8\\cdot9\\cdot4=864\\) liczb.\n• Jedna ze środkowych i ostatnia dają \\(3\\cdot8\\cdot9^2=1944\\) liczb.\n\nRazem jest \\(972+729+864+1944=4509\\) liczb z dwiema dwójkami. Szukana liczba wynosi \\(23\\,328+16\\,524+4509=44\\,361\\).",
+    "strona_rozwiazania": 10
+  }
+]

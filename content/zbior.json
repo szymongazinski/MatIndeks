@@ -1,0 +1,483 @@
+[
+  {
+    "numer": "1",
+    "punkty": 3,
+    "kategorie": [
+      "Własności logarytmu"
+    ],
+    "tagi": [],
+    "polecenie": "Oblicz wartość wyrażenia\n\\[\\log_8\\left(3^{\\,3\\log_3 2-\\log_{27}8-\\log_9 4}\\right).\\]\nZapisz obliczenia.",
+    "rozwiazanie": "Po zamianie podstaw na \\(3\\) mamy \\(\\log_{27}8=\\frac13\\log_3 8=\\log_3 2\\) oraz \\(\\log_9 4=\\frac12\\log_3 4=\\log_3 2\\). Wykładnik potęgi upraszcza się więc do \\(\\log_3 2\\). Stąd\n\\[\\log_8\\left(3^{\\log_3 2}\\right)=\\log_8 2=\\frac13.\\]",
+    "strona_zadania": 8,
+    "strona_rozwiazania": 58
+  },
+  {
+    "numer": "2",
+    "punkty": 4,
+    "kategorie": [
+      "Dowodzenie podzielności",
+      "Ciągi"
+    ],
+    "tagi": [
+      "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
+    ],
+    "polecenie": "Trzy kolejne wyrazy \\(a,b,c\\) ciągu arytmetycznego o różnicy \\(7\\) zawierają wielokrotność \\(7\\). Udowodnij, że \\(294\\) dzieli \\(abc\\).",
+    "rozwiazanie": "Każdy z tych wyrazów jest podzielny przez \\(7\\), ponieważ sąsiednie różnią się o \\(7\\). Dla pewnego \\(k\\in\\mathbb Z\\) mamy \\(a=7(k-1)\\), \\(b=7k\\), \\(c=7(k+1)\\), a więc\n\\[abc=7^3(k-1)k(k+1).\\]\nWśród trzech kolejnych liczb całkowitych jest liczba parzysta i wielokrotność \\(3\\). Ich iloczyn jest podzielny przez \\(6\\). Ponieważ \\(294=7^2\\cdot6\\), jest dzielnikiem \\(abc\\).",
+    "strona_zadania": 9,
+    "strona_rozwiazania": 59
+  },
+  {
+    "numer": "3",
+    "punkty": 2,
+    "kategorie": [
+      "Dowodzenie podzielności"
+    ],
+    "tagi": [
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
+      "Grupowanie"
+    ],
+    "polecenie": "Liczby całkowite \\(a,b\\) spełniają \\(2a^2+a=3b^2+b\\). Wykaż, że z podzielności \\(a-b\\) przez \\(5\\) wynika podzielność \\(a-b\\) przez \\(25\\).",
+    "rozwiazanie": "**Sposób I**\nZ równania wynika\n\\[b^2=2(a^2-b^2)+(a-b)=(a-b)(2a+2b+1).\\]\nJeśli \\(5\\mid(a-b)\\), to \\(5\\mid b^2\\). Pierwszość \\(5\\) daje \\(5\\mid b\\), zatem \\(5\\mid a\\) i \\(25\\mid b^2\\). Czynnik \\(2a+2b+1\\) daje resztę \\(1\\) modulo \\(5\\), więc oba czynniki \\(5\\) po prawej stronie muszą dzielić \\(a-b\\).\n\n**Wariant z uwagi CKE**\nMożna zacząć od \\(a^2=3(a^2-b^2)+(a-b)=(a-b)(3a+3b+1)\\). Wtedy \\(5\\mid a\\), stąd \\(5\\mid b\\) i \\(25\\mid a^2\\). Czynnik \\(3a+3b+1\\) jest względnie pierwszy z \\(25\\), zatem \\(25\\mid(a-b)\\).",
+    "strona_zadania": 10,
+    "strona_rozwiazania": 60
+  },
+  {
+    "numer": "4",
+    "punkty": 2,
+    "kategorie": [
+      "Dowodzenie podzielności"
+    ],
+    "tagi": [],
+    "polecenie": "Niech \\(a>1000\\) będzie liczbą naturalną, której zapis dziesiętny składa się z \\(n\\) jedynek. Udowodnij, że jeśli \\(a\\) jest liczbą pierwszą, to \\(n\\) jest liczbą pierwszą.",
+    "rozwiazanie": "Przypuśćmy, że \\(n=k\\ell\\), gdzie \\(k,\\ell>1\\) są liczbami całkowitymi. Oznaczmy przez \\(b\\) liczbę zapisaną za pomocą \\(k\\) jedynek. Rozbijając cyfry liczby \\(a\\) na \\(\\ell\\) bloków po \\(k\\) cyfr, otrzymujemy\n\\[a=b(1+10^k+\\cdots+10^{k(\\ell-1)}).\\]\nOba czynniki przekraczają \\(1\\), więc \\(a\\) jest złożona. Gdy \\(a\\) jest pierwsza, \\(n>1\\) musi być pierwsze.",
+    "strona_zadania": 11,
+    "strona_rozwiazania": 61
+  },
+  {
+    "numer": "5",
+    "punkty": 4,
+    "kategorie": [
+      "Dowodzenie podzielności"
+    ],
+    "tagi": [
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 3 stopnia",
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia"
+    ],
+    "polecenie": "Załóżmy, że \\(x,y\\) są liczbami całkowitymi oraz \\(3\\mid(x+y)\\). Wykaż, że \\(9\\mid(x^3+y^3)\\).",
+    "rozwiazanie": "Zapiszmy \\(x+y=3k\\), gdzie \\(k\\in\\mathbb Z\\). Wzór na sumę sześcianów daje\n\\[\\begin{aligned}x^3+y^3&=(x+y)(x^2-xy+y^2)\\\\&=(x+y)((x+y)^2-3xy)\\\\&=9k(3k^2-xy).\\end{aligned}\\]\nIloczyn \\(k(3k^2-xy)\\) jest liczbą całkowitą, więc \\(9\\) dzieli \\(x^3+y^3\\).",
+    "strona_zadania": 12,
+    "strona_rozwiazania": 62
+  },
+  {
+    "numer": "6",
+    "punkty": 3,
+    "kategorie": [
+      "Kombinatoryka",
+      "Własności wielomianów"
+    ],
+    "tagi": [
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "W rozwinięciu \\((a+b)^n\\), gdzie \\(n\\) jest liczbą naturalną, współczynniki przy \\(a^{n-2}b^2\\) i \\(a^{n-1}b\\) sumują się do \\(66\\). Wyznacz \\(n\\) i zapisz obliczenia.",
+    "rozwiazanie": "Z dwumianu Newtona wynika\n\\[\\binom n2+\\binom n1=66.\\]\nPo podstawieniu \\(\\frac{n(n-1)}2+n=66\\) mamy \\(n^2+n-132=(n+12)(n-11)=0\\). Spośród pierwiastków \\(-12\\) i \\(11\\) warunek naturalności spełnia \\(n=11\\).",
+    "strona_zadania": 14,
+    "strona_rozwiazania": 63
+  },
+  {
+    "numer": "7",
+    "punkty": 3,
+    "kategorie": [
+      "Dowodzenie równań / nierówności"
+    ],
+    "tagi": [],
+    "polecenie": "Dla liczb całkowitych \\(a,b,c\\) zachodzi \\(a\\sqrt2+b\\sqrt3+c\\sqrt6=0\\). Wykaż, że \\(a=b=c=0\\).",
+    "rozwiazanie": "Po przeniesieniu \\(a\\sqrt 2\\) i podniesieniu do kwadratu otrzymujemy\n\\[2a^2=3b^2+6bc\\sqrt2+6c^2.\\]\nGdyby \\(bc\\ne0\\), można byłoby stąd wyrazić \\(\\sqrt2\\) jako iloraz liczb całkowitych. Zatem \\(b=0\\) lub \\(c=0\\).\n\nDla \\(b=0\\) pierwotna równość po podzieleniu przez \\(\\sqrt2\\) ma postać \\(a+c\\sqrt3=0\\). Niewymierność \\(\\sqrt3\\) wymusza \\(c=0\\) i wtedy \\(a=0\\). Gdy \\(c=0\\), po pomnożeniu pierwotnej równości przez \\(\\sqrt2\\) mamy \\(2a+b\\sqrt6=0\\). Z niewymierności \\(\\sqrt6\\) wynika \\(b=0\\), a następnie \\(a=0\\).",
+    "strona_zadania": 15,
+    "strona_rozwiazania": 64
+  },
+  {
+    "numer": "8",
+    "punkty": 3,
+    "kategorie": [
+      "Dowodzenie równań / nierówności",
+      "Własności wielomianów"
+    ],
+    "tagi": [],
+    "polecenie": "Udowodnij, że liczba\n\\[(\\sqrt5+2)^{2022}+(\\sqrt5-2)^{2022}\\]\njest wymierna.",
+    "rozwiazanie": "Rozwińmy obie potęgi wzorem dwumianowym Newtona. W składniku z \\(2^j\\) lub \\((-2)^j\\) występuje ta sama potęga \\((\\sqrt5)^{2022-j}\\). Dla nieparzystych \\(j\\) składniki wzajemnie się znoszą, a dla parzystych \\(j=2k\\) sumują się do\n\\[2\\binom{2022}{2k}\\,5^{1011-k}2^{2k},\\qquad 0\\le k\\le 1011.\\]\nKażdy składnik pozostałej sumy jest całkowity, więc cała liczba jest wymierna.",
+    "strona_zadania": 16,
+    "strona_rozwiazania": 65
+  },
+  {
+    "numer": "9",
+    "punkty": 3,
+    "kategorie": [
+      "Równania / nierówności z wartością bezwzględną"
+    ],
+    "tagi": [
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Rozwiąż nierówność \\(2x^2+x|2x-1|\\le3\\). Zapisz obliczenia.",
+    "rozwiazanie": "Dla \\(x<\\frac12\\) mamy \\(|2x-1|=1-2x\\), więc nierówność upraszcza się do \\(x\\le3\\), prawdziwej na całym rozpatrywanym przedziale.\n\nDla \\(x\\ge\\frac12\\) podstawiamy \\(|2x-1|=2x-1\\). Otrzymujemy \\(4x^2-x-3\\le0\\), czyli \\((4x+3)(x-1)\\le0\\). Pierwiastki to \\(-\\frac34\\) i \\(1\\), więc w tym przypadku rozwiązaniem jest \\([\\frac12,1]\\).\n\nOba przypadki dają łącznie \\(x\\in(-\\infty,1]\\).",
+    "strona_zadania": 17,
+    "strona_rozwiazania": 66
+  },
+  {
+    "numer": "10",
+    "punkty": 5,
+    "kategorie": [
+      "Różne"
+    ],
+    "tagi": [
+      "Równanie / nierówność wymierna",
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
+    "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[x+4+\\frac{8}{x-4}\\ge\\frac{-2x-8}{x^2-16}.\\]",
+    "rozwiazanie": "Dziedziną jest \\(\\mathbb R\\setminus\\{-4,4\\}\\). Po przeniesieniu prawej strony na lewą i sprowadzeniu do wspólnego mianownika mamy\n\\[\\frac{(x+4)(x^2-6)}{(x-4)(x+4)}\\ge0.\\]\nW dziedzinie możemy pomnożyć obie strony przez dodatni kwadrat mianownika. Dostajemy nierówność\n\\[(x+4)^2(x+\\sqrt6)(x-\\sqrt6)(x-4)\\ge0.\\]\nJej rozwiązaniami są \\(\\{-4\\}\\cup[-\\sqrt6,\\sqrt6]\\cup[4,\\infty)\\). Po uwzględnieniu dziedziny zostaje \\([-\\sqrt6,\\sqrt6]\\cup(4,\\infty)\\).",
+    "strona_zadania": 18,
+    "strona_rozwiazania": 68
+  },
+  {
+    "numer": "11",
+    "punkty": 4,
+    "kategorie": [
+      "Równania kwadratowe z parametrem"
+    ],
+    "tagi": [
+      "Wzory Viete'a - manipulacja rozkładem miejsc zerowych",
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Wyznacz wszystkie wartości \\(m\\), dla których równanie\n\\[2x^2-(2m+7)x+m^2-3m+21=0\\]\nma dwa różne pierwiastki rzeczywiste \\(x_1,x_2\\) spełniające \\(x_1=2x_2\\). Zapisz obliczenia.",
+    "rozwiazanie": "**Sposób I — wzory Viète’a**\nSuma pierwiastków daje \\(3x_2=(2m+7)/2\\), a ich iloczyn daje \\(2x_2^2=(m^2-3m+21)/2\\). Wstawiając \\(x_2=(2m+7)/6\\) do drugiej równości, otrzymujemy\n\\[(2m+7)^2=9(m^2-3m+21),\\]\nczyli \\(m^2-11m+28=0\\). Stąd \\(m=4\\) lub \\(m=7\\).\n\n**Sposób II — postać iloczynowa**\nRozwijamy \\(2(x-2x_2)(x-x_2)=2x^2-6x_2x+4x_2^2\\) i porównujemy współczynniki z danym trójmianem. Mamy \\(6x_2=2m+7\\) i \\(4x_2^2=m^2-3m+21\\). Po eliminacji \\(x_2\\) zostaje \\((m-4)(m-7)=0\\).\n\n**Sprawdzenie w obu sposobach**\nDla \\(m=4\\) pierwiastkami są \\(5\\) i \\(\\frac52\\), a dla \\(m=7\\) są nimi \\(7\\) i \\(\\frac72\\). Obie wartości parametru spełniają warunki zadania.",
+    "strona_zadania": 20,
+    "strona_rozwiazania": 69
+  },
+  {
+    "numer": "12",
+    "punkty": 2,
+    "kategorie": [
+      "Dowodzenie równań / nierówności"
+    ],
+    "tagi": [
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia"
+    ],
+    "polecenie": "Udowodnij, że dla każdego \\(n\\in\\mathbb N\\) zachodzą obie nierówności\n\\[2(\\sqrt{n+2}-\\sqrt{n+1})<\\frac1{\\sqrt{n+1}}<2(\\sqrt{n+1}-\\sqrt n).\\]",
+    "rozwiazanie": "Mnożąc różnice pierwiastków przez odpowiednie sumy i dzieląc przez te sumy, dostajemy\n\\[2(\\sqrt{n+2}-\\sqrt{n+1})=\\frac2{\\sqrt{n+2}+\\sqrt{n+1}}<\\frac2{2\\sqrt{n+1}}.\\]\nW drugim przypadku suma w mianowniku jest mniejsza, co daje\n\\[2(\\sqrt{n+1}-\\sqrt n)=\\frac2{\\sqrt{n+1}+\\sqrt n}>\\frac2{2\\sqrt{n+1}}.\\]\nŚrodkowy człon obu porównań to \\(\\frac1{\\sqrt{n+1}}\\).",
+    "strona_zadania": 22,
+    "strona_rozwiazania": 71
+  },
+  {
+    "numer": "13",
+    "punkty": 3,
+    "kategorie": [
+      "Geometria analityczna"
+    ],
+    "tagi": [
+      "Okrąg w układzie współrzędnych",
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Rozwiąż układ równań. Zapisz obliczenia.\n\\[\\begin{cases}x^2-2x+y^2=24,\\\\x^2-10x+y^2-8y+40=0.\\end{cases}\\]",
+    "rozwiazanie": "**Sposób I — eliminacja**\nOdejmujemy drugie równanie od pierwszego, zapisanego z zerem po prawej stronie. Otrzymujemy \\(8x+8y=64\\), czyli \\(y=8-x\\). Po podstawieniu do pierwszego równania dostajemy \\(x^2-9x+20=(x-4)(x-5)=0\\). Stąd \\((x,y)=(4,4)\\) lub \\((5,3)\\).\n\n**Sposób II — przecięcie okręgów**\nUzupełnienie kwadratów daje \\((x-1)^2+y^2=25\\) i \\((x-5)^2+(y-4)^2=1\\). To okręgi o środkach \\((1,0)\\), \\((5,4)\\) i promieniach \\(5\\), \\(1\\).\n\n[[rysunek:zbior-2023-13-rozw|Okręgi przecinające się w punktach (4, 4) i (5, 3).]]\n\nPunktami przecięcia odczytanymi z wykresu są \\((4,4)\\) i \\((5,3)\\). Po podstawieniu każdego z nich w pierwszym równaniu otrzymujemy \\(25\\), a w drugim \\(1\\). Dwa różne okręgi mają co najwyżej dwa punkty wspólne.",
+    "strona_zadania": 23,
+    "strona_rozwiazania": 72
+  },
+  {
+    "numer": "14",
+    "punkty": 3,
+    "kategorie": [
+      "Różne"
+    ],
+    "tagi": [],
+    "polecenie": "Dane są funkcje \\(k(x)=5-x^2\\) dla \\(x\\in\\mathbb R\\) oraz \\(p(x)=\\sqrt{1-x}\\) dla \\(x\\le1\\). Wyznacz wzory i dziedziny funkcji \\(f=k\\circ p\\) oraz \\(g=p\\circ k\\).",
+    "rozwiazanie": "Funkcja \\(k\\) przyjmuje jako argument dowolną liczbę rzeczywistą, więc dziedzina \\(f\\) jest dziedziną \\(p\\), czyli \\((-\\infty,1]\\). Na niej\n\\[f(x)=5-(\\sqrt{1-x})^2=x+4.\\]\nDla \\(g\\) wymagamy \\(k(x)\\le1\\). Warunek \\(5-x^2\\le1\\) daje \\(x\\in(-\\infty,-2]\\cup[2,\\infty)\\). Na tej dziedzinie\n\\[g(x)=\\sqrt{1-(5-x^2)}=\\sqrt{x^2-4}.\\]",
+    "strona_zadania": 24,
+    "strona_rozwiazania": 74
+  },
+  {
+    "numer": "15",
+    "punkty": 4,
+    "kategorie": [
+      "Równania / nierówności z wartością bezwzględną"
+    ],
+    "tagi": [
+      "Równanie / nierówność wymierna"
+    ],
+    "polecenie": "Narysuj wykres funkcji\n\\[f(x)=\\frac{|x^2-9|}{3-x}.\\]\nWyznacz wszystkie wartości \\(m\\), dla których równanie \\(f(x)=m\\) nie ma rozwiązań. Zapisz obliczenia.",
+    "rozwiazanie": "Mianownik wyklucza \\(x=3\\). Ponieważ \\(x^2-9=(x-3)(x+3)\\), po rozpatrzeniu znaku licznika pod wartością bezwzględną mamy\n\\[f(x)=\\begin{cases}-x-3 & x\\le-3\\ \\text{lub}\\ x>3,\\\\x+3 & -3<x<3.\\end{cases}\\]\nWykres składa się z części prostych opisanych powyżej. Łączą się w \\((-3,0)\\), a w \\((3,6)\\) i \\((3,-6)\\) są otwarte końce.\n\n[[rysunek:zbior-2023-15-rozw|Wykres funkcji z załamaniem w punkcie (−3, 0) i pustymi punktami dla x = 3.]]\n\nLewa półprosta daje wszystkie wartości nieujemne. Odcinek na \\((-3,3)\\) przyjmuje na nim wartości z \\((0,6)\\), a prawa półprosta z \\((-\\infty,-6)\\). Stąd równanie nie ma rozwiązań dokładnie dla \\(m\\in[-6,0)\\).",
+    "strona_zadania": 25,
+    "strona_rozwiazania": 75
+  },
+  {
+    "numer": "16",
+    "punkty": 5,
+    "kategorie": [
+      "Ciągi"
+    ],
+    "tagi": [
+      "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
+    ],
+    "polecenie": "Ciąg arytmetyczny \\((a_n)_{n\\ge1}\\) jest rosnący. Trzy liczby \\(a_1a_2\\), \\(a_2a_3\\), \\(a_3a_1\\) tworzą w tej kolejności ciąg geometryczny o niezerowych wyrazach. Oblicz jego iloraz. Zapisz obliczenia.",
+    "rozwiazanie": "Dla trzech kolejnych wyrazów ciągu geometrycznego kwadrat środkowego jest równy iloczynowi skrajnych. Zatem \\((a_2a_3)^2=a_1^2a_2a_3\\), skąd \\(a_1^2=a_2a_3\\).\n\nNiech \\(r>0\\) będzie różnicą ciągu arytmetycznego. Po wstawieniu \\(a_2=a_1+r\\) i \\(a_3=a_1+2r\\) mamy \\(r(3a_1+2r)=0\\). Wynika stąd \\(r=-\\frac32a_1\\), a więc \\(a_2=-\\frac12a_1\\) i \\(a_3=-2a_1\\). Iloraz wynosi\n\\[q=\\frac{a_2a_3}{a_1a_2}=\\frac{a_3}{a_1}=-2.\\]\nTen sam wynik daje \\(\\frac{a_3a_1}{a_2a_3}=\\frac{a_1}{a_2}\\).",
+    "strona_zadania": 26,
+    "strona_rozwiazania": 76
+  },
+  {
+    "numer": "17",
+    "punkty": 2,
+    "kategorie": [
+      "Geometria analityczna"
+    ],
+    "tagi": [
+      "Odległość punktu od prostej"
+    ],
+    "polecenie": "W układzie współrzędnych \\((x,y)\\) proste \\(l_1,l_2\\) tworzą kąt \\(45^\\circ\\). Współczynnik kierunkowy \\(l_1\\) wynosi \\(\\frac23\\). Oblicz współczynnik kierunkowy \\(l_2\\) i zapisz obliczenia.",
+    "rozwiazanie": "**Sposób I — tangens sumy i różnicy**\nNiech \\(\\alpha\\) oznacza kąt nachylenia \\(l_1\\) do osi \\(Ox\\), zatem \\(\\tan\\alpha=\\frac23\\). Prosta \\(l_2\\) jest nachylona pod kątem \\(\\alpha+45^\\circ\\) lub \\(\\alpha-45^\\circ\\), z dokładnością do wielokrotności \\(180^\\circ\\). Wobec tego\n\\[\\tan(\\alpha+45^\\circ)=\\frac{\\frac23+1}{1-\\frac23}=5,\\]\n\\[\\tan(\\alpha-45^\\circ)=\\frac{\\frac23-1}{1+\\frac23}=-\\frac15.\\]\n\n**Sposób II — dwusieczne kąta prostego**\nProsta prostopadła do \\(l_1\\) w punkcie przecięcia z \\(l_2\\) ma współczynnik \\(-\\frac32\\). Wybierzmy zapisy \\(l_1\\colon 2x-3y+3b_1=0\\) oraz \\(l\\colon -3x-2y+2b=0\\) dla tej prostej prostopadłej. Punkty na dwusiecznych są równo odległe od tych prostych. Oba mianowniki we wzorze na odległość to \\(\\sqrt{13}\\), dlatego\n\\[|2x-3y+3b_1|=|-3x-2y+2b|.\\]\nPorównanie wyrażeń z tym samym znakiem lub znakami przeciwnymi daje \\(y=5x+3b_1-2b\\) albo \\(y=-\\frac15x+\\frac35b_1+\\frac25b\\). Szukane współczynniki to \\(5\\) i \\(-\\frac15\\).",
+    "strona_zadania": 28,
+    "strona_rozwiazania": 78
+  },
+  {
+    "numer": "18",
+    "punkty": 5,
+    "kategorie": [
+      "Równania trygonometryczne"
+    ],
+    "tagi": [
+      "Równanie kwadratowe",
+      "Przekształcenie sin / cos"
+    ],
+    "polecenie": "Rozwiąż w przedziale \\([-\\pi,\\pi]\\) równanie\n\\[\\cos^2 x-\\frac{2\\sqrt3}{3}\\sin x\\cos x-\\sin^2 x=0.\\]\nZapisz obliczenia.",
+    "rozwiazanie": "Jeśli \\(\\cos x=0\\), to \\(\\sin^2 x=1\\) i lewa strona wynosi \\(-1\\). W pozostałych przypadkach dzielimy równanie przez \\(\\cos^2 x\\) i oznaczamy \\(t=\\tan x\\):\n\\[1-\\frac{2\\sqrt3}{3}t-t^2=0.\\]\nPierwiastkami są \\(t=\\frac{\\sqrt3}{3}\\) oraz \\(t=-\\sqrt3\\). Pierwsza możliwość daje \\(x=\\frac\\pi6+k\\pi\\), druga \\(x=-\\frac\\pi3+k\\pi\\), gdzie \\(k\\in\\mathbb Z\\). Rozwiązania w zadanym przedziale to\n\\[\\left\\{-\\frac{5\\pi}{6},-\\frac\\pi3,\\frac\\pi6,\\frac{2\\pi}3\\right\\}.\\]",
+    "strona_zadania": 29,
+    "strona_rozwiazania": 80
+  },
+  {
+    "numer": "19",
+    "punkty": 3,
+    "kategorie": [
+      "Planimetria"
+    ],
+    "tagi": [
+      "Własności trójkąta prostokątnego"
+    ],
+    "polecenie": "Na szczycie pionowej wieży o wysokości \\(h\\) stoi pionowa antena o długości \\(l>h\\). Punkt obserwacji \\(O\\) leży na wysokości podnóża wieży. Kąt wzniesienia do końca anteny \\(A\\) jest dwukrotnie większy od kąta wzniesienia do szczytu wieży.\n\n[[rysunek:zbior-2023-19|Wieża, antena i punkt O. Dwa kolejne równe kąty wzniesienia mają miarę alfa.]]\n\nOblicz odległość \\(x\\) punktu \\(O\\) od podnóża wieży. Zapisz obliczenia.",
+    "rozwiazanie": "Oznaczmy kąt wzniesienia do szczytu wieży przez \\(\\alpha\\). Wtedy \\(\\tan\\alpha=h/x\\) i \\(\\tan(2\\alpha)=(h+l)/x\\). Ponieważ \\(2\\alpha<90^\\circ\\), mamy \\(x>h\\). Wzór na tangens podwojonego kąta daje\n\\[\\frac{h+l}{x}=\\frac{2(h/x)}{1-(h/x)^2}=\\frac{2hx}{x^2-h^2}.\\]\nStąd \\((h+l)(x^2-h^2)=2hx^2\\), czyli \\((l-h)x^2=h^2(h+l)\\). Dodatnia odległość wynosi\n\\[x=h\\sqrt{\\frac{h+l}{l-h}}.\\]",
+    "strona_zadania": 31,
+    "strona_rozwiazania": 81
+  },
+  {
+    "numer": "20",
+    "punkty": 6,
+    "kategorie": [
+      "Planimetria"
+    ],
+    "tagi": [
+      "Okrąg opisany na czworokącie",
+      "Twierdzenie cosinusów",
+      "Twierdzenie sinusów",
+      "Suma / różnica sin / cos"
+    ],
+    "polecenie": "Czworokąt \\(ABCD\\) jest wpisany w okrąg. Wiadomo, że \\(|AB|=10\\), \\(|CD|=6\\) i \\(|BC|=|BD|\\). Styczna do okręgu w \\(C\\) tworzy z \\(CD\\) kąt \\(30^\\circ\\).\n\n[[rysunek:zbior-2023-20|Czworokąt ABCD wpisany w okrąg. Styczna w C tworzy z cięciwą CD kąt 30 stopni.]]\n\nOblicz pole \\(ABCD\\). Zapisz obliczenia.",
+    "rozwiazanie": "Twierdzenie o kącie między styczną a cięciwą daje w położeniu z rysunku \\(\\angle CBD=30^\\circ\\). Trójkąt \\(BCD\\) jest równoramienny, więc \\(\\angle BCD=\\angle BDC=75^\\circ\\). Z twierdzenia cosinusów dla \\(s=|BC|=|BD|\\) dostajemy \\(36=s^2(2-\\sqrt3)\\), a zatem\n\\[s=3(\\sqrt6+\\sqrt2).\\]\nKąty przeciwległe w czworokącie wpisanym w okrąg sumują się do \\(180^\\circ\\), więc \\(\\angle BAD=105^\\circ\\). Ze wzoru na sinus sumy możemy wyznaczyć\n\\[\\sin105^\\circ=\\frac{\\sqrt6+\\sqrt2}{4},\\quad \\cos105^\\circ=-\\frac{\\sqrt6-\\sqrt2}{4}.\\]\nTwierdzenie sinusów w \\(ABD\\) daje \\(\\sin\\angle ADB=(10/s)\\sin105^\\circ=\\frac56\\). Kąt \\(\\angle ADB\\) jest ostry, zatem jego cosinus to \\(\\sqrt{11}/6\\). Ponieważ \\(\\sin\\angle ABD=\\sin(105^\\circ+\\angle ADB)\\), mamy\n\\[\\sin\\angle ABD=\\frac{(\\sqrt6+\\sqrt2)\\sqrt{11}-5(\\sqrt6-\\sqrt2)}{24}.\\]\n\nSkładniki pola wynoszą\n\\[\\begin{aligned}P_{ABD}&=\\frac12\\cdot10s\\sin\\angle ABD=\\frac{10\\sqrt{11}+5\\sqrt{33}-25}{2},\\\\P_{BCD}&=\\frac12 s^2\\sin30^\\circ=9(2+\\sqrt3).\\end{aligned}\\]\nZatem\n\\[P_{ABCD}=\\frac{11+18\\sqrt3+10\\sqrt{11}+5\\sqrt{33}}{2}.\\]",
+    "strona_zadania": 33,
+    "strona_rozwiazania": 83
+  },
+  {
+    "numer": "21",
+    "punkty": 4,
+    "kategorie": [
+      "Planimetria"
+    ],
+    "tagi": [
+      "Trapez",
+      "Własności trójkąta prostokątnego"
+    ],
+    "polecenie": "Przekątne \\(AC\\) i \\(BD\\) trapezu \\(ABCD\\) przecinają się w punkcie \\(K\\) i \\(|CK|:|KA|=1:3\\). Przekątna \\(BD\\) jest dwusieczną kąta \\(CBA\\). Pole trapezu wynosi \\(100(\\sqrt6-\\sqrt2)\\), długość \\(AD\\) wynosi \\(10\\), a kąt \\(BAD\\) jest ostry i ma sinus równy \\((\\sqrt6+\\sqrt2)/4\\).\n\nOblicz długości pozostałych boków i zapisz obliczenia.",
+    "rozwiazanie": "Kąty \\(CBD\\) i \\(DBA\\) są równe z warunku o dwusiecznej. Równoległość podstaw daje \\(\\angle DBA=\\angle BDC\\), więc \\(BC=CD\\) co do długości. Oznaczmy ich długość przez \\(x\\). Twierdzenie o dwusiecznej w \\(ABC\\) daje\n\\[\\frac{|BC|}{|BA|}=\\frac{|CK|}{|KA|}=\\frac13,\\]\nczyli \\(|AB|=3x\\).\n\nWysokość trapezu wynosi \\(h=|AD|\\sin\\angle BAD=\\frac52(\\sqrt6+\\sqrt2)\\). Z równania na pole otrzymujemy\n\\[\\frac{3x+x}{2}\\cdot \\frac52(\\sqrt6+\\sqrt2)=100(\\sqrt6-\\sqrt2).\\]\nZatem \\(|BC|=|CD|=20(2-\\sqrt3)\\), a \\(|AB|=60(2-\\sqrt3)\\).\n\n[[rysunek:zbior-2023-21-rozw|Trapez z podstawami AB i CD, wysokością DE i przekątnymi przecinającymi się w K.]]",
+    "strona_zadania": 36,
+    "strona_rozwiazania": 86
+  },
+  {
+    "numer": "22",
+    "punkty": 6,
+    "kategorie": [
+      "Planimetria"
+    ],
+    "tagi": [
+      "Podobieństwo trójkątów",
+      "Skala podobieństwa (działania na polach figur)"
+    ],
+    "polecenie": "Wewnątrz trójkąta \\(ABC\\) znajduje się punkt \\(D\\). Równoległa do \\(AC\\) poprowadzona przez \\(D\\) przecina \\(AB\\) w \\(K\\) i \\(BC\\) w \\(L\\). Równoległa do \\(BC\\) przez \\(D\\) przecina \\(AB\\) w \\(M\\) i \\(AC\\) w \\(N\\).\n\nStosunki obwodów wynoszą \\(\\operatorname{obw}(KMD):\\operatorname{obw}(KBL)=5:7\\) oraz \\(\\operatorname{obw}(KMD):\\operatorname{obw}(AMN)=5:8\\). Pole czworokąta \\(DLCN\\) to \\(15\\).\n\n[[rysunek:zbior-2023-22|Trójkąt ABC z punktem D i równoległymi KDL i MDN.]]\n\nOblicz pole \\(ABC\\). Zapisz obliczenia.",
+    "rozwiazanie": "Poprowadźmy przez \\(D\\) prostą równoległą do \\(AB\\), przecinającą \\(BC\\) w \\(P\\) i \\(AC\\) w \\(Q\\).\n\n[[rysunek:zbior-2023-22-rozw|Prosta QDP równoległa do AB dzieli trójkąt ABC na sześć części.]]\n\nZ podobieństwa trójkątów \\(KMD\\), \\(KBL\\) i \\(AMN\\) wynika, że \\(|AK|:|KM|:|MB|=3:5:2\\). Wobec tego trójkąty \\(KMD\\), \\(DPL\\), \\(QDN\\) są podobne do \\(ABC\\) w skalach odpowiednio \\(\\tfrac5{10}\\), \\(\\tfrac2{10}\\), \\(\\tfrac3{10}\\). Na boku \\(BC\\) mamy \\(|BP|:|PL|:|LC|=5:2:3\\).\n\nPrzekątna \\(DC\\) równoległoboku \\(DLCN\\) daje \\(P_{DLC}=15/2\\). Trójkąty \\(DLC\\) i \\(DPL\\) mają wspólną wysokość, a ich podstawy są w stosunku \\(3:2\\). Zatem \\(P_{DPL}=5\\). Przez skale podobieństwa dostajemy \\(P_{KMD}=(5/2)^2\\cdot5=125/4\\) i \\(P_{QDN}=(3/2)^2\\cdot5=45/4\\).\n\nRównoległobok \\(AKDQ\\) ma pole \\(2P_{AKD}=2(3/5)P_{KMD}=75/2\\), a równoległobok \\(MBPD\\) ma pole \\(2P_{BMD}=2(2/5)P_{KMD}=25\\). Sumujemy sześć części:\n\\[P_{ABC}=5+\\frac{125}{4}+\\frac{45}{4}+\\frac{75}{2}+25+15=125.\\]",
+    "strona_zadania": 38,
+    "strona_rozwiazania": 88
+  },
+  {
+    "numer": "23",
+    "punkty": 3,
+    "kategorie": [
+      "Różne",
+      "Funkcja wykładnicza"
+    ],
+    "tagi": [],
+    "polecenie": "Dla \\(x\\ge0\\) niech\n\\[f(x)=\\frac{\\sqrt{2x}}{5+x^2}-3^{-x-1}.\\]\nUdowodnij, że \\(f\\) ma miejsce zerowe w przedziale \\((0,3)\\).",
+    "rozwiazanie": "Oba składniki są ciągłe na \\([0,2]\\), ponieważ mianownik \\(5+x^2\\) jest dodatni oraz pod pierwiastkiem występuje liczba nieujemna. Na końcach przedziału mamy\n\\[f(0)=-\\frac13,\\qquad f(2)=\\frac29-\\frac1{27}=\\frac5{27}.\\]\nZ własności Darboux istnieje \\(x_0\\in(0,2)\\) z \\(f(x_0)=0\\). Punkt \\(x_0\\) należy do \\((0,3)\\).",
+    "strona_zadania": 40,
+    "strona_rozwiazania": 91
+  },
+  {
+    "numer": "24",
+    "punkty": 3,
+    "kategorie": [
+      "Styczna do wykresu funkcji"
+    ],
+    "tagi": [
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
+    ],
+    "polecenie": "Dla \\(x\\in[-\\frac14,\\infty)\\) funkcja \\(f\\) jest dana wzorem \\(f(x)=\\sqrt{1+4x}\\). Wyznacz równanie stycznej w punkcie wykresu o odciętej \\(x_0=2\\) i zapisz obliczenia.",
+    "rozwiazanie": "Punkt styczności ma rzędną \\(f(2)=3\\). Pochodna \\(f'(x)=2/\\sqrt{1+4x}\\) dla \\(x>-\\frac14\\) daje współczynnik kierunkowy \\(f'(2)=\\frac23\\). Styczna ma więc równanie\n\\[y=\\frac23(x-2)+3=\\frac23x+\\frac53.\\]",
+    "strona_zadania": 41,
+    "strona_rozwiazania": 92
+  },
+  {
+    "numer": "25",
+    "punkty": 4,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Własności wielomianów"
+    ],
+    "tagi": [
+      "Max / min nie w ekstremum",
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
+    "polecenie": "Wyznacz zbiór wartości funkcji \\(f(x)=x^4-2x^3+x^2-1\\) określonej na \\([-1,3]\\).",
+    "rozwiazanie": "Pochodna ma postać \\(f'(x)=4x(x-1)(x-\\frac12)\\), więc punkty stacjonarne to \\(0,\\frac12,1\\). Na końcach przedziału wartości wynoszą \\(f(-1)=3\\), \\(f(3)=35\\). W punktach stacjonarnych mamy \\(f(0)=f(1)=-1\\) oraz \\(f(\\frac12)=-\\frac{15}{16}\\). Porównując te wartości, otrzymujemy minimum \\(-1\\) i maksimum \\(35\\). Funkcja jest ciągła, więc jej zbiór wartości to \\([-1,35]\\).",
+    "strona_zadania": 42,
+    "strona_rozwiazania": 93
+  },
+  {
+    "numer": "26",
+    "punkty": 3,
+    "kategorie": [
+      "Planimetria"
+    ],
+    "tagi": [
+      "Własności trójkąta prostokątnego"
+    ],
+    "polecenie": "Trójkąt \\(ABC\\) o ramionach \\(|AC|=|BC|\\) jest wpisany w okrąg o promieniu \\(R\\). Środek okręgu znajduje się wewnątrz trójkąta i jest oddalony od boku \\(AB\\) o \\(x\\). Wykaż, że pole trójkąta wynosi\n\\[P(x)=(R+x)\\sqrt{R^2-x^2},\\]\ni określ dziedzinę \\(P\\).",
+    "rozwiazanie": "Niech \\(D\\) będzie spodkiem wysokości z \\(C\\), a \\(O\\) środkiem okręgu. Wysokość przechodzi przez \\(O\\) i dzieli \\(AB\\) na połowy. Z twierdzenia Pitagorasa w \\(AOD\\) mamy \\(|AD|=\\sqrt{R^2-x^2}\\). Ponadto \\(|CD|=R+x\\). Stąd\n\\[P(x)=\\frac12\\cdot 2|AD|\\cdot|CD|=(R+x)\\sqrt{R^2-x^2}.\\]\nZ \\(O\\) wewnątrz trójkąta wynika \\(x>0\\), a dodatnia długość podstawy wymaga \\(x<R\\). Każde \\(0<x<R\\) daje odpowiedni trójkąt po wybraniu cięciwy \\(AB\\) w odległości \\(x\\) i punktu \\(C\\) po przeciwnej stronie środka. Dziedzina to \\((0,R)\\).\n\n[[rysunek:zbior-2023-26-rozw|Trójkąt równoramienny w okręgu i wysokość CD przechodząca przez środek okręgu.]]",
+    "strona_zadania": 43,
+    "strona_rozwiazania": 94
+  },
+  {
+    "numer": "27",
+    "punkty": 6,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Planimetria"
+    ],
+    "tagi": [],
+    "polecenie": "W okrąg o promieniu \\(R\\) wpisujemy trójkąty o obwodzie \\(3R\\), w których jeden bok jest dwa razy dłuższy od innego. Wyznacz taki trójkąt o największym polu i oblicz jego pole. Zapisz obliczenia.",
+    "rozwiazanie": "**Metoda przedstawiona przez CKE**\nJeśli parę boków oznaczymy \\(x,2x\\), to trzeci bok wynosi \\(3R-3x\\). Po użyciu wzoru \\(P=abc/(4R)\\) otrzymujemy \\(P(x)=\\frac32x^2-\\frac{3}{2R}x^3\\). Nierówności trójkąta dają \\(R/2<x<3R/4\\). Pochodna \\(P'(x)=3x-9x^2/(2R)\\) jest dodatnia do \\(x=2R/3\\) i ujemna dalej. W kluczu zapisano maksimum \\(2R^2/9\\) przy \\(x=2R/3\\).\n\n**Sprawdzenie warunku okręgu opisanego**\nWartość \\(x=2R/3\\) prowadzi do trójkąta o bokach \\(2R/3,4R/3,R\\). Ma on pole \\(\\sqrt{15}R^2/12\\) ze wzoru Herona, a więc promień jego okręgu opisanego to \\(8R/(3\\sqrt{15})\\), różny od \\(R\\). Przedział z nierówności trójkąta obejmuje też trójkąty o innych promieniach.\n\nDla \\(t=x/R\\) poprawny warunek uzyskujemy przez zrównanie kwadratów pól ze wzoru Herona i \\(abc/(4R)\\). Przy \\(1/2<t<3/4\\) jest on równoważny równaniu\n\\[4t^6-8t^5+4t^4-16t^3+44t^2-36t+9=0.\\]\nRównanie ma w tym przedziale dwa pierwiastki \\(t_1\\approx0{,}518424\\) oraz \\(t_2\\approx0{,}719183\\). Zmiana \\(t=(2+3u)/(4(1+u))\\), \\(u>0\\), prowadzi po usunięciu mianownika do wielomianu\n\\[\\begin{aligned}324u^6-912u^5-7696u^4-14208u^3\\\\{}-10304u^2-2304u+256.\\end{aligned}\\]\nDwie zmiany znaku współczynników dają co najwyżej dwa dodatnie pierwiastki na mocy reguły znaków Kartezjusza. Pierwiastki leżą po przeciwnych stronach \\(2/3\\), co wynika ze znaków wyrażenia w \\(1/2,2/3,3/4\\); podane przybliżenia można otrzymać przez bisekcję. Pola wynoszą odpowiednio około \\(0{,}194145R^2\\) i \\(0{,}217868R^2\\). Szukany trójkąt ma zatem boki \\(t_2R,2t_2R,3(1-t_2)R\\), a jego pole to \\(\\tfrac32 t_2^2(1-t_2)R^2\\).",
+    "strona_zadania": 44,
+    "strona_rozwiazania": 95
+  },
+  {
+    "numer": "28",
+    "punkty": 6,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Geometria przestrzenna"
+    ],
+    "tagi": [
+      "Graniastosłup",
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Z prostokątnego arkusza tektury o wymiarach \\(10\\ \\mathrm{cm}\\) na \\(16\\ \\mathrm{cm}\\) wycina się ze wszystkich narożników kwadraty o boku \\(x\\ \\mathrm{cm}\\). Pozostały materiał składa się w otwarte pudełko o kształcie prostopadłościanu.\n\n[[rysunek:zbior-2023-28|Prostokąt 16 cm na 10 cm z kwadratami o boku x w czterech narożnikach.]]\n\nDla jakiej wartości \\(x\\) pudełko ma największą objętość? Oblicz tę objętość i zapisz obliczenia.",
+    "rozwiazanie": "Wymiary pudełka to \\(x,\\ 10-2x,\\ 16-2x\\), więc objętość w centymetrach sześciennych wynosi\n\\[V(x)=x(10-2x)(16-2x)=4x^3-52x^2+160x,\\qquad 0<x<5.\\]\nPochodna \\(V'(x)=4(x-2)(3x-20)\\) ma w dziedzinie jedno miejsce zerowe \\(x=2\\). Jest dodatnia przed \\(2\\) i ujemna po \\(2\\), zatem maksimum wypada dla kwadratów o boku \\(2\\ \\mathrm{cm}\\). Wtedy \\(V(2)=2\\cdot6\\cdot12=144\\ \\mathrm{cm}^3\\).",
+    "strona_zadania": 46,
+    "strona_rozwiazania": 97
+  },
+  {
+    "numer": "29",
+    "punkty": 6,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Planimetria"
+    ],
+    "tagi": [
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)",
+      "Własności trójkąta prostokątnego",
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Dom \\(D\\) leży \\(5\\ \\mathrm{km}\\) od prostoliniowego odcinka drogi. Na początku Janusz stoi na drodze w punkcie \\(A\\), odległym od \\(D\\) o \\(13\\ \\mathrm{km}\\). Na drodze może maszerować z prędkością najwyżej \\(5\\ \\mathrm{km/h}\\), a poza drogą najwyżej \\(3\\ \\mathrm{km/h}\\).\n\n[[rysunek:zbior-2023-29|Dom D leży 5 km od drogi i 13 km od punktu A na drodze.]]\n\nOblicz najkrótszy czas dojścia Janusza z \\(A\\) do \\(D\\). Zapisz obliczenia.",
+    "rozwiazanie": "Niech \\(P\\) będzie punktem drogi najbliższym \\(D\\). Mamy \\(|AP|=\\sqrt{13^2-5^2}=12\\ \\mathrm{km}\\). Po zejściu z drogi najkrótsza trasa do \\(D\\) biegnie po odcinku. Optymalne miejsce zejścia leży na \\(AP\\), ponieważ wybór punktu poza tym odcinkiem zwiększyłby odległość do przejścia od \\(A\\) oraz do domu względem bliższego końca \\(AP\\).\n\n**Sposób I — odległość miejsca zejścia od \\(P\\)**\nOznaczmy tę odległość przez \\(x\\in[0,12]\\). Czas w godzinach wynosi\n\\[T(x)=\\frac{12-x}{5}+\\frac{\\sqrt{x^2+25}}{3}.\\]\n\n[[rysunek:zbior-2023-29-rozw-1|Droga od A do miejsca zejścia i odcinek do D z odległością x od punktu P.]]\n\nPochodna to \\(T'(x)=-\\frac15+\\frac{x}{3\\sqrt{x^2+25}}\\). Jej znak jest znakiem różnicy \\(5x-3\\sqrt{x^2+25}\\). Porównując kwadraty stron, uzyskujemy znak wyrażenia \\(16x^2-225\\). Minimum wypada dla \\(x=\\frac{15}{4}\\), bo znak zmienia się z ujemnego na dodatni.\n\n**Sposób II — długość marszu po drodze**\nNiech \\(u\\in[0,12]\\) będzie długością przebytego odcinka drogi. Czas wynosi\n\\[S(u)=\\frac{u}{5}+\\frac{\\sqrt{(12-u)^2+25}}{3}.\\]\n\n[[rysunek:zbior-2023-29-rozw-2|Droga od A do miejsca zejścia i odcinek do D po przejściu u kilometrów drogą.]]\n\nPochodna to \\(S'(u)=\\frac15-\\frac{12-u}{3\\sqrt{(12-u)^2+25}}\\). Jej znak odpowiada znakowi \\(3\\sqrt{(12-u)^2+25}-5(12-u)\\), czyli po porównaniu kwadratów znakowi \\(-16u^2+384u-2079\\). Zera tego wielomianu to \\(33/4\\) i \\(63/4\\). Pochodna zmienia znak z ujemnego na dodatni w \\(u=33/4\\), jedynym zerze w zadanym przedziale.\n\n**Wynik**\nW obu sposobach marsz drogą ma długość \\(33/4\\ \\mathrm{km}\\), a marsz prosto do domu \\(25/4\\ \\mathrm{km}\\). Suma czasów \\(\\frac{33}{20}+\\frac{25}{12}=\\frac{224}{60}\\) godzin wynosi \\(3\\) godziny \\(44\\) minuty.",
+    "strona_zadania": 48,
+    "strona_rozwiazania": 99
+  },
+  {
+    "numer": "30",
+    "punkty": 4,
+    "kategorie": [
+      "Optymalizacja funkcji"
+    ],
+    "tagi": [
+      "Pochodna funkcji wymiernej"
+    ],
+    "polecenie": "Ciężarówka pokonuje po autostradzie \\(S\\ \\mathrm{km}\\) ze stałą prędkością \\(v\\in[40,80]\\ \\mathrm{km/h}\\). Zużywa w godzinę \\(7+v^2/400\\) litrów paliwa. Litr paliwa kosztuje \\(8\\) zł, a stawka kierowcy wynosi \\(42\\) zł za godzinę.\n\nOblicz prędkość minimalizującą koszt przejazdu, rozumiany jako suma kosztu paliwa i wynagrodzenia kierowcy. Zapisz obliczenia.",
+    "rozwiazanie": "Czas jazdy wynosi \\(S/v\\) godzin. Łączny koszt to\n\\[K(v)=\\frac Sv\\left[8\\left(7+\\frac{v^2}{400}\\right)+42\\right]=\\frac{98S}{v}+\\frac{Sv}{50}.\\]\nPochodna \\(K'(v)=S(1/50-98/v^2)\\) zeruje się w rozpatrywanym przedziale dla \\(v=70\\), jest ujemna dla \\(v<70\\) i dodatnia dla \\(v>70\\). Najmniejszy koszt otrzymujemy przy \\(70\\ \\mathrm{km/h}\\).",
+    "strona_zadania": 50,
+    "strona_rozwiazania": 103
+  },
+  {
+    "numer": "31",
+    "punkty": 6,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Geometria przestrzenna"
+    ],
+    "tagi": [
+      "Stożek",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)",
+      "Własności trójkąta prostokątnego",
+      "Równanie kwadratowe"
+    ],
+    "polecenie": "Dana jest kula o promieniu \\(1\\). Rozpatrz stożki, które zawierają środek kuli, mają wierzchołek na jej powierzchni i całą krawędź podstawy na tej powierzchni.\n\n[[rysunek:zbior-2023-31|Stożek wpisany w kulę i obejmujący jej środek.]]\n\nWyznacz promień podstawy stożka o największej objętości i oblicz tę objętość. Zapisz obliczenia.",
+    "rozwiazanie": "Jeśli \\(r\\) jest promieniem podstawy, to odległość jej środka od środka kuli wynosi \\(\\sqrt{1-r^2}\\). Warunek zawierania środka kuli daje wysokość \\(1+\\sqrt{1-r^2}\\), więc\n\\[V(r)=\\frac{\\pi}{3}r^2(1+\\sqrt{1-r^2}).\\]\n\n[[rysunek:zbior-2023-31-rozw|Przekrój przez oś stożka z promieniem podstawy r i promieniem kuli równym 1.]]\n\nDla \\(0<r<1\\) pochodna wynosi\n\\[V'(r)=\\frac{\\pi r}{3\\sqrt{1-r^2}}\\big(2\\sqrt{1-r^2}+2-3r^2\\big).\\]\nJej zerowanie daje \\(2\\sqrt{1-r^2}=3r^2-2\\). Po podniesieniu obu stron do kwadratu otrzymujemy \\(r^2(9r^2-8)=0\\). Jedyny dopuszczalny wynik \\(r=2\\sqrt2/3\\) spełnia równanie przed podniesieniem do kwadratu.\n\nDla \\(r<\\sqrt{2/3}\\) prawa strona porównania \\(2\\sqrt{1-r^2}>3r^2-2\\) jest ujemna, więc pochodna jest dodatnia. Dla większych \\(r<1\\) znak pochodnej porównujemy przez kwadraty i otrzymujemy znak \\(r^2(8-9r^2)\\). Funkcja zatem rośnie do \\(r=2\\sqrt2/3\\) i potem maleje. Gdy środek kuli leży na podstawie, \\(r=1\\) daje \\(V(1)=\\pi/3\\), mniej niż maksimum. Największa objętość wynosi\n\\[V\\left(\\frac{2\\sqrt2}{3}\\right)=\\frac{\\pi}{3}\\cdot\\frac89\\left(1+\\frac13\\right)=\\frac{32\\pi}{81}.\\]",
+    "strona_zadania": 52,
+    "strona_rozwiazania": 105
+  },
+  {
+    "numer": "32.1",
+    "punkty": 2,
+    "kategorie": [
+      "Geometria przestrzenna",
+      "Planimetria"
+    ],
+    "tagi": [
+      "Stożek",
+      "Podobieństwo trójkątów",
+      "Własności trójkąta prostokątnego"
+    ],
+    "polecenie": "Dana jest kula o promieniu \\(1\\). Rozpatrujemy stożki opisane na tej kuli: podstawa i każda tworząca są styczne do kuli.\n\n[[rysunek:zbior-2023-32-1|Kula wpisana w stożek, styczna do podstawy i powierzchni bocznej.]]\n\nUzasadnij, że objętość stożka o wysokości \\(h\\) jest równa\n\\[V(h)=\\frac{\\pi h^2}{3(h-2)}.\\]",
+    "rozwiazanie": "W przekroju osiowym oznaczmy przez \\(S\\) wierzchołek, \\(P\\) środek podstawy, \\(A\\) koniec promienia podstawy i \\(O\\) środek kuli. Tworząca \\(SA\\) styka się z okręgiem przekroju w \\(B\\). Wtedy \\(OB\\perp SA\\), \\(|OB|=1\\), \\(|SO|=h-1\\), a \\(|PA|=r\\).\n\nZ twierdzenia Pitagorasa w \\(SBO\\) mamy \\(|SB|=\\sqrt{h^2-2h}\\). Trójkąty prostokątne \\(SPA\\) i \\(SBO\\) są podobne, ponieważ mają wspólny kąt przy \\(S\\). Z porównania odpowiednich boków\n\\[\\frac{\\sqrt{h^2-2h}}{h}=\\frac1r,\\quad r^2=\\frac{h}{h-2}.\\]\nOstatecznie \\(V(h)=\\frac13\\pi r^2h=\\frac{\\pi h^2}{3(h-2)}\\).\n\n[[rysunek:zbior-2023-32-1-rozw|Przekrój osiowy stożka z okręgiem stycznym do tworzącej w punkcie B.]]",
+    "strona_zadania": 54,
+    "strona_rozwiazania": 108
+  },
+  {
+    "numer": "32.2",
+    "punkty": 5,
+    "kategorie": [
+      "Optymalizacja funkcji",
+      "Geometria przestrzenna"
+    ],
+    "tagi": [
+      "Stożek",
+      "Pochodna funkcji wymiernej"
+    ],
+    "polecenie": "Dana jest kula o promieniu \\(1\\). Rozpatrujemy stożki opisane na tej kuli: podstawa i każda tworząca są styczne do kuli.\n\n[[rysunek:zbior-2023-32-1|Kula wpisana w stożek, styczna do podstawy i powierzchni bocznej.]]\n\nOblicz wysokość stożka o najmniejszej objętości i tę objętość. Zapisz obliczenia.\n\nWskazówka. Stożek o wysokości \\(h\\) ma objętość \\(V(h)=\\frac{\\pi h^2}{3(h-2)}\\).",
+    "rozwiazanie": "Wysokość spełnia \\(h>2\\). Obliczamy pochodną:\n\\[V'(h)=\\frac{\\pi h(h-4)}{3(h-2)^2}.\\]\nW dziedzinie znak pochodnej jest znakiem \\(h-4\\). Funkcja maleje na \\((2,4]\\) i rośnie na \\([4,\\infty)\\), więc minimum wypada dla \\(h=4\\). Jego wartość to\n\\[V(4)=\\frac{16\\pi}{6}=\\frac{8\\pi}{3}.\\]",
+    "strona_zadania": 55,
+    "strona_rozwiazania": 109
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "numer": "1",
+    "polecenie": "Dane są liczby\n\\[a=4^{\\log_2 45},\\qquad b=\\frac{\\log_3 2023}{\\log_9 2023}.\\]\nOblicz \\(a-b\\).",
+    "strona_zadania": 4
+  },
+  {
+    "numer": "2",
+    "polecenie": "Wśród \\(n\\) osób są Ania i dwoje jej znajomych. Liczba wszystkich ustawień tych \\(n\\) osób w kolejce jest \\(12\\) razy większa niż liczba ustawień, w których Ania i jej znajomi zajmują trzy kolejne miejsca w dowolnej kolejności.\n\nWyznacz \\(n\\) i zapisz obliczenia.",
+    "strona_zadania": 5
+  },
+  {
+    "numer": "3",
+    "polecenie": "Prawdopodobieństwo, że pewnego ranka wystąpi awaria sieci ciepłowniczej na osiedlu, wynosi \\(0{,}1\\). Oblicz prawdopodobieństwo, że w ciągu siedmiu dni awaria w godzinach porannych pojawi się w co najwyżej dwóch dniach. Wynik podaj dziesiętnie i zaokrąglij do części setnych. Zapisz obliczenia.",
+    "strona_zadania": 6
+  },
+  {
+    "numer": "4",
+    "polecenie": "Dana jest funkcja \\(f(x)=2x^3-4x^2+9x\\) dla \\(x\\in\\mathbb R\\). Punkt \\(P=(x_0,18)\\) należy do jej wykresu.\n\nOblicz \\(x_0\\) i wyznacz równanie stycznej do wykresu \\(f\\) w \\(P\\). Zapisz obliczenia.",
+    "strona_zadania": 7
+  },
+  {
+    "numer": "5",
+    "polecenie": "Wykaż, że dla każdej liczby rzeczywistej \\(a>0\\) zachodzi\n\\[a^2+\\frac{16}{a}\\ge12.\\]",
+    "strona_zadania": 8
+  },
+  {
+    "numer": "6",
+    "polecenie": "Dwie styczne do okręgu \\(\\mathcal O\\) poprowadzone z \\(A\\) dotykają go odpowiednio w \\(P,Q\\). Punkt \\(B\\) leży na odcinku \\(AP\\). Styczna poprowadzona z \\(B\\) do okręgu w punkcie \\(D\\) przecina odcinek \\(AQ\\) w \\(C\\).\n\nWykaż, że jeśli \\(|AQ|=5|BP|\\) i \\(|CD|=2|BD|\\), to trójkąt \\(ABC\\) jest równoramienny.",
+    "strona_zadania": 10
+  },
+  {
+    "numer": "7",
+    "polecenie": "Dany jest nieskończony szereg geometryczny\n\\[2x-\\frac{6x}{x-1}+\\frac{18x}{(x-1)^2}-\\frac{54x}{(x-1)^3}+\\cdots.\\]\nWyznacz wszystkie \\(x\\) różne od \\(0\\) i \\(1\\), dla których szereg jest zbieżny i jego suma wynosi \\(15/2\\). Zapisz obliczenia.",
+    "strona_zadania": 12
+  },
+  {
+    "numer": "8",
+    "polecenie": "Rozwiąż w przedziale \\([-\\pi/2,\\pi/2]\\) równanie\n\\[\\sin(5x)+\\cos x=0.\\]\nZapisz obliczenia.",
+    "strona_zadania": 14
+  },
+  {
+    "numer": "9",
+    "polecenie": "Trójkąt \\(ABC\\) jest wpisany w okrąg o równaniu \\((x-1)^2+(y-2)^2=25\\). Bok \\(AB\\) należy do prostej \\(4x-3y+2=0\\). Wysokość \\(CD\\) dzieli \\(AB\\) tak, że \\(|AD|=4|DB|\\).\n\nOblicz pole trójkąta \\(ABC\\). Zapisz obliczenia.",
+    "strona_zadania": 16
+  },
+  {
+    "numer": "10",
+    "polecenie": "Wyznacz wszystkie wartości \\(m\\), dla których równanie\n\\[mx^2-(m+1)x-2m+3=0\\]\nma dokładnie dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\), oba różne od zera, spełniające\n\\[\\frac1{x_1^2}+\\frac1{x_2^2}<1.\\]\nZapisz obliczenia.",
+    "strona_zadania": 18
+  },
+  {
+    "numer": "11",
+    "polecenie": "Trzywyrazowy ciąg \\((a,b,c)\\) jest geometryczny i ma dodatnie wyrazy. Ciąg \\((2a,2b,c+1)\\) jest arytmetyczny, a \\(c-b=6\\).\n\nOblicz \\(a,b,c\\) i zapisz obliczenia.",
+    "strona_zadania": 20
+  },
+  {
+    "numer": "12",
+    "polecenie": "Czworokąt wypukły \\(ABCD\\) wpisano w okrąg o promieniu \\(4\\). Kąty \\(BAD\\) i \\(BCD\\) są proste. Przekątne \\(AC,BD\\) przecinają się w \\(E\\) oraz \\(|BE|=3|DE|\\) i \\(|BD|=2|AE|\\).\n\nWyznacz długości boków \\(ABCD\\) i zapisz obliczenia.",
+    "strona_zadania": 22
+  },
+  {
+    "numer": "13",
+    "polecenie": "Rozważamy graniastosłupy prawidłowe czworokątne \\(ABCDEFGH\\). Odcinek od \\(O=AC\\cap BD\\) w podstawie \\(ABCD\\) do dowolnego wierzchołka drugiej podstawy \\(EFGH\\) ma długość \\(d\\).\n\na) Wyznacz wzór na objętość \\(V(h)\\) graniastosłupa o wysokości \\(h\\) i podaj dziedzinę tej funkcji.\nb) Wyznacz wysokość graniastosłupa o największej objętości.\n\nZapisz obliczenia.",
+    "strona_zadania": 24
+  }
+]
