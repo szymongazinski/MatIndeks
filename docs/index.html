@@ -7,10 +7,10 @@
   <title>MatIndeks — matematyka rozszerzona</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./vendor/katex/katex.min.css">
-  <link rel="stylesheet" href="./style.css?v=3">
+  <link rel="stylesheet" href="./style.css?v=4">
   <script src="./vendor/katex/katex.min.js" defer></script>
   <script src="./vendor/sqljs/sql-wasm.js" defer></script>
-  <script type="module" src="./js/main.js?v=3"></script>
+  <script type="module" src="./js/main.js?v=4"></script>
 </head>
 <body>
   <a class="skip-link" href="#tresc">Przejdź do treści</a>
@@ -53,7 +53,16 @@
               <h2 id="category-title">Wszystkie zadania</h2>
               <p class="muted results-count" id="result-count" aria-live="polite"></p>
             </div>
-            <a href="#zadania" id="clear-filters" hidden>Wyczyść filtry</a>
+            <div class="catalog-actions">
+              <a href="#zadania" id="clear-filters" hidden>Wyczyść filtry</a>
+              <div>
+                <label for="catalog-sort">Sortowanie</label>
+                <select id="catalog-sort">
+                  <option value="najnowsze">Od najnowszych</option>
+                  <option value="najstarsze">Od najstarszych</option>
+                </select>
+              </div>
+            </div>
           </div>
           <div class="task-list" id="catalog-tasks"></div>
           <nav class="pagination" id="pagination" aria-label="Strony wyników"></nav>
@@ -69,6 +78,13 @@
       <div class="archive-filters filter-box">
         <div><label for="archive-year">Rok</label><select id="archive-year"><option value="">Wszystkie lata</option></select></div>
         <div><label for="archive-kind">Rodzaj arkusza</label><select id="archive-kind"><option value="">Wszystkie rodzaje</option></select></div>
+        <div>
+          <label for="archive-sort">Sortowanie</label>
+          <select id="archive-sort">
+            <option value="najnowsze">Od najnowszych</option>
+            <option value="najstarsze">Od najstarszych</option>
+          </select>
+        </div>
       </div>
       <div id="archive-papers"></div>
     </section>

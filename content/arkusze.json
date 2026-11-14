@@ -64,7 +64,6 @@
     "polecenie": "Dla dowolnej liczby rzeczywistej \\(x\\ne1\\) dana jest funkcja \\(f(x)=\\frac{ax^2+x}{x-1}\\).\n\nWyznacz wszystkie wartości \\(a\\), dla których \\(f'(a)=-\\frac12a\\). Zapisz obliczenia.",
     "rozwiazanie": "Dla \\(x\\ne1\\) reguła różniczkowania ilorazu daje\n\\[f'(x)=\\frac{(2ax+1)(x-1)-(ax^2+x)}{(x-1)^2}=\\frac{ax^2-2ax-1}{(x-1)^2}.\\]\nPunkt \\(x=a\\) wymaga \\(a\\ne1\\). Stawiamy \\(\\frac{a^3-2a^2-1}{(a-1)^2}=-a/2\\). Po usunięciu mianownika mamy \\(3a^3-6a^2+a-2=(3a^2+1)(a-2)=0\\). Pierwszy czynnik jest dodatni, więc jedynym wynikiem jest \\(a=2\\).",
     "kategorie": [
-      "Własności wielomianów",
       "Różne"
     ],
     "tagi": [
@@ -279,8 +278,7 @@
     "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie \\(x^2+mx+m=0\\) ma dwa różne rzeczywiste rozwiązania \\(x_1,x_2\\) spełniające\n\\[x_1^4+x_2^4+4x_1^3x_2^3\\ge3.\\]\nZapisz obliczenia.",
     "rozwiazanie": "Warunek dwóch różnych pierwiastków to \\(\\Delta=m^2-4m>0\\), czyli \\(m<0\\) lub \\(m>4\\). Ze wzorów Viète’a suma pierwiastków to \\(-m\\), a iloczyn to \\(m\\). Przekształcamy warunek:\n\\[\\begin{aligned}\nx_1^4+x_2^4+4x_1^3x_2^3\n&=\\big((x_1+x_2)^2-2x_1x_2\\big)^2\\\\\n&\\quad-2(x_1x_2)^2+4(x_1x_2)^3\\\\\n&=(m^2-2m)^2-2m^2+4m^3=m^4+2m^2.\n\\end{aligned}\\]\nNierówność \\(m^4+2m^2-3=(m^2-1)(m^2+3)\\ge0\\) daje \\(|m|\\ge1\\). Łącząc warunki, otrzymujemy \\(m\\in(-\\infty,-1]\\cup(4,\\infty)\\).",
     "kategorie": [
-      "Równania kwadratowe z parametrem",
-      "Własności wielomianów"
+      "Równania kwadratowe z parametrem"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -307,8 +305,7 @@
     "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) o podstawie \\(ABCD\\) ma objętość \\(36\\sqrt3\\). Płaszczyzna \\(\\gamma\\) jest prostopadła do ściany bocznej \\(CDS\\) i tworzy z płaszczyzną podstawy kąt \\(30^\\circ\\). Przechodzi przez środki \\(K\\) i \\(L\\) krawędzi odpowiednio \\(AD\\) i \\(BC\\), oraz przecina \\(CS\\) w \\(M\\) i \\(DS\\) w \\(N\\). Przekrój \\(KLMN\\) jest trapezem równoramiennym.\n\nOblicz pole trapezu \\(KLMN\\). Zapisz obliczenia.\n\n[[rysunek:2026-06-12|Ostrosłup prawidłowy czworokątny z przekrojem KLMN przez środki AD i BC oraz punkty na CS i DS.]]",
     "rozwiazanie": "Niech \\(a\\) oznacza krawędź podstawy, \\(P\\) środek \\(KL\\), \\(Q\\) środek \\(CD\\), a \\(R\\) środek \\(MN\\). Przekrój prostopadły do \\(KL\\) przez \\(P,Q,S\\) zawiera \\(R\\). Mamy \\(|PQ|=a/2\\), \\(PS\\) jest wysokością ostrosłupa, a \\(PR\\) wysokością trapezu. Ponieważ płaszczyzna przekroju \\(KLMN\\) jest prostopadła do ściany \\(CDS\\), w tym przekroju osiowym \\(PR\\perp QS\\). Kąt między \\(PR\\) a \\(PQ\\) wynosi \\(30^\\circ\\).\n\nZ dwóch trójkątów prostokątnych \\(PQR\\) i \\(PQS\\) otrzymujemy \\(|QR|=a/4,\\ |PR|=a\\sqrt3/4,\\ |QS|=a,\\ |PS|=a\\sqrt3/2\\). Stąd \\(|RS|=3a/4\\). Warunek objętości \\(\\frac13a^2\\cdot a\\sqrt3/2=36\\sqrt3\\) daje \\(a=6\\).\n\nTrójkąty \\(NMS\\) i \\(DCS\\) są podobne w skali \\(|RS|/|QS|=3/4\\), zatem \\(|MN|=9/2\\). Krótszą i dłuższą podstawę trapezu łączy wysokość \\(|PR|=6\\sqrt3/4\\). Pole wynosi\n\\[\\frac12\\left(6+\\frac92\\right)\\frac{6\\sqrt3}{4}=\\frac{63\\sqrt3}{8}.\\]\n\n[[rysunek:2026-06-12-rozw|Ostrosłup z przekrojem KLMN oraz osobno trójkąt prostokątny PQS z kątem 30° między PQ a PR.]]",
     "kategorie": [
-      "Geometria przestrzenna",
-      "Planimetria"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -338,8 +335,7 @@
     "polecenie": "Rozważamy trójkąty prostokątne \\(ABC\\) z wierzchołkiem \\(C=(0,0)\\), wierzchołkiem \\(B\\) na dodatniej półosi \\(Oy\\) i wierzchołkiem \\(A\\) na dodatniej półosi \\(Ox\\). Prosta \\(AB\\) przechodzi przez \\(K=(1,2)\\).\n\nWykaż, że pole trójkąta o współczynniku kierunkowym prostej \\(AB\\) równym \\(a\\) wyraża się wzorem\n\\[P(a)=\\frac{-a^2+4a-4}{2a}.\\]",
     "rozwiazanie": "Prosta przechodząca przez \\(K=(1,2)\\) ma równanie \\(y=a(x-1)+2\\). Jej przecięcie z osią \\(Oy\\) to \\(B=(0,2-a)\\), a z osią \\(Ox\\) to \\(A=((a-2)/a,0)\\). Obie współrzędne przecięcia są dodatnie, więc \\(a<0\\). Pole wynosi\n\\[P(a)=\\frac12\\cdot\\frac{a-2}{a}(2-a)=\\frac{-a^2+4a-4}{2a}.\\]",
     "kategorie": [
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego"
@@ -364,11 +360,9 @@
     "polecenie": "W trójkącie prostokątnym \\(ABC\\) wierzchołek \\(C=(0,0)\\), punkt \\(B\\) leży na dodatniej półosi \\(Oy\\), punkt \\(A\\) na dodatniej półosi \\(Ox\\), a prosta \\(AB\\) przechodzi przez \\(K=(1,2)\\). Pole zależy od współczynnika kierunkowego \\(a\\) prostej \\(AB\\) według wzoru\n\\[P(a)=\\frac{-a^2+4a-4}{2a}\\qquad\\text{dla }a<0.\\]\nWyznacz równanie prostej zawierającej przeciwprostokątną \\(AB\\) w trójkącie o najmniejszym polu. Zapisz obliczenia.",
     "rozwiazanie": "**Sposób I — pochodna**\nDla \\(a<0\\) pochodna pola wynosi \\(P'(a)=(-2a^2+8)/(2a)^2\\). Jest ujemna dla \\(a<-2\\), zeruje się w \\(-2\\) i jest dodatnia dla \\(-2<a<0\\). Minimum wypada więc dla \\(a=-2\\).\n\n**Sposób II — nierówność między średnimi**\nMamy \\(P(a)=2-a/2-2/a\\). Dwie liczby \\(-a/2\\) i \\(-2/a\\) są dodatnie, a ich iloczyn wynosi \\(1\\). Ich suma jest więc nie mniejsza niż \\(2\\), z równością wtedy, gdy \\(-a/2=-2/a\\). Przy \\(a<0\\) daje to wyłącznie \\(a=-2\\).\n\nSzukana prosta ma nachylenie \\(-2\\) i przechodzi przez \\(K=(1,2)\\), zatem jej równanie to \\(y=-2x+4\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Własności trójkąta prostokątnego",
       "Pochodna funkcji wymiernej"
     ],
     "sprawdzone_polecenie": 1,
@@ -391,8 +385,7 @@
     "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{n\\to+\\infty}\\frac{\\binom{n+2}{n-1}}{\\frac12n^3-4n+7}.\\]",
     "rozwiazanie": "Z definicji symbolu Newtona dla \\(n\\ge1\\) mamy \\(\\binom{n+2}{n-1}=\\frac{n(n+1)(n+2)}{6}\\). Dzielimy licznik i mianownik przez \\(n^3\\):\n\\[\\lim_{n\\to+\\infty}\\frac{1+3/n+2/n^2}{6\\big(\\frac12-4/n^2+7/n^3\\big)}=\\frac13.\\]",
     "kategorie": [
-      "Granice",
-      "Kombinatoryka"
+      "Granice"
     ],
     "tagi": [
       "Granica ciągu"
@@ -417,8 +410,7 @@
     "polecenie": "Ze zbioru \\(\\{1,2,3,4,5,6,7,8\\}\\) losujemy kolejno osiem liczb bez zwracania. Wylosowane liczby ustawiamy w kolejności ich wylosowania.\n\nOblicz prawdopodobieństwo, że iloczyn każdych trzech kolejnych wyrazów otrzymanego ciągu będzie podzielny przez \\(3\\). Podaj wynik w postaci nieskracalnego ułamka zwykłego i zapisz obliczenia.",
     "rozwiazanie": "Wszystkie \\(8!\\) permutacji są jednakowo prawdopodobne. Trzy kolejne wyrazy dają iloczyn podzielny przez \\(3\\), gdy przynajmniej jeden z nich to \\(3\\) lub \\(6\\). Jedna z tych liczb musi przypaść na pozycje \\(1,2,3\\), a druga na \\(6,7,8\\). Pozycje \\(4,5\\) są więc zajęte przez inne liczby. Warunek dla trójek \\(3,4,5\\) oraz \\(4,5,6\\) wymusza umieszczenie \\(3\\) i \\(6\\) na pozycjach \\(3\\) oraz \\(6\\). Taki układ również wystarcza, bo w każdym bloku trzech miejsc znajduje się jedno z nich.\n\nMożemy zamienić miejscami \\(3,6\\) i dowolnie ustawić sześć pozostałych liczb. Stąd prawdopodobieństwo wynosi \\(\\frac{2\\cdot6!}{8!}=\\frac1{28}\\).",
     "kategorie": [
-      "Prawdopodobieństwo",
-      "Kombinatoryka"
+      "Prawdopodobieństwo"
     ],
     "tagi": [
       "Warunek na sumę / iloczyn liczb w kodzie",
@@ -445,9 +437,7 @@
     "polecenie": "Wykaż, że dla dowolnych dodatnich liczb rzeczywistych \\(x,y\\) zachodzi nierówność\n\\[\\frac1x+\\frac1y\\le\\frac{x}{y^2}+\\frac{y}{x^2}.\\]",
     "rozwiazanie": "**Sposób I — suma sześcianów**\nMnożymy przez dodatnie \\(x^2y^2\\). Otrzymujemy równoważnie \\(xy(x+y)\\le x^3+y^3\\). Po rozłożeniu sumy sześcianów i przeniesieniu lewej strony jest to \\(0\\le(x+y)(x-y)^2\\), co wynika z \\(x+y>0\\).\n\n**Sposób II — grupowanie**\nPo pomnożeniu przez \\(x^2y^2\\) różnica prawej i lewej strony to\n\\[\\begin{aligned}\nx^3-xy^2+y^3-yx^2\n&=x(x^2-y^2)+y(y^2-x^2)\\\\\n&=(x-y)(x^2-y^2)=(x+y)(x-y)^2\\ge0.\n\\end{aligned}\\]\n\n**Sposób III — wspólny mianownik**\nOdejmujemy lewą stronę od prawej bez mnożenia całej nierówności:\n\\[\\begin{aligned}\n\\frac{x}{y^2}+\\frac{y}{x^2}-\\frac1x-\\frac1y\n&=\\frac{x(x^2-y^2)+y(y^2-x^2)}{x^2y^2}\\\\\n&=\\frac{(x+y)(x-y)^2}{x^2y^2}\\ge0.\n\\end{aligned}\\]\n\n**Sposób IV — badanie funkcji**\nDla ustalonego \\(y>0\\) niech \\(f(x)\\) oznacza różnicę stron z poprzedniego sposobu. Jej pochodna to\n\\[f'(x)=\\frac1{y^2}-\\frac{2y}{x^3}+\\frac1{x^2}=\\frac{(x-y)(x^2+xy+2y^2)}{x^3y^2}.\\]\nMa znak \\(x-y\\). Funkcja maleje do \\(x=y\\) i potem rośnie na dodatniej półosi, więc \\(f(x)\\ge f(y)=0\\).",
     "kategorie": [
-      "Dowodzenie równań / nierówności",
-      "Własności wielomianów",
-      "Optymalizacja funkcji"
+      "Dowodzenie równań / nierówności"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -477,8 +467,7 @@
     "polecenie": "W kwadracie \\(ABCD\\) o boku \\(a\\) punkty \\(K,L\\) są środkami odpowiednio boków \\(AB,BC\\). Punkt \\(M\\) leży na \\(BC\\), a odcinki \\(DK\\) i \\(KM\\) są prostopadłe. Odcinek \\(AL\\) przecina \\(DK\\) w \\(P\\) i \\(DM\\) w \\(Q\\).\n\nWykaż, że \\(|PQ|=\\frac{\\sqrt5}{5}a\\).\n\n[[rysunek:2026-05-4|Kwadrat ABCD. Odcinek AL przecina prostopadły do KM odcinek DK w P oraz odcinek DM w Q.]]",
     "rozwiazanie": "We wszystkich sposobach geometrycznych prostokątne trójkąty \\(DAK\\) i \\(ABL\\) są przystające, bo mają przyprostokątne \\(a\\) i \\(a/2\\). Jeśli \\(\\alpha=\\angle ADK\\), to \\(\\angle BAL=\\alpha\\), co daje \\(AL\\perp DK\\). Ponadto \\(KM\\perp DK\\), więc \\(KM\\parallel AL\\).\n\n**Sposób I — kolejne podobieństwa**\nW trójkątach \\(DAK\\), \\(DPA\\), \\(APK\\) stosunek dłuższej do krótszej przyprostokątnej to \\(2\\). Zatem \\(|DP|=2|AP|=4|PK|\\), skąd \\(|DK|:|DP|=5:4\\). Trójkąty \\(DKM\\) i \\(DPQ\\) są podobne, więc \\(|PQ|=\\frac45|KM|\\). Z podobieństwa \\(KBM\\) i \\(ABL\\) dostajemy \\(|KM|=\\frac12|AL|=\\frac{\\sqrt5}{4}a\\). Wynik to \\(|PQ|=\\frac{\\sqrt5}{5}a\\).\n\n**Sposób II — identyczne trójkąty przy \\(P\\)**\nNiech \\(u=|AP|\\). Z podobieństwa \\(DPA\\) i \\(DAK\\) wynika \\(|DP|=2u\\). W \\(DPA\\) twierdzenie Pitagorasa daje \\(5u^2=a^2\\). Z podobieństwa \\(KBM\\) i \\(ABL\\) mamy \\(|DK|=|AL|=2|KM|\\). Prostokątny trójkąt \\(DKM\\) ma więc stosunek przyprostokątnych \\(2:1\\) i kąt przy \\(D\\) równy \\(\\alpha\\). Trójkąty \\(DPA\\), \\(DPQ\\) mają wspólny bok \\(DP\\) i te same kąty na jego końcach, zatem \\(|PQ|=u=a/\\sqrt5\\).\n\n**Sposób III — odcinki na \\(AL\\)**\nJak wyżej \\(|AP|=a/\\sqrt5\\). Z podobieństwa \\(KBM\\) i \\(ABL\\) dostajemy \\(|BM|=a/4\\), więc \\(|LM|=a/4\\). Ponieważ \\(AD\\parallel LM\\), trójkąty \\(AQD\\) i \\(LQM\\) są podobne w stosunku \\(4:1\\). Wobec tego \\(|LQ|=\\frac14(|AP|+|PQ|)\\). Cały odcinek \\(AL\\) ma długość \\(a\\sqrt5/2\\), więc \\(\\frac54(|AP|+|PQ|)=a\\sqrt5/2\\). Po podstawieniu \\(|AP|=a/\\sqrt5\\) otrzymujemy \\(|PQ|=a/\\sqrt5\\).\n\n**Sposób IV — pomocniczy punkt \\(E\\)**\nPrzedłużmy \\(KM\\) do przecięcia z prostą \\(AD\\) w \\(E\\). Prostokątne trójkąty \\(AKE\\) i \\(BKM\\) mają równe kąty przy \\(K\\) oraz \\(|AK|=|BK|\\), więc \\(|EK|=|KM|\\). Trójkąty \\(DKE\\) i \\(DKM\\) są przystające, zatem \\(\\angle KDM=\\angle ADK=\\alpha\\). Trójkąty \\(DPA,DPQ\\) także są przystające, bo mają wspólny bok \\(DP\\), kąt prosty przy \\(P\\) i równy kąt przy \\(D\\). Dostajemy \\(|PQ|=|AP|\\). Z podobieństwa \\(DPA\\) do \\(DAK\\) mamy \\(|DP|=2|AP|\\). Twierdzenie Pitagorasa daje \\(|AP|=a/\\sqrt5\\).\n\n**Sposób V — współrzędne**\nPrzyjmijmy \\(A=(0,0)\\), \\(B=(a,0)\\), \\(C=(a,a)\\), \\(D=(0,a)\\). Proste \\(DK,AL\\) mają równania \\(y=a-2x\\) i \\(y=x/2\\), więc \\(P=(2a/5,a/5)\\). Prosta \\(KM\\) ma nachylenie \\(1/2\\) i przechodzi przez \\(K=(a/2,0)\\). Na prostej \\(x=a\\) daje punkt \\(M=(a,a/4)\\). Prosta \\(DM\\) ma więc równanie \\(y=a-3x/4\\), a jej przecięcie z \\(AL\\) to \\(Q=(4a/5,2a/5)\\). Stąd \\(|PQ|=\\sqrt{(2a/5)^2+(a/5)^2}=a/\\sqrt5\\).\n\n[[rysunek:2026-05-4-rozw|Konstrukcja w kwadracie z podpisanymi długościami a i a/2 oraz kątami α przy A i D.]]",
     "kategorie": [
-      "Planimetria",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -504,8 +493,7 @@
     "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[|2x-6|-|x^2-9|<0.\\]",
     "rozwiazanie": "**Sposób I — przedziały znaków**\nRozpatrujemy \\(x<-3\\), \\(-3\\le x<3\\) oraz \\(x\\ge3\\). Po usunięciu wartości bezwzględnych dostajemy kolejno:\n\\[\\begin{array}{c|c}\n-(x+5)(x-3)<0& x<-5\\\\\n(x+1)(x-3)<0&-1<x<3\\\\\n-(x+1)(x-3)<0&x>3\n\\end{array}\\]\nW prawej kolumnie uwzględniono zakres każdego przypadku.\n\n**Sposób II — wspólny czynnik**\nLewa strona to \\(|x-3|(2-|x+3|)\\). Żeby iloczyn był ujemny, trzeba i wystarczy, aby \\(x\\ne3\\) oraz \\(|x+3|>2\\), czyli \\(x<-5\\) lub \\(x>-1\\).\n\n**Sposób IIa — iloraz**\nDla \\(x=3\\) nierówność jest fałszywa. W pozostałych przypadkach dzielimy \\(|2x-6|<|x^2-9|\\) przez dodatnie \\(|2x-6|\\). Dostajemy \\(1<|x+3|/2\\) i wykluczamy \\(3\\).\n\n**Sposób IIb — kwadraty**\nObie wartości bezwzględne są nieujemne, więc \\(|2x-6|<|x^2-9|\\) jest równoważna \\((2x-6)^2<(x^2-9)^2\\). Faktoryzacja daje\n\\[(x-3)^2(x+1)(x+5)>0.\\]\nTrzeba wykluczyć \\(x=3\\) i wziąć \\(x\\) spoza przedziału \\([-5,-1]\\).\n\n**Sposób III — koniunkcja**\nWarunek \\(|2x-6|<|x^2-9|\\) jest równoważny układowi \\(|x^2-9|>2x-6\\) oraz \\(|x^2-9|>-2x+6\\). Po zastosowaniu reguły \\(|u|>v\\iff u>v\\) lub \\(u<-v\\) pierwszy warunek daje \\((x+1)(x-3)>0\\) lub \\((x+5)(x-3)<0\\). Jego rozwiązaniem jest \\(\\mathbb R\\setminus\\{3\\}\\). Drugi warunek daje \\((x+5)(x-3)>0\\) lub \\((x+1)(x-3)<0\\). Ich część wspólna z pierwszym warunkiem daje poniższy zbiór.\n\n**Wynik**\n\\[(-\\infty,-5)\\cup(-1,3)\\cup(3,+\\infty).\\]",
     "kategorie": [
-      "Równania / nierówności z wartością bezwzględną",
-      "Własności wielomianów"
+      "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -562,10 +550,10 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "sin / cos podwojonego kąta (zwijanie)",
       "sin / cos podwojonego kąta (rozwijanie)",
       "Suma / różnica sin / cos",
-      "Sinus potrojonego kąta"
+      "Sinus potrojonego kąta",
+      "Iloczyn sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -726,8 +714,7 @@
     "polecenie": "Kwietnik ma kształt trójkąta równoramiennego o podstawie długości \\(x\\) metrów nieprzekraczającej \\(10\\) metrów. Do wszystkich jego boków jest styczna okrągła fontanna o średnicy \\(4\\) metrów. Pole kwietnika jest dane wzorem\n\\[P(x)=\\frac{2x^3}{x^2-16}\\qquad\\text{dla }x\\in(4,10].\\]\nWyznacz długość podstawy, dla której pole jest najmniejsze. Oblicz to pole i zapisz obliczenia.\n\n[[rysunek:2026-05-12|Równoramienny trójkątny kwietnik o podstawie x. Fontanna jest kołem stycznym do wszystkich trzech boków.]]",
     "rozwiazanie": "Liczymy pochodną dla \\(x\\in(4,10]\\):\n\\[P'(x)=\\frac{2x^2(x^2-48)}{(x^2-16)^2}.\\]\nJej znak jest znakiem \\(x^2-48\\), więc funkcja maleje do \\(x=4\\sqrt3\\) i potem rośnie. Minimum wypada dla podstawy długości \\(4\\sqrt3\\ \\mathrm m\\) i wynosi \\(P(4\\sqrt3)=12\\sqrt3\\ \\mathrm{m}^2\\).\n\n**Uwaga CKE — porównanie wartości**\nJedyny punkt stacjonarny ma odciętą \\(4\\sqrt3\\). Funkcja jest ciągła, przy \\(x\\to4^+\\) dąży do \\(+\\infty\\), a na prawym końcu ma wartość \\(P(10)=500/21>12\\sqrt3\\). To również wystarcza do wskazania minimum.",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Pochodna funkcji wymiernej"
@@ -777,8 +764,7 @@
     "polecenie": "Wykaż, że dla \\(a=\\log_2 14\\) oraz \\(b=\\log_{\\sqrt2}27\\) zachodzi\n\\[\\log_7 54=\\frac{b+2}{2a-2}.\\]",
     "rozwiazanie": "**Sposób I — przekształcenie lewej strony**\nMamy \\(a-1=\\log_2(14/2)=\\log_2 7\\) oraz \\(\\log_2 27=b/2\\). Zatem\n\\[\\log_7 54=\\frac{\\log_2 27+\\log_2 2}{\\log_2 14-\\log_2 2}=\\frac{b/2+1}{a-1}=\\frac{b+2}{2a-2}.\\]\n\n**Sposób II — przekształcenie prawej strony**\nPo zamianie podstawy \\(\\log_{\\sqrt2}27=\\frac{\\log_2 27}{\\log_2\\sqrt2}=2\\log_2 27\\). Stąd\n\\[\\frac{b+2}{2a-2}=\\frac{\\log_2 27+1}{\\log_2 14-1}=\\frac{\\log_2 54}{\\log_2 7}=\\log_7 54.\\]\n\n**Sposób III — równanie wykładnicze o podstawie \\(2\\)**\nNiech \\(x=\\log_7 54\\). Definicja logarytmu daje \\(7=2^{a-1}\\) i \\(27=2^{b/2}\\). Równanie \\(7^x=54\\) zapisujemy więc \\(2^{(a-1)x}=2^{b/2+1}\\), skąd \\(x=(b+2)/(2a-2)\\).\n\n**Sposób IV — zapis \\(54\\) jako potęgi \\(7\\)**\nZ \\(7=2^{a-1}\\) mamy \\(2=7^{1/(a-1)}\\). Ponieważ \\(54=27\\cdot2=2^{b/2+1}\\), otrzymujemy \\(54=7^{(b+2)/(2a-2)}\\). Definicja logarytmu kończy dowód.",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -828,8 +814,7 @@
     "polecenie": "W prostokącie \\(ABCD\\) zachodzi \\(|AB|=2|AD|\\). Na bokach \\(AB,BC,CD,DA\\) leżą odpowiednio \\(K,L,M,N\\), po jednym punkcie na każdym boku, przy czym żaden nie jest wierzchołkiem prostokąta. Czworokąt \\(KLMN\\) jest trapezem prostokątnym o wysokości \\(LM\\) równoległej do przekątnej \\(BD\\) prostokąta.\n\nWykaż, że pole trójkąta \\(MDN\\) jest \\(16\\) razy większe od pola \\(KBL\\).\n\n[[rysunek:2025-06-4|Prostokąt ABCD oraz wpisany trapez prostokątny KLMN, którego wysokość LM jest równoległa do BD.]]",
     "rozwiazanie": "**Sposób I — proporcje odcinków i skala podobieństwa**\nNiech \\(a=|AD|\\), stąd \\(|AB|=2a\\). Trójkąty \\(MDN\\) i \\(KBL\\) są prostokątne i podobne, bo \\(MN\\parallel KL\\) daje \\(\\angle DMN=\\angle BKL\\). Z \\(ML\\parallel DB\\) otrzymujemy \\(|DM|/|LB|=|MC|/|LC|\\), czyli\n\\[\\frac{|DM|}{|LB|}=\\frac{2a-|DM|}{a-|LB|}.\\]\nStąd \\(|DM|=2|LB|\\). Ponieważ \\(MN\\perp DB\\), trójkąty \\(MDN\\) i \\(BCD\\) są podobne z odpowiadającymi bokami \\(DM\\) i \\(BC\\), \\(DN\\) i \\(CD\\). Wynika \\(|DN|=2|DM|=4|LB|\\). Skala \\(MDN\\) do \\(KBL\\) wynosi \\(4\\), więc stosunek pól to \\(16\\).\n\n**Sposób II — wysokości na przeciwprostokątnych**\nNiech \\(E=DB\\cap MN\\), \\(F=DB\\cap KL\\) i \\(|DE|=2u\\). Trójkąt \\(DEM\\) jest podobny do \\(DCB\\), więc \\(|ME|=|DE|/2=u\\). Czworokąt \\(MEFL\\) jest prostokątem, stąd \\(|FL|=u\\). Trójkąt \\(FBL\\) jest podobny do \\(EMD\\), bo kąt \\(FLB\\) ma miarę kąta \\(MDE\\), więc \\(|FB|/|FL|=|ME|/|DE|=1/2\\). Odcinki \\(DE\\) i \\(BF\\) są odpowiadającymi wysokościami podobnych trójkątów \\(MDN\\) i \\(KBL\\). Ich stosunek to \\(2u/(u/2)=4\\). Stosunek pól wynosi \\(4^2=16\\).\n\n**Sposób III — współrzędne**\nUstawmy \\(A=(0,0)\\), \\(B=(2a,0)\\), \\(C=(2a,a)\\), \\(D=(0,a)\\). Prosta \\(ML\\) ma równanie \\(y=-x/2+c\\) dla \\(a<c<2a\\). Stąd \\(M=(2c-2a,a)\\) i \\(L=(2a,c-a)\\). Proste \\(MN,KL\\) mają współczynnik \\(2\\), więc ich przecięcia z osiami dają \\(N=(0,5a-4c)\\) i \\(K=((5a-c)/2,0)\\). Przy \\(t=c-a>0\\) przyprostokątne \\(MDN\\) mają długości \\(2t,4t\\); przyprostokątne \\(KBL\\) mają długości \\(t/2,t\\). Stosunek pól to \\((2t\\cdot4t)/((t/2)t)=16\\).",
     "kategorie": [
-      "Planimetria",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -856,8 +841,7 @@
     "polecenie": "Wyznacz wszystkie wartości \\(m\\), dla których równanie\n\\[x^2+2mx+2m-1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające\n\\[m(x_1^2+x_2^2)=3mx_1x_2+2.\\]\nZapisz obliczenia.",
     "rozwiazanie": "**Sposób I — wzory Viète’a dla sumy i iloczynu**\nWyróżnik \\(4(m-1)^2\\) jest dodatni dla \\(m\\ne1\\). Mamy \\(x_1+x_2=-2m\\) i \\(x_1x_2=2m-1\\). Warunek zadania daje\n\\[m\\big((-2m)^2-2(2m-1)\\big)=3m(2m-1)+2.\\]\nRównoważnie \\(4m^3-10m^2+5m-2=(m-2)(4m^2-2m+1)=0\\). Drugi czynnik to \\(3m^2+(m-1)^2>0\\), więc \\(m=2\\).\n\n**Sposób II — wyznaczenie pierwiastków**\nPodstawiając \\(-1\\) do równania, zawsze otrzymujemy zero. Suma pierwiastków daje drugi pierwiastek \\(1-2m\\). Są różne, gdy \\(m\\ne1\\). Bezpośrednie podstawienie do warunku zadania daje\n\\[m\\big(1+(1-2m)^2\\big)=3m(-1)(1-2m)+2.\\]\nPo uporządkowaniu znów zostaje \\((m-2)(4m^2-2m+1)=0\\). Wyróżnik drugiego czynnika jest ujemny, więc jedynym rozwiązaniem jest \\(m=2\\), które spełnia warunek \\(m\\ne1\\).",
     "kategorie": [
-      "Równania kwadratowe z parametrem",
-      "Własności wielomianów"
+      "Równania kwadratowe z parametrem"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -939,8 +923,7 @@
     "polecenie": "Dla \\(a,b,c\\in\\mathbb R\\) niech \\(f(x)=x^3+ax^2+bx+c\\). Wielomian ma miejsce zerowe \\(x=-2\\). Styczna do wykresu \\(f\\) w punkcie o odciętej \\(-2\\) przecina ten wykres w punkcie \\(P=(1,9)\\).\n\nWyznacz wzór \\(f\\) i zapisz obliczenia.",
     "rozwiazanie": "Styczna przechodzi przez \\(A=(-2,0)\\) i \\(P=(1,9)\\), więc ma równanie \\(g(x)=3(x+2)\\). Stąd \\(f'(-2)=3\\) oraz \\(f(-2)=0,\\ f(1)=9\\).\n\n**Sposób I — współczynniki wielomianu**\nZ \\(f'(-2)=12-4a+b=3\\) otrzymujemy \\(b=4a-9\\). Po podstawieniu do \\(f(-2)=0\\) mamy \\(c=4a-10\\). Ostatni warunek daje \\(1+a+(4a-9)+(4a-10)=9\\). Stąd \\(a=3,b=3,c=2\\).\n\n**Sposób II — wyłączenie czynnika \\(x+2\\)**\nPonieważ \\(-2\\) jest pierwiastkiem, zapisujemy \\(f(x)=(x+2)(x^2+dx+e)\\). Z \\(f'(-2)=3\\) wynika \\(4-2d+e=3\\), więc \\(e=2d-1\\). Warunek \\(f(1)=9\\) daje \\(3(1+d+e)=9\\), skąd \\(d=e=1\\).\n\n**Sposób III — różnica wielomianu i stycznej**\nNiech \\(h=f-g\\). Mamy \\(h(-2)=h'(-2)=0\\), więc \\(x+2\\) jest czynnikiem co najmniej dwukrotnej krotności. Z \\(h(1)=0\\) i współczynnika wiodącego \\(1\\) dostajemy \\(h(x)=(x+2)^2(x-1)\\). Po dodaniu \\(g(x)=3(x+2)\\) mamy \\(f(x)=(x+2)(x^2+x+1)\\).\n\nKażda postać daje \\(f(x)=x^3+3x^2+3x+2\\).",
     "kategorie": [
-      "Styczna do wykresu funkcji",
-      "Własności wielomianów"
+      "Styczna do wykresu funkcji"
     ],
     "tagi": [
       "Rozkład wielomianu stopnia 3 lub wyżej"
@@ -1075,12 +1058,9 @@
     "polecenie": "Graniastosłupy prawidłowe trójkątne mają pole powierzchni całkowitej \\(24\\sqrt3\\). Ich objętość w zależności od długości \\(a\\) krawędzi podstawy jest dana wzorem\n\\[V(a)=6a-\\frac18a^3,\\qquad a\\in(0,4\\sqrt3).\\]\nWyznacz długość krawędzi podstawy graniastosłupa o największej objętości. Oblicz tę objętość i zapisz obliczenia.",
     "rozwiazanie": "Dla \\(0<a<4\\sqrt3\\) mamy \\(V'(a)=6-3a^2/8\\). Pochodna jest dodatnia dla \\(0<a<4\\) i ujemna dla \\(4<a<4\\sqrt3\\). Zatem maksimum wypada przy krawędzi podstawy \\(a=4\\), a największa objętość to \\(V(4)=6\\cdot4-4^3/8=16\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [
-      "Graniastosłup"
-    ],
+    "tagi": [],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -1124,9 +1104,7 @@
     "polecenie": "Wykaż, że dla dodatnich liczb rzeczywistych \\(a,b\\), gdy \\(b\\ne a/2\\), zachodzi\n\\[(a+2b)^3>8a^2b+16ab^2.\\]",
     "rozwiazanie": "**Sposób I — rozwinięcie sześcianu**\nPo odjęciu prawej strony i rozwinięciu sześcianu otrzymujemy\n\\[(a+2b)^3-8a^2b-16ab^2=a^2(a-2b)-4b^2(a-2b)=(a-2b)^2(a+2b).\\]\nJest to liczba dodatnia, ponieważ \\(a+2b>0\\) i \\(a-2b\\ne0\\).\n\n**Sposób II — wspólny czynnik \\(a+2b\\)**\nZ \\(8a^2b+16ab^2=8ab(a+2b)\\) wynika, że wystarczy wykazać \\((a+2b)^2>8ab\\), gdyż \\(a+2b>0\\). Różnica tych wyrażeń jest równa \\((a-2b)^2>0\\).\n\n**Sposób III — pochodna**\nPrzy ustalonym \\(b>0\\) niech \\(F(a)=(a+2b)^3-8a^2b-16ab^2\\), \\(a>0\\). Mamy \\(F'(a)=3a^2-4ab-4b^2=(a-2b)(3a+2b)\\). Funkcja maleje przed \\(2b\\) i rośnie po \\(2b\\), a \\(F(2b)=0\\). Stąd \\(F(a)>0\\) dla każdego \\(a\\ne2b\\).",
     "kategorie": [
-      "Dowodzenie równań / nierówności",
-      "Własności wielomianów",
-      "Optymalizacja funkcji"
+      "Dowodzenie równań / nierówności"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -1153,8 +1131,7 @@
     "polecenie": "Punkt \\(D\\) leży na boku \\(BC\\) trójkąta równobocznego \\(ABC\\). Pole \\(ABD\\) stanowi \\(\\frac{\\sqrt3-1}{2}\\) pola \\(ADC\\). Oblicz miarę kąta \\(DAC\\) i zapisz obliczenia.",
     "rozwiazanie": "Oznaczmy \\(\\alpha=\\angle DAC\\), tak że \\(0<\\alpha<60^\\circ\\). W sposobach II–VI wykorzystujemy, że oba trójkąty mają tę samą wysokość do \\(BC\\). Stąd \\(\\frac{|BD|}{|CD|}=(\\sqrt3-1)/2\\).\n\n**Sposób I — wzór na pole z sinusem**\nKąty między \\(AD\\) a równymi bokami \\(AB,AC\\) to \\(60^\\circ-\\alpha\\) i \\(\\alpha\\). Stosunek pól wynosi\n\\[\\frac{\\sin(60^\\circ-\\alpha)}{\\sin\\alpha}=\\frac{\\sqrt3-1}{2}.\\]\nPo rozwinięciu sinusa różnicy lewa strona to \\(\\frac{\\sqrt3}{2}\\cot\\alpha-\\frac12\\). Wynika stąd \\(\\cot\\alpha=1\\), czyli \\(\\alpha=45^\\circ\\).\n\n**Sposób II — rzut na bok \\(AC\\)**\nNiech \\(u=|CD|\\), a \\(E\\) będzie spodkiem wysokości z \\(D\\) na \\(AC\\). Trójkąt \\(DCE\\) ma przy \\(C\\) kąt \\(60^\\circ\\), więc \\(|DE|=u\\sqrt3/2\\) i \\(|CE|=u/2\\). Ponieważ \\(|AC|=|BC|=u+u(\\sqrt3-1)/2\\), mamy \\(|AE|=|AC|-|CE|=u\\sqrt3/2=|DE|\\). Stąd kąt przy \\(A\\) w prostokątnym \\(ADE\\) wynosi \\(45^\\circ\\).\n\n**Sposób III — dwusieczna**\nNiech \\(F\\) będzie środkiem \\(BC\\). Zapiszmy \\(|BD|=(\\sqrt3-1)u,\\ |CD|=2u\\), gdzie \\(u>0\\). Bok trójkąta ma długość \\((\\sqrt3+1)u\\), więc \\(|AF|=(\\sqrt3+1)u\\sqrt3/2\\), a \\(|DF|=(3-\\sqrt3)u/2\\). Wobec tego \\(|BD|/|DF|=2/\\sqrt3=|AB|/|AF|\\). Twierdzenie odwrotne do twierdzenia o dwusiecznej w \\(ABF\\) pokazuje, że \\(AD\\) dzieli kąt \\(BAF=30^\\circ\\) na dwa równe kąty. Zatem \\(\\angle DAC=15^\\circ+30^\\circ=45^\\circ\\).\n\n**Sposób IV — twierdzenia cosinusów i sinusów**\nPrzy długościach \\(|CD|=2u,\\ |AC|=(\\sqrt3+1)u\\), twierdzenie cosinusów w \\(ADC\\) z kątem \\(60^\\circ\\) przy \\(C\\) daje\n\\[|AD|^2=(\\sqrt3+1)^2u^2+4u^2-2(\\sqrt3+1)u^2=6u^2.\\]\nZ twierdzenia sinusów mamy \\(\\sin\\alpha=2u\\sin60^\\circ/(\\sqrt6u)=\\sqrt2/2\\). Na rozważanym przedziale daje to \\(45^\\circ\\).\n\n**Wariant IV — dwa zastosowania twierdzenia cosinusów**\nPo znalezieniu \\(|AD|=\\sqrt6u\\) można obliczyć\n\\[\\cos\\alpha=\\frac{|AC|^2+|AD|^2-|CD|^2}{2|AC||AD|}=\\frac{\\sqrt2}{2},\\]\nco daje ten sam kąt.\n\n**Sposób V — twierdzenie Stewarta**\nNiech \\(a=|AB|=|AC|\\), \\(b=|AD|\\), \\(v=|BD|\\), \\(w=|CD|\\). Twierdzenie Stewarta daje \\(a^2(v+w)=(v+w)(b^2+vw)\\). Podstawiając \\(v=(\\sqrt3-1)u,\\ w=2u,\\ a=(\\sqrt3+1)u\\), znajdujemy \\(b^2=a^2-vw=6u^2\\). Twierdzenie cosinusów jak w wariancie IV daje \\(\\alpha=45^\\circ\\).\n\n**Sposób VI — układ współrzędnych**\nUstawiamy \\(A=(0,0)\\), \\(B=(a,0)\\), \\(C=(a/2,a\\sqrt3/2)\\). Ponieważ \\(|BD|/|BC|=2-\\sqrt3\\), mamy \\(D=B+(2-\\sqrt3)(C-B)=(a\\sqrt3/2,a\\sqrt3(2-\\sqrt3)/2)\\). Stąd \\(\\tan\\angle BAD=2-\\sqrt3\\). Wzór na tangens różnicy daje\n\\[\\tan\\alpha=\\frac{\\sqrt3-(2-\\sqrt3)}{1+\\sqrt3(2-\\sqrt3)}=1,\\]\nwięc \\(\\alpha=45^\\circ\\).",
     "kategorie": [
-      "Planimetria",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -1183,8 +1160,7 @@
     "polecenie": "Rzucamy cztery razy symetryczną sześcienną kostką o ściankach z \\(1,2,\\ldots,6\\) oczkami. Oblicz prawdopodobieństwo, że wypadnie przynajmniej jedna szóstka, jeśli wiadomo, że dokładnie dwa razy wypadła piątka. Zapisz obliczenia.",
     "rozwiazanie": "Niech \\(B\\) oznacza uzyskanie dokładnie dwóch piątek. Wyniki spełniające \\(B\\) otrzymujemy, wybierając ich pozycje oraz wypełniając dwie pozostałe pozycje oczkami z \\(\\{1,2,3,4,6\\}\\). Jest ich \\(\\binom42\\cdot5^2\\). Przy ustalonych miejscach piątek w \\(5^2-4^2\\) przypadkach występuje co najmniej jedna szóstka. Stąd\n\\[P(\\text{co najmniej jedna szóstka}\\mid B)=\\frac{\\binom42(5^2-4^2)}{\\binom42\\cdot5^2}=\\frac9{25}.\\]",
     "kategorie": [
-      "Prawdopodobieństwo",
-      "Kombinatoryka"
+      "Prawdopodobieństwo"
     ],
     "tagi": [
       "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)"
@@ -1322,7 +1298,6 @@
       "Równanie kwadratowe",
       "sin / cos podwojonego kąta (zwijanie)",
       "sin / cos podwojonego kąta (rozwijanie)",
-      "Suma / różnica sin / cos",
       "Przekształcenie sin / cos",
       "sin / cos sumy (zwijanie poprzez reprezentację liczby jako sin / cos pewnego argumentu)"
     ],
@@ -1430,11 +1405,9 @@
     "polecenie": "Rozpatrujemy stożki o wysokości \\(h>5\\), dla których środek podstawy jest oddalony od tworzącej o \\(5\\). Ich objętość wyraża się wzorem\n\\[V(h)=\\frac{\\pi}{3}\\cdot\\frac{25h^3}{h^2-25}.\\]\nWyznacz wysokość stożka o najmniejszej objętości. Oblicz tę objętość i zapisz obliczenia.",
     "rozwiazanie": "Dla \\(h>5\\) mamy\n\\[V'(h)=\\frac{\\pi}{3}\\frac{25h^2(h^2-75)}{(h^2-25)^2}.\\]\nPochodna jest ujemna przed \\(h=5\\sqrt3\\) i dodatnia po nim. Zatem najmniejsza objętość występuje dla wysokości \\(5\\sqrt3\\) i wynosi \\(125\\sqrt3\\pi/2\\).\n\n**Uwaga CKE — zachowanie na krańcach dziedziny**\nFunkcja jest ciągła, przy \\(h\\to5^+\\) i \\(h\\to+\\infty\\) dąży do \\(+\\infty\\), a \\(5\\sqrt3\\) jest jedynym punktem stacjonarnym. Te fakty również wskazują minimum.",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Stożek",
       "Pochodna funkcji wymiernej"
     ],
     "sprawdzone_polecenie": 1,
@@ -1480,8 +1453,7 @@
     "polecenie": "Okrąg \\(\\mathcal O\\) jest styczny do boków \\(AC\\) i \\(BC\\) trójkąta \\(ABC\\). Przecina bok \\(AB\\) w punktach \\(M\\) i \\(N\\), dla których \\(0<|AM|<|AN|<|AB|\\).\n\nUdowodnij, że z równości \\(|AM|=|BN|\\) wynika, że trójkąt \\(ABC\\) jest równoramienny.",
     "rozwiazanie": "Niech \\(D,E\\) będą punktami styczności okręgu do boków \\(AC,BC\\), a \\(S\\) jego środkiem. Z własności odcinków stycznych wychodzących z \\(C\\) mamy \\(|CD|=|CE|\\).\n\n[[rysunek:2024-12-2-rozw|Trójkąt ABC z punktami styczności D i E, środkiem okręgu S oraz punktami przecięcia M i N]]\n\n**Sposób I — przystawanie trójkątów**\nTrójkąt \\(MNS\\) jest równoramienny, bo \\(|MS|=|NS|\\). Jego kąty przy \\(M,N\\) są równe, więc równe są ich kąty przyległe \\(SMA\\) i \\(SNB\\). Z warunku \\(|AM|=|BN|\\) oraz cechy bok–kąt–bok wynika przystawanie trójkątów \\(AMS\\) i \\(BNS\\). Zatem \\(|AS|=|BS|\\). Skoro \\(|DS|=|ES|\\) i oba promienie są prostopadłe do odpowiednich stycznych, twierdzenie Pitagorasa daje \\(|AD|=|BE|\\). Dodając równe odcinki \\(CD,CE\\), otrzymujemy \\(|AC|=|BC|\\).\n\n**Sposób II — odcinki siecznej i stycznej**\nZ \\(|AM|=|BN|\\) mamy też \\(|AN|=|AM|+|MN|=|BN|+|MN|=|BM|\\). Potęgi punktów \\(A,B\\) względem okręgu spełniają więc\n\\[|AD|^2=|AM|\\cdot|AN|=|BN|\\cdot|BM|=|BE|^2.\\]\nWobec tego \\(|AC|=|AD|+|CD|=|BE|+|CE|=|BC|\\).",
     "kategorie": [
-      "Planimetria",
-      "Dowodzenie równań / nierówności"
+      "Planimetria"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -1527,8 +1499,7 @@
     "polecenie": "Uzasadnij następującą równość:\n\\[\\frac{1}{\\log_2 35+1}+\\frac{1}{\\log_7 140-\\log_7 2}+\\frac{1}{\\log_5 7+\\log_5 2+1}=1.\\]",
     "rozwiazanie": "Korzystając z praw działań na logarytmach, upraszczamy mianowniki.\n\\[\\begin{aligned}\n\\log_2 35+1&=\\log_2(35\\cdot2)=\\log_2 70,\\\\\n\\log_7 140-\\log_7 2&=\\log_7(140/2)=\\log_7 70,\\\\\n\\log_5 7+\\log_5 2+1&=\\log_5(7\\cdot2\\cdot5)=\\log_5 70.\n\\end{aligned}\\]\nZamiana podstawy i wzór na logarytm iloczynu dają\n\\[\\frac{1}{\\log_2 70}+\\frac{1}{\\log_7 70}+\\frac{1}{\\log_5 70}=\\log_{70}2+\\log_{70}7+\\log_{70}5=\\log_{70}70=1.\\]",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -1553,7 +1524,10 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)",
+      "Prawdopodobieństwo całkowite"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -1622,11 +1596,11 @@
     "polecenie": "Wyznacz granicę i pokaż obliczenia.\n\\[\\lim_{n\\to+\\infty}\\frac{1+3+5+7+\\cdots+(2n+1)}{\\binom n2}.\\]\nW liczniku występuje suma kolejnych dodatnich liczb nieparzystych od \\(1\\) do \\(2n+1\\).",
     "rozwiazanie": "Liczby nieparzyste w liczniku tworzą ciąg arytmetyczny o pierwszym wyrazie \\(1\\) i różnicy \\(2\\). Ostatni, \\(2n+1\\), jest wyrazem numer \\(n+1\\). Stąd suma wynosi \\(\\frac{1+(2n+1)}2(n+1)=(n+1)^2\\). Ponadto \\(\\binom n2=\\frac{n(n-1)}2\\), więc\n\\[\\lim_{n\\to+\\infty}\\frac{(n+1)^2}{\\binom n2}=\\lim_{n\\to+\\infty}\\frac{2+4/n+2/n^2}{1-1/n}=2.\\]",
     "kategorie": [
-      "Granice",
-      "Ciągi"
+      "Granice"
     ],
     "tagi": [
-      "Granica ciągu"
+      "Granica ciągu",
+      "Suma n-początkowych wyrazów ciągu arytmetycznego / geometrycznego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -1651,8 +1625,10 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos",
-      "Iloczyn sin / cos"
+      "Iloczyn sin / cos",
+      "Grupowanie",
+      "Równanie kwadratowe",
+      "sin / cos podwojonego kąta (zwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -1728,12 +1704,14 @@
       "Planimetria"
     ],
     "tagi": [
-      "sin / cos podwojonego kąta (zwijanie)",
       "Podobieństwo trójkątów",
       "Twierdzenie cosinusów",
       "Twierdzenie sinusów",
       "Trapez",
-      "Trapez równoramienny"
+      "Trapez równoramienny",
+      "sin / cos podwojonego kąta (rozwijanie)",
+      "Własności trójkąta prostokątnego",
+      "Sinus potrojonego kąta"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -1755,8 +1733,7 @@
     "polecenie": "Dana jest funkcja \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla \\(x\\in(-\\infty,8)\\). Rozważamy czworokąty \\(OBCD\\), których wierzchołek \\(O\\) to początek układu, a wierzchołki \\(B\\) i \\(D\\) to punkty przecięcia wykresu \\(f\\) odpowiednio z osiami \\(Ox\\) i \\(Oy\\). Wierzchołek \\(C\\) leży na wykresie i ma obie współrzędne dodatnie.\n\n[[rysunek:2024-12-13|Wykres funkcji f i czworokąt OBCD w pierwszej ćwiartce]]\n\nUdowodnij, że pole czworokąta w zależności od pierwszej współrzędnej \\(x\\) punktu \\(C\\) to\n\\[P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}.\\]",
     "rozwiazanie": "Z równania \\(12x-84=0\\) wynika \\(B=(7,0)\\), a z \\(f(0)=\\frac{21}2\\) wynika \\(D=(0,\\frac{21}2)\\). Punkt \\(C\\) ma postać \\(\\left(x,\\frac{12x-84}{x-8}\\right)\\) dla \\(x\\in(0,7)\\). Pole czworokąta jest sumą pól trójkątów \\(OCD\\) i \\(OBC\\).\n\\[P(x)=\\frac12\\cdot\\frac{21}{2}x+\\frac12\\cdot7\\cdot\\frac{12x-84}{x-8}=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}.\\]",
     "kategorie": [
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -1779,10 +1756,11 @@
     "polecenie": "Dana jest funkcja \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla \\(x\\in(-\\infty,8)\\). W czworokącie \\(OBCD\\) punkt \\(O\\) to początek układu, a \\(B\\) i \\(D\\) są punktami przecięcia wykresu \\(f\\) odpowiednio z osiami \\(Ox\\) i \\(Oy\\). Punkt \\(C=(x,f(x))\\) ma dodatnie współrzędne. Pole czworokąta wyraża się wzorem\n\\[P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}\\qquad\\text{dla }x\\in(0,7).\\]\n\n[[rysunek:2024-12-13|Wykres funkcji f i czworokąt OBCD w pierwszej ćwiartce]]\n\nWyznacz współrzędne \\(C\\) dające największe pole czworokąta. Pokaż obliczenia.",
     "rozwiazanie": "Dla \\(x\\in(0,7)\\) pochodna wynosi\n\\[P'(x)=\\frac{21}{4}\\cdot\\frac{x^2-16x+56}{(x-8)^2}.\\]\nLicznik ma pierwiastki \\(8-2\\sqrt2\\) i \\(8+2\\sqrt2\\), z których tylko pierwszy należy do dziedziny. Pochodna jest dodatnia przed tym punktem i ujemna za nim, więc pole jest największe dla \\(x=8-2\\sqrt2\\). Druga współrzędna to\n\\[f(8-2\\sqrt2)=\\frac{12-24\\sqrt2}{-2\\sqrt2}=12-3\\sqrt2.\\]\nSzukany wierzchołek to \\(C=(8-2\\sqrt2,12-3\\sqrt2)\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Pochodna funkcji wymiernej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -1803,8 +1781,7 @@
     "polecenie": "Reakcja chemiczna zaczyna się w chwili \\(t=0\\). Masa związku \\(A\\), wyrażona w gramach, zmienia się zgodnie ze wzorem\n\\[m(t)=a\\cdot2^{-0{,}05t}+b,\\qquad t\\ge0,\\]\ngdzie \\(t\\) to czas w sekundach, a \\(a,b\\) są współczynnikami liczbowymi. Masa początkowa wynosi \\(m_0\\), a masa w stanie równowagi, gdy \\(t\\to\\infty\\), jest równa \\(m_0/9\\).\n\nOblicz, po ilu sekundach od rozpoczęcia reakcji przereagowało \\(87{,}5\\%\\) masy początkowej. Zapisz obliczenia.\n\n[[rysunek:2024-06-1|Malejący wykres masy związku w czasie. Masa zmienia się od m₀ i dąży do m₀/9.]]",
     "rozwiazanie": "W granicy \\(t\\to+\\infty\\) składnik \\(2^{-0{,}05t}\\) dąży do zera, więc \\(b=m_0/9\\). Z \\(m(0)=m_0\\) wynika \\(a=8m_0/9\\). Po przereagowaniu \\(87{,}5\\%\\) zostaje \\(m_0/8\\), stąd\n\\[\\frac18=\\frac89\\,2^{-0{,}05t}+\\frac19,\\qquad 2^{-0{,}05t}=\\frac1{64}=2^{-6}.\\]\nZatem \\(t=6/0{,}05=120\\) sekund.",
     "kategorie": [
-      "Funkcja wykładnicza",
-      "Granice"
+      "Funkcja wykładnicza"
     ],
     "tagi": [
       "Granica funkcji w nieskończoności"
@@ -1829,8 +1806,7 @@
     "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{x\\to3^-}\\frac{|x-3|}{x^2-9}.\\]",
     "rozwiazanie": "**Sposób I — skrócenie ułamka**\nDla \\(-3<x<3\\) mamy \\(|x-3|=-(x-3)\\) oraz \\(x^2-9=(x-3)(x+3)\\). Ułamek upraszcza się do \\(-1/(x+3)\\), którego granica przy \\(x\\to3^-\\) to \\(-1/6\\).\n\n**Sposób II — definicja granicy**\nDla \\(\\varepsilon>0\\) wybieramy \\(\\delta=6\\varepsilon/(1+\\varepsilon)\\in(0,6)\\). Jeśli \\(3-\\delta<x<3\\), to\n\\[\\left|\\frac{|x-3|}{x^2-9}+\\frac16\\right|\n=\\frac{|x-3|}{6(x+3)}\n<\\frac{\\delta}{6(6-\\delta)}=\\frac{\\varepsilon}{6}<\\varepsilon.\\]\nZatem granica lewostronna wynosi \\(-1/6\\).",
     "kategorie": [
-      "Granice",
-      "Równania / nierówności z wartością bezwzględną"
+      "Granice"
     ],
     "tagi": [
       "Granica jednostronna funkcji"
@@ -1881,8 +1857,7 @@
     "polecenie": "Wykonujemy dziesięć rzutów symetryczną monetą. Wiadomo, że orzeł wypadł dokładnie trzy razy. Oblicz prawdopodobieństwo, że wszystkie trzy orły wypadły w kolejnych rzutach. Zapisz obliczenia.",
     "rozwiazanie": "Wszystkie \\(2^{10}\\) ciągów wyników są jednakowo prawdopodobne. Warunek trzech orłów jest spełniony w \\(\\binom{10}{3}=120\\) ciągach. Blok trzech kolejnych orłów może zaczynać się na jednej z ośmiu pozycji, a poza blokiem wówczas wypadają same reszki. Szukane prawdopodobieństwo warunkowe wynosi \\(8/120=1/15\\).\n\n**Wariant z uwagi CKE**\nPrawdopodobieństwo dokładnie trzech orłów możemy policzyć w schemacie Bernoulliego: \\(\\binom{10}{3}(1/2)^{10}=120/2^{10}\\). Prawdopodobieństwo dokładnie trzech orłów wypadających kolejno wynosi \\(8/2^{10}\\). Iloraz ponownie daje \\(1/15\\).",
     "kategorie": [
-      "Prawdopodobieństwo",
-      "Kombinatoryka"
+      "Prawdopodobieństwo"
     ],
     "tagi": [
       "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)",
@@ -1934,8 +1909,7 @@
     "polecenie": "W trapez równoramienny o podstawach długości \\(a,b\\), gdzie \\(a>b\\), można wpisać okrąg. Wykaż, że pole trapezu przekracza \\(ab\\).",
     "rozwiazanie": "Niech \\(c\\) oznacza długość ramienia trapezu, a \\(h\\) jego wysokość.\n\n**Sposób I — wysokość trapezu**\nZ własności czworokąta opisanego na okręgu \\(2c=a+b\\). Zrzutowanie końców krótszej podstawy na dłuższą daje po bokach odcinki długości \\((a-b)/2\\). Twierdzenie Pitagorasa daje \\(h^2=c^2-(a-b)^2/4=ab\\). Pole to \\((a+b)\\sqrt{ab}/2\\), większe od \\(ab\\) z nierówności między średnimi dla \\(a\\ne b\\).\n\n**Sposób II — promień wpisanego okręgu**\nNiech \\(S\\) będzie środkiem okręgu, a \\(L\\) punktem styczności na prawym ramieniu \\(BC\\). Równość odcinków stycznych i symetria dają \\(|BL|=a/2,\\ |CL|=b/2\\). Proste \\(BS,CS\\) są dwusiecznymi. Kąty przy ramieniu sumują się do \\(180^\\circ\\), więc \\(\\angle BSC=90^\\circ\\). Wysokość \\(SL\\) na przeciwprostokątną to promień \\(r=\\sqrt{|BL||CL|}=\\sqrt{ab}/2\\). Zatem \\(h=2r=\\sqrt{ab}\\). Pole przewyższa \\(ab\\), bo \\((a+b)/2-\\sqrt{ab}=(\\sqrt a-\\sqrt b)^2/2>0\\).\n\n**Sposób III — wzór na pole czworokąta**\nW trapezie równoramiennym można opisać okrąg, a z treści można też wpisać okrąg. Wzór Brahmagupty oraz \\(a+b=2c\\) dają\n\\[P=\\sqrt{(s-a)(s-b)(s-c)^2}=\\sqrt{ab}\\,c,\\qquad s=a+b=2c.\\]\nPo podstawieniu \\(c=(a+b)/2\\) dostajemy \\(P>ab\\) z nierówności między średnimi.",
     "kategorie": [
-      "Planimetria",
-      "Dowodzenie równań / nierówności"
+      "Planimetria"
     ],
     "tagi": [
       "Okrąg wpisany w czworokąt",
@@ -2099,8 +2073,7 @@
     "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(3-m)x^2+(m+1)x-(m+1)^2=0\\]\nma dwa różne rzeczywiste rozwiązania \\(x_1,x_2\\) spełniające \\(x_1^2+x_2^2=x_1x_2+7\\). Zapisz obliczenia.",
     "rozwiazanie": "Równanie jest kwadratowe dla \\(m\\ne3\\). Wyróżnik \\((m+1)^2(13-4m)\\) jest dodatni, gdy \\(m<13/4\\) i \\(m\\ne-1\\). Z warunku na pierwiastki mamy \\((x_1+x_2)^2-3x_1x_2=7\\). Ze wzorów Viète’a wynika\n\\[\\left(\\frac{m+1}{m-3}\\right)^2-3\\frac{(m+1)^2}{m-3}=7.\\]\nMnożąc przez \\((m-3)^2\\) dostajemy \\(-3m^3-3m^2+59m-53=0\\).\n\n**Sposób I — grupowanie**\nLewą stronę zapisujemy jako \\(-3m(m^2-1)-3m(m-1)+53(m-1)\\). Rozkład to \\((m-1)(-3m^2-6m+53)=0\\).\n\n**Sposób II — dzielenie wielomianu**\nWielomian zeruje się w \\(m=1\\). Dzieląc przez \\(m-1\\) schematem Hornera, otrzymujemy współczynniki ilorazu \\(-3,-6,53\\) i resztę \\(0\\).\n\nRozwiązania równania to \\(1\\) oraz \\((-3\\pm2\\sqrt{42})/3\\). Rozwiązanie z plusem przekracza \\(13/4\\). Pozostałe spełniają wszystkie warunki, zatem\n\\[m\\in\\left\\{1,\\frac{-3-2\\sqrt{42}}3\\right\\}.\\]",
     "kategorie": [
-      "Równania kwadratowe z parametrem",
-      "Własności wielomianów"
+      "Równania kwadratowe z parametrem"
     ],
     "tagi": [
       "Rozkład wielomianu stopnia 3 lub wyżej",
@@ -2153,12 +2126,9 @@
     "polecenie": "Rozpatrujemy ostrosłupy prawidłowe trójkątne, w których suma wysokości ostrosłupa i promienia \\(R\\) okręgu opisanego na podstawie wynosi \\(6\\). Objętość jest dana wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}(6R^2-R^3),\\qquad R\\in(0,6).\\]\nOblicz promień \\(R\\) dla ostrosłupa o największej objętości. Zapisz obliczenia i podaj tę objętość.",
     "rozwiazanie": "**Sposób I — pochodna**\nMamy \\(V'(R)=\\frac{3\\sqrt3}{4}R(4-R)\\), dodatnią dla \\(0<R<4\\) i ujemną dla \\(4<R<6\\). Wobec tego \\(V(4)=8\\sqrt3\\) jest największą objętością.\n\n**Sposób II — nierówność między średnimi**\nLiczby \\(R,R,12-2R\\) są dodatnie i mają średnią arytmetyczną \\(4\\). Ich iloczyn nie przekracza \\(4^3=64\\), więc \\(R^2(6-R)\\le32\\). Równość zachodzi wtedy, gdy \\(R=12-2R\\), czyli \\(R=4\\). Stąd \\(V(4)=8\\sqrt3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [
-      "Ostrosłup"
-    ],
+    "tagi": [],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -2206,7 +2176,8 @@
     ],
     "tagi": [
       "Rozkład wielomianu stopnia 3 lub wyżej",
-      "Granica jednostronna funkcji"
+      "Granica jednostronna funkcji",
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 3 stopnia"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -2278,8 +2249,7 @@
     "polecenie": "Wykaż, że dla \\(a=\\log_5 4\\) oraz \\(b=\\log_4 3\\) zachodzi\n\\[\\log_{12}80=\\frac{2a+1}{a(1+b)}.\\]",
     "rozwiazanie": "**Sposób I — zamiana podstawy na \\(4\\)**\nMamy\n\\[\\log_{12}80=\\frac{\\log_4(16\\cdot5)}{\\log_4(4\\cdot3)}=\\frac{2+\\log_4 5}{1+\\log_4 3}.\\]\nPonieważ \\(\\log_4 5=1/a\\) i \\(\\log_4 3=b\\), wynik to \\((2a+1)/(a(1+b))\\).\n\n**Sposób II — przekształcenie prawej strony**\nLicznik \\(2\\log_5 4+1\\) to \\(\\log_5 80\\), a mianownik \\(\\log_5 4(1+\\log_4 3)\\) to \\(\\log_5 4\\cdot\\log_4 12\\). Stąd iloraz to\n\\[\\frac{\\log_4 80}{\\log_4 12}=\\log_{12}80.\\]\n\n**Sposób III — równanie wykładnicze**\nNiech \\(x=\\log_{12}80\\). Ponieważ \\(5=4^{1/a}\\) i \\(3=4^b\\), równanie \\(12^x=80\\) zapisujemy \\(4^{(1+b)x}=4^{2+1/a}\\). Porównując wykładniki, dostajemy szukaną równość.\n\n**Sposób IV — potęga o podstawie \\(12\\)**\nZ \\(12=4\\cdot3=4^{1+b}\\) wynika \\(4=12^{1/(1+b)}\\). Stąd\n\\[80=5\\cdot4^2=4^{1/a+2}=12^{(2a+1)/(a(1+b))}.\\]\nDefinicja logarytmu daje tezę.",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -2363,7 +2333,8 @@
       "Okrąg opisany na czworokącie",
       "Twierdzenie cosinusów",
       "Twierdzenie sinusów",
-      "Trapez"
+      "Trapez",
+      "Trapez równoramienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -2385,8 +2356,7 @@
     "polecenie": "W kwadracie \\(ABCD\\) o boku \\(a\\) punkt \\(E\\) jest środkiem \\(CD\\). Przekątna \\(BD\\) przecina \\(AE\\) w \\(F\\) oraz \\(AC\\) w \\(G\\), dzieląc trójkąt \\(ACE\\) na trójkąt \\(AGF\\) i czworokąt \\(CEFG\\).\n\nWyznacz pola obu tych figur i zapisz obliczenia.\n\n[[rysunek:2024-05-9|Kwadrat ABCD z punktem E w połowie CD. Odcinki AE i AC przecinają BD odpowiednio w F i G.]]",
     "rozwiazanie": "**Sposób I — środek ciężkości**\nPunkt \\(G\\) jest środkiem \\(AC\\), a punkt \\(E\\) jest środkiem \\(CD\\). Zatem \\(DG\\) i \\(AE\\) są środkowymi trójkąta \\(ACD\\), a \\(F\\) jest ich punktem przecięcia. Stąd \\(|FG|=\\frac13|DG|\\). Trójkąty \\(AGF\\) i \\(AGD\\) mają wspólną wysokość do prostej \\(DG\\), więc \\(P_{AGF}=\\frac13P_{AGD}=\\frac{a^2}{12}\\). Ponieważ \\(P_{ACE}=\\frac{a^2}{4}\\), dostajemy \\(P_{CEFG}=\\frac{a^2}{6}\\).\n\n**Sposób II — długości boków \\(AG\\) i \\(FG\\)**\nW trójkącie prostokątnym \\(ADE\\) mamy \\(|AE|=\\frac{\\sqrt5}{2}a\\). Przekątna \\(DB\\) dzieli kąt \\(ADE\\) na połowy, dlatego \\(|AF|:|FE|=|AD|:|DE|=2:1\\) i \\(|AF|=\\frac{\\sqrt5}{3}a\\). Ponadto \\(|AG|=\\frac{\\sqrt2}{2}a\\) oraz \\(AG\\perp FG\\), więc z twierdzenia Pitagorasa \\(|FG|=\\frac{\\sqrt2}{6}a\\). Stąd \\(P_{AGF}=\\frac12|AG||FG|=\\frac{a^2}{12}\\) i \\(P_{CEFG}=\\frac{a^2}{4}-\\frac{a^2}{12}=\\frac{a^2}{6}\\).\n\n**Sposób III — pole \\(ADF\\)**\nZ twierdzenia o dwusiecznej \\(|AF|:|FE|=2:1\\). Trójkąty \\(ADF\\) i \\(FDE\\) mają wspólną wysokość do \\(AE\\), więc ich pola są w stosunku \\(2:1\\). Ich suma to \\(P_{ADE}=\\frac{a^2}{4}\\), zatem \\(P_{ADF}=\\frac{a^2}{6}\\), \\(P_{FDE}=\\frac{a^2}{12}\\). Teraz \\(P_{AGF}=P_{ADG}-P_{ADF}=\\frac{a^2}{12}\\) i \\(P_{CEFG}=P_{GDC}-P_{FDE}=\\frac{a^2}{6}\\).\n\n**Sposób IV — równe pola**\nTrójkąty \\(ADE\\) i \\(ADG\\) mają wspólną podstawę \\(AD\\) i jednakowe wysokości, więc oba mają pole \\(\\frac{a^2}{4}\\). Po odjęciu wspólnego trójkąta \\(ADF\\) dostajemy \\(P_{AGF}=P_{FDE}\\). Ponieważ \\(P_{ADG}=P_{GDC}\\), zachodzi też \\(P_{ADF}=P_{CEFG}\\). Z dwusiecznej \\(DF\\) mamy \\(|AF|:|FE|=2:1\\), więc \\(P_{ADF}=2P_{FDE}\\). Stąd szukane pola to odpowiednio \\(P_{AGF}=\\frac{a^2}{12}\\) i \\(P_{CEFG}=\\frac{a^2}{6}\\).\n\n**Sposób V — prosta równoległa przez \\(F\\)**\n\n[[rysunek:2024-05-9-rozw-5|Odcinek MN przechodzący przez F, równoległy do boku AD kwadratu.]]\n\nProsta równoległa do \\(AD\\) przechodząca przez \\(F\\) przecina \\(AB\\) w \\(M\\) i \\(CD\\) w \\(N\\). Trójkąty \\(ABF\\) i \\(EDF\\) są podobne. Stosunek \\(|AB|:|ED|=2:1\\) daje \\(|FM|=\\frac23a\\) i \\(|FN|=\\frac13a\\). Wobec tego \\(P_{ABF}=\\frac{a^2}{3}\\) i \\(P_{EDF}=\\frac{a^2}{12}\\). Odejmujemy odpowiednio \\(P_{ABG}=\\frac{a^2}{4}\\) od \\(P_{ABF}\\) i \\(P_{EDF}\\) od \\(P_{CDG}=\\frac{a^2}{4}\\). Otrzymujemy \\(P_{AGF}=\\frac{a^2}{12}\\) i \\(P_{CEFG}=\\frac{a^2}{6}\\).\n\n**Sposób VI — podobieństwo trójkątów \\(AFG\\) i \\(AEQ\\)**\n\n[[rysunek:2024-05-9-rozw-6|Punkt Q przecięcia PE z przekątną AC kwadratu.]]\n\nNiech \\(P\\) będzie środkiem \\(BC\\), a \\(Q=PE\\cap AC\\). Ponieważ \\(EQ\\parallel FG\\), trójkąty \\(AFG\\) i \\(AEQ\\) są podobne. Wzdłuż przekątnej \\(AC\\) mamy \\(|AG|=\\frac12|AC|\\) i \\(|AQ|=\\frac34|AC|\\), a \\(|EQ|=\\frac14|AC|\\). Stąd\n\\[P_{AGF}=\\left(\\frac23\\right)^2\\cdot\\frac12\\cdot\\frac34a\\sqrt2\\cdot\\frac14a\\sqrt2=\\frac{a^2}{12}.\\]\nDruga część ma pole \\(\\frac{a^2}{4}-\\frac{a^2}{12}=\\frac{a^2}{6}\\).\n\n**Sposób VII — pola w trapezie \\(ADEG\\)**\n\n[[rysunek:2024-05-9-rozw-7|Podział trapezu ADEG na trójkąty o polach x, y i 4y.]]\n\nZ \\(P_{ADE}=P_{ADG}\\) wynika \\(P_{AGF}=P_{FDE}=x\\). Niech \\(y=P_{EFG}\\). Podobieństwo \\(AFD\\) i \\(EFG\\) w stosunku \\(2:1\\), wynikające z \\(AD\\parallel EG\\) i \\(|AD|=2|EG|\\), daje \\(P_{AFD}=4y\\). Pola \\(DEG\\) i \\(AGD\\) dają układ \\(x+y=\\frac{a^2}{8}\\), \\(x+4y=\\frac{a^2}{4}\\). Stąd \\(y=\\frac{a^2}{24}\\) i \\(x=\\frac{a^2}{12}\\). Ponieważ \\(P_{GCE}=P_{GDE}=x+y\\), dostajemy \\(P_{CEFG}=x+2y=\\frac{a^2}{6}\\).\n\n**Sposób VIII — współrzędne**\n\n[[rysunek:2024-05-9-rozw-8|Kwadrat ABCD oraz punkty E, F, G w układzie współrzędnych.]]\n\nPrzyjmijmy \\(A=(0,0)\\), \\(B=(a,0)\\), \\(C=(a,a)\\), \\(D=(0,a)\\). Wówczas \\(E=(a/2,a)\\), \\(G=(a/2,a/2)\\). Proste \\(AE\\) i \\(BD\\) mają równania \\(y=2x\\) i \\(y=a-x\\), więc \\(F=(a/3,2a/3)\\). Wzór wyznacznikowy na pole daje \\(P_{AGF}=\\frac{a^2}{12}\\), \\(P_{ACE}=\\frac{a^2}{4}\\), a z różnicy \\(P_{CEFG}=\\frac{a^2}{6}\\).\n\n**Sposób IX — jednostki kratowe**\n\n[[rysunek:2024-05-9-rozw-9|Kwadrat ABCD w siatce o kroku a/12.]]\n\nWybieramy kwadratową siatkę o kroku \\(u=a/12\\) i umieszczamy na niej \\(A=(0,0)\\), \\(B=(12u,0)\\), \\(C=(12u,12u)\\), \\(D=(0,12u)\\), \\(E=(6u,12u)\\), \\(G=(6u,6u)\\), \\(F=(4u,8u)\\). Z podstawy \\(AB\\) i wysokości \\(8u\\) albo \\(6u\\) dostajemy \\(P_{AGF}=P_{ABF}-P_{ABG}=48u^2-36u^2=12u^2=\\frac{a^2}{12}\\). Z podstaw \\(CD=12u\\) i \\(DE=6u\\) mamy \\(P_{CEFG}=P_{CDG}-P_{DFE}=36u^2-12u^2=24u^2=\\frac{a^2}{6}\\).",
     "kategorie": [
-      "Planimetria",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -2441,8 +2411,7 @@
     "polecenie": "Środek \\(S\\) okręgu o promieniu \\(\\sqrt5\\) leży na prostej \\(y=x+1\\). Punkt \\(A=(1,2)\\) leży poza okręgiem. Dwie styczne poprowadzone z \\(A\\) dotykają okręgu w punktach \\(B,C\\). Pole czworokąta \\(ABSC\\) wynosi \\(15\\).\n\nWyznacz wszystkie możliwe współrzędne \\(S\\) i zapisz obliczenia.",
     "rozwiazanie": "Promienie \\(SB,SC\\) są prostopadłe do stycznych. Odcinki styczne mają wspólną długość \\(u\\), więc pole dwóch trójkątów prostokątnych to \\(u\\sqrt5=15\\). Wynika \\(u=3\\sqrt5\\). Zapiszmy \\(S=(t,t+1)\\).\n\n**Sposób I — twierdzenie Pitagorasa**\nW \\(ABS\\) mamy \\(|AS|^2=(3\\sqrt5)^2+(\\sqrt5)^2=50\\). Stąd\n\\[(t-1)^2+(t+1-2)^2=50,\\qquad |t-1|=5.\\]\n\n**Sposób II — równania stycznych**\nKąt ostry między każdą styczną i \\(AS\\) ma tangens \\(\\sqrt5/u=1/3\\). Ani pionowa, ani prostopadła do \\(AS\\) nie tworzy takiego kąta. Dla współczynnika kierunkowego \\(m\\) stycznej zachodzi \\(\\left|\\frac{m-1}{m+1}\\right|=1/3\\), skąd \\(m=2\\) lub \\(m=1/2\\). Jedna ze stycznych przechodzących przez \\(A\\) ma więc równanie \\(2x-y=0\\). Odległość \\(S\\) od niej wynosi \\(|t-1|/\\sqrt5=\\sqrt5\\), znów \\(|t-1|=5\\).\n\nOba sposoby dają \\(S=(6,7)\\) lub \\(S=(-4,-3)\\).",
     "kategorie": [
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -2468,12 +2437,12 @@
     "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[x^2-(3m+1)x+2m^2+m+1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające warunek\n\\[x_1^3+x_2^3+3x_1x_2(x_1+x_2-3)\\le3m-7.\\]\nZapisz obliczenia.",
     "rozwiazanie": "Wyróżnik wynosi \\(m^2+2m-3=(m-1)(m+3)\\), więc istnieją dwa różne pierwiastki dla \\(m<-3\\) lub \\(m>1\\).\n\nPonieważ \\(x_1^3+x_2^3+3x_1x_2(x_1+x_2)=(x_1+x_2)^3\\), warunek przyjmuje postać \\((x_1+x_2)^3-9x_1x_2\\le3m-7\\). Wstawiamy wzory Viète’a:\n\\[(3m+1)^3-9(2m^2+m+1)\\le3m-7.\\]\nPo rozwinięciu i rozkładzie dostajemy \\((3m-1)(3m+1)^2\\le0\\). Zbiór rozwiązań to \\(m\\le1/3\\), w tym \\(m=-1/3\\). Po przecięciu z warunkiem wyróżnika zostaje \\(m\\in(-\\infty,-3)\\).",
     "kategorie": [
-      "Równania kwadratowe z parametrem",
-      "Własności wielomianów"
+      "Równania kwadratowe z parametrem"
     ],
     "tagi": [
       "Rozkład wielomianu stopnia 3 lub wyżej",
-      "Wzory Viete'a - przekształcenie równania / nierówności"
+      "Wzory Viete'a - przekształcenie równania / nierówności",
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 3 stopnia"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -2521,11 +2490,9 @@
     "polecenie": "Rozważ graniastosłupy prawidłowe trójkątne o objętości \\(3456\\). Pole powierzchni całkowitej w zależności od długości \\(a\\) krawędzi podstawy jest dane wzorem\n\\[P(a)=\\frac{a^2\\sqrt3}{2}+\\frac{13824\\sqrt3}{a},\\qquad a\\in(0,8\\sqrt3].\\]\nWyznacz długość krawędzi podstawy, przy której pole powierzchni całkowitej jest najmniejsze. Zapisz obliczenia i podaj to pole.",
     "rozwiazanie": "Liczymy pochodną \\(P'(a)=a\\sqrt3-13824\\sqrt3/a^2\\). Jest ujemna dla \\(0<a<24\\), więc na całej dziedzinie \\((0,8\\sqrt3]\\) funkcja maleje. Najmniejsze pole wypada na końcu dziedziny dla \\(a=8\\sqrt3\\):\n\\[P(8\\sqrt3)=96\\sqrt3+1728.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Graniastosłup",
       "Pochodna funkcji wymiernej",
       "Max / min nie w ekstremum"
     ],
@@ -2622,8 +2589,7 @@
     "polecenie": "Dana jest funkcja \\(f(x)=2x^3-4x^2+9x\\) dla \\(x\\in\\mathbb R\\). Punkt \\(P=(x_0,18)\\) należy do jej wykresu.\n\nOblicz \\(x_0\\) i wyznacz równanie stycznej do wykresu \\(f\\) w \\(P\\). Zapisz obliczenia.",
     "rozwiazanie": "Ponieważ \\(P=(x_0,18)\\) leży na wykresie, mamy\n\\[0=2x_0^3-4x_0^2+9x_0-18=(x_0-2)(2x_0^2+9).\\]\nDrugi czynnik jest dodatni, więc \\(x_0=2\\). Pochodna \\(f'(x)=6x^2-8x+9\\) przyjmuje w \\(2\\) wartość \\(17\\). Styczna przechodzi przez \\((2,18)\\), więc \\(y-18=17(x-2)\\), czyli \\(y=17x-16\\).",
     "kategorie": [
-      "Styczna do wykresu funkcji",
-      "Własności wielomianów"
+      "Styczna do wykresu funkcji"
     ],
     "tagi": [
       "Grupowanie",
@@ -2649,9 +2615,7 @@
     "polecenie": "Wykaż, że dla każdej liczby rzeczywistej \\(a>0\\) zachodzi\n\\[a^2+\\frac{16}{a}\\ge12.\\]",
     "rozwiazanie": "**Sposób I — rozkład wielomianu**\nPo pomnożeniu przez \\(a>0\\) otrzymujemy równoważny warunek \\(W(a)=a^3-12a+16\\ge0\\). Liczba \\(2\\) jest pierwiastkiem \\(W\\), więc\n\\[W(a)=(a-2)(a^2+2a-8)=(a-2)^2(a+4)\\ge0.\\]\nRozkład można też otrzymać przez grupowanie:\n\\[a(a^2-16)+4(a+4)=(a+4)(a^2-4a+4).\\]\n\n**Sposób II — średnie arytmetyczna i geometryczna**\nDla dodatnich liczb \\(a^2,8/a,8/a\\) zachodzi\n\\[\\frac{a^2+16/a}{3}\\ge\\sqrt[3]{a^2(8/a)(8/a)}=4.\\]\nMnożąc przez \\(3\\), otrzymujemy tezę.\n\n**Sposób III — pochodna**\nDla \\(f(a)=a^2+16/a\\) mamy \\(f'(a)=(2a^3-16)/a^2\\). Pochodna jest ujemna dla \\(0<a<2\\) i dodatnia dla \\(a>2\\). Minimum wynosi \\(f(2)=12\\), zatem nierówność jest prawdziwa dla każdego \\(a>0\\).",
     "kategorie": [
-      "Dowodzenie równań / nierówności",
-      "Optymalizacja funkcji",
-      "Własności wielomianów"
+      "Dowodzenie równań / nierówności"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -2755,8 +2719,7 @@
     "polecenie": "Trójkąt \\(ABC\\) jest wpisany w okrąg o równaniu \\((x-1)^2+(y-2)^2=25\\). Bok \\(AB\\) należy do prostej \\(4x-3y+2=0\\). Wysokość \\(CD\\) dzieli \\(AB\\) tak, że \\(|AD|=4|DB|\\).\n\nOblicz pole trójkąta \\(ABC\\). Zapisz obliczenia.",
     "rozwiazanie": "Prosta \\(4x-3y+2=0\\) przechodzi przez środek \\(S=(1,2)\\), więc \\(AB\\) jest średnicą długości \\(10\\). Z \\(|AD|=4|DB|\\) dostajemy \\(|AD|=8\\) i \\(|DB|=2\\).\n\n**Sposób I — wysokość w trójkącie prostokątnym**\nKąt \\(ACB\\) jest prosty jako wpisany i oparty na średnicy. Stosujemy zależność między wysokością na przeciwprostokątną a powstałymi odcinkami: \\(|CD|=\\sqrt{|AD||DB|}=4\\). Pole wynosi \\(\\tfrac12\\cdot10\\cdot4=20\\).\n\n**Sposób II — współrzędne**\nWyznaczamy końce średnicy jako przecięcia prostej z okręgiem. Z \\(x=(3y-2)/4\\) i równania okręgu wynika \\((y-2)^2=16\\). Przyjmujemy \\(A=(-2,-2)\\), \\(B=(4,6)\\). Ponieważ \\(\\overrightarrow{AD}=\\tfrac45\\overrightarrow{AB}\\), mamy \\(D=(14/5,22/5)\\). Prosta prostopadła do \\(AB\\) przez \\(D\\) ma równanie \\(y=-3x/4+13/2\\). Po podstawieniu do równania okręgu otrzymujemy \\((x-6)(5x+2)=0\\), czyli \\(C=(6,2)\\) lub \\(C=(-2/5,34/5)\\). W obu przypadkach \\(|CD|=4\\).\n\nPrzy odwrotnym oznaczeniu \\(A\\) i \\(B\\) mamy \\(D=(-4/5,-2/5)\\) oraz prostą \\(y=-3x/4-1\\). Daje to \\(C=(-4,2)\\) lub \\(C=(12/5,-14/5)\\), wciąż z \\(|CD|=4\\). Pole w każdym przypadku wynosi \\(20\\).",
     "kategorie": [
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Równanie kwadratowe",
@@ -2967,8 +2930,7 @@
     "polecenie": "Liczby rzeczywiste \\(x,y\\) spełniają \\(x+y=4\\) oraz \\(x^3-x^2y\\le xy^2-y^3\\). Wykaż, że \\(x=y=2\\).",
     "rozwiazanie": "**Sposób I — podstawienie**\nPodstawiamy \\(y=4-x\\) do nierówności\n\\[x^3-x^2(4-x)\\le x(4-x)^2-(4-x)^3.\\]\nPo rozwinięciu nawiasów i zebraniu wyrazów dostajemy \\(16x^2-64x+64\\le0\\), czyli \\((4x-8)^2\\le0\\). Stąd \\(x=2\\) i \\(y=4-x=2\\).\n\n**Sposób II — grupowanie**\nPrzenosimy wszystkie wyrazy na lewą stronę i rozkładamy ją na czynniki.\n\\[(x-y)(x^2-y^2)=(x+y)(x-y)^2\\le0.\\]\nPonieważ \\(x+y=4>0\\), otrzymujemy \\(x=y\\), a następnie \\(x=y=2\\).",
     "kategorie": [
-      "Dowodzenie równań / nierówności",
-      "Własności wielomianów"
+      "Dowodzenie równań / nierówności"
     ],
     "tagi": [
       "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
@@ -2995,8 +2957,7 @@
     "polecenie": "W trójkącie prostokątnym \\(ABC\\) zachodzi \\(\\angle ABC=90^\\circ\\) i \\(\\angle CAB=60^\\circ\\). Punkty \\(K,L\\) leżą odpowiednio na \\(AB,BC\\) i \\(|BK|=|BL|=1\\). Odcinek \\(KL\\) przecina wysokość \\(BD\\) w punkcie \\(N\\). Ponadto \\(|AD|=2\\).\n\nWykaż, że \\(|ND|=\\sqrt3+1\\).\n\n[[rysunek:2023-05-5|Trójkąt prostokątny ABC z kątem 60° przy A. Wysokość BD przecina odcinek KL w N.]]",
     "rozwiazanie": "Z kątów \\(30^\\circ,60^\\circ,90^\\circ\\) w trójkącie \\(DAB\\) mamy \\(|AB|=2|AD|=4\\) i \\(|BD|=|AD|\\sqrt3=2\\sqrt3\\).\n\n**Sposób I — pola**\nNiech \\(u=|BN|\\). Trójkąty \\(BLN\\) i \\(KBN\\) razem wypełniają \\(KBL\\), którego pole to \\(\\tfrac12\\). Zatem\n\\[\\frac12u\\sin60^\\circ+\\frac12u\\sin30^\\circ=\\frac12,\\]\nskąd \\(u=2/(\\sqrt3+1)=\\sqrt3-1\\). Wobec tego \\(|ND|=|BD|-u=\\sqrt3+1\\).\n\n**Sposób II — twierdzenie sinusów**\nW trójkącie \\(BNK\\) kąty przy \\(B,K,N\\) to odpowiednio \\(30^\\circ,45^\\circ,105^\\circ\\). Dlatego \\(|BN|=\\sin45^\\circ/\\sin105^\\circ=\\sqrt3-1\\) i \\(|ND|=\\sqrt3+1\\).\n\n**Sposób III — wysokość trójkąta \\(BLN\\)**\n\n[[rysunek:2023-05-5-rozw-3|Rzut N na BL w punkcie E. Boki BE i EL mają długości x i 1−x.]]\n\nOznaczmy przez \\(E\\) rzut \\(N\\) na \\(BL\\) i przyjmijmy \\(x=|BE|\\). W \\(BNE\\) zachodzi \\(|NE|=\\sqrt3x\\) i \\(|BN|=2x\\). Trójkąt \\(ELN\\) jest równoramienny i prostokątny, więc \\(|NE|=|EL|=1-x\\). Rozwiązujemy \\(\\sqrt3x=1-x\\) i otrzymujemy \\(|BN|=\\sqrt3-1\\), a stąd \\(|ND|=\\sqrt3+1\\).\n\n**Sposób IV — twierdzenie cosinusów**\nNiech \\(s=|KN|\\), \\(t=|LN|\\), \\(u=|BN|\\). Ponieważ \\(s+t=\\sqrt2\\), dodanie równań \\(u^2=1+s^2-\\sqrt2s\\) i \\(u^2=1+t^2-\\sqrt2t\\) daje \\(2u^2=s^2+t^2\\). Z twierdzenia cosinusów przy wierzchołku \\(B\\) otrzymujemy także \\(s^2+t^2=2+2u^2-(\\sqrt3+1)u\\). Stąd \\(u=\\sqrt3-1\\) i \\(|ND|=\\sqrt3+1\\).\n\n**Sposób V — współrzędne**\n\n[[rysunek:2023-05-5-rozw-5|Trójkąt w układzie współrzędnych z B w początku oraz prostymi y = 1−x i y = √3x.]]\n\nUstalamy \\(B=(0,0)\\), \\(A=(0,4)\\), \\(K=(0,1)\\) i \\(L=(1,0)\\), a \\(C\\) leży na dodatniej półosi poziomej. Proste \\(KL\\) i \\(BD\\) mają równania \\(y=1-x\\) i \\(y=\\sqrt3x\\), więc \\(N=(1,\\sqrt3)/(\\sqrt3+1)\\). Równanie prostej \\(AC\\) to \\(x/\\sqrt3+y-4=0\\). Odległość \\(N\\) od \\(AC\\) to\n\\[\\frac{4-\\left(\\frac1{\\sqrt3}+\\sqrt3\\right)\\frac1{\\sqrt3+1}}{\\sqrt{1+\\frac13}}=\\sqrt3+1.\\]\nOdległość ta jest długością \\(ND\\).\n\n**Sposób VI — równoległa do \\(KL\\)**\n\n[[rysunek:2023-05-5-rozw-6|Rzut D na BC w E oraz punkt F na równoległej do KL przez D.]]\n\nNiech \\(E\\) będzie rzutem \\(D\\) na \\(BC\\), a \\(F\\) punktem przecięcia prostej \\(BC\\) z równoległą do \\(KL\\) przechodzącą przez \\(D\\). W \\(BDE\\) mamy \\(|BE|=\\sqrt3\\) i \\(|DE|=3\\). Trójkąt \\(DEF\\) ma kąty \\(45^\\circ,45^\\circ,90^\\circ\\), więc \\(|EF|=3\\) i \\(|LF|=\\sqrt3-1+3=2+\\sqrt3\\). Z twierdzenia Talesa \\(|ND|=(2+\\sqrt3)|BN|=(2+\\sqrt3)(2\\sqrt3-|ND|)\\), co daje \\(|ND|=\\sqrt3+1\\).\n\n**Sposób VII — równoległa do \\(BC\\)**\n\n[[rysunek:2023-05-5-rozw-7|Równoległa do BC przez D przecina AB w F oraz przedłużenie KL w E.]]\n\nRównoległa do \\(BC\\) przez \\(D\\) przecina \\(KL\\) w \\(E\\) oraz \\(AB\\) w \\(F\\). Z kątów \\(30^\\circ\\) i \\(60^\\circ\\) w \\(AFD\\) mamy \\(|AF|=1\\), \\(|DF|=\\sqrt3\\), więc \\(|FK|=2\\). Trójkąt \\(KFE\\) jest równoramienny i prostokątny, skąd \\(|EF|=2\\) oraz \\(|ED|=2+\\sqrt3\\). Podobieństwo \\(DEN\\) i \\(BLN\\) daje \\(|ND|=(2+\\sqrt3)(2\\sqrt3-|ND|)\\), stąd \\(|ND|=\\sqrt3+1\\).",
     "kategorie": [
-      "Planimetria",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
       "Podobieństwo trójkątów",
@@ -3057,8 +3018,10 @@
     "tagi": [
       "Podobieństwo trójkątów",
       "Własności trójkąta prostokątnego",
-      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)",
-      "Graniastosłup"
+      "Graniastosłup",
+      "Własności trójkąta równobocznego",
+      "Odcinek łączący środki ramion trójkąta / trapezu",
+      "Ostrosłup"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -3085,7 +3048,6 @@
     "tagi": [
       "Okrąg wpisany w czworokąt",
       "Twierdzenie sinusów",
-      "Własności trójkąta równobocznego",
       "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
@@ -3133,8 +3095,7 @@
     "polecenie": "Zaczynamy od kwadratu \\(K_1\\) o boku długości \\(a\\). Dla każdego całkowitego \\(n\\ge2\\) kwadrat \\(K_n\\) tworzymy tak, że każdy jego wierzchołek leży na innym boku kwadratu \\(K_{n-1}\\) i dzieli ten bok w stosunku \\(1:3\\).\n\nObwody \\(K_1,K_2,K_3,\\ldots\\) tworzą nieskończony ciąg geometryczny. Oblicz sumę wszystkich jego wyrazów. Zapisz obliczenia.\n\n[[rysunek:2023-05-10|Ciąg kwadratów wpisywanych kolejno wewnątrz poprzedniego. Bok pierwszego kwadratu ma długość a.]]",
     "rozwiazanie": "Każdy bok nowego kwadratu jest przeciwprostokątną trójkąta o przyprostokątnych równych \\(\\tfrac14\\) i \\(\\tfrac34\\) boku poprzedniego kwadratu. Z twierdzenia Pitagorasa stosunek kolejnych boków, a więc także obwodów, wynosi\n\\[q=\\sqrt{\\left(\\frac14\\right)^2+\\left(\\frac34\\right)^2}=\\frac{\\sqrt{10}}4.\\]\nPierwszy obwód jest równy \\(4a\\) i \\(0<q<1\\). Zatem suma obwodów to\n\\[\\frac{4a}{1-\\sqrt{10}/4}=\\frac{8(4+\\sqrt{10})a}{3}.\\]",
     "kategorie": [
-      "Ciągi",
-      "Planimetria"
+      "Ciągi"
     ],
     "tagi": [
       "Szereg geometryczny",
@@ -3186,8 +3147,7 @@
     "polecenie": "Dla dowolnej liczby dodatniej \\(x\\) dana jest funkcja\n\\[f(x)=81^{\\log_3 x}+\\frac{2\\log_2\\sqrt{27}\\,\\log_3 2}{3}x^2-6x.\\]\nWykaż, że ten wzór można równoważnie zapisać jako \\(f(x)=x^4+x^2-6x\\).",
     "rozwiazanie": "Dla \\(x>0\\) pierwszy składnik przekształcamy do postaci\n\\[81^{\\log_3 x}=3^{4\\log_3 x}=3^{\\log_3(x^4)}=x^4.\\]\nWspółczynnik przy \\(x^2\\) jest równy\n\\[\\frac23\\log_2\\sqrt{27}\\cdot\\log_3 2\n=\\frac23\\cdot\\frac32\\cdot\\log_2 3\\cdot\\log_3 2=1.\\]\nCałe wyrażenie ma więc postać \\(x^4+x^2-6x\\).",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -3210,8 +3170,7 @@
     "polecenie": "Dla \\(x>0\\) rozpatrujemy funkcję\n\\[f(x)=81^{\\log_3 x}+\\frac{2\\log_2\\sqrt{27}\\,\\log_3 2}{3}x^2-6x.\\]\nOblicz jej najmniejszą wartość i zapisz obliczenia.\n\nWskazówka. Możesz przyjąć, że \\(f(x)=x^4+x^2-6x\\).",
     "rozwiazanie": "Z poprzedniej części mamy \\(f(x)=x^4+x^2-6x\\) dla \\(x>0\\). Pochodna ma postać\n\\[f'(x)=4x^3+2x-6=(x-1)(4x^2+4x+6).\\]\nDrugi czynnik jest dodatni dla \\(x>0\\). Funkcja maleje do \\(x=1\\) i rośnie po \\(x=1\\), więc najmniejsza wartość to \\(f(1)=1+1-6=-4\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Własności wielomianów"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Rozkład wielomianu stopnia 3 lub wyżej"
@@ -3288,10 +3247,11 @@
     "polecenie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=\\left|-\\frac14x^2+3x-5\\right|\\) dla \\(x\\in\\mathbb R\\). Na rysunku przedstawiono fragment jej wykresu. Wyznacz zbiór wartości, które \\(g\\) przyjmuje na przedziale \\([9,11]\\). Zapisz obliczenia.\n\n[[rysunek:2022-12-2|Fragment wykresu funkcji g. Krzywa ma dwa ostre naroża na osi poziomej oraz lokalne maksimum między nimi.]]",
     "rozwiazanie": "Oznaczmy \\(f(x)=-\\tfrac14x^2+3x-5=-\\tfrac14(x-2)(x-10)\\). Wówczas \\(g=|f|\\), a miejscami zerowymi obu funkcji są \\(2\\) i \\(10\\). Parabola \\(f\\) ma wierzchołek przy \\(x=6\\) oraz \\(f(x)\\ge0\\) dla \\(2\\le x\\le10\\).\n\nW przedziale \\([9,10]\\) funkcja \\(g=f\\) maleje do \\(g(10)=0\\), a w przedziale \\([10,11]\\) funkcja \\(g=-f\\) rośnie od zera. Na końcach mamy \\(g(9)=\\frac74\\) oraz \\(g(11)=\\frac94\\). Z ciągłości wynika, że zbiorem wartości na \\([9,11]\\) jest \\(\\left[0,\\frac94\\right]\\).",
     "kategorie": [
-      "Równania / nierówności z wartością bezwzględną"
+      "Różne"
     ],
     "tagi": [
-      "Max / min nie w ekstremum"
+      "Max / min nie w ekstremum",
+      "Parabola w układzie współrzędnych"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -3393,7 +3353,8 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Grupowanie"
+      "Grupowanie",
+      "Przekształcenie sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -3527,7 +3488,9 @@
       "Podobieństwo trójkątów",
       "Ostrosłup",
       "Kąt dwuścienny",
-      "Kąt między prostą i płaszczyzną"
+      "Własności trójkąta prostokątnego",
+      "Trapez",
+      "Trapez równoramienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -3554,7 +3517,10 @@
     "tagi": [
       "Okrąg opisany na czworokącie",
       "Twierdzenie sinusów",
-      "Trapez"
+      "Trapez",
+      "Przekształcenie sin / cos",
+      "Własności trójkąta prostokątnego",
+      "Trapez równoramienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -3576,8 +3542,7 @@
     "polecenie": "Prosta \\(k\\colon x+y-9=0\\) przecina parabolę \\(y=\\frac14x^2-\\frac32x+\\frac14\\) w punktach \\(A\\) i \\(B\\). Punkt \\(A\\) ma pierwszą współrzędną dodatnią, a \\(B\\) ujemną. Prosta \\(l\\) równoległa do \\(k\\) jest styczna do paraboli w punkcie \\(C\\). Oblicz odległość \\(C\\) od prostej \\(k\\) i pole trójkąta \\(ABC\\). Zapisz obliczenia.",
     "rozwiazanie": "Podstawiamy \\(y=9-x\\) do równania paraboli. Dostajemy \\(x^2-2x-35=0\\), skąd \\(x=-5\\) lub \\(x=7\\). Zgodnie ze znakami odciętych \\(A=(7,2)\\) oraz \\(B=(-5,14)\\).\n\nProsta \\(k\\) ma nachylenie \\(-1\\). Pochodna funkcji określającej parabolę to \\(f'(x)=\\frac12x-\\frac32\\), więc warunek styczności prostej równoległej do \\(k\\) daje \\(\\frac12x_C-\\frac32=-1\\). Stąd \\(x_C=1\\), \\(C=(1,-1)\\). Odległość \\(C\\) od \\(k\\) wynosi\n\\[d(C,k)=\\frac{|1-1-9|}{\\sqrt{1^2+1^2}}=\\frac9{\\sqrt2}.\\]\n\n**Pole z podstawy i wysokości**\nDługość podstawy to \\(|AB|=\\sqrt{(-12)^2+12^2}=12\\sqrt2\\). Odległość \\(d(C,k)\\) jest wysokością, zatem pole wynosi \\(\\tfrac12\\cdot12\\sqrt2\\cdot\\tfrac9{\\sqrt2}=54\\).\n\n**Wariant z uwagi CKE — wyznacznik**\nWektory \\(\\overrightarrow{AB}=(-12,12)\\) i \\(\\overrightarrow{AC}=(-6,-3)\\) dają\n\\[P_{ABC}=\\frac12\\bigl|(-12)(-3)-12(-6)\\bigr|=54.\\]",
     "kategorie": [
-      "Geometria analityczna",
-      "Styczna do wykresu funkcji"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Równanie kwadratowe",
@@ -3654,9 +3619,7 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [
-      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
-    ],
+    "tagi": [],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -3882,8 +3845,7 @@
     "polecenie": "Podstawa graniastosłupa prostego \\(ABCDA_1B_1C_1D_1\\) jest trapezem równoramiennym \\(ABCD\\) wpisanym w okrąg o środku \\(O\\) i promieniu \\(R\\). Dłuższa podstawa \\(AB\\) jest średnicą okręgu. Krótsza podstawa jest cięciwą odpowiadającą kątowi środkowemu \\(2\\alpha\\). Przekątna ściany bocznej zawierającej ramię trapezu tworzy z płaszczyzną podstawy kąt \\(\\alpha\\).\n\nWyznacz objętość graniastosłupa w zależności od \\(R\\) i \\(\\alpha\\).\n\n[[rysunek:2022-06-12|Graniastosłup prosty na trapezie równoramiennym wpisanym w okrąg. Zaznaczono promień R i kąt środkowy 2α.]]",
     "rozwiazanie": "Ponieważ kąt środkowy \\(COD\\) ma miarę \\(2\\alpha\\), kąt wpisany \\(DBC\\) oparty na tym samym łuku ma miarę \\(\\alpha\\). Z twierdzenia sinusów w trójkącie \\(BCD\\), wpisanym w okrąg o promieniu \\(R\\), dostajemy\n\\[\\frac{|CD|}{\\sin\\alpha}=2R,\\qquad |CD|=2R\\sin\\alpha.\\]\n\nTrójkąty \\(AOD\\) i \\(BOC\\) są przystające. Ponieważ \\(A,O,B\\) leżą na jednej prostej, mamy\n\\[|\\angle BOC|=\\frac{180^\\circ-2\\alpha}{2}=90^\\circ-\\alpha.\\]\nWysokość \\(h\\) trapezu to odległość \\(C\\) od \\(AB\\), zatem \\(h=R\\sin(90^\\circ-\\alpha)=R\\cos\\alpha\\).\n\nW trójkącie \\(BOC\\) twierdzenie cosinusów daje\n\\[|BC|^2=2R^2-2R^2\\cos(90^\\circ-\\alpha)=2R^2(1-\\sin\\alpha).\\]\nRzutem przekątnej \\(B_1C\\) na podstawę jest \\(BC\\), więc dla wysokości graniastosłupa \\(H\\) mamy\n\\[H=|BC|\\tan\\alpha=R\\sqrt{2-2\\sin\\alpha}\\tan\\alpha.\\]\n\nSzukana objętość jest iloczynem pola trapezu i wysokości graniastosłupa. Po podstawieniu:\n\\[V=\\frac{2R+2R\\sin\\alpha}{2}\\,R\\cos\\alpha\\,R\\sqrt{2-2\\sin\\alpha}\\tan\\alpha.\\]\nStąd \\(V=R^3\\sin\\alpha\\,(1+\\sin\\alpha)\\sqrt{2-2\\sin\\alpha}\\).\n\nW kryteriach punktowania na stronie 22 przed przykładowym rozwiązaniem CKE wpisano przez pomyłkę \\(1-\\sin\\alpha\\) zamiast \\(1+\\sin\\alpha\\). Pełne rozwiązanie w PDF podaje powyższy poprawny wynik.",
     "kategorie": [
-      "Geometria przestrzenna",
-      "Planimetria"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Okrąg opisany na czworokącie",
@@ -3915,8 +3877,7 @@
     "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(x-4)\\big[x^2+(m-3)x+m^2-m-6\\big]=0\\]\nma trzy różne pierwiastki rzeczywiste \\(x_1,x_2,x_3\\) spełniające\n\\[x_1x_2x_3>x_1^2+x_2^2+x_3^2-5m-51.\\]",
     "rozwiazanie": "Jednym z pierwiastków jest \\(x_3=4\\). Oznaczmy \\(Q_m(x)=x^2+(m-3)x+m^2-m-6\\). Pozostałe dwa pierwiastki muszą być rzeczywiste, różne i różne od \\(4\\). Wyróżnik wynosi\n\\[\\Delta=(m-3)^2-4(m^2-m-6)=(m-3)(-3m-11).\\]\nWarunek \\(\\Delta>0\\) daje \\(-\\frac{11}3<m<3\\). Ponadto \\(Q_m(4)=m^2+3m-2\\ne0\\), więc \\(m\\ne\\frac{-3\\pm\\sqrt{17}}2\\).\n\nDla pierwiastków \\(Q_m\\) mamy \\(x_1+x_2=3-m\\) i \\(x_1x_2=m^2-m-6\\). Nierówność z zadania, po podstawieniu \\(x_3=4\\) i użyciu \\(x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2\\), jest równoważna\n\\[\\begin{aligned}\n0&<6x_1x_2-(x_1+x_2)^2+5m+35\\\\\n&=6(m^2-m-6)-(3-m)^2+5m+35\\\\\n&=5(m-1)(m+2).\n\\end{aligned}\\]\nStąd \\(m<-2\\) lub \\(m>1\\). Bierzemy część wspólną warunków. Liczba \\(\\frac{-3+\\sqrt{17}}2\\) leży między \\(-2\\) a \\(1\\), więc już jest wykluczona. Ostatecznie\n\\[m\\in\\left(-\\frac{11}3,\\frac{-3-\\sqrt{17}}2\\right)\n\\cup\\left(\\frac{-3-\\sqrt{17}}2,-2\\right)\\cup(1,3).\\]",
     "kategorie": [
-      "Równania kwadratowe z parametrem",
-      "Własności wielomianów"
+      "Równania kwadratowe z parametrem"
     ],
     "tagi": [
       "Wzory Viete'a - przekształcenie równania / nierówności"
@@ -3945,8 +3906,8 @@
     ],
     "tagi": [
       "Okrąg w układzie współrzędnych",
-      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)",
-      "Wzajemne położenie dwóch okręgów względem siebie"
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4173,7 +4134,8 @@
       "Podobieństwo trójkątów",
       "Twierdzenie cosinusów",
       "Twierdzenie sinusów",
-      "Trapez"
+      "Trapez",
+      "sin / cos podwojonego kąta (rozwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4256,7 +4218,8 @@
       "Suma / różnica sin / cos",
       "Trzy kolejne wielokrotności x jako argument",
       "Iloczyn sin / cos",
-      "Sinus potrojonego kąta"
+      "Sinus potrojonego kąta",
+      "Grupowanie"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4304,8 +4267,7 @@
     "polecenie": "Graniastosłup prosty \\(ABCDEFGH\\) ma prostokątną podstawę \\(ABCD\\). Przekątne \\(AH,AF\\) ścian bocznych tworzą kąt ostry \\(\\alpha\\) o sinusie \\(12/13\\). Pole trójkąta \\(AFH\\) wynosi \\(26{,}4\\).\n\nOblicz wysokość \\(h\\) tego graniastosłupa.\n\n[[rysunek:2022-05-13|Graniastosłup prosty o podstawie prostokątnej. Przekątne AF i AH tworzą kąt α. Zaznaczono wysokość h.]]",
     "rozwiazanie": "Oznaczmy \\(|AD|=a,\\ |AB|=b,\\ |AH|=d,\\ |AF|=e,\\ |FH|=c\\). Z pola trójkąta \\(AFH\\) mamy\n\\[26{,}4=\\tfrac12de\\sin\\alpha=\\tfrac12de\\cdot\\tfrac{12}{13},\\]\nwięc \\(de=57{,}2\\). Kąt jest ostry, dlatego \\(\\cos\\alpha=\\sqrt{1-(12/13)^2}=\\frac5{13}\\). Twierdzenie cosinusów daje\n\\[c^2=d^2+e^2-2de\\cos\\alpha=d^2+e^2-44.\\]\nPonieważ \\(|FH|\\) jest przekątną prostokąta \\(EFGH\\), mamy \\(c^2=a^2+b^2\\). Przekątne ścian bocznych spełniają \\(d^2=a^2+h^2\\) i \\(e^2=b^2+h^2\\). Podstawiamy i dostajemy \\(2h^2=44\\). Wysokość wynosi \\(h=\\sqrt{22}\\).",
     "kategorie": [
-      "Geometria przestrzenna",
-      "Planimetria"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Twierdzenie cosinusów",
@@ -4363,7 +4325,8 @@
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
-      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)",
+      "Własności trójkąta równobocznego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4532,10 +4495,12 @@
     "polecenie": "Brzeg jeziora zamykają łuki wykresów \\(f(x)=x^2\\) i \\(g(x)=-\\frac12(x-\\frac12)^2+4\\) między ich punktami przecięcia. Początek toru regatowego to punkt \\(P=(-1,1)\\) na brzegu (zobacz rysunek).\n\n[[rysunek:2023-przykladowy-6|Dwie parabole ograniczają obszar jeziora. Punkt P o współrzędnych (−1, 1) leży na dolnej paraboli.]]\n\nWyznacz współrzędne punktu \\(K\\) na brzegu, dla którego długość toru \\(|PK|\\) jest największa. Oblicz tę długość i zapisz obliczenia.\n\nMożesz skorzystać z tego, że dla dowolnego punktu \\(R\\) wykresu \\(g\\) o pierwszej współrzędnej \\(x\\) zachodzi\n\\[|PR|=\\sqrt{\\frac14x^4-\\frac12x^3-\\frac{13}{8}x^2+\\frac{39}{8}x+\\frac{593}{64}}.\\]",
     "rozwiazanie": "Niech \\(A\\) i \\(B\\) będą lewym i prawym punktem przecięcia wykresów. Równanie \\(x^2=-\\frac12(x-\\frac12)^2+4\\) sprowadza się do \\(12x^2-4x-31=0\\), skąd\n\\[x_A=\\frac{1-\\sqrt{94}}6\\approx-1{,}45,\\qquad x_B=\\frac{1+\\sqrt{94}}6\\approx1{,}78.\\]\n\nJeżeli \\(C=(x,x^2)\\) jest punktem dolnego łuku, to \\(x\\in[x_A,x_B]\\), \\(0\\le x^2\\le x_B^2\\) i \\(x_B^2-1>1\\). Zatem \\(|x+1|\\le x_B+1\\) oraz \\(|x^2-1|\\le x_B^2-1\\), czyli \\(|PC|\\le|PB|\\). Ponieważ \\(B\\) leży też na górnym łuku, wystarczy znaleźć największą odległość od \\(P\\) na wykresie \\(g\\) w przedziale \\([x_A,x_B]\\).\n\nKwadrat odległości ma postać\n\\[k(x)=\\frac14x^4-\\frac12x^3-\\frac{13}{8}x^2+\\frac{39}{8}x+\\frac{593}{64}.\\]\nPochodna ma postać\n\\[k'(x)=\\frac{8x^3-12x^2-26x+39}{8}=\\frac{(4x^2-13)(2x-3)}{8}.\\]\nNa rozpatrywanym przedziale \\(4x^2-13<0\\), ponieważ \\(x_A>-\\frac{\\sqrt{13}}2\\) i \\(x_B<\\frac{\\sqrt{13}}2\\). Funkcja \\(k\\) rośnie przed \\(x=\\frac32\\) i maleje po nim. W tym samym punkcie maksimum osiąga \\(\\sqrt{k(x)}\\).\n\nMamy \\(g(\\frac32)=\\frac72\\), więc koniec toru należy umieścić w \\(K=(\\frac32,\\frac72)\\). Długość wynosi\n\\[|PK|=\\sqrt{\\left(\\frac52\\right)^2+\\left(\\frac52\\right)^2}=\\frac{5\\sqrt2}{2}.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Rozkład wielomianu stopnia 3 lub wyżej",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -4559,7 +4524,8 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Sinus potrojonego kąta"
+      "Sinus potrojonego kąta",
+      "sin / cos podwojonego kąta (rozwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4615,7 +4581,7 @@
     "tagi": [
       "Okrąg w układzie współrzędnych",
       "Odległość punktu od prostej",
-      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4642,7 +4608,8 @@
     "tagi": [
       "Własności trójkąta równobocznego",
       "Własności trójkąta prostokątnego",
-      "Ostrosłup"
+      "Ostrosłup",
+      "sin / cos podwojonego kąta (zwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4666,7 +4633,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Schemat Bernoulliego"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -4808,8 +4777,7 @@
     "polecenie": "Niech \\(\\log_2 9=c\\). Udowodnij, że \\(\\log_3 54=\\frac{3c+2}{c}\\).",
     "rozwiazanie": "Z warunku \\(c=\\log_2 9\\) wynika \\(\\log_2 3=c/2\\). Ponieważ \\(54=2\\cdot27\\), zmiana podstawy i rozłożenie logarytmu iloczynu dają\n\\[\\log_3 54\n=\\frac{\\log_2 27+1}{\\log_2 3}\n=\\frac{2\\log_2 27+2}{2\\log_2 3}\n=\\frac{3\\log_2 9+2}{\\log_2 9}\n=\\frac{3c+2}{c}.\\]",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -4862,8 +4830,7 @@
     ],
     "tagi": [
       "Grupowanie",
-      "sin / cos podwojonego kąta (rozwijanie)",
-      "Suma / różnica sin / cos"
+      "sin / cos podwojonego kąta (rozwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -4937,8 +4904,7 @@
     "polecenie": "W programie telewizyjnym uczestniczy trzech sportowców oraz pewna liczba aktorów. Fotele ustawiono w jednym rzędzie, po jednym dla każdej osoby. Uczestnicy zajmują miejsca losowo. Prawdopodobieństwo, że cała trójka sportowców usiądzie obok siebie, wynosi \\(\\frac1{15}\\). Oblicz liczbę aktorów.",
     "rozwiazanie": "Niech \\(n\\) oznacza liczbę aktorów. Ustawień wszystkich uczestników jest \\((n+3)!\\). Gdy sportowcy siedzą obok siebie, traktujemy ich jako jeden blok, który wraz z aktorami można ustawić na \\((n+1)!\\) sposobów. Kolejność trzech sportowców w bloku można wybrać na \\(3!\\) sposobów. Stąd\n\\[\\frac{3!(n+1)!}{(n+3)!}=\\frac{6}{(n+2)(n+3)}=\\frac1{15}.\\]\nOtrzymujemy \\((n+2)(n+3)=90\\), czyli \\((n-7)(n+12)=0\\). Jedyną dopuszczalną liczbą aktorów jest \\(7\\).",
     "kategorie": [
-      "Prawdopodobieństwo",
-      "Kombinatoryka"
+      "Prawdopodobieństwo"
     ],
     "tagi": [
       "Równanie kwadratowe",
@@ -5042,7 +5008,8 @@
     "polecenie": "Rozważmy wszystkie trójkąty prostokątne \\(ABC\\) o przeciwprostokątnej \\(AB\\) i obwodzie \\(4\\). Niech \\(x=|AC|\\).\n\na) Udowodnij, że pole trójkąta określa wzór\n\\[P(x)=\\frac{x(4-2x)}{4-x}.\\]\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu oraz to pole.",
     "rozwiazanie": "Niech \\(b=|BC|\\) i \\(c=|AB|\\). Obwód wynosi \\(4\\), więc \\(c=4-x-b\\). Z twierdzenia Pitagorasa\n\\[(4-x-b)^2=x^2+b^2.\\]\nPo uporządkowaniu \\(b(4-x)=8-4x\\), więc \\(b=\\frac{8-4x}{4-x}\\). Dla \\(0<x<4\\) warunek \\(b>0\\) daje \\(x<2\\).\n\nDla każdego \\(x\\in(0,2)\\) otrzymujemy dodatnie \\(b\\) oraz \\(c=4-x-b=\\frac{x^2-4x+8}{4-x}>0\\). Zachodzi wtedy \\(c^2=x^2+b^2\\), więc takie boki tworzą trójkąt prostokątny o obwodzie \\(4\\). Dziedzina to \\((0,2)\\). Pole wynosi\n\\[P(x)=\\frac{xb}{2}=\\frac{x(4-2x)}{4-x}.\\]\nPochodna ma postać \\(P'(x)=\\frac{2x^2-16x+16}{(4-x)^2}\\). Jej licznik znika dla \\(4-2\\sqrt2\\) oraz \\(4+2\\sqrt2\\). Tylko \\(4-2\\sqrt2\\) należy do dziedziny. Wcześniej pochodna jest dodatnia, a później ujemna, więc jest to punkt maksimum.\n\nDla \\(x=4-2\\sqrt2\\) otrzymujemy \\(b=x\\) i \\(c=x\\sqrt2=4\\sqrt2-4\\). Największe pole wynosi\n\\[P_{\\max}=\\tfrac12(4-2\\sqrt2)^2=4(3-2\\sqrt2).\\]",
     "kategorie": [
-      "Optymalizacja funkcji"
+      "Optymalizacja funkcji",
+      "Planimetria"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -5190,8 +5157,7 @@
     "polecenie": "Niech \\(c=\\log_2 18\\). Udowodnij, że \\(\\log_3 4=\\frac{4}{c-1}\\).",
     "rozwiazanie": "**Sposób 1 — przekształcenie lewej strony**\nZmieniamy podstawę logarytmu na \\(2\\) i mnożymy licznik oraz mianownik przez \\(2\\):\n\\[\n\\log_3 4=\\frac{\\log_2 4}{\\log_2 3}\n=\\frac{2\\log_2 4}{2\\log_2 3}\n=\\frac4{\\log_2 9}\n=\\frac4{\\log_2 18-\\log_2 2}=\\frac4{c-1}.\n\\]\n\n**Sposób 2 — przekształcenie prawej strony**\nPo podstawieniu \\(c=\\log_2 18\\) i zastosowaniu wzoru na różnicę logarytmów mamy\n\\[\n\\frac4{c-1}=\\frac4{\\log_2 18-\\log_2 2}\n=\\frac4{\\log_2 9}=\\frac2{\\log_2 3}=2\\log_3 2=\\log_3 4.\n\\]\n\n**Sposób 3 — wyznaczenie \\(\\log_2 3\\)**\nPonieważ \\(c=\\log_2(2\\cdot9)=1+2\\log_2 3\\), mamy \\(\\log_2 3=(c-1)/2\\). Zatem \\(\\log_3 4=\\frac{\\log_2 4}{\\log_2 3}=\\frac4{c-1}\\).",
     "kategorie": [
-      "Własności logarytmu",
-      "Dowodzenie równań / nierówności"
+      "Własności logarytmu"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -5299,7 +5265,8 @@
     ],
     "tagi": [
       "Okrąg w układzie współrzędnych",
-      "Odległość punktu od prostej"
+      "Odległość punktu od prostej",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -5354,7 +5321,8 @@
       "sin / cos podwojonego kąta (rozwijanie)",
       "Suma / różnica sin / cos",
       "Przekształcenie sin / cos",
-      "sin / cos sumy (zwijanie poprzez reprezentację liczby jako sin / cos pewnego argumentu)"
+      "sin / cos sumy (zwijanie poprzez reprezentację liczby jako sin / cos pewnego argumentu)",
+      "Iloczyn sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -5404,8 +5372,7 @@
     "polecenie": "Dane są parabola \\(y=x^2\\) oraz punkty \\(A=(0,2)\\) i \\(B=(1,3)\\) (zobacz rysunek).\n\n[[rysunek:2021-05-14|Parabola y = x² oraz dwa punkty poza jej wykresem: A = (0, 2) i B = (1, 3).]]\n\nWierzchołek \\(C\\) trójkąta \\(ABC\\) leży na tej paraboli i ma pierwszą współrzędną \\(m\\).\n\na) Wyznacz pole \\(P\\) trójkąta \\(ABC\\) jako funkcję \\(m\\).\nb) Wyznacz wszystkie wartości \\(m\\), dla których \\(ABC\\) jest ostrokątny.",
     "rozwiazanie": "**Część a — pole trójkąta**\n\nPunkt \\(C\\) ma współrzędne \\((m,m^2)\\). Prosta \\(AB\\) ma równanie \\(y=x+2\\), a więc \\(C\\) leży na niej dokładnie dla \\(m^2=m+2\\), czyli \\(m=-1\\) lub \\(m=2\\). Te dwie wartości wykluczamy z dziedziny.\n\n**Sposób 1 — odległość od prostej**\nDługość podstawy to \\(|AB|=\\sqrt2\\), zaś wysokość z \\(C\\) wynosi\n\\[h_C=\\frac{|m-m^2+2|}{\\sqrt{1^2+(-1)^2}}=\\frac{|m-m^2+2|}{\\sqrt2}.\\]\nZatem \\(P(m)=\\frac12|m^2-m-2|\\) dla \\(m\\in\\mathbb{R}\\setminus\\{-1,2\\}\\).\n\n**Sposób 2 — wyznacznik**\nMamy \\(\\overrightarrow{AB}=(1,1)\\) i \\(\\overrightarrow{AC}=(m,m^2-2)\\). Pole to połowa wartości bezwzględnej wyznacznika tych wektorów:\n\\[P(m)=\\frac12\\left|1\\cdot(m^2-2)-1\\cdot m\\right|=\\frac12|m^2-m-2|,\\qquad m\\ne-1,2.\\]\n\n**Część b — warunek ostrokątności**\n\n**Sposób 1 — pas wyznaczony przez proste prostopadłe**\nKąty przy \\(A\\) i \\(B\\) są ostre, gdy rzut \\(C\\) na \\(AB\\) leży wewnątrz odcinka \\(AB\\). Odpowiada temu otwarty pas między prostymi prostopadłymi do \\(AB\\) przechodzącymi przez \\(A\\) i \\(B\\), o równaniach \\(y=-x+2\\) i \\(y=-x+4\\).\n\n[[rysunek:2021-05-14-rozw|Parabola, odcinek AB i proste prostopadłe przez A i B. Zaznaczone fragmenty paraboli leżą w otwartym pasie.]]\n\nKąt przy \\(C\\) jest ostry, jeżeli \\(C\\) leży na zewnątrz koła o średnicy \\(AB\\). Środek tego koła to \\(S=(\\tfrac12,\\tfrac52)\\), a promień jest równy \\(\\frac{\\sqrt2}{2}\\). Dla każdego punktu paraboli\n\\[\\begin{aligned}\n\\left(m-\\tfrac12\\right)^2+\\left(m^2-\\tfrac52\\right)^2-\\tfrac12\n&=m^4-4m^2-m+6\\\\\n&=(m^2-2{,}1)^2+0{,}2m^2-m+1{,}59 .\n\\end{aligned}\\]\nWyróżnik ostatniego trójmianu wynosi \\(1-4\\cdot0{,}2\\cdot1{,}59<0\\), a współczynnik kwadratowy jest dodatni, więc wyrażenie jest dodatnie dla każdego \\(m\\). Zatem kąt przy \\(C\\) zawsze jest ostry, jeśli trójkąt istnieje.\n\nPozostaje znaleźć fragmenty paraboli w pasie. Równanie \\(m^2=-m+2\\) ma pierwiastki \\(-2,1\\), a równanie \\(m^2=-m+4\\) ma pierwiastki \\(\\frac{-1\\pm\\sqrt{17}}2\\). Bierzemy te \\(m\\), dla których \\(2<m^2+m<4\\). Daje to\n\\[m\\in\\left(\\frac{-1-\\sqrt{17}}{2},-2\\right)\\cup\\left(1,\\frac{-1+\\sqrt{17}}{2}\\right).\\]\n\nCKE podaje także dwa uzasadnienia, że parabola leży na zewnątrz koła. Kwadrat opisany na kole o średnicy \\(AB\\) ma wierzchołki \\((\\tfrac12,\\tfrac32),(\\tfrac32,\\tfrac52),(\\tfrac12,\\tfrac72),(-\\tfrac12,\\tfrac52)\\). Każdy z nich spełnia \\(y>x^2\\), a obszar ten jest wypukły. Zawiera więc cały kwadrat i koło. Druga możliwość to zapis \\(m^4-4m^2-m+6=(m^2-2)^2+2-m\\). Dla \\(m<2\\) wyrażenie jest dodatnie. Dla \\(m\\ge2\\) mamy \\(m^2-2\\ge2\\), więc wyrażenie jest nie mniejsze niż \\(2m^2-m-2=m(2m-1)-2\\ge4>0\\).\n\n**Sposób 2 — twierdzenie cosinusów**\nNiech \\(a=|BC|\\), \\(b=|AC|\\), \\(c=|AB|\\). Z dodatniości cosinusów kątów i twierdzenia cosinusów dostajemy warunki \\(b^2+c^2-a^2>0\\), \\(a^2+c^2-b^2>0\\), \\(a^2+b^2-c^2>0\\). Obliczamy\n\\[a^2=(m-1)^2+(m^2-3)^2,\\qquad b^2=m^2+(m^2-2)^2,\\qquad c^2=2.\\]\nPierwsze dwa warunki sprowadzają się do \\((m-1)(m+2)>0\\) oraz \\(m^2+m-4<0\\). Spełniają je wspólnie \\(m\\in(\\frac{-1-\\sqrt{17}}2,-2)\\cup(1,\\frac{-1+\\sqrt{17}}2)\\). Trzeci warunek jest równoważny \\(m^4-4m^2-m+6=(m^2-2)^2+2-m>0\\). Na znalezionym zbiorze \\(m<2\\), więc nierówność zachodzi. Żadna z tych wartości nie daje trójkąta zdegenerowanego. Otrzymujemy ten sam zbiór co w sposobie 1.",
     "kategorie": [
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Twierdzenie cosinusów",
@@ -5432,8 +5399,7 @@
     "polecenie": "Prostopadłościenny zbiornik bez pokrywy ma pojemność \\(144\\,\\mathrm{m}^3\\) i kwadratowe dno. Żaden z jego wymiarów nie może przekroczyć \\(9\\,\\mathrm m\\). Wykonanie dna kosztuje \\(100\\) zł za \\(\\mathrm{m}^2\\), a wykonanie ścian bocznych \\(75\\) zł za \\(\\mathrm{m}^2\\). Oblicz wymiary, dla których koszt wykonania zbiornika jest najmniejszy.",
     "rozwiazanie": "Niech \\(x\\) oznacza długość krawędzi kwadratowego dna, a \\(h\\) wysokość zbiornika, w metrach. Objętość daje \\(x^2h=144\\), a koszt dna i czterech ścian to \\(100x^2+75\\cdot4xh\\).\n\n**Sposób 1 — funkcja długości krawędzi dna**\nPodstawiamy \\(h=144/x^2\\), więc \\(f(x)=100x^2+43200/x\\). Z warunków \\(x\\le9,\\ h\\le9\\) wynika \\(x\\in[4,9]\\). Pochodna\n\\[\nf'(x)=200x-\\frac{43200}{x^2}=\\frac{200(x^3-216)}{x^2}\n\\]\njest ujemna przed \\(x=6\\) i dodatnia po \\(x=6\\), więc tam funkcja osiąga najmniejszą wartość. Dla \\(x=6\\) mamy \\(h=4\\).\n\n**Sposób 2 — funkcja wysokości**\nPodstawiamy \\(x=12/\\sqrt h\\). Warunek \\(x\\le9\\) daje \\(h\\ge16/9\\), więc dziedziną \\(f(h)=14400/h+3600\\sqrt h\\) jest \\([16/9,9]\\). Mamy\n\\[\nf'(h)=-\\frac{14400}{h^2}+\\frac{1800}{\\sqrt h}\n=\\frac{1800(h\\sqrt h-8)}{h^2}.\n\\]\nPochodna jest ujemna przed \\(h=4\\) i dodatnia po \\(h=4\\), więc minimum wypada przy \\(h=4\\). Wtedy \\(x=6\\).\n\n**Wariant CKE — średnia arytmetyczna i geometryczna**\nDla \\(x\\in[4,9]\\) korzystamy z nierówności\n\\[\nf(x)=100\\left(x^2+\\frac{216}x+\\frac{216}x\\right)\\ge\n300\\sqrt[3]{x^2\\cdot\\frac{216}x\\cdot\\frac{216}x}=10800.\n\\]\nRówność zachodzi dla \\(x^2=216/x\\), czyli dla \\(x=6\\). Wtedy \\(h=4\\).\n\nWymiary zbiornika o najniższym koszcie to \\(6\\ \\mathrm{m}\\times6\\ \\mathrm{m}\\times4\\ \\mathrm{m}\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Graniastosłup",
@@ -5766,7 +5732,8 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Odległość punktu od prostej"
+      "Odległość punktu od prostej",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -5815,8 +5782,7 @@
     "polecenie": "Rozpatrujemy wszystkie trójkąty \\(ABC\\), których wierzchołki \\(A\\) i \\(B\\) leżą na wykresie \\(f(x)=\\frac{9}{x^4}\\) dla \\(x\\ne0\\) i są symetryczne względem osi \\(Oy\\). Wierzchołek \\(C\\) ma współrzędne \\(\\bigl(0,-\\frac13\\bigr)\\) (zobacz rysunek).\n\n[[rysunek:2021-03-15|Dwie gałęzie wykresu funkcji 9/x⁴. Punkty A i B są położone na tej samej wysokości, punkt C leży poniżej początku układu.]]\n\nOblicz współrzędne \\(A\\) i \\(B\\), dla których pole jest najmniejsze, i podaj to pole.",
     "rozwiazanie": "Niech \\(A=(a,9/a^4)\\), \\(B=(-a,9/a^4)\\) dla \\(a>0\\). Podstawa \\(AB\\) ma długość \\(2a\\). Wysokość z \\(C\\) jest równa \\(9/a^4+1/3\\). Zatem\n\\[P(a)=\\frac12\\cdot2a\\left(\\frac9{a^4}+\\frac13\\right)=\\frac9{a^3}+\\frac a3.\\]\nPochodna ma postać \\(P'(a)=\\dfrac{a^4-81}{3a^4}\\). Dla \\(0<a<3\\) jest ujemna, dla \\(a>3\\) dodatnia. Pole osiąga minimum dla \\(a=3\\). Zatem \\(A=(3,1/9)\\), \\(B=(-3,1/9)\\) z możliwością zamiany oznaczeń, a \\(P(3)=4/3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Pochodna funkcji wymiernej"
@@ -5843,7 +5809,9 @@
     "kategorie": [
       "Własności wielomianów"
     ],
-    "tagi": [],
+    "tagi": [
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -5867,7 +5835,8 @@
       "Granice"
     ],
     "tagi": [
-      "Granica funkcji w nieskończoności"
+      "Granica funkcji w nieskończoności",
+      "Rozkład wielomianu stopnia 3 lub wyżej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -6198,8 +6167,7 @@
     "polecenie": "Rozpatrujemy ostrosłupy prawidłowe czworokątne, w których suma promienia okręgu opisanego na podstawie i długości krawędzi bocznej wynosi \\(d\\). Wyznacz długość krawędzi podstawy ostrosłupa o największej objętości. Oblicz tę objętość.",
     "rozwiazanie": "Niech \\(r\\) będzie promieniem okręgu opisanego na podstawie, \\(b\\) krawędzią boczną, \\(a=\\sqrt2\\,r\\) krawędzią podstawy, zaś \\(H\\) wysokością ostrosłupa. Ponieważ \\(b=d-r\\), z twierdzenia Pitagorasa wynika \\(H^2=b^2-r^2=d(d-2r)\\).\n\n**Sposób I — promień jako zmienna**\nDla \\(0<r<d/2\\) mamy \\(V=\\frac23r^2\\sqrt{d(d-2r)}\\). Maksimum przypada przy maksimum funkcji \\(r^4(d-2r)\\). Jej pochodna to \\(2r^3(2d-5r)\\), która zmienia znak z dodatniego na ujemny w \\(r=2d/5\\). Stąd \\(H=d/\\sqrt5\\).\n\n**Sposób II — wysokość jako zmienna**\nMamy \\(r=(d^2-H^2)/(2d)\\), więc dla \\(0<H<d\\)\n\\[V(H)=\\frac{H(d^2-H^2)^2}{6d^2},\\qquad V'(H)=\\frac{(d^2-H^2)(d^2-5H^2)}{6d^2}.\\]\nPochodna zmienia znak z dodatniego na ujemny w \\(H=d/\\sqrt5\\). Wtedy \\(r=2d/5\\).\n\nZatem szukana krawędź ma długość \\(\\dfrac{2\\sqrt2}{5}d\\), a maksymalna objętość wynosi \\(\\dfrac{8d^3}{75\\sqrt5}\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -6299,7 +6267,7 @@
     "polecenie": "Po rozwinięciu \\((x\\sqrt2+y\\sqrt3)^4\\) zapisujemy wynik w postaci \\(ax^4+bx^3y+cx^2y^2+dxy^3+ey^4\\). Ile wynosi \\(c\\)?\n\nA. \\(6\\)\nB. \\(36\\)\nC. \\(8\\sqrt6\\)\nD. \\(12\\sqrt6\\)",
     "rozwiazanie": "**Odpowiedź CKE — B.**\n\nWyraz \\(x^2y^2\\) powstaje, gdy z dwóch spośród czterech czynników wybieramy \\(x\\sqrt2\\), a z pozostałych \\(y\\sqrt3\\). Współczynnik wynosi \\(\\binom42(\\sqrt2)^2(\\sqrt3)^2=36\\).",
     "kategorie": [
-      "Różne"
+      "Własności wielomianów"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -6559,8 +6527,7 @@
     "polecenie": "Ostrosłup czworokątny \\(ABCDS\\) ma w podstawie trapez \\(ABCD\\) o podstawach \\(AB\\parallel CD\\). Długości ramion to \\(|AD|=10\\) i \\(|BC|=16\\), a \\(\\angle ABC=30^\\circ\\). Każda ściana boczna tworzy z płaszczyzną podstawy ten sam kąt \\(\\alpha\\), dla którego \\(\\tan\\alpha=\\frac92\\). Oblicz objętość ostrosłupa.",
     "rozwiazanie": "Niech \\(O\\) będzie spodkiem wysokości ostrosłupa, \\(H\\) jego wysokością, a \\(r\\) odległością \\(O\\) od boków podstawy. Jednakowy kąt nachylenia ścian daje tę samą odległość od każdego boku, więc \\(O\\) jest środkiem okręgu wpisanego w trapez. Stąd \\(|AB|+|CD|=|AD|+|BC|=26\\).\n\nNiech \\(E\\) będzie rzutem \\(C\\) na \\(AB\\). W trójkącie prostokątnym \\(EBC\\) wysokość trapezu wynosi \\(|CE|=16\\sin30^\\circ=8\\), więc \\(r=4\\). Ponieważ \\(H/r=\\tan\\alpha=9/2\\), mamy \\(H=18\\). Zatem\n\\[V=\\frac13\\cdot\\frac{26}{2}\\cdot8\\cdot18=624.\\]",
     "kategorie": [
-      "Geometria przestrzenna",
-      "Planimetria"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Okrąg wpisany w czworokąt",
@@ -6686,7 +6653,7 @@
     "polecenie": "Którą z nierówności spełniają dokładnie trzy liczby całkowite?\n\nA. \\(\\left|\\frac34x+5\\right|<2\\)\nB. \\(\\left|\\frac43x+5\\right|<2\\)\nC. \\(\\left|\\frac35x+4\\right|<2\\)\nD. \\(\\left|\\frac45x+3\\right|<2\\)",
     "rozwiazanie": "**Odpowiedź CKE — B.**\n\nZ \\(\\left|\\frac43x+5\\right|<2\\) wynika \\(-7<\\frac43x<-3\\), czyli \\(-\\frac{21}4<x<-\\frac94\\). Są w nim dokładnie trzy liczby całkowite: \\(-5,-4,-3\\). W przypadku A przedział \\((-\\frac{28}3,-4)\\) zawiera pięć liczb całkowitych. Przedział \\((-10,-\\frac{10}3)\\) z C zawiera sześć, a \\((-\\frac{25}4,-\\frac54)\\) z D pięć.",
     "kategorie": [
-      "Różne"
+      "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -6711,7 +6678,9 @@
     "kategorie": [
       "Styczna do wykresu funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Pochodna funkcji wymiernej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -6738,7 +6707,8 @@
       "sin / cos podwojonego kąta (rozwijanie)",
       "Podobieństwo trójkątów",
       "Twierdzenie cosinusów",
-      "Twierdzenie sinusów"
+      "Twierdzenie sinusów",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -6865,12 +6835,12 @@
     "polecenie": "Dla \\(n\\ge1\\) okrąg \\(o_n\\) ma równanie \\(x^2+y^2=2^{11-n}\\). Niech \\(P_k\\) oznacza pierścień ograniczony z zewnątrz przez \\(o_{2k-1}\\), a od wewnątrz przez \\(o_{2k}\\). Oblicz sumę pól wszystkich pierścieni \\(P_k\\), \\(k\\ge1\\).",
     "rozwiazanie": "Pole koła ograniczonego przez \\(o_n\\) wynosi \\(\\pi\\,2^{11-n}\\), bo \\(2^{11-n}\\) to kwadrat jego promienia. Pole \\(k\\)-tego pierścienia to\n\\[\\pi\\,2^{12-2k}-\\pi\\,2^{11-2k}=\\pi\\,2^{11-2k}.\\]\nPola tworzą ciąg geometryczny o pierwszym wyrazie \\(2^9\\pi\\) i ilorazie \\(\\frac14\\). Ponieważ \\(\\frac14<1\\), suma istnieje i wynosi\n\\[\\frac{2^9\\pi}{1-\\frac14}=\\frac{2^{11}\\pi}{3}.\\]",
     "kategorie": [
-      "Ciągi",
-      "Planimetria"
+      "Ciągi"
     ],
     "tagi": [
       "Szereg geometryczny",
-      "Okrąg w układzie współrzędnych"
+      "Okrąg w układzie współrzędnych",
+      "Tworzenie ciągu z wyrazów innego ciągu o wskazanych indeksach"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -6898,7 +6868,8 @@
       "Okrąg wpisany w czworokąt",
       "Własności trójkąta prostokątnego",
       "Trapez",
-      "Trapez prostokątny"
+      "Trapez prostokątny",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -6923,7 +6894,6 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Własności trójkąta prostokątnego",
       "Okrąg w układzie współrzędnych",
       "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
     ],
@@ -7024,7 +6994,9 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [],
+    "tagi": [
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7095,7 +7067,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7119,7 +7093,8 @@
       "Kombinatoryka"
     ],
     "tagi": [
-      "Proste wariacje / kombinacje w kodzie"
+      "Proste wariacje / kombinacje w kodzie",
+      "Warunek na sumę / iloczyn liczb w kodzie"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7191,7 +7166,9 @@
     "kategorie": [
       "Dowodzenie podzielności"
     ],
-    "tagi": [],
+    "tagi": [
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7243,7 +7220,10 @@
     "tagi": [
       "Własności trójkąta równobocznego",
       "Własności trójkąta prostokątnego",
-      "Ostrosłup"
+      "Ostrosłup",
+      "Podobieństwo trójkątów",
+      "Odcinek łączący środki ramion trójkąta / trapezu",
+      "Kąt dwuścienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7292,7 +7272,11 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [],
+    "tagi": [
+      "Własności trójkąta prostokątnego",
+      "Odległość punktu od prostej",
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7339,10 +7323,11 @@
     "rozwiazanie": "Styczność wewnętrzna daje \\(|SS_1|=18-x\\) i \\(|SS_2|=18-2x\\), a styczność zewnętrzna \\(|S_1S_2|=3x\\). Połowa obwodu trójkąta środków wynosi \\(p=18\\). Ze wzoru Herona dostajemy\n\\[P(x)=\\sqrt{18\\cdot x\\cdot 2x\\cdot(18-3x)}\n=\\sqrt{108x^2(6-x)}.\\]\nNiewspółliniowość oraz dodatnie promienie wymagają \\(x>0\\), a nierówność trójkąta \\(3x<(18-x)+(18-2x)\\) daje \\(x<6\\). Dla \\(0<x<6\\) pozostałe nierówności trójkąta także są spełnione, więc dziedzina to \\((0,6)\\).\n\nPierwiastek jest rosnący, więc maksymalizujemy \\(F(x)=P(x)^2/108=x^2(6-x)\\). Pochodna \\(F'(x)=3x(4-x)\\) jest dodatnia dla \\(0<x<4\\) i ujemna dla \\(4<x<6\\). Maksimum wypada przy \\(x=4\\). Boki trójkąta mają długości \\(14,10,12\\), a największe pole to\n\\[P(4)=\\sqrt{108\\cdot16\\cdot2}=24\\sqrt6.\\]",
     "kategorie": [
       "Optymalizacja funkcji",
-      "Geometria analityczna"
+      "Planimetria"
     ],
     "tagi": [
-      "Wzajemne położenie dwóch okręgów względem siebie"
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7390,7 +7375,7 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos"
+      "sin / cos podwojonego kąta (zwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7412,7 +7397,7 @@
     "polecenie": "Fragment wykresu funkcji \\(y=f(x)\\) składa się z półprostych \\(AD,CE\\) i odcinków \\(AB,BC\\). Punkty mają współrzędne \\(A=(-1,0)\\), \\(B=(1,2)\\), \\(C=(3,0)\\), \\(D=(-4,3)\\), \\(E=(6,3)\\).\n\n[[rysunek:2019-05-3|Wykres łamany przez D = (−4, 3), A = (−1, 0), B = (1, 2), C = (3, 0) i E = (6, 3).]]\n\nWskaż wzór funkcji \\(f\\).\n\nA. \\(f(x)=|x+1|+|x-1|\\)\nB. \\(f(x)=\\bigl||x-1|-2\\bigr|\\)\nC. \\(f(x)=\\bigl||x-1|+2\\bigr|\\)\nD. \\(f(x)=|x-1|+2\\)",
     "rozwiazanie": "Odpowiedź CKE: **B**.",
     "kategorie": [
-      "Różne"
+      "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -7437,7 +7422,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7511,7 +7498,8 @@
       "Styczna do wykresu funkcji"
     ],
     "tagi": [
-      "Parabola w układzie współrzędnych"
+      "Parabola w układzie współrzędnych",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7560,7 +7548,9 @@
     ],
     "tagi": [
       "Podobieństwo trójkątów",
-      "Twierdzenie cosinusów"
+      "Twierdzenie cosinusów",
+      "sin / cos podwojonego kąta (rozwijanie)",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7587,7 +7577,11 @@
     "tagi": [
       "Twierdzenie cosinusów",
       "Twierdzenie sinusów",
-      "Własności trójkąta prostokątnego"
+      "Własności trójkąta prostokątnego",
+      "sin / cos podwojonego kąta (zwijanie)",
+      "sin / cos podwojonego kąta (rozwijanie)",
+      "Podobieństwo trójkątów",
+      "Własności trójkąta równobocznego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7612,7 +7606,10 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Wzajemne położenie dwóch okręgów względem siebie"
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Równanie kwadratowe",
+      "Okrąg w układzie współrzędnych",
+      "Odległość punktu od prostej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7661,7 +7658,9 @@
     "kategorie": [
       "Własności wielomianów"
     ],
-    "tagi": [],
+    "tagi": [
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7685,7 +7684,9 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos"
+      "Suma / różnica sin / cos",
+      "sin / cos podwojonego kąta (zwijanie)",
+      "Iloczyn sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7707,11 +7708,12 @@
     "polecenie": "Wśród graniastosłupów prawidłowych trójkątnych o objętości \\(2\\) znajdź ten o najmniejszym polu powierzchni całkowitej. Wyznacz długości jego krawędzi i oblicz najmniejsze pole.",
     "rozwiazanie": "Niech \\(a>0\\) będzie długością krawędzi podstawy, a \\(h>0\\) wysokością graniastosłupa. Z objętości \\(a^2\\sqrt3 h/4=2\\) wynika \\(h=8/(a^2\\sqrt3)\\). Pole całkowite jest sumą pól dwóch podstaw i trzech prostokątnych ścian bocznych:\n\\[\nf(a)=\\frac{\\sqrt3}{2}a^2+3ah\n=\\frac{\\sqrt3}{2}a^2+\\frac{8\\sqrt3}{a},\\qquad a>0.\n\\]\nPochodna wynosi \\(f'(a)=\\sqrt3(a^3-8)/a^2\\). Jest ujemna dla \\(0<a<2\\) i dodatnia dla \\(a>2\\). Funkcja osiąga więc wartość najmniejszą dla \\(a=2\\). Wówczas \\(h=2\\sqrt3/3\\) i \\(f(2)=6\\sqrt3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Graniastosłup"
+      "Graniastosłup",
+      "Własności trójkąta równobocznego",
+      "Pochodna funkcji wymiernej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7805,7 +7807,7 @@
     "polecenie": "Którą z nierówności spełniają dokładnie trzy liczby całkowite?\n\nA. \\(\\left|\\frac34x+5\\right|<2\\)\nB. \\(\\left|\\frac43x+5\\right|<2\\)\nC. \\(\\left|\\frac35x+4\\right|<2\\)\nD. \\(\\left|\\frac45x+3\\right|<2\\)",
     "rozwiazanie": "**Odpowiedź CKE — B.**\n\nZ \\(\\left|\\frac43x+5\\right|<2\\) wynika \\(-7<\\frac43x<-3\\), czyli \\(-\\frac{21}4<x<-\\frac94\\). Są w nim dokładnie trzy liczby całkowite: \\(-5,-4,-3\\). W przypadku A przedział \\((-\\frac{28}3,-4)\\) zawiera pięć liczb całkowitych. Przedział \\((-10,-\\frac{10}3)\\) z C zawiera sześć, a \\((-\\frac{25}4,-\\frac54)\\) z D pięć.",
     "kategorie": [
-      "Różne"
+      "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -7830,7 +7832,9 @@
     "kategorie": [
       "Styczna do wykresu funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Pochodna funkcji wymiernej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -7857,7 +7861,8 @@
       "sin / cos podwojonego kąta (rozwijanie)",
       "Podobieństwo trójkątów",
       "Twierdzenie cosinusów",
-      "Twierdzenie sinusów"
+      "Twierdzenie sinusów",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -7984,12 +7989,12 @@
     "polecenie": "Dla \\(n\\ge1\\) okrąg \\(o_n\\) ma równanie \\(x^2+y^2=2^{11-n}\\). Niech \\(P_k\\) oznacza pierścień ograniczony z zewnątrz przez \\(o_{2k-1}\\), a od wewnątrz przez \\(o_{2k}\\). Oblicz sumę pól wszystkich pierścieni \\(P_k\\), \\(k\\ge1\\).",
     "rozwiazanie": "Pole koła ograniczonego przez \\(o_n\\) wynosi \\(\\pi\\,2^{11-n}\\), bo \\(2^{11-n}\\) to kwadrat jego promienia. Pole \\(k\\)-tego pierścienia to\n\\[\\pi\\,2^{12-2k}-\\pi\\,2^{11-2k}=\\pi\\,2^{11-2k}.\\]\nPola tworzą ciąg geometryczny o pierwszym wyrazie \\(2^9\\pi\\) i ilorazie \\(\\frac14\\). Ponieważ \\(\\frac14<1\\), suma istnieje i wynosi\n\\[\\frac{2^9\\pi}{1-\\frac14}=\\frac{2^{11}\\pi}{3}.\\]",
     "kategorie": [
-      "Ciągi",
-      "Planimetria"
+      "Ciągi"
     ],
     "tagi": [
       "Szereg geometryczny",
-      "Okrąg w układzie współrzędnych"
+      "Okrąg w układzie współrzędnych",
+      "Tworzenie ciągu z wyrazów innego ciągu o wskazanych indeksach"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8017,7 +8022,8 @@
       "Okrąg wpisany w czworokąt",
       "Własności trójkąta prostokątnego",
       "Trapez",
-      "Trapez prostokątny"
+      "Trapez prostokątny",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8042,7 +8048,6 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Własności trójkąta prostokątnego",
       "Okrąg w układzie współrzędnych",
       "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
     ],
@@ -8118,7 +8123,7 @@
     "polecenie": "Dane są liczby \\(a=\\dfrac{\\sqrt[4]{8}}2\\), \\(b=\\dfrac1{2\\sqrt[4]{8}}\\), \\(c=\\sqrt[4]{8}\\), \\(d=\\dfrac2{\\sqrt[4]{8}}\\) oraz \\(k=2^{-1/4}\\). Wskaż prawdziwą równość.\n\nA. \\(k=a\\)\nB. \\(k=b\\)\nC. \\(k=c\\)\nD. \\(k=d\\)",
     "rozwiazanie": "Odpowiedź CKE: **A**.",
     "kategorie": [
-      "Funkcja wykładnicza"
+      "Różne"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -8190,8 +8195,7 @@
       "Granice"
     ],
     "tagi": [
-      "Granica jednostronna funkcji",
-      "Granica funkcji w punkcie"
+      "Granica jednostronna funkcji"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8213,12 +8217,9 @@
     "polecenie": "Punkt \\(A=(-5,3)\\) jest środkiem symetrii wykresu funkcji homograficznej \\(f(x)=\\dfrac{ax+7}{x+d}\\) określonej dla \\(x\\ne-d\\). Oblicz iloraz \\(\\dfrac da\\).\n\nPodaj kolejno cyfrę jedności i dwie pierwsze cyfry po przecinku nieskończonego rozwinięcia dziesiętnego wyniku.",
     "rozwiazanie": "Odpowiedź CKE: **1, 6, 6**.\n\nPonieważ \\(f(x)=a+(7-ad)/(x+d)\\), środkiem symetrii jej wykresu jest \\((-d,a)=(-5,3)\\). Stąd \\(d/a=5/3=1{,}(6)\\).",
     "kategorie": [
-      "Granice",
       "Różne"
     ],
-    "tagi": [
-      "Granica funkcji w nieskończoności"
-    ],
+    "tagi": [],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8242,7 +8243,8 @@
       "Styczna do wykresu funkcji"
     ],
     "tagi": [
-      "Parabola w układzie współrzędnych"
+      "Parabola w układzie współrzędnych",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8266,7 +8268,10 @@
     "kategorie": [
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Okrąg opisany na czworokącie",
+      "Własności trójkąta prostokątnego"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8289,7 +8294,10 @@
     "kategorie": [
       "Dowodzenie podzielności"
     ],
-    "tagi": [],
+    "tagi": [
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
+      "Rozkład wielomianu stopnia 3 lub wyżej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8312,7 +8320,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8337,7 +8347,11 @@
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
-      "Stożek"
+      "Stożek",
+      "Równanie kwadratowe",
+      "Trapez",
+      "Trapez równoramienny",
+      "Kąt między prostą i płaszczyzną"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8362,8 +8376,8 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos",
-      "Sinus potrojonego kąta"
+      "Grupowanie",
+      "sin / cos podwojonego kąta (rozwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8387,7 +8401,9 @@
     "kategorie": [
       "Równania kwadratowe z parametrem"
     ],
-    "tagi": [],
+    "tagi": [
+      "Wzory Viete'a - przekształcenie równania / nierówności"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8436,7 +8452,12 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Własności trójkąta prostokątnego"
+      "Własności trójkąta prostokątnego",
+      "Równanie kwadratowe",
+      "Podobieństwo trójkątów",
+      "Okrąg w układzie współrzędnych",
+      "Odległość punktu od prostej",
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8463,7 +8484,10 @@
     ],
     "tagi": [
       "Trapez",
-      "Trapez równoramienny"
+      "Trapez równoramienny",
+      "Okrąg wpisany w czworokąt",
+      "Własności trójkąta prostokątnego",
+      "Pochodna funkcji wymiernej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8533,7 +8557,9 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [],
+    "tagi": [
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8556,7 +8582,9 @@
     "kategorie": [
       "Różne"
     ],
-    "tagi": [],
+    "tagi": [
+      "Pochodna funkcji wymiernej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8604,7 +8632,9 @@
     "kategorie": [
       "Optymalizacja funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Parabola w układzie współrzędnych"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8676,7 +8706,8 @@
       "Kombinatoryka"
     ],
     "tagi": [
-      "Podzielność w kombinatoryce"
+      "Podzielność w kombinatoryce",
+      "Proste wariacje / kombinacje w kodzie"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8754,7 +8785,9 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Własności trójkąta prostokątnego"
+      "Własności trójkąta prostokątnego",
+      "Równanie kwadratowe",
+      "Odległość punktu od prostej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8808,7 +8841,8 @@
       "Okrąg opisany na czworokącie",
       "Własności trójkąta równobocznego",
       "Trapez",
-      "Trapez równoramienny"
+      "Trapez równoramienny",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8834,7 +8868,10 @@
       "Geometria przestrzenna"
     ],
     "tagi": [
-      "Graniastosłup"
+      "Graniastosłup",
+      "Rozkład wielomianu stopnia 3 lub wyżej",
+      "Pochodna funkcji wymiernej",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -8906,7 +8943,9 @@
     "kategorie": [
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Własności trójkąta prostokątnego"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -8929,7 +8968,9 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [],
+    "tagi": [
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -9024,7 +9065,9 @@
       "Planimetria"
     ],
     "tagi": [
-      "Podobieństwo trójkątów"
+      "Podobieństwo trójkątów",
+      "Twierdzenie cosinusów",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9051,7 +9094,8 @@
     "tagi": [
       "Podobieństwo trójkątów",
       "Własności trójkąta prostokątnego",
-      "Ostrosłup"
+      "Ostrosłup",
+      "Własności trójkąta równobocznego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9099,7 +9143,9 @@
       "Prawdopodobieństwo"
     ],
     "tagi": [
-      "Podzielność w kombinatoryce"
+      "Podzielność w kombinatoryce",
+      "Proste wariacje / kombinacje w kodzie",
+      "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9149,7 +9195,8 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Okrąg w układzie współrzędnych"
+      "Okrąg w układzie współrzędnych",
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9194,8 +9241,7 @@
     "polecenie": "Rozpatrujemy wszystkie walce o danym polu powierzchni całkowitej \\(P\\). Oblicz wysokość i promień podstawy tego walca, którego objętość jest największa. Oblicz tę największą objętość.",
     "rozwiazanie": "Niech \\(r>0\\) oznacza promień podstawy, a \\(h>0\\) wysokość. Z równania \\(P=2\\pi r^2+2\\pi rh\\) wynika\n\\[h=\\frac{P}{2\\pi r}-r,\\qquad 0<r<\\sqrt{\\frac{P}{2\\pi}}.\\]\nW tej dziedzinie objętość i jej pochodna wynoszą\n\\[V(r)=\\pi r^2h=\\frac P2r-\\pi r^3,\\qquad V'(r)=\\frac P2-3\\pi r^2.\\]\nPochodna jest dodatnia przed \\(r_* = \\sqrt{\\frac{P}{6\\pi}}\\), a ujemna po \\(r_*\\), więc objętość osiąga tam maksimum. Dla tego promienia \\(h=2r_*=\\sqrt{\\frac{2P}{3\\pi}}\\) i\n\\[V_{\\max}=\\frac P3\\sqrt{\\frac{P}{6\\pi}}.\\]",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -9244,7 +9290,7 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos"
+      "sin / cos podwojonego kąta (zwijanie)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9269,7 +9315,8 @@
       "Planimetria"
     ],
     "tagi": [
-      "Trapez"
+      "Trapez",
+      "Podobieństwo trójkątów"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9295,7 +9342,9 @@
     ],
     "tagi": [
       "Ostrosłup",
-      "Kąt dwuścienny"
+      "Kąt dwuścienny",
+      "Własności trójkąta równobocznego",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9416,7 +9465,8 @@
       "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [
-      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia"
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia",
+      "Rozkład wielomianu stopnia 3 lub wyżej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9469,7 +9519,8 @@
     "tagi": [
       "Podobieństwo trójkątów",
       "Odcinek łączący środki ramion trójkąta / trapezu",
-      "Graniastosłup"
+      "Graniastosłup",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9491,7 +9542,7 @@
     "polecenie": "Liczba \\(m\\) jest sumą odwrotności dwóch różnych pierwiastków równania\n\\[k^2x^2+(k-1)x+1=0,\\quad\\text{gdzie }k\\ne 0.\\]\nWyznacz zbiór wartości funkcji określonej wzorem \\(f(x)=2^m\\).",
     "rozwiazanie": "Warunek istnienia dwóch różnych pierwiastków rzeczywistych to \\(k\\ne0\\) oraz\n\\[\\Delta=(k-1)^2-4k^2=(1+k)(1-3k)>0.\\]\nStąd \\(k\\in(-1,0)\\cup(0,\\tfrac13)\\). Iloczyn pierwiastków jest równy \\(1/k^2\\), więc oba pierwiastki są niezerowe. Ze wzorów Viète'a otrzymujemy\n\\[m=\\frac{1}{x_1}+\\frac{1}{x_2}=\\frac{x_1+x_2}{x_1x_2}=1-k.\\]\n\n**Interpretacja \\(f\\) jako funkcji parametru \\(k\\)**\n\nDla wskazanych \\(k\\) mamy \\(f(k)=2^{1-k}=(\\tfrac12)^{k-1}\\). Wykres otrzymujemy przez przesunięcie wykresu \\(y=(\\tfrac12)^k\\) o jednostkę w prawo i ograniczenie do przedziałów z dziedziny. Funkcja \\(h(k)=(\\tfrac12)^{k-1}\\) jest malejąca i ciągła, a jej wartości na końcach to \\(h(-1)=4\\), \\(h(0)=2\\) i \\(h(\\tfrac13)=\\sqrt[3]{4}\\). Zatem zbiór wartości to \\((\\sqrt[3]{4},2)\\cup(2,4)\\).\n\n**Interpretacja \\(f\\) jako funkcji zmiennej \\(x\\) przy ustalonym \\(k\\)**\n\nCKE dopuszcza również odczytanie zapisu \\(f(x)=2^m\\) dosłownie. Przy ustalonym \\(k\\) spełniającym powyższe warunki liczba \\(m\\) jest stała, więc zbiorem wartości jest \\(\\{2^m\\}\\).\n\n[[rysunek:2016-06-12-rozw|Wykres funkcji wykładniczej i jej przesunięcia z wyróżnionymi przedziałami oraz otwartymi końcami.]]",
     "kategorie": [
-      "Równania kwadratowe z parametrem"
+      "Funkcja wykładnicza"
     ],
     "tagi": [
       "Wzory Viete'a - przekształcenie równania / nierówności"
@@ -9541,7 +9592,10 @@
     "kategorie": [
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Równanie kwadratowe",
+      "Własności trójkąta prostokątnego"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -9610,8 +9664,7 @@
     "polecenie": "Rozpatrujemy wszystkie walce, których pole powierzchni całkowitej jest równe \\(2\\pi\\). Oblicz promień podstawy tego walca, który ma największą objętość. Podaj tę największą objętość.",
     "rozwiazanie": "Niech \\(r,h>0\\) będą odpowiednio promieniem i wysokością walca. Mamy \\(2\\pi(r^2+rh)=2\\pi\\), czyli \\(h=(1-r^2)/r\\) i \\(0<r<1\\). Objętość jako funkcja promienia to\n\\[V(r)=\\pi r(1-r^2).\\]\nPochodna \\(V'(r)=\\pi(1-3r^2)\\) jest dodatnia dla \\(0<r<1/\\sqrt3\\) i ujemna dla \\(1/\\sqrt3<r<1\\). Objętość jest więc największa dla \\(r=\\sqrt3/3\\). Wtedy \\(h=2\\sqrt3/3\\) i \\(V=2\\pi\\sqrt3/9\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -9680,7 +9733,7 @@
     "polecenie": "Na rysunku pokazano fragment wykresu funkcji homograficznej \\(y=f(x)\\) o dziedzinie \\(D=(-\\infty,3)\\cup(3,+\\infty)\\).\n\n[[rysunek:2016-05-3|Fragment wykresu funkcji homograficznej z asymptotami x = 3 i y = 2.]]\n\nDla których wartości \\(p\\) równanie \\(|f(x)|=p\\) ma dokładnie jedno rozwiązanie?\n\nA. \\(p=0\\) lub \\(p=3\\)\nB. \\(p=0\\) lub \\(p=2\\)\nC. Tylko \\(p=3\\)\nD. Tylko \\(p=2\\)",
     "rozwiazanie": "**Odpowiedź CKE:** B.",
     "kategorie": [
-      "Różne"
+      "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -9855,7 +9908,7 @@
     "polecenie": "Wyznacz wartości \\(a\\), dla których wykresy \\(f(x)=x-2\\) i \\(g(x)=5-ax\\) przecinają się w punkcie o obu dodatnich współrzędnych.",
     "rozwiazanie": "**Sposób 1 — równanie punktu przecięcia**\n\nWspółrzędna \\(x\\) spełnia \\((a+1)x=7\\). Aby \\(x=7/(a+1)\\) była dodatnia, potrzeba \\(a>-1\\). Wtedy \\(y=x-2=(5-2a)/(a+1)\\) jest dodatnia dokładnie dla \\(a<5/2\\).\n\n**Sposób 2 — proste graniczne**\n\nProste \\(g\\) przechodzą przez \\((0,5)\\). Część wykresu \\(f\\) o obu dodatnich współrzędnych zaczyna się za \\((2,0)\\) i biegnie w prawo. Prosta z \\((0,5)\\) przez \\((2,0)\\) ma nachylenie \\(-5/2\\), a równoległa do \\(f\\) ma nachylenie \\(1\\). Prosta pęku przecina wskazaną półprostą dokładnie przy \\(-5/2<-a<1\\).\n\nW obu sposobach \\(-1<a<5/2\\).",
     "kategorie": [
-      "Równania / nierówności z wartością bezwzględną"
+      "Geometria analityczna"
     ],
     "tagi": [],
     "sprawdzone_polecenie": 1,
@@ -9932,7 +9985,8 @@
       "Okrąg opisany na czworokącie",
       "Twierdzenie cosinusów",
       "Okrąg w układzie współrzędnych",
-      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)"
+      "Przesunięcia przy użyciu wektorów (w tym środek odcinka)",
+      "Własności trójkąta prostokątnego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -9983,7 +10037,9 @@
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
-      "Ostrosłup"
+      "Ostrosłup",
+      "Podobieństwo trójkątów",
+      "Kąt dwuścienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10006,13 +10062,13 @@
     "rozwiazanie": "Niech \\(C=(x,2-\\tfrac12x^2)\\). Ponieważ \\(C\\) leży po prawej stronie osi symetrii trapezu, \\(0<x<2\\). Podstawy wynoszą \\(4\\) i \\(2x\\), a wysokość \\(2-\\tfrac12x^2\\), więc\n\\[P(x)=(2+x)(2-\\tfrac12x^2).\\]\n\n**Sposób 1 — pochodna**\n\n\\[P'(x)=2-2x-\\tfrac32x^2=-\\tfrac32(x-\\tfrac23)(x+2).\\]\nPochodna jest dodatnia przed \\(x=2/3\\) i ujemna po nim. Maksimum występuje w \\(x=2/3\\).\n\n**Sposób 2 — nierówność między średnimi**\n\nZapisujemy \\(P(x)=2(1+x/2)(1+x/2)(2-x)\\). Trzy dodatnie czynniki w nawiasach mają stałą sumę \\(4\\), więc ich iloczyn jest największy, gdy wszystkie są równe. Równanie \\(1+x/2=2-x\\) również daje \\(x=2/3\\).\n\nWierzchołek \\(C=(2/3,16/9)\\).",
     "kategorie": [
       "Optymalizacja funkcji",
-      "Geometria analityczna",
-      "Planimetria"
+      "Geometria analityczna"
     ],
     "tagi": [
       "Trapez",
       "Trapez równoramienny",
-      "Parabola w układzie współrzędnych"
+      "Parabola w układzie współrzędnych",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10036,7 +10092,9 @@
     "kategorie": [
       "Ciągi"
     ],
-    "tagi": [],
+    "tagi": [
+      "Rekurencja"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -10106,7 +10164,7 @@
       "Równania trygonometryczne"
     ],
     "tagi": [
-      "Suma / różnica sin / cos"
+      "Przekształcenie sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10226,7 +10284,9 @@
     "kategorie": [
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Okrąg opisany na czworokącie"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -10298,7 +10358,10 @@
     "kategorie": [
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Podobieństwo trójkątów",
+      "Odcinek łączący środki ramion trójkąta / trapezu"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -10350,7 +10413,9 @@
     "tagi": [
       "Okrąg opisany na czworokącie",
       "Trapez",
-      "Ostrosłup"
+      "Ostrosłup",
+      "Własności trójkąta prostokątnego",
+      "Trapez równoramienny"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10399,11 +10464,12 @@
     "polecenie": "Rozpatrujemy wszystkie stożki, w których suma długości tworzącej i promienia podstawy jest równa \\(2\\). Wyznacz wysokość stożka o największej objętości oraz oblicz tę objętość.",
     "rozwiazanie": "Niech \\(r,h,\\ell>0\\) oznaczają promień, wysokość i tworzącą. Z \\(\\ell+r=2\\) oraz \\(\\ell^2=r^2+h^2\\) mamy \\(h^2=4-4r\\). Objętość to \\(V=\\tfrac\\pi3 r^2 h\\).\n\n**Sposób 1 — funkcja promienia**\n\nDla \\(0<r<1\\) otrzymujemy \\(V(r)=\\frac{2\\pi}{3}\\sqrt{r^4-r^5}\\). Maksymalizujemy funkcję pod pierwiastkiem. Jej pochodna \\(r^3(4-5r)\\) jest dodatnia przed \\(r=4/5\\), a ujemna po nim. Stąd w maksimum \\(h=2\\sqrt{1-4/5}=2\\sqrt5/5\\).\n\n**Sposób 2 — funkcja wysokości**\n\nPodstawiamy \\(r=1-h^2/4\\), gdzie \\(0<h<2\\). Otrzymujemy\n\\[V(h)=\\frac\\pi3\\left(h-\\frac12h^3+\\frac1{16}h^5\\right).\\]\nPochodna wyrażenia w nawiasie to \\((1-h^2/4)(1-5h^2/4)\\). Na \\((0,2)\\) zmienia znak z dodatniego na ujemny w punkcie \\(h=2\\sqrt5/5\\).\n\nW obu sposobach otrzymujemy objętość \\(\\frac\\pi3\\cdot(\\frac45)^2\\cdot\\frac{2\\sqrt5}{5}=\\frac{32\\pi\\sqrt5}{375}\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Stożek"
+      "Stożek",
+      "Własności trójkąta prostokątnego",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10644,7 +10710,7 @@
     ],
     "tagi": [
       "Okrąg opisany na czworokącie",
-      "Twierdzenie sinusów"
+      "Twierdzenie cosinusów"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10668,7 +10734,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo całkowite"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -10691,7 +10759,9 @@
     "kategorie": [
       "Styczna do wykresu funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Równanie kwadratowe"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -10742,7 +10812,9 @@
     "tagi": [
       "Własności trójkąta prostokątnego",
       "Ostrosłup",
-      "Kąt dwuścienny"
+      "Kąt dwuścienny",
+      "sin / cos podwojonego kąta (zwijanie)",
+      "Twierdzenie cosinusów"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10767,7 +10839,9 @@
       "Własności wielomianów"
     ],
     "tagi": [
-      "Wzory Viete'a - przekształcenie równania / nierówności"
+      "Wzory Viete'a - przekształcenie równania / nierówności",
+      "Rozkład wielomianu stopnia 3 lub wyżej",
+      "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10789,12 +10863,12 @@
     "polecenie": "Rozpatrujemy wszystkie stożki, których przekrój osiowy jest trójkątem o obwodzie \\(20\\). Wyznacz wysokość i promień podstawy stożka o największej objętości oraz oblicz tę objętość.",
     "rozwiazanie": "Niech \\(r,h,l\\) oznaczają odpowiednio promień podstawy, wysokość i tworzącą stożka. Obwód przekroju osiowego daje \\(r+l=10\\). Z twierdzenia Pitagorasa wynika \\(h^2=l^2-r^2=100-20r\\).\n\n**Sposób I — objętość w zależności od promienia**\nDla \\(0<r<5\\) mamy \\(V(r)=\\frac\\pi3\\sqrt{100r^4-20r^5}\\). Wystarczy zmaksymalizować wyrażenie pod pierwiastkiem. Jego pochodna to \\(100r^3(4-r)\\), dodatnia przed \\(r=4\\) i ujemna po \\(r=4\\). Stąd \\(r=4\\), \\(h=\\sqrt{20}=2\\sqrt5\\).\n\n**Sposób II — objętość w zależności od wysokości**\nZ \\(r=5-h^2/20\\) dostajemy\n\\[V(h)=\\frac\\pi3\\left(25h-\\frac12h^3+\\frac1{400}h^5\\right),\\qquad 0<h<10.\\]\nPochodna wyrażenia w nawiasie to \\((h^2-20)(h^2-100)/80\\). Jest dodatnia dla \\(0<h<2\\sqrt5\\), a ujemna dla \\(2\\sqrt5<h<10\\). Zatem \\(h=2\\sqrt5\\) i \\(r=4\\).\n\nNajwiększa objętość to \\(\\dfrac{32\\pi\\sqrt5}{3}\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
-      "Stożek"
+      "Stożek",
+      "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -10842,7 +10916,8 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Okrąg w układzie współrzędnych"
+      "Okrąg w układzie współrzędnych",
+      "Odległość punktu od prostej"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11136,7 +11211,8 @@
     ],
     "tagi": [
       "Twierdzenie cosinusów",
-      "Twierdzenie sinusów"
+      "Twierdzenie sinusów",
+      "Przekształcenie sin / cos"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11215,7 +11291,8 @@
     ],
     "tagi": [
       "Okrąg w układzie współrzędnych",
-      "Wzajemne położenie dwóch okręgów względem siebie"
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11237,8 +11314,7 @@
     "polecenie": "Okno ma kształt trapezu równoramiennego. Krótsza podstawa i każde ramię mają długość \\(4\\,\\mathrm{dm}\\). Wyznacz długość dłuższej podstawy, przy której pole okna jest największe, i oblicz to pole.",
     "rozwiazanie": "**Sposób I — rzut ramienia**\nNiech \\(u\\) będzie długością rzutu ramienia na dłuższą podstawę. Długość tej podstawy wynosi \\(4+2u\\), a wysokość \\(\\sqrt{16-u^2}\\), gdzie \\(0<u<4\\). Pole jest równe \\(P(u)=(4+u)\\sqrt{16-u^2}\\). Badamy kwadrat pola, którego pochodna to\n\\[\\bigl(P^2\\bigr)'(u)=2(4+u)\\bigl(16-4u-2u^2\\bigr).\\]\nJedyny punkt zerowy w dziedzinie to \\(u=2\\). Pochodna przechodzi tam z dodatniej w ujemną.\n\n**Sposób II — długość podstawy**\nNiech \\(x\\) będzie długością dłuższej podstawy. Wysokość to \\(h=\\sqrt{16-\\bigl((x-4)/2\\bigr)^2}\\), zatem dla \\(4<x<12\\)\n\\[P(x)=\\frac{x+4}{4}\\sqrt{64-(x-4)^2}.\\]\nPochodna \\(16P^2\\) po uproszczeniu to \\(4(x+4)x(8-x)\\). Jest dodatnia dla \\(4<x<8\\) i ujemna dla \\(8<x<12\\), więc maksimum wypada dla \\(x=8\\).\n\nDłuższa podstawa powinna mieć \\(8\\,\\mathrm{dm}\\). Wysokość wynosi \\(2\\sqrt3\\,\\mathrm{dm}\\), a największe pole \\(12\\sqrt3\\,\\mathrm{dm}^2\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Własności trójkąta prostokątnego",
@@ -11268,7 +11344,9 @@
     "kategorie": [
       "Prawdopodobieństwo"
     ],
-    "tagi": [],
+    "tagi": [
+      "Prawdopodobieństwo całkowite"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -11340,7 +11418,8 @@
       "Geometria analityczna"
     ],
     "tagi": [
-      "Wzajemne położenie dwóch okręgów względem siebie"
+      "Wzajemne położenie dwóch okręgów względem siebie",
+      "Okrąg w układzie współrzędnych"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11558,7 +11637,11 @@
     "kategorie": [
       "Geometria analityczna"
     ],
-    "tagi": [],
+    "tagi": [
+      "Równanie kwadratowe",
+      "Okrąg w układzie współrzędnych",
+      "Odległość punktu od prostej"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   },
@@ -11582,7 +11665,8 @@
       "Styczna do wykresu funkcji"
     ],
     "tagi": [
-      "Parabola w układzie współrzędnych"
+      "Parabola w układzie współrzędnych",
+      "Równanie kwadratowe"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11656,7 +11740,8 @@
       "Kombinatoryka"
     ],
     "tagi": [
-      "Proste wariacje / kombinacje w kodzie"
+      "Proste wariacje / kombinacje w kodzie",
+      "Warunek na sumę / iloczyn liczb w kodzie"
     ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
@@ -11678,10 +11763,11 @@
     "polecenie": "Z każdego rogu prostokątnego kartonu o wymiarach \\(80\\ \\mathrm{cm}\\times50\\ \\mathrm{cm}\\) wycięto taki sam kwadrat. Karton zagięto wzdłuż przerywanych linii, tworząc prostopadłościenne pudełko bez pokrywki.\n\n[[rysunek:2015-przykladowy-18|Prostokątny karton 80 cm na 50 cm z czterema wycinanymi kwadratami i przerywanymi liniami zgięcia.]]\n\nWyznacz długość boku wycinanego kwadratu, dla której objętość pudełka jest największa, i oblicz tę objętość.",
     "rozwiazanie": "**Sposób I — wysokość pudełka**\nNiech \\(x\\) oznacza bok wycinanego kwadratu. Wymiary pudełka to \\(x,80-2x,50-2x\\), więc \\(V(x)=4(x^3-65x^2+1000x)\\), gdzie \\(0<x<25\\). Pochodna to \\(4(3x^2-130x+1000)=4(x-10)(3x-100)\\). W dziedzinie jest dodatnia do \\(x=10\\) i ujemna po \\(x=10\\). Maksimum to \\(V(10)=10\\cdot60\\cdot30=18000\\ \\mathrm{cm}^3\\).\n\n**Sposób II — długość podstawy**\nNiech \\(u\\) oznacza długość podstawy. Pozostałe wymiary to \\(u-30\\) i \\((80-u)/2\\). W dziedzinie \\(30<u<80\\) mamy\n\\[V(u)=\\tfrac12u(u-30)(80-u),\\qquad V'(u)=-\\tfrac32u^2+110u-1200.\\]\nMiejsca zerowe pochodnej to \\(40/3\\) i \\(60\\), z czego tylko \\(60\\) należy do dziedziny. Pochodna zmienia tam znak z dodatniego na ujemny. Bok naroża to \\((80-60)/2=10\\) cm, a maksymalna objętość \\(18000\\ \\mathrm{cm}^3\\).\n\n**Sposób III — szerokość podstawy**\nNiech \\(v\\) będzie szerokością podstawy. Wtedy długość to \\(v+30\\), a wysokość \\((50-v)/2\\), gdzie \\(0<v<50\\). Mamy\n\\[V(v)=\\tfrac12v(v+30)(50-v)=-\\tfrac12v^3+10v^2+750v,\\qquad V'(v)=-\\tfrac32v^2+20v+750.\\]\nPochodna ma miejsca zerowe \\(-50/3\\) i \\(30\\). W dziedzinie jest dodatnia przed \\(30\\) i ujemna po \\(30\\), więc bok naroża to \\((50-30)/2=10\\) cm, a maksymalna objętość to \\(18000\\ \\mathrm{cm}^3\\).",
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [],
+    "tagi": [
+      "Graniastosłup"
+    ],
     "sprawdzone_polecenie": 1,
     "sprawdzone_rozwiazanie": 1
   }

@@ -15,8 +15,7 @@
     "numer": "2",
     "punkty": 4,
     "kategorie": [
-      "Dowodzenie podzielności",
-      "Ciągi"
+      "Dowodzenie podzielności"
     ],
     "tagi": [
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
@@ -47,7 +46,9 @@
     "kategorie": [
       "Dowodzenie podzielności"
     ],
-    "tagi": [],
+    "tagi": [
+      "Grupowanie"
+    ],
     "polecenie": "Niech \\(a>1000\\) będzie liczbą naturalną, której zapis dziesiętny składa się z \\(n\\) jedynek. Udowodnij, że jeśli \\(a\\) jest liczbą pierwszą, to \\(n\\) jest liczbą pierwszą.",
     "rozwiazanie": "Przypuśćmy, że \\(n=k\\ell\\), gdzie \\(k,\\ell>1\\) są liczbami całkowitymi. Oznaczmy przez \\(b\\) liczbę zapisaną za pomocą \\(k\\) jedynek. Rozbijając cyfry liczby \\(a\\) na \\(\\ell\\) bloków po \\(k\\) cyfr, otrzymujemy\n\\[a=b(1+10^k+\\cdots+10^{k(\\ell-1)}).\\]\nOba czynniki przekraczają \\(1\\), więc \\(a\\) jest złożona. Gdy \\(a\\) jest pierwsza, \\(n>1\\) musi być pierwsze.",
     "strona_zadania": 11,
@@ -72,8 +73,7 @@
     "numer": "6",
     "punkty": 3,
     "kategorie": [
-      "Kombinatoryka",
-      "Własności wielomianów"
+      "Kombinatoryka"
     ],
     "tagi": [
       "Równanie kwadratowe"
@@ -99,8 +99,7 @@
     "numer": "8",
     "punkty": 3,
     "kategorie": [
-      "Dowodzenie równań / nierówności",
-      "Własności wielomianów"
+      "Dowodzenie równań / nierówności"
     ],
     "tagi": [],
     "polecenie": "Udowodnij, że liczba\n\\[(\\sqrt5+2)^{2022}+(\\sqrt5-2)^{2022}\\]\njest wymierna.",
@@ -130,7 +129,8 @@
     ],
     "tagi": [
       "Równanie / nierówność wymierna",
-      "Rozkład wielomianu stopnia 3 lub wyżej"
+      "Rozkład wielomianu stopnia 3 lub wyżej",
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia"
     ],
     "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[x+4+\\frac{8}{x-4}\\ge\\frac{-2x-8}{x^2-16}.\\]",
     "rozwiazanie": "Dziedziną jest \\(\\mathbb R\\setminus\\{-4,4\\}\\). Po przeniesieniu prawej strony na lewą i sprowadzeniu do wspólnego mianownika mamy\n\\[\\frac{(x+4)(x^2-6)}{(x-4)(x+4)}\\ge0.\\]\nW dziedzinie możemy pomnożyć obie strony przez dodatni kwadrat mianownika. Dostajemy nierówność\n\\[(x+4)^2(x+\\sqrt6)(x-\\sqrt6)(x-4)\\ge0.\\]\nJej rozwiązaniami są \\(\\{-4\\}\\cup[-\\sqrt6,\\sqrt6]\\cup[4,\\infty)\\). Po uwzględnieniu dziedziny zostaje \\([-\\sqrt6,\\sqrt6]\\cup(4,\\infty)\\).",
@@ -170,7 +170,7 @@
     "numer": "13",
     "punkty": 3,
     "kategorie": [
-      "Geometria analityczna"
+      "Różne"
     ],
     "tagi": [
       "Okrąg w układzie współrzędnych",
@@ -201,7 +201,7 @@
       "Równania / nierówności z wartością bezwzględną"
     ],
     "tagi": [
-      "Równanie / nierówność wymierna"
+      "Zwijanie przy użyciu wzorów skróconego mnożenia 2 stopnia"
     ],
     "polecenie": "Narysuj wykres funkcji\n\\[f(x)=\\frac{|x^2-9|}{3-x}.\\]\nWyznacz wszystkie wartości \\(m\\), dla których równanie \\(f(x)=m\\) nie ma rozwiązań. Zapisz obliczenia.",
     "rozwiazanie": "Mianownik wyklucza \\(x=3\\). Ponieważ \\(x^2-9=(x-3)(x+3)\\), po rozpatrzeniu znaku licznika pod wartością bezwzględną mamy\n\\[f(x)=\\begin{cases}-x-3 & x\\le-3\\ \\text{lub}\\ x>3,\\\\x+3 & -3<x<3.\\end{cases}\\]\nWykres składa się z części prostych opisanych powyżej. Łączą się w \\((-3,0)\\), a w \\((3,6)\\) i \\((3,-6)\\) są otwarte końce.\n\n[[rysunek:zbior-2023-15-rozw|Wykres funkcji z załamaniem w punkcie (−3, 0) i pustymi punktami dla x = 3.]]\n\nLewa półprosta daje wszystkie wartości nieujemne. Odcinek na \\((-3,3)\\) przyjmuje na nim wartości z \\((0,6)\\), a prawa półprosta z \\((-\\infty,-6)\\). Stąd równanie nie ma rozwiązań dokładnie dla \\(m\\in[-6,0)\\).",
@@ -316,8 +316,7 @@
     "numer": "23",
     "punkty": 3,
     "kategorie": [
-      "Różne",
-      "Funkcja wykładnicza"
+      "Różne"
     ],
     "tagi": [],
     "polecenie": "Dla \\(x\\ge0\\) niech\n\\[f(x)=\\frac{\\sqrt{2x}}{5+x^2}-3^{-x-1}.\\]\nUdowodnij, że \\(f\\) ma miejsce zerowe w przedziale \\((0,3)\\).",
@@ -343,8 +342,7 @@
     "numer": "25",
     "punkty": 4,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Własności wielomianów"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Max / min nie w ekstremum",
@@ -373,12 +371,9 @@
     "numer": "27",
     "punkty": 6,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
-    "tagi": [
-      "Twierdzenie sinusów"
-    ],
+    "tagi": [],
     "polecenie": "W okrąg o promieniu \\(R\\) wpisujemy trójkąty o obwodzie \\(3R\\), w których jeden bok jest dwa razy dłuższy od innego. Wyznacz taki trójkąt o największym polu i oblicz jego pole. Zapisz obliczenia.",
     "rozwiazanie": "**Metoda przedstawiona przez CKE**\nJeśli parę boków oznaczymy \\(x,2x\\), to trzeci bok wynosi \\(3R-3x\\). Po użyciu wzoru \\(P=abc/(4R)\\) otrzymujemy \\(P(x)=\\frac32x^2-\\frac{3}{2R}x^3\\). Nierówności trójkąta dają \\(R/2<x<3R/4\\). Pochodna \\(P'(x)=3x-9x^2/(2R)\\) jest dodatnia do \\(x=2R/3\\) i ujemna dalej. W kluczu zapisano maksimum \\(2R^2/9\\) przy \\(x=2R/3\\).\n\n**Sprawdzenie warunku okręgu opisanego**\nWartość \\(x=2R/3\\) prowadzi do trójkąta o bokach \\(2R/3,4R/3,R\\). Ma on pole \\(\\sqrt{15}R^2/12\\) ze wzoru Herona, a więc promień jego okręgu opisanego to \\(8R/(3\\sqrt{15})\\), różny od \\(R\\). Przedział z nierówności trójkąta obejmuje też trójkąty o innych promieniach.\n\nDla \\(t=x/R\\) poprawny warunek uzyskujemy przez zrównanie kwadratów pól ze wzoru Herona i \\(abc/(4R)\\). Przy \\(1/2<t<3/4\\) jest on równoważny równaniu\n\\[4t^6-8t^5+4t^4-16t^3+44t^2-36t+9=0.\\]\nRównanie ma w tym przedziale dwa pierwiastki \\(t_1\\approx0{,}518424\\) oraz \\(t_2\\approx0{,}719183\\). Zmiana \\(t=(2+3u)/(4(1+u))\\), \\(u>0\\), prowadzi po usunięciu mianownika do wielomianu\n\\[\\begin{aligned}324u^6-912u^5-7696u^4-14208u^3\\\\{}-10304u^2-2304u+256.\\end{aligned}\\]\nDwie zmiany znaku współczynników dają co najwyżej dwa dodatnie pierwiastki na mocy reguły znaków Kartezjusza. Pierwiastki leżą po przeciwnych stronach \\(2/3\\), co wynika ze znaków wyrażenia w \\(1/2,2/3,3/4\\); podane przybliżenia można otrzymać przez bisekcję. Pola wynoszą odpowiednio około \\(0{,}194145R^2\\) i \\(0{,}217868R^2\\). Szukany trójkąt ma zatem boki \\(t_2R,2t_2R,3(1-t_2)R\\), a jego pole to \\(\\tfrac32 t_2^2(1-t_2)R^2\\).",
     "strona_zadania": 44,
@@ -388,8 +383,7 @@
     "numer": "28",
     "punkty": 6,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Graniastosłup",
@@ -404,8 +398,7 @@
     "numer": "29",
     "punkty": 6,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Planimetria"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)",
@@ -435,8 +428,7 @@
     "numer": "31",
     "punkty": 6,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
       "Stożek",
@@ -453,8 +445,7 @@
     "numer": "32.1",
     "punkty": 2,
     "kategorie": [
-      "Geometria przestrzenna",
-      "Planimetria"
+      "Geometria przestrzenna"
     ],
     "tagi": [
       "Stożek",
@@ -470,11 +461,9 @@
     "numer": "32.2",
     "punkty": 5,
     "kategorie": [
-      "Optymalizacja funkcji",
-      "Geometria przestrzenna"
+      "Optymalizacja funkcji"
     ],
     "tagi": [
-      "Stożek",
       "Pochodna funkcji wymiernej"
     ],
     "polecenie": "Dana jest kula o promieniu \\(1\\). Rozpatrujemy stożki opisane na tej kuli: podstawa i każda tworząca są styczne do kuli.\n\n[[rysunek:zbior-2023-32-1|Kula wpisana w stożek, styczna do podstawy i powierzchni bocznej.]]\n\nOblicz wysokość stożka o najmniejszej objętości i tę objętość. Zapisz obliczenia.\n\nWskazówka. Stożek o wysokości \\(h\\) ma objętość \\(V(h)=\\frac{\\pi h^2}{3(h-2)}\\).",

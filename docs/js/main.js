@@ -1,4 +1,4 @@
-import { kindLabels, loadCatalog } from './catalog.js?v=3';
+import { kindLabels, loadCatalog } from './catalog.js?v=4';
 import { buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=2';
 import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=3';
 
@@ -27,11 +27,13 @@ function navigate(target) {
   if (target !== location.hash) location.hash = target;
 }
 
+const oldestFirst = params => params.get('sort') === 'najstarsze' ? 'najstarsze' : null;
+
 const links = {
   task: id => href('zadanie', { id }),
   paper: id => href('arkusz', { id }),
-  category: category => href('zadania', { kategoria: category }),
-  tag: tag => href('zadania', { tag }),
+  category: category => href('zadania', { kategoria: category, sort: oldestFirst(readRoute().params) }),
+  tag: tag => href('zadania', { tag, sort: oldestFirst(readRoute().params) }),
 };
 
 function message(text) {
@@ -64,12 +66,18 @@ function configure(catalog) {
   const taxonomy = catalog.taxonomy;
   const categoryPanel = find('category-panel');
   const categoryList = find('categories');
+  const catalogSort = find('catalog-sort');
   if (window.matchMedia('(max-width: 680px)').matches) categoryPanel.open = false;
 
-  const catalogTags = new TagPicker(find('catalog-tag-filter'), 'Szukaj według tagów', taxonomy.tagi, tags => {
+  function updateTaskQuery(changes) {
     const { params } = readRoute();
-    navigate(href('zadania', { kategoria: params.get('kategoria'), podkategoria: params.get('podkategoria'), tag: tags }));
-  }, { showListButton: true });
+    navigate(href('zadania', { kategoria: params.get('kategoria'), podkategoria: params.get('podkategoria'),
+      tag: params.getAll('tag'), 'za-1-pkt': params.get('za-1-pkt'), sort: oldestFirst(params), ...changes }));
+  }
+
+  catalogSort.addEventListener('change', () => updateTaskQuery({ sort: catalogSort.value === 'najstarsze' ? catalogSort.value : null }));
+  const catalogTags = new TagPicker(find('catalog-tag-filter'), 'Szukaj według tagów', taxonomy.tagi,
+    tags => updateTaskQuery({ tag: tags }), { showListButton: true });
 
   function makeCategoryLink(label, className) {
     const count = element('span', { class: 'category-count' });
@@ -122,13 +130,13 @@ function configure(catalog) {
     element('summary', {}, onePointTitle), onePointLink.link);
   categoryList.append(onePointSection);
 
-  function selectCategory(category, subcategory, tags, options) {
+  function selectCategory(category, subcategory, tags, sort, options) {
     for (const [value, control] of categoryControls) {
       const total = value == null ? options.allCategories : options.categories.get(value) ?? 0;
-      updateCategoryLink(control.main, total, href('zadania', { kategoria: value, tag: tags }), value === category && !subcategory);
+      updateCategoryLink(control.main, total, href('zadania', { kategoria: value, tag: tags, sort }), value === category && !subcategory);
       for (const [tag, child] of control.children) {
         const count = options.tagsByCategory.get(value)?.get(tag) ?? 0;
-        updateCategoryLink(child, count, href('zadania', { kategoria: value, podkategoria: tag, tag: tags }),
+        updateCategoryLink(child, count, href('zadania', { kategoria: value, podkategoria: tag, tag: tags, sort }),
           value === category && tag === subcategory);
       }
       if (value === category && subcategory && control.button) setBranch(value, control, true);
@@ -152,22 +160,24 @@ function configure(catalog) {
     const requestedChild = params.get('podkategoria');
     const subcategory = categoryControls.get(category).children.has(requestedChild) ? requestedChild : null;
     const tags = onePoint ? [] : [...new Set(params.getAll('tag').filter(tag => taxonomy.tagi.includes(tag)))];
+    const sort = oldestFirst(params);
     const page = Number.parseInt(params.get('strona'), 10) || 1;
-    const listKey = JSON.stringify([category, subcategory, tags, onePoint]);
+    const listKey = JSON.stringify([category, subcategory, tags, onePoint, sort]);
     const preserveScroll = lastView === 'zadania' && lastListKey !== listKey;
     const effectiveTags = subcategory && !tags.includes(subcategory) ? [...tags, subcategory] : tags;
-    const { tasks, total, page: activePage, pages } = catalog.tasks({ category, tags: effectiveTags, onePoint, page });
+    const { tasks, total, page: activePage, pages } = catalog.tasks({ category, tags: effectiveTags, onePoint, page, sort });
     const pageLink = number => href('zadania', { kategoria: category, podkategoria: subcategory, tag: tags,
-      'za-1-pkt': onePoint ? 1 : null,
+      'za-1-pkt': onePoint ? 1 : null, sort,
       strona: number > 1 ? number : null });
 
     if (lastListKey !== listKey || lastView !== 'zadania') {
       const options = catalog.taskOptions({ category, tags, subcategory });
       catalogTags.setSelected(tags);
       catalogTags.setAvailability(options.tags, subcategory ? [subcategory] : []);
-      selectCategory(onePoint ? undefined : category, subcategory, tags, options);
-      updateCategoryLink(onePointLink, onePointCount, href('zadania', { 'za-1-pkt': 1 }), onePoint);
+      selectCategory(onePoint ? undefined : category, subcategory, tags, sort, options);
+      updateCategoryLink(onePointLink, onePointCount, href('zadania', { 'za-1-pkt': 1, sort }), onePoint);
     }
+    catalogSort.value = sort ?? 'najnowsze';
     find('catalog-tag-filter').hidden = onePoint;
     if (onePoint) {
       onePointSection.open = true;
@@ -176,7 +186,9 @@ function configure(catalog) {
     lastListKey = listKey;
     find('category-title').textContent = onePoint ? onePointTitle
       : subcategory ? category + ' · ' + subcategory : (category ?? 'Wszystkie zadania');
-    find('clear-filters').hidden = !category && tags.length === 0;
+    const clear = find('clear-filters');
+    clear.hidden = !category && tags.length === 0;
+    clear.href = href('zadania', { sort });
     find('result-count').textContent = countText(total);
     find('catalog-tasks').replaceChildren(...(tasks.length ? tasks.map(task => taskCard(catalog, task, links))
       : [message('Brak zadań spełniających wybrane kryteria.')]));
@@ -194,17 +206,22 @@ function configure(catalog) {
   const paperById = new Map(allPapers.map(paper => [paper.arkusz_id, paper]));
   const archiveYear = find('archive-year');
   const archiveKind = find('archive-kind');
+  const archiveSort = find('archive-sort');
   archiveYear.append(...catalog.years.map(year => element('option', { value: year }, String(year))));
   archiveKind.append(...Object.entries(kindLabels).map(([kind, label]) => element('option', { value: kind }, label)));
-  const updateArchive = () => navigate(href('arkusze', { rok: archiveYear.value, typ: archiveKind.value }));
+  const updateArchive = () => navigate(href('arkusze', { rok: archiveYear.value, typ: archiveKind.value,
+    sort: archiveSort.value === 'najstarsze' ? archiveSort.value : null }));
   archiveYear.addEventListener('change', updateArchive);
   archiveKind.addEventListener('change', updateArchive);
+  archiveSort.addEventListener('change', updateArchive);
 
   function drawArchive(params) {
     const year = Number.parseInt(params.get('rok'), 10);
     const kind = params.get('typ');
+    const sort = oldestFirst(params);
     archiveYear.value = catalog.years.includes(year) ? String(year) : '';
     archiveKind.value = Object.hasOwn(kindLabels, kind) ? kind : '';
+    archiveSort.value = sort ?? 'najnowsze';
     for (const option of archiveYear.options) {
       option.disabled = Boolean(option.value) && option.value !== archiveYear.value
         && !allPapers.some(paper => paper.rok === Number(option.value) && (!archiveKind.value || paper.typ === archiveKind.value));
@@ -213,7 +230,7 @@ function configure(catalog) {
       option.disabled = Boolean(option.value) && option.value !== archiveKind.value
         && !allPapers.some(paper => paper.typ === option.value && (!archiveYear.value || paper.rok === year));
     }
-    const papers = catalog.papers({ year: archiveYear.value ? year : null, kind: archiveKind.value });
+    const papers = catalog.papers({ year: archiveYear.value ? year : null, kind: archiveKind.value, sort });
     const headings = ['Arkusz', 'Rodzaj', 'Zadania', 'Punkty'];
     const rows = papers.map(paper => element('tr', {},
       element('th', { scope: 'row' }, element('a', { href: links.paper(paper.arkusz_id) }, paper.arkusz)),

@@ -13,7 +13,12 @@ export function suggestTags(tags, search, selected = []) {
   return tags.filter(tag => !selected.includes(tag) && terms.every(term => normalize(tag).includes(term)));
 }
 
-const order = `rok DESC, coalesce(miesiac, 0) DESC, arkusz_id, cast(numer AS INTEGER), numer`;
+function paperOrder(sort) {
+  const direction = sort === 'najstarsze' ? 'ASC' : 'DESC';
+  return `rok ${direction}, coalesce(miesiac, 0) ${direction}, arkusz_id`;
+}
+
+const questionOrder = 'cast(numer AS INTEGER), numer';
 
 function readTask(row) {
   return { ...row, kategorie: JSON.parse(row.kategorie), tagi: JSON.parse(row.tagi) };
@@ -61,12 +66,13 @@ export class Catalog {
     }
   }
 
-  tasks({ category, tags = [], paper, onePoint = false, size = 15, page = 1 } = {}) {
+  tasks({ category, tags = [], paper, onePoint = false, size = 15, page = 1, sort } = {}) {
     const { where, params } = filtersFor({ category, tags, paper, onePoint });
     const [{ total }] = this.query(`SELECT count(*) AS total FROM zadania ${where}`, params);
     const pages = Math.max(1, Math.ceil(total / size));
     const currentPage = Math.min(pages, Math.max(1, page));
-    const tasks = this.query(`SELECT ${this.publicColumns} FROM zadania ${where} ORDER BY ${order} LIMIT ? OFFSET ?`,
+    const tasks = this.query(`SELECT ${this.publicColumns} FROM zadania ${where}
+      ORDER BY ${paperOrder(sort)}, ${questionOrder} LIMIT ? OFFSET ?`,
       [...params, size, (currentPage - 1) * size]).map(readTask);
     return { tasks, total, page: currentPage, pages };
   }
@@ -92,11 +98,11 @@ export class Catalog {
     return { total, allCategories: rows.length, categories: categoryCounts, tags: tagCounts, tagsByCategory };
   }
 
-  papers({ year, kind } = {}) {
+  papers({ year, kind, sort } = {}) {
     return this.query(`SELECT arkusz_id, arkusz, rok, miesiac, typ, formula, zrodlo_arkusz,
       count(*) AS total, sum(punkty) AS points, sum(punkty IS 1) AS onePoint FROM zadania
       WHERE (? IS NULL OR rok = ?) AND (? IS NULL OR typ = ?)
-      GROUP BY arkusz_id ORDER BY rok DESC, coalesce(miesiac, 0) DESC, arkusz_id`,
+      GROUP BY arkusz_id ORDER BY ${paperOrder(sort)}`,
     [year ?? null, year ?? null, paperKinds.includes(kind) ? kind : null, paperKinds.includes(kind) ? kind : null]);
   }
 
@@ -111,7 +117,7 @@ export class Catalog {
   }
 
   candidates() {
-    return this.query(`SELECT ${this.publicColumns} FROM zadania ORDER BY ${order}`).map(readTask);
+    return this.query(`SELECT ${this.publicColumns} FROM zadania ORDER BY ${paperOrder()}, ${questionOrder}`).map(readTask);
   }
 }
 
@@ -124,7 +130,7 @@ async function fetchAsset(path) {
 export async function loadCatalog() {
   const [SQL, bytes, taxonomy, subcategories] = await Promise.all([
     window.initSqlJs({ locateFile: name => new URL(`../vendor/sqljs/${name}`, import.meta.url).href }),
-    fetchAsset('../data/zadania.sqlite?v=3').then(response => response.arrayBuffer()),
+    fetchAsset('../data/zadania.sqlite?v=4').then(response => response.arrayBuffer()),
     fetchAsset('../data/slowniki.json').then(response => response.json()),
     fetchAsset('../data/podkategorie.json?v=3').then(response => response.json()),
   ]);

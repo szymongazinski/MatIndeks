@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import initSqlJs from 'sql.js';
 import { Catalog } from '../docs/js/catalog.js';
@@ -51,5 +52,39 @@ test('one-point tasks are excluded from search and retain a separate list and di
   assert.equal(catalog.task('a').punkty, 1);
   assert.equal(catalog.papers().find(paper => paper.rok === 2018).points, 4);
   assert.equal(catalog.papers().find(paper => paper.rok === 2018).onePoint, 1);
+  database.close();
+});
+
+test('catalog sorts exam dates before pagination while keeping question numbers in order', () => {
+  const database = new SQL.Database();
+  database.run(`CREATE TABLE zadania (id, numer, arkusz_id, arkusz, rok, miesiac, typ, formula, punkty,
+    kategorie, tagi, polecenie, zrodlo_arkusz, strona_zadania);
+    INSERT INTO zadania VALUES
+      ('jun-2', '2', '2018-06', 'Czerwiec 2018', 2018, 6, 'dodatkowy', 2015, 3, '[]', '[]', 'Treść', '', 2),
+      ('may-10', '10', '2018-05', 'Maj 2018', 2018, 5, 'glowny', 2015, 3, '[]', '[]', 'Treść', '', 6),
+      ('recent-1', '1', '2026-05', 'Maj 2026', 2026, 5, 'glowny', 2023, 3, '[]', '[]', 'Treść', '', 2),
+      ('may-2', '2', '2018-05', 'Maj 2018', 2018, 5, 'glowny', 2015, 3, '[]', '[]', 'Treść', '', 3)`);
+  const catalog = new Catalog(database, {});
+  assert.deepEqual(catalog.tasks({ size: 2 }).tasks.map(task => task.id), ['recent-1', 'jun-2']);
+  assert.deepEqual(catalog.tasks({ sort: 'najstarsze', size: 2 }).tasks.map(task => task.id), ['may-2', 'may-10']);
+  assert.deepEqual(catalog.tasks({ sort: 'najstarsze', size: 2, page: 2 }).tasks.map(task => task.id), ['jun-2', 'recent-1']);
+  assert.deepEqual(catalog.papers({ kind: 'glowny', sort: 'najstarsze' }).map(paper => paper.arkusz_id), ['2018-05', '2026-05']);
+  assert.deepEqual(catalog.papers({ year: 2018, sort: 'najstarsze' }).map(paper => paper.arkusz_id), ['2018-05', '2018-06']);
+  database.close();
+});
+
+test('published geometry categories describe the question and tags describe the work in each part', async () => {
+  const database = new SQL.Database(await readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)));
+  const catalog = new Catalog(database, {});
+  const triangle = catalog.task('2023-05-5');
+  assert.deepEqual(triangle.kategorie, ['Planimetria']);
+  assert.ok(triangle.tagi.includes('Odległość punktu od prostej'));
+  assert.deepEqual(catalog.task('2026-06-12').kategorie, ['Geometria przestrzenna']);
+  const rightTriangle = 'Własności trójkąta prostokątnego';
+  assert.ok(catalog.task('2026-06-13.1').tagi.includes(rightTriangle));
+  const optimization = catalog.task('2026-06-13.2');
+  assert.deepEqual(optimization.kategorie, ['Optymalizacja funkcji']);
+  assert.ok(!optimization.tagi.includes(rightTriangle));
+  assert.ok(optimization.tagi.includes('Pochodna funkcji wymiernej'));
   database.close();
 });

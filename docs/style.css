@@ -299,7 +299,7 @@ input[type="checkbox"] {
 }
 
 .catalog-filter { padding: .73rem .84rem .84rem; }
-.tag-picker > label, .archive-filters label, #sample-size > label { font-weight: 650; }
+.tag-picker > label, .archive-filters label, .catalog-actions label, #sample-size > label { font-weight: 650; }
 .tag-input-wrap { position: relative; margin-top: .24rem; }
 .tag-input-row { display: flex; gap: .45rem; }
 
@@ -398,7 +398,16 @@ select {
   margin-block: 1.18rem .7rem;
 }
 
-.results-head > a { margin-bottom: .1rem; flex-shrink: 0; font-size: .92rem; }
+.catalog-content .results-head { flex-wrap: wrap; }
+
+.catalog-actions {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: .35rem .9rem;
+}
+
+.catalog-actions > a { margin-bottom: .46rem; font-size: .92rem; }
 .results-count { margin-top: .15rem; font-size: .93rem; }
 
 .task-list {
