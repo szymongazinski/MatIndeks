@@ -46,7 +46,7 @@
   },
   {
     "numer": "10",
-    "rozwiazanie": "Wstawiamy \\(H=10,\\ r=6,\\ V=840\\pi\\) do wzoru na objętość i otrzymujemy \\(R^2+6R-216=0\\). Pierwiastki to \\(-18,12\\), więc \\(R=12\\).\n\nPrzekrój osiowy to trapez równoramienny \\(ABCD\\) o podstawach \\(AB=24,\\ CD=12\\) i wysokości \\(10\\). Niech \\(E\\) będzie rzutem \\(D\\) na \\(AB\\).\n\n[[rysunek:2018-05-10-rozw|Przekrój osiowy stożka ściętego. Przekątna DB, jej rzut EB długości 18 i wysokość DE długości 10.]]\n\nRzut przekątnej \\(DB\\) na podstawę ma długość \\(|EB|=R+r=18\\). Z twierdzenia Pitagorasa\n\\[\n|BD|=\\sqrt{10^2+18^2}=2\\sqrt{106},\n\\qquad \\cos\\angle DBE=\\frac{18}{2\\sqrt{106}}=\\frac{9}{\\sqrt{106}}.\n\\]\nSchemat oceniania CKE wskazuje również wariant z tangensem: \\(\\tan\\angle DBE=10/18=5/9\\), a ponieważ kąt jest ostry, \\(\\cos\\angle DBE=1/\\sqrt{1+(5/9)^2}=9/\\sqrt{106}\\).",
+    "rozwiazanie": "Wstawiamy \\(H=10,\\ r=6,\\ V=840\\pi\\) do wzoru na objętość i otrzymujemy \\(R^2+6R-216=0\\). Pierwiastki to \\(-18,12\\), więc \\(R=12\\).\n\nPrzekrój osiowy to trapez równoramienny \\(ABCD\\) o podstawach \\(AB=24,\\ CD=12\\) i wysokości \\(10\\). Niech \\(E\\) będzie rzutem \\(D\\) na \\(AB\\).\n\n[[rysunek:2018-05-10-rozw|Stożek ścięty z zaznaczonym przekrojem osiowym ABCD. Punkt E jest rzutem D na AB.]]\n\nRzut przekątnej \\(DB\\) na podstawę ma długość \\(|EB|=R+r=18\\). Z twierdzenia Pitagorasa\n\\[\n|BD|=\\sqrt{10^2+18^2}=2\\sqrt{106},\n\\qquad \\cos\\angle DBE=\\frac{18}{2\\sqrt{106}}=\\frac{9}{\\sqrt{106}}.\n\\]\nSchemat oceniania CKE wskazuje również wariant z tangensem: \\(\\tan\\angle DBE=10/18=5/9\\), a ponieważ kąt jest ostry, \\(\\cos\\angle DBE=1/\\sqrt{1+(5/9)^2}=9/\\sqrt{106}\\).",
     "strona_rozwiazania": 16
   },
   {

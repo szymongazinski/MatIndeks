@@ -16,7 +16,9 @@ Wybrane lata ograniczają pulę. Gdy zabraknie zadań z wymaganych działów, ge
 
 ## Dane i uruchomienie
 
-Źródłem publikowanej bazy są `content/arkusze.json` i `content/zbior.json`. Plik SQLite zawiera jedną tabelę `zadania`. Numer zadania jest tekstem, żeby zachować podpunkty takie jak `12.1`. Kategorie i tagi to tablice JSON zgodne ze słownikami w `docs/data/slowniki.json`. Pierwsza kategoria służy do obliczania rozkładu. Pola `sprawdzone_polecenie` i `sprawdzone_rozwiazanie` oznaczają porównanie transkrypcji ze źródłem. Zapis `[[rysunek:nazwa|opis]]` wstawia odpowiadający eksport z GeoGebry. Edytowalne konstrukcje są w `geogebra/konstrukcje/`.
+Źródłem publikowanej bazy są `content/arkusze.json` i `content/zbior.json`. Plik SQLite zawiera jedną tabelę `zadania`. Numer zadania jest tekstem, żeby zachować podpunkty takie jak `12.1`. Kategorie i tagi to tablice JSON zgodne ze słownikami w `docs/data/slowniki.json`. Pierwsza kategoria służy do obliczania rozkładu. Pola `sprawdzone_polecenie` i `sprawdzone_rozwiazanie` oznaczają porównanie transkrypcji ze źródłem.
+
+Zapis `[[rysunek:nazwa|opis]]` wstawia oryginalny rysunek z PDF-u CKE wycięty jako PNG z przezroczystym tłem. Plik `content/kadry-rysunkow.json` podaje dla każdego rysunku nazwę PDF-u, numer strony i współrzędne wycinka liczone w punktach od lewego górnego rogu strony. Do odtworzenia plików użyj `python scripts/wytnij-rysunki.py <katalog-z-pdfami>` z pakietami `pymupdf` oraz `Pillow`.
 
 Po zmianach w danych uruchom z katalogu projektu:
 

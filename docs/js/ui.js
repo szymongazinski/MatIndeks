@@ -1,4 +1,4 @@
-import { kindLabels, suggestTags } from './catalog.js?v=3';
+import { kindLabels, suggestTags } from './catalog.js?v=6';
 
 export function element(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
@@ -55,7 +55,7 @@ export function renderText(text, source, page, sourceLabel) {
       content.append(block);
       block = element('div', { class: 'math-paragraph' });
     } else if (imageId) {
-      const image = element('img', { src: './rysunki/' + imageId + '.png', alt: caption || 'Rysunek do zadania',
+      const image = element('img', { srcset: './rysunki/' + imageId + '.png?v=2 2x', alt: caption || 'Rysunek do zadania',
         loading: 'lazy', decoding: 'async' });
       const figure = element('figure', { class: 'task-figure' }, image);
       image.addEventListener('error', () => {

@@ -5,7 +5,7 @@ const { once } = require('node:events');
 const { chromium } = require(process.env.MATINDEKS_PLAYWRIGHT || 'playwright-core');
 
 async function main() {
-  const out = path.resolve(__dirname, '../docs/rysunki');
+  const out = path.join(__dirname, 'eksport');
   const source = path.join(__dirname, 'konstrukcje');
   const applet = await readFile(path.join(__dirname, 'applet.html'));
   const server = createServer((_request, response) => {
