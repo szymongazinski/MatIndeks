@@ -1,8 +1,68 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nZ twierdzenia o reszcie wystarczy obliczyć \\(W(-1)\\) i \\(W(1)\\). Mamy \\(W(-1)=-1-3-2+6=0\\), więc \\(x+1\\) dzieli \\(W\\). Ponadto \\(W(1)=1-3+2+6=6\\), czyli reszta przy dzieleniu przez \\(x-1\\) wynosi \\(6\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nDzielimy licznik i mianownik przez \\(n^2\\). Składniki z \\(1/n\\) i \\(1/n^2\\) dążą do zera, więc granica wynosi \\(\\frac35\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nPierwszą urnę wybieramy z prawdopodobieństwem \\(\\frac16\\), a drugą z prawdopodobieństwem \\(\\frac56\\). Z pierwszej losujemy białą kulę z prawdopodobieństwem \\(\\frac3{10}\\), z drugiej z prawdopodobieństwem \\(\\frac1{10}\\). Otrzymujemy\n\\[\\frac16\\cdot\\frac3{10}+\\frac56\\cdot\\frac1{10}=\\frac2{15}.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nWyraz \\(x^2y^2\\) powstaje, gdy z dwóch spośród czterech czynników wybieramy \\(x\\sqrt2\\), a z pozostałych \\(y\\sqrt3\\). Współczynnik wynosi \\(\\binom42(\\sqrt2)^2(\\sqrt3)^2=36\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Odpowiedź CKE — \\(9,\\ 5,\\ 5\\).**\n\nNiech \\(|AC|=t\\). Wówczas \\(|AB|=3t\\), a \\(|BC|=\\frac{12}{5}t\\). Najkrótszy bok \\(AC\\) leży naprzeciw najmniejszego kąta \\(ABC\\). Z twierdzenia cosinusów\n\\[\\cos\\angle ABC=\\frac{(3t)^2+(\\frac{12}{5}t)^2-t^2}{2\\cdot 3t\\cdot\\frac{12}{5}t}\n=\\frac{43}{45}=0{,}9555\\ldots.\\]\nWpisujemy \\(9,5,5\\).",
+    "strona_rozwiazania": 3
+  },
+  {
     "numer": "6",
     "strona_rozwiazania": 7,
     "rozwiazanie": "Oznaczmy \\(b=(a-1)^2-4\\).\n\n**Sposób I — wykres**\nWykres funkcji \\(x\\mapsto|x-5|\\) składa się z dwóch półprostych z wierzchołkiem \\((5,0)\\). Prosta \\(y=b\\) przecina obie gałęzie po prawej stronie osi \\(Oy\\) dokładnie wtedy, gdy \\(0<b<5\\).\n\n**Sposób II — podstawienie**\nRównanie \\(|x-5|=b\\) oznacza, że odległość \\(x\\) od \\(5\\) wynosi \\(b\\). Istnieją dwie różne dodatnie liczby w tej odległości wtedy i tylko wtedy, gdy \\(0<b<5\\). Po podstawieniu są to nierówności \\((a-3)(a+1)>0\\) oraz \\((a+2)(a-4)<0\\).\n\n**Sposób III — dwa pierwiastki**\nDwa różne pierwiastki istnieją dla \\(b>0\\). Są to \\(x_1=5+b=(a-1)^2+1>0\\) oraz \\(x_2=5-b=9-(a-1)^2\\). Drugi jest dodatni dokładnie wtedy, gdy \\((a-1)^2<9\\).\n\n**Sposób IV — wzory Viète’a**\nNajpierw wymagamy \\(b\\ge0\\), aby podniesienie równania stronami do kwadratu zachowało równoważność. Otrzymujemy \\(x^2-10x+25-b^2=0\\). Warunki dwóch dodatnich pierwiastków to \\(\\Delta=4b^2>0\\), \\(x_1+x_2=10>0\\) oraz \\(x_1x_2=25-b^2>0\\). Łącznie dają \\(0<b<5\\).\n\n**Sposób V — rozbicie według znaku**\nDla \\(x\\ge5\\) otrzymujemy \\(x=(a-1)^2+1\\), które należy do tej gałęzi dla \\((a-1)^2\\ge4\\). Dla \\(0<x<5\\) otrzymujemy \\(x=9-(a-1)^2\\). Należy ono do tej gałęzi dokładnie wtedy, gdy \\(4<(a-1)^2<9\\). To daje dwa dodatnie rozwiązania.\n\nWe wszystkich sposobach końcowy warunek to \\(2<|a-1|<3\\), czyli \\(a\\in(-2,-1)\\cup(3,4)\\)."
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Ponieważ \\(|CK|/|CA|=|CL|/|CB|=\\frac13\\), mamy \\(KL\\parallel AB\\). Niech \\(P\\) będzie środkiem \\(KL\\). Oś symetrii trójkąta \\(CD\\) przechodzi przez \\(P\\) i jest prostopadła do \\(KL\\), zatem \\(P\\) jest punktem styczności. Oba promienie \\(DP,DM\\) mają równą długość.\n\n**Sposób 1 — podobieństwo trójkątów przy \\(C\\)**\n\nNiech \\(|CP|=x>0\\). Z podobieństwa \\(CKP\\) i \\(CAD\\) w skali \\(1:3\\) otrzymujemy \\(|CD|=3x\\), stąd \\(|PD|=|DM|=2x\\). Trójkąty prostokątne \\(CPK\\) i \\(CMD\\) mają wspólny kąt przy \\(C\\), więc\n\\[\\frac{|PK|}{|CK|}=\\frac{|DM|}{|CD|}=\\frac{2x}{3x}.\\]\nPonieważ \\(|CK|=2\\), mamy \\(|PK|=\\frac43\\). Z twierdzenia Pitagorasa w \\(CPK\\) otrzymujemy \\(|CP|^2=4-\\frac{16}{9}=\\frac{20}{9}\\). Z podobieństwa \\(\\frac{|CM|}{|CP|}=\\frac{|CD|}{|CK|}=\\frac{3x}{2}\\), więc \\(|CM|=\\frac32x^2=\\frac{10}{3}\\). Zatem \\(|AM|=6-\\frac{10}{3}=\\frac83\\).\n\n**Sposób 2 — równe odcinki stycznych i podobieństwo przy \\(A\\)**\n\nNiech \\(t=|KM|=|KP|>0\\). Z podobieństwa \\(CKP\\) i \\(CAD\\) mamy \\(|AD|=3t\\). Trójkąty prostokątne \\(ADM\\) i \\(ACD\\) mają wspólny kąt przy \\(A\\), więc \\(|AM|/|AD|=|AD|/|AC|\\). Ponieważ \\(|AK|=4\\), zależnie od położenia \\(M\\) mamy \\(|AM|=4-t\\) lub \\(|AM|=4+t\\). Druga możliwość dałaby \\(9t^2-6t-24=0\\), którego jedyny dodatni pierwiastek \\(2\\) jest sprzeczny z \\(t=|KP|<|CK|=2\\). Dla pierwszej możliwości proporcja \\(\\frac{4-t}{3t}=\\frac{3t}{6}\\) daje \\(9t^2+6t-24=0\\), skąd \\(t=\\frac43\\) po odrzuceniu pierwiastka ujemnego. Wówczas \\(|AM|=4-\\frac43=\\frac83\\) oraz \\(|MC|=2+\\frac43=\\frac{10}{3}\\).\n\nW obu metodach \\(|AM|/|MC|=(\\frac83)/(\\frac{10}3)=\\frac45\\).",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "**Sposób 1 — porównanie kwadratów**\n\nDodając \\(1\\) do obu stron, dostajemy \\((a+1)^2=(2b+1)^2\\). Obie podstawy są dodatnie, więc \\(a+1=2b+1\\), czyli \\(a=2b\\).\n\n**Sposób 2 — rozkład na czynniki**\n\nPrzenosimy składniki na jedną stronę i rozkładamy różnicę kwadratów:\n\\[a^2-4b^2+2(a-2b)=(a-2b)(a+2b+2)=0.\\]\nDrugi czynnik jest dodatni, więc \\(a=2b\\).\n\n**Sposób 3 — równanie kwadratowe**\n\nTraktujemy \\(a^2+2a-4b^2-4b=0\\) jako równanie z niewiadomą \\(a\\). Wyróżnik to \\((4b+2)^2\\), zatem pierwiastki to \\(2b\\) i \\(-2-2b\\). Przy \\(b>0\\) tylko \\(2b\\) spełnia warunek \\(a>0\\).",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Podstawiamy \\(\\cos(2x)=1-2\\sin^2x\\) i \\(\\cos^2x=1-\\sin^2x\\). Po uporządkowaniu otrzymujemy\n\\[16\\sin^2x+24\\sin x-16=0,\\]\nczyli dla \\(t=\\sin x\\) równanie \\(2t^2+3t-2=(2t-1)(t+2)=0\\). Liczba \\(-2\\) nie mieści się w przedziale wartości sinusa. Dla \\(\\sin x=\\frac12\\) w przedziale \\([0,2\\pi]\\) mamy\n\\[x\\in\\left\\{\\frac\\pi6,\\frac{5\\pi}6\\right\\}.\\]",
+    "strona_rozwiazania": 15
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Oznaczmy wyrazy rosnącego ciągu arytmetycznego przez \\(b_n\\). Mamy \\(b_4=a_1,\\ b_2=a_2,\\ b_1=a_3\\). Pierwszy wyraz \\(a_1\\) jest niezerowy, bo suma \\(a_1+a_2+a_3=\\frac{21}{4}\\) jest dodatnia.\n\n**Sposób 1 — różnica ciągu arytmetycznego**\n\nNiech \\(q\\) będzie ilorazem ciągu geometrycznego. Wtedy \\(b_1=a_1q^2,\\ b_2=a_1q\\) i \\(r=b_2-b_1=a_1(q-q^2)\\). Równanie \\(b_4=b_1+3r\\) daje \\(a_1=a_1(3q-2q^2)\\), czyli \\((q-1)(2q-1)=0\\). Wartość \\(q=1\\) prowadzi do \\(b_1=b_2\\), co przeczy rośnięciu. Zatem \\(q=\\frac12\\) i \\(a_1(1+\\frac12+\\frac14)=\\frac{21}4\\), więc \\(a_1=3\\).\n\n**Sposób 2 — środkowy wyraz ciągu geometrycznego**\n\nDla różnicy \\(r>0\\) mamy \\(a_1=a_3+3r\\) i \\(a_2=a_3+r\\). Z własności ciągu geometrycznego wynika\n\\[(a_3+r)^2=(a_3+3r)a_3.\\]\nPo uproszczeniu \\(r^2=a_3r\\), więc \\(r=a_3\\). Suma wynosi \\(4a_3+2a_3+a_3=\\frac{21}{4}\\), stąd \\(a_3=\\frac34\\) i \\(a_1=3\\).\n\n**Sposób 3 — średnie w ciągu arytmetycznym**\n\nZe wzorów \\(b_3=(b_2+b_4)/2\\) i \\(b_2=(b_1+b_3)/2\\) dostajemy \\(a_1q=\\frac12(a_1q^2+\\frac12a_1(1+q))\\). Dzielimy przez \\(a_1\\ne0\\) i otrzymujemy \\(2q^2-3q+1=0\\). Żądanie rośnięcia wyklucza \\(q=1\\), więc przy \\(q=\\frac12\\) ze wzoru na sumę znów dostajemy \\(a_1=3\\).",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "11",
+    "strona_rozwiazania": 20,
+    "rozwiazanie": "**Sposób I — podstawienie pierwiastków**\nWyróżnik równania to \\(\\Delta=(m-8)^2\\), więc musimy mieć \\(m\\ne8\\). Pierwiastkami są wówczas \\(m+5\\) oraz \\(2m-3\\). Po podstawieniu ich do warunku otrzymujemy\n\\[2(m+5)^2+5(m+5)(2m-3)+2(2m-3)^2=2,\\]\nczyli \\(20m^2+31m-9=0\\). Oba rozwiązania \\(m=-9/5\\) oraz \\(m=1/4\\) są różne od \\(8\\).\n\n**Sposób II — wzory Viète’a**\nWarunek przepisujemy jako \\(2(x_1+x_2)^2+x_1x_2=2\\). Ze wzorów Viète’a wynika \\(x_1+x_2=3m+2\\), \\(x_1x_2=2m^2+7m-15\\). Zatem\n\\[2(3m+2)^2+2m^2+7m-15=2,\\]\nco znów daje \\(20m^2+31m-9=0\\). Warunek \\(\\Delta>0\\) zachodzi dla obu uzyskanych wartości. Można to również sprawdzić po podstawieniu każdej z nich do trójmianu, który w obu przypadkach ma ujemny wyraz wolny.\n\nOdpowiedź \\(m\\in\\{-\\frac95,\\frac14\\}\\)."
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Dany okrąg ma postać \\((x-4)^2+(y-3)^2=17\\). Jego środek to \\(P=(4,3)\\), a promień \\(\\sqrt{17}\\). Obraz w jednokładności o skali \\(-3\\) ma promień \\(3\\sqrt{17}\\). Wyznaczymy jego środek \\(P'\\).\n\n**Sposób 1 — końce cięciwy i wektor od \\(S\\)**\n\nPodstawiamy \\(y=10-x\\) do równania okręgu. Dostajemy \\(x^2-11x+24=0\\), więc \\(K=(3,7)\\) i \\(L=(8,2)\\). Można też podstawić \\(x=10-y\\), co daje \\(2y^2-18y+28=0\\) z pierwiastkami \\(2,7\\). Środek cięciwy to \\(S=(\\frac{11}2,\\frac92)\\). Ponieważ \\(\\overrightarrow{SP}=(-\\frac32,-\\frac32)\\), zachodzi \\(\\overrightarrow{SP'}=-3\\overrightarrow{SP}=(\\frac92,\\frac92)\\) i \\(P'=(10,9)\\).\n\n**Sposób 2 — końce cięciwy i wektor od \\(P\\)**\n\nTak jak poprzednio znajdujemy \\(S=(\\frac{11}2,\\frac92)\\) z przecięcia okręgu z prostą. Z \\(\\overrightarrow{PP'}=\\overrightarrow{SP'}-\\overrightarrow{SP}=-4\\overrightarrow{SP}=(6,6)\\) otrzymujemy \\(P'=(10,9)\\).\n\n**Sposób 3 — spodek prostopadłej**\n\nŚrodek cięciwy \\(S\\) jest rzutem \\(P\\) na \\(x+y=10\\). Prosta przez \\(P\\) prostopadła do tej cięciwy ma równanie \\(x-y-1=0\\). Rozwiązujemy układ \\(x+y=10,\\ x-y=1\\) i dostajemy \\(S=(\\frac{11}2,\\frac92)\\). Relacja \\(\\overrightarrow{SP'}=-3\\overrightarrow{SP}\\) daje \\(P'=(10,9)\\).\n\n**Sposób 4 — odległość między środkami okręgów**\n\nOdległość \\(P\\) od prostej \\(x+y-10=0\\) wynosi \\(d=3/\\sqrt2\\). Ponieważ \\(S\\) leży między \\(P\\) i \\(P'\\), mamy \\(|PP'|=4d=6\\sqrt2\\). Punkt \\(P'=(a,a-1)\\) leży na prostopadłej do cięciwy przez \\(P\\). Warunek \\(2(a-4)^2=72\\) daje \\(a=-2\\) lub \\(a=10\\). Prawidłowa wartość to \\(10\\), ponieważ skala jest ujemna, a \\(P'\\) musi leżeć po drugiej stronie cięciwy niż \\(P\\).\n\n**Sposób 5 — odległość obrazu od cięciwy**\n\nDla \\(P'=(a,a-1)\\) odległość od cięciwy wynosi \\(|2a-11|/\\sqrt2\\). Musi być równa \\(3d=9/\\sqrt2\\), więc \\(|2a-11|=9\\) i \\(a=1\\) lub \\(a=10\\). Środek \\(P=(4,3)\\) spełnia \\(x+y-10<0\\), zatem w \\(P'\\) wartość ma być dodatnia. Ponownie \\(a=10\\) i \\(P'=(10,9)\\).\n\nSzukane równanie to \\((x-10)^2+(y-9)^2=153\\).",
+    "strona_rozwiazania": 24
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Cyfry różne od \\(1,2\\) wybieramy ze zbioru \\(\\{0,3,4,5,6,7,8,9\\}\\).\n\n**Sposób 1 — pierwsza cyfra**\n\nJeśli pierwsza cyfra to \\(1\\), na pozostałych miejscach wybieramy pozycje dwóch jedynek i dwóch dwójek, a potem dwie pozostałe cyfry. Liczba możliwości to \\(\\binom62\\binom42\\,8^2=5760\\). Gdy pierwsza cyfra to \\(2\\), wybieramy trzy pozycje jedynek i jedną pozycję drugiej dwójki, uzyskując \\(\\binom63\\binom31\\,8^2=3840\\). Gdy pierwsza cyfra nie jest ani \\(1\\), ani \\(2\\), mamy \\(7\\) możliwości jej wyboru, bo wykluczamy \\(0\\). Dalej wybieramy trzy pozycje jedynek, dwie pozycje dwójek i jedną pozostałą cyfrę, czyli \\(7\\binom63\\binom32\\cdot8=3360\\). Razem jest \\(12\\,960\\) liczb.\n\n**Sposób 2 — odjęcie napisów z zerem na początku**\n\nJeśli dopuścimy zero na początku, otrzymamy \\(\\binom73\\binom42\\,8^2=13\\,440\\) napisów. Zaczynających się od zera jest \\(\\binom63\\binom32\\cdot8=480\\). Wynik to \\(13\\,440-480=12\\,960\\).",
+    "strona_rozwiazania": 30
   },
   {
     "numer": "14",
@@ -13,10 +73,5 @@
     "numer": "15",
     "strona_rozwiazania": 37,
     "rozwiazanie": "**Sposób I — pochodna, wymiary ekranu**\nBoki ekranu \\(x,y\\) mierzymy w milimetrach, zatem \\(xy=6000\\) i \\(y=6000/x\\). Pole z ramką wynosi\n\\[P(x)=(x+10)(y+6)=6060+6x+\\frac{60000}{x}.\\]\nZ \\(x+10>y+6\\) otrzymujemy \\(x>2\\sqrt{1501}-2\\). Pochodna \\(P'(x)=6-\\frac{60000}{x^2}\\) jest ujemna przed \\(x=100\\) w tej dziedzinie i dodatnia za tym punktem. Minimum daje \\(x=100\\), \\(y=60\\).\n\n**Sposób II — średnia arytmetyczna i geometryczna**\nPonieważ \\(xy=6000\\), zachodzi\n\\[6x+10y\\ge 2\\sqrt{60xy}=1200.\\]\nRówność zachodzi dla \\(6x=10y\\), więc \\(x^2=10000\\). Dodatnie rozwiązanie \\(x=100\\), \\(y=60\\) spełnia warunki i minimalizuje pole \\(P=6060+6x+10y\\).\n\n**Sposób III — pochodna, wymiary telefonu**\nNiech \\(X,Y\\) będą wymiarami telefonu. Wtedy \\((X-10)(Y-6)=6000\\), więc\n\\[P(X)=XY=6X+\\frac{6000X}{X-10},\\qquad X>2\\sqrt{1501}+8.\\]\nNa tej dziedzinie \\(P'(X)=6-\\frac{60000}{(X-10)^2}\\) zmienia znak z ujemnego na dodatni w \\(X=110\\). Minimum wypada przy \\(X=110\\) i \\(Y=66\\).\n\nEkran powinien mieć wymiary \\(100\\,\\mathrm{mm}\\times60\\,\\mathrm{mm}\\)."
-  },
-  {
-    "numer": "11",
-    "strona_rozwiazania": 20,
-    "rozwiazanie": "**Sposób I — podstawienie pierwiastków**\nWyróżnik równania to \\(\\Delta=(m-8)^2\\), więc musimy mieć \\(m\\ne8\\). Pierwiastkami są wówczas \\(m+5\\) oraz \\(2m-3\\). Po podstawieniu ich do warunku otrzymujemy\n\\[2(m+5)^2+5(m+5)(2m-3)+2(2m-3)^2=2,\\]\nczyli \\(20m^2+31m-9=0\\). Oba rozwiązania \\(m=-9/5\\) oraz \\(m=1/4\\) są różne od \\(8\\).\n\n**Sposób II — wzory Viète’a**\nWarunek przepisujemy jako \\(2(x_1+x_2)^2+x_1x_2=2\\). Ze wzorów Viète’a wynika \\(x_1+x_2=3m+2\\), \\(x_1x_2=2m^2+7m-15\\). Zatem\n\\[2(3m+2)^2+2m^2+7m-15=2,\\]\nco znów daje \\(20m^2+31m-9=0\\). Warunek \\(\\Delta>0\\) zachodzi dla obu uzyskanych wartości. Można to również sprawdzić po podstawieniu każdej z nich do trójmianu, który w obu przypadkach ma ujemny wyraz wolny.\n\nOdpowiedź \\(m\\in\\{-\\frac95,\\frac14\\}\\)."
   }
 ]

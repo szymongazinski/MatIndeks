@@ -1,5 +1,75 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nNierówność \\(|2x-8|\\le10\\) jest równoważna \\(-10\\le2x-8\\le10\\). Po dodaniu \\(8\\) i podzieleniu przez \\(2\\) otrzymujemy \\(-1\\le x\\le9\\). Prawy koniec przedziału to \\(k=9\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nDla \\(x\\le0\\) mamy \\(f(x)=x-2\\le-2\\). Dla \\(x>0\\) wyrażenie \\(x+3\\) jest dodatnie, więc \\(f(x)=|x-1|\\). Równanie \\(|x-1|=1\\) daje \\(x=0\\) lub \\(x=2\\), ale w tej gałęzi dopuszczamy tylko \\(x>0\\). Jedynym rozwiązaniem jest \\(x=2\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nRozwijamy sześcian różnicy:\n\\[(3-2\\sqrt3)^3=27-54\\sqrt3+108-24\\sqrt3=135-78\\sqrt3.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nDla każdej wartości \\(x\\) mamy \\(2\\sin x\\le2\\) i \\(3\\cos x\\le3\\), więc lewa strona jest najwyżej \\(5\\). Równanie nie ma rozwiązań.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nDla prostej \\(2x-y+4=0\\) odległość punktu \\((0,0)\\) wynosi\n\\[\\frac{|2\\cdot0-0+4|}{\\sqrt{2^2+(-1)^2}}=\\frac4{\\sqrt5}=\\frac{4\\sqrt5}{5}.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "**Odpowiedź CKE — \\(1,\\ 4,\\ 3\\).**\n\nPierwszy ułamek dzielimy w liczniku i mianowniku przez \\(n^3\\), a drugi przez \\(n^2\\). Stąd granica to \\(\\frac{11}{6}-\\frac25=\\frac{43}{30}=1{,}4333\\ldots\\). Wpisujemy cyfrę jedności i dwie pierwsze cyfry po przecinku, czyli \\(1,4,3\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób 1 — postać iloczynowa**\n\nWspółczynnik wiodący \\(a\\ne0\\), a z miejsc zerowych wynika \\(f(x)=a(x+1)(x-3)\\). Wtedy\n\\[\\frac{f(6)}{f(12)}=\\frac{a\\cdot7\\cdot3}{a\\cdot13\\cdot9}=\\frac7{39}.\\]\n\n**Sposób 2 — wzory Viète’a**\n\nDla \\(f(x)=ax^2+bx+c\\) suma pierwiastków daje \\(-b/a=2\\), a iloczyn daje \\(c/a=-3\\). Mamy więc \\(f(x)=ax^2-2ax-3a\\), stąd \\(f(6)=21a\\) oraz \\(f(12)=117a\\). Ich iloraz wynosi \\(\\frac7{39}\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "**Sposób 1 — suma dwóch kwadratów**\n\n\\[\nx^4-x^2-2x+3=(x^2-1)^2+(x-1)^2+1.\n\\]\nKwadraty są nieujemne, a dodajemy do nich \\(1\\), więc wynik jest dodatni dla każdego \\(x\\).\n\n**Sposób 2 — wyłączenie wspólnego czynnika**\n\nPo pogrupowaniu składników otrzymujemy\n\\[\\begin{aligned}\nx^4-x^2-2x+3\n&=x^2(x^2-1)-2(x-1)+1\\\\\n&=(x-1)\\bigl[x^2(x+1)-2\\bigr]+1\\\\\n&=(x-1)^2\\bigl[(x+1)^2+1\\bigr]+1.\n\\end{aligned}\\]\nIloczyn jest nieujemny, więc całe wyrażenie jest dodatnie.\n\n**Sposób 3 — minimum wielomianu**\n\nDla \\(f(x)=x^4-x^2-2x+3\\) mamy \\(f'(x)=4x^3-2x-2\\). Ponieważ \\(f'(1)=0\\), dzielimy przez \\(x-1\\) i otrzymujemy \\(f'(x)=(x-1)(4x^2+4x+2)\\). Drugi czynnik ma dodatni współczynnik wiodący i wyróżnik \\(-16\\), więc jest dodatni. Funkcja maleje przed \\(x=1\\) i rośnie po nim, zatem \\(f(x)\\ge f(1)=1>0\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Oznaczmy połowy kątów \\(ABCD\\) przy \\(A,B,C,D\\) odpowiednio przez \\(\\alpha,\\beta,\\gamma,\\delta\\). Zgodnie z rysunkiem \\(P\\) jest przecięciem dwusiecznych przy \\(A,B\\), \\(Q\\) przy \\(A,D\\), \\(R\\) przy \\(C,D\\), a \\(S\\) przy \\(B,C\\). Wystarczy wykazać, że dwa przeciwległe kąty \\(PQRS\\) sumują się do \\(180^\\circ\\).\n\n**Sposób 1 — kąty przy \\(Q,S\\) z kątów przeciwległych \\(ABCD\\)**\n\nPonieważ \\(ABCD\\) jest wpisany w okrąg, \\(\\gamma=90^\\circ-\\alpha\\) i \\(\\delta=90^\\circ-\\beta\\). Z trójkąta \\(ADQ\\) dostajemy \\(\\angle A Q D=180^\\circ-\\alpha-\\delta=90^\\circ-\\alpha+\\beta\\), a z \\(BCS\\) otrzymujemy \\(\\angle BSC=180^\\circ-\\beta-\\gamma=90^\\circ+\\alpha-\\beta\\). W konfiguracji z rysunku są to miary kątów \\(PQR\\) i \\(PSR\\). Ich suma wynosi \\(180^\\circ\\).\n\n**Sposób 2 — kąty przy \\(P,R\\) z kątów przeciwległych \\(ABCD\\)**\n\nZ \\(ABP\\) wynika \\(\\angle APB=180^\\circ-(\\alpha+\\beta)\\). Z \\(CDR\\) i zależności \\(\\gamma=90^\\circ-\\alpha,\\ \\delta=90^\\circ-\\beta\\) mamy \\(\\angle CRD=\\alpha+\\beta\\). Odpowiednie kąty wierzchołkowe \\(SPQ\\) i \\(SRQ\\) sumują się do \\(180^\\circ\\).\n\n**Sposób 3 — kąty przy \\(Q,S\\) z sumy czterech kątów**\n\nW \\(ABCD\\) mamy \\(2\\alpha+2\\beta+2\\gamma+2\\delta=360^\\circ\\), zatem \\(\\alpha+\\beta+\\gamma+\\delta=180^\\circ\\). Kąty \\(PQR,PSR\\) mają odpowiednio miary kątów \\(AQD,BSC\\). Z trójkątów \\(ADQ,BCS\\) ich suma wynosi \\(360^\\circ-(\\alpha+\\delta+\\beta+\\gamma)=180^\\circ\\).\n\n**Sposób 4 — kąty przy \\(P,R\\) z sumy czterech kątów**\n\nKąty \\(SPQ,SRQ\\) są wierzchołkowe do \\(APB,CRD\\). Z trójkątów \\(ABP,CDR\\) mają miary \\(180^\\circ-(\\alpha+\\beta)\\) i \\(180^\\circ-(\\gamma+\\delta)\\). Ich suma wynosi \\(360^\\circ-(\\alpha+\\beta+\\gamma+\\delta)=180^\\circ\\).\n\nKażda z tych metod daje warunek wpisania \\(PQRS\\) w okrąg.",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "**Sposób 1 — twierdzenie cosinusów**\n\nNiech \\(x=|AC|\\) i \\(\\alpha=\\angle ABC\\). Czworokąt można wpisać w okrąg, więc \\(\\angle CDA=180^\\circ-\\alpha\\). Twierdzenie cosinusów w trójkątach \\(ABC\\) i \\(ACD\\) daje\n\\[x^2=13-12\\cos\\alpha,\\qquad x^2=41+40\\cos\\alpha.\\]\nZ porównania stron wynika \\(\\cos\\alpha=-\\frac7{13}\\), stąd \\(x^2=\\frac{253}{13}\\). Można również pomnożyć równania odpowiednio przez \\(10\\) i \\(3\\), a następnie dodać, uzyskując od razu \\(13x^2=253\\).\n\n**Sposób 2 — twierdzenie Ptolemeusza i pola**\n\nNiech \\(y=|BD|\\). Z twierdzenia Ptolemeusza \\(xy=2\\cdot4+3\\cdot5=23\\). Niech \\(R\\) będzie promieniem wspólnego okręgu opisanego. Porównujemy pole \\(ABCD\\) po podziale każdą z przekątnych, stosując wzór na pole trójkąta \\(abc/(4R)\\). Otrzymujemy\n\\[\\frac{2\\cdot3\\cdot x+4\\cdot5\\cdot x}{4R}\n=\\frac{2\\cdot5\\cdot y+3\\cdot4\\cdot y}{4R}.\\]\nStąd \\(26x=22y\\), czyli \\(y=\\frac{13}{11}x\\). Podstawienie do \\(xy=23\\) daje \\(x^2=\\frac{253}{13}\\).\n\nSzukana długość to \\(|AC|=\\sqrt{\\frac{253}{13}}\\).",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Z pierwszej urny przenosimy białą kulę z prawdopodobieństwem \\(\\frac38\\), a czarną z prawdopodobieństwem \\(\\frac58\\). W drugiej urnie po uzupełnieniu jest \\(12\\) kul. W pierwszym przypadku jest wśród nich \\(10\\) białych, a w drugim \\(7\\).\n\n**Sposób 1 — prawdopodobieństwo całkowite**\n\nJeśli pierwsza kula była biała, prawdopodobieństwo wylosowania z drugiej urny dwóch białych wynosi \\(\\binom{10}2/\\binom{12}2=\\frac{15}{22}\\). Jeśli była czarna, wynosi \\(\\binom72/\\binom{12}2=\\frac7{22}\\). Zatem\n\\[P=\\tfrac38\\cdot\\tfrac{15}{22}+\\tfrac58\\cdot\\tfrac7{22}=\\tfrac5{11}.\\]\n\n**Sposób 2 — drzewo zdarzeń**\n\nW drzewie uwzględniamy dwie gałęzie pierwszego losowania. Każdą z nich kończy gałąź losowania białej pary o prawdopodobieństwie odpowiednio \\(\\frac{15}{22}\\) lub \\(\\frac7{22}\\). Iloczyny prawdopodobieństw wzdłuż tych dwóch ścieżek sumują się do \\(\\frac5{11}\\).\n\nDrugi wariant drzewa rozpisuje losowanie w drugiej urnie na dwie kolejne gałęzie. Sumujemy tylko dwie ścieżki z dwiema białymi kulami:\n\\[P=\\tfrac38\\cdot\\tfrac{10}{12}\\cdot\\tfrac9{11}\n+\\tfrac58\\cdot\\tfrac7{12}\\cdot\\tfrac6{11}=\\tfrac5{11}.\\]",
+    "strona_rozwiazania": 15
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Styczna równoległa do \\(y=4x\\) musi mieć współczynnik kierunkowy \\(4\\). Pochodna to \\(f'(x)=3x^2-4x\\), więc szukamy rozwiązań \\(3x^2-4x-4=0\\). Są to \\(x=-\\frac23\\) oraz \\(x=2\\).\n\nWartości funkcji w tych punktach wynoszą odpowiednio \\(-\\frac5{27}\\) i \\(1\\). Z równania stycznej \\(y-f(x_0)=4(x-x_0)\\) otrzymujemy\n\\[y=4x+\\frac{67}{27}\\qquad\\text{oraz}\\qquad y=4x-7.\\]",
+    "strona_rozwiazania": 17
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Warunek równania kwadratowego daje \\(m\\ne-1\\). Wyróżnik wynosi\n\\[\\Delta=4(m-2)^2-4(m+1)(4-m)=4m(2m-7).\\]\nMusi być dodatni, więc \\(m\\in(-\\infty,0)\\cup(\\frac72,\\infty)\\) z wykluczeniem \\(-1\\).\n\nWarunek dla pierwiastków przekształcamy do\n\\[(x_1-x_2)(x_1+x_2)(1-x_1^2-x_2^2)=0.\\]\nWiemy, że \\(x_1-x_2\\ne0\\). Ze wzorów Viète’a \\(x_1+x_2=-2(m-2)/(m+1)\\), więc suma jest zerem tylko dla \\(m=2\\), poza dopuszczalnym zbiorem.\n\nPozostaje \\(x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=1\\). Po podstawieniu wzorów Viète’a\n\\[\\left(\\frac{-2(m-2)}{m+1}\\right)^2\n-2\\frac{4-m}{m+1}=1.\\]\nPo pomnożeniu przez \\((m+1)^2\\) dostajemy \\(5m^2-24m+7=0\\), o pierwiastkach \\(\\frac{12-\\sqrt{109}}5\\) i \\(\\frac{12+\\sqrt{109}}5\\). Pierwszy leży między \\(0\\) a \\(\\frac72\\), a drugi jest większy od \\(\\frac72\\). Wynik to \\(m=\\frac{12+\\sqrt{109}}5\\).",
+    "strona_rozwiazania": 19
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Niech \\(a\\) oznacza długość boku podstawy. Wtedy \\(|SD|=2a\\), \\(|AC|=|BD|=a\\sqrt2\\) i z twierdzenia Pitagorasa w trójkątach \\(ADS,CDS\\) mamy \\(|AS|=|CS|=a\\sqrt5\\). Niech \\(E\\) będzie spodkiem prostopadłej z \\(A\\) na \\(SB\\). Z symetrii względem płaszczyzny \\(SDB\\) jest to także spodek prostopadłej z \\(C\\). Kąt \\(\\alpha=\\angle AEC\\) opisuje nachylenie ścian \\(ABS,CBS\\), a \\(|AE|=|CE|\\).\n\n**Sposób 1 — przekrój i twierdzenie cosinusów**\n\nTrójkąt \\(ABS\\) jest prostokątny przy \\(A\\), ponieważ \\(AB\\) jest prostopadła do \\(AD\\) i do kierunku \\(SD\\). Zatem \\(|SB|=\\sqrt{a^2+5a^2}=a\\sqrt6\\). Porównanie pól \\(\\frac12|AB||AS|=\\frac12|SB||AE|\\) daje \\(|AE|=a\\sqrt{5/6}\\). Twierdzenie cosinusów w \\(AEC\\) daje\n\\[2a^2=2\\cdot\\tfrac56a^2(1-\\cos\\alpha),\\]\nwięc \\(\\cos\\alpha=-\\frac15\\) i \\(\\sin\\alpha=\\frac{2\\sqrt6}{5}\\).\n\n**Sposób 2 — obliczenie wspólnej krawędzi z przekątnej podstawy**\n\nW prostokątnym \\(BDS\\) mamy \\(|SB|=\\sqrt{(a\\sqrt2)^2+(2a)^2}=a\\sqrt6\\). Następnie porównanie pól trójkąta \\(ABS\\) prowadzi do tej samej wysokości \\(a\\sqrt{5/6}\\), a twierdzenie cosinusów w \\(AEC\\) daje \\(\\cos\\alpha=-\\frac15\\) i \\(\\sin\\alpha=\\frac{2\\sqrt6}{5}\\).\n\n**Sposób 3 — połowa kąta**\n\nWysokości \\(|AE|=|CE|=a\\sqrt{5/6}\\) obliczamy jak w sposobie 2. Niech \\(O\\) będzie środkiem \\(AC\\). W równoramiennym \\(AEC\\) odcinek \\(EO\\) dzieli kąt \\(\\alpha\\) na połowy. Stąd\n\\[\\sin\\frac\\alpha2=\\frac{|AC|/2}{|AE|}=\\sqrt{\\frac35},\\qquad\n\\cos\\frac\\alpha2=\\sqrt{\\frac25}.\\]\nZe wzoru na sinus kąta podwojonego dostajemy \\(\\sin\\alpha=\\frac{2\\sqrt6}{5}\\).\n\n**Sposób 4 — pole przekroju**\n\nDla tych samych oznaczeń \\(|OE|=\\sqrt{|AE|^2-(|AC|/2)^2}=a/\\sqrt3\\). Pole trójkąta \\(AEC\\) możemy zapisać jako \\(\\frac12|AE||CE|\\sin\\alpha\\) lub \\(\\frac12|AC||OE|\\). Stąd\n\\[\\sin\\alpha=\\frac{(a\\sqrt2)(a/\\sqrt3)}{(a\\sqrt{5/6})^2}=\\frac{2\\sqrt6}{5}.\\]",
+    "strona_rozwiazania": 22
+  },
+  {
     "numer": "15",
     "strona_rozwiazania": 27,
     "rozwiazanie": "**Sposób I — najmniejszy pierwiastek jako niewiadoma**\nNiech pierwiastkami będą \\(p,p+3,p+6\\). Porównując współczynniki po rozwinięciu iloczynu \\((x-p)(x-p-3)(x-p-6)\\), dostajemy\n\\[a=-3p-9,\\quad b=3p^2+18p+18,\\quad c=-p^3-9p^2-18p.\\]\nCKE podaje również dwa sposoby uzyskania tego samego układu: podstawienie \\(p,p+3,p+6\\) do warunków \\(W=0\\) albo zastosowanie wzorów Viète’a dla wielomianu stopnia trzeciego. Z \\(1+a+b+c=0\\) wynika \\(p^3+6p^2+3p-10=0\\), czyli \\((p-1)(p+2)(p+5)=0\\). Podstawiamy \\(p=1,-2,-5\\) do wzorów powyżej.\n\n**Sposób II — wyłączenie czynnika \\(x-1\\)**\nMamy \\(c=-1-a-b\\), więc\n\\[W(x)=(x-1)\\bigl(x^2+(a+1)x+a+b+1\\bigr).\\]\nPonieważ \\(1\\) jest jednym z trzech wyrazów ciągu o różnicy \\(3\\), dwa pozostałe to \\(4,7\\), albo \\(-2,4\\), albo \\(-5,-2\\). Można pomnożyć trzy czynniki liniowe albo obliczyć \\(a+1\\) i \\(a+b+1\\) z sumy i iloczynu dwóch pozostałych pierwiastków, a potem użyć \\(c=-1-a-b\\).\n\n**Sposób III — pierwiastek \\(1\\) z sumy współczynników**\nPonieważ \\(W(1)=0\\), możliwe trójki pierwiastków to \\((1,4,7)\\), \\((-2,1,4)\\) i \\((-5,-2,1)\\). Rozwijając odpowiadające im iloczyny, otrzymujemy\n\\[x^3-12x^2+39x-28,\\quad x^3-3x^2-6x+8,\\quad x^3+6x^2+3x-10.\\]\nZatem \\((a,b,c)\\) to \\((-12,39,-28)\\), \\((-3,-6,8)\\) albo \\((6,3,-10)\\)."

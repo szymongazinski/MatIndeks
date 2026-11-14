@@ -1,6 +1,6 @@
-import { kindLabels, loadCatalog } from './catalog.js?v=2';
+import { kindLabels, loadCatalog } from './catalog.js?v=3';
 import { buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=2';
-import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=2';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=3';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];
@@ -135,8 +135,8 @@ function configure(catalog) {
     }
   }
 
-  categoryList.addEventListener('click', event => {
-    const link = event.target.closest('a[href]');
+  find('view-zadania').addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#zadania"]');
     if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
     const hash = link.getAttribute('href');
     event.preventDefault();

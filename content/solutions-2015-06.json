@@ -1,12 +1,57 @@
 [
   {
+    "numer": "6",
+    "strona_rozwiazania": 2,
+    "rozwiazanie": "Obie strony są nieujemne, więc możemy podnieść je do kwadratu. Z \\(x^2<(x-1025)^2\\) mamy \\(2050x<1025^2\\), czyli \\(x<512{,}5\\). Największą taką liczbą całkowitą jest \\(512\\), więc kod to \\(5\\,1\\,2\\)."
+  },
+  {
     "numer": "7",
     "rozwiazanie": "Zapisujemy równanie prostej w postaci ogólnej \\(-3x+4y+\\frac{122}{7}=0\\). Promień jest odległością środka \\(S=(1,-4)\\) od tej prostej. Otrzymujemy \\[r=\\frac{|-3-16+122/7|}{\\sqrt{3^2+4^2}}=\\frac{11}{35}.\\]",
     "strona_rozwiazania": 2
   },
   {
+    "numer": "8",
+    "rozwiazanie": "**Sposób 1 — zmiana podstawy logarytmu**\n\\[\\log_6 64=\\frac{\\log_{12}(2^6)}{\\log_{12}(12/2)}=\\frac{6\\log_{12}2}{\\log_{12}12-\\log_{12}2}=\\frac{6a}{1-a}.\\]\n\n**Sposób 2 — przekształcenie prawej strony**\n\nPodstawiamy \\(a=\\log_{12}2\\) i zapisujemy \\(1=\\log_{12}12\\). W liczniku \\(6\\log_{12}2=\\log_{12}64\\), w mianowniku \\(\\log_{12}12-\\log_{12}2=\\log_{12}6\\). Iloraz to \\(\\log_6 64\\).\n\n**Sposób 3 — postać wykładnicza**\n\nRówność \\(12^a=2\\) po podzieleniu przez \\(2^a\\) daje \\(6^a=2^{1-a}\\). Ponieważ \\(a\\ne1\\), podnosimy obie strony do potęgi \\(6/(1-a)\\) i otrzymujemy \\(6^{6a/(1-a)}=64\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Trzeci kąt trójkąta \\(ABC\\) ma miarę \\(70^\\circ\\). Łączymy \\(F\\) z \\(D,E,G\\). W czworokątach \\(ADFE\\) i \\(BDFG\\) wpisanych w okręgi kąty przeciwległe sumują się do \\(180^\\circ\\). Dostajemy \\(|\\angle DFE|=130^\\circ\\) i \\(|\\angle DFG|=110^\\circ\\).\n\nZatem \\(|\\angle EFG|=360^\\circ-130^\\circ-110^\\circ=120^\\circ\\). Ponieważ \\(|\\angle ECG|=60^\\circ\\), kąty przeciwległe w \\(CEFG\\) sumują się do \\(180^\\circ\\). To daje tezę.",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Z jedynki trygonometrycznej prawa strona równania to \\(1-4\\sin^2x\\). Po przeniesieniu składników i rozłożeniu na czynniki:\n\\[(2\\sin x-1)(2\\sin x+1)(\\sin x+1)=0.\\]\nW przedziale \\((-\\pi,0)\\) sinus jest ujemny, więc pozostają \\(\\sin x=-1/2\\) i \\(\\sin x=-1\\). Odpowiednio otrzymujemy \\(x=-5\\pi/6,-\\pi/6\\) oraz \\(x=-\\pi/2\\).",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Niech \\(AC=15\\) i \\(BC=20\\) będą przyprostokątnymi, a \\(D\\) punktem styczności na \\(AB\\).\n\n[[rysunek:2015-06-11-rozw|Trójkąt ABC z kątem prostym przy C i okręgiem wpisanym. Odcinek CD łączy C z punktem styczności na AB.]]\n\nZ twierdzenia Pitagorasa \\(|AB|=25\\), zatem \\(\\cos\\angle CAD=15/25=3/5\\). Promień okręgu wpisanego w trójkąt prostokątny wynosi \\((15+20-25)/2=5\\). Z równości długości stycznych z \\(A\\) mamy \\(|AD|=15-5=10\\). Twierdzenie cosinusów w trójkącie \\(ACD\\) daje\n\\[|CD|^2=15^2+10^2-2\\cdot15\\cdot10\\cdot\\frac35=145.\\]\nSzukana długość to \\(\\sqrt{145}\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Przez \\(S\\) prowadzimy prostą równoległą do \\(AC\\), która przecina \\(BC\\) w \\(M\\). Z podobieństwa \\(BSM\\) i \\(BDC\\) oraz \\(|BS|/|BD|=1/2\\) otrzymujemy \\(|BM|=|CM|=a/2\\) i \\(|SM|=|DC|/2=|AC|/4\\).\n\nZ podobieństwa \\(PSM\\) oraz \\(PAC\\) mamy \\(|PM|/|PC|=|SM|/|AC|=1/4\\). Ponieważ \\(|PC|=|PM|+a/2\\), otrzymujemy \\(|PM|=a/6\\), a stąd \\(|CP|=2a/3\\).",
+    "strona_rozwiazania": 9
+  },
+  {
     "numer": "13",
     "rozwiazanie": "Ustalmy liczbę wystąpień cyfry \\(2\\). Gdy dana pozycja nie jest zajęta przez \\(2\\), na początku jest \\(8\\) możliwości, na każdej z trzech środkowych pozycji jest \\(9\\) możliwości, a na końcu są \\(4\\), czyli \\(0,4,6,8\\).\n\nBez dwójek mamy \\(8\\cdot9^3\\cdot4=23\\,328\\) liczb.\n\nZ jedną dwójką liczymy trzy możliwości położenia tej cyfry. Na początku daje \\(9^3\\cdot4=2916\\) liczb, na każdej ze środkowych pozycji daje \\(8\\cdot9^2\\cdot4=2592\\), a na końcu daje \\(8\\cdot9^3=5832\\). Razem otrzymujemy \\(2916+3\\cdot2592+5832=16\\,524\\).\n\nDwie dwójki mogą zajmować następujące pozycje.\n\n• Pierwsza i jedna ze środkowych dają \\(3\\cdot9^2\\cdot4=972\\) liczb.\n• Pierwsza i ostatnia dają \\(9^3=729\\) liczb.\n• Dwie środkowe dają \\(3\\cdot8\\cdot9\\cdot4=864\\) liczb.\n• Jedna ze środkowych i ostatnia dają \\(3\\cdot8\\cdot9^2=1944\\) liczb.\n\nRazem jest \\(972+729+864+1944=4509\\) liczb z dwiema dwójkami. Szukana liczba wynosi \\(23\\,328+16\\,524+4509=44\\,361\\).",
     "strona_rozwiazania": 10
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Ponieważ krawędzie boczne są równe, spodek wysokości \\(O\\) jest środkiem okręgu opisanego na podstawie. Trapez wpisany w okrąg jest równoramienny. Kąt \\(ACB\\) jest prosty, więc \\(AB\\) jest średnicą i \\(O\\) jest środkiem \\(AB\\).\n\nZ trójkąta prostokątnego \\(ABC\\) o kącie \\(30^\\circ\\) przy \\(A\\) dostajemy \\(|BC|=8\\) i \\(|AB|=16\\). Stąd \\(|AD|=|AO|=|OD|=8\\). W prostokątnym trójkącie \\(SOD\\) z \\(|SD|=4\\sqrt5\\) wynika \\(|SO|=\\sqrt{80-64}=4\\).\n\nNiech \\(K\\) będzie spodkiem prostopadłej z \\(O\\) na \\(SD\\).\n\n[[rysunek:2015-06-14-rozw|Ostrosłup ABCDS. O jest spodkiem wysokości na AB, K jest rzutem O na SD. Wyróżniono odcinek OK.]]\n\nPorównujemy dwa wzory na pole trójkąta \\(SOD\\):\n\\[\\tfrac12|SO|\\cdot|OD|=\\tfrac12|SD|\\cdot|OK|.\\]\nZatem \\(|OK|=4\\cdot8/(4\\sqrt5)=8\\sqrt5/5\\).",
+    "strona_rozwiazania": 13
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Dla \\(m=5\\) wzór jest nieokreślony. Dla \\(m=-3\\) lub \\(m=2\\) znika współczynnik przy \\(x^2\\), a otrzymana funkcja nie spełnia warunków. Dla pozostałych \\(m\\) zapisujemy trzy warunki:\n\\[\n\\frac{(m+3)(m-2)}{m-5}<0,\\qquad\n\\Delta>0,\\qquad x_1x_2>0.\n\\]\nPierwszy warunek daje \\(m\\in(-\\infty,-3)\\cup(2,5)\\). Wyróżnik to\n\\[\\Delta=(m-2)^2-4(m+3)(m-2)=(m-2)(-3m-14),\\]\nwięc drugi warunek daje \\(m\\in(-14/3,2)\\). Iloczyn pierwiastków ze wzorów Viète'a jest równy \\((m-5)^2/[(m+3)(m-2)]\\). Jest dodatni dla \\(m<-3\\) lub \\(m>2\\) przy \\(m\\ne5\\). Część wspólna to \\((-14/3,-3)\\). Jedyną liczbą całkowitą jest \\(m=-4\\).",
+    "strona_rozwiazania": 15
+  },
+  {
+    "numer": "16",
+    "rozwiazanie": "Niech \\(r,h,\\ell>0\\) oznaczają promień, wysokość i tworzącą. Z \\(\\ell+r=2\\) oraz \\(\\ell^2=r^2+h^2\\) mamy \\(h^2=4-4r\\). Objętość to \\(V=\\tfrac\\pi3 r^2 h\\).\n\n**Sposób 1 — funkcja promienia**\n\nDla \\(0<r<1\\) otrzymujemy \\(V(r)=\\frac{2\\pi}{3}\\sqrt{r^4-r^5}\\). Maksymalizujemy funkcję pod pierwiastkiem. Jej pochodna \\(r^3(4-5r)\\) jest dodatnia przed \\(r=4/5\\), a ujemna po nim. Stąd w maksimum \\(h=2\\sqrt{1-4/5}=2\\sqrt5/5\\).\n\n**Sposób 2 — funkcja wysokości**\n\nPodstawiamy \\(r=1-h^2/4\\), gdzie \\(0<h<2\\). Otrzymujemy\n\\[V(h)=\\frac\\pi3\\left(h-\\frac12h^3+\\frac1{16}h^5\\right).\\]\nPochodna wyrażenia w nawiasie to \\((1-h^2/4)(1-5h^2/4)\\). Na \\((0,2)\\) zmienia znak z dodatniego na ujemny w punkcie \\(h=2\\sqrt5/5\\).\n\nW obu sposobach otrzymujemy objętość \\(\\frac\\pi3\\cdot(\\frac45)^2\\cdot\\frac{2\\sqrt5}{5}=\\frac{32\\pi\\sqrt5}{375}\\).",
+    "strona_rozwiazania": 17
   }
 ]

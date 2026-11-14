@@ -23,6 +23,10 @@
     "Granica funkcji w punkcie",
     "Granica funkcji w nieskończoności"
   ],
+  "Styczna do wykresu funkcji": [
+    "Pochodna funkcji wymiernej",
+    "Pochodna funkcji złożonej (w tym sztuczka z pomijaniem pierwiastka w optymalizacji)"
+  ],
   "Równania trygonometryczne": [
     "sin / cos podwojonego kąta (zwijanie)",
     "sin / cos podwojonego kąta (rozwijanie)",
@@ -38,6 +42,10 @@
     "Skala podobieństwa (działania na polach figur)",
     "Okrąg opisany na czworokącie",
     "Okrąg wpisany w czworokąt",
+    "Twierdzenie cosinusów",
+    "Twierdzenie sinusów",
+    "Własności trójkąta równobocznego",
+    "Własności trójkąta prostokątnego",
     "Zależności w wielokątach foremnych",
     "Trapez",
     "Trapez równoramienny",
@@ -71,5 +79,8 @@
     "Prawdopodobieństwo klasyczne i warunkowe (w zasadzie kombinatoryka)",
     "Prawdopodobieństwo całkowite",
     "Schemat Bernoulliego"
+  ],
+  "Różne": [
+    "Równanie / nierówność wymierna"
   ]
 }

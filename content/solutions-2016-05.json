@@ -1,7 +1,57 @@
 [
   {
+    "numer": "6",
+    "strona_rozwiazania": 2,
+    "rozwiazanie": "Wśród mężczyzn \\(2260\\) popiera budowę, a \\(740\\) jej nie popiera. Prawdopodobieństwo warunkowe wynosi\n\\[\\frac{2260}{2260+740}=\\frac{113}{150}=0{,}75333\\ldots.\\]\nKod to \\(7\\,5\\,3\\)."
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Pierwszy wyraz i iloraz są równe \\(q=1/(2x-371)\\).\n\n**Sposób 1 — dodatni iloraz**\n\nPonieważ \\(q>0\\), zbieżność oznacza \\(0<1/(2x-371)<1\\). Przy dodatnim mianowniku jest to możliwe dokładnie dla \\(2x-371>1\\), czyli \\(x>186\\).\n\n**Sposób 2 — wartość bezwzględna**\n\nWarunek zbieżności to \\(|1/(2x-371)|<1\\), a więc \\(|2x-371|>1\\). Otrzymujemy \\(x<185\\) lub \\(x>186\\). Dodatniość wyrazów wyklucza pierwszy przedział.\n\nSzukana liczba całkowita to \\(187\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "W każdym sposobie \\(x,y>0\\) oraz \\(x^2+y^2=2\\).\n\n**Sposób 1 — kwadrat różnicy**\n\nPo podniesieniu do kwadratu \\(x+y\\le2\\) jest równoważne \\(x^2+2xy+y^2\\le2(x^2+y^2)\\), czyli \\((x-y)^2\\ge0\\).\n\n**Sposób 2 — podstawienie \\(y^2=2-x^2\\)**\n\nTeza sprowadza się do \\(xy\\le1\\), równoważnego \\(x^2y^2\\le1\\). Po podstawieniu otrzymujemy \\(x^2(2-x^2)\\le1\\), czyli \\((x^2-1)^2\\ge0\\).\n\n**Sposób 3 — średnia kwadratowa**\n\n\\[(x+y)/2\\le\\sqrt{(x^2+y^2)/2}=1.\\]\n\n**Sposób 4 — symetryczne podstawienie**\n\nPiszemy \\(x^2=1-p\\), \\(y^2=1+p\\) dla \\(-1<p<1\\). Wtedy \\(x^2y^2=1-p^2\\le1\\), co daje \\(xy\\le1\\) oraz \\((x+y)^2=2+2xy\\le4\\).\n\n**Sposób 5 — oszacowanie iloczynu**\n\nZ \\((x-y)^2\\ge0\\) mamy \\(2xy\\le x^2+y^2=2\\), więc \\(x+y=\\sqrt{2+2xy}\\le2\\).\n\n**Sposób 6 — styczna do okręgu**\n\nPunkt \\((x,y)\\) leży na okręgu o środku \\((0,0)\\) i promieniu \\(\\sqrt2\\). Styczna w \\((1,1)\\), prostopadła do promienia, ma równanie \\(x+y=2\\). Cały okrąg leży w domkniętej półpłaszczyźnie zawierającej jego środek, czyli \\(x+y\\le2\\).\n\n**Sposób 7 — podstawienie \\(y=\\sqrt{2-x^2}\\)**\n\nDla \\(0<x<\\sqrt2\\) teza jest równoważna \\(\\sqrt{2-x^2}\\le2-x\\). Obie strony są dodatnie. Po podniesieniu ich do kwadratu zostaje \\(2(x-1)^2\\ge0\\).\n\n**Sposób 8 — maksimum funkcji**\n\nPonieważ \\(x+y=\\sqrt{2+2\\sqrt{2x^2-x^4}}\\), wystarczy znaleźć maksimum \\(g(x)=2x^2-x^4\\) na \\((0,\\sqrt2)\\). Pochodna \\(4x(1-x)(1+x)\\) jest dodatnia przed \\(1\\) i ujemna po \\(1\\). Z \\(g(1)=1\\) wynika \\(x+y\\le2\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Niech \\(E\\) i \\(F\\) będą punktami styczności okręgu o środku \\(S\\) odpowiednio z \\(BD\\) i \\(AB\\). Promienie \\(SM,SE,SF\\) mają wspólną długość \\(r\\) i \\(|MA|=r\\). Okręgi wpisane w przystające trójkąty \\(ABD\\) i \\(BCD\\) odpowiadają sobie w symetrii środkowej względem środka prostokąta, więc \\(|DE|=|BN|\\). Prosta \\(MN\\) jest równoległa do \\(AB\\), bo zawiera poziomy promień \\(SM\\).\n\n**Sposób 1 — przystawanie trójkątów prostokątnych**\n\nNiech \\(G\\) będzie rzutem \\(N\\) na \\(AB\\). Wtedy \\(|NG|=r=|SE|\\). Kąty \\(GBN\\) i \\(ENS\\) są równe, więc w prostokątnych trójkątach \\(BGN\\) i \\(NES\\) także kąty \\(BNG\\) i \\(NSE\\) są równe. Trójkąty są przystające, zatem \\(|BN|=|NS|\\). Ponadto \\(|DE|=|DM|\\), bo to styczne z \\(D\\) do tego samego okręgu. Wobec tego \\(|MN|=r+|NS|=|MA|+|DM|=|AD|\\).\n\n**Sposób 2 — dwusieczna i trójkąt równoramienny**\n\nOdcinek \\(BS\\) jest dwusieczną, więc \\(|\\angle FBS|=|\\angle SBN|\\). Z równoległości \\(AB\\) i \\(MN\\) mamy \\(|\\angle FBS|=|\\angle NSB|\\). Trójkąt \\(BSN\\) jest równoramienny, czyli \\(|SN|=|BN|=|DE|=|DM|\\). Dodanie \\(r\\) daje tezę.\n\n**Sposób 3 — dwa podobieństwa**\n\nPrzyjmujemy \\(x=|MD|=|ED|=|NB|\\), \\(y=|SN|\\), \\(z=|EN|\\). Z podobieństwa \\(DAB\\) i \\(DMN\\) mamy \\((r+x)/(2x+z)=x/(x+z)\\), stąd \\(rz=x^2-rx\\). Z podobieństwa \\(MDN\\) i \\(ESN\\) dostajemy \\(r/y=x/(x+z)\\), czyli \\(y=r(x+z)/x=x\\). Zatem \\(|AD|=r+x=r+y=|MN|\\).",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "**Sposób 1 — równanie punktu przecięcia**\n\nWspółrzędna \\(x\\) spełnia \\((a+1)x=7\\). Aby \\(x=7/(a+1)\\) była dodatnia, potrzeba \\(a>-1\\). Wtedy \\(y=x-2=(5-2a)/(a+1)\\) jest dodatnia dokładnie dla \\(a<5/2\\).\n\n**Sposób 2 — proste graniczne**\n\nProste \\(g\\) przechodzą przez \\((0,5)\\). Część wykresu \\(f\\) o obu dodatnich współrzędnych zaczyna się za \\((2,0)\\) i biegnie w prawo. Prosta z \\((0,5)\\) przez \\((2,0)\\) ma nachylenie \\(-5/2\\), a równoległa do \\(f\\) ma nachylenie \\(1\\). Prosta pęku przecina wskazaną półprostą dokładnie przy \\(-5/2<-a<1\\).\n\nW obu sposobach \\(-1<a<5/2\\).",
+    "strona_rozwiazania": 14
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Wykluczamy miejsca zerowe mianownika, \\(x=\\pi/2\\) i \\(x=3\\pi/2\\). Poza nimi mianownik jest dodatni, więc rozwiązujemy \\(\\cos x<\\sqrt3/2\\). Graniczne równości zachodzą w \\(\\pi/6\\) i \\(11\\pi/6\\), a pomiędzy nimi cosinus jest mniejszy od \\(\\sqrt3/2\\). Te same granice można odczytać z przecięcia wykresu cosinusa z prostą \\(y=\\sqrt3/2\\).\n\\[\nx\\in(\\pi/6,\\pi/2)\\cup(\\pi/2,3\\pi/2)\\cup(3\\pi/2,11\\pi/6).\n\\]",
+    "strona_rozwiazania": 17
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Wyróżnik \\(\\Delta=4m(m-4)\\) musi być dodatni, co daje \\(m<0\\) lub \\(m>4\\). Jednocześnie \\(x_1x_2=6m+1>0\\), czyli \\(m>-1/6\\).\n\n**Sposób 1 — wzory na pierwiastki**\n\nDla tego trójmianu \\(|x_1-x_2|=\\sqrt\\Delta\\), więc \\(|x_1-x_2|<3\\) daje \\(\\Delta<9\\).\n\n**Sposób 2 — wzory Viète'a**\n\nPodnosimy warunek odległości do kwadratu i mamy\n\\[(x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2=4(m+1)^2-4(6m+1)<9.\\]\n\nW obu przypadkach nierówność \\(4m^2-16m-9<0\\) daje \\(-1/2<m<9/2\\). Łącząc warunki, otrzymujemy \\(m\\in(-1/6,0)\\cup(4,9/2)\\).",
+    "strona_rozwiazania": 20
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Symetria względem \\(AC\\) zamienia \\(B\\) i \\(D\\). Prosta \\(BD\\) ma równanie \\(y=-x+8\\), a jej przecięcie z \\(y=x+2\\) to \\(S=(3,5)\\). Z \\(D=2S-B\\) mamy \\(D=(6,2)\\).\n\nŚrodek okręgu leży na osi symetrii \\(AC\\), więc \\(AC\\) jest średnicą i \\(\\angle ADC\\) jest prosty. Prosta \\(AD\\) ma nachylenie \\(5/4\\), więc prosta \\(CD\\) ma równanie \\(y=2-\\tfrac45(x-6)\\). Wraz z \\(y=x+2\\) daje to \\(C=(8/3,14/3)\\).\n\n**Dodatkowe sposoby obliczenia \\(C\\) opisane w kluczu**\n\nZapiszmy \\(C=(t,t+2)\\). Poszczególne warianty prowadzą do tego samego punktu.\n\n1. Środek okręgu jest środkiem \\(AC\\), więc \\(O=((t+30)/2,(t+34)/2)\\). Z równania \\(|OA|^2=|OB|^2\\) wynika \\(54t=144\\).\n2. Twierdzenie Pitagorasa w \\(ABC\\) daje \\(2(t-30)^2=1476+t^2+(t-6)^2\\), zatem \\(108t=288\\).\n3. Symetralna \\(AB\\) przechodzi przez \\((15,20)\\), ma równanie \\(5x+4y=155\\). Przecina \\(y=x+2\\) w \\(O=(49/3,55/3)\\), więc \\(C=2O-A\\).\n4. Tangens kąta \\(DAB\\) wynosi \\(|5/4-4/5|/(1+1)=9/40\\). W czworokącie wpisanym w okrąg przeciwległy kąt \\(BCD\\) ma tangens \\(-9/40\\). Tangens z wektorów \\(\\overrightarrow{CB}\\) i \\(\\overrightarrow{CD}\\) to \\(|12t-36|/(2t^2-12t)\\). Ponieważ \\(C\\) leży po przeciwnej stronie \\(BD\\) niż \\(A\\), mamy \\(t<3\\). Z podstawienia \\(u=3-t>0\\) dostajemy \\(12u/(2u^2-18)=-9/40\\). Równanie sprowadza się do \\(3u^2+80u-27=0\\), którego jedyny dodatni pierwiastek to \\(u=1/3\\).\n5. Prostopadłe wektory \\(\\overrightarrow{BA}\\) i \\(\\overrightarrow{BC}\\) mają iloczyn skalarny \\(30t+24(t-6)=0\\), więc \\(t=8/3\\).\n6. Z równań okręgu przez \\(A,B,D\\) w postaci \\(x^2+y^2+ux+vy+w=0\\) dostajemy \\(u=-98/3\\), \\(v=-110/3\\), \\(w=688/3\\). Drugie przecięcie z \\(y=x+2\\) poza \\(A\\) to \\(C\\).\n7. Twierdzenie cosinusów daje \\(\\cos\\angle BAD=40/41\\), więc \\(\\cos\\angle BCD=-40/41\\), a \\(|BC|=|CD|\\). Z \\(|BD|^2=72\\) dostajemy \\(|BC|^2=164/9\\). Równanie \\(t^2+(t-6)^2=164/9\\) ma pierwiastki \\(8/3\\) i \\(10/3\\), a \\(C\\) leży po przeciwnej stronie \\(BD\\) niż \\(A\\), czyli \\(t<3\\).\n8. Spodek wysokości z \\(B\\) na \\(AC\\) to \\(S=(3,5)\\). Mamy \\(|AS|=27\\sqrt2\\), \\(|BS|=3\\sqrt2\\). Z \\(|BS|^2=|AS|\\cdot|SC|\\) dostajemy \\(|SC|=\\sqrt2/3\\), zatem \\(t=3-1/3=8/3\\).",
+    "strona_rozwiazania": 23
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "**Sposób 1 — miejsca jedynek**\n\nWybieramy trzy miejsca z dziesięciu na jedynki. Na pozostałych siedmiu miejscach możemy niezależnie wpisać \\(2\\) lub \\(3\\). Dostajemy \\(\\binom{10}{3}2^7=15\\,360\\).\n\n**Sposób 2 — pierwsza cyfra**\n\nPrzy pierwszej cyfrze \\(1\\) mamy \\(\\binom92\\,2^7=4608\\) możliwości. Przy pierwszej cyfrze \\(2\\), a osobno przy \\(3\\), mamy po \\(\\binom93\\,2^6=5376\\) możliwości. Suma to \\(15\\,360\\).\n\n**Sposób 3 — liczba dwójek**\n\nDla \\(j\\) dwójek, gdzie \\(0\\le j\\le7\\), liczbę ustawień daje \\(10!/[3!\\,j!\\,(7-j)!]\\). Kolejne wartości to \\(120,\\ 840,\\ 2520,\\ 4200,\\ 4200,\\ 2520,\\ 840,\\ 120\\). Suma to \\(15\\,360\\).",
+    "strona_rozwiazania": 26
+  },
+  {
     "numer": "15",
     "rozwiazanie": "Niech \\(O\\) będzie środkiem podstawy, \\(a=|BC|\\), \\(b=|SC|\\), \\(H=|SO|=5\\). Oznaczmy środek \\(BC\\) przez \\(E\\), a spodek prostopadłej z \\(B\\) na \\(SC\\) przez \\(F\\). Przekrój prostopadły do wspólnej krawędzi \\(SC\\) daje \\(\\angle BFD=120^\\circ\\), a symetria względem płaszczyzny \\(SOC\\) daje \\(\\angle BFO=60^\\circ\\). Ponieważ \\(OB\\perp OF\\), mamy \\(|BF|=|BO|/\\sin60^\\circ=a\\sqrt6/3\\).\n\nTrójkąty prostokątne \\(SEC\\) i \\(BFC\\) mają wspólny kąt przy \\(C\\), więc \\(|SE|/|SC|=|BF|/|BC|=\\sqrt6/3\\). Z twierdzenia Pitagorasa w \\(EOS\\) i \\(BOS\\) dostajemy\n\\[25+\\frac{a^2}{4}=\\frac{2b^2}{3},\\qquad 25+\\frac{a^2}{2}=b^2.\\]\nPo podstawieniu \\(a^2=100\\) i \\(b^2=75\\). Stąd\n\\[V=\\frac13a^2H=\\frac{500}{3}.\\]",
     "strona_rozwiazania": 30
+  },
+  {
+    "numer": "16",
+    "rozwiazanie": "Niech \\(C=(x,2-\\tfrac12x^2)\\). Ponieważ \\(C\\) leży po prawej stronie osi symetrii trapezu, \\(0<x<2\\). Podstawy wynoszą \\(4\\) i \\(2x\\), a wysokość \\(2-\\tfrac12x^2\\), więc\n\\[P(x)=(2+x)(2-\\tfrac12x^2).\\]\n\n**Sposób 1 — pochodna**\n\n\\[P'(x)=2-2x-\\tfrac32x^2=-\\tfrac32(x-\\tfrac23)(x+2).\\]\nPochodna jest dodatnia przed \\(x=2/3\\) i ujemna po nim. Maksimum występuje w \\(x=2/3\\).\n\n**Sposób 2 — nierówność między średnimi**\n\nZapisujemy \\(P(x)=2(1+x/2)(1+x/2)(2-x)\\). Trzy dodatnie czynniki w nawiasach mają stałą sumę \\(4\\), więc ich iloczyn jest największy, gdy wszystkie są równe. Równanie \\(1+x/2=2-x\\) również daje \\(x=2/3\\).\n\nWierzchołek \\(C=(2/3,16/9)\\).",
+    "strona_rozwiazania": 32
   }
 ]

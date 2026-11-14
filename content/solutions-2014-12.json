@@ -1,8 +1,63 @@
 [
   {
+    "numer": "6",
+    "rozwiazanie": "Korzystamy z \\(a^2+b^2=(a-b)^2+2ab=16+14=30\\). Wobec tego \\(a^3b+ab^3=ab(a^2+b^2)=7\\cdot30=210\\). Kod to \\(2\\,1\\,0\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób 1 — sinus podwojonego kąta**\n\nNiech \\(\\beta\\) będzie kątem, jaki przekątna tworzy z dłuższym bokiem. Przekątna ma długość \\(\\sqrt{34}\\), więc \\(\\sin\\beta=3/\\sqrt{34}\\) i \\(\\cos\\beta=5/\\sqrt{34}\\). Ostry kąt między przekątnymi to \\(2\\beta\\), a jego sinus jest równy \\(2\\sin\\beta\\cos\\beta=15/17\\).\n\n**Sposób 2 — pola trójkątów**\n\nPrzekątne dzielą prostokąt na cztery trójkąty. Każdy ma pole \\(\\tfrac12(\\sqrt{34}/2)^2\\sin\\alpha\\), gdzie \\(\\alpha\\) jest ostrym kątem między przekątnymi. Pole prostokąta to zatem \\(17\\sin\\alpha=15\\). Otrzymujemy \\(\\sin\\alpha=15/17\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Sprowadzamy wyrażenie do wspólnego mianownika:\n\\[\n\\frac{n^2(n+444)-(n+2)^3}{(n+2)(n+444)}\n=\\frac{438n^2-12n-8}{(n+2)(n+444)}.\n\\]\nPo podzieleniu licznika i mianownika przez \\(n^2\\) otrzymujemy granicę \\(438\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Ze wzoru na pochodną ilorazu:\n\\[f'(x)=\\frac{2x(x-4)-x^2}{(x-4)^2}=\\frac{x^2-8x}{(x-4)^2}.\\]\nPo podstawieniu \\(x=12\\) dostajemy \\(f'(12)=(144-96)/64=3/4\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Pochodna to \\(f'(x)=4x^3\\). Warunek równoległości oznacza \\(4x_0^3=4\\), czyli \\(x_0=1\\). W punkcie \\((1,1)\\) styczna ma równanie \\(y-1=4(x-1)\\), czyli \\(y=4x-3\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "**Sposób 1 — różnica sinusów**\n\nZ \\(\\sin(5x)-\\sin x=2\\sin(2x)\\cos(3x)\\) wynika, że \\(\\sin(2x)=0\\) lub \\(\\cos(3x)=0\\). Dostajemy \\(x=k\\pi/2\\) lub \\(x=\\pi/6+k\\pi/3\\) dla \\(k\\in\\mathbb Z\\).\n\n**Sposób 2 — równe wartości sinusa**\n\nZ \\(\\sin(5x)=\\sin x\\) mamy \\(5x=x+2k\\pi\\) lub \\(5x=\\pi-x+2k\\pi\\) dla \\(k\\in\\mathbb Z\\). Stąd ponownie \\(x=k\\pi/2\\) lub \\(x=\\pi/6+k\\pi/3\\).",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Wzór na pole koła daje \\(P_n=\\pi(1/2^n)^2=\\pi/4^n\\). Jest to ciąg geometryczny z \\(P_1=\\pi/4\\) i ilorazem \\(q=1/4\\). Ponieważ \\(|q|<1\\), suma wynosi \\((\\pi/4)/(1-1/4)=\\pi/3\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "**Sposób 1 — przekształcenia algebraiczne**\n\nMianowniki są dodatnie. Po pomnożeniu przez ich iloczyn i przeniesieniu składników nierówność sprowadza się do\n\\[(a-b)\\bigl[ab(a+b)-2\\bigr]>0.\\]\nZałożenia dają \\(a-b>0\\), \\(ab>1\\) i \\(a+b>2\\), więc oba czynniki są dodatnie.\n\n**Sposób 2 — monotoniczność**\n\nDla \\(f(x)=x/(2+x^3)\\) pochodna ma postać \\(f'(x)=2(1-x^3)/(2+x^3)^2\\). Jest ujemna dla \\(x>1\\), więc \\(f\\) jest ściśle malejąca na \\([1,\\infty)\\). Stąd \\(f(a)<f(b)\\).",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "**Sposób 1 — długości boków**\n\nNiech \\(a,b,c\\) leżą naprzeciw \\(\\alpha,\\beta,\\gamma\\). Ze wzoru sinusów \\(\\sin\\alpha=a/(2R)\\), \\(\\sin\\beta=b/(2R)\\), \\(\\sin\\gamma=c/(2R)\\). Można też użyć pola \\(P\\) trójkąta, np. \\(\\sin\\alpha=2P/(bc)=2Pa/(abc)\\), analogicznie dla pozostałych kątów. W obu zapisach sinusy są proporcjonalne do boków, więc \\(a^2+b^2<c^2\\). Z twierdzenia cosinusów\n\\[\\cos\\gamma=(a^2+b^2-c^2)/(2ab)<0.\\]\nRównoważnie, nierówność kwadratów pokazuje, że największy kąt \\(\\gamma\\) jest rozwarty.\n\n**Sposób 2 — sinus sumy**\n\nPonieważ \\(\\sin\\gamma=\\sin(\\alpha+\\beta)\\), rozwijamy kwadrat sinusa sumy. Po redukcji nierówność przyjmuje postać\n\\[\\sin^2\\alpha\\sin^2\\beta<\\sin\\alpha\\sin\\beta\\cos\\alpha\\cos\\beta.\\]\nDzielimy przez \\(\\sin\\alpha\\sin\\beta>0\\), więc \\(\\cos(\\alpha+\\beta)>0\\). Z \\(\\gamma=180^\\circ-(\\alpha+\\beta)\\) mamy \\(\\cos\\gamma=-\\cos(\\alpha+\\beta)<0\\).",
+    "strona_rozwiazania": 10
+  },
+  {
     "numer": "15",
     "strona_rozwiazania": 13,
     "rozwiazanie": "**Sposób I — przedłużenie \\(EF\\)**\nNiech \\(G\\) będzie przecięciem prostych \\(AB\\) i \\(EF\\). Trójkąty prostokątne \\(ECF\\) i \\(EBG\\) są przystające, ponieważ \\(|EC|=|EB|\\) i kąty przy \\(E\\) są wierzchołkowe. Stąd \\(|EF|=|EG|\\). W trójkątach prostokątnych \\(AEF\\) i \\(AEG\\) obie przyprostokątne są odpowiednio równe. Zatem \\(\\angle EAF=\\angle EAG=\\angle BAE\\).\n\n**Sposób II — przedłużenie \\(AE\\)**\nNiech \\(G=AE\\cap DC\\). Z przystawania trójkątów prostokątnych \\(ABE\\) i \\(GCE\\) wynika \\(|AE|=|GE|\\). Prosta \\(EF\\) jest więc symetralną \\(AG\\) i \\(|AF|=|GF|\\). W trójkącie \\(AFG\\) kąty przy \\(A\\) i \\(G\\) są równe, a \\(AB\\parallel FG\\), więc \\(\\angle EAF=\\angle AGF=\\angle BAE\\).\n\n**Sposób III — cosinusy**\nOznaczmy \\(a=|AB|\\), \\(b=|BE|=|EC|\\), \\(x=|DF|\\), \\(\\alpha=\\angle BAE\\), \\(\\beta=\\angle BAF\\). Z podobieństwa \\(ABE\\) i \\(ECF\\) mamy \\((a-x)/b=b/a\\), zatem \\(x=(a^2-b^2)/a\\). Pitagoras daje \\(|AE|=\\sqrt{a^2+b^2}\\) i \\(|AF|=\\sqrt{x^2+4b^2}=(a^2+b^2)/a\\). Wtedy\n\\[\\cos\\beta=\\frac{a^2-b^2}{a^2+b^2}=2\\cos^2\\alpha-1=\\cos(2\\alpha).\\]\nPonieważ oba kąty należą do przedziału \\((0,180^\\circ)\\), mamy \\(\\beta=2\\alpha\\).\n\n**Sposób IV — tangensy**\nZ tego samego podobieństwa dostajemy \\(x=(a^2-b^2)/a\\). Mamy \\(\\tan\\alpha=b/a\\) i \\(\\tan\\beta=2b/x=2ab/(a^2-b^2)\\). Wzór na tangens podwojonego kąta daje tę samą wartość dla \\(\\tan(2\\alpha)\\). Ponieważ \\(\\alpha<45^\\circ\\) i \\(\\beta\\) jest ostry, \\(\\beta=2\\alpha\\)."
+  },
+  {
+    "numer": "16",
+    "rozwiazanie": "Niech \\(A\\) oznacza co najmniej jedną jedynkę, a \\(B\\) co najmniej jedną szóstkę. Wszystkie \\(6^3\\) uporządkowane wyniki są jednakowo prawdopodobne. Mamy \\(|B|=6^3-5^3=91\\).\n\n**Sposób 1 — trzy rozłączne przypadki**\n\nGdy występują \\(1\\), \\(6\\) i trzecia wartość z \\(\\{2,3,4,5\\}\\), mamy \\(6\\cdot4=24\\) wyniki. Przy dwóch jedynkach i szóstce albo jedynce i dwóch szóstkach są jeszcze po \\(3\\) wyniki. Zatem \\(|A\\cap B|=30\\).\n\n**Sposób 2 — przez dopełnienie**\n\nZ zasady włączeń i wyłączeń \\(|A\\cap B|=6^3-2\\cdot5^3+4^3=30\\).\n\nZatem \\(P(A\\mid B)=30/91\\).",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "17",
+    "rozwiazanie": "Okrąg w pierwszej ćwiartce styczny do obu osi ma środek \\((r,r)\\) i promień \\(r>0\\). Okrąg \\(o_0\\) ma środek \\((3,1)\\) i promień \\(1\\). Warunek styczności zewnętrznej to\n\\[\\sqrt{(r-3)^2+(r-1)^2}=r+1.\\]\nPo podniesieniu do kwadratu dostajemy \\(r^2-10r+9=0\\), czyli \\(r=1\\) lub \\(r=9\\). Odległość środków \\((1,1)\\) i \\((9,9)\\) wynosi \\(8\\sqrt2\\).",
+    "strona_rozwiazania": 17
   },
   {
     "numer": "18",

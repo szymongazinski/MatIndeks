@@ -1,5 +1,15 @@
 [
   {
+    "numer": "6",
+    "rozwiazanie": "Iloraz ciągu i jego pierwszy wyraz mają tę samą wartość \\(q\\), gdzie \\(|q|<1\\). Zatem \\(q/(1-q)=12\\), stąd \\(q=12/13=0{,}923076\\ldots\\). Kod to \\(9\\,2\\,3\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Rozkładamy \\(A\\cup B\\) na rozłączne zdarzenia \\(A\\) i \\(B\\setminus A\\). Zatem\n\\[P(B\\setminus A)=\\frac35-\\frac27=\\frac{11}{35}=0{,}314285\\ldots.\\]\nKod to \\(3\\,1\\,4\\).",
+    "strona_rozwiazania": 2
+  },
+  {
     "numer": "8",
     "rozwiazanie": "Obie strony nierówności są dodatnie, więc możemy równoważnie podnieść je do kwadratu. Otrzymujemy\n\\[(a+b)(c+d)\\ge ac+bd+2\\sqrt{abcd}.\\]\nPo rozwinięciu iloczynu i odjęciu wspólnych składników zostaje \\(ad+bc\\ge2\\sqrt{abcd}\\), czyli\n\\[\\bigl(\\sqrt{ad}-\\sqrt{bc}\\bigr)^2\\ge0.\\]\nKwadrat liczby rzeczywistej jest nieujemny, co kończy dowód.",
     "strona_rozwiazania": 2
@@ -10,13 +20,43 @@
     "strona_rozwiazania": 3
   },
   {
+    "numer": "10",
+    "rozwiazanie": "Korzystamy z rekurencji wstecz. Mamy \\(a_3=a_4+1=5\\), \\(a_2=a_3+2=7\\) i \\(a_1=a_2+3=10\\). Ciąg nie jest malejący, bo \\(a_5=a_4\\). Ogólniej \\(a_{n+1}-a_n=n-4\\), więc pierwsze cztery wyrazy maleją, czwarty i piąty są równe, a od piątego wyrazu ciąg rośnie.",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Niech \\(L=AC\\cap BD\\). Punkt \\(L\\) jest środkiem \\(BD\\), a \\(P=KL\\cap BH\\) w prostokącie \\(DBFH\\).\n\n**Sposób 1 — podobieństwo w skali \\(1:2\\)**\n\n[[rysunek:2016-06-11-rozw|W przekroju DBFH punkt S jest przecięciem przekątnych, a P przecięciem odcinka KL z przekątną BH.]]\n\nOdcinek \\(KL\\) łączy środki boków \\(BD\\) i \\(BF\\) trójkąta \\(DBF\\). Jest równoległy do \\(DF\\), więc jednokładność o środku \\(B\\) i skali \\(1/2\\) przekształca \\(DF\\) w \\(KL\\). Punkt \\(S\\), w którym \\(DF\\) przecina \\(BH\\), jest środkiem \\(BH\\) i przechodzi na \\(P\\). Zatem \\(|BP|=|BH|/4\\).\n\n**Sposób 2 — przedłużenie \\(LK\\)**\n\n[[rysunek:2016-06-11-rozw-2|Przedłużenie LK przecina przedłużenie HF w M. Zaznaczono trójkąty LBK i MFK.]]\n\nNiech \\(M=LK\\cap HF\\), za punktem \\(F\\). Trójkąty \\(LBK\\) i \\(MFK\\) są przystające, bo oba są prostokątne, kąty przy \\(K\\) są wierzchołkowe, a \\(KB=KF\\). Stąd \\(|FM|=|LB|=\\tfrac12|DB|\\). Z równoległości \\(BL\\) i \\(HM\\) trójkąty \\(BLP\\) i \\(HMP\\) są podobne. Wobec tego\n\\[\\frac{|BP|}{|HP|}=\\frac{|BL|}{|HM|}=\\frac{\\tfrac12|DB|}{\\tfrac32|DB|}=\\frac13.\\]\n\n**Sposób 3 — kąty ostre**\n\n[[rysunek:2016-06-11-rozw-3|Prostokąt DBFH z kątami ostrymi przy L i B oraz z punktem Q będącym rzutem P na LB.]]\n\nPrzy krawędzi sześcianu \\(a\\) mamy \\(|BD|=a\\sqrt2\\), \\(|DH|=a\\), \\(|BL|=a\\sqrt2/2\\) i \\(|BK|=a/2\\). Stąd \\(\\tan\\angle DBH=\\tan\\angle BLK=1/\\sqrt2\\). Trójkąt \\(BLP\\) jest równoramienny. Jeśli \\(Q\\) jest rzutem \\(P\\) na \\(BL\\), to \\(|BQ|=|BL|/2=|BD|/4\\). Trójkąty \\(BQP\\) i \\(BDH\\) są podobne, zatem \\(|BP|/|BH|=1/4\\).\n\n**Sposób 4 — środki przekątnych**\n\n[[rysunek:2016-06-11-rozw-4|W prostokącie BKSL przekątne KL i BS przecinają się w punkcie P.]]\n\nNiech \\(S\\) będzie środkiem \\(BH\\). Odcinki łączące środki przeciwległych boków prostokąta \\(DBFH\\) przecinają się w \\(S\\), a \\(BKSL\\) jest prostokątem. Punkt \\(P\\) jest środkiem jego przekątnych \\(KL\\) i \\(BS\\). Stąd \\(|BP|=|BH|/4\\).\n\nW każdym przypadku \\(|BP|:|HP|=1:3\\).",
+    "strona_rozwiazania": 9
+  },
+  {
     "numer": "12",
     "rozwiazanie": "Warunek istnienia dwóch różnych pierwiastków rzeczywistych to \\(k\\ne0\\) oraz\n\\[\\Delta=(k-1)^2-4k^2=(1+k)(1-3k)>0.\\]\nStąd \\(k\\in(-1,0)\\cup(0,\\tfrac13)\\). Iloczyn pierwiastków jest równy \\(1/k^2\\), więc oba pierwiastki są niezerowe. Ze wzorów Viète'a otrzymujemy\n\\[m=\\frac{1}{x_1}+\\frac{1}{x_2}=\\frac{x_1+x_2}{x_1x_2}=1-k.\\]\n\n**Interpretacja \\(f\\) jako funkcji parametru \\(k\\)**\n\nDla wskazanych \\(k\\) mamy \\(f(k)=2^{1-k}=(\\tfrac12)^{k-1}\\). Wykres otrzymujemy przez przesunięcie wykresu \\(y=(\\tfrac12)^k\\) o jednostkę w prawo i ograniczenie do przedziałów z dziedziny. Funkcja \\(h(k)=(\\tfrac12)^{k-1}\\) jest malejąca i ciągła, a jej wartości na końcach to \\(h(-1)=4\\), \\(h(0)=2\\) i \\(h(\\tfrac13)=\\sqrt[3]{4}\\). Zatem zbiór wartości to \\((\\sqrt[3]{4},2)\\cup(2,4)\\).\n\n**Interpretacja \\(f\\) jako funkcji zmiennej \\(x\\) przy ustalonym \\(k\\)**\n\nCKE dopuszcza również odczytanie zapisu \\(f(x)=2^m\\) dosłownie. Przy ustalonym \\(k\\) spełniającym powyższe warunki liczba \\(m\\) jest stała, więc zbiorem wartości jest \\(\\{2^m\\}\\).",
     "strona_rozwiazania": 12
   },
   {
+    "numer": "13",
+    "rozwiazanie": "**Sposób 1 — podstawienie**\n\nPodstawiamy \\(t=\\sin x\\). Z nierówności \\((2t-3)(2t+1)>0\\) wynika \\(t<-\\frac12\\) lub \\(t>\\frac32\\). Druga możliwość odpada, bo sinus przyjmuje wartości w \\([-1,1]\\).\n\n**Sposób 2 — znak pierwszego czynnika**\n\nSkoro \\(2\\sin x-3\\le -1\\), drugi czynnik musi być ujemny. Od razu otrzymujemy \\(\\sin x<-\\frac12\\).\n\n[[rysunek:2016-06-13-rozw|Wykres sinusa. Wyróżniony łuk leży poniżej poziomu −1/2 między odciętymi 7π/6 a 11π/6, z otwartymi końcami.]]\n\nW przedziale \\((0,2\\pi)\\) sinus jest mniejszy od \\(-\\frac12\\) pomiędzy punktami \\(7\\pi/6\\) i \\(11\\pi/6\\). Rozwiązaniem jest \\((7\\pi/6,11\\pi/6)\\).",
+    "strona_rozwiazania": 14
+  },
+  {
     "numer": "14",
     "rozwiazanie": "Niech \\(a>b\\) będą przyprostokątnymi, \\(c\\) przeciwprostokątną, \\(\\alpha\\) kątem naprzeciw \\(a\\), a \\(\\beta=90^\\circ-\\alpha\\). Mamy \\((a-b)/c=\\frac12\\).\n\n**Sposób I — funkcje trygonometryczne**\nMamy \\(\\sin\\alpha-\\cos\\alpha=\\frac12\\). Podstawienie \\(\\sin\\alpha=\\cos\\alpha+\\frac12\\) do jedynki trygonometrycznej daje \\(2\\cos^2\\alpha+\\cos\\alpha-\\frac34=0\\). Z dwóch pierwiastków dodatni jest \\(\\cos\\alpha=\\frac{\\sqrt7-1}{4}\\). Stąd \\(\\cos\\beta=\\sin\\alpha=\\frac{\\sqrt7+1}{4}\\).\n\n**Sposób II — twierdzenie Pitagorasa**\nMamy \\(a=b+c/2\\), więc \\((b+c/2)^2+b^2=c^2\\), czyli \\(3c^2-4bc-8b^2=0\\). Dodatni pierwiastek to \\(c=\\frac{2b(1+\\sqrt7)}{3}\\), a zatem \\(a=\\frac{b(4+\\sqrt7)}{3}\\). Po uproszczeniu otrzymujemy \\(\\cos\\alpha=b/c=\\frac{\\sqrt7-1}{4}\\) i \\(\\cos\\beta=a/c=\\frac{\\sqrt7+1}{4}\\).",
     "strona_rozwiazania": 16
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "**Sposób 1 — pierwsza cyfra nieparzysta lub parzysta**\n\nJeśli pierwsza cyfra jest nieparzysta, trzema wyborami są: pierwsza cyfra, dwa spośród czterech dalszych miejsc na liczby nieparzyste oraz obsadzenie czterech miejsc. Dostajemy \\(5\\binom42\\,5^2\\,5^2=18\\,750\\). Jeśli pierwsza cyfra jest parzysta, można wybrać ją na \\(4\\) sposoby, a trzy dalsze miejsca na cyfry nieparzyste na \\(\\binom43\\) sposobów. Dostajemy \\(4\\binom43\\,5^3\\,5=10\\,000\\).\n\n**Sposób 2 — wszystkie pięcioelementowe kody**\n\nZ \\(\\binom53\\,5^3\\,5^2\\) kodów z trzema cyframi nieparzystymi odejmujemy \\(\\binom43\\,5^3\\,5\\) zaczynających się od zera.\n\nOba sposoby dają \\(28\\,750\\).",
+    "strona_rozwiazania": 19
+  },
+  {
+    "numer": "16",
+    "rozwiazanie": "**Sposób 1 — przecięcie prostych**\n\nŚrodek podstawy to \\(S=(-\\frac32,-\\frac92)\\), a nachylenie \\(AB\\) wynosi \\(-5/11\\). Symetralna \\(AB\\) ma wobec tego równanie \\(11x-5y-6=0\\). To równanie można też otrzymać z iloczynu skalarnego \\(\\overrightarrow{SC}\\cdot[11,-5]=0\\) lub po podniesieniu równości długości \\(|AC|=|BC|\\) do kwadratu. Prosta \\(BC\\), prostopadła do danej wysokości i przechodząca przez \\(B\\), ma równanie \\(-19x+2y+90=0\\). Rozwiązanie układu obu prostych daje \\(x=6\\) i \\(y=12\\).\n\n**Sposób 2 — równość odległości**\n\nZ warunku prostopadłości mamy \\(C=(x,\\frac{19}2x-45)\\). Podstawiamy do \\(|AC|^2=|BC|^2\\):\n\\[(x+7)^2+\\left(\\frac{19}2x-43\\right)^2=(x-4)^2+\\left(\\frac{19}2x-38\\right)^2.\\]\nPo redukcji wyrazów kwadratowych otrzymujemy \\(73x=438\\), zatem \\(C=(6,12)\\).\n\n**Sposób 3 — wektor \\(\\overrightarrow{BC}\\)**\n\nWektor \\([2,19]\\) jest normalny do danej wysokości. Zatem \\(\\overrightarrow{BC}=k[2,19]\\) i \\(C=(4+2k,-7+19k)\\). Po podstawieniu do równania symetralnej \\(11x-5y-6=0\\) dostajemy \\(73k=73\\), czyli \\(k=1\\).\n\nCKE podaje również wariant ze sprawdzeniem kandydata \\(B+[2,19]=(6,12)\\). Ma on od obu końców podstawy tę samą odległość \\(\\sqrt{365}\\). Symetralna \\(AB\\) oraz prosta \\(BC\\) mają różne nachylenia, więc taki punkt jest jedyny.",
+    "strona_rozwiazania": 22
+  },
+  {
+    "numer": "17",
+    "rozwiazanie": "Niech \\(r,h>0\\) będą odpowiednio promieniem i wysokością walca. Mamy \\(2\\pi(r^2+rh)=2\\pi\\), czyli \\(h=(1-r^2)/r\\) i \\(0<r<1\\). Objętość jako funkcja promienia to\n\\[V(r)=\\pi r(1-r^2).\\]\nPochodna \\(V'(r)=\\pi(1-3r^2)\\) jest dodatnia dla \\(0<r<1/\\sqrt3\\) i ujemna dla \\(1/\\sqrt3<r<1\\). Objętość jest więc największa dla \\(r=\\sqrt3/3\\). Wtedy \\(h=2\\sqrt3/3\\) i \\(V=2\\pi\\sqrt3/9\\).",
+    "strona_rozwiazania": 31
   }
 ]

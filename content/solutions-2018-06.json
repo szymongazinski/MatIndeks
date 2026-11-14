@@ -1,7 +1,77 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nZe wzoru na zmianę podstawy wynika\n\\[\\log_{\\sqrt2}2\\cdot\\log_2\\sqrt3\\cdot\\log_{\\sqrt3}4=\\log_{\\sqrt2}4=4,\\]\nbo \\((\\sqrt2)^4=4\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nŚrodek pierwszego okręgu to \\((3,-7)\\), a promień wynosi \\(25\\). Odległość środków to \\(\\sqrt{(12-3)^2+(5+7)^2}=15\\), więc styczność zewnętrzna jest niemożliwa. Styczność wewnętrzna daje \\(|25-r|=15\\), czyli \\(r=10\\) lub \\(r=40\\). Spośród podanych odpowiedzi tylko \\(r=10\\) może zachodzić. Bez listy odpowiedzi treść dopuszcza obie wartości promienia.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nKorzystamy z tożsamości \\(\\sqrt{u^2}=|u|\\). Ponieważ \\(1<\\sqrt2<2\\), wartość wyrażenia to\n\\[|1-\\sqrt2|+|2-\\sqrt2|=(\\sqrt2-1)+(2-\\sqrt2)=1.\\]",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — B.**\n\nZ \\(\\left|\\frac43x+5\\right|<2\\) wynika \\(-7<\\frac43x<-3\\), czyli \\(-\\frac{21}4<x<-\\frac94\\). Są w nim dokładnie trzy liczby całkowite: \\(-5,-4,-3\\). W przypadku A przedział \\((-\\frac{28}3,-4)\\) zawiera pięć liczb całkowitych. Przedział \\((-10,-\\frac{10}3)\\) z C zawiera sześć, a \\((-\\frac{25}4,-\\frac54)\\) z D pięć.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Współczynnik kierunkowy stycznej wynosi \\(f'(6)\\). Dla \\(x\\ne1\\) mamy\n\\[f'(x)=\\frac{2x(x-1)-x^2}{(x-1)^2}=\\frac{x^2-2x}{(x-1)^2}.\\]\nZatem \\(f'(6)=\\frac{36-12}{25}=\\frac{24}{25}=0{,}96\\). Wpisujemy \\(0,9,6\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Niech \\(\\alpha=\\angle ABC\\), \\(|BC|=a\\), \\(|AC|=b\\) i \\(|AB|=c\\). Wtedy \\(\\angle BAC=2\\alpha\\), a teza ma postać \\(a^2-b^2=bc\\).\n\n**Sposób 1 — dwusieczna i podobieństwo**\n\nDwusieczna kąta \\(BAC\\) przecina \\(BC\\) w \\(D\\). Niech \\(|CD|=x\\). Ponieważ \\(\\angle BAD=\\angle ABD=\\alpha\\), mamy \\(|AD|=|BD|=a-x\\) oraz \\(\\angle ADB=180^\\circ-2\\alpha\\). Kąt \\(ADC\\) ma więc miarę \\(2\\alpha\\). Trójkąty \\(ABC\\) i \\(DAC\\) są podobne, skąd\n\\[\\frac ba=\\frac xb,\\qquad \\frac bc=\\frac{x}{a-x}.\\]\nPierwsza proporcja daje \\(b^2=ax\\), a druga \\((b+c)x=ab\\). Stąd \\(b^2=a^2b/(b+c)\\), czyli \\(a^2=b(b+c)\\), co daje tezę.\n\n**Sposób 2 — twierdzenia sinusów i cosinusów**\n\nZ twierdzenia sinusów mamy \\(\\frac{a}{\\sin(2\\alpha)}=\\frac{b}{\\sin\\alpha}\\), zatem \\(a=2b\\cos\\alpha\\). Twierdzenie cosinusów dla kąta \\(ABC\\) prowadzi do\n\\[b^2=a^2+c^2-2ac\\cos\\alpha=a^2+c^2-\\frac{a^2c}{b}.\\]\nPo pomnożeniu przez \\(b\\) i przeniesieniu składników otrzymujemy \\((b-c)(b^2+bc-a^2)=0\\). Jeśli \\(b\\ne c\\), otrzymujemy tezę. Gdy \\(b=c\\), kąty przy \\(B\\) i \\(C\\) są równe i \\(4\\alpha=180^\\circ\\). Wtedy \\(\\angle A=90^\\circ\\), a \\(a^2=2b^2\\), więc \\(a^2-b^2=b^2=bc\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Niech \\(u=\\frac\\pi{12}\\).\n\n**Sposób 1 — iloczyn sinusa i cosinusa**\n\nZe wzoru na zamianę iloczynu na sumę wynika\n\\[2\\sin(u-\\alpha)\\cos(u+\\alpha)=\\sin(2u)-\\sin(2\\alpha)\n=\\frac12-\\sin(2\\alpha).\\]\nDla \\(0<\\alpha<\\frac\\pi2\\) mamy \\(0<2\\alpha<\\pi\\), więc \\(\\sin(2\\alpha)>0\\). Po podzieleniu przez \\(2\\) otrzymujemy żądaną nierówność.\n\n**Sposób 2 — wzory na sinus różnicy i cosinus sumy**\n\nPo rozpisaniu obu czynników i użyciu jedynki trygonometrycznej dostajemy\n\\[\\begin{aligned}\n\\sin(u-\\alpha)\\cos(u+\\alpha)\n&=\\sin u\\cos u(\\cos^2\\alpha+\\sin^2\\alpha)\\\\\n&\\quad-\\sin\\alpha\\cos\\alpha(\\sin^2u+\\cos^2u)\\\\\n&=\\frac14-\\sin\\alpha\\cos\\alpha<\\frac14.\n\\end{aligned}\\]\nOstatnia nierówność zachodzi, bo dla ostrego \\(\\alpha\\) oba czynniki są dodatnie.\n\n**Sposób 3 — monotoniczność funkcji trygonometrycznych**\n\nSinus rośnie na \\((-\\frac\\pi2,\\frac\\pi2)\\), a cosinus maleje na \\((0,\\pi)\\). Mamy więc \\(\\sin(u-\\alpha)<\\sin u\\) i \\(\\cos(u+\\alpha)<\\cos u\\). Jeśli \\(0<\\alpha<u\\), oba lewe czynniki są dodatnie i ich iloczyn jest mniejszy od \\(\\sin u\\cos u=\\frac14\\). Jeśli \\(u\\le\\alpha\\le\\frac\\pi2-u\\), jeden czynnik jest niedodatni, a drugi nieujemny, więc iloczyn jest niedodatni.\n\nDla \\(\\frac\\pi2-u<\\alpha<\\frac\\pi2\\) oba czynniki są ujemne. Wtedy\n\\[0<-\\sin(u-\\alpha)<\\sin(\\tfrac\\pi2-u)=\\cos u,\\qquad\n0<-\\cos(u+\\alpha)<-\\cos(\\tfrac\\pi2+u)=\\sin u.\\]\nPo wymnożeniu tych dodatnich wielkości dostajemy znów iloczyn mniejszy od \\(\\frac14\\).\n\nW trzecim sposobie rozdzielono znaki czynników, ponieważ w części dziedziny oba są ujemne.",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Przenosimy wszystko na lewą stronę i grupujemy wyrazy:\n\\[x^8-2x^4+1+x^2-2x+1=(x^4-1)^2+(x-1)^2=0.\\]\nSuma dwóch kwadratów znika wtedy i tylko wtedy, gdy oba są zerami. Drugi wymusza \\(x=1\\), a ta liczba spełnia również \\(x^4-1=0\\). Zatem \\(x=1\\) jest jedynym rozwiązaniem.",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Pierwszą cyfrę można wybrać na \\(5\\) sposobów, a każdą z pozostałych siedmiu na \\(6\\) sposobów. Wszystkich liczb jest \\(5\\cdot6^7\\).\n\nSuma cyfr \\(3\\) jest możliwa przy jednej trójce i siedmiu zerach albo przy trzech jedynkach i pięciu zerach. W pierwszym przypadku trójka musi stać na początku, więc jest jedna taka liczba. W drugim pierwsza cyfra to \\(1\\), a pozycje pozostałych dwóch jedynek wybieramy spośród siedmiu, co daje \\(\\binom72=21\\) liczb. Szukane prawdopodobieństwo wynosi\n\\[\\frac{1+21}{5\\cdot6^7}=\\frac{11}{699840}.\\]",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Największy wyraz rosnącego ciągu to \\(aq^2\\). Po zmniejszeniu go o \\(4\\), zależność na środkowy wyraz ciągu arytmetycznego przyjmuje postać\n\\[2aq=a+aq^2-4,\\qquad\\text{czyli}\\qquad a(q-1)^2=4.\\]\nPonieważ \\(q\\) jest nieparzystą liczbą całkowitą, \\(q-1\\) jest parzyste. Nie może być zerem. Zatem jego niezerowy kwadrat, będący dzielnikiem \\(4\\), wynosi \\(4\\). Stąd \\(a=1\\) oraz \\(q=3\\) lub \\(q=-1\\). Tylko \\(q=3\\) daje ciąg rosnący. Drugi wyraz wynosi \\(aq=3\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Pole koła ograniczonego przez \\(o_n\\) wynosi \\(\\pi\\,2^{11-n}\\), bo \\(2^{11-n}\\) to kwadrat jego promienia. Pole \\(k\\)-tego pierścienia to\n\\[\\pi\\,2^{12-2k}-\\pi\\,2^{11-2k}=\\pi\\,2^{11-2k}.\\]\nPola tworzą ciąg geometryczny o pierwszym wyrazie \\(2^9\\pi\\) i ilorazie \\(\\frac14\\). Ponieważ \\(\\frac14<1\\), suma istnieje i wynosi\n\\[\\frac{2^9\\pi}{1-\\frac14}=\\frac{2^{11}\\pi}{3}.\\]",
+    "strona_rozwiazania": 9
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Niech \\(b=|CD|>0\\), a \\(h=|AD|\\) będzie wysokością. Wtedy \\(|AB|=2b\\). Jeśli \\(E\\) jest spodkiem wysokości opuszczonej z \\(C\\) na \\(AB\\), mamy \\(|EB|=|AB|-|CD|=b\\). Z równości sum przeciwległych boków czworokąta opisanego na okręgu wynika \\(3b=h+10\\), więc \\(h=3b-10\\).\n\nW prostokątnym trójkącie \\(BCE\\) mamy \\(b^2+h^2=100\\), czyli \\(b^2+(3b-10)^2=100\\). Po uproszczeniu \\(10b(b-6)=0\\). Wybieramy dodatnią wartość \\(b=6\\), więc \\(|AB|=12\\) i \\(h=8\\). Pole trapezu wynosi \\(\\frac{12+6}{2}\\cdot8=72\\).\n\nW rozwiązaniu CKE obliczono także przekątną \\(BD\\). Z trójkąta prostokątnego \\(ABD\\) dostajemy \\(|BD|=\\sqrt{12^2+8^2}=4\\sqrt{13}\\).",
+    "strona_rozwiazania": 10
+  },
+  {
     "numer": "13",
     "rozwiazanie": "I sposób — symetralne cięciw\n\nOdcinki stycznych poprowadzonych z danego punktu mają jednakowe długości. Ponieważ \\(Q\\in BC\\) i \\(R\\in CA\\), mamy \\(|BP|=|BQ|\\), \\(|AP|=|AR|\\) oraz \\(|CQ|=|CR|\\).\n\nŚrodek \\(PQ\\) to \\((4,8)\\), a nachylenie \\(PQ\\) wynosi \\(-\\frac12\\). Symetralna \\(PQ\\) ma równanie \\(y=2x\\), więc przecina oś \\(Oy\\) w punkcie \\(B=(0,0)\\). Środek \\(PR\\) to \\((\\frac92,\\frac{23}2)\\), a nachylenie \\(PR\\) wynosi \\(\\frac13\\). Symetralna \\(PR\\) ma równanie \\(y=-3x+25\\), więc \\(A=(0,25)\\).\n\nPunkt \\(C\\) można znaleźć na dwa sposoby. Po pierwsze, \\(C\\) to punkt przecięcia prostych \\(BQ\\colon y=\\frac34x\\) i \\(AR\\colon y=-\\frac43x+25\\). Stąd \\((\\frac34+\\frac43)x=25\\), czyli \\(x=12\\) i \\(y=9\\). Po drugie, \\(C\\) leży na symetralnej \\(QR\\), która przechodzi przez \\((\\frac{17}2,\\frac{19}2)\\) i ma nachylenie \\(-\\frac17\\). Z równania \\(\\frac34x=-\\frac17x+\\frac{75}7\\) również otrzymujemy \\(C=(12,9)\\). W tym drugim wariancie zamiast \\(BQ\\) można użyć \\(AR\\).\n\nII sposób — równanie okręgu wpisanego\n\nOkrąg przechodzi przez \\(P,Q,R\\). Jeśli jego środek to \\(S=(a,b)\\), to porównanie kwadratów odległości od tych punktów daje \\(16a-8b=0\\) i \\(2a+14b-150=0\\). Zatem \\(S=(5,10)\\), a promień wynosi \\(5\\).\n\nBok \\(BC\\) zawiera styczną w punkcie \\(Q\\), prostopadłą do \\(SQ\\) o nachyleniu \\(-\\frac43\\), więc ma równanie \\(y=\\frac34x\\). Analogicznie \\(AC\\) zawiera styczną w \\(R\\), prostopadłą do \\(SR\\) o nachyleniu \\(\\frac34\\), i ma równanie \\(y=-\\frac43x+25\\). Na osi \\(Oy\\) otrzymujemy odpowiednio \\(B=(0,0)\\) i \\(A=(0,25)\\). Styczne przecinają się w \\(C=(12,9)\\).\n\nW przykładowych rozwiązaniach CKE zamieniono oznaczenia \\(A\\) i \\(B\\). Tutaj stosujemy oznaczenia z polecenia.",
     "strona_rozwiazania": 12
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Trójmian ma wyróżnik \\(\\Delta=(m-2)^2\\), więc wymóg dwóch różnych pierwiastków daje \\(m\\ne2\\). Iloczyn pierwiastków \\((m+1)(2m-1)\\) musi być niezerowy, zatem \\(m\\ne-1,\\frac12\\).\n\n**Sposób 1 — obliczenie pierwiastków**\n\nZ rozkładu \\((x-m-1)(x-2m+1)\\) odczytujemy pierwiastki \\(m+1\\) i \\(2m-1\\). Ich odwrotności sumują się do \\(\\frac{3m}{(m+1)(2m-1)}\\).\n\n**Sposób 2 — wzory Viète’a**\n\nJeśli \\(x_1,x_2\\) są pierwiastkami, to \\(x_1+x_2=3m\\) i \\(x_1x_2=(m+1)(2m-1)\\). Zatem\n\\[\\frac1{x_1}+\\frac1{x_2}=\\frac{x_1+x_2}{x_1x_2}\n=\\frac{3m}{(m+1)(2m-1)}.\\]\n\nObie metody prowadzą do tych samych dwóch nierówności. Pierwsza, \\(\\frac{3m}{(m+1)(2m-1)}>0\\), zachodzi dla \\(m\\in(-1,0)\\cup(\\frac12,\\infty)\\). W drugiej odejmujemy \\(\\frac23\\):\n\\[\\frac{3m}{(m+1)(2m-1)}-\\frac23\n=\\frac{-4(m-2)(m+\\frac14)}{3(m+1)(2m-1)}\\le0.\\]\nZ porównania znaków czynników wychodzi \\(m\\in(-\\infty,-1)\\cup[-\\frac14,\\frac12)\\cup[2,\\infty)\\). Po przecięciu tych zbiorów i odrzuceniu \\(m=2\\) pozostaje\n\\[m\\in\\left[-\\frac14,0\\right)\\cup(2,\\infty).\\]",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Każda z \\(12\\) listewek ma pole przekroju \\(x^2\\). Licząc każdą wspólną część na łączeniu tylko raz, możemy podzielić drewno na cztery elementy pionowe długości \\(6-2x\\), cztery równoległe do płaszczyzny rysunku długości \\(10-3x\\) i cztery prostopadłe do niej długości \\(6-x\\). Stąd\n\\[V(x)=4x^2\\bigl[(6-2x)+(10-3x)+(6-x)\\bigr]\n=8(11x^2-3x^3).\\]\n\nWarunki geometryczne to \\(x>0\\), \\(6\\ge2x\\) i \\(10-2x\\ge2x\\). Zatem \\(D_V=(0,\\frac52]\\). CKE dopuszcza również \\((0,\\frac52)\\), jeśli wykluczamy graniczny przypadek z zanikiem otworu.\n\nPochodna wynosi \\(V'(x)=8x(22-9x)\\). W dziedzinie jedynym miejscem zerowym jest \\(x=\\frac{22}{9}\\). Przed nim pochodna jest dodatnia, za nim ujemna, więc tam szkielet ma największą objętość:\n\\[V\\!\\left(\\frac{22}{9}\\right)=8\\left(\\frac{22}{9}\\right)^2\n\\left(11-3\\cdot\\frac{22}{9}\\right)=\\frac{42592}{243}.\\]",
+    "strona_rozwiazania": 19
   }
 ]

@@ -1,4 +1,4 @@
-import { kindLabels, suggestTags } from './catalog.js?v=2';
+import { kindLabels, suggestTags } from './catalog.js?v=3';
 
 export function element(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
@@ -94,8 +94,11 @@ export function taskCard(catalog, task, links, { heading, showPaper = true, show
   if (task.sprawdzone_polecenie === 0 && body.querySelector('.katex-error') && !body.querySelector('a')) {
     body.append(element('p', { class: 'math-paragraph' }, sourceLink(task.zrodlo_arkusz, task.strona_zadania, statementSource)));
   }
-  const categories = task.kategorie.map(category => element('a', { class: 'task-category', href: links.category(category) }, category));
-  const tags = task.tagi.map(tag => element('a', { class: 'task-tag', href: links.tag(tag) }, tag));
+  const term = (label, className, target) => task.punkty === 1
+    ? element('span', { class: className }, label)
+    : element('a', { class: className, href: target(label) }, label);
+  const categories = task.kategorie.map(category => term(category, 'task-category', links.category));
+  const tags = task.tagi.map(tag => term(tag, 'task-tag', links.tag));
   const terms = element('div', { class: 'task-terms' }, element('div', { class: 'task-categories' }, categories),
     tags.length ? element('div', { class: 'task-tags' }, tags) : null);
   const label = element('summary', {}, 'Pokaż rozwiązanie');

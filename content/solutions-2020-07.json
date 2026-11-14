@@ -1,5 +1,70 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "Odpowiedź CKE — **D**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Odpowiedź CKE — **C**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Odpowiedź CKE — **C**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Odpowiedź CKE — **B**.",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Niech \\(q\\) będzie ilorazem. Suma ciągu jest skończona i niezerowa, więc \\(|q|<1\\). Ciąg kwadratów ma pierwszy wyraz \\(a_1^2\\) i iloraz \\(q^2\\). Z danych otrzymujemy\n\\[\\frac{a_1}{1-q}=2,\\qquad\\frac{a_1^2}{1-q^2}=3.\\]\nPodstawiając \\(a_1=2(1-q)\\), mamy \\(4(1-q)^2=3(1-q^2)\\), czyli \\((q-1)(7q-1)=0\\). Warunek zbieżności wyklucza \\(q=1\\), zatem \\(q=\\tfrac17=0{,}\\overline{142857}\\). Kolejne cyfry do wpisania to \\(0,1,4\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Dla \\(n=1\\) z \\(2=3a_2+1\\) otrzymujemy \\(a_2=1/3\\). Dla \\(n=2\\) mamy \\(\\tfrac13=3a_3+4\\), więc \\(a_3=-11/9\\). Zatem\n\\[a_1+a_2+a_3=2+\\frac13-\\frac{11}9=\\frac{10}9.\\]",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób I — okręgi opisane na trójkątach**\nOznaczmy wspólną miarę \\(\\angle ACB\\) i \\(\\angle ADB\\) przez \\(\\alpha\\). Twierdzenie sinusów daje ten sam promień okręgów opisanych na \\(ACB\\) i \\(ADB\\): \\(R=|AB|/(2\\sin\\alpha)\\). Środki obu okręgów leżą na symetralnej \\(AB\\). Ponadto z wypukłości \\(ABCD\\) wynika, że \\(C,D\\) leżą po tej samej stronie prostej \\(AB\\), więc wybierają ten sam okrąg. Istotnie, dla kąta ostrego środek jest po stronie \\(C,D\\), dla rozwartego po przeciwnej, a dla prostego w połowie \\(AB\\). Zatem \\(A,B,C,D\\) leżą na jednym okręgu.\n\n[[rysunek:2020-07-7-rozw-1|Punkty C i D leżą na tym samym łuku okręgu przechodzącego przez A i B.]]\n\n**Sposób II — miejsce geometryczne**\nDla ustalonej miary \\(\\alpha\\) punkty, z których odcinek \\(AB\\) jest widoczny pod takim kątem, tworzą dwa łuki o końcach \\(A,B\\) bez tych końców, po jednym po każdej stronie prostej \\(AB\\). Łuki są symetryczne względem tej prostej.\n\n[[rysunek:2020-07-7-rozw-2|Zaznaczone łuki, z których odcinek AB widać pod kątem alfa.]]\n\nWypukłość czworokąta i warunek \\(\\angle ACB=\\angle ADB\\) umieszczają \\(C,D\\) na jednym łuku, więc czworokąt jest wpisany w okrąg.\n\nW obu sposobach \\(\\angle BAC=\\angle BDC\\), ponieważ są to kąty wpisane oparte na tym samym łuku \\(BC\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "**Sposób I — rozkład na czynniki**\n\\[\n\\begin{aligned}\nn^5-3n^4-n+3\n&=(n-3)(n^4-1)\\\\\n&=(n-3)(n-1)(n+1)(n^2+1).\n\\end{aligned}\n\\]\nDla nieparzystego \\(n\\) każdy z czterech czynników jest parzysty, stąd iloczyn jest podzielny przez \\(2^4=16\\).\n\n**Sposób II — postać \\(2k+1\\)**\nNiech \\(n=2k+1\\) dla \\(k\\in\\mathbb Z\\). Po rozwinięciu potęg otrzymujemy\n\\[\n\\begin{aligned}\n(2k+1)^5-3(2k+1)^4-(2k+1)+3\n&=32k^5+32k^4-16k^3-32k^2-16k\\\\\n&=16(2k^5+2k^4-k^3-2k^2-k).\n\\end{aligned}\n\\]\nCzynnik w nawiasie jest liczbą całkowitą.",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Stosujemy \\(\\sin(2x)=2\\sin x\\cos x\\) i przenosimy prawą stronę na lewo. Otrzymujemy\n\\[2\\sin x\\bigl(2\\sin^2x+\\cos x-2\\sin x\\cos x-\\sin x\\bigr)=0.\\]\nPierwszy czynnik daje \\(\\sin x=0\\), czyli \\(x=k\\pi\\), \\(k\\in\\mathbb Z\\).\n\n**Sposób I — grupowanie pozostałych wyrazów**\nNawias sprowadza się do \\(2\\sin x(\\sin x-\\cos x)-(\\sin x-\\cos x)=(\\sin x-\\cos x)(2\\sin x-1)\\). Stąd \\(\\sin x=\\cos x\\) albo \\(\\sin x=1/2\\). W pierwszym równaniu \\(\\cos x\\) nie może być zerem, bo wtedy i \\(\\sin x\\) byłby zerem. Otrzymujemy więc \\(\\tan x=1\\).\n\n**Sposób II — równanie kwadratowe względem sinusa**\nNawias daje równanie \\(2\\sin^2x-(2\\cos x+1)\\sin x+\\cos x=0\\). Traktując \\(\\cos x\\) jako parametr, otrzymujemy wyróżnik \\((2\\cos x-1)^2\\) i wzory\n\\[\\sin x=\\frac{2\\cos x+1\\pm|2\\cos x-1|}{4}.\\]\nGdy \\(\\cos x\\ge1/2\\), obie prawe strony to \\(\\cos x\\) i \\(1/2\\). Gdy \\(\\cos x<1/2\\), otrzymujemy te same dwie wartości w odwrotnym porządku. Pozostają równania \\(\\tan x=1\\) lub \\(\\sin x=1/2\\).\n\nŁącznie rozwiązania, dla \\(k\\in\\mathbb Z\\), mają postać \\(x=k\\pi\\), \\(x=\\frac\\pi4+k\\pi\\), \\(x=\\frac\\pi6+2k\\pi\\) lub \\(x=\\frac{5\\pi}6+2k\\pi\\).",
+    "strona_rozwiazania": 8
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Niech \\(z=\\log_a b>0\\). Zamiana podstawy obu logarytmów i tożsamość \\(\\log_a(a^2b)=2+z\\) dają\n\\[\\frac{20\\log_a N}{2+z}=3\\left(\\log_a N+\\frac{\\log_a N}{z}\\right).\\]\nDzielimy przez \\(\\log_a N>0\\). Stąd \\(20/(2+z)=3+3/z\\). Ponieważ oba mianowniki są dodatnie, otrzymujemy równoważnie\n\\[20z=3z(z+2)+3(z+2),\\qquad 3z^2-11z+6=0.\\]\nTrójmian ma pierwiastki \\(3\\) i \\(2/3\\). Oba są dodatnie i każdy może być wartością \\(\\log_a b\\) dla \\(b=a^z>1\\).",
+    "strona_rozwiazania": 12
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Po przeniesieniu wyrazów na lewą stronę badamy nierówność\n\\[(m-1)(m+5)x^2+2(1-m)x+2>0.\\]\nGdy \\(m=1\\), otrzymujemy \\(2>0\\), więc warunek zachodzi dla każdego \\(x\\). Gdy \\(m=-5\\), otrzymujemy \\(12x+2>0\\), co zachodzi tylko dla \\(x>-1/6\\).\n\nDla \\(m\\ne1,-5\\) trójmian jest dodatni dla każdego \\(x\\) dokładnie wtedy, gdy jego współczynnik wiodący jest dodatni i wyróżnik ujemny. Pierwszy warunek daje \\(m<-5\\) lub \\(m>1\\). Z kolei\n\\[\\Delta=4(1-m)^2-8(m-1)(m+5)=-4(m-1)(m+11).\\]\nWarunek \\(\\Delta<0\\) jest równoważny \\(m<-11\\) lub \\(m>1\\). Oba warunki jednocześnie zachodzą dla tych samych wartości. Po dodaniu \\(m=1\\) otrzymujemy \\(m\\in(-\\infty,-11)\\cup[1,\\infty)\\).",
+    "strona_rozwiazania": 14
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "**Sposób I — długości przekątnych i okrąg**\nPrzekątne rombu są prostopadłe i połowią się. Prosta zawierająca \\(AC\\) ma równanie \\(y=-x/2+5\\), bo przechodzi przez \\(A=(-2,6)\\) i jest prostopadła do \\(y=2x-5\\). Ich punkt przecięcia \\(S=(4,3)\\) jest środkiem obydwu przekątnych, więc \\(C=2S-A=(10,0)\\). Mamy \\(|AC|=6\\sqrt5\\). Można też policzyć \\(|AS|=3\\sqrt5\\) ze wzoru na odległość \\(A\\) od prostej \\(2x-y-5=0\\). Z pola \\(\\tfrac12|AC||BD|=82{,}5\\) wynika \\(|BD|=\\tfrac{11}2\\sqrt5\\). Punkty \\(B,D\\) są przecięciami \\(y=2x-5\\) z okręgiem o środku \\(S\\) i promieniu \\(\\tfrac{11}4\\sqrt5\\). Podstawienie daje \\(5(x-4)^2=\\tfrac{121}{16}\\cdot5\\), więc \\(x=4\\pm11/4\\).\n\n**Sposób II — pole trójkąta \\(ABC\\)**\nWyznaczamy \\(S,C\\) jak w sposobie I. Pole każdego trójkąta o podstawie \\(AC\\) i trzecim wierzchołku \\(B\\) albo \\(D\\) wynosi połowę pola rombu, czyli \\(\\tfrac{165}4\\). Dla \\(T=(x,y)\\) pole \\(ACT\\), policzone wyznacznikiem, to\n\\[\\tfrac12\\left|12(y-6)+6(x+2)\\right|=|6y+3x-30|.\\]\nPodstawiając \\(y=2x-5\\), otrzymujemy \\(|15x-60|=\\tfrac{165}4\\), co również daje \\(x=4\\pm11/4\\).\n\n**Sposób III — wektor przekątnej \\(AC\\)**\nWektor prostopadły do kierunku prostej \\(BD\\) ma postać \\((2p,-p)\\), więc tak zapisujemy \\(\\overrightarrow{AC}\\). Odległość \\(A\\) od \\(BD\\) to \\(3\\sqrt5\\), stąd \\(|AC|=6\\sqrt5\\) i \\(\\sqrt{5p^2}=6\\sqrt5\\). Dla \\(p=6\\) mamy \\(C=(10,0)\\), dla \\(p=-6\\) byłoby \\(C=(-14,12)\\). W tym drugim przypadku środek \\(AC\\) wynosi \\((-8,9)\\) i nie leży na \\(BD\\). Po ustaleniu \\(C=(10,0)\\) obliczamy \\(B,D\\) jak w sposobie I lub II.\n\nZ każdego sposobu otrzymujemy \\(C=(10,0)\\), \\(B=(5/4,-5/2)\\) i \\(D=(27/4,17/2)\\). Punkty \\(B,D\\) można zamienić oznaczeniami.",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Ponieważ \\(28=2^2\\cdot7\\), w każdej liczbie musi wystąpić cyfra \\(7\\). Czynnik \\(2^2\\) uzyskujemy jako cyfrę \\(4\\) albo dwie cyfry \\(2\\). Pozostałe cyfry to jedynki.\n\nW pierwszym przypadku wybieramy pozycję dla \\(7\\) na \\(7\\) sposobów i dla \\(4\\) na \\(6\\) sposobów. Jest \\(7\\cdot6=42\\) liczb. W drugim wybieramy pozycję dla \\(7\\) oraz dwie z pozostałych sześciu pozycji dla dwójek. Jest \\(7\\binom62=105\\) liczb. Wynik wynosi \\(42+105=147\\).",
+    "strona_rozwiazania": 20
+  },
+  {
     "numer": "14",
     "strona_rozwiazania": 21,
     "rozwiazanie": "Oznaczmy \\(a=|AB|\\), \\(m=|DB|=|DN|\\), \\(\\alpha=\\angle DAB\\), a przez \\(F\\) spodek prostopadłej z \\(D\\) na \\(AB\\). Równoległobok \\(NBMD\\) i trójkąt \\(AND\\) mają równe pola, a \\(BD\\) dzieli \\(NBMD\\) na połowy. Trójkąty \\(AND\\) i \\(NBD\\) mają wspólną wysokość do \\(AB\\), dlatego \\(|AN|=2|NB|=2a/3\\).\n\n**Sposób I — wysokość w trójkącie \\(NBD\\)**\nTrójkąt \\(NBD\\) jest równoramienny, więc \\(F\\) jest środkiem \\(NB\\). Stąd \\(|FB|=a/6\\) i \\(|AF|=5a/6\\). W trójkącie \\(AFD\\) mamy \\(\\cos\\alpha=|AF|/|AD|=5/6\\).\n\n**Sposób II — twierdzenie cosinusów**\nW trójkątach \\(ABD\\) oraz \\(AND\\) dostajemy z twierdzenia cosinusów\n\\[m^2=2a^2(1-\\cos\\alpha),\\qquad m^2=a^2\\left(\\frac{13}{9}-\\frac43\\cos\\alpha\\right).\\]\nPo porównaniu \\(\\frac23\\cos\\alpha=\\frac59\\), czyli \\(\\cos\\alpha=5/6\\).\nDługość \\(AN\\) można też wyznaczyć z zależności \\(\\frac12a|AN|\\sin\\alpha=\\frac13a^2\\sin\\alpha\\).\n\n**Sposób III — podobieństwo trójkątów prostokątnych**\nNiech \\(S=AC\\cap BD\\). Trójkąt \\(FBD\\) ma pole równe \\(\\frac1{12}\\) pola rombu, a trójkąt \\(SBA\\) ma \\(\\frac14\\) tego pola. Trójkąty są prostokątne i mają ten sam kąt przy \\(B\\), więc \\((m/a)^2=\\frac13\\). Z trójkąta \\(SBA\\) wynika \\(\\sin(\\alpha/2)=m/(2a)=1/(2\\sqrt3)\\). Zatem \\(\\cos\\alpha=1-2\\sin^2(\\alpha/2)=5/6\\).\n\n**Sposób IV — podobieństwo trójkątów równoramiennych**\nTrójkąty \\(NBD\\) i \\(BDA\\) są równoramienne i mają wspólny kąt przy \\(B\\), więc są podobne. Ponieważ \\(P_{NBD}=\\frac13P_{BDA}\\), mamy \\(m^2=a^2/3\\). Podstawiamy to do wzoru \\(m^2=2a^2-2a^2\\cos\\alpha\\), otrzymując \\(\\cos\\alpha=5/6\\)."

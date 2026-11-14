@@ -1,0 +1,77 @@
+[
+  {
+    "numer": "1",
+    "rozwiazanie": "Odpowiedź w kluczu CKE: **A**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "Odpowiedź w kluczu CKE: **D**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "Odpowiedź w kluczu CKE: **C**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "Odpowiedź w kluczu CKE: **B**.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Odpowiedź w kluczu CKE: **1 2 5**.\n\nReszta z dzielenia przez \\(x-2\\) jest równa \\(W(2)\\). Stąd \\(8-8+2a+\\frac34=1\\), czyli \\(a=\\frac18=0{,}125\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Z reguły różniczkowania ilorazu\n\\[f'(x)=\\frac{x^2+1-2x(x-1)}{(x^2+1)^2}=\\frac{-x^2+2x+1}{(x^2+1)^2}.\\]\nStyczna w punkcie \\((1,0)\\) ma współczynnik kierunkowy \\(f'(1)=\\frac12\\). Jej równanie to \\(y=\\frac12(x-1)\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "**Sposób I. Suma kwadratów**\n\n\\[x^2y^2+2x^2+2y^2-8xy+4=(xy-2)^2+2(x-y)^2.\\]\nPierwszy składnik jest nieujemny, a drugi dodatni, bo \\(x\\ne y\\).\n\n**Sposób II. Wyróżnik trójmianu**\n\nDla ustalonego \\(y\\) lewa strona jest trójmianem \\((y^2+2)x^2-8yx+2y^2+4\\) o dodatnim współczynniku przy \\(x^2\\). Jego wyróżnik to\n\\[\\Delta=64y^2-8(y^2+2)^2=-8(y^2-2)^2.\\]\nPrzy \\(y^2\\ne2\\) wyróżnik jest ujemny, więc trójmian przyjmuje wyłącznie wartości dodatnie. Gdy \\(y^2=2\\), trójmian ma postać \\(4(x-y)^2\\), która również jest dodatnia przy \\(x\\ne y\\).\n\n**Sposób III. Dzielenie przez iloczyn**\n\nJeżeli jedna z liczb jest zerem, lewa strona to suma kwadratu pomnożonego przez \\(2\\) i liczby \\(4\\). Dla \\(xy<0\\) wszystkie składniki lewej strony są dodatnie. Gdy \\(xy>0\\), dzielimy lewą stronę przez \\(xy\\) i zapisujemy iloraz jako\n\\[\\left(\\sqrt{xy}-\\frac{2}{\\sqrt{xy}}\\right)^2+2\\left(\\sqrt{\\frac{x}{y}}-\\sqrt{\\frac{y}{x}}\\right)^2.\\]\nDrugi kwadrat jest dodatni, bo \\(x/y>0\\) i \\(x/y\\ne1\\), więc \\(x/y\\ne y/x\\).\n\n**Sposób IV. Średnia arytmetyczna i geometryczna**\n\nDla \\(xy\\le0\\) lewa strona to suma składników nieujemnych i dodatniej stałej \\(4\\). Dla \\(xy>0\\) nierówność między średnimi daje\n\\[\\frac{x^2y^2+2x^2+2y^2+4}{4}\\ge\\sqrt[4]{16x^4y^4}=2xy.\\]\nRówność wymagałaby w szczególności \\(2x^2=2y^2\\), a przy \\(xy>0\\) wynikałoby z tego \\(x=y\\). Zatem \\(x^2y^2+2x^2+2y^2+4>8xy\\).",
+    "strona_rozwiazania": 4
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(E\\) będzie punktem przecięcia dwusiecznej kąta \\(ABC\\) z bokiem \\(AC\\). Oznaczmy \\(a=|BC|\\), \\(c=|AB|\\), \\(d=|BE|\\), \\(\\beta=\\angle ABC\\) oraz \\(u=\\frac\\beta2\\).\n\n**Sposób I. Pola trójkątów**\n\nDodanie pól \\(ABE\\) i \\(CBE\\) daje pole \\(ABC\\). Korzystając ze wzoru z sinusem kąta między bokami, otrzymujemy\n\\[\\frac12 ac\\sin\\beta=\\frac12 dc\\sin u+\\frac12 da\\sin u.\\]\nPodstawiamy \\(\\sin\\beta=2\\sin u\\cos u\\) i skracamy przez \\(\\sin u>0\\). Stąd \\(d=\\frac{2ac}{a+c}\\cos u\\).\n\n**Sposób II. Twierdzenie o dwusiecznej i twierdzenie cosinusów**\n\nNiech \\(x=|AE|\\) i \\(y=|CE|\\). Twierdzenie o dwusiecznej daje \\(y/x=a/c\\), a twierdzenie cosinusów w trójkątach \\(ABE\\) i \\(CBE\\) daje\n\\[x^2=c^2+d^2-2cd\\cos u,\\qquad y^2=a^2+d^2-2ad\\cos u.\\]\nPo wstawieniu do \\(a^2x^2=c^2y^2\\), uproszczeniu i podzieleniu przez \\(d>0\\) otrzymujemy\n\\[(a^2-c^2)d=2(a-c)ac\\cos u.\\]\nGdy \\(a\\ne c\\), dzielimy przez \\(a-c\\) i uzyskujemy \\(d=\\frac{2ac}{a+c}\\cos u\\). Przy \\(a=c\\) dwusieczna jest wysokością trójkąta równoramiennego, więc \\(d=c\\cos u=\\frac{2ac}{a+c}\\cos u\\).\n\n**Sposób III. Podobieństwo trójkątów prostokątnych**\n\nNiech \\(F\\) i \\(G\\) będą rzutami prostokątnymi odpowiednio \\(E\\) i \\(C\\) na bok \\(AB\\). Ponieważ trójkąt jest ostrokątny, oba punkty leżą na tym boku. Mamy \\(|EF|=d\\sin u\\) oraz \\(|CG|=a\\sin\\beta\\). Z podobieństwa trójkątów \\(AFE\\) i \\(AGC\\) oraz twierdzenia o dwusiecznej mamy\n\\[\\frac{d\\sin u}{|AE|}=\\frac{a\\sin\\beta}{|AE|+|CE|},\\qquad \\frac{|CE|}{|AE|}=\\frac ac.\\]\nPodstawienie \\(\\sin\\beta=2\\sin u\\cos u\\) daje \\(d=\\frac{2a\\cos u}{1+a/c}=\\frac{2ac}{a+c}\\cos u\\).",
+    "strona_rozwiazania": 7
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "Niech \\(D\\) będzie wierzchołkiem nad ścianą \\(ABC\\), \\(K\\) środkiem \\(BC\\), \\(O\\) spodkiem wysokości z \\(D\\), a \\(M\\) rzutem prostokątnym \\(A\\) na \\(DK\\). Płaszczyzna \\(AKD\\) jest prostopadła do ścian \\(ABC\\) i \\(BCD\\), ponieważ \\(BC\\) jest prostopadła do \\(AK\\) i \\(DK\\). W przekroju \\(AKD\\) punkt przecięcia wysokości \\(AM\\) i \\(DO\\) ma równe odległości od \\(AK\\) i \\(DK\\), gdyż trójkąt jest równoramienny. Są to odległości od ścian \\(ABC\\) i \\(BCD\\). Symetria względem osi \\(DO\\) daje tę samą odległość od pozostałych ścian. Punkt ten jest zatem środkiem \\(S\\) wpisanej kuli, a \\(SM\\) to jej promień \\(R\\).\n\nMamy \\(|AK|=|DK|=3\\sqrt3\\), \\(|OK|=\\frac13|AK|=\\sqrt3\\), bo \\(O\\) jest środkiem ciężkości podstawy, oraz z twierdzenia Pitagorasa\n\\[H=|DO|=\\sqrt{(3\\sqrt3)^2-(\\sqrt3)^2}=2\\sqrt6.\\]\nCzworościan odcięty przy \\(D\\) jest podobny do całego czworościanu w skali \\(\\sqrt[3]{\\frac8{27}}=\\frac23\\). Jeśli \\(P\\) to przecięcie płaszczyzny przekroju z \\(DO\\), to \\(|DP|=\\frac23H\\).\n\n**Sposób I. Podobieństwo trzech trójkątów**\n\nZ podobieństwa trójkątów prostokątnych \\(KMA\\) i \\(KOD\\) oraz \\(|AK|=|DK|\\) wynika \\(|KM|=|KO|=\\frac13|DK|\\). Dlatego przekrój przecina \\(DK\\) w punkcie \\(M\\), gdyż \\(|DM|=\\frac23|DK|\\). Mamy także \\(|MP|=\\frac23|OK|\\).\n\nTrójkąty prostokątne \\(DOK\\), \\(DPM\\) i \\(MPS\\) są podobne. Kąt między \\(MP\\) i \\(MS\\) ma tę samą miarę co kąt między \\(DP\\) i \\(DM\\), ponieważ ramiona tych kątów są parami prostopadłe. Stąd\n\\[\\frac{|DO|}{|OK|}=\\frac{|DP|}{|MP|}=\\frac{|MP|}{|PS|}.\\]\nSzukana odległość to \\(d=|PS|=\\frac{(2\\sqrt3/3)\\sqrt3}{2\\sqrt6}=\\frac{\\sqrt6}{6}\\).\n\n**Sposób II. Promień kuli**\n\nTrójkąty prostokątne \\(DOK\\) i \\(DMS\\) mają wspólny kąt przy \\(D\\). Wobec tego\n\\[\\frac{R}{H-R}=\\frac{|SM|}{|DS|}=\\frac{|OK|}{|DK|}=\\frac13,\\]\nwięc \\(R=\\frac14H\\). Korzystając z \\(|OP|=H-|DP|=\\frac13H\\), otrzymujemy\n\\[d=|OP|-R=\\frac13H-\\frac14H=\\frac{H}{12}=\\frac{\\sqrt6}{6}.\\]",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "10",
+    "rozwiazanie": "Podstawienie \\(\\cos 2x=2\\cos^2x-1\\) sprowadza równanie do \\(2\\cos^2x+3\\cos x+1=0\\). Dla \\(t=\\cos x\\) mamy \\((2t+1)(t+1)=0\\), więc \\(\\cos x=-1\\) lub \\(\\cos x=-\\frac12\\). W przedziale \\([0,2\\pi]\\) daje to\n\\[x\\in\\left\\{\\frac{2\\pi}{3},\\ \\pi,\\ \\frac{4\\pi}{3}\\right\\}.\\]",
+    "strona_rozwiazania": 16
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Każdy z \\(8^3=512\\) uporządkowanych wyników trzech losowań ze zwracaniem jest jednakowo prawdopodobny. Niech \\(A\\) oznacza zdarzenie, że iloczyn zapisanych liczb dzieli się przez \\(4\\).\n\n**Sposób I. Zliczenie wyników sprzyjających**\n\nTrzy liczby parzyste można uzyskać na \\(4^3=64\\) sposobów. Dwie parzyste i jedną nieparzystą można uzyskać na \\(3\\cdot4^3=192\\) sposoby. Gdy są dwie nieparzyste, trzecia musi być równa \\(4\\) albo \\(8\\), co daje \\(3\\cdot4^2\\cdot2=96\\) sposobów. Stąd\n\\[\\mathbb P(A)=\\frac{64+192+96}{512}=\\frac{11}{16}.\\]\n\n**Sposób II. Zdarzenie przeciwne**\n\nIloczyn jest niepodzielny przez \\(4\\), jeśli wszystkie liczby są nieparzyste albo dokładnie jedna jest równa \\(2\\) lub \\(6\\), a pozostałe dwie są nieparzyste. Mamy więc\n\\[\\mathbb P(A)=1-\\frac{4^3+3\\cdot2\\cdot4^2}{512}=1-\\frac5{16}=\\frac{11}{16}.\\]\n\n**Drzewo prawdopodobieństwa (dopuszczone w schemacie oceniania)**\n\nNa każdym z trzech poziomów drzewa rozróżniamy gałęzie: liczba nieparzysta z prawdopodobieństwem \\(\\frac12\\), liczba \\(2\\) lub \\(6\\) z prawdopodobieństwem \\(\\frac14\\), liczba \\(4\\) lub \\(8\\) z prawdopodobieństwem \\(\\frac14\\). Dopełnienie \\(A\\) obejmuje ścieżkę z trzema liczbami nieparzystymi oraz trzy ścieżki z jedną liczbą \\(2\\) lub \\(6\\) i dwiema nieparzystymi. Z iloczynów prawdopodobieństw na tych ścieżkach otrzymujemy\n\\[\\mathbb P(A)=1-\\left(\\frac12\\right)^3-3\\cdot\\frac14\\left(\\frac12\\right)^2=\\frac{11}{16}.\\]",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Warunek dwóch różnych pierwiastków rzeczywistych to \\(\\Delta>0\\). Wyróżnik równania jest równy\n\\[\\Delta=36m^2-16(2m^2-3m-9)=4(m+6)^2,\\]\nwięc \\(m\\ne-6\\). Zadaną nierówność możemy zapisać jako \\(16(x_1-x_2)^2-1<0\\).\n\n**Sposób I. Wzory Viète’a**\n\nPonieważ \\(x_1+x_2=\\frac{3m}{2}\\) i \\(x_1x_2=\\frac{2m^2-3m-9}{4}\\), mamy\n\\[(x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2=\\frac{(m+6)^2}{4}.\\]\nZatem \\(4(m+6)^2-1<0\\), czyli \\(-\\frac12<m+6<\\frac12\\).\n\n**Sposób II. Wzór na pierwiastki równania**\n\nPrzy \\(x_1<x_2\\) mamy \\(x_1=\\frac{3m-|m+6|}{4}\\) i \\(x_2=\\frac{3m+|m+6|}{4}\\). Zatem \\(4x_1-4x_2=-2|m+6|\\) i nierówność przyjmuje postać \\(4(m+6)^2-1<0\\). Otrzymujemy \\(-\\frac12<m+6<\\frac12\\).\n\nW obu sposobach uwzględniamy jeszcze \\(m\\ne-6\\). Odpowiedź to\n\\[m\\in\\left(-\\frac{13}{2},-6\\right)\\cup\\left(-6,-\\frac{11}{2}\\right).\\]",
+    "strona_rozwiazania": 20
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "**Sposób I. Symetralna odcinka \\(AB\\)**\n\nŚrodek \\(AB\\) to \\(\\left(-\\frac52,\\frac92\\right)\\), a nachylenie prostej \\(AB\\) wynosi \\(\\frac35\\). Symetralna ma zatem nachylenie \\(-\\frac53\\) i równanie \\(y=-\\frac53x+\\frac13\\). Przecinając ją z prostą \\(x-3y+1=0\\), otrzymujemy środek \\(S=\\left(0,\\frac13\\right)\\). Promień to \\(|SB|=\\frac{17}3\\).\n\n**Sposób II. Równe odległości środka od punktów \\(A,B\\)**\n\nDla \\(S=(x,y)\\) mamy\n\\[(x+5)^2+(y-3)^2=x^2+(y-6)^2.\\]\nPo uproszczeniu wychodzi \\(10x+6y=2\\). Rozwiązanie tego równania razem z \\(x-3y=-1\\) daje \\(x=0\\) i \\(y=\\frac13\\). Zatem \\(r^2=|SB|^2=\\frac{289}{9}\\).\n\n**Sposób III. Podstawienie punktów do równania okręgu**\n\nNiech \\((a,b)\\) będzie środkiem, a \\(r\\) promieniem. Z przynależności \\(A,B\\) do okręgu mamy\n\\[\\begin{cases}(-5-a)^2+(3-b)^2=r^2,\\\\[2pt] a^2+(6-b)^2=r^2.\\end{cases}\\]\nOdejmujemy równania i otrzymujemy \\(5a+3b-1=0\\). Rozwiązując je razem z \\(a-3b+1=0\\), dostajemy \\(a=0\\), \\(b=\\frac13\\). Po podstawieniu do drugiego równania mamy \\(r^2=\\frac{289}{9}\\).\n\nRównanie okręgu w każdym wypadku to\n\\[x^2+\\left(y-\\frac13\\right)^2=\\frac{289}{9}.\\]",
+    "strona_rozwiazania": 23
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "**Sposób I. Różnica ciągu arytmetycznego**\n\nDla różnicy \\(r\\) mamy \\(a=b-r\\), \\(c=b+r\\), więc z sumy \\(3b=27\\) wynika \\(b=9\\). Wyrazy ciągu geometrycznego to \\(7-r,9,2r+19\\), zatem\n\\[81=(7-r)(2r+19)\\iff (r-4)(2r+13)=0.\\]\nDla \\(r=4\\) otrzymujemy \\((a,b,c)=(5,9,13)\\), a dla \\(r=-\\frac{13}{2}\\) otrzymujemy \\(\\left(\\frac{31}{2},9,\\frac52\\right)\\).\n\n**Sposób II. Układ równań**\n\nWarunki zadania dają \\(a+c=2b\\), \\(a+b+c=27\\) i \\(b^2=(a-2)(2c+1)\\). Z dwóch pierwszych równań \\(b=9\\), \\(a=18-c\\). Podstawiamy do trzeciego równania:\n\\[81=(16-c)(2c+1)\\iff (c-13)(2c-5)=0.\\]\nWyniki \\(c=13\\) i \\(c=\\frac52\\) dają te same dwie trójki.\n\n**Sposób III. Iloraz ciągu geometrycznego**\n\nNiech \\(q\\) będzie ilorazem. Podstawiamy \\(b=(a-2)q\\), \\(c=\\frac{(a-2)q^2-1}{2}\\) do warunków \\(a+b+c=27\\) i \\(a+c=2b\\). Po uproszczeniu otrzymujemy\n\\[\\begin{cases}(a-2)(2+2q+q^2)=51,\\\\[2pt](a-2)(-2+4q-q^2)=3.\\end{cases}\\]\nMnożymy pierwsze równanie przez \\(-2+4q-q^2\\), a drugie przez \\(2+2q+q^2\\), po czym porównujemy strony. Dostajemy \\(3q^2-11q+6=0\\), a stąd \\(q=3\\) albo \\(q=\\frac23\\). Podstawienie daje odpowiednio \\((5,9,13)\\) i \\(\\left(\\frac{31}{2},9,\\frac52\\right)\\).\n\nW obu trójkach ciągi \\((a-2,b,2c+1)\\) mają odpowiednio ilorazy \\(3\\) i \\(\\frac23\\), więc obie spełniają warunki.",
+    "strona_rozwiazania": 27
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Niech \\(r>0\\) oznacza promień podstawy, a \\(h>0\\) wysokość. Z równania \\(P=2\\pi r^2+2\\pi rh\\) wynika\n\\[h=\\frac{P}{2\\pi r}-r,\\qquad 0<r<\\sqrt{\\frac{P}{2\\pi}}.\\]\nW tej dziedzinie objętość i jej pochodna wynoszą\n\\[V(r)=\\pi r^2h=\\frac P2r-\\pi r^3,\\qquad V'(r)=\\frac P2-3\\pi r^2.\\]\nPochodna jest dodatnia przed \\(r_* = \\sqrt{\\frac{P}{6\\pi}}\\), a ujemna po \\(r_*\\), więc objętość osiąga tam maksimum. Dla tego promienia \\(h=2r_*=\\sqrt{\\frac{2P}{3\\pi}}\\) i\n\\[V_{\\max}=\\frac P3\\sqrt{\\frac{P}{6\\pi}}.\\]",
+    "strona_rozwiazania": 31
+  }
+]

@@ -25,7 +25,7 @@ async function main() {
     page.on('pageerror', error => process.stderr.write(`${error.message}\n`));
     await page.goto(`http://127.0.0.1:${server.address().port}`);
     await page.waitForFunction(() => Boolean(window.figureApi), null, { timeout: 60_000 });
-    for (const script of ['konstrukcja.js', 'zbior.js', 'arkusze.js', 'rozwiazania.js', '2021-maj.js']) {
+    for (const script of ['konstrukcja.js', 'zbior.js', 'arkusze.js', 'rozwiazania.js', '2020-lipiec.js', '2021-maj.js', '2017-czerwiec.js', 'starsze-arkusze.js']) {
       await page.addScriptTag({ path: path.join(__dirname, script) });
     }
     const keys = process.argv.slice(2);

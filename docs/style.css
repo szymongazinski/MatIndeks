@@ -386,7 +386,7 @@ select {
   text-decoration: none;
 }
 
-.chosen-tag:hover, .task-tag:hover { background: #e3eff5; text-decoration: underline; }
+.chosen-tag:hover, a.task-tag:hover { background: #e3eff5; text-decoration: underline; }
 .chosen-tag { cursor: pointer; }
 .chosen-tag span { font-size: 1rem; line-height: 1em; }
 
@@ -406,6 +406,7 @@ select {
   grid-template-columns: minmax(0, 1fr);
   align-items: start;
   overflow: clip;
+  overflow-anchor: none;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--white);

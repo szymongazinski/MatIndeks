@@ -376,7 +376,9 @@
       "Optymalizacja funkcji",
       "Planimetria"
     ],
-    "tagi": [],
+    "tagi": [
+      "Twierdzenie sinusów"
+    ],
     "polecenie": "W okrąg o promieniu \\(R\\) wpisujemy trójkąty o obwodzie \\(3R\\), w których jeden bok jest dwa razy dłuższy od innego. Wyznacz taki trójkąt o największym polu i oblicz jego pole. Zapisz obliczenia.",
     "rozwiazanie": "**Metoda przedstawiona przez CKE**\nJeśli parę boków oznaczymy \\(x,2x\\), to trzeci bok wynosi \\(3R-3x\\). Po użyciu wzoru \\(P=abc/(4R)\\) otrzymujemy \\(P(x)=\\frac32x^2-\\frac{3}{2R}x^3\\). Nierówności trójkąta dają \\(R/2<x<3R/4\\). Pochodna \\(P'(x)=3x-9x^2/(2R)\\) jest dodatnia do \\(x=2R/3\\) i ujemna dalej. W kluczu zapisano maksimum \\(2R^2/9\\) przy \\(x=2R/3\\).\n\n**Sprawdzenie warunku okręgu opisanego**\nWartość \\(x=2R/3\\) prowadzi do trójkąta o bokach \\(2R/3,4R/3,R\\). Ma on pole \\(\\sqrt{15}R^2/12\\) ze wzoru Herona, a więc promień jego okręgu opisanego to \\(8R/(3\\sqrt{15})\\), różny od \\(R\\). Przedział z nierówności trójkąta obejmuje też trójkąty o innych promieniach.\n\nDla \\(t=x/R\\) poprawny warunek uzyskujemy przez zrównanie kwadratów pól ze wzoru Herona i \\(abc/(4R)\\). Przy \\(1/2<t<3/4\\) jest on równoważny równaniu\n\\[4t^6-8t^5+4t^4-16t^3+44t^2-36t+9=0.\\]\nRównanie ma w tym przedziale dwa pierwiastki \\(t_1\\approx0{,}518424\\) oraz \\(t_2\\approx0{,}719183\\). Zmiana \\(t=(2+3u)/(4(1+u))\\), \\(u>0\\), prowadzi po usunięciu mianownika do wielomianu\n\\[\\begin{aligned}324u^6-912u^5-7696u^4-14208u^3\\\\{}-10304u^2-2304u+256.\\end{aligned}\\]\nDwie zmiany znaku współczynników dają co najwyżej dwa dodatnie pierwiastki na mocy reguły znaków Kartezjusza. Pierwiastki leżą po przeciwnych stronach \\(2/3\\), co wynika ze znaków wyrażenia w \\(1/2,2/3,3/4\\); podane przybliżenia można otrzymać przez bisekcję. Pola wynoszą odpowiednio około \\(0{,}194145R^2\\) i \\(0{,}217868R^2\\). Szukany trójkąt ma zatem boki \\(t_2R,2t_2R,3(1-t_2)R\\), a jego pole to \\(\\tfrac32 t_2^2(1-t_2)R^2\\).",
     "strona_zadania": 44,

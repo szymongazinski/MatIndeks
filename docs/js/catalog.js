@@ -124,9 +124,9 @@ async function fetchAsset(path) {
 export async function loadCatalog() {
   const [SQL, bytes, taxonomy, subcategories] = await Promise.all([
     window.initSqlJs({ locateFile: name => new URL(`../vendor/sqljs/${name}`, import.meta.url).href }),
-    fetchAsset('../data/zadania.sqlite?v=2').then(response => response.arrayBuffer()),
+    fetchAsset('../data/zadania.sqlite?v=3').then(response => response.arrayBuffer()),
     fetchAsset('../data/slowniki.json').then(response => response.json()),
-    fetchAsset('../data/podkategorie.json').then(response => response.json()),
+    fetchAsset('../data/podkategorie.json?v=3').then(response => response.json()),
   ]);
   return new Catalog(new SQL.Database(new Uint8Array(bytes)), { ...taxonomy, podkategorie: subcategories });
 }

@@ -1,7 +1,77 @@
 [
   {
+    "numer": "1",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nAby równość zachodziła dla każdego \\(x\\), muszą zachodzić \\(4-m^2=0\\) oraz \\(m^2-3m+2=(m-1)(m-2)=0\\). Pierwszy warunek daje \\(m=\\pm2\\), a drugi \\(m=1\\) lub \\(m=2\\). Wspólną wartością jest \\(m=2\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "2",
+    "rozwiazanie": "**Odpowiedź CKE — C.**\n\nWybieramy spośród trzech danych punktów wierzchołek przeciwległy do szukanego. Jeśli wybierzemy \\(A\\), to środki przekątnych \\(AD,BC\\) muszą się pokrywać, więc \\(D=B+C-A\\). W pozostałych przypadkach otrzymujemy \\(D=A+C-B\\) lub \\(D=A+B-C\\). Te trzy punkty są różne, bo dane punkty są niewspółliniowe. Zatem istnieją trzy możliwości.",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "3",
+    "rozwiazanie": "**Odpowiedź CKE — A.**\n\nZ twierdzenia o pierwiastkach wymiernych mianownik nieskracalnego pierwiastka dzieli \\(15\\), a licznik dzieli \\(120\\). To wyklucza \\(\\frac76,\\frac87,\\frac95\\). Dzielenie wielomianu przez \\(5x-6\\) daje bez reszty \\(3x^4-23x^3+49x^2-41x-20\\). Szukanym pierwiastkiem jest \\(\\frac65\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "4",
+    "rozwiazanie": "**Odpowiedź CKE — D.**\n\nIloraz ciągu wynosi \\(\\frac23\\), a pierwszy wyraz \\(\\frac35\\). Stąd suma szeregu geometrycznego to \\(\\frac{\\frac35}{1-\\frac23}=\\frac95\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "5",
+    "rozwiazanie": "Pierwsza kula jest biała z prawdopodobieństwem \\(\\frac{10}{16}\\). W takim przypadku w urnie zostaje \\(9\\) białych spośród \\(15\\) kul. Prawdopodobieństwo wylosowania obu białych wynosi\n\\[\\frac{10}{16}\\cdot\\frac9{15}=\\frac38=0{,}375.\\]\nWpisujemy kolejno \\(3,7,5\\).",
+    "strona_rozwiazania": 2
+  },
+  {
+    "numer": "6",
+    "rozwiazanie": "Ponieważ \\(28=2^2\\cdot7\\), jedna z cyfr musi być siódemką, a pozostałe cyfry różne od \\(1\\) to jedna czwórka lub dwie dwójki. Zero odpada, bo iloczyn ma być dodatni.\n\nW pierwszym przypadku ustawiamy \\(7\\) na jednym z siedmiu miejsc, a \\(4\\) na jednym z sześciu pozostałych. Pozostałe pozycje wypełniają jedynki. Otrzymujemy \\(7\\cdot6=42\\) liczby. W drugim przypadku znów wybieramy jedną z siedmiu pozycji siódemki, po czym wybieramy dwie z sześciu na dwójki. To daje \\(7\\binom62=105\\) liczb. Razem jest \\(42+105=147\\).",
+    "strona_rozwiazania": 3
+  },
+  {
+    "numer": "7",
+    "rozwiazanie": "Ze wzoru na pochodną ilorazu wynika\n\\[f'(x)=\\frac{50x(x^2+2)-2x(25x^2-9)}{(x^2+2)^2}\n=\\frac{118x}{(x^2+2)^2}.\\]\nPodstawienie \\(x=10\\) daje \\(f'(10)=\\frac{1180}{10404}=\\frac{295}{2601}\\).",
+    "strona_rozwiazania": 5
+  },
+  {
+    "numer": "8",
+    "rozwiazanie": "Niech \\(\\alpha=|\\angle BAE|=|\\angle EAD|\\) i \\(\\gamma=|\\angle BCE|=|\\angle ECD|\\), ponieważ \\(AE\\) i \\(CE\\) są dwusiecznymi. Niech \\(\\beta=|\\angle ABC|\\), \\(\\delta=|\\angle ADC|\\) i \\(\\varepsilon=|\\angle AEC|\\). Położenie \\(E\\) po drugiej stronie \\(AC\\) niż \\(B\\) sprawia, że kąt wewnętrzny przy \\(E\\) w \\(ABCE\\) ma miarę \\(\\varepsilon\\), a w \\(AECD\\) jest wklęsły i ma miarę \\(360^\\circ-\\varepsilon\\). Sumy kątów wewnętrznych obu czworokątów dają\n\\[\\alpha+\\beta+\\gamma+\\varepsilon=360^\\circ,\\qquad\n\\alpha+\\gamma+\\delta+(360^\\circ-\\varepsilon)=360^\\circ.\\]\nOdejmując drugie równanie od pierwszego, otrzymujemy \\(\\beta-\\delta+2\\varepsilon=360^\\circ\\), co kończy dowód. Ten sam rachunek można wykonać bez dodatkowych oznaczeń. Wtedy od sumy kątów czworokąta \\(ABCE\\) odejmujemy sumę w \\(AECD\\) i skracamy równe kąty przy \\(A\\) i \\(C\\).",
+    "strona_rozwiazania": 6
+  },
+  {
+    "numer": "9",
+    "rozwiazanie": "**Sposób 1 — rozkład na czynniki**\n\nMamy\n\\[n^5-3n^4-n+19=(n^4-1)(n-3)+16\n=(n-1)(n+1)(n^2+1)(n-3)+16.\\]\nDla nieparzystego \\(n\\) każdy z czterech czynników jest parzysty, więc iloczyn jest podzielny przez \\(2^4=16\\). Po dodaniu \\(16\\) podzielność pozostaje.\n\n**Sposób 2 — podstawienie \\(n=2k+1\\)**\n\nDla \\(k\\in\\mathbb Z\\) rozwijamy\n\\[\\begin{aligned}\n(2k+1)^5-3(2k+1)^4-(2k+1)+19\n&=32k^5+32k^4-16k^3-32k^2-16k+16\\\\\n&=16(2k^5+2k^4-k^3-2k^2-k+1).\n\\end{aligned}\\]\nLiczba w nawiasie jest całkowita, więc wyrażenie jest podzielne przez \\(16\\).",
+    "strona_rozwiazania": 8
+  },
+  {
     "numer": "10",
     "rozwiazanie": "Kąt wewnętrzny \\(n\\)-kąta foremnego ma miarę \\(180^\\circ(n-2)/n\\). Dla \\((n+2)\\)-kąta miara wynosi \\(180^\\circ n/(n+2)\\). Z ich różnicy dostajemy \\[\\frac{90n}{n+2}=\\frac{90(n-2)}n+1.\\] Po pomnożeniu przez \\(n(n+2)\\) i uproszczeniu mamy \\(n^2+2n-360=0\\), czyli \\((n-18)(n+20)=0\\). Z warunku \\(n\\ge3\\) zostaje \\(n=18\\).",
     "strona_rozwiazania": 9
+  },
+  {
+    "numer": "11",
+    "rozwiazanie": "Niech \\(G\\) będzie środkiem \\(BC\\), \\(F\\) środkiem \\(DE\\), a \\(K\\) środkiem równobocznej podstawy. Niech \\(|SF|=x\\), \\(|FG|=y\\), \\(|AF|=h\\), \\(|AS|=|BS|=|CS|=b\\), \\(|SK|=H\\). Z \\(|BD|=|CE|\\) oraz \\(|BS|=|CS|\\) wynika, że \\(DE\\parallel BC\\), a \\(S,F,G\\) leżą na jednej prostej. Podobieństwo trójkątów \\(SDE\\) i \\(SBC\\) daje\n\\[\\frac{x}{x+y}=\\frac46,\\]\nwięc \\(x=2y\\). Można też uzyskać tę proporcję z podobieństwa połówek \\(SDF\\) i \\(SBG\\).\n\nW równobocznej podstawie o boku \\(6\\) mamy \\(|AG|=3\\sqrt3\\), \\(|AK|=2\\sqrt3\\) i \\(|KG|=\\sqrt3\\). Płaszczyzny \\(ADE,BCS\\) są prostopadłe, a \\(AF\\) jest prostopadła do ich wspólnej prostej \\(DE\\), ponieważ \\(AD=AE\\) z symetrii. Stąd \\(AF\\perp BCS\\). Z twierdzenia Pitagorasa w \\(AFS,AFG,SBG\\) dostajemy\n\\[h^2+4y^2=b^2,\\qquad h^2+y^2=27,\\qquad 9y^2+9=b^2.\\]\nZ pierwszego i ostatniego równania mamy \\(h^2-5y^2=9\\). Odejmujemy je od środkowego i otrzymujemy \\(6y^2=18\\), więc \\(y=\\sqrt3\\).\n\nWariant wykorzystuje podobieństwo \\(AFG\\) i \\(SKG\\), prostokątnych i mających wspólny kąt przy \\(G\\). Stąd \\(\\frac{|FG|}{|AG|}=\\frac{|KG|}{|SG|}\\), czyli \\(\\frac{y}{3\\sqrt3}=\\frac{\\sqrt3}{3y}\\). Znów \\(y=\\sqrt3\\).\n\nWobec \\(|SG|=3y=3\\sqrt3\\) i \\(|KG|=\\sqrt3\\) wysokość wynosi \\(H=\\sqrt{27-3}=2\\sqrt6\\). Pole podstawy to \\(9\\sqrt3\\), więc objętość wynosi\n\\[V=\\frac13\\cdot9\\sqrt3\\cdot2\\sqrt6=18\\sqrt2.\\]",
+    "strona_rozwiazania": 11
+  },
+  {
+    "numer": "12",
+    "rozwiazanie": "Wyróżnik trójmianu to \\(\\Delta=(2-4m)^2-16(m^2-m-2)=36>0\\), więc ma on zawsze dwa różne pierwiastki rzeczywiste.\n\n**Sposób 1 — wyznaczenie pierwiastków**\n\nRozwiązania to \\(x_1=\\frac{m-2}{2}\\) oraz \\(x_2=\\frac{m+1}{2}\\). Można je też odczytać z rozkładu \\((2x-m+2)(2x-m-1)=0\\). Ponieważ \\(x_1<x_2\\), oba są dodatnie dokładnie dla \\(m>2\\). Do tego samego warunku prowadzą \\(f(0)>0\\) i dodatnia pierwsza współrzędna wierzchołka paraboli, tj. \\((m-2)(m+1)>0\\) i \\(m-\\frac12>0\\).\n\nWarunek na sumę kwadratów daje\n\\[\\left(\\frac{m-2}{2}\\right)^2+\\left(\\frac{m+1}{2}\\right)^2\\le\\frac{17}4\n\\quad\\Longleftrightarrow\\quad (m+2)(m-3)\\le0.\\]\nStąd \\(m\\in[-2,3]\\), a po uwzględnieniu dodatniości \\(m\\in(2,3]\\).\n\n**Sposób 2 — wzory Viète’a**\n\nZe wzorów Viète’a mamy \\(s=x_1+x_2=(4m-2)/4\\) oraz \\(p=x_1x_2=(m^2-m-2)/4\\). Dla dwóch pierwiastków rzeczywistych dodatniość jest równoważna \\(s>0\\) oraz \\(p>0\\), czyli \\(m>\\frac12\\) i \\((m-2)(m+1)>0\\). Łącznie daje to \\(m>2\\). Ponadto\n\\[x_1^2+x_2^2=s^2-2p=\\frac{2m^2-2m+5}{4}.\\]\nPorównanie z \\(\\frac{17}4\\) znów daje \\((m+2)(m-3)\\le0\\), więc \\(m\\in(2,3]\\).\n\nW rachunku CKE dla drugiego sposobu na s. 16 wydrukowano błędny znak przy wyrazie liniowym. Rozkład na czynniki i końcowa odpowiedź odpowiadają poprawnej nierówności \\(m^2-m-6\\le0\\).",
+    "strona_rozwiazania": 14
+  },
+  {
+    "numer": "13",
+    "rozwiazanie": "Oznaczmy środek rombu przez \\(S\\).\n\n**Sposób 1 — przekątne rombu**\n\nPrzekątna \\(AC\\) jest prostopadła do prostej \\(l\\colon y=2x-5\\) i przechodzi przez \\(A=(-2,6)\\), więc leży na \\(y=-\\frac12x+5\\). Z przecięcia prostych dostajemy \\(S=(4,3)\\), stąd \\(|AS|=\\sqrt{6^2+(-3)^2}=3\\sqrt5\\). Można też obliczyć \\(|AS|\\) jako odległość \\(A\\) od prostej \\(l\\). Zatem \\(|AC|=6\\sqrt5\\). Ze wzoru na pole rombu \\(\\frac12|AC||BD|=90\\) wynika \\(|BD|=6\\sqrt5\\). Równe przekątne oznaczają, że romb jest kwadratem. Jego bok wynosi \\(6\\sqrt5/\\sqrt2=3\\sqrt{10}\\).\n\n**Sposób 2 — współrzędne sąsiedniego wierzchołka**\n\nJak poprzednio znajdujemy \\(S=(4,3)\\). Pole trójkąta \\(ABS\\) to \\(\\frac14\\cdot90=22{,}5\\). Niech \\(B=(u,v)\\), gdzie \\(v=2u-5\\). Wyznacznik wektorów \\(\\overrightarrow{AS}=(6,-3)\\) i \\(\\overrightarrow{AB}=(u+2,v-6)\\) daje\n\\[22{,}5=\\tfrac12|6(v-6)+3(u+2)|,\\]\nwięc \\(|15u-60|=45\\). Dostajemy \\((7,9)\\) i \\((1,-3)\\), czyli współrzędne \\(B,D\\) w dowolnej kolejności. Odległość punktu \\(A\\) od każdego z nich wynosi \\(3\\sqrt{10}\\). W tym wariancie można też wziąć \\(C=2S-A=(10,0)\\) i pole \\(ABC\\) równe \\(45\\). Ponieważ \\(\\overrightarrow{AC}=2\\overrightarrow{AS}\\), daje to to samo równanie.",
+    "strona_rozwiazania": 18
+  },
+  {
+    "numer": "14",
+    "rozwiazanie": "Po podzieleniu wyjściowego równania przez \\(2\\) dostajemy \\(2\\sin(7x)\\cos(2x)=\\sin(9x)-\\frac12\\).\n\n**Sposób 1 — zamiana iloczynu na sumę**\n\nZ tożsamości \\(2\\sin(7x)\\cos(2x)=\\sin(9x)+\\sin(5x)\\) wynika \\(\\sin(5x)=-\\frac12\\).\n\n**Sposób 2 — sinus sumy i różnicy**\n\nRozwijamy \\(\\sin(9x)=\\sin(7x)\\cos(2x)+\\cos(7x)\\sin(2x)\\). Po przeniesieniu składników otrzymujemy \\(\\sin(7x)\\cos(2x)-\\cos(7x)\\sin(2x)=-\\frac12\\), czyli \\(\\sin(5x)=-\\frac12\\).\n\nW obu metodach \\(5x=\\frac{7\\pi}6+2k\\pi\\) lub \\(5x=\\frac{11\\pi}6+2k\\pi\\), gdzie \\(k\\in\\mathbb Z\\). Z przedziału \\([0,\\pi]\\) wybieramy\n\\[x\\in\\left\\{\\frac{7\\pi}{30},\\frac{11\\pi}{30},\\frac{19\\pi}{30},\\frac{23\\pi}{30}\\right\\}.\\]",
+    "strona_rozwiazania": 21
+  },
+  {
+    "numer": "15",
+    "rozwiazanie": "Styczność wewnętrzna daje \\(|SS_1|=18-x\\) i \\(|SS_2|=18-2x\\), a styczność zewnętrzna \\(|S_1S_2|=3x\\). Połowa obwodu trójkąta środków wynosi \\(p=18\\). Ze wzoru Herona dostajemy\n\\[P(x)=\\sqrt{18\\cdot x\\cdot 2x\\cdot(18-3x)}\n=\\sqrt{108x^2(6-x)}.\\]\nNiewspółliniowość oraz dodatnie promienie wymagają \\(x>0\\), a nierówność trójkąta \\(3x<(18-x)+(18-2x)\\) daje \\(x<6\\). Dla \\(0<x<6\\) pozostałe nierówności trójkąta także są spełnione, więc dziedzina to \\((0,6)\\).\n\nPierwiastek jest rosnący, więc maksymalizujemy \\(F(x)=P(x)^2/108=x^2(6-x)\\). Pochodna \\(F'(x)=3x(4-x)\\) jest dodatnia dla \\(0<x<4\\) i ujemna dla \\(4<x<6\\). Maksimum wypada przy \\(x=4\\). Boki trójkąta mają długości \\(14,10,12\\), a największe pole to\n\\[P(4)=\\sqrt{108\\cdot16\\cdot2}=24\\sqrt6.\\]",
+    "strona_rozwiazania": 24
   }
 ]
