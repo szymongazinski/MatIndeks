@@ -463,7 +463,36 @@ select {
 }
 .katex { font-size: calc(1.075em * var(--math-scale, 1)); }
 .task-figure { margin: .66rem 0; }
-.task-figure img { display: block; max-width: min(100%, 32rem); max-height: 25rem; height: auto; object-fit: contain; }
+.figure-zoom {
+  display: block;
+  max-width: min(100%, 32rem);
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  cursor: zoom-in;
+}
+.figure-zoom img { display: block; max-width: 100%; max-height: 25rem; height: auto; }
+
+.figure-viewer {
+  max-width: calc(100% - 1rem);
+  max-height: calc(100% - 1rem);
+  padding: .65rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.figure-viewer::backdrop { background: rgb(24 44 60 / 70%); }
+.figure-viewer form { display: flex; justify-content: flex-end; margin-bottom: .4rem; }
+.figure-viewer img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100dvh - 5.5rem);
+  height: auto;
+  margin-inline: auto;
+}
 
 .task-terms { grid-column: 1 / -1; margin-bottom: .46rem; }
 .task-categories { gap: .18rem .72rem; }

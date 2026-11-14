@@ -1,6 +1,11 @@
 const examTypes = new Set(['glowny', 'dodatkowy']);
 const eligible = task => task.punkty !== 1;
 
+// Topics explicitly asked about in a subpart that CKE scores as part of a larger task.
+const examSubpartTopics = new Map([
+  ['2023-06-13', ['Geometria przestrzenna']], // Part a) asks for the prism's volume as a function of its height.
+]);
+
 export const balancedRules = {
   required: ['Równania kwadratowe z parametrem', 'Ciągi', 'Równania trygonometryczne',
     'Geometria analityczna', 'Geometria przestrzenna', 'Optymalizacja funkcji'],
@@ -37,8 +42,10 @@ export function buildProfiles(tasks) {
     if (!selected.length || !selected.every(task => task.punkty > 0 && task.kategorie.length)) continue;
     if (group.reduce((total, task) => total + task.punkty, 0) !== 50) continue;
     const points = selected.reduce((total, task) => total + task.punkty, 0);
+    const categories = selected.flatMap(task =>
+      [...new Set([task.kategorie[0], ...(examSubpartTopics.get(task.id) ?? [])])]);
     profiles.push({ id, label: group[0].arkusz, formula: group[0].formula, points,
-      categories: selected.map(task => task.kategorie[0]), pointValues: selected.map(task => task.punkty) });
+      categories, pointValues: selected.map(task => task.punkty) });
   }
   const newest = Math.max(...profiles.map(profile => profile.formula));
   const current = profiles.filter(profile => profile.formula === newest);

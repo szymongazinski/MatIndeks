@@ -1,6 +1,6 @@
 import { kindLabels, loadCatalog } from './catalog.js?v=7';
-import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=5';
-import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=7';
+import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=6';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=8';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];
@@ -368,7 +368,7 @@ function configure(catalog) {
         element('td', { class: 'table-number' }, percentage.format(row.papers / profiles.length)),
         element('td', { class: 'table-number' }, average.format(row.average))));
     panel.append(element('details', { class: 'frequency-details' }, element('summary', {}, 'Częstości w arkuszach CKE'),
-      element('p', { class: 'field-note' }, summary, ' W analizie liczy się główna kategoria zadania.'),
+      element('p', { class: 'field-note' }, summary, ' Zliczamy główne kategorie oraz tematy wymagane wprost w osobnych podpunktach.'),
       element('div', { class: 'table-wrap' }, element('table', { class: 'frequency-table', 'aria-label': 'Częstość występowania kategorii' },
         element('thead', {}, element('tr', {}, ['Kategoria', '% arkuszy', 'Śr. zadań'].map(label => element('th', { scope: 'col' }, label)))),
         element('tbody', {}, rows)))));

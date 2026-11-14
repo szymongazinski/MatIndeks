@@ -42,6 +42,24 @@ export function fitMath(root) {
   for (const [formula, scale] of resized) formula.style.setProperty('--math-scale', scale);
 }
 
+let figureViewer;
+
+function openFigure(url, description) {
+  if (!figureViewer) {
+    const close = element('button', { type: 'submit', class: 'button button-quiet', autofocus: true }, 'Zamknij');
+    figureViewer = element('dialog', { class: 'figure-viewer', 'aria-label': 'Powiększony rysunek' },
+      element('form', { method: 'dialog' }, close), element('img', { alt: '' }));
+    figureViewer.addEventListener('click', event => {
+      if (event.target === figureViewer) figureViewer.close();
+    });
+    document.body.append(figureViewer);
+  }
+  const preview = figureViewer.querySelector('img');
+  preview.alt = description;
+  preview.src = url;
+  figureViewer.showModal();
+}
+
 export function renderText(text, source, page, sourceLabel) {
   const content = element('div', { class: 'math-text' });
   const body = text.trim();
@@ -55,9 +73,13 @@ export function renderText(text, source, page, sourceLabel) {
       content.append(block);
       block = element('div', { class: 'math-paragraph' });
     } else if (imageId) {
-      const image = element('img', { srcset: './rysunki/' + imageId + '.png?v=2 2x', alt: caption || 'Rysunek do zadania',
-        loading: 'lazy', decoding: 'async' });
-      const figure = element('figure', { class: 'task-figure' }, image);
+      const url = './rysunki/' + imageId + '.png?v=2';
+      const description = caption || 'Rysunek do zadania';
+      const image = element('img', { srcset: url + ' 2x', alt: description, loading: 'lazy', decoding: 'async' });
+      const zoom = element('button', { class: 'figure-zoom', type: 'button', 'aria-haspopup': 'dialog',
+        'aria-label': caption ? 'Powiększ rysunek. ' + caption : 'Powiększ rysunek', title: 'Powiększ rysunek' }, image);
+      zoom.addEventListener('click', () => openFigure(url, description));
+      const figure = element('figure', { class: 'task-figure' }, zoom);
       image.addEventListener('error', () => {
         const link = sourceLink(source, page, 'Rysunek w pliku źródłowym');
         figure.replaceChildren(link ?? caption ?? 'Rysunek do zadania');
