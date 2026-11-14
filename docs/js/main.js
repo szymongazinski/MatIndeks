@@ -1,6 +1,6 @@
 import { kindLabels, loadCatalog } from './catalog.js?v=8';
-import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=7';
-import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=9';
+import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=8';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=10';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];
@@ -301,6 +301,10 @@ function configure(catalog) {
   let lastDrawFilter;
   const include = new TagPicker(find('include-tag-filter'), 'Uwzględnij tagi', taxonomy.tagi, updateGeneratorOptions);
   const exclude = new TagPicker(find('exclude-tag-filter'), 'Wyklucz tagi', taxonomy.tagi, updateGeneratorOptions);
+  const balancedExclude = new TagPicker(find('balanced-exclude-tag-filter'), 'Wyklucz tagi', taxonomy.tagi, updateGeneratorOptions, { showCounts: false });
+  const limitTags = new TagPicker(find('balanced-limit-tag-filter'), 'Maksymalnie raz', taxonomy.tagi, updateGeneratorOptions, { showCounts: false });
+  limitTags.input.setAttribute('aria-describedby', 'generator-limit-note');
+  const tagLimitShortage = 'Limity tagów kolidują z wymaganym rozkładem kategorii. Usuń limit lub zmień zakres lat.';
 
   function addChoices(container, labels, name) {
     return labels.map(value => {
@@ -316,7 +320,8 @@ function configure(catalog) {
   const generatorTaxonomy = { years: catalog.years, tags: taxonomy.tagi, categories: taxonomy.kategorie };
   const currentFilter = () => categoryMode.checked
     ? { mode: 'categories', categories: selectedValues(categoryBoxes), include: include.selected, exclude: exclude.selected }
-    : { mode: 'balanced', years: selectedValues(yearBoxes).map(Number), latestFormulaOnly: latestFormula.checked };
+    : { mode: 'balanced', years: selectedValues(yearBoxes).map(Number), latestFormulaOnly: latestFormula.checked,
+        exclude: balancedExclude.selected, limitTags: limitTags.selected };
   const drawOptions = () => ({ ...currentFilter(), size: size.disabled ? undefined : size.valueAsNumber });
 
   for (const control of [years, latestFormula, size]) control.addEventListener('change', updateGeneratorOptions);
@@ -338,10 +343,14 @@ function configure(catalog) {
     lastDrawFilter = null;
   }
 
-  function setChoiceAvailability(input, remaining, allowClear = false) {
-    input.disabled = !remaining && !allowClear;
-    const empty = allowClear ? 'Wyczyść wybór kategorii' : 'Brak pasujących zadań';
-    input.parentElement.title = remaining ? countText(remaining) + ' po zmianie wyboru' : empty;
+  function setChoiceAvailability(input, remaining, clearHint = '') {
+    input.disabled = !remaining && !clearHint;
+    input.parentElement.title = remaining ? countText(remaining) + ' po zmianie wyboru' : clearHint || 'Brak pasujących zadań';
+  }
+
+  function setTagAvailability(picker, counts, relevantTags, pairedPicker) {
+    const omitted = taxonomy.tagi.filter(tag => !relevantTags.has(tag) || pairedPicker.selected.includes(tag));
+    picker.setAvailability(counts, omitted);
   }
 
   function updateGeneratorOptions() {
@@ -357,31 +366,39 @@ function configure(catalog) {
     size.disabled = !byCategory;
     submit.textContent = byCategory ? 'Wylosuj zadania' : 'Wylosuj arkusz';
     if (byCategory) {
-      const omitted = taxonomy.tagi.filter(tag => !availability.categoryTags.has(tag));
-      include.setAvailability(availability.includeCounts, [...omitted, ...exclude.selected]);
-      exclude.setAvailability(availability.excludeCounts, [...omitted, ...include.selected]);
+      setTagAvailability(include, availability.includeCounts, availability.categoryTags, exclude);
+      setTagAvailability(exclude, availability.excludeCounts, availability.categoryTags, include);
       for (const input of categoryBoxes) {
-        setChoiceAvailability(input, availability.categoryCounts.get(input.value), input.checked && categoryCount === 1);
+        const clearHint = input.checked && categoryCount === 1 ? 'Wyczyść wybór kategorii' : '';
+        setChoiceAvailability(input, availability.categoryCounts.get(input.value), clearHint);
       }
       const limit = Math.min(availability.total || 50, 50);
       size.max = limit;
       if (Number(size.value) > limit) size.value = limit;
     } else {
+      setTagAvailability(balancedExclude, availability.excludeCounts, availability.balancedTags, limitTags);
+      setTagAvailability(limitTags, availability.limitCounts, availability.repeatableTags, balancedExclude);
       for (const input of yearBoxes) {
-        setChoiceAvailability(input, availability.yearCounts.get(Number(input.value)));
-        if (input.disabled) input.checked = false;
+        const year = Number(input.value);
+        if (filter.latestFormulaOnly && !availability.latestFormulaYears.has(year)) input.checked = false;
+        setChoiceAvailability(input, availability.yearCounts.get(year), input.checked ? 'Usuń rok z wyboru' : '');
       }
-      find('year-note').textContent = latestFormula.checked ? 'Bez zaznaczenia losujesz ze wszystkich lat nowej formuły.'
+      latestFormula.disabled = !filter.latestFormulaOnly && !availability.latestFormulaAvailable;
+      const yearNote = filter.latestFormulaOnly ? 'Bez zaznaczenia losujesz ze wszystkich lat nowej formuły.'
         : 'Bez zaznaczenia losujesz ze wszystkich lat.';
+      const formulaHint = latestFormula.disabled ? ' Zmień filtry tagów, aby włączyć nową formułę.' : '';
+      find('year-note').textContent = yearNote + formulaHint;
     }
-    submit.disabled = !availability.total || availability.missingRequired.length > 0;
+    const { missingRequired, blockedByTags } = availability;
+    submit.disabled = !availability.total || missingRequired.length > 0 || Boolean(blockedByTags);
     find('generator-pool').textContent = byCategory && !categoryCount ? 'Wybierz co najmniej jedną kategorię.'
       : 'Dostępna pula · ' + countText(availability.total);
     const shortage = find('generator-shortage');
-    const missing = availability.missingRequired;
-    shortage.hidden = missing.length === 0;
-    shortage.textContent = missing.length ? 'Brak zadań z wymaganych kategorii: ' + missingCategories(missing)
-      + '. Wybierz szerszy zakres lat lub losuj według kategorii.' : '';
+    const hasTagFilters = filter.exclude.length > 0 || filter.limitTags?.length > 0;
+    const missingHint = hasTagFilters ? 'Zmień zakres lat lub usuń ograniczenie tagów.' : 'Wybierz szerszy zakres lat lub losuj według kategorii.';
+    const missingMessage = missingRequired.length ? 'Brakuje zadań z wymaganych kategorii — ' + missingCategories(missingRequired) + '. ' + missingHint : '';
+    shortage.textContent = blockedByTags ? tagLimitShortage : missingMessage;
+    shortage.hidden = !shortage.textContent;
     if (results.hidden) return;
     if (submit.disabled) {
       clearDraw();
@@ -414,7 +431,7 @@ function configure(catalog) {
         element('li', {}, 'Jedno zadanie z grupy „' + choice.join('” lub „') + '”.'),
         element('li', {}, 'Najwyżej jedno zadanie na dowodzenie.'),
         element('li', {}, 'Zwykle dwa, maksymalnie trzy z następujących działów — ' + short.categories.join(', ') + '.')),
-      element('p', { class: 'muted' }, `Dobór dąży do ${targetPoints} pkt w ramach wylosowanego rozkładu i wybranych lat.`));
+      element('p', { class: 'muted' }, `Dobór dąży do ${targetPoints} pkt w ramach wylosowanego rozkładu i wybranych filtrów.`));
     if (!profiles.length) return;
     const percentage = new Intl.NumberFormat('pl', { style: 'percent', maximumFractionDigits: 1 });
     const average = new Intl.NumberFormat('pl', { maximumFractionDigits: 2 });
@@ -434,8 +451,7 @@ function configure(catalog) {
     for (const input of [...yearBoxes, ...categoryBoxes]) input.checked = false;
     latestFormula.checked = false;
     size.value = size.defaultValue;
-    include.reset();
-    exclude.reset();
+    for (const picker of [include, exclude, balancedExclude, limitTags]) picker.reset();
     clearDraw();
     updateGeneratorOptions();
   });
@@ -453,8 +469,9 @@ function configure(catalog) {
     const details = [countText(result.tasks.length), result.points == null ? null : pointsText(result.points)].filter(Boolean).join(' · ');
     const notices = [];
     if (result.mode === 'balanced') {
+      if (result.blockedByTags) notices.push(tagLimitShortage);
       if (result.missing.length) {
-        notices.push('Brak zadań z wymaganych kategorii: ' + missingCategories(result.missing) + '.');
+        notices.push('Brakuje zadań z wymaganych kategorii — ' + missingCategories(result.missing) + '.');
       }
     } else if (result.tasks.length < result.requested) {
       notices.push(result.tasks.length ? 'W puli jest mniej zadań niż wybrano.' : 'Brak zadań dla wybranych kategorii i tagów.');

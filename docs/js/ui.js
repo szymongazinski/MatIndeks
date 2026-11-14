@@ -157,9 +157,10 @@ export function paperDescription(paper) {
 }
 
 export class TagPicker {
-  constructor(container, label, tags, onChange, { showListButton = false } = {}) {
+  constructor(container, label, tags, onChange, { showListButton = false, showCounts = true } = {}) {
     this.root = container;
     this.tags = tags;
+    this.showCounts = showCounts;
     this.onChange = onChange;
     this.selected = [];
     this.active = -1;
@@ -214,7 +215,7 @@ export class TagPicker {
       const unavailable = count === 0;
       const option = element('div', { id: this.options.id + '-' + index, role: 'option',
         'aria-selected': 'false', 'aria-disabled': unavailable ? 'true' : null, class: 'tag-option' },
-      element('span', {}, tag), count == null ? null : element('span', { class: 'tag-count' }, countText(count)));
+      element('span', {}, tag), this.showCounts && count != null ? element('span', { class: 'tag-count' }, countText(count)) : null);
       option.addEventListener('pointerdown', event => event.preventDefault());
       if (!unavailable) option.addEventListener('click', () => this.choose(tag));
       return option;

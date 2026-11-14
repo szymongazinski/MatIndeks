@@ -1,3 +1,5 @@
+import { compatibleMinimum, drawCompatiblePaper, findRepeatableTags } from './paper-constraints.js';
+
 const examTypes = new Set(['glowny', 'dodatkowy']);
 const eligible = task => task.punkty !== 1;
 
@@ -86,6 +88,8 @@ function uniqueProblems(tasks) {
 const matchesTags = (task, include, exclude) => include.every(tag => task.tagi.includes(tag))
   && exclude.every(tag => !task.tagi.includes(tag));
 
+const withoutTags = (tasks, exclude) => exclude.length ? tasks.filter(task => matchesTags(task, [], exclude)) : tasks;
+
 function fromYears(tasks, years) {
   const selected = new Set(years);
   return selected.size ? tasks.filter(task => selected.has(task.rok)) : tasks;
@@ -118,6 +122,33 @@ function unfilled(groups) {
   return groups.flatMap(({ label, count, tasks }) => Array(Math.max(0, count - tasks.length)).fill(label));
 }
 
+function balancedLayout(pool) {
+  const byCategory = groupBy(uniqueProblems(pool), task => task.kategorie[0]);
+  return {
+    groups: requiredGroups(byCategory),
+    proofs: proof.categories.flatMap(label => byCategory.get(label) ?? []),
+    shortCandidates: short.categories.map(label => byCategory.get(label)).filter(Boolean),
+  };
+}
+
+function weightOptions(weights, limit) {
+  return Object.entries(weights).map(([count, weight]) => [Number(count), weight])
+    .filter(([count, weight]) => count <= limit && weight > 0);
+}
+
+function quotaOptions({ groups, proofs, shortCandidates }, random) {
+  const ordered = values => random ? shuffled(values, random) : values;
+  const singles = tasks => ordered(tasks).map(task => [task]);
+  return [
+    ...groups.map(({ tasks, count, label }) => ({
+      candidates: singles(tasks),
+      weights: label === plane.category ? weightOptions(plane.weights, tasks.length) : [[count, 1]],
+    })),
+    { candidates: singles(proofs), weights: weightOptions({ 0: 1 - proof.chance, 1: proof.chance }, proofs.length) },
+    { candidates: ordered(shortCandidates).map(ordered), weights: weightOptions(short.weights, shortCandidates.length) },
+  ];
+}
+
 function toggled(selection, value) {
   return selection.includes(value) ? selection.filter(item => item !== value) : [...selection, value];
 }
@@ -127,7 +158,7 @@ function countsBy(values, count = () => 0) {
 }
 
 export function generatorAvailability(tasks, {
-  mode = 'balanced', years = [], latestFormulaOnly = false, categories = [], include = [], exclude = [],
+  mode = 'balanced', years = [], latestFormulaOnly = false, categories = [], include = [], exclude = [], limitTags = [],
 } = {}, { years: allYears = [], tags = [], categories: allCategories = [] } = {}) {
   const keys = new Map(tasks.map(task => [task.id, problemKey(task)]));
   const count = rows => new Set(rows.map(task => keys.get(task.id))).size;
@@ -146,25 +177,52 @@ export function generatorAvailability(tasks, {
     };
   }
 
-  const { candidates, years: selectedYears, allowedYears } = balancedScope(tasks, years, latestFormulaOnly);
-  const selected = fromYears(candidates, selectedYears);
+  const latest = balancedScope(tasks, years, true);
+  const { candidates, years: selectedYears, allowedYears } = latestFormulaOnly ? latest : balancedScope(tasks, years, false);
+  const constrained = exclude.length > 0 || limitTags.length > 0;
+  const matching = withoutTags(candidates, exclude);
+  const selected = fromYears(matching, selectedYears);
+  const layout = balancedLayout(selected);
+  const missingRequired = unfilled(layout.groups);
+  const complete = !missingRequired.length && compatibleMinimum(layout.groups, limitTags);
+  const canDraw = (pool, limits = limitTags) => {
+    const groups = requiredGroups(groupBy(uniqueProblems(pool), task => task.kategorie[0]));
+    return !unfilled(groups).length && compatibleMinimum(groups, limits);
+  };
+  const tagCounts = new Map();
+  for (const task of uniqueProblems(selected)) {
+    for (const tag of task.tagi) tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  }
+  const potentialRepeats = tags.filter(tag => tagCounts.get(tag) > 1 && !limitTags.includes(tag));
+  const repeatableTags = complete ? findRepeatableTags(quotaOptions(layout), limitTags, targetPoints, potentialRepeats) : new Set();
+  const latestCandidates = fromYears(withoutTags(latest.candidates, exclude), latest.years);
   return {
     total: count(selected),
-    missingRequired: unfilled(requiredGroups(groupBy(uniqueProblems(selected), task => task.kategorie[0]))),
+    missingRequired,
+    blockedByTags: !missingRequired.length && !complete,
+    latestFormulaYears: latest.allowedYears,
+    latestFormulaAvailable: !constrained || canDraw(latestCandidates),
+    balancedTags: new Set(tagCounts.keys()),
+    repeatableTags,
     categoryTags: new Set(),
     categoryCounts: countsBy(allCategories),
     includeCounts: countsBy(tags),
-    excludeCounts: countsBy(tags),
+    excludeCounts: countsBy(tags, tag => {
+      if (!tagCounts.has(tag)) return 0;
+      const pool = withoutTags(selected, [tag]);
+      return canDraw(pool) ? count(pool) : 0;
+    }),
+    limitCounts: countsBy(tags, tag => repeatableTags.has(tag) && canDraw(selected, [...limitTags, tag]) ? tagCounts.get(tag) : 0),
     yearCounts: countsBy(allYears, year => {
       if (allowedYears && !allowedYears.has(year)) return 0;
-      return count(fromYears(candidates, toggled(selectedYears, year)));
+      const pool = fromYears(matching, toggled(selectedYears, year));
+      return !constrained || canDraw(pool) ? count(pool) : 0;
     }),
   };
 }
 
 function weightedCount(weights, limit, random) {
-  const possible = Object.entries(weights).map(([count, weight]) => [Number(count), weight])
-    .filter(([count]) => count <= limit);
+  const possible = weightOptions(weights, limit);
   if (!possible.length) return 0;
   let ticket = random() * possible.reduce((total, [, weight]) => total + weight, 0);
   for (const [count, weight] of possible) {
@@ -209,16 +267,19 @@ function chooseTasks(groups, random) {
   return { tasks: choices.get(points), points };
 }
 
-function drawBalanced(pool, random) {
-  const byCategory = groupBy(uniqueProblems(pool), task => task.kategorie[0]);
-  const groups = requiredGroups(byCategory);
+function drawBalanced(pool, limitTags, random) {
+  const layout = balancedLayout(pool);
+  const { groups, proofs, shortCandidates } = layout;
   const missing = unfilled(groups);
+  if (limitTags.length) {
+    const result = !missing.length && compatibleMinimum(groups, limitTags)
+      ? drawCompatiblePaper(quotaOptions(layout, random), limitTags, targetPoints, random) : null;
+    return { mode: 'balanced', ...(result ?? { tasks: [], points: 0 }), missing, blockedByTags: !missing.length && !result };
+  }
   const planimetry = groups.find(group => group.label === plane.category);
   planimetry.count = weightedCount(plane.weights, planimetry.tasks.length, random) || planimetry.count;
-  const shortCandidates = short.categories.map(label => byCategory.get(label)).filter(Boolean);
   const shortCount = weightedCount(short.weights, shortCandidates.length, random);
   const includeProof = random() < proof.chance;
-  const proofs = proof.categories.flatMap(label => byCategory.get(label) ?? []);
 
   const selections = groups.map(({ tasks, count }) => ({
     count: Math.min(count, tasks.length),
@@ -234,7 +295,7 @@ function drawBalanced(pool, random) {
 
 export function generatePaper(tasks, {
   mode = 'balanced', years = [], latestFormulaOnly = false, categories = [], include = [], exclude = [],
-  size, random = Math.random,
+  limitTags = [], size, random = Math.random,
 } = {}) {
   if (mode === 'categories') {
     const pool = fromCategories(tasks, categories).filter(task => eligible(task) && matchesTags(task, include, exclude));
@@ -245,5 +306,5 @@ export function generatePaper(tasks, {
   }
 
   const { candidates, years: selectedYears } = balancedScope(tasks, years, latestFormulaOnly);
-  return drawBalanced(fromYears(candidates, selectedYears), random);
+  return drawBalanced(withoutTags(fromYears(candidates, selectedYears), exclude), limitTags, random);
 }

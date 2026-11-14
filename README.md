@@ -12,7 +12,7 @@ Kategorie odpowiadają celowi polecenia. Tagi opisują badany motyw lub narzędz
 
 Generator losuje po jednym zadaniu z równań kwadratowych z parametrem, ciągów, równań trygonometrycznych, geometrii analitycznej, geometrii przestrzennej i optymalizacji. Losuje też dwa zadania z planimetrii (85% losowań) lub trzy (15%) i jedno zadanie z kombinatoryki albo prawdopodobieństwa. Dodatkowo może losować jedno zadanie na dowodzenie (65%) oraz od zera do trzech zadań z różnych krótszych działów (odpowiednio 10%, 15%, 60% i 15%). Wagi liczności dotyczą puli, w której wszystkie liczności są możliwe. Każde zadanie liczy się do swojej głównej kategorii. Dla wylosowanej liczby zadań generator dobiera punktację najbliższą 50.
 
-W trybie pełnego arkusza wybrane lata ograniczają pulę. Opcja „Tylko nowa formuła” zawęża ją do zadań w formule 2023 z lat 2023–2026. Gdy zabraknie zadań z wymaganych działów, generator wskazuje braki. W tym trybie można też sprawdzić częstości kategorii w arkuszach CKE.
+W trybie pełnego arkusza wybrane lata ograniczają pulę. Opcja „Tylko nowa formuła” zawęża ją do zadań w formule 2023 z lat 2023–2026. Możesz wykluczyć zadania z wybranymi tagami oraz ustawić limit najwyżej jednego zadania na każdy tag dodany do pola „Maksymalnie raz”. Generator sprawdza, czy filtry pozwalają zachować wymagany rozkład kategorii. W tym trybie można też sprawdzić częstości kategorii w arkuszach CKE.
 
 W trybie „Według kategorii” generator losuje z wybranych działów. Tagi opcjonalnie zawężają pulę do zadań spełniających wszystkie uwzględnione tagi. Zadanie z dowolnym wykluczonym tagiem wypada z puli.
 

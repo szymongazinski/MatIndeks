@@ -7,10 +7,10 @@
   <title>MatIndeks — matematyka rozszerzona</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./vendor/katex/katex.min.css">
-  <link rel="stylesheet" href="./style.css?v=6">
+  <link rel="stylesheet" href="./style.css?v=7">
   <script src="./vendor/katex/katex.min.js" defer></script>
   <script src="./vendor/sqljs/sql-wasm.js" defer></script>
-  <script type="module" src="./js/main.js?v=9"></script>
+  <script type="module" src="./js/main.js?v=10"></script>
 </head>
 <body>
   <a class="skip-link" href="#tresc">Przejdź do treści</a>
@@ -125,12 +125,22 @@
               <label class="generator-option"><input type="radio" name="tryb" value="categories" id="generator-category-mode"> Według kategorii</label>
             </div>
           </fieldset>
-          <fieldset id="generator-balanced" class="generator-section">
-            <legend>Lata zadań</legend>
-            <label class="generator-formula"><input type="checkbox" id="generator-latest-formula"> Tylko nowa formuła</label>
-            <p class="field-note" id="year-note">Bez zaznaczenia losujesz ze wszystkich lat.</p>
-            <div id="generator-years" class="generator-options" aria-describedby="year-note"></div>
-          </fieldset>
+          <div id="generator-balanced" class="generator-section">
+            <fieldset>
+              <legend>Lata zadań</legend>
+              <label class="generator-formula"><input type="checkbox" id="generator-latest-formula" aria-describedby="year-note"> Tylko nowa formuła</label>
+              <p class="field-note" id="year-note">Bez zaznaczenia losujesz ze wszystkich lat.</p>
+              <div id="generator-years" class="generator-options" aria-describedby="year-note"></div>
+            </fieldset>
+            <fieldset class="generator-section">
+              <legend>Tagi (opcjonalnie)</legend>
+              <div class="generator-tag-filters">
+                <div id="balanced-exclude-tag-filter"></div>
+                <div id="balanced-limit-tag-filter"></div>
+              </div>
+              <p class="field-note generator-limit-note" id="generator-limit-note">Każdy tag z limitem może wystąpić w najwyżej jednym zadaniu.</p>
+            </fieldset>
+          </div>
           <div id="generator-by-category" class="generator-section" hidden>
             <fieldset>
               <legend>Kategorie</legend>

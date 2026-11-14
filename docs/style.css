@@ -605,6 +605,7 @@ table tbody tr:nth-child(even) { background: #f7fafb; }
 .generator-option:has(input:checked) { background: var(--pale); border-color: var(--field-line); }
 .generator-option:has(input:disabled) { color: var(--muted); background: #f3f6f7; cursor: default; }
 .generator-tag-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: .35rem; }
+.generator-limit-note { margin-top: .35rem; }
 #sample-size { margin-top: 1rem; }
 #generator-size { width: 4.5rem; margin-left: .4rem; }
 .generator-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }

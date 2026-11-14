@@ -82,11 +82,79 @@ test('year selection keeps required topics and caps the optional quotas to what 
   assert.deepEqual(result.missing, []);
 });
 
-test('balanced mode only applies year filters when sample options are also present', () => {
+test('balanced mode ignores category, inclusion and size options', () => {
   const result = generatePaper(tasks, { mode: 'balanced', years: [2018], categories: [plane],
     include: [viète], exclude: [similarity], size: 1, random: () => 0 });
   assert.equal(result.mode, 'balanced');
   assert.deepEqual(result.tasks.map(item => item.id), ['c1']);
+});
+
+test('balanced exclusions remove tasks and disable tags needed for a required category', () => {
+  const needed = 'Niezastąpiony tag';
+  const pool = papersPool.map(item => {
+    if (item.kategorie[0] === spatial) return { ...item, tagi: [needed] };
+    if (item.id === '6') return { ...item, tagi: [similarity] };
+    return item;
+  });
+  const options = generatorAvailability(pool, {}, { tags: [similarity, needed] });
+  assert.ok(options.excludeCounts.get(similarity) > 0);
+  assert.equal(options.excludeCounts.get(needed), 0);
+  const paper = generatePaper(pool, { exclude: [similarity], random: () => .99 });
+  assert.deepEqual(paper.missing, []);
+  assert.ok(paper.tasks.every(item => !item.tagi.includes(similarity)));
+  assert.equal(paper.tasks.filter(item => item.kategorie[0] === plane).length, 2);
+});
+
+test('only tags that can recur in a point-optimal paper can be limited', () => {
+  const exclusive = 'Dwie alternatywne kategorie';
+  const costly = 'Powtórzenie poza doborem punktów';
+  const forced = 'W dwóch wymaganych kategoriach';
+  const pool = papersPool.map(item => {
+    if (['6', '7'].includes(item.id)) return { ...item, tagi: [similarity] };
+    if ([combinatorics, probability].includes(item.kategorie[0])) return { ...item, tagi: [exclusive] };
+    if ([parameter, sequences].includes(item.kategorie[0])) return { ...item, tagi: [forced] };
+    return item;
+  }).concat([
+    task('costly-spatial', 2026, 'próba', spatial, 35, [costly]),
+    task('costly-analytical', 2026, 'próba', analytical, 35, [costly]),
+  ]);
+  const options = generatorAvailability(pool, {}, { tags: [similarity, exclusive, costly, forced] });
+  assert.deepEqual(options.repeatableTags, new Set([similarity, forced]));
+  assert.ok(options.limitCounts.get(similarity) > 0);
+  assert.equal(options.limitCounts.get(forced), 0);
+  assert.equal(options.limitCounts.get(exclusive), 0);
+  assert.equal(options.limitCounts.get(costly), 0);
+});
+
+test('a balanced cap can remove an optional third planar task while keeping mandatory quotas', () => {
+  const pool = papersPool.map(item => ['6', '7'].includes(item.id) ? { ...item, tagi: [similarity] } : item);
+  for (const random of [() => 0, () => .5, () => .99]) {
+    const paper = generatePaper(pool, { limitTags: [similarity], random });
+    assert.deepEqual(paper.missing, []);
+    assert.equal(paper.tasks.filter(item => item.kategorie[0] === plane).length, 2);
+    assert.ok(paper.tasks.filter(item => item.tagi.includes(similarity)).length <= 1);
+    assert.ok(mandatory.every(category => paper.tasks.some(item => item.kategorie[0] === category)));
+  }
+});
+
+test('combined tag constraints can block a full paper even when all required categories have tasks', () => {
+  const first = 'Pierwszy limit';
+  const second = 'Drugi limit';
+  const pool = papersPool.map(item => {
+    if (item.kategorie[0] === parameter) return { ...item, tagi: [first, second] };
+    if (item.kategorie[0] === sequences) return { ...item, tagi: [first] };
+    return item;
+  }).concat(task('different-sequences', 2026, 'próba', sequences, 5, [second]));
+  const filter = { limitTags: [first] };
+  const options = generatorAvailability(pool, filter, { tags: [first, second] });
+  assert.equal(options.blockedByTags, false);
+  assert.equal(options.limitCounts.get(second), 0);
+  const blocked = generatorAvailability(pool, { limitTags: [first, second] }, { tags: [first, second] });
+  assert.deepEqual(blocked.missingRequired, []);
+  assert.equal(blocked.blockedByTags, true);
+  const paper = generatePaper(pool, { limitTags: [first, second] });
+  assert.equal(paper.blockedByTags, true);
+  assert.deepEqual(paper.tasks, []);
 });
 
 test('latest-formula mode uses the newest formula and its years derived from the tasks', () => {
