@@ -1,6 +1,6 @@
-import { kindLabels, loadCatalog } from './catalog.js?v=11';
+import { kindLabels, loadCatalog } from './catalog.js?v=12';
 import { balancedRules, buildProfiles, frequencies, generatePaper, generatorAvailability } from './generator.js?v=8';
-import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=13';
+import { countText, element, fitMath, paperDescription, sourceLink, TagPicker, taskCard } from './ui.js?v=14';
 
 const find = id => document.getElementById(id);
 const viewNames = ['zadania', 'arkusze', 'arkusz', 'zadanie', 'generator'];

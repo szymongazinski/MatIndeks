@@ -93,6 +93,24 @@ test('published geometry categories describe the question and tags describe the 
   database.close();
 });
 
+test('higher-degree polynomial factorization is a cross-category tag', async () => {
+  const tag = 'Rozkład wielomianu stopnia 3 lub wyżej';
+  const [bytes, dictionary, branches] = await Promise.all([
+    readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)),
+    readFile(new URL('../docs/data/slowniki.json', import.meta.url), 'utf8').then(JSON.parse),
+    readFile(new URL('../docs/data/podkategorie.json', import.meta.url), 'utf8').then(JSON.parse),
+  ]);
+  assert.ok(dictionary.tagi.includes(tag));
+  assert.ok(!Object.values(branches).flat().includes(tag));
+  const database = new SQL.Database(bytes);
+  const catalog = new Catalog(database, dictionary);
+  const params = catalog.tasks({ category: 'Równania kwadratowe z parametrem', tags: [tag] }).tasks;
+  assert.ok(params.some(task => task.id === '2018-05-12'));
+  assert.ok(params.some(task => task.id === '2024-06-12'));
+  assert.ok(catalog.tasks({ category: 'Własności wielomianów', tags: [tag] }).total > 0);
+  database.close();
+});
+
 test('June 2026 task 8 uses the source wording and the monotonicity tag asks learners to determine it', async () => {
   const database = new SQL.Database(await readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)));
   const catalog = new Catalog(database, {});
