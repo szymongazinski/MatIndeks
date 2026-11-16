@@ -192,7 +192,7 @@
     "strona_rozwiazania": 15,
     "zrodlo_arkusz": "https://arkusze.pl/maturalne/matematyka-2026-czerwiec-matura-rozszerzona.pdf",
     "zrodlo_rozwiazanie": "https://arkusze.pl/maturalne/matematyka-2026-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
-    "polecenie": "Ciąg \\((x,y,z)\\) jest geometryczny. Zmniejszenie trzeciego wyrazu o \\(4\\) daje ciąg arytmetyczny. Następnie zmniejszamy drugi i trzeci wyraz tego ciągu arytmetycznego o \\(1\\), otrzymując kolejny ciąg geometryczny.\n\nOblicz \\(x,y,z\\) i zapisz obliczenia.",
+    "polecenie": "Trzywyrazowy ciąg \\((x, y, z)\\) jest geometryczny. Jeżeli w tym ciągu pomniejszymy trzeci wyraz o \\(4\\), a pozostałe wyrazy pozostawimy bez zmian, to otrzymamy ciąg arytmetyczny. Jeżeli drugi i trzeci wyraz tak otrzymanego ciągu arytmetycznego pomniejszymy o \\(1\\), to otrzymamy nowy ciąg geometryczny.\n\n**Oblicz \\(\\boldsymbol{x}, \\boldsymbol{y}\\) oraz \\(\\boldsymbol{z}\\). Zapisz obliczenia.**",
     "rozwiazanie": "**Sposób I — różnica i pierwszy wyraz**\nNiech \\(r\\) będzie różnicą \\((x,y,z-4)\\). Mamy \\(y=x+r,\\ z=x+2r+4\\). Z \\((x+r)^2=x(x+2r+4)\\) wynika \\(r^2=4x\\). Z \\((x+r-1)^2=x(x+2r-1)\\) wynika \\(x=(r-1)^2\\). Po eliminacji \\(x\\) otrzymujemy \\(3r^2-8r+4=0\\), czyli \\(r=2\\) lub \\(r=2/3\\).\n\n**Sposób Ia — różnica i środkowy wyraz**\nZapisujemy \\(x=y-r,\\ z=y+r+4\\). Warunek \\(y^2=(y-r)(y+r+4)\\) daje \\(r^2+4r=4y\\). Warunek \\((y-1)^2=(y-r)(y+r-1)\\) daje \\(y=r^2-r+1\\). Po eliminacji \\(y\\) znów mamy \\(3r^2-8r+4=0\\).\n\n**Sposób II — eliminacja bez ilorazu ani różnicy**\nMamy \\(y^2=xz\\), \\(2y=x+z-4\\) i \\((y-1)^2=x(z-5)\\). Odejmując trzecie równanie od pierwszego, otrzymujemy \\(2y-1=5x\\), a z drugiego \\(z=4x+5\\). Podstawiamy do \\(y^2=xz\\):\n\\[\\left(\\frac{5x+1}2\\right)^2=x(4x+5),\\]\nczyli \\(9x^2-10x+1=0\\). Zatem \\(x=1\\) lub \\(x=1/9\\).\n\n**Sposób III — iloraz pierwszego ciągu**\nNiech \\(q\\) będzie ilorazem \\((x,y,z)\\). Wówczas \\(y=xq,\\ z=xq^2\\). Warunek arytmetyczności daje \\(x(q-1)^2=4\\), a geometryczność \\((x,y-1,z-5)\\) daje \\((xq-1)^2=x(xq^2-5)\\), czyli \\(x(2q-5)=1\\). Po eliminacji \\(x\\) mamy \\((q-1)^2=4(2q-5)\\), zatem \\(q=3\\) lub \\(q=7\\).\n\n**Wyniki i sprawdzenie**\nKażdy sposób prowadzi do \\((x,y,z)=(1,3,9)\\) lub \\((1/9,7/9,49/9)\\). Dla pierwszej trójki po zmianach otrzymujemy \\((1,3,5)\\), a następnie \\((1,2,4)\\). Dla drugiej otrzymujemy \\((1/9,7/9,13/9)\\) oraz \\((1/9,-2/9,4/9)\\). W obu przypadkach zachodzą wymagane własności ciągów.",
     "kategorie": [
       "Ciągi"
@@ -952,7 +952,6 @@
     ],
     "tagi": [
       "Równanie kwadratowe",
-      "Monotoniczność ciągu",
       "Tworzenie ciągu z wyrazów innego ciągu o wskazanych indeksach",
       "Szereg geometryczny"
     ],
@@ -1653,7 +1652,6 @@
       "Ciągi"
     ],
     "tagi": [
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
     ],
     "sprawdzone_polecenie": 1,
@@ -2300,7 +2298,6 @@
       "Ciągi"
     ],
     "tagi": [
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego",
       "Tworzenie ciągu z wyrazów innego ciągu o wskazanych indeksach"
     ],
@@ -5725,7 +5722,6 @@
       "Ciągi"
     ],
     "tagi": [
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego"
     ],
     "sprawdzone_polecenie": 1,
@@ -6444,7 +6440,6 @@
     ],
     "tagi": [
       "Równanie kwadratowe",
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego",
       "Tworzenie ciągu z wyrazów innego ciągu o wskazanych indeksach"
     ],
@@ -6830,7 +6825,6 @@
       "Ciągi"
     ],
     "tagi": [
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego",
       "Przekształcanie ciągu przez zmianę wybranych wyrazów"
     ],
@@ -7982,7 +7976,6 @@
       "Ciągi"
     ],
     "tagi": [
-      "Monotoniczność ciągu",
       "Własność trzech kolejnych wyrazów ciągu arytmetycznego / geometrycznego",
       "Przekształcanie ciągu przez zmianę wybranych wyrazów"
     ],

@@ -36,7 +36,7 @@
   },
   {
     "numer": "8",
-    "polecenie": "Ciąg \\((x,y,z)\\) jest geometryczny. Zmniejszenie trzeciego wyrazu o \\(4\\) daje ciąg arytmetyczny. Następnie zmniejszamy drugi i trzeci wyraz tego ciągu arytmetycznego o \\(1\\), otrzymując kolejny ciąg geometryczny.\n\nOblicz \\(x,y,z\\) i zapisz obliczenia.",
+    "polecenie": "Trzywyrazowy ciąg \\((x, y, z)\\) jest geometryczny. Jeżeli w tym ciągu pomniejszymy trzeci wyraz o \\(4\\), a pozostałe wyrazy pozostawimy bez zmian, to otrzymamy ciąg arytmetyczny. Jeżeli drugi i trzeci wyraz tak otrzymanego ciągu arytmetycznego pomniejszymy o \\(1\\), to otrzymamy nowy ciąg geometryczny.\n\n**Oblicz \\(\\boldsymbol{x}, \\boldsymbol{y}\\) oraz \\(\\boldsymbol{z}\\). Zapisz obliczenia.**",
     "strona_zadania": 14
   },
   {

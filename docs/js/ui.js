@@ -1,4 +1,4 @@
-import { kindLabels, suggestTags } from './catalog.js?v=8';
+import { kindLabels, suggestTags } from './catalog.js?v=9';
 
 export function element(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
@@ -60,6 +60,23 @@ function openFigure(url, description) {
   figureViewer.showModal();
 }
 
+function renderMath(tex, displayMode = false) {
+  const formula = element(displayMode ? 'div' : 'span', { class: displayMode ? 'math-display' : 'math-inline' });
+  window.katex.render(tex, formula, { displayMode, throwOnError: false, strict: 'ignore', trust: false });
+  return formula;
+}
+
+function renderBold(text) {
+  const strong = element('strong');
+  let offset = 0;
+  for (const match of text.matchAll(/\\\(([\s\S]*?)\\\)/g)) {
+    strong.append(text.slice(offset, match.index), renderMath(match[1]));
+    offset = match.index + match[0].length;
+  }
+  strong.append(text.slice(offset));
+  return strong;
+}
+
 export function renderText(text, source, page, sourceLabel) {
   const content = element('div', { class: 'math-text' });
   const body = text.trim();
@@ -88,12 +105,9 @@ export function renderText(text, source, page, sourceLabel) {
     } else if (reference) {
       block.append(sourceLink(source, page, sourceLabel) ?? 'Źródło');
     } else if (bold) {
-      block.append(element('strong', {}, bold));
+      block.append(renderBold(bold));
     } else {
-      const formula = element(display != null ? 'div' : 'span', { class: display != null ? 'math-display' : 'math-inline' });
-      const tex = display ?? inline;
-      window.katex.render(tex, formula, { displayMode: display != null, throwOnError: false, strict: 'ignore', trust: false });
-      block.append(formula);
+      block.append(renderMath(display ?? inline, display != null));
     }
   }
   block.append(body.slice(offset));

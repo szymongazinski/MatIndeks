@@ -93,6 +93,19 @@ test('published geometry categories describe the question and tags describe the 
   database.close();
 });
 
+test('June 2026 task 8 uses the source wording and the monotonicity tag asks learners to determine it', async () => {
+  const database = new SQL.Database(await readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)));
+  const catalog = new Catalog(database, {});
+  const task = catalog.task('2026-06-8');
+  assert.equal(task.polecenie, [
+    'Trzywyrazowy ciąg \\((x, y, z)\\) jest geometryczny. Jeżeli w tym ciągu pomniejszymy trzeci wyraz o \\(4\\), a pozostałe wyrazy pozostawimy bez zmian, to otrzymamy ciąg arytmetyczny. Jeżeli drugi i trzeci wyraz tak otrzymanego ciągu arytmetycznego pomniejszymy o \\(1\\), to otrzymamy nowy ciąg geometryczny.',
+    '**Oblicz \\(\\boldsymbol{x}, \\boldsymbol{y}\\) oraz \\(\\boldsymbol{z}\\). Zapisz obliczenia.**',
+  ].join('\n\n'));
+  const results = catalog.tasks({ tags: ['Monotoniczność ciągu'] });
+  assert.deepEqual(results.tasks.map(item => item.id), ['2016-06-10']);
+  database.close();
+});
+
 test('the June 2023 parts are independent catalog tasks and solid geometry appears in all eight 2023–2026 papers', async () => {
   const database = new SQL.Database(await readFile(new URL('../docs/data/zadania.sqlite', import.meta.url)));
   const catalog = new Catalog(database, {});
