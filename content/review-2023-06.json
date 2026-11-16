@@ -6,7 +6,7 @@
   },
   {
     "numer": "2",
-    "polecenie": "Wśród \\(n\\) osób są Ania i jej dwaj znajomi. Wszystkie te \\(n\\) osób ustawiamy w kolejkę jedna za drugą. Liczba wszystkich takich ustawień jest \\(12\\) razy większa od liczby wszystkich takich ustawień tych \\(n\\) osób w kolejce, w których Ania i jej dwaj znajomi zajmują trzy kolejne miejsca (w dowolnej kolejności).\n\n**Oblicz** \\(\\boldsymbol n\\)**. Zapisz obliczenia.**",
+    "polecenie": "Wśród \\(n\\) osób są Ania i jej dwaj znajomi. Wszystkie te \\(n\\) osób ustawiamy w kolejkę jedna za drugą. Liczba wszystkich takich ustawień jest \\(12\\) razy większa od liczby wszystkich takich ustawień tych \\(n\\) osób w kolejkę, w których Ania i jej dwaj znajomi zajmują trzy kolejne miejsca (w dowolnej kolejności).\n\n**Oblicz** \\(\\boldsymbol n\\)**. Zapisz obliczenia.**",
     "strona_zadania": 5
   },
   {

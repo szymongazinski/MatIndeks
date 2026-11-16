@@ -2533,7 +2533,7 @@
     "strona_rozwiazania": 3,
     "zrodlo_arkusz": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona.pdf",
     "zrodlo_rozwiazanie": "https://arkusze.pl/maturalne/matematyka-2023-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
-    "polecenie": "Wśród \\(n\\) osób są Ania i jej dwaj znajomi. Wszystkie te \\(n\\) osób ustawiamy w kolejkę jedna za drugą. Liczba wszystkich takich ustawień jest \\(12\\) razy większa od liczby wszystkich takich ustawień tych \\(n\\) osób w kolejce, w których Ania i jej dwaj znajomi zajmują trzy kolejne miejsca (w dowolnej kolejności).\n\n**Oblicz** \\(\\boldsymbol n\\)**. Zapisz obliczenia.**",
+    "polecenie": "Wśród \\(n\\) osób są Ania i jej dwaj znajomi. Wszystkie te \\(n\\) osób ustawiamy w kolejkę jedna za drugą. Liczba wszystkich takich ustawień jest \\(12\\) razy większa od liczby wszystkich takich ustawień tych \\(n\\) osób w kolejkę, w których Ania i jej dwaj znajomi zajmują trzy kolejne miejsca (w dowolnej kolejności).\n\n**Oblicz** \\(\\boldsymbol n\\)**. Zapisz obliczenia.**",
     "rozwiazanie": "Wszystkich kolejek jest \\(n!\\).\n\n**Liczenie blokiem**\nTrzy sąsiednie osoby traktujemy jak jeden blok. Razem z pozostałymi osobami daje to \\(n-2\\) obiektów, które ustawiamy na \\((n-2)!\\) sposobów. Kolejność wewnątrz bloku można wybrać na \\(3!\\) sposobów.\n\n**Inne liczenie**\nPoczątek bloku wybieramy na \\(n-2\\) sposobów, jego wewnętrzny porządek na \\(3!\\), a kolejność pozostałych osób na \\((n-3)!\\). Iloczyn \\((n-2)3!(n-3)!\\) ponownie daje \\(3!(n-2)!\\).\n\nWarunek to \\(n!=12\\cdot3!(n-2)!\\), czyli \\(n(n-1)=72\\). Ponieważ \\((n-9)(n+8)=0\\) i \\(n\\ge3\\), zostaje \\(n=9\\).",
     "kategorie": [
       "Kombinatoryka"
