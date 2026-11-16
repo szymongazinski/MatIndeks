@@ -67,6 +67,6 @@
   {
     "numer": "13b",
     "strona_rozwiazania": 30,
-    "rozwiazanie": "Pochodna \\(V^\\prime(h)=2(d^2-3h^2)\\) zeruje się w dziedzinie \\((0,d)\\) tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia dla \\(0<h<d/\\sqrt3\\) i ujemna dla \\(d/\\sqrt3<h<d\\). Zatem \\(V\\) osiąga maksimum dla \\(h=d/\\sqrt3\\).\n\n**Punktacja**\nCKE ocenia całe zadanie 13 łącznie w skali 0–6 pkt. W katalogu 3 pkt za część b) odpowiadają kolejnym etapom po wyznaczeniu wzoru i dziedziny, od obliczenia pochodnej do uzasadnienia maksimum."
+    "rozwiazanie": "Z podpunktu a) otrzymujemy wzór (V(h)=2(d^2-h^2)h) dla (hin(0,d)).\n\nPochodna \\(V^\\prime(h)=2(d^2-3h^2)\\) zeruje się w dziedzinie \\((0,d)\\) tylko dla \\(h=d/\\sqrt3\\). Jest dodatnia dla \\(0<h<d/\\sqrt3\\) i ujemna dla \\(d/\\sqrt3<h<d\\). Zatem \\(V\\) osiąga maksimum dla \\(h=d/\\sqrt3\\).\n\n**Punktacja**\nCKE ocenia całe zadanie 13 łącznie w skali 0–6 pkt. W katalogu 3 pkt za część b) odpowiadają kolejnym etapom po wyznaczeniu wzoru i dziedziny, od obliczenia pochodnej do uzasadnienia maksimum."
   }
 ]

@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Dane są liczby \\(a=\\dfrac{\\sqrt[4]{8}}2\\), \\(b=\\dfrac1{2\\sqrt[4]{8}}\\), \\(c=\\sqrt[4]{8}\\), \\(d=\\dfrac2{\\sqrt[4]{8}}\\) oraz \\(k=2^{-1/4}\\). Wskaż prawdziwą równość.\n\nA. \\(k=a\\)\nB. \\(k=b\\)\nC. \\(k=c\\)\nD. \\(k=d\\)",
+    "polecenie": "Dane są liczby: \\(a=\\dfrac{\\sqrt[4]{8}}2\\), \\(b=\\dfrac{1}{2\\sqrt[4]{8}}\\), \\(c=\\sqrt[4]{8}\\), \\(d=\\dfrac{2}{\\sqrt[4]{8}}\\) oraz \\(k=2^{-\\frac14}\\). Prawdziwa jest równość\n\nA. \\(k=a\\)\nB. \\(k=b\\)\nC. \\(k=c\\)\nD. \\(k=d\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Ile rozwiązań ma równanie \\(\\bigl||x|-2\\bigr|=|x|+2\\)?\n\nA. Nie ma rozwiązań.\nB. Ma dokładnie jedno rozwiązanie.\nC. Ma dokładnie dwa rozwiązania.\nD. Ma dokładnie cztery rozwiązania.",
+    "polecenie": "Równanie \\(\\big||x|-2\\big|=|x|+2\\)\n\nA. nie ma rozwiązań.\nB. ma dokładnie jedno rozwiązanie.\nC. ma dokładnie dwa rozwiązania.\nD. ma dokładnie cztery rozwiązania.",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Wskaż wartość wyrażenia \\(2\\log_5 10-\\dfrac1{\\log_{20}5}\\).\n\nA. \\(-1\\)\nB. \\(0\\)\nC. \\(1\\)\nD. \\(2\\)",
+    "polecenie": "Wartość wyrażenia \\(2\\log_5 10-\\dfrac{1}{\\log_{20}5}\\) jest równa\n\nA. \\(-1\\)\nB. \\(0\\)\nC. \\(1\\)\nD. \\(2\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Wskaż wartość granicy lewostronnej\n\\[\\lim_{x\\to3^-}\\frac{-x+2}{x^2-5x+6}.\\]\nA. \\(-\\infty\\)\nB. \\(-1\\)\nC. \\(0\\)\nD. \\(+\\infty\\)",
+    "polecenie": "Granica \\(\\displaystyle\\lim_{x\\to3^-}\\frac{-x+2}{x^2-5x+6}\\) jest równa\n\nA. \\(-\\infty\\)\nB. \\(-1\\)\nC. \\(0\\)\nD. \\(+\\infty\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Punkt \\(A=(-5,3)\\) jest środkiem symetrii wykresu funkcji homograficznej \\(f(x)=\\dfrac{ax+7}{x+d}\\) określonej dla \\(x\\ne-d\\). Oblicz iloraz \\(\\dfrac da\\).\n\nPodaj kolejno cyfrę jedności i dwie pierwsze cyfry po przecinku nieskończonego rozwinięcia dziesiętnego wyniku.",
+    "polecenie": "Punkt \\(A=(-5,3)\\) jest środkiem symetrii wykresu funkcji homograficznej określonej wzorem \\(f(x)=\\dfrac{ax+7}{x+d}\\), gdy \\(x\\ne-d\\). Oblicz iloraz \\(\\dfrac{d}{a}\\).\n\nW poniższe kratki wpisz kolejno cyfrę jedności i pierwsze dwie cyfry po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Styczna do paraboli \\(y=\\sqrt3\\,x^2-1\\) w punkcie \\(P=(x_0,y_0)\\) tworzy z osią \\(Ox\\) kąt \\(30^\\circ\\). Oblicz współrzędne \\(P\\).",
+    "polecenie": "Styczna do paraboli o równaniu \\(y=\\sqrt3x^2-1\\) w punkcie \\(P=(x_0,y_0)\\) jest nachylona do osi \\(Ox\\) pod kątem \\(30^\\circ\\). Oblicz współrzędne punktu \\(P\\).",
     "strona_zadania": 4
   },
   {
     "numer": "7",
-    "polecenie": "Trójkąt \\(ABC\\) jest ostrokątny i \\(|AC|>|BC|\\). Dwusieczna \\(d_C\\) kąta \\(ACB\\) przecina bok \\(AB\\) w punkcie \\(K\\). Odbijamy \\(K\\) względem dwusiecznej \\(d_A\\) kąta \\(BAC\\), otrzymując \\(L\\). Odbicie \\(L\\) względem \\(d_C\\) to \\(M\\), a odbicie \\(M\\) względem dwusiecznej \\(d_B\\) kąta \\(ABC\\) to \\(N\\).\n\n[[rysunek:2018-05-7|Trójkąt ABC. Punkty K i N leżą na AB, L na AC, M na BC. Zaznaczono czworokąt KNML.]]\n\nUdowodnij, że na czworokącie \\(KNML\\) można opisać okrąg.",
+    "polecenie": "Trójkąt \\(ABC\\) jest ostrokątny oraz \\(|AC|>|BC|\\). Dwusieczna \\(d_C\\) kąta \\(ACB\\) przecina bok \\(AB\\) w punkcie \\(K\\). Punkt \\(L\\) jest obrazem punktu \\(K\\) w symetrii osiowej względem dwusiecznej \\(d_A\\) kąta \\(BAC\\), punkt \\(M\\) jest obrazem punktu \\(L\\) w symetrii osiowej względem dwusiecznej \\(d_C\\) kąta \\(ACB\\), a punkt \\(N\\) jest obrazem punktu \\(M\\) w symetrii osiowej względem dwusiecznej \\(d_B\\) kąta \\(ABC\\) (zobacz rysunek).\n\nUdowodnij, że na czworokącie \\(KNML\\) można opisać okrąg.",
     "strona_zadania": 5
   },
   {
     "numer": "8",
-    "polecenie": "Wykaż, że dla wszystkich liczb całkowitych \\(k,m\\) liczba \\(k^3m-km^3\\) jest podzielna przez \\(6\\).",
+    "polecenie": "Udowodnij, że dla każdej liczby całkowitej \\(k\\) i dla każdej liczby całkowitej \\(m\\) liczba \\(k^3m-km^3\\) jest podzielna przez \\(6\\).",
     "strona_zadania": 6
   },
   {
     "numer": "9",
-    "polecenie": "Z elementów zbioru \\(\\{1,2,3,4,5,6,7,9\\}\\) tworzymy ośmiowyrazowy ciąg bez powtórzeń. Oblicz prawdopodobieństwo, że żadne dwie liczby parzyste w tym ciągu nie stoją obok siebie. Podaj wynik w postaci nieskracalnego ułamka zwykłego.",
+    "polecenie": "Z liczb ośmioelementowego zbioru \\(Z=\\{1,2,3,4,5,6,7,9\\}\\) tworzymy ośmiowyrazowy ciąg, którego wyrazy się nie powtarzają. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że żadne dwie liczby parzyste nie są sąsiednimi wyrazami utworzonego ciągu. Wynik przedstaw w postaci ułamka zwykłego nieskracalnego.",
     "strona_zadania": 7
   },
   {
     "numer": "10",
-    "polecenie": "Objętość stożka ściętego o promieniach podstaw \\(r<R\\) i wysokości \\(H\\) wyraża się wzorem\n\\[V=\\frac13\\pi H(r^2+rR+R^2).\\]\n\n[[rysunek:2018-05-10|Stożek ścięty o promieniach podstaw r i R.]]\n\nDla stożka ściętego o wysokości \\(10\\), objętości \\(840\\pi\\) i \\(r=6\\) oblicz cosinus kąta między przekątną przekroju osiowego a jedną z podstaw.",
+    "polecenie": "Objętość stożka ściętego (przedstawionego na rysunku) można obliczyć ze wzoru \\(V=\\dfrac13\\pi H(r^2+rR+R^2)\\), gdzie \\(r\\) i \\(R\\) są promieniami podstaw \\((r<R)\\), a \\(H\\) jest wysokością bryły. Dany jest stożek ścięty, którego wysokość jest równa \\(10\\), objętość \\(840\\pi\\), a \\(r=6\\). Oblicz cosinus kąta nachylenia przekątnej przekroju osiowego tej bryły do jednej z jej podstaw.",
     "strona_zadania": 8
   },
   {
     "numer": "11",
-    "polecenie": "Rozwiąż równanie \\(\\sin(6x)+\\cos(3x)=2\\sin(3x)+1\\) w domkniętym przedziale \\([0,\\pi]\\).",
+    "polecenie": "Rozwiąż równanie \\(\\sin 6x+\\cos 3x=2\\sin 3x+1\\) w przedziale \\(\\langle0,\\pi\\rangle\\).",
     "strona_zadania": 9
   },
   {
     "numer": "12",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[x^2+(m+1)x-m^2+1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające \\(x_1^3+x_2^3>-7x_1x_2\\).",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie \\(x^2+(m+1)x-m^2+1=0\\) ma dwa rozwiązania rzeczywiste \\(x_1\\) i \\(x_2\\) \\((x_1\\ne x_2)\\), spełniające warunek \\(x_1^3+x_2^3>-7x_1x_2\\).",
     "strona_zadania": 10
   },
   {
     "numer": "13",
-    "polecenie": "Wyrazy ciągu geometrycznego \\((a_n)_{n\\ge1}\\) spełniają\n\\[\\begin{cases}a_3+a_6=-84,\\\\ a_4+a_7=168.\\end{cases}\\]\nWyznacz \\(n\\), dla którego suma \\(n\\) początkowych wyrazów wynosi \\(32\\,769\\).",
+    "polecenie": "Wyrazy ciągu geometrycznego \\((a_n)\\), określonego dla \\(n\\ge1\\), spełniają układ równań\n\\[\\begin{cases}a_3+a_6=-84\\\\a_4+a_7=168\\end{cases}\\]\nWyznacz liczbę \\(n\\) początkowych wyrazów tego ciągu, których suma \\(S_n\\) jest równa \\(32769\\).",
     "strona_zadania": 12
   },
   {
     "numer": "14",
-    "polecenie": "Punkt \\(A=(7,-1)\\) jest wierzchołkiem trójkąta równoramiennego \\(ABC\\), w którym \\(|AC|=|BC|\\). Obie współrzędne \\(C\\) są ujemne. Okrąg wpisany w trójkąt ma równanie \\(x^2+y^2=10\\). Oblicz współrzędne \\(B\\) i \\(C\\).",
+    "polecenie": "Punkt \\(A=(7,-1)\\) jest wierzchołkiem trójkąta równoramiennego \\(ABC\\), w którym \\(|AC|=|BC|\\). Obie współrzędne wierzchołka \\(C\\) są liczbami ujemnymi. Okrąg wpisany w trójkąt \\(ABC\\) ma równanie \\(x^2+y^2=10\\). Oblicz współrzędne wierzchołków \\(B\\) i \\(C\\) tego trójkąta.",
     "strona_zadania": 14
   },
   {
     "numer": "15",
-    "polecenie": "Rozważamy trapezy równoramienne, w które można wpisać okrąg. Suma długości ich dłuższej podstawy \\(a\\) oraz wysokości wynosi \\(2\\).\n\na) Wyznacz wszystkie wartości \\(a\\) odpowiadające takim trapezom.\n\nb) Wykaż, że obwód w zależności od \\(a\\) jest równy\n\\[L(a)=\\frac{4a^2-8a+8}{a}.\\]\n\nc) Oblicz tangens kąta ostrego trapezu o najmniejszym obwodzie.",
+    "polecenie": "Rozpatrujemy wszystkie trapezy równoramienne, w które można wpisać okrąg, spełniające warunek: suma długości dłuższej podstawy \\(a\\) i wysokości trapezu jest równa \\(2\\).\n\na) Wyznacz wszystkie wartości \\(a\\), dla których istnieje trapez o podanych własnościach.\n\nb) Wykaż, że obwód \\(L\\) takiego trapezu, jako funkcja długości \\(a\\) dłuższej podstawy trapezu, wyraża się wzorem \\(L(a)=\\dfrac{4a^2-8a+8}{a}\\).\n\nc) Oblicz tangens kąta ostrego tego spośród rozpatrywanych trapezów, którego obwód jest najmniejszy.",
     "strona_zadania": 16
   }
 ]

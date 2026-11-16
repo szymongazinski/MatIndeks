@@ -1,7 +1,7 @@
 [
   {
     "numer": "1",
-    "polecenie": "Równanie \\(\\left||x-4|-2\\right|=2\\) ma dokładnie\n\nA. dwa rozwiązania rzeczywiste.\nB. jedno rozwiązanie rzeczywiste.\nC. cztery rozwiązania rzeczywiste.\nD. trzy rozwiązania rzeczywiste.",
+    "polecenie": "Równanie \\(\\big||x-4|-2\\big|=2\\) ma dokładnie\n\nA. dwa rozwiązania rzeczywiste.\nB. jedno rozwiązanie rzeczywiste.\nC. cztery rozwiązania rzeczywiste.\nD. trzy rozwiązania rzeczywiste.",
     "strona_zadania": 2
   },
   {
@@ -11,17 +11,17 @@
   },
   {
     "numer": "3",
-    "polecenie": "Punkt \\(P'=(3,-3)\\) jest obrazem punktu \\(P=(1,3)\\) w jednokładności o środku w punkcie \\(S=(-2,12)\\). Skala tej jednokładności jest równa\n\nA. \\(\\frac35\\)\nB. \\(\\frac53\\)\nC. \\(2\\)\nD. \\(3\\)",
+    "polecenie": "Punkt \\(P'=(3,-3)\\) jest obrazem punktu \\(P=(1,3)\\) w jednokładności o środku w punkcie \\(S=(-2,12)\\). Skala tej jednokładności jest równa\n\nA. \\(\\dfrac35\\)\nB. \\(\\dfrac53\\)\nC. \\(2\\)\nD. \\(3\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Funkcja \\(f(x)=\\displaystyle\\frac{x}{2x-8}\\) jest określona dla każdej liczby rzeczywistej \\(x\\ne4\\).\n\nWówczas pochodna tej funkcji dla argumentu \\(x=\\sqrt2+4\\) jest równa\n\nA. \\(-\\frac16\\)\nB. \\(\\frac{\\sqrt2+2}{\\sqrt2}\\)\nC. \\(-1\\)\nD. \\(2\\sqrt2\\)",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{x}{2x-8}\\) dla każdej liczby rzeczywistej \\(x\\ne4\\). Wówczas pochodna tej funkcji dla argumentu \\(x=\\sqrt2+4\\) jest równa\n\nA. \\(-\\dfrac16\\)\nB. \\(\\dfrac{\\sqrt2+2}{\\sqrt2}\\)\nC. \\(-1\\)\nD. \\(2\\sqrt2\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Dany jest nieskończony ciąg geometryczny, w którym iloraz jest trzy razy większy od pierwszego wyrazu, a suma wszystkich wyrazów tego ciągu jest równa \\(\\frac14\\). Pierwszy wyraz tego ciągu jest równy\n\nA. \\(\\frac37\\)\nB. \\(\\frac17\\)\nC. \\(\\frac73\\)\nD. \\(7\\)",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny, w którym iloraz jest trzy razy większy od pierwszego wyrazu, a suma wszystkich wyrazów tego ciągu jest równa \\(\\dfrac14\\). Pierwszy wyraz tego ciągu jest równy\n\nA. \\(\\dfrac37\\)\nB. \\(\\dfrac17\\)\nC. \\(\\dfrac73\\)\nD. \\(7\\)",
     "strona_zadania": 2
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "numer": "9",
-    "polecenie": "Z cyfr \\(0,1,2\\) tworzymy pięciocyfrowe liczby całkowite dodatnie podzielne przez \\(15\\). Oblicz, ile możemy utworzyć takich liczb.",
+    "polecenie": "Z cyfr \\(0\\), \\(1\\), \\(2\\) tworzymy pięciocyfrowe liczby całkowite dodatnie podzielne przez \\(15\\). Oblicz, ile możemy utworzyć takich liczb.",
     "strona_zadania": 7
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "numer": "11",
-    "polecenie": "Rozwiąż równanie \\(3\\sin\\left(x-\\frac{\\pi}{4}\\right)+\\cos\\left(x+\\frac{\\pi}{4}\\right)=1\\) w przedziale \\(\\langle 0,2\\pi\\rangle\\).",
+    "polecenie": "Rozwiąż równanie \\(3\\sin\\left(x-\\dfrac\\pi4\\right)+\\cos\\left(x+\\dfrac\\pi4\\right)=1\\) w przedziale \\(\\langle0,2\\pi\\rangle\\).",
     "strona_zadania": 9
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "numer": "14",
-    "polecenie": "Trapez równoramienny \\(ABCD\\) o ramieniu długości \\(6\\) jest wpisany w okrąg, przy czym dłuższa podstawa \\(AB\\) trapezu, o długości \\(12\\), jest średnicą tego okręgu. Przekątne \\(AC\\) i \\(BD\\) trapezu przecinają się w punkcie \\(P\\). Oblicz pole koła wpisanego w trójkąt \\(ABP\\).",
+    "polecenie": "Trapez równoramienny \\(ABCD\\) o ramieniu długości \\(6\\) wpisany jest w okrąg, przy czym dłuższa podstawa \\(AB\\) trapezu, o długości \\(12\\), jest średnicą tego okręgu. Przekątne \\(AC\\) i \\(BD\\) trapezu przecinają się w punkcie \\(P\\). Oblicz pole koła wpisanego w trójkąt \\(ABP\\).",
     "strona_zadania": 14
   },
   {

@@ -1,67 +1,67 @@
 [
   {
     "numer": "1",
-    "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{n\\to+\\infty}\\frac{\\binom{n+2}{n-1}}{\\frac12n^3-4n+7}.\\]",
+    "polecenie": "**Oblicz granicę**\n\\[\\boldsymbol{\\lim_{n\\to+\\infty}\\frac{\\binom{n+2}{n-1}}{\\frac12 n^3-4n+7}}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Ze zbioru \\(\\{1,2,3,4,5,6,7,8\\}\\) losujemy kolejno osiem liczb bez zwracania. Wylosowane liczby ustawiamy w kolejności ich wylosowania.\n\nOblicz prawdopodobieństwo, że iloczyn każdych trzech kolejnych wyrazów otrzymanego ciągu będzie podzielny przez \\(3\\). Podaj wynik w postaci nieskracalnego ułamka zwykłego i zapisz obliczenia.",
+    "polecenie": "Ze zbioru ośmiu liczb \\(\\{1,2,3,4,5,6,7,8\\}\\) losujemy bez zwracania osiem razy po jednej liczbie. Wylosowane liczby ustawiamy w ciąg zgodnie z kolejnością losowania.\n\n**Oblicz prawdopodobieństwo zdarzenia** \\(\\boldsymbol{A}\\) **polegającego na tym, że wylosowane liczby utworzą ciąg, w którym iloczyn każdych trzech kolejnych wyrazów będzie liczbą podzielną przez** \\(\\boldsymbol{3}\\)**. Wynik podaj w postaci nieskracalnego ułamka zwykłego.**\n**Zapisz obliczenia.**",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "Wykaż, że dla dowolnych dodatnich liczb rzeczywistych \\(x,y\\) zachodzi nierówność\n\\[\\frac1x+\\frac1y\\le\\frac{x}{y^2}+\\frac{y}{x^2}.\\]",
+    "polecenie": "**Wykaż, że dla każdej dodatniej liczby rzeczywistej** \\(\\boldsymbol{x}\\) **i dla każdej dodatniej liczby rzeczywistej** \\(\\boldsymbol{y}\\) **prawdziwa jest nierówność**\n\\[\\boldsymbol{\\frac1x+\\frac1y\\le\\frac{x}{y^2}+\\frac{y}{x^2}}\\]",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "W kwadracie \\(ABCD\\) o boku \\(a\\) punkty \\(K,L\\) są środkami odpowiednio boków \\(AB,BC\\). Punkt \\(M\\) leży na \\(BC\\), a odcinki \\(DK\\) i \\(KM\\) są prostopadłe. Odcinek \\(AL\\) przecina \\(DK\\) w \\(P\\) i \\(DM\\) w \\(Q\\).\n\nWykaż, że \\(|PQ|=\\frac{\\sqrt5}{5}a\\).",
+    "polecenie": "Punkty \\(K\\) i \\(L\\) są środkami – odpowiednio – boków \\(AB\\) i \\(BC\\) kwadratu \\(ABCD\\) o boku długości \\(a\\). Punkt \\(M\\) jest takim punktem na boku \\(BC\\), że odcinki \\(DK\\) i \\(KM\\) są prostopadłe.\nOdcinek \\(AL\\) przecina odcinki \\(DK\\) oraz \\(DM\\) w punktach – odpowiednio – \\(P\\) oraz \\(Q\\) (zobacz rysunek).\n\n**Wykaż, że** \\(\\boldsymbol{|PQ|=\\dfrac{\\sqrt5}{5}a}\\)**.**",
     "strona_zadania": 8
   },
   {
     "numer": "5",
-    "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[|2x-6|-|x^2-9|<0.\\]",
+    "polecenie": "**Rozwiąż nierówność**\n\\[\\boldsymbol{|2x-6|-|x^2-9|<0}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "6",
-    "polecenie": "Skończony ciąg arytmetyczny \\((a_n)\\) ma więcej niż sześć wyrazów. Jego pierwszy wyraz to \\(1\\), a ostatni to \\(-2025\\). Drugi, trzeci i szósty wyraz tworzą w tej kolejności ciąg geometryczny.\n\nOblicz sumę wszystkich wyrazów \\((a_n)\\). Zapisz obliczenia.",
+    "polecenie": "Dany jest ciąg arytmetyczny \\((a_n)\\) o skończonej liczbie wyrazów. Liczba wyrazów tego ciągu jest większa od \\(6\\). Pierwszy wyraz tego ciągu jest równy \\(1\\), a ostatni wyraz tego ciągu jest równy \\((-2025)\\). Drugi, trzeci i szósty wyraz tego ciągu tworzą – w podanej kolejności – ciąg geometryczny.\n\n**Oblicz sumę wszystkich wyrazów ciągu** \\(\\boldsymbol{(a_n)}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
     "numer": "7",
-    "polecenie": "Rozwiąż równanie i zapisz obliczenia.\n\\[\\sin(6x)-2\\sin(2x)=0.\\]",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{\\sin(6x)-2\\sin(2x)=0}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 14
   },
   {
     "numer": "8",
-    "polecenie": "Podstawą ostrosłupa prawidłowego trójkątnego \\(ABCS\\) jest trójkąt równoboczny \\(ABC\\). Okrąg opisany na nim ma długość \\(6\\sqrt2\\pi\\). Cosinus kąta między krawędziami \\(SB\\) i \\(SC\\) jest równy \\(\\frac59\\).\n\nOblicz długość krawędzi podstawy oraz cosinus kąta między ścianami \\(SAC\\) i \\(SBC\\). Zapisz obliczenia.",
+    "polecenie": "W ostrosłupie prawidłowym trójkątnym \\(ABCS\\) podstawa \\(ABC\\) jest trójkątem równobocznym. Długość okręgu opisanego na podstawie \\(ABC\\) jest równa \\(6\\sqrt2\\pi\\), a cosinus kąta między krawędziami bocznymi \\(SB\\) i \\(SC\\) jest równy \\(\\dfrac59\\).\n\n**Oblicz długość krawędzi podstawy** \\(\\boldsymbol{ABC}\\) **oraz cosinus kąta między ścianami bocznymi** \\(\\boldsymbol{SAC}\\) **i** \\(\\boldsymbol{SBC}\\) **tego ostrosłupa. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "9",
-    "polecenie": "W układzie współrzędnych dane są wierzchołki \\(A=(1,-1)\\) oraz \\(B=(4,0)\\) trójkąta \\(ABC\\), w którym \\(|CA|=|CB|\\). Jedno z ramion leży na prostej \\(x+2y-4=0\\). Na boku \\(AC\\) leży punkt \\(M\\) spełniający \\(|AM|:|MC|=1:4\\).\n\nWyznacz równanie okręgu o środku w \\(M\\), który przechodzi przez \\(C\\). Zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) punkty \\(A=(1,-1)\\) oraz \\(B=(4,0)\\) są wierzchołkami trójkąta \\(ABC\\), w którym \\(|CA|=|CB|\\). Jedno z ramion trójkąta \\(ABC\\) zawiera się w prostej o równaniu \\(x+2y-4=0\\). Na boku \\(AC\\) tego trójkąta obrano taki punkt \\(M\\), że \\(|AM|:|MC|=1:4\\).\n\n**Wyznacz równanie okręgu, który ma środek w punkcie** \\(\\boldsymbol M\\) **i przechodzi przez punkt** \\(\\boldsymbol C\\)**.**\n**Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "10",
-    "polecenie": "Wyznacz wszystkie wartości rzeczywiste \\(m\\ne0\\), dla których funkcja kwadratowa\n\\[f(x)=m^2x^2-2mx-m+1\\]\nma dwa różne miejsca zerowe \\(x_1,x_2\\) w przedziale \\((-2,2)\\). Zapisz obliczenia.",
+    "polecenie": "**Wyznacz wszystkie rzeczywiste wartości parametru** \\(\\boldsymbol m\\)**, gdzie** \\(\\boldsymbol{m\\ne0}\\)**, dla których funkcja kwadratowa** \\(\\boldsymbol f\\) **określona wzorem**\n\\[\\boldsymbol{f(x)=m^2\\cdot x^2-2mx-m+1}\\]\n**ma dwa różne miejsca zerowe** \\(\\boldsymbol{x_1}\\) **oraz** \\(\\boldsymbol{x_2}\\) **należące do przedziału** \\(\\boldsymbol{(-2,2)}\\)**.**\n**Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "11",
-    "polecenie": "W czworokącie \\(ABCD\\) zachodzi \\(|AB|=9\\), \\(|AD|=10\\) i \\(\\angle BAD=60^\\circ\\). Na czworokącie opisano okrąg i wpisano w niego drugi okrąg.\n\nOblicz długości boków \\(BC,CD\\) i pole czworokąta. Zapisz obliczenia.",
+    "polecenie": "W czworokącie \\(ABCD\\) są dane: \\(|AB|=9\\), \\(|AD|=10\\) oraz \\(|\\measuredangle BAD|=60^\\circ\\).\nW ten czworokąt wpisano okrąg oraz na tym czworokącie opisano okrąg (zobacz rysunek).\n\n**Oblicz długości boków** \\(\\boldsymbol{BC}\\) **i** \\(\\boldsymbol{CD}\\) **oraz pole czworokąta** \\(\\boldsymbol{ABCD}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 24
   },
   {
     "numer": "12.1",
-    "polecenie": "Projektowany kwietnik ma kształt trójkąta równoramiennego o podstawie długości \\(x\\) metrów, nie większej niż \\(10\\) metrów. Okrągła fontanna o średnicy \\(4\\) metrów ma być styczna do każdego boku trójkąta. Przy tej średnicy projektant chce uzyskać najmniejsze możliwe pole kwietnika.\n\nWykaż, że pole w metrach kwadratowych wyraża się wzorem\n\\[P(x)=\\frac{2x^3}{x^2-16}.\\]",
+    "polecenie": "W projekcie ogrodu zaplanowano kwietnik w kształcie trójkąta równoramiennego o podstawie długości \\(x\\) metrów nieprzekraczającej \\(10\\) metrów. Na tym kwietniku ma znajdować się fontanna w kształcie koła o średnicy \\(4\\) metrów, które ma być styczne do każdego z boków trójkątnego kwietnika (zobacz rysunek). Projektantowi zależy, aby przy tak ustalonej wielkości fontanny pole tego kwietnika było najmniejsze.\n\n**Wykaż, że pole** \\(\\boldsymbol P\\) **(wyrażone w metrach kwadratowych) trójkątnego kwietnika o podstawie długości** \\(\\boldsymbol x\\) **metrów jest określone wzorem**\n\\[\\boldsymbol{P(x)=\\frac{2x^3}{x^2-16}}\\]",
     "strona_zadania": 28
   },
   {
     "numer": "12.2",
-    "polecenie": "Kwietnik ma kształt trójkąta równoramiennego o podstawie długości \\(x\\) metrów nieprzekraczającej \\(10\\) metrów. Do wszystkich jego boków jest styczna okrągła fontanna o średnicy \\(4\\) metrów. Pole kwietnika jest dane wzorem\n\\[P(x)=\\frac{2x^3}{x^2-16}\\qquad\\text{dla }x\\in(4,10].\\]\nWyznacz długość podstawy, dla której pole jest najmniejsze. Oblicz to pole i zapisz obliczenia.",
+    "polecenie": "W projekcie ogrodu zaplanowano kwietnik w kształcie trójkąta równoramiennego o podstawie długości \\(x\\) metrów nieprzekraczającej \\(10\\) metrów. Na tym kwietniku ma znajdować się fontanna w kształcie koła o średnicy \\(4\\) metrów, które ma być styczne do każdego z boków trójkątnego kwietnika (zobacz rysunek). Projektantowi zależy, aby przy tak ustalonej wielkości fontanny pole tego kwietnika było najmniejsze.\n\nPole \\(P\\) trójkątnego kwietnika o podstawie długości \\(x\\) metrów jest określone wzorem\n\\[P(x)=\\frac{2x^3}{x^2-16}\\]\ndla każdego \\(x\\in(4,10]\\).\n\n**Wyznacz długość** \\(\\boldsymbol x\\) **podstawy trójkątnego kwietnika, dla której pole tego kwietnika jest najmniejsze. Oblicz to najmniejsze pole. Zapisz obliczenia.**",
     "strona_zadania": 30
   }
 ]

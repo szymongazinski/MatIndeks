@@ -1,72 +1,72 @@
 [
   {
     "numer": "1",
-    "polecenie": "Ładunek w kondensatorze po czasie \\(t\\ge 0\\) sekund wyraża się w milikulombach wzorem\n\\[Q(t)=Q_0\\cdot\\beta^{-t},\\]\ngdzie \\(Q_0\\) oznacza ładunek w chwili \\(t=0\\), a \\(\\beta\\) jest dodatnią stałą. Po \\(4\\) sekundach ładunek wynosił \\(2\\) milikulomby, a po \\(6\\) sekundach wynosił \\(18\\) milikulombów.\n\nOblicz ładunek w milikulombach po \\(5\\) sekundach. Zapisz obliczenia.",
+    "polecenie": "Ładunek elektryczny zgromadzony w kondensatorze można opisać zależnością\n\\[Q(t)=Q_0\\cdot \\beta^{-t}\\qquad\\text{dla}\\qquad t\\ge 0\\]\ngdzie:\n\\(Q_0\\) – ładunek elektryczny zgromadzony w kondensatorze w chwili początkowej \\((t=0)\\) wyrażony w milikulombach\n\\(Q\\) – ładunek elektryczny zgromadzony w kondensatorze w chwili \\(t\\) (licząc od chwili początkowej) wyrażony w milikulombach\n\\(\\beta\\) – stała dodatnia\n\\(t\\) – czas wyrażony w sekundach.\n\nWiadomo, że w chwili \\(t=4\\) s w kondensatorze był zgromadzony ładunek \\(2\\) milikulombów, a w chwili \\(t=6\\) s – ładunek \\(18\\) milikulombów.\n\n**Oblicz, ile milikulombów ładunku było zgromadzone w tym kondensatorze w chwili** \\(\\boldsymbol{t=5}\\) **s. Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Okrąg \\(\\mathcal O\\) jest styczny do boków \\(AC\\) i \\(BC\\) trójkąta \\(ABC\\). Przecina bok \\(AB\\) w punktach \\(M\\) i \\(N\\), dla których \\(0<|AM|<|AN|<|AB|\\).\n\nUdowodnij, że z równości \\(|AM|=|BN|\\) wynika, że trójkąt \\(ABC\\) jest równoramienny.",
+    "polecenie": "Okrąg \\(\\mathcal O\\) jest styczny do boków \\(AC\\) i \\(BC\\) trójkąta \\(ABC\\) oraz przecina bok \\(AB\\) tego trójkąta w punktach \\(M\\) oraz \\(N\\), przy czym \\(0<|AM|<|AN|<|AB|\\).\n\n**Wykaż, że jeśli** \\(\\boldsymbol{|AM|=|BN|}\\)**, to trójkąt** \\(\\boldsymbol{ABC}\\) **jest równoramienny.**",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "Średnica podstawy walca pomnożona przez jego wysokość daje \\(12\\sqrt3\\). Całkowite pole powierzchni walca wynosi \\(12\\pi(\\sqrt3+1)\\).\n\nWyznacz objętość walca. Pokaż obliczenia.",
+    "polecenie": "Iloczyn długości średnicy podstawy walca i wysokości walca jest równy \\(12\\sqrt3\\).\nPole powierzchni całkowitej tego walca jest równe \\(12\\pi(\\sqrt3+1)\\).\n\n**Oblicz objętość tego walca. Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "Uzasadnij następującą równość:\n\\[\\frac{1}{\\log_2 35+1}+\\frac{1}{\\log_7 140-\\log_7 2}+\\frac{1}{\\log_5 7+\\log_5 2+1}=1.\\]",
+    "polecenie": "**Wykaż, że**\n\\[\\boldsymbol{\\frac{1}{\\log_2 35+1}+\\frac{1}{\\log_7 140-\\log_7 2}+\\frac{1}{\\log_5 7+\\log_5 2+1}=1}\\]",
     "strona_zadania": 7
   },
   {
     "numer": "5",
-    "polecenie": "Wyższe wykształcenie ma \\(35\\%\\) członków pewnej społeczności. Niemiecki zna dobrze \\(70\\%\\) osób z wyższym wykształceniem i \\(40\\%\\) osób bez wyższego wykształcenia. Z całej społeczności losujemy jedną osobę.\n\nJakie jest prawdopodobieństwo, że ma ona wyższe wykształcenie pod warunkiem, że dobrze zna niemiecki? Pokaż obliczenia i zaokrąglij wynik dziesiętny do części setnych.",
+    "polecenie": "W pewnej lokalnej społeczności \\(35\\%\\) osób ma wyższe wykształcenie. W tej społeczności językiem niemieckim dobrze włada \\(70\\%\\) osób mających wyższe wykształcenie i \\(40\\%\\) osób bez wyższego wykształcenia.\nSpośród członków tej społeczności wybieramy losowo jedną osobę.\n\n**Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że wybierzemy osobę z wyższym wykształceniem, jeżeli wiadomo, że ta osoba dobrze włada językiem niemieckim. Wynik zapisz w postaci ułamka dziesiętnego w zaokrągleniu do części setnych. Zapisz obliczenia.**",
     "strona_zadania": 8
   },
   {
     "numer": "6",
-    "polecenie": "Znajdź rozwiązania równania i pokaż obliczenia.\n\\[|4x-8|+|x-2|=|2-x|+|x+2|+4.\\]",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{|4x-8|+|x-2|=|2-x|+|x+2|+4}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "7",
-    "polecenie": "W układzie kartezjańskim punkty \\(A=(6,4)\\) i \\(B=(-6,8)\\) są dane. Punkt \\(C\\) leży na okręgu o równaniu \\((x+1)^2+(y-3)^2=50\\) i spełnia warunek \\(|AC|=|BC|\\).\n\nWyznacz wszystkie możliwe współrzędne punktu \\(C\\). Pokaż obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) dane są:\nokrąg o równaniu \\((x+1)^2+(y-3)^2=50\\) i punkty \\(A=(6,4)\\) oraz \\(B=(-6,8)\\).\nPunkt \\(C\\) leży na tym okręgu i \\(|AC|=|BC|\\).\n\n**Oblicz współrzędne punktu** \\(\\boldsymbol C\\)**. Rozważ wszystkie przypadki. Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
     "numer": "8",
-    "polecenie": "Wyznacz granicę i pokaż obliczenia.\n\\[\\lim_{n\\to+\\infty}\\frac{1+3+5+7+\\cdots+(2n+1)}{\\binom n2}.\\]\nW liczniku występuje suma kolejnych dodatnich liczb nieparzystych od \\(1\\) do \\(2n+1\\).",
+    "polecenie": "**Oblicz granicę**\n\\[\\boldsymbol{\\lim_{n\\to+\\infty}}\\frac{1+3+5+7+\\ldots+(2n+1)}{\\binom n2}\\]\n**gdzie** \\(\\boldsymbol{1+3+5+7+\\ldots+(2n+1)}\\) **jest sumą kolejnych liczb naturalnych nieparzystych. Zapisz obliczenia.**",
     "strona_zadania": 14
   },
   {
     "numer": "9",
-    "polecenie": "Dla \\(x\\in[-\\pi,2\\pi]\\) rozwiąż równanie\n\\[\\sin^4x=\\sin x\\cdot\\cos x-\\cos^4x.\\]\nPokaż obliczenia.",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{\\sin^4 x=\\sin x\\cdot\\cos x-\\cos^4 x}\\]\n**w zbiorze** \\(\\boldsymbol{[-\\pi,2\\pi]}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "10",
-    "polecenie": "Malejący ciąg arytmetyczny \\((a_n)\\) jest określony dla liczb naturalnych \\(n\\ge1\\) i spełnia warunek \\(a_3+a_5=10\\). Trzywyrazowy ciąg\n\\[\\left(2a_1+4,\\ a_4-1,\\ -\\frac18a_7\\right)\\]\njest geometryczny.\n\nWyznacz wszystkie trzy wyrazy tego ciągu geometrycznego. Pokaż obliczenia.",
+    "polecenie": "Trzeci i piąty wyraz malejącego ciągu arytmetycznego \\((a_n)\\), określonego dla każdej liczby naturalnej \\(n\\ge 1\\), spełniają warunek \\(a_3+a_5=10\\).\nTrzywyrazowy ciąg \\(\\left(2a_1+4,a_4-1,-\\dfrac18 a_7\\right)\\) jest geometryczny.\n\n**Oblicz wyrazy tego ciągu geometrycznego. Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "11",
-    "polecenie": "Dana jest funkcja kwadratowa \\(f(x)=x^2-3x-m^2+m+3\\) zmiennej rzeczywistej \\(x\\). Wyznacz wszystkie \\(m\\), dla których funkcja ma dwa różne miejsca zerowe \\(x_1,x_2\\), a przy tym\n\\[\\big|x_1^2-x_2^2\\big|\\le12.\\]\nPokaż obliczenia.",
+    "polecenie": "Funkcja kwadratowa \\(f\\) zmiennej rzeczywistej \\(x\\) jest określona wzorem\n\\[f(x)=x^2-3x-m^2+m+3\\]\n\n**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol m\\)**, dla których funkcja** \\(\\boldsymbol f\\) **ma dwa różne miejsca zerowe** \\(\\boldsymbol{x_1}\\)**,** \\(\\boldsymbol{x_2}\\) **spełniające warunek** \\(\\boldsymbol{|x_1^2-x_2^2|\\le 12}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "12",
-    "polecenie": "W trójkącie ostrokątnym \\(ABC\\) kąt \\(BAC\\) ma dwukrotnie większą miarę niż kąt \\(ABC\\). Punkt \\(D\\) jest środkiem boku \\(AB\\). Przez \\(\\alpha\\) oznaczamy miarę kąta \\(ABC\\), a przez \\(\\beta\\) miarę kąta \\(ADC\\).\n\n[[rysunek:2024-12-12|Trójkąt ABC, w którym D jest środkiem odcinka AB]]\n\nWyznacz \\(\\dfrac{\\tan\\beta}{\\sin(2\\alpha)}\\). Pokaż obliczenia.",
+    "polecenie": "W trójkącie ostrokątnym \\(ABC\\) miara kąta \\(BAC\\) jest dwa razy większa od miary kąta \\(ABC\\).\nPunkt \\(D\\) jest środkiem boku \\(AB\\). Niech \\(\\alpha\\) oznacza miarę kąta \\(ABC\\), natomiast \\(\\beta\\) – miarę kąta \\(ADC\\) (zobacz rysunek).\n\n**Oblicz** \\(\\boldsymbol{\\dfrac{\\operatorname{tg}\\beta}{\\sin(2\\alpha)}}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 22
   },
   {
     "numer": "13.1",
-    "polecenie": "Dana jest funkcja \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla \\(x\\in(-\\infty,8)\\). Rozważamy czworokąty \\(OBCD\\), których wierzchołek \\(O\\) to początek układu, a wierzchołki \\(B\\) i \\(D\\) to punkty przecięcia wykresu \\(f\\) odpowiednio z osiami \\(Ox\\) i \\(Oy\\). Wierzchołek \\(C\\) leży na wykresie i ma obie współrzędne dodatnie.\n\n[[rysunek:2024-12-13|Wykres funkcji f i czworokąt OBCD w pierwszej ćwiartce]]\n\nUdowodnij, że pole czworokąta w zależności od pierwszej współrzędnej \\(x\\) punktu \\(C\\) to\n\\[P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}.\\]",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla każdego \\(x\\in(-\\infty,8)\\).\nW kartezjańskim układzie współrzędnych \\((x,y)\\) rozważamy wszystkie czworokąty \\(OBCD\\), w których:\n\n• wierzchołek \\(O\\) ma współrzędne \\((0,0)\\)\n• wierzchołki \\(B\\) oraz \\(D\\) są punktami przecięcia wykresu funkcji \\(f\\) z osią – odpowiednio – \\(Ox\\) i \\(Oy\\)\n• wierzchołek \\(C\\) ma obie współrzędne dodatnie i leży na wykresie funkcji \\(f\\)\n\n(zobacz rysunek).\n\n**Wykaż, że pole** \\(\\boldsymbol P\\) **czworokąta** \\(\\boldsymbol{OBCD}\\) **w zależności od pierwszej współrzędnej** \\(\\boldsymbol x\\) **punktu** \\(\\boldsymbol C\\) **jest określone wzorem**\n\\[\\boldsymbol{P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}}\\]",
     "strona_zadania": 25
   },
   {
     "numer": "13.2",
-    "polecenie": "Dana jest funkcja \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla \\(x\\in(-\\infty,8)\\). W czworokącie \\(OBCD\\) punkt \\(O\\) to początek układu, a \\(B\\) i \\(D\\) są punktami przecięcia wykresu \\(f\\) odpowiednio z osiami \\(Ox\\) i \\(Oy\\). Punkt \\(C=(x,f(x))\\) ma dodatnie współrzędne. Pole czworokąta wyraża się wzorem\n\\[P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}\\qquad\\text{dla }x\\in(0,7).\\]\n\n[[rysunek:2024-12-13|Wykres funkcji f i czworokąt OBCD w pierwszej ćwiartce]]\n\nWyznacz współrzędne \\(C\\) dające największe pole czworokąta. Pokaż obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{12x-84}{x-8}\\) dla każdego \\(x\\in(-\\infty,8)\\).\nW kartezjańskim układzie współrzędnych \\((x,y)\\) rozważamy wszystkie czworokąty \\(OBCD\\), w których:\n\n• wierzchołek \\(O\\) ma współrzędne \\((0,0)\\)\n• wierzchołki \\(B\\) oraz \\(D\\) są punktami przecięcia wykresu funkcji \\(f\\) z osią – odpowiednio – \\(Ox\\) i \\(Oy\\)\n• wierzchołek \\(C\\) ma obie współrzędne dodatnie i leży na wykresie funkcji \\(f\\)\n\n(zobacz rysunek).\n\nPole \\(P\\) czworokąta \\(OBCD\\) w zależności od pierwszej współrzędnej \\(x\\) punktu \\(C\\) jest określone wzorem\n\\[P(x)=\\frac{21}{4}\\cdot\\frac{x^2-56}{x-8}\\]\ndla \\(x\\in(0,7)\\).\n\n**Oblicz współrzędne wierzchołka** \\(\\boldsymbol C\\)**, dla których pole czworokąta** \\(\\boldsymbol{OBCD}\\) **jest największe. Zapisz obliczenia.**",
     "strona_zadania": 27
   }
 ]

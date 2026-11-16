@@ -1,37 +1,37 @@
 [
   {
     "numer": "1",
-    "polecenie": "Dane są liczby rzeczywiste\n\\[a=16^{\\,\\frac12\\log_4 36-2\\log_4 3},\\qquad b=\\log_2 9\\cdot\\log_3 5\\cdot\\log_5 8.\\]\nOblicz \\(\\frac{a}{2b}\\). Zapisz obliczenia, a wynik podaj w postaci \\(3^k\\), gdzie \\(k\\in\\mathbb Z\\).",
+    "polecenie": "Dane są liczby rzeczywiste \\(a\\) oraz \\(b\\):\n\\[a=16^{\\frac{1}{2}\\cdot\\log_4 36-2\\cdot\\log_4 3}\\]\n\\[b=\\log_2 9\\cdot\\log_3 5\\cdot\\log_5 8\\]\n\n**Oblicz wartość ilorazu** \\(\\boldsymbol{\\dfrac{a}{2b}}\\)**. Wynik zapisz w postaci** \\(\\boldsymbol{3^k}\\)**, gdzie** \\(\\boldsymbol{k\\in\\mathbb Z}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Rozważ wszystkie dziewięciocyfrowe kody zaczynające się cyfrą \\(2\\). Cyfra \\(4\\) występuje w każdym z nich dokładnie trzy razy, cyfra \\(8\\) występuje dokładnie dwa razy, a wszystkie pozostałe miejsca zajmują różne cyfry nieparzyste.\n\nIle jest takich kodów? Zapisz obliczenia.",
+    "polecenie": "Rozważamy wszystkie dziewięciocyfrowe kody, które spełniają jednocześnie następujące warunki:\n\n• na pierwszym miejscu kodu znajduje się cyfra \\(2\\)\n• cyfra \\(4\\) występuje w kodzie dokładnie trzy razy\n• cyfra \\(8\\) występuje dokładnie dwa razy\n• pozostałe cyfry kodu są parami różnymi liczbami nieparzystymi.\n\n**Oblicz liczbę wszystkich takich kodów. Zapisz obliczenia.**",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "Dla dowolnej liczby rzeczywistej \\(x\\ne1\\) dana jest funkcja \\(f(x)=\\frac{ax^2+x}{x-1}\\).\n\nWyznacz wszystkie wartości \\(a\\), dla których \\(f'(a)=-\\frac12a\\). Zapisz obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{ax^2+x}{x-1}\\) dla każdej liczby rzeczywistej \\(x\\ne 1\\).\n\n**Wyznacz wszystkie wartości** \\(\\boldsymbol{a}\\)**, dla których pochodna funkcji** \\(\\boldsymbol{f}\\) **w punkcie** \\(\\boldsymbol{x=a}\\) **jest równa** \\(\\boldsymbol{\\left(-\\dfrac{1}{2}a\\right)}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "Udowodnij, że dla dowolnych liczb rzeczywistych \\(x,y\\) zachodzi\n\\[xy+x+y\\le x^2+y^2+1.\\]",
+    "polecenie": "**Wykaż, że dla każdej liczby rzeczywistej** \\(\\boldsymbol{x}\\) **i dla każdej liczby rzeczywistej** \\(\\boldsymbol{y}\\) **prawdziwa jest nierówność**\n\\[\\boldsymbol{xy+x+y\\le x^2+y^2+1}\\]",
     "strona_zadania": 7
   },
   {
     "numer": "5",
-    "polecenie": "Trójkąt równoramienny \\(ABC\\) ma ramiona \\(|AC|=|BC|\\) i wysokość \\(CD\\). Prosta \\(p\\) jest prostopadła do \\(BC\\) i przecina bok \\(BC\\) w \\(L\\), wysokość \\(CD\\) w \\(K\\), a bok \\(AC\\) w punkcie różnym od \\(A\\).\n\nWykaż, że \\(\\angle CAK=\\angle KDL\\).",
+    "polecenie": "Odcinek \\(CD\\) jest wysokością trójkąta równoramiennego \\(ABC\\), w którym \\(|AC|=|BC|\\).\nProsta \\(p\\) jest prostopadła do boku \\(BC\\) i przecina ten bok w punkcie \\(L\\). Ta prosta przecina wysokość \\(CD\\) w punkcie \\(K\\) oraz przecina bok \\(AC\\) w punkcie różnym od \\(A\\).\n\n**Wykaż, że** \\(\\boldsymbol{|\\measuredangle CAK|=|\\measuredangle KDL|}\\)**.**",
     "strona_zadania": 8
   },
   {
     "numer": "6",
-    "polecenie": "W supermarkecie sprzedaje się chleb z piekarń \\(\\mathcal P_1,\\mathcal P_2,\\mathcal P_3\\), które dostarczają bochenki w stosunku \\(2:3:4\\). Chleb razowy stanowi odpowiednio \\(10\\%\\), \\(12\\%\\) i \\(15\\%\\) dostawy z każdej z tych piekarń.\n\nOblicz prawdopodobieństwo pochodzenia losowo wybranego bochenka z \\(\\mathcal P_1\\), jeśli wiadomo, że bochenek jest razowy. Zapisz obliczenia.",
+    "polecenie": "Chleb sprzedawany w pewnym supermarkecie pochodzi z trzech piekarni: \\(\\mathcal P_1\\), \\(\\mathcal P_2\\), \\(\\mathcal P_3\\).\nStosunek liczby bochenków chleba dostarczonego przez piekarnie \\(\\mathcal P_1\\), \\(\\mathcal P_2\\) oraz \\(\\mathcal P_3\\) do tego supermarketu jest – odpowiednio – równy \\(2:3:4\\).\nLiczba bochenków chleba razowego dostarczonego do tego supermarketu z piekarni:\n\n• \\(\\mathcal P_1\\) stanowi \\(10\\%\\) liczby wszystkich bochenków chleba dostarczonego z tej piekarni\n• \\(\\mathcal P_2\\) stanowi \\(12\\%\\) liczby wszystkich bochenków chleba dostarczonego z tej piekarni\n• \\(\\mathcal P_3\\) stanowi \\(15\\%\\) liczby wszystkich bochenków chleba dostarczonego z tej piekarni.\n\n**Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że bochenek chleba losowo wybrany w tym supermarkecie pochodzi z piekarni** \\(\\boldsymbol{\\mathcal P_1}\\)**, jeśli wiadomo, że ten chleb jest razowy. Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "7",
-    "polecenie": "Dany jest ciąg geometryczny \\((a_n)_{n\\ge1}\\). Suma wszystkich jego wyrazów wynosi \\(14\\), a suma ich sześcianów wynosi \\(392\\).\n\nWyznacz wzór na \\(n\\)-ty wyraz tego ciągu i zapisz obliczenia.",
+    "polecenie": "Nieskończony ciąg geometryczny \\((a_n)\\) jest określony dla każdej liczby naturalnej \\(n\\ge 1\\).\nSuma wszystkich wyrazów tego ciągu jest równa \\(14\\). Suma sześcianów wszystkich wyrazów ciągu \\((a_n)\\) jest równa \\(392\\).\n\n**Wyznacz wzór ogólny na** \\(\\boldsymbol{n}\\)**-ty wyraz ciągu** \\(\\boldsymbol{(a_n)}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
@@ -41,32 +41,32 @@
   },
   {
     "numer": "9",
-    "polecenie": "Czworokąt \\(ABCD\\) jest wpisany w okrąg i ma pole \\(18\\). Boki \\(AB\\) i \\(BC\\) są prostopadłe, a ich długości wynoszą odpowiednio \\(4\\) i \\(7\\).\n\nOblicz obwód \\(ABCD\\). Zapisz obliczenia.",
+    "polecenie": "Pole czworokąta \\(ABCD\\) wpisanego w okrąg jest równe \\(18\\). Boki \\(AB\\) i \\(BC\\) są prostopadłe, a ponadto \\(|AB|=4\\) oraz \\(|BC|=7\\).\n\n**Oblicz obwód tego czworokąta. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "10",
-    "polecenie": "Rozwiąż równanie i zapisz obliczenia.\n\\[\\sin x+\\sin(2x)-\\cos x=\\frac12.\\]",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{\\sin x+\\sin(2x)-\\cos x=\\frac{1}{2}}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "11",
-    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie \\(x^2+mx+m=0\\) ma dwa różne rzeczywiste rozwiązania \\(x_1,x_2\\) spełniające\n\\[x_1^4+x_2^4+4x_1^3x_2^3\\ge3.\\]\nZapisz obliczenia.",
+    "polecenie": "**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol{m}\\)**, dla których równanie**\n\\[\\boldsymbol{x^2+mx+m=0}\\]\n**ma dwa różne rozwiązania rzeczywiste** \\(\\boldsymbol{x_1}\\) **oraz** \\(\\boldsymbol{x_2}\\) **spełniające warunek**\n\\[\\boldsymbol{x_1^4+x_2^4+4\\cdot x_1^3\\cdot x_2^3\\ge 3}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "12",
-    "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) o podstawie \\(ABCD\\) ma objętość \\(36\\sqrt3\\). Płaszczyzna \\(\\gamma\\) jest prostopadła do ściany bocznej \\(CDS\\) i tworzy z płaszczyzną podstawy kąt \\(30^\\circ\\). Przechodzi przez środki \\(K\\) i \\(L\\) krawędzi odpowiednio \\(AD\\) i \\(BC\\), oraz przecina \\(CS\\) w \\(M\\) i \\(DS\\) w \\(N\\). Przekrój \\(KLMN\\) jest trapezem równoramiennym.\n\nOblicz pole trapezu \\(KLMN\\). Zapisz obliczenia.",
+    "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) o podstawie \\(ABCD\\) ma objętość równą \\(36\\sqrt{3}\\).\nTen ostrosłup przecięto płaszczyzną \\(\\gamma\\), która:\n\n• jest prostopadła do ściany bocznej \\(CDS\\) ostrosłupa\n• przechodzi przez środek \\(K\\) krawędzi \\(AD\\) oraz środek \\(L\\) krawędzi \\(BC\\)\n• przecina krawędź boczną \\(CS\\) w punkcie \\(M\\) oraz krawędź boczną \\(DS\\) w punkcie \\(N\\)\n• tworzy z płaszczyzną podstawy \\(ABCD\\) kąt o mierze \\(30^\\circ\\).\n\nPrzekrój \\(KLMN\\) wyznaczony przez płaszczyznę \\(\\gamma\\) jest trapezem równoramiennym.\n\n**Oblicz pole trapezu** \\(\\boldsymbol{KLMN}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 24
   },
   {
     "numer": "13.1",
-    "polecenie": "Rozważamy trójkąty prostokątne \\(ABC\\) z wierzchołkiem \\(C=(0,0)\\), wierzchołkiem \\(B\\) na dodatniej półosi \\(Oy\\) i wierzchołkiem \\(A\\) na dodatniej półosi \\(Ox\\). Prosta \\(AB\\) przechodzi przez \\(K=(1,2)\\).\n\nWykaż, że pole trójkąta o współczynniku kierunkowym prostej \\(AB\\) równym \\(a\\) wyraża się wzorem\n\\[P(a)=\\frac{-a^2+4a-4}{2a}.\\]",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) rozważamy wszystkie trójkąty prostokątne \\(ABC\\), w których \\(C=(0,0)\\), wierzchołek \\(B\\) leży na dodatniej półosi \\(Oy\\), wierzchołek \\(A\\) leży na dodatniej półosi \\(Ox\\), natomiast bok \\(AB\\) jest zawarty w prostej przechodzącej przez punkt \\(K=(1,2)\\).\n\n**Wykaż, że pole** \\(\\boldsymbol{P}\\) **trójkąta** \\(\\boldsymbol{ABC}\\) **w zależności od współczynnika kierunkowego** \\(\\boldsymbol{a}\\) **prostej** \\(\\boldsymbol{AB}\\) **jest określone wzorem**\n\\[\\boldsymbol{P(a)=\\frac{-a^2+4a-4}{2a}}\\]",
     "strona_zadania": 28
   },
   {
     "numer": "13.2",
-    "polecenie": "W trójkącie prostokątnym \\(ABC\\) wierzchołek \\(C=(0,0)\\), punkt \\(B\\) leży na dodatniej półosi \\(Oy\\), punkt \\(A\\) na dodatniej półosi \\(Ox\\), a prosta \\(AB\\) przechodzi przez \\(K=(1,2)\\). Pole zależy od współczynnika kierunkowego \\(a\\) prostej \\(AB\\) według wzoru\n\\[P(a)=\\frac{-a^2+4a-4}{2a}\\qquad\\text{dla }a<0.\\]\nWyznacz równanie prostej zawierającej przeciwprostokątną \\(AB\\) w trójkącie o najmniejszym polu. Zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) rozważamy wszystkie trójkąty prostokątne \\(ABC\\), w których \\(C=(0,0)\\), wierzchołek \\(B\\) leży na dodatniej półosi \\(Oy\\), wierzchołek \\(A\\) leży na dodatniej półosi \\(Ox\\), natomiast bok \\(AB\\) jest zawarty w prostej przechodzącej przez punkt \\(K=(1,2)\\).\n\nPole \\(P\\) trójkąta \\(ABC\\) w zależności od współczynnika kierunkowego \\(a\\) prostej \\(AB\\) jest określone wzorem\n\\[P(a)=\\frac{-a^2+4a-4}{2a}\\]\ndla \\(a<0\\).\n\n**Wyznacz równanie prostej zawierającej przeciwprostokątną** \\(\\boldsymbol{AB}\\) **tego z rozważanych trójkątów, który ma najmniejsze pole. Zapisz obliczenia.**",
     "strona_zadania": 30
   }
 ]

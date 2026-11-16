@@ -1,72 +1,72 @@
 [
   {
     "numer": "1",
-    "polecenie": "Reakcja chemiczna zaczyna się w chwili \\(t=0\\). Masa związku \\(A\\), wyrażona w gramach, zmienia się zgodnie ze wzorem\n\\[m(t)=a\\cdot2^{-0{,}05t}+b,\\qquad t\\ge0,\\]\ngdzie \\(t\\) to czas w sekundach, a \\(a,b\\) są współczynnikami liczbowymi. Masa początkowa wynosi \\(m_0\\), a masa w stanie równowagi, gdy \\(t\\to\\infty\\), jest równa \\(m_0/9\\).\n\nOblicz, po ilu sekundach od rozpoczęcia reakcji przereagowało \\(87{,}5\\%\\) masy początkowej. Zapisz obliczenia.",
+    "polecenie": "W chwili początkowej \\((t=0)\\) zainicjowano pewną reakcję chemiczną, w której brał udział związek A.\nW wyniku tej reakcji masa \\(m\\) związku A zmieniała się w czasie zgodnie z zależnością\n\\[m(t)=a\\cdot 2^{-0{,}05\\cdot t}+b\\qquad\\text{dla}\\qquad t\\ge 0\\]\ngdzie:\n\\(m\\) – masa związku A wyrażona w gramach,\n\\(t\\) – czas wyrażony w sekundach (liczony od chwili \\(t=0\\)),\n\\(a,b\\) – współczynniki liczbowe.\n\nMasa początkowa związku A (tj. masa w chwili \\(t=0\\)) była równa \\(m_0\\) gramów.\nPo osiągnięciu stanu równowagi (tj. gdy \\(t\\to\\infty\\)) masa tego związku była równa \\(\\dfrac19\\) jego masy początkowej (zobacz rysunek).\n\n**Oblicz, po ilu sekundach (licząc od chwili zainicjowania tej reakcji) przereagowało** \\(\\boldsymbol{87{,}5\\ \\%}\\) **masy początkowej tego związku. Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{x\\to3^-}\\frac{|x-3|}{x^2-9}.\\]",
+    "polecenie": "**Oblicz granicę**\n\\[\\lim_{x\\to 3^-}\\frac{|x-3|}{x^2-9}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "3",
-    "polecenie": "Dla każdej liczby rzeczywistej \\(x\\ne4\\) niech \\(f(x)=(2x+1)/(x-4)\\). Punkt \\(P=(x_0,5)\\) należy do wykresu \\(f\\).\n\nOblicz \\(x_0\\) oraz wyznacz równanie stycznej do wykresu w \\(P\\). Zapisz obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{2x+1}{x-4}\\) dla każdej liczby rzeczywistej \\(x\\ne 4\\).\nW kartezjańskim układzie współrzędnych \\((x,y)\\) punkt \\(P=(x_0,5)\\) należy do wykresu funkcji \\(f\\).\n\n**Oblicz** \\(\\boldsymbol{x_0}\\) **oraz wyznacz równanie stycznej do wykresu funkcji** \\(\\boldsymbol f\\) **w punkcie** \\(\\boldsymbol P\\)**.**\n**Zapisz obliczenia.**",
     "strona_zadania": 7
   },
   {
     "numer": "4",
-    "polecenie": "Wykonujemy dziesięć rzutów symetryczną monetą. Wiadomo, że orzeł wypadł dokładnie trzy razy. Oblicz prawdopodobieństwo, że wszystkie trzy orły wypadły w kolejnych rzutach. Zapisz obliczenia.",
+    "polecenie": "Doświadczenie losowe polega na dziesięciokrotnym rzucie symetryczną monetą.\n\n**Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że w tym doświadczeniu losowym orzeł wypadł dokładnie trzy razy z rzędu, jeśli wiadomo, że wypadł dokładnie trzy razy. Zapisz obliczenia.**",
     "strona_zadania": 8
   },
   {
     "numer": "5",
-    "polecenie": "Udowodnij, że dla dowolnych \\(a,b>0\\) spełniających \\(a+b=1\\) zachodzi\n\\[\\frac1{2a+b}+\\frac1{a+2b}\\ge \\frac43.\\]",
+    "polecenie": "**Wykaż, że dla każdej liczby dodatniej** \\(\\boldsymbol a\\) **i każdej liczby dodatniej** \\(\\boldsymbol b\\) **takich, że** \\(\\boldsymbol{a+b=1}\\)**, prawdziwa jest nierówność**\n\\[\\boldsymbol{\\frac1{2a+b}+\\frac1{a+2b}\\ge\\frac43}\\]",
     "strona_zadania": 9
   },
   {
     "numer": "6",
-    "polecenie": "W trapez równoramienny o podstawach długości \\(a,b\\), gdzie \\(a>b\\), można wpisać okrąg. Wykaż, że pole trapezu przekracza \\(ab\\).",
+    "polecenie": "Długości podstaw trapezu równoramiennego są równe \\(a\\) oraz \\(b\\), przy czym \\(a>b\\). W ten trapez można wpisać okrąg.\n\n**Wykaż, że pole tego trapezu jest większe od** \\(\\boldsymbol{a\\cdot b}\\)**.**",
     "strona_zadania": 11
   },
   {
     "numer": "7",
-    "polecenie": "Dany jest nieskończony ciąg geometryczny \\((a_n)_{n\\ge1}\\). Suma jego wyrazów o nieparzystych indeksach wynosi\n\\[a_1+a_3+a_5+\\cdots=16.\\]\nPonadto \\(a_1+a_3=\\frac52a_2\\). Wyznacz wzór na \\(n\\)-ty wyraz ciągu i zapisz obliczenia.",
+    "polecenie": "Nieskończony ciąg geometryczny \\((a_n)\\) jest określony dla każdej liczby naturalnej \\(n\\ge 1\\).\nSuma wszystkich wyrazów ciągu \\((a_n)\\) o numerach nieparzystych jest równa \\(16\\), tj.\n\\[a_1+a_3+a_5+\\ldots=16\\]\nPonadto \\(a_1+a_3=\\dfrac52\\cdot a_2\\).\n\n**Wyznacz wzór ogólny na** \\(\\boldsymbol n\\)**–ty wyraz ciągu** \\(\\boldsymbol{(a_n)}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
     "numer": "8",
-    "polecenie": "W okrąg o promieniu \\(4\\) wpisano trójkąt \\(ABC\\). Zachodzi \\(|AB|=6\\), a najdłuższy bok \\(BC\\) ma długość \\(4\\sqrt3\\).\n\nOblicz długość \\(AC\\) i zapisz obliczenia.",
+    "polecenie": "W okrąg o promieniu \\(4\\) wpisano trójkąt \\(ABC\\). Długość boku \\(AB\\) jest równa \\(6\\). Bok \\(BC\\) ma długość \\(4\\sqrt3\\) i jest najdłuższym bokiem tego trójkąta.\n\n**Oblicz długość boku** \\(\\boldsymbol{AC}\\) **trójkąta** \\(\\boldsymbol{ABC}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 14
   },
   {
     "numer": "9",
-    "polecenie": "Rozwiąż równanie i zapisz obliczenia.\n\\[\\sin(6x)+\\sqrt3\\sin(5x)+\\sin(4x)=0.\\]",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{\\sin(6x)+\\sqrt3\\cdot\\sin(5x)+\\sin(4x)=0}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "10",
-    "polecenie": "Podstawa graniastosłupa prawidłowego trójkątnego ma krawędź długości \\(a\\). Sinus kąta między przekątnymi ścian bocznych wychodzącymi z tego samego wierzchołka jest równy \\(\\sqrt{11}/6\\).\n\nWyznacz pole powierzchni całkowitej graniastosłupa. Zapisz obliczenia.",
+    "polecenie": "Długość krawędzi podstawy graniastosłupa prawidłowego trójkątnego jest równa \\(a\\).\nSinus kąta między przekątnymi ścian bocznych wychodzącymi z jednego wierzchołka graniastosłupa jest równy \\(\\dfrac{\\sqrt{11}}6\\).\n\n**Wyznacz pole powierzchni całkowitej tego graniastosłupa. Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "11",
-    "polecenie": "Prosta \\(3x+y+2=0\\) przecina parabolę \\(y=x^2-2x-8\\) w dwóch kolejnych wierzchołkach \\(A,B\\) równoległoboku \\(ABCD\\). Punkt \\(A\\) ma odciętą ujemną. Punkt \\(C\\) leży na prostej \\(y=-x/2+1\\) i ma odciętą dodatnią. Odległość \\(C\\) od prostej \\(AB\\) wynosi \\(9\\sqrt{10}/5\\).\n\nOblicz długość boku \\(BC\\) i zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) prosta o równaniu \\(3x+y+2=0\\) przecina parabolę o równaniu \\(y=x^2-2x-8\\) w punktach \\(A\\) oraz \\(B\\), które są kolejnymi wierzchołkami równoległoboku \\(ABCD\\). Wierzchołek \\(A\\) ma pierwszą współrzędną ujemną.\nWierzchołek \\(C\\) leży na prostej o równaniu \\(y=-\\dfrac12 x+1\\) i ma pierwszą współrzędną dodatnią. Odległość punktu \\(C\\) od prostej zawierającej bok \\(AB\\) równoległoboku jest równa \\(\\dfrac{9\\sqrt{10}}5\\).\n\n**Oblicz długość boku** \\(\\boldsymbol{BC}\\) **tego równoległoboku. Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "12",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(3-m)x^2+(m+1)x-(m+1)^2=0\\]\nma dwa różne rzeczywiste rozwiązania \\(x_1,x_2\\) spełniające \\(x_1^2+x_2^2=x_1x_2+7\\). Zapisz obliczenia.",
+    "polecenie": "**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol m\\)**, dla których równanie**\n\\[\\boldsymbol{(3-m)\\cdot x^2+(m+1)\\cdot x-(m+1)^2=0}\\]\n**ma dwa różne rozwiązania rzeczywiste** \\(\\boldsymbol{x_1}\\)**,** \\(\\boldsymbol{x_2}\\) **spełniające warunek**\n\\[\\boldsymbol{x_1^2+x_2^2=x_1\\cdot x_2+7}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 22
   },
   {
     "numer": "13.1",
-    "polecenie": "W ostrosłupie prawidłowym trójkątnym suma wysokości ostrosłupa i promienia \\(R\\) okręgu opisanego na podstawie wynosi \\(6\\). Wykaż, że objętość takiego ostrosłupa wyraża się wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}(6R^2-R^3).\\]",
+    "polecenie": "Rozważamy wszystkie ostrosłupy prawidłowe trójkątne, w których suma wysokości \\(H\\) ostrosłupa oraz promienia \\(R\\) okręgu opisanego na podstawie tego ostrosłupa jest równa \\(6\\).\n\n**Wykaż, że objętość** \\(\\boldsymbol V\\) **każdego z takich ostrosłupów w zależności od długości** \\(\\boldsymbol R\\) **promienia okręgu opisanego na podstawie ostrosłupa jest określona wzorem**\n\\[\\boldsymbol{V(R)=\\frac{\\sqrt3}{4}\\cdot(6R^2-R^3)}\\]",
     "strona_zadania": 26
   },
   {
     "numer": "13.2",
-    "polecenie": "Rozpatrujemy ostrosłupy prawidłowe trójkątne, w których suma wysokości ostrosłupa i promienia \\(R\\) okręgu opisanego na podstawie wynosi \\(6\\). Objętość jest dana wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}(6R^2-R^3),\\qquad R\\in(0,6).\\]\nOblicz promień \\(R\\) dla ostrosłupa o największej objętości. Zapisz obliczenia i podaj tę objętość.",
+    "polecenie": "Rozważamy wszystkie ostrosłupy prawidłowe trójkątne, w których suma wysokości \\(H\\) ostrosłupa oraz promienia \\(R\\) okręgu opisanego na podstawie tego ostrosłupa jest równa \\(6\\).\n\nObjętość \\(V\\) ostrosłupa w zależności od długości \\(R\\) promienia okręgu opisanego na podstawie ostrosłupa jest określona wzorem\n\\[V(R)=\\frac{\\sqrt3}{4}\\cdot(6R^2-R^3)\\]\ndla \\(R\\in(0,6)\\).\n\n**Wyznacz długość promienia okręgu opisanego na podstawie tego z rozważanych ostrosłupów, którego objętość jest największa. Oblicz tę największą objętość. Zapisz obliczenia.**",
     "strona_zadania": 27
   }
 ]

@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Parametr \\(m\\) dobrano w taki sposób, że równanie\n\\[(4-m^2)x=m^2-3m+2\\]\njest spełnione dla wszystkich liczb rzeczywistych \\(x\\). Wskaż wartość \\(m\\).\n\nA. \\(-2\\)\nB. \\(1\\)\nC. \\(2\\)\nD. \\(4\\)",
+    "polecenie": "Parametr \\(m\\) dobrano tak, że każda liczba rzeczywista jest rozwiązaniem równania\n\\[(4-m^2)\\cdot x=m^2-3m+2\\]\nz niewiadomą \\(x\\). Wynika stąd, że\n\nA. \\(m=-2\\)\n\nB. \\(m=1\\)\n\nC. \\(m=2\\)\n\nD. \\(m=4\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Dane są niewspółliniowe punkty \\(A=(1,1)\\), \\(B=(6,3)\\), \\(C=(4,5)\\). Ile punktów \\(D\\) można dobrać tak, żeby zbiór wierzchołków pewnego równoległoboku był równy \\(\\{A,B,C,D\\}\\)?\n\nA. \\(1\\)\nB. \\(2\\)\nC. \\(3\\)\nD. \\(4\\)",
+    "polecenie": "Dane są trzy niewspółliniowe punkty: \\(A=(1,1)\\), \\(B=(6,3)\\), \\(C=(4,5)\\). Ile jest wszystkich punktów \\(D\\) takich, że czworokąt o wierzchołkach w punktach \\(A\\), \\(B\\), \\(C\\), \\(D\\) jest równoległobokiem?\n\nA. \\(1\\)\n\nB. \\(2\\)\n\nC. \\(3\\)\n\nD. \\(4\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Wielomian \\(15x^5-133x^4+383x^3-499x^2+146x+120\\) ma dokładnie jeden pierwiastek w zbiorze \\(\\left\\{\\dfrac76,\\dfrac65,\\dfrac87,\\dfrac95\\right\\}\\). Wskaż ten pierwiastek.\n\nA. \\(\\dfrac65\\)\nB. \\(\\dfrac76\\)\nC. \\(\\dfrac87\\)\nD. \\(\\dfrac95\\)",
+    "polecenie": "Wiadomo, że wielomian \\(15x^5-133x^4+383x^3-499x^2+146x+120\\) ma w zbiorze \\(\\left\\{\\frac76,\\frac65,\\frac87,\\frac95\\right\\}\\) dokładnie jeden pierwiastek wymierny. Jest nim liczba\n\nA. \\(\\frac65\\)\n\nB. \\(\\frac76\\)\n\nC. \\(\\frac87\\)\n\nD. \\(\\frac95\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Ciąg geometryczny \\((a_n)\\) jest nieskończony. Mamy \\(a_1=\\tfrac35\\) i \\(a_{n+1}=\\tfrac23a_n\\) dla \\(n\\ge1\\). Wskaż sumę wszystkich wyrazów ciągu.\n\nA. \\(\\dfrac53\\)\nB. \\(\\dfrac{10}{9}\\)\nC. \\(\\dfrac9{10}\\)\nD. \\(\\dfrac95\\)",
+    "polecenie": "Nieskończony ciąg geometryczny \\((a_n)\\) jest określony w następujący sposób: \\(a_1=\\frac35\\) oraz \\(a_{n+1}=\\frac23\\cdot a_n\\) dla \\(n\\geq1\\). Suma wszystkich wyrazów tego ciągu jest równa\n\nA. \\(\\frac53\\)\n\nB. \\(\\frac{10}{9}\\)\n\nC. \\(\\frac9{10}\\)\n\nD. \\(\\frac95\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Urna zawiera \\(10\\) białych i \\(6\\) czarnych kul, różniących się tylko kolorem. Losujemy po jednej kuli dwukrotnie bez zwracania. Oblicz prawdopodobieństwo wylosowania dwóch białych kul.\n\nPodaj kolejno trzy pierwsze cyfry po przecinku w skończonym rozwinięciu dziesiętnym wyniku.",
+    "polecenie": "W urnie znajduje się \\(16\\) kul, które mogą się różnić wyłącznie kolorem. Wśród nich jest \\(10\\) kul białych i \\(6\\) kul czarnych. Z tej urny losujemy dwukrotnie jedną kulę bez zwracania. Oblicz prawdopodobieństwo wylosowania dwóch kul białych.\n\nWpisz w poniższe kratki – od lewej do prawej – trzy kolejne cyfry po przecinku skończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Oblicz liczbę siedmiocyfrowych liczb naturalnych, których cyfry mają iloczyn równy \\(28\\).",
+    "polecenie": "Oblicz, ile jest siedmiocyfrowych liczb naturalnych takich, że iloczyn wszystkich ich cyfr w zapisie dziesiętnym jest równy \\(28\\).",
     "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "Dla każdej liczby rzeczywistej \\(x\\) funkcja \\(f\\) ma postać\n\\[f(x)=\\frac{25x^2-9}{x^2+2}.\\]\nOblicz \\(f'(10)\\).",
+    "polecenie": "Dana jest funkcja \\(f\\) określona wzorem \\(f(x)=\\frac{25x^2-9}{x^2+2}\\) dla każdej liczby rzeczywistej \\(x\\). Oblicz wartość \\(f'(10)\\) pochodnej tej funkcji dla argumentu \\(10\\).",
     "strona_zadania": 6
   },
   {
     "numer": "8",
-    "polecenie": "W wypukłym czworokącie \\(ABCD\\) dwusieczne kątów \\(BAD\\) i \\(BCD\\) przecinają się w \\(E\\). Punkty \\(B\\) i \\(E\\) znajdują się po przeciwnych stronach prostej \\(AC\\).\n\n[[rysunek:2019-06-8|Czworokąt ABCD. Dwusieczne kątów przy A i C przecinają się w E po przeciwnej stronie prostej AC niż B.]]\n\nWykaż, że miary kątów spełniają równość\n\\[|\\angle ABC|-|\\angle ADC|+2|\\angle AEC|=360^\\circ.\\]",
+    "polecenie": "Dwusieczne kątów \\(BAD\\) i \\(BCD\\) czworokąta wypukłego \\(ABCD\\) przecinają się w punkcie \\(E\\), przy czym punkty \\(B\\) i \\(E\\) leżą po przeciwnych stronach prostej \\(AC\\) (zobacz rysunek).\n\nWykaż, że \\(|\\measuredangle ABC|-|\\measuredangle ADC|+2\\cdot|\\measuredangle AEC|=360^\\circ\\).",
     "strona_zadania": 7
   },
   {
     "numer": "9",
-    "polecenie": "Wykaż, że \\(16\\) dzieli \\(n^5-3n^4-n+19\\) dla każdej nieparzystej liczby całkowitej \\(n\\).",
+    "polecenie": "Udowodnij, że dla każdej liczby nieparzystej \\(n\\) wyrażenie \\(n^5-3n^4-n+19\\) jest podzielne przez \\(16\\).",
     "strona_zadania": 8
   },
   {
     "numer": "10",
-    "polecenie": "Kąt wewnętrzny \\(n\\)-kąta foremnego ma miarę o \\(2^\\circ\\) mniejszą niż kąt wewnętrzny \\((n+2)\\)-kąta foremnego. Oblicz \\(n\\).",
+    "polecenie": "Miara kąta wewnętrznego \\(n\\)-kąta foremnego jest o \\(2^\\circ\\) mniejsza od miary kąta wewnętrznego \\((n+2)\\)-kąta foremnego. Oblicz \\(n\\).",
     "strona_zadania": 9
   },
   {
     "numer": "11",
-    "polecenie": "Ostrosłup prawidłowy \\(ABCS\\) ma w podstawie trójkąt równoboczny \\(ABC\\) o boku \\(6\\). Na krawędziach \\(BS\\) i \\(CS\\) znajdują się odpowiednio punkty \\(D,E\\), dla których \\(|BD|=|CE|\\) i \\(|DE|=4\\).\n\n[[rysunek:2019-06-11|Ostrosłup o podstawie równobocznej. Punkty D i E leżą na krawędziach BS i CS.]]\n\nPłaszczyzna \\(ADE\\) jest prostopadła do płaszczyzny ściany \\(BCS\\). Oblicz objętość ostrosłupa.",
+    "polecenie": "Podstawą ostrosłupa prawidłowego \\(ABCS\\) jest trójkąt równoboczny \\(ABC\\) o boku długości \\(6\\). Na krawędziach bocznych \\(BS\\) i \\(CS\\) wybrano punkty, odpowiednio \\(D\\) i \\(E\\), takie że \\(|BD|=|CE|\\) oraz \\(|DE|=4\\) (zobacz rysunek). Płaszczyzna \\(ADE\\) jest prostopadła do płaszczyzny ściany bocznej \\(BCS\\) ostrosłupa.\n\nOblicz objętość tego ostrosłupa.",
     "strona_zadania": 10
   },
   {
     "numer": "12",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[4x^2+(2-4m)x+m^2-m-2=0\\]\nma dwa różne dodatnie rozwiązania \\(x_1,x_2\\) spełniające \\(x_1^2+x_2^2\\le\\tfrac{17}{4}\\).",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[4x^2+(2-4m)x+m^2-m-2=0\\]\nma dwa różne dodatnie rozwiązania \\(x_1\\), \\(x_2\\) spełniające nierówność \\(x_1^2+x_2^2\\leq\\frac{17}{4}\\).",
     "strona_zadania": 12
   },
   {
     "numer": "13",
-    "polecenie": "Romb \\(ABCD\\) ma pole \\(90\\), a jego wierzchołek \\(A\\) ma współrzędne \\((-2,6)\\). Przekątna \\(BD\\) leży na prostej \\(l\\) o równaniu \\(2x-y-5=0\\). Wyznacz długość boku rombu.",
+    "polecenie": "Punkt \\(A=(-2,6)\\) jest wierzchołkiem rombu \\(ABCD\\) o polu \\(90\\). Przekątna \\(BD\\) zawiera się w prostej \\(l\\) o równaniu \\(2x-y-5=0\\). Wyznacz długość boku tego rombu.",
     "strona_zadania": 14
   },
   {
     "numer": "14",
-    "polecenie": "Rozwiąż równanie \\(4\\sin(7x)\\cos(2x)=2\\sin(9x)-1\\) w domkniętym przedziale \\([0,\\pi]\\).",
+    "polecenie": "Rozwiąż równanie \\(4\\sin 7x\\cos 2x=2\\sin 9x-1\\) w przedziale \\(\\langle 0,\\pi\\rangle\\).",
     "strona_zadania": 16
   },
   {
     "numer": "15",
-    "polecenie": "Dany jest okrąg o środku \\(S\\) i promieniu \\(18\\). Rozważamy pary okręgów o środkach \\(S_1,S_2\\) i promieniach odpowiednio \\(x,2x\\), przy czym:\n• okręgi o środkach \\(S_1,S_2\\) są styczne zewnętrznie,\n• każdy z nich jest styczny wewnętrznie do okręgu o środku \\(S\\),\n• punkty \\(S,S_1,S_2\\) są niewspółliniowe.\n\nDla trójkąta o bokach \\(a,b,c\\) i połowie obwodu \\(p\\) można skorzystać ze wzoru Herona\n\\[P=\\sqrt{p(p-a)(p-b)(p-c)}.\\]\n\nZapisz pole trójkąta \\(SS_1S_2\\) jako funkcję \\(x\\) i podaj jej dziedzinę. Wyznacz długości boków trójkąta o maksymalnym polu oraz oblicz to pole.",
+    "polecenie": "Dany jest okrąg o środku \\(S\\) i promieniu \\(18\\). Rozpatrujemy pary okręgów: jeden o środku \\(S_1\\) i promieniu \\(x\\) oraz drugi o środku \\(S_2\\) i promieniu \\(2x\\), o których wiadomo, że spełniają jednocześnie następujące warunki:\n\n▪ rozważane dwa okręgi są styczne zewnętrznie;\n\n▪ obydwa rozważane okręgi są styczne wewnętrznie do okręgu o środku \\(S\\) i promieniu \\(18\\);\n\n▪ punkty: \\(S\\), \\(S_1\\), \\(S_2\\) nie leżą na jednej prostej.\n\nPole trójkąta o bokach \\(a\\), \\(b\\), \\(c\\) można obliczyć ze wzoru Herona \\(P=\\sqrt{p(p-a)(p-b)(p-c)}\\), gdzie \\(p\\) – jest połową obwodu trójkąta.\n\nZapisz pole trójkąta \\(SS_1S_2\\) jako funkcję zmiennej \\(x\\). Wyznacz dziedzinę tej funkcji i oblicz długości boków tego z rozważanych trójkątów, którego pole jest największe. Oblicz to największe pole.",
     "strona_zadania": 18
   }
 ]

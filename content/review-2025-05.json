@@ -1,67 +1,67 @@
 [
   {
     "numer": "1",
-    "polecenie": "W warunkach laboratoryjnych liczebność populacji pewnego gatunku bakterii po \\(t\\) godzinach opisuje wzór\n\\[N(t)=N_0k^t,\\qquad t\\ge0.\\]\nStała \\(k>0\\) zależy od gatunku i warunków obserwacji, a \\(N_0\\) jest liczebnością początkową. Na początku było \\(10\\,000\\) bakterii, a po dwóch godzinach \\(15\\,625\\).\n\nO jaki procent wzrastała populacja w każdej godzinie? Zapisz obliczenia.",
+    "polecenie": "W warunkach laboratoryjnych obserwowano dynamikę wzrostu liczebności populacji pewnego gatunku bakterii. Liczebność \\(N\\) populacji bakterii zmienia się w czasie zgodnie z zależnością wykładniczą\n\\[N(t)=N_0\\cdot k^t\\qquad\\text{dla}\\qquad t\\ge 0\\]\ngdzie:\n\\(N_0\\) – liczebność populacji w chwili \\(t=0\\) rozpoczęcia obserwacji,\n\\(k\\) – stała dodatnia, charakterystyczna dla danego gatunku bakterii i dla warunków przeprowadzenia obserwacji,\n\\(t\\) – czas wyrażony w godzinach, liczony od chwili \\(t=0\\) rozpoczęcia obserwacji.\n\nW chwili rozpoczęcia obserwacji liczebność populacji była równa \\(10\\,000\\), a po dwóch godzinach była równa \\(15\\,625\\).\n\n**Oblicz, o ile procent wzrastała liczebność populacji tej bakterii w ciągu każdej godziny.**\n**Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Wykaż, że dla dodatnich liczb rzeczywistych \\(a,b\\), gdy \\(b\\ne a/2\\), zachodzi\n\\[(a+2b)^3>8a^2b+16ab^2.\\]",
+    "polecenie": "**Wykaż, że dla każdej dodatniej liczby rzeczywistej** \\(\\boldsymbol a\\) **i dla każdej dodatniej liczby rzeczywistej** \\(\\boldsymbol b\\) **takich, że** \\(\\boldsymbol{b\\ne\\dfrac12 a}\\)**, prawdziwa jest nierówność**\n\\[\\boldsymbol{(a+2b)^3>8a^2b+16ab^2}\\]",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "Punkt \\(D\\) leży na boku \\(BC\\) trójkąta równobocznego \\(ABC\\). Pole \\(ABD\\) stanowi \\(\\frac{\\sqrt3-1}{2}\\) pola \\(ADC\\). Oblicz miarę kąta \\(DAC\\) i zapisz obliczenia.",
+    "polecenie": "W trójkącie równobocznym \\(ABC\\) punkt \\(D\\) leży na boku \\(BC\\). Stosunek pola trójkąta \\(ABD\\) do pola trójkąta \\(ADC\\) jest równy \\(\\dfrac{\\sqrt3-1}{2}\\).\n\n**Oblicz miarę kąta** \\(\\boldsymbol{DAC}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "Rzucamy cztery razy symetryczną sześcienną kostką o ściankach z \\(1,2,\\ldots,6\\) oczkami. Oblicz prawdopodobieństwo, że wypadnie przynajmniej jedna szóstka, jeśli wiadomo, że dokładnie dwa razy wypadła piątka. Zapisz obliczenia.",
+    "polecenie": "Doświadczenie losowe polega na czterokrotnym rzucie symetryczną sześcienną kostką do gry, która na każdej ściance ma inną liczbę oczek – od jednego oczka do sześciu oczek.\n\n**Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że otrzymamy co najmniej jeden raz sześć oczek, pod warunkiem że otrzymamy dokładnie dwa razy pięć oczek. Zapisz obliczenia.**",
     "strona_zadania": 8
   },
   {
     "numer": "5",
-    "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[|x-2|-2|x+3|<-2.\\]",
+    "polecenie": "**Rozwiąż nierówność**\n\\[\\boldsymbol{|x-2|-2\\cdot|x+3|<-2}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "6",
-    "polecenie": "Ciąg \\((a_n)_{n\\ge1}\\) jest geometryczny i zbieżny. Zachodzą równości \\(a_1+a_3=20\\) oraz \\(a_1^2+a_3^2=328\\). Oblicz sumę wszystkich wyrazów ciągu. Rozważ wszystkie przypadki i zapisz obliczenia.",
+    "polecenie": "Ciąg \\((a_n)\\), określony dla każdej liczby naturalnej \\(n\\ge 1\\), jest geometryczny i zbieżny.\nW tym ciągu \\(a_1+a_3=20\\) i \\(a_1^2+a_3^2=328\\).\n\n**Oblicz sumę wszystkich wyrazów tego ciągu. Rozważ wszystkie przypadki.**\n**Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
     "numer": "7",
-    "polecenie": "W trapezie \\(ABCD\\) o podstawach \\(AB,CD\\) punkty \\(E,F\\) są środkami odpowiednio ramion \\(AD,BC\\). Pole trapezu \\(EFCD\\) stanowi połowę pola trapezu \\(ABFE\\). Wykaż, że \\(|CD|/|AB|=1/5\\).",
+    "polecenie": "W trapezie \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\) punkt \\(E\\) jest środkiem ramienia \\(AD\\), a punkt \\(F\\) jest środkiem ramienia \\(BC\\) trapezu. Stosunek pola trapezu \\(EFCD\\) do pola trapezu \\(ABFE\\) jest równy \\(\\dfrac12\\).\n\n**Wykaż, że** \\(\\boldsymbol{\\dfrac{|CD|}{|AB|}=\\dfrac15}\\)**.**",
     "strona_zadania": 14
   },
   {
     "numer": "8",
-    "polecenie": "W układzie współrzędnych dane są okręgi\n\\[\\begin{aligned}\n\\mathcal O_1&\\colon (x-1)^2+(y+3)^2=5,\\\\\n\\mathcal O_2&\\colon (x-2)^2+(y-4)^2=45.\n\\end{aligned}\\]\nPrzecinają się w punktach \\(A,B\\). Pierwsza współrzędna \\(A\\) jest dodatnia. Punkt \\(M\\) spełnia \\(\\overrightarrow{AM}=-2\\overrightarrow{BM}\\).\n\nOblicz współrzędne \\(A,B,M\\) i zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) dane są okręgi \\(\\mathcal O_1\\) oraz \\(\\mathcal O_2\\) o równaniach:\n\n• \\(\\mathcal O_1:\\quad (x-1)^2+(y+3)^2=5\\)\n• \\(\\mathcal O_2:\\quad (x-2)^2+(y-4)^2=45\\).\n\nTe okręgi przecinają się w punktach \\(A\\) oraz \\(B\\). Punkt \\(A\\) ma pierwszą współrzędną dodatnią. Punkt \\(M\\) spełnia warunek \\(\\overrightarrow{AM}=-2\\cdot\\overrightarrow{BM}\\).\n\n**Oblicz współrzędne punktów** \\(\\boldsymbol A\\)**,** \\(\\boldsymbol B\\) **oraz** \\(\\boldsymbol M\\)**. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "9",
-    "polecenie": "Rozwiąż w przedziale \\([-\\pi,\\pi]\\) równanie\n\\[3\\cos^2 x+\\sqrt3\\sin(2x)-3\\sin^2 x=0.\\]\nZapisz obliczenia.",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{3\\cos^2 x+\\sqrt3\\sin(2x)-3\\sin^2 x=0}\\]\n**w przedziale** \\(\\boldsymbol{[-\\pi,\\pi]}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "10",
-    "polecenie": "Ostrosłup \\(ABCDS\\) ma podstawę \\(ABCD\\) w kształcie kwadratu o boku \\(3\\sqrt{34}\\). Krawędź \\(SA\\) jest wysokością ostrosłupa. Kąt \\(\\beta\\) między ścianami \\(CDS\\) i \\(BCS\\) ma cosinus równy \\(-9/25\\).\n\nOblicz pole powierzchni bocznej ostrosłupa i zapisz obliczenia.",
+    "polecenie": "Podstawą ostrosłupa \\(ABCDS\\) jest kwadrat \\(ABCD\\). Krawędź boczna \\(SA\\) jest wysokością ostrosłupa, natomiast krawędź podstawy ma długość \\(3\\sqrt{34}\\). Cosinus kąta \\(\\beta\\) między ścianami bocznymi \\(CDS\\) i \\(BCS\\) tego ostrosłupa jest równy \\(\\left(-\\dfrac9{25}\\right)\\).\n\n**Oblicz pole powierzchni bocznej tego ostrosłupa. Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "11",
-    "polecenie": "Dla \\(m\\in\\mathbb R\\setminus\\{2\\}\\) funkcja jest dana wzorem\n\\[f(x)=(2-m)x^2-2(2m+1)x+m+8,\\qquad x\\in\\mathbb R.\\]\nWyznacz wszystkie \\(m\\), dla których \\(f\\) ma dokładnie dwa miejsca zerowe \\(x_1,x_2\\) tego samego znaku, spełniające \\((x_1-x_2)^2\\le180\\). Zapisz obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem\n\\[f(x)=(2-m)x^2-2(2m+1)x+m+8\\]\ndla każdej liczby rzeczywistej \\(x\\), gdzie \\(m\\) jest liczbą rzeczywistą różną od \\(2\\).\n\n**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol m\\)**, dla których funkcja** \\(\\boldsymbol f\\) **ma dokładnie dwa miejsca zerowe** \\(\\boldsymbol{x_1}\\) **oraz** \\(\\boldsymbol{x_2}\\) **tego samego znaku, które spełniają warunek**\n\\[\\boldsymbol{(x_1-x_2)^2\\le 180}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 22
   },
   {
     "numer": "12.1",
-    "polecenie": "Rozpatrujemy stożki, których wysokość jest większa od \\(5\\), a odległość środka podstawy od tworzącej wynosi \\(5\\). Wykaż, że objętość stożka o wysokości \\(h\\) jest równa\n\\[V(h)=\\frac{\\pi}{3}\\cdot\\frac{25h^3}{h^2-25}.\\]",
+    "polecenie": "Rozważamy wszystkie stożki, których wysokość jest większa od \\(5\\), a odległość środka podstawy od tworzącej jest równa \\(5\\).\n\n**Wykaż, że objętość** \\(\\boldsymbol V\\) **stożka, jako funkcja wysokości** \\(\\boldsymbol h\\) **stożka, wyraża się wzorem**\n\\[\\boldsymbol{V(h)=\\frac{\\pi}{3}\\cdot\\frac{25h^3}{h^2-25}}\\]",
     "strona_zadania": 25
   },
   {
     "numer": "12.2",
-    "polecenie": "Rozpatrujemy stożki o wysokości \\(h>5\\), dla których środek podstawy jest oddalony od tworzącej o \\(5\\). Ich objętość wyraża się wzorem\n\\[V(h)=\\frac{\\pi}{3}\\cdot\\frac{25h^3}{h^2-25}.\\]\nWyznacz wysokość stożka o najmniejszej objętości. Oblicz tę objętość i zapisz obliczenia.",
+    "polecenie": "Rozważamy wszystkie stożki, których wysokość jest większa od \\(5\\), a odległość środka podstawy od tworzącej jest równa \\(5\\).\n\nObjętość \\(V\\) stożka, jako funkcja wysokości \\(h\\) stożka, wyraża się wzorem\n\\[V(h)=\\frac{\\pi}{3}\\cdot\\frac{25h^3}{h^2-25}\\]\ndla \\(h\\in(5,+\\infty)\\).\n\n**Wyznacz wysokość tego z rozważanych stożków, którego objętość jest najmniejsza.**\n**Oblicz tę najmniejszą objętość. Zapisz obliczenia.**",
     "strona_zadania": 26
   }
 ]

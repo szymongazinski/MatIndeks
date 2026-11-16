@@ -1,72 +1,72 @@
 [
   {
     "numer": "1",
-    "polecenie": "Początkowo masa substancji wynosi \\(4\\) gramy. Z powodu rozpadu cząsteczek po każdej dobie ubywa \\(19\\%\\) masy z końca poprzedniej doby. Niech \\(m(t)\\) oznacza masę w gramach po \\(t\\) pełnych dobach, dla całkowitych \\(t\\ge0\\).\n\nPodaj wzór na \\(m(t)\\). Oblicz, po ilu pełnych dobach masa po raz pierwszy spadnie poniżej \\(1{,}5\\) grama. Zapisz obliczenia.",
+    "polecenie": "W chwili początkowej \\((t=0)\\) masa substancji jest równa \\(4\\) gramom. Wskutek rozpadu cząsteczek tej substancji jej masa się zmniejsza. Po każdej kolejnej dobie ubywa \\(19\\%\\) masy, jaka była na koniec doby poprzedniej. Dla każdej liczby całkowitej \\(t\\ge 0\\) funkcja \\(m(t)\\) określa masę substancji w gramach po \\(t\\) pełnych dobach (czas liczymy od chwili początkowej).\n\n**Wyznacz wzór funkcji** \\(\\boldsymbol{m(t)}\\)**. Oblicz, po ilu pełnych dobach masa tej substancji będzie po raz pierwszy mniejsza od** \\(\\boldsymbol{1{,}5}\\) **grama.**\n**Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Tomek i Romek rozgrywają pięć partii szachów. Tomek wygrywa pojedynczą partię z prawdopodobieństwem \\(1/4\\).\n\nOblicz prawdopodobieństwo, że Tomek wygra co najmniej cztery z pięciu partii. Podaj wynik jako nieskracalny ułamek zwykły. Zapisz obliczenia.",
+    "polecenie": "Tomek i Romek postanowili rozegrać między sobą pięć partii szachów. Prawdopodobieństwo wygrania pojedynczej partii przez Tomka jest równe \\(\\dfrac14\\).\n\n**Oblicz prawdopodobieństwo wygrania przez Tomka co najmniej czterech z pięciu partii. Wynik podaj w postaci ułamka zwykłego nieskracalnego. Zapisz obliczenia.**",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "Dla każdej liczby rzeczywistej \\(x\\) niech\n\\[f(x)=\\frac{3x^2-2x}{x^2+2x+8}.\\]\nPunkt \\(P=(x_0,3)\\) leży na wykresie \\(f\\). Oblicz \\(x_0\\) i wyznacz równanie stycznej w \\(P\\). Zapisz obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{3x^2-2x}{x^2+2x+8}\\) dla każdej liczby rzeczywistej \\(x\\).\nPunkt \\(P=(x_0,3)\\) należy do wykresu funkcji \\(f\\).\n\n**Oblicz** \\(\\boldsymbol{x_0}\\) **oraz wyznacz równanie stycznej do wykresu funkcji** \\(\\boldsymbol f\\) **w punkcie** \\(\\boldsymbol P\\)**.**\n**Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "Liczby rzeczywiste \\(x,y\\) spełniają \\(x+y=4\\) oraz \\(x^3-x^2y\\le xy^2-y^3\\). Wykaż, że \\(x=y=2\\).",
+    "polecenie": "Liczby rzeczywiste \\(x\\) oraz \\(y\\) spełniają jednocześnie równanie \\(x+y=4\\) i nierówność \\(x^3-x^2y\\le xy^2-y^3\\).\n\n**Wykaż, że** \\(\\boldsymbol{x=2}\\) **oraz** \\(\\boldsymbol{y=2}\\)**.**",
     "strona_zadania": 7
   },
   {
     "numer": "5",
-    "polecenie": "W trójkącie prostokątnym \\(ABC\\) zachodzi \\(\\angle ABC=90^\\circ\\) i \\(\\angle CAB=60^\\circ\\). Punkty \\(K,L\\) leżą odpowiednio na \\(AB,BC\\) i \\(|BK|=|BL|=1\\). Odcinek \\(KL\\) przecina wysokość \\(BD\\) w punkcie \\(N\\). Ponadto \\(|AD|=2\\).\n\nWykaż, że \\(|ND|=\\sqrt3+1\\).",
+    "polecenie": "Dany jest trójkąt prostokątny \\(ABC\\), w którym \\(|\\measuredangle ABC|=90^\\circ\\) oraz \\(|\\measuredangle CAB|=60^\\circ\\). Punkty \\(K\\) i \\(L\\) leżą na bokach – odpowiednio – \\(AB\\) i \\(BC\\) tak, że \\(|BK|=|BL|=1\\) (zobacz rysunek). Odcinek \\(KL\\) przecina wysokość \\(BD\\) tego trójkąta w punkcie \\(N\\), a ponadto \\(|AD|=2\\).\n\n**Wykaż, że** \\(\\boldsymbol{|ND|=\\sqrt3+1}\\)**.**",
     "strona_zadania": 8
   },
   {
     "numer": "6",
-    "polecenie": "Rozwiąż równanie i zapisz obliczenia.\n\\[4\\sin(4x)\\cos(6x)=2\\sin(10x)+1.\\]",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{4\\sin(4x)\\cos(6x)=2\\sin(10x)+1}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "7",
-    "polecenie": "Sześcian \\(ABCDEFGH\\) ma krawędź długości \\(6\\). Punkt \\(S\\) jest przecięciem przekątnych \\(AH\\) oraz \\(DE\\) ściany \\(ADHE\\).\n\nOblicz długość wysokości trójkąta \\(SBH\\) poprowadzonej z \\(S\\) na \\(BH\\). Zapisz obliczenia.",
+    "polecenie": "Dany jest sześcian \\(ABCDEFGH\\) o krawędzi długości \\(6\\). Punkt \\(S\\) jest punktem przecięcia przekątnych \\(AH\\) i \\(DE\\) ściany bocznej \\(ADHE\\) (zobacz rysunek).\n\n**Oblicz wysokość trójkąta** \\(\\boldsymbol{SBH}\\) **poprowadzoną z punktu** \\(\\boldsymbol S\\) **na bok** \\(\\boldsymbol{BH}\\) **tego trójkąta.**\n**Zapisz obliczenia.**",
     "strona_zadania": 11
   },
   {
     "numer": "8",
-    "polecenie": "Czworokąt \\(ABCD\\) o bokach \\(|BC|=4,\\ |CD|=5\\) jest opisany na okręgu. Przekątna \\(AC\\) tworzy z \\(BC\\) kąt \\(60^\\circ\\), a z \\(AB\\) kąt ostry o sinusie \\(1/4\\).\n\nOblicz obwód czworokąta i zapisz obliczenia.",
+    "polecenie": "Czworokąt \\(ABCD\\), w którym \\(|BC|=4\\) i \\(|CD|=5\\), jest opisany na okręgu. Przekątna \\(AC\\) tego czworokąta tworzy z bokiem \\(BC\\) kąt o mierze \\(60^\\circ\\), natomiast z bokiem \\(AB\\) – kąt ostry, którego sinus jest równy \\(\\dfrac14\\).\n\n**Oblicz obwód czworokąta** \\(\\boldsymbol{ABCD}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 12
   },
   {
     "numer": "9",
-    "polecenie": "Rozwiąż nierówność i zapisz obliczenia.\n\\[\\sqrt{x^2+4x+4}<\\frac{25}{3}-\\sqrt{x^2-6x+9}.\\]\nWskazówka. Dla każdej liczby rzeczywistej \\(a\\) mamy \\(\\sqrt{a^2}=|a|\\).",
+    "polecenie": "**Rozwiąż nierówność**\n\\[\\boldsymbol{\\sqrt{x^2+4x+4}<\\frac{25}{3}-\\sqrt{x^2-6x+9}}\\]\n**Zapisz obliczenia.**\n\nWskazówka: skorzystaj z tego, że \\(\\sqrt{a^2}=|a|\\) dla każdej liczby rzeczywistej \\(a\\).",
     "strona_zadania": 14
   },
   {
     "numer": "10",
-    "polecenie": "Zaczynamy od kwadratu \\(K_1\\) o boku długości \\(a\\). Dla każdego całkowitego \\(n\\ge2\\) kwadrat \\(K_n\\) tworzymy tak, że każdy jego wierzchołek leży na innym boku kwadratu \\(K_{n-1}\\) i dzieli ten bok w stosunku \\(1:3\\).\n\nObwody \\(K_1,K_2,K_3,\\ldots\\) tworzą nieskończony ciąg geometryczny. Oblicz sumę wszystkich jego wyrazów. Zapisz obliczenia.",
+    "polecenie": "Określamy kwadraty \\(K_1\\), \\(K_2\\), \\(K_3\\), … następująco:\n\n• \\(K_1\\) jest kwadratem o boku długości \\(a\\)\n• \\(K_2\\) jest kwadratem, którego każdy wierzchołek leży na innym boku kwadratu \\(K_1\\) i dzieli ten bok w stosunku \\(1:3\\)\n• \\(K_3\\) jest kwadratem, którego każdy wierzchołek leży na innym boku kwadratu \\(K_2\\) i dzieli ten bok w stosunku \\(1:3\\)\ni ogólnie, dla każdej liczby naturalnej \\(n\\ge 2\\),\n• \\(K_n\\) jest kwadratem, którego każdy wierzchołek leży na innym boku kwadratu \\(K_{n-1}\\) i dzieli ten bok w stosunku \\(1:3\\).\nObwody wszystkich kwadratów określonych powyżej tworzą nieskończony ciąg geometryczny.\nNa rysunku przedstawiono kwadraty utworzone w sposób opisany powyżej.\n\n**Oblicz sumę wszystkich wyrazów tego nieskończonego ciągu. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "11",
-    "polecenie": "Wyznacz wszystkie wartości \\(m\\ne2\\), dla których równanie\n\\[x^2+4x-\\frac{m-3}{m-2}=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające \\(x_1^3+x_2^3>-28\\). Zapisz obliczenia.",
+    "polecenie": "**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol{m\\ne2}\\)**, dla których równanie**\n\\[\\boldsymbol{x^2+4x-\\frac{m-3}{m-2}=0}\\]\n**ma dwa różne rozwiązania rzeczywiste** \\(\\boldsymbol{x_1}\\)**,** \\(\\boldsymbol{x_2}\\) **spełniające warunek** \\(\\boldsymbol{x_1^3+x_2^3>-28}\\)**.**\n**Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "12.1",
-    "polecenie": "Dla dowolnej liczby dodatniej \\(x\\) dana jest funkcja\n\\[f(x)=81^{\\log_3 x}+\\frac{2\\log_2\\sqrt{27}\\,\\log_3 2}{3}x^2-6x.\\]\nWykaż, że ten wzór można równoważnie zapisać jako \\(f(x)=x^4+x^2-6x\\).",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=81^{\\log_3 x}+\\dfrac{2\\cdot\\log_2\\sqrt{27}\\cdot\\log_3 2}{3}\\cdot x^2-6x\\) dla każdej liczby dodatniej \\(x\\).\n\n**Wykaż, że dla każdej liczby dodatniej** \\(\\boldsymbol x\\) **wyrażenie**\n\\[\\boldsymbol{81^{\\log_3 x}+\\frac{2\\cdot\\log_2\\sqrt{27}\\cdot\\log_3 2}{3}\\cdot x^2-6x}\\]\n**można równoważnie przekształcić do postaci** \\(\\boldsymbol{x^4+x^2-6x}\\)**.**",
     "strona_zadania": 20
   },
   {
     "numer": "12.2",
-    "polecenie": "Dla \\(x>0\\) rozpatrujemy funkcję\n\\[f(x)=81^{\\log_3 x}+\\frac{2\\log_2\\sqrt{27}\\,\\log_3 2}{3}x^2-6x.\\]\nOblicz jej najmniejszą wartość i zapisz obliczenia.\n\nWskazówka. Możesz przyjąć, że \\(f(x)=x^4+x^2-6x\\).",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=81^{\\log_3 x}+\\dfrac{2\\cdot\\log_2\\sqrt{27}\\cdot\\log_3 2}{3}\\cdot x^2-6x\\) dla każdej liczby dodatniej \\(x\\).\n\n**Oblicz najmniejszą wartość funkcji** \\(\\boldsymbol f\\) **określonej dla każdej liczby dodatniej** \\(\\boldsymbol x\\)**.**\n**Zapisz obliczenia.**\n\nWskazówka: przyjmij, że wzór funkcji \\(f\\) można przedstawić w postaci \\(f(x)=x^4+x^2-6x\\).",
     "strona_zadania": 21
   },
   {
     "numer": "13",
-    "polecenie": "Prosta \\(l\\colon x-y-2=0\\) przecina parabolę \\(y=4x^2-7x+1\\) w \\(A\\) oraz \\(B\\). Odcinek \\(AB\\) jest średnicą okręgu \\(\\mathcal O\\). Punkt \\(C\\) leży na tym okręgu nad prostą \\(l\\). Kąt \\(BAC\\) jest ostry i ma miarę \\(\\alpha\\) taką, że \\(\\tan\\alpha=1/3\\).\n\nOblicz współrzędne \\(C\\) i zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) prosta \\(l\\) o równaniu \\(x-y-2=0\\) przecina parabolę o równaniu \\(y=4x^2-7x+1\\) w punktach \\(A\\) oraz \\(B\\). Odcinek \\(AB\\) jest średnicą okręgu \\(\\mathcal O\\). Punkt \\(C\\) leży na okręgu \\(\\mathcal O\\) nad prostą \\(l\\), a kąt \\(BAC\\) jest ostry i ma miarę \\(\\alpha\\) taką, że \\(\\operatorname{tg}\\alpha=\\dfrac13\\) (zobacz rysunek).\n\n**Oblicz współrzędne punktu** \\(\\boldsymbol C\\)**. Zapisz obliczenia.**",
     "strona_zadania": 22
   }
 ]

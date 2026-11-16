@@ -1,72 +1,72 @@
 [
   {
     "numer": "1",
-    "polecenie": "W chwili \\(t=0\\) kawa ma temperaturę \\(80^\\circ\\mathrm C\\), a stała temperatura otoczenia wynosi \\(20^\\circ\\mathrm C\\). Jej temperaturę w stopniach Celsjusza po \\(t\\) minutach opisuje wzór\n\\[T(t)=(T_p-T_z)k^{-t}+T_z,\\qquad t\\ge0.\\]\nLiczby \\(T_p,T_z\\) oznaczają temperaturę początkową kawy i temperaturę otoczenia, a \\(k\\) jest stałą charakterystyczną dla cieczy. Po dziesięciu minutach kawa ma \\(65^\\circ\\mathrm C\\).\n\nOblicz jej temperaturę po kolejnych pięciu minutach. Podaj ją w stopniach Celsjusza, zaokrągloną do jedności, i zapisz obliczenia.",
+    "polecenie": "W chwili początkowej \\((t=0)\\) filiżanka z gorącą kawą znajduje się w pokoju, a temperatura tej kawy jest równa \\(80\\) °C. Temperatura w pokoju (temperatura otoczenia) jest stała i równa \\(20\\) °C. Temperatura \\(T\\) tej kawy zmienia się w czasie zgodnie z zależnością\n\\[T(t)=(T_p-T_z)\\cdot k^{-t}+T_z\\qquad\\text{dla}\\qquad t\\ge 0\\]\ngdzie:\n\\(T\\) – temperatura kawy wyrażona w stopniach Celsjusza,\n\\(t\\) – czas wyrażony w minutach, liczony od chwili początkowej,\n\\(T_p\\) – temperatura początkowa kawy wyrażona w stopniach Celsjusza,\n\\(T_z\\) – temperatura otoczenia wyrażona w stopniach Celsjusza,\n\\(k\\) – stała charakterystyczna dla danej cieczy.\n\nPo \\(10\\) minutach, licząc od chwili początkowej, kawa ostygła do temperatury \\(65\\) °C.\n\n**Oblicz temperaturę tej kawy po następnych pięciu minutach. Wynik podaj w stopniach Celsjusza, w zaokrągleniu do jedności. Zapisz obliczenia.**",
     "strona_zadania": 4
   },
   {
     "numer": "2",
-    "polecenie": "Oblicz granicę i zapisz obliczenia.\n\\[\\lim_{x\\to2^-}\\frac{x^3-8}{(x-2)^2}.\\]",
+    "polecenie": "**Oblicz granicę**\n\\[\\lim_{x\\to2^-}\\frac{x^3-8}{(x-2)^2}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 5
   },
   {
     "numer": "3",
-    "polecenie": "W zakładzie mleczarskim śmietanę pakuje się w opakowania po \\(200\\) gramów. W losowym opakowaniu zawartość tłuszczu jest mniejsza niż \\(36\\%\\) z prawdopodobieństwem \\(0{,}01\\). Do kontroli losujemy \\(10\\) opakowań.\n\nOblicz prawdopodobieństwo, że tę niższą zawartość tłuszczu ma co najwyżej jedno z kontrolowanych opakowań. Wynik podaj dziesiętnie, z dokładnością do części tysięcznych. Zapisz obliczenia.",
+    "polecenie": "W pewnym zakładzie mleczarskim śmietana produkowana jest w 200-gramowych opakowaniach. Prawdopodobieństwo zdarzenia, że w losowo wybranym opakowaniu śmietana zawiera mniej niż 36% tłuszczu, jest równe \\(0{,}01\\). Kontroli poddajemy \\(10\\) losowo wybranych opakowań ze śmietaną.\n\n**Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że wśród opakowań poddanych tej kontroli będzie co najwyżej jedno opakowanie ze śmietaną, która zawiera mniej niż 36% tłuszczu. Wynik zapisz w postaci ułamka dziesiętnego w zaokrągleniu do części tysięcznych. Zapisz obliczenia.**",
     "strona_zadania": 6
   },
   {
     "numer": "4",
-    "polecenie": "Dla \\(x\\ne0\\) dana jest funkcja \\(f(x)=(x^3-3x+2)/x\\). Prosta \\(y=ax+b\\) jest styczna do wykresu \\(f\\) w punkcie o odciętej \\(2\\).\n\nOblicz \\(a,b\\) i zapisz obliczenia.",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem\n\\[f(x)=\\frac{x^3-3x+2}{x}\\]\ndla każdej liczby rzeczywistej \\(x\\) różnej od zera. W kartezjańskim układzie współrzędnych \\((x,y)\\) punkt \\(P\\), o pierwszej współrzędnej równej \\(2\\), należy do wykresu funkcji \\(f\\).\nProsta o równaniu \\(y=ax+b\\) jest styczna do wykresu funkcji \\(f\\) w punkcie \\(P\\).\n\n**Oblicz współczynniki** \\(\\boldsymbol a\\) **oraz** \\(\\boldsymbol b\\) **w równaniu tej stycznej. Zapisz obliczenia.**",
     "strona_zadania": 7
   },
   {
     "numer": "5",
-    "polecenie": "Wykaż, że dla \\(a=\\log_5 4\\) oraz \\(b=\\log_4 3\\) zachodzi\n\\[\\log_{12}80=\\frac{2a+1}{a(1+b)}.\\]",
+    "polecenie": "**Wykaż, że jeżeli** \\(\\boldsymbol{\\log_5 4=a}\\) **oraz** \\(\\boldsymbol{\\log_4 3=b}\\)**, to** \\(\\boldsymbol{\\log_{12}80=\\dfrac{2a+1}{a\\cdot(1+b)}}\\)**.**",
     "strona_zadania": 8
   },
   {
     "numer": "6",
-    "polecenie": "Rozważ liczby naturalne, w których zapisie dziesiętnym wszystkie cyfry są różne, dokładnie trzy są nieparzyste i dokładnie dwie parzyste. Ile jest takich liczb? Zapisz obliczenia.",
+    "polecenie": "Rozważamy wszystkie liczby naturalne, w których zapisie dziesiętnym nie powtarza się jakakolwiek cyfra oraz dokładnie trzy cyfry są nieparzyste i dokładnie dwie cyfry są parzyste.\n\n**Oblicz, ile jest wszystkich takich liczb. Zapisz obliczenia.**",
     "strona_zadania": 9
   },
   {
     "numer": "7",
-    "polecenie": "Rosnący ciąg geometryczny \\((x,y,z)\\) ma sumę wyrazów \\(105\\). Liczby \\(x,y,z\\) są odpowiednio pierwszym, drugim i szóstym wyrazem ciągu arytmetycznego \\((a_n)_{n\\ge1}\\).\n\nOblicz \\(x,y,z\\) i zapisz obliczenia.",
+    "polecenie": "Trzywyrazowy ciąg \\((x,y,z)\\) jest geometryczny i rosnący. Suma wyrazów tego ciągu jest równa \\(105\\). Liczby \\(x\\), \\(y\\) oraz \\(z\\) są – odpowiednio – pierwszym, drugim oraz szóstym wyrazem ciągu arytmetycznego \\((a_n)\\), określonego dla każdej liczby naturalnej \\(n\\ge 1\\).\n\n**Oblicz** \\(\\boldsymbol x\\)**,** \\(\\boldsymbol y\\) **oraz** \\(\\boldsymbol z\\)**. Zapisz obliczenia.**",
     "strona_zadania": 10
   },
   {
     "numer": "8",
-    "polecenie": "Trójkąt \\(ABC\\) nie jest równoramienny, a kąt \\(ABC\\) ma dwukrotnie większą miarę niż \\(BAC\\). Wykaż, że\n\\[|AC|^2=|BC|^2+|AB||BC|.\\]",
+    "polecenie": "Dany jest trójkąt \\(ABC\\), który nie jest równoramienny. W tym trójkącie miara kąta \\(ABC\\) jest dwa razy większa od miary kąta \\(BAC\\).\n\n**Wykaż, że długości boków tego trójkąta spełniają warunek**\n\\[\\boldsymbol{|AC|^2=|BC|^2+|AB|\\cdot|BC|}\\]",
     "strona_zadania": 12
   },
   {
     "numer": "9",
-    "polecenie": "W kwadracie \\(ABCD\\) o boku \\(a\\) punkt \\(E\\) jest środkiem \\(CD\\). Przekątna \\(BD\\) przecina \\(AE\\) w \\(F\\) oraz \\(AC\\) w \\(G\\), dzieląc trójkąt \\(ACE\\) na trójkąt \\(AGF\\) i czworokąt \\(CEFG\\).\n\nWyznacz pola obu tych figur i zapisz obliczenia.",
+    "polecenie": "Dany jest kwadrat \\(ABCD\\) o boku długości \\(a\\). Punkt \\(E\\) jest środkiem boku \\(CD\\). Przekątna \\(BD\\) dzieli trójkąt \\(ACE\\) na dwie figury: \\(AGF\\) oraz \\(CEFG\\) (zobacz rysunek).\n\n**Oblicz pola figur** \\(\\boldsymbol{AGF}\\) **oraz** \\(\\boldsymbol{CEFG}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 14
   },
   {
     "numer": "10",
-    "polecenie": "Rozwiąż w przedziale \\([0,2\\pi]\\) równanie\n\\[\\sin(4x)-\\sin(2x)=4\\cos^2x-3.\\]\nZapisz obliczenia.",
+    "polecenie": "**Rozwiąż równanie**\n\\[\\boldsymbol{\\sin(4x)-\\sin(2x)=4\\cos^2 x-3}\\]\n**w zbiorze** \\(\\boldsymbol{[0,2\\pi]}\\)**. Zapisz obliczenia.**",
     "strona_zadania": 16
   },
   {
     "numer": "11",
-    "polecenie": "Środek \\(S\\) okręgu o promieniu \\(\\sqrt5\\) leży na prostej \\(y=x+1\\). Punkt \\(A=(1,2)\\) leży poza okręgiem. Dwie styczne poprowadzone z \\(A\\) dotykają okręgu w punktach \\(B,C\\). Pole czworokąta \\(ABSC\\) wynosi \\(15\\).\n\nWyznacz wszystkie możliwe współrzędne \\(S\\) i zapisz obliczenia.",
+    "polecenie": "W kartezjańskim układzie współrzędnych \\((x,y)\\) środek \\(S\\) okręgu o promieniu \\(\\sqrt5\\) leży na prostej o równaniu \\(y=x+1\\). Przez punkt \\(A=(1,2)\\), którego odległość od punktu \\(S\\) jest większa od \\(\\sqrt5\\), poprowadzono dwie proste styczne do tego okręgu w punktach – odpowiednio – \\(B\\) i \\(C\\). Pole czworokąta \\(ABSC\\) jest równe \\(15\\).\n\n**Oblicz współrzędne punktu** \\(\\boldsymbol S\\)**. Rozważ wszystkie przypadki. Zapisz obliczenia.**",
     "strona_zadania": 18
   },
   {
     "numer": "12",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[x^2-(3m+1)x+2m^2+m+1=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające warunek\n\\[x_1^3+x_2^3+3x_1x_2(x_1+x_2-3)\\le3m-7.\\]\nZapisz obliczenia.",
+    "polecenie": "**Wyznacz wszystkie wartości parametru** \\(\\boldsymbol m\\)**, dla których równanie**\n\\[\\boldsymbol{x^2-(3m+1)\\cdot x+2m^2+m+1=0}\\]\n**ma dwa różne rozwiązania rzeczywiste** \\(\\boldsymbol{x_1}\\)**,** \\(\\boldsymbol{x_2}\\) **spełniające warunek**\n\\[\\boldsymbol{x_1^3+x_2^3+3\\cdot x_1\\cdot x_2\\cdot(x_1+x_2-3)\\le 3m-7}\\]\n**Zapisz obliczenia.**",
     "strona_zadania": 20
   },
   {
     "numer": "13.1",
-    "polecenie": "Rozważ graniastosłupy prawidłowe trójkątne o objętości \\(3456\\) i krawędzi podstawy \\(a\\) nie dłuższej niż \\(8\\sqrt3\\). Wykaż, że pole powierzchni całkowitej jest równe\n\\[P(a)=\\frac{a^2\\sqrt3}{2}+\\frac{13824\\sqrt3}{a}.\\]",
+    "polecenie": "Rozważamy wszystkie graniastosłupy prawidłowe trójkątne o objętości \\(3456\\), których krawędź podstawy ma długość nie większą niż \\(8\\sqrt3\\).\n\n**Wykaż, że pole** \\(\\boldsymbol P\\) **powierzchni całkowitej graniastosłupa w zależności od długości** \\(\\boldsymbol a\\) **krawędzi podstawy graniastosłupa jest określone wzorem**\n\\[\\boldsymbol{P(a)=\\frac{a^2\\cdot\\sqrt3}{2}+\\frac{13824\\sqrt3}{a}}\\]",
     "strona_zadania": 23
   },
   {
     "numer": "13.2",
-    "polecenie": "Rozważ graniastosłupy prawidłowe trójkątne o objętości \\(3456\\). Pole powierzchni całkowitej w zależności od długości \\(a\\) krawędzi podstawy jest dane wzorem\n\\[P(a)=\\frac{a^2\\sqrt3}{2}+\\frac{13824\\sqrt3}{a},\\qquad a\\in(0,8\\sqrt3].\\]\nWyznacz długość krawędzi podstawy, przy której pole powierzchni całkowitej jest najmniejsze. Zapisz obliczenia i podaj to pole.",
+    "polecenie": "Rozważamy wszystkie graniastosłupy prawidłowe trójkątne o objętości \\(3456\\), których krawędź podstawy ma długość nie większą niż \\(8\\sqrt3\\).\n\nPole \\(P\\) powierzchni całkowitej graniastosłupa w zależności od długości \\(a\\) krawędzi podstawy graniastosłupa jest określone wzorem\n\\[P(a)=\\frac{a^2\\cdot\\sqrt3}{2}+\\frac{13824\\sqrt3}{a}\\]\ndla \\(a\\in(0,8\\sqrt3\\,]\\).\n\n**Wyznacz długość krawędzi podstawy tego z rozważanych graniastosłupów, którego pole powierzchni całkowitej jest najmniejsze. Oblicz to najmniejsze pole. Zapisz obliczenia.**",
     "strona_zadania": 24
   }
 ]

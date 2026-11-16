@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Przez który wielomian jest podzielny \\(W(x)=x^3-x^2-x-2\\)?\n\nA. \\(x+2\\)\nB. \\(x+1\\)\nC. \\(x-1\\)\nD. \\(x-2\\)",
+    "polecenie": "Wielomian \\(W(x)=x^3-x^2-x-2\\) jest podzielny bez reszty przez wielomian\n\nA. \\(x+2\\)\n\nB. \\(x+1\\)\n\nC. \\(x-1\\)\n\nD. \\(x-2\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Wybierz wartość granicy\n\\[\\lim_{x\\to+\\infty}\\left(\\frac{x^3+8}{x^2-4}-x\\right).\\]\n\nA. \\(-\\infty\\)\nB. \\(+\\infty\\)\nC. \\(0\\)\nD. \\(-2\\)",
+    "polecenie": "Granica \\(\\displaystyle\\lim_{x\\to+\\infty}\\left(\\frac{x^3+8}{x^2-4}-x\\right)\\) jest równa\n\nA. \\(-\\infty\\)\n\nB. \\(+\\infty\\)\n\nC. \\(0\\)\n\nD. \\(-2\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Funkcja \\(f(x)=\\frac{3x+1}{x^2+1}\\) jest określona na \\(\\mathbb R\\). Wybierz wzór jej pochodnej.\n\nA. \\(f'(x)=\\frac3{2x}\\)\nB. \\(f'(x)=\\frac{-3x^2-2x+3}{2x}\\)\nC. \\(f'(x)=\\frac{-3x^2-2x+3}{(x^2+1)^2}\\)\nD. \\(f'(x)=\\frac{9x^2+2x+3}{(x^2+1)^2}\\)",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\frac{3x+1}{x^2+1}\\) dla wszystkich liczb rzeczywistych \\(x\\). Pochodna \\(f'\\) tej funkcji jest określona wzorem\n\nA. \\(f'(x)=\\frac{3}{2x}\\)\n\nB. \\(f'(x)=\\frac{-3x^2-2x+3}{2x}\\)\n\nC. \\(f'(x)=\\frac{-3x^2-2x+3}{(x^2+1)^2}\\)\n\nD. \\(f'(x)=\\frac{9x^2+2x+3}{(x^2+1)^2}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Wybierz wyrażenie równe \\(\\frac{1}{\\sqrt3+\\sqrt2+1}\\).\n\nA. \\(\\sqrt3+\\sqrt2-1\\)\nB. \\(\\frac{2+\\sqrt2-\\sqrt6}{4}\\)\nC. \\(\\frac14\\)\nD. \\(\\frac{\\sqrt3+\\sqrt2-1}{6}\\)",
+    "polecenie": "Wyrażenie \\(\\frac{1}{\\sqrt3+\\sqrt2+1}\\) jest równe\n\nA. \\(\\sqrt3+\\sqrt2-1\\)\n\nB. \\(\\frac{2+\\sqrt2-\\sqrt6}{4}\\)\n\nC. \\(\\frac14\\)\n\nD. \\(\\frac{\\sqrt3+\\sqrt2-1}{6}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Suma wszystkich wyrazów nieskończonego ciągu geometrycznego \\((a_n)_{n\\ge1}\\) wynosi \\(2\\), a suma ich kwadratów wynosi \\(3\\). Oblicz iloraz ciągu. Wpisz kolejno cyfrę jedności, dziesiątych i setnych wyniku.",
+    "polecenie": "Suma wszystkich wyrazów nieskończonego ciągu geometrycznego \\((a_n)\\), określonego dla \\(n\\geq 1\\), jest równa \\(2\\), a suma kwadratów wszystkich wyrazów tego ciągu jest równa \\(3\\). Oblicz iloraz ciągu \\((a_n)\\).\n\nW kratki poniżej wpisz kolejno – od lewej do prawej – cyfrę jedności, części dziesiętnych i setnych otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Ciąg \\((a_n)_{n\\ge1}\\) spełnia \\(a_1=2\\) oraz \\(a_n=3a_{n+1}+n^2\\) dla każdego \\(n\\ge1\\). Oblicz \\(a_1+a_2+a_3\\).",
+    "polecenie": "Pierwszy wyraz ciągu \\((a_n)\\), określonego dla \\(n\\geq1\\), jest równy \\(2\\). Wszystkie wyrazy tego ciągu spełniają warunek \\(a_n=3\\cdot a_{n+1}+n^2\\). Oblicz sumę \\(a_1+a_2+a_3\\).",
     "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "Punkty \\(A,B,C,D\\) są kolejnymi wierzchołkami wypukłego czworokąta. Udowodnij, że jeżeli kąty \\(ADB\\) i \\(ACB\\) mają równe miary, to kąty \\(BAC\\) i \\(BDC\\) również mają równe miary.",
+    "polecenie": "Dany jest czworokąt wypukły, którego kolejnymi wierzchołkami są punkty \\(A\\), \\(B\\), \\(C\\) i \\(D\\). Wykaż, że jeżeli \\(|\\measuredangle ADB|=|\\measuredangle ACB|\\), to \\(|\\measuredangle BAC|=|\\measuredangle BDC|\\).",
     "strona_zadania": 6
   },
   {
     "numer": "8",
-    "polecenie": "Udowodnij, że dla każdej liczby nieparzystej \\(n\\) wyrażenie \\(n^5-3n^4-n+3\\) jest podzielne przez \\(16\\).",
+    "polecenie": "Wykaż, że dla każdej liczby nieparzystej \\(n\\) wyrażenie \\(n^5-3n^4-n+3\\) jest podzielne przez \\(16\\).",
     "strona_zadania": 8
   },
   {
     "numer": "9",
-    "polecenie": "Rozwiąż równanie\n\\[4\\sin^3x+\\sin(2x)=2\\sin^2x\\,(2\\cos x+1).\\]",
+    "polecenie": "Rozwiąż równanie \\(4\\sin^3 x+\\sin 2x=2\\sin^2 x\\cdot(2\\cos x+1)\\).",
     "strona_zadania": 9
   },
   {
     "numer": "10",
-    "polecenie": "Dla pewnych liczb rzeczywistych \\(a>1\\), \\(b>1\\) i \\(N>1\\) zachodzi\n\\[\\log_{a^2b}N=\\frac3{20}(\\log_aN+\\log_bN).\\]\nWyznacz wszystkie możliwe wartości \\(\\log_a b\\).",
+    "polecenie": "Dla pewnych liczb rzeczywistych \\(a>1\\), \\(b>1\\) i \\(N>1\\) jest spełniona równość\n\\[\\log_{a^2b}N=\\frac{3}{20}\\cdot(\\log_a N+\\log_b N).\\]\nWyznacz wszystkie wartości wyrażenia \\(\\log_a b\\).",
     "strona_zadania": 10
   },
   {
     "numer": "11",
-    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których nierówność\n\\[(m^2+4m-5)x^2+2x>2mx-2\\]\nzachodzi dla każdego \\(x\\in\\mathbb R\\).",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których nierówność\n\\[(m^2+4m-5)\\cdot x^2+2x>2mx-2\\]\njest prawdziwa dla każdej liczby rzeczywistej \\(x\\).",
     "strona_zadania": 12
   },
   {
     "numer": "12",
-    "polecenie": "Punkt \\(A=(-2,6)\\) jest wierzchołkiem rombu \\(ABCD\\) o polu \\(82{,}5\\). Przekątna \\(BD\\) leży na prostej \\(2x-y-5=0\\). Wyznacz współrzędne pozostałych wierzchołków rombu.",
+    "polecenie": "Punkt \\(A=(-2,6)\\) jest wierzchołkiem rombu \\(ABCD\\) o polu równym \\(82{,}5\\). Przekątna \\(BD\\) tego rombu zawiera się w prostej \\(l\\) o równaniu \\(2x-y-5=0\\). Wyznacz współrzędne pozostałych wierzchołków tego rombu.",
     "strona_zadania": 14
   },
   {
     "numer": "13",
-    "polecenie": "Oblicz, ile jest siedmiocyfrowych liczb naturalnych, dla których iloczyn cyfr w zapisie dziesiętnym wynosi \\(28\\).",
+    "polecenie": "Oblicz, ile jest siedmiocyfrowych liczb naturalnych takich, że w zapisie dziesiętnym iloczyn wszystkich cyfr każdej z tych liczb jest równy \\(28\\).",
     "strona_zadania": 16
   },
   {
     "numer": "14",
-    "polecenie": "Przez wierzchołki \\(B\\) i \\(D\\) rombu \\(ABCD\\) poprowadzono równoległe proste, które przecinają odpowiednio boki \\(CD\\) i \\(AB\\) w punktach \\(M\\) i \\(N\\). Powstałe figury \\(AND\\), \\(NBMD\\) i \\(BCM\\) mają równe pola. Ponadto \\(|MB|=|ND|=|BD|\\) (zobacz rysunek). Oblicz cosinus kąta ostrego rombu.",
+    "polecenie": "Dany jest romb \\(ABCD\\). Przez wierzchołki \\(B\\) i \\(D\\) poprowadzono dwie proste równoległe przecinające boki \\(CD\\) i \\(AB\\) – odpowiednio – w punktach \\(M\\) i \\(N\\), tak, że podzieliły one ten romb na trzy figury \\(AND\\), \\(NBMD\\), \\(BCM\\) o równych polach. Ponadto wiadomo, że \\(|MB|=|ND|=|BD|\\) (zobacz rysunek). Oblicz cosinus kąta ostrego tego rombu.",
     "strona_zadania": 18
   },
   {
     "numer": "15",
-    "polecenie": "Rozpatrujemy ostrosłupy prawidłowe czworokątne, w których suma promienia okręgu opisanego na podstawie i długości krawędzi bocznej wynosi \\(d\\). Wyznacz długość krawędzi podstawy ostrosłupa o największej objętości. Oblicz tę objętość.",
+    "polecenie": "Rozpatrujemy wszystkie ostrosłupy prawidłowe czworokątne, w których suma promienia okręgu opisanego na podstawie i długości krawędzi bocznej jest równa \\(d\\). Wyznacz długość krawędzi podstawy tego z rozpatrywanych ostrosłupów, który ma największą objętość. Oblicz tę największą objętość.",
     "strona_zadania": 20
   }
 ]

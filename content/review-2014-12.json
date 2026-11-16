@@ -1,74 +1,74 @@
 [
   {
     "numer": "1",
-    "polecenie": "Wielomian \\(W(x)=2x^3-bx^2-1\\) jest podzielny przez dwumian \\(x+1\\). Która wartość \\(b\\) spełnia ten warunek?\n\nA. \\(b=-3\\)\nB. \\(b=-1\\)\nC. \\(b=1\\)\nD. \\(b=3\\)"
+    "polecenie": "Wielomian \\(W(x)=2x^3-bx^2-1\\) jest podzielny przez dwumian \\(x+1\\). Wynika stąd, że\n\nA. \\(b=-3\\)\nB. \\(b=-1\\)\nC. \\(b=1\\)\nD. \\(b=3\\)"
   },
   {
     "numer": "2",
-    "polecenie": "Okrąg o równaniu \\((x+2)^2+(y-2)^2=4\\) ma dwa punkty wspólne z jedną z poniższych prostych. Wskaż tę prostą.\n\nA. \\(x=0\\)\nB. \\(y=0\\)\nC. \\(y=-x\\)\nD. \\(y=x\\)"
+    "polecenie": "Okrąg o równaniu \\((x+2)^2+(y-2)^2=4\\) ma dwa punkty wspólne z prostą o równaniu\n\nA. \\(x=0\\)\nB. \\(y=0\\)\nC. \\(y=-x\\)\nD. \\(y=x\\)"
   },
   {
     "numer": "3",
-    "polecenie": "Funkcja \\(f(x)=x^5+5x-1\\) jest określona dla każdej liczby rzeczywistej \\(x\\). Wskaż poprawną odpowiedź.\n\nA. Ma więcej niż dwa minima lokalne.\nB. Ma dokładnie dwa minima lokalne.\nC. Ma dokładnie jedno minimum lokalne.\nD. Nie ma minimum lokalnego."
+    "polecenie": "Funkcja określona dla każdej liczby rzeczywistej \\(x\\) wzorem \\(f(x)=x^5+5x-1\\)\n\nA. ma więcej niż dwa minima lokalne.\nB. ma dokładnie dwa minima lokalne.\nC. ma dokładnie jedno minimum lokalne.\nD. nie ma minimum lokalnego."
   },
   {
     "numer": "4",
-    "polecenie": "Każda liczba \\(x\\) należąca do przedziału \\(\\left(\\frac\\pi2,\\frac{3\\pi}{4}\\right)\\) spełnia jedną z podanych nierówności. Wskaż ją.\n\nA. \\(\\tan x>\\sin x\\)\nB. \\(\\cos x>\\sin x\\)\nC. \\(\\cos x>\\tan x\\)\nD. \\(\\tan x>\\cos x\\)"
+    "polecenie": "Każda liczba \\(x\\) należąca do przedziału otwartego \\(x\\in\\left(\\frac{\\pi}{2},\\frac{3\\pi}{4}\\right)\\) spełnia nierówność\n\nA. \\(\\operatorname{tg}x>\\sin x\\)\nB. \\(\\cos x>\\sin x\\)\nC. \\(\\cos x>\\operatorname{tg}x\\)\nD. \\(\\operatorname{tg}x>\\cos x\\)"
   },
   {
     "numer": "5",
-    "polecenie": "Funkcja \\(f(x)=3^{x-2}+3\\) jest określona dla każdej liczby rzeczywistej \\(x\\). Ile punktów wspólnych mają wykres \\(f\\) i prosta \\(y=3{,}3\\)?\n\nA. Zero.\nB. Jeden.\nC. Dwa.\nD. Nieskończenie wiele."
+    "polecenie": "Funkcja \\(f\\) jest określona dla wszystkich liczb rzeczywistych wzorem \\(f(x)=3^{x-2}+3\\). Prosta \\(l\\) ma równanie \\(y=3{,}3\\). Ile punktów wspólnych mają wykres funkcji \\(f\\) i prosta \\(l\\)?\n\nA. Zero.\nB. Jeden.\nC. Dwa.\nD. Nieskończenie wiele."
   },
   {
     "numer": "6",
-    "polecenie": "Dane są liczby \\(a,b\\) spełniające \\(a-b=4\\) i \\(ab=7\\). Oblicz \\(a^3b+ab^3\\). Zakoduj kolejno cyfry setek, dziesiątek i jedności wyniku."
+    "polecenie": "Dane są liczby \\(a,b\\) takie, że \\(a-b=4\\) i \\(ab=7\\). Oblicz \\(a^3b+ab^3\\). Zakoduj w kratkach poniżej kolejno, od lewej do prawej, cyfry setek, dziesiątek i jedności otrzymanego wyniku."
   },
   {
     "numer": "7",
-    "polecenie": "Boki prostokąta mają długości \\(3\\) i \\(5\\). Oblicz sinus kąta ostrego między jego przekątnymi."
+    "polecenie": "Długości boków prostokąta są równe \\(3\\) oraz \\(5\\). Oblicz sinus kąta ostrego, który tworzą przekątne tego prostokąta."
   },
   {
     "numer": "8",
-    "polecenie": "Oblicz granicę \\[\\lim_{n\\to\\infty}\\left(\\frac{n^2}{n+2}-\\frac{(n+2)^2}{n+444}\\right).\\]"
+    "polecenie": "Oblicz granicę \\(\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{n^2}{n+2}-\\frac{(n+2)^2}{n+444}\\right)\\)."
   },
   {
     "numer": "9",
-    "polecenie": "Dla \\(x\\ne4\\) funkcja \\(f\\) ma wzór \\(f(x)=\\frac{x^2}{x-4}\\). Oblicz \\(f'(12)\\)."
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{x^2}{x-4}\\) dla każdej liczby rzeczywistej \\(x\\ne 4\\). Oblicz pochodną funkcji \\(f\\) w punkcie \\(x=12\\)."
   },
   {
     "numer": "10",
-    "polecenie": "Dana jest funkcja \\(f(x)=x^4\\) dla \\(x\\in\\mathbb R\\). Wyznacz równanie stycznej do jej wykresu równoległej do prostej \\(y=4x+7\\)."
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=x^4\\) dla każdej liczby rzeczywistej \\(x\\). Wyznacz równanie prostej stycznej do wykresu funkcji \\(f\\), która jest równoległa do prostej \\(y=4x+7\\)."
   },
   {
     "numer": "11",
-    "polecenie": "Wyznacz wszystkie liczby rzeczywiste \\(x\\) spełniające równanie \\(\\sin(5x)-\\sin x=0\\)."
+    "polecenie": "Wyznacz wszystkie liczby rzeczywiste \\(x\\), spełniające równanie \\(\\sin 5x-\\sin x=0\\)."
   },
   {
     "numer": "12",
-    "polecenie": "Dla \\(n\\ge1\\) niech \\(P_n\\) oznacza pole koła o promieniu \\(\\frac1{2^n}\\). Oblicz sumę wszystkich wyrazów ciągu \\((P_n)\\)."
+    "polecenie": "Niech \\(P_n\\) oznacza pole koła o promieniu \\(\\dfrac{1}{2^n}\\), dla \\(n\\ge 1\\). Oblicz sumę wszystkich wyrazów ciągu \\((P_n)\\)."
   },
   {
     "numer": "13",
-    "polecenie": "Wykaż, że jeśli \\(a>b\\ge1\\), to \\[\\frac{a}{2+a^3}<\\frac{b}{2+b^3}.\\]"
+    "polecenie": "Wykaż, że jeżeli \\(a>b\\ge 1\\), to \\(\\dfrac{a}{2+a^3}<\\dfrac{b}{2+b^3}\\)."
   },
   {
     "numer": "14",
-    "polecenie": "Niech \\(\\alpha,\\beta,\\gamma\\) będą kątami wewnętrznymi trójkąta. Wykaż, że jeśli \\(\\sin^2\\alpha+\\sin^2\\beta<\\sin^2\\gamma\\), to \\(\\cos\\gamma<0\\)."
+    "polecenie": "Wykaż, że jeżeli \\(\\alpha,\\beta,\\gamma\\) są kątami wewnętrznymi trójkąta i \\(\\sin^2\\alpha+\\sin^2\\beta<\\sin^2\\gamma\\), to \\(\\cos\\gamma<0\\)."
   },
   {
     "numer": "15",
-    "polecenie": "Punkt \\(E\\) jest środkiem boku \\(BC\\) prostokąta \\(ABCD\\), w którym \\(|AB|>|BC|\\). Punkt \\(F\\) leży na boku \\(CD\\) i \\(\\angle AEF=90^\\circ\\). Udowodnij, że \\(\\angle BAE=\\angle EAF\\)."
+    "polecenie": "Punkt \\(E\\) jest środkiem boku \\(BC\\) prostokąta \\(ABCD\\), w którym \\(AB>BC\\). Punkt \\(F\\) leży na boku \\(CD\\) tego prostokąta oraz \\(\\angle AEF=90^\\circ\\). Udowodnij, że \\(\\angle BAE=\\angle EAF\\)."
   },
   {
     "numer": "16",
-    "polecenie": "Rzucamy trzy razy symetryczną sześcienną kostką. Oblicz prawdopodobieństwo uzyskania co najmniej jednej jedynki pod warunkiem, że wypadła co najmniej jedna szóstka."
+    "polecenie": "Oblicz prawdopodobieństwo warunkowe, że w trzykrotnym rzucie symetryczną sześcienną kostką do gry otrzymamy co najmniej jedną „jedynkę”, pod warunkiem że otrzymamy co najmniej jedną „szóstkę”."
   },
   {
     "numer": "17",
-    "polecenie": "Dany jest okrąg \\(o_0\\) o równaniu \\((x-3)^2+(y-1)^2=1\\). W pierwszej ćwiartce układu współrzędnych istnieją dwa okręgi \\(o_1,o_2\\), z których każdy jest styczny zewnętrznie do \\(o_0\\) i styczny do obu osi układu. Oblicz odległość środków \\(o_1,o_2\\)."
+    "polecenie": "Dany jest okrąg \\(o_0\\) o równaniu \\((x-3)^2+(y-1)^2=1\\). W pierwszej „ćwiartce” układu współrzędnych istnieją dwa okręgi \\(o_1,o_2\\) styczne zewnętrznie do okręgu \\(o_0\\) i jednocześnie styczne do obu osi układu współrzędnych. Oblicz odległość środków okręgów \\(o_1\\) oraz \\(o_2\\)."
   },
   {
     "numer": "18",
-    "polecenie": "Okno ma kształt trapezu równoramiennego. Krótsza podstawa i każde ramię mają długość \\(4\\,\\mathrm{dm}\\). Wyznacz długość dłuższej podstawy, przy której pole okna jest największe, i oblicz to pole."
+    "polecenie": "Okno na poddaszu ma mieć kształt trapezu równoramiennego, którego krótsza podstawa i ramiona mają długość po \\(4\\) dm. Oblicz, jaką długość powinna mieć dłuższa podstawa tego trapezu, aby do pomieszczenia wpadało przez to okno jak najwięcej światła, czyli aby pole powierzchni okna było największe. Oblicz to pole."
   }
 ]

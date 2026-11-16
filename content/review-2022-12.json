@@ -1,67 +1,67 @@
 [
   {
     "numer": "1",
-    "polecenie": "Oblicz wartość wyrażenia\n\\[\\frac{\\log_3 5\\cdot\\log_{25}27}{\\log_7\\sqrt[6]{49}}.\\]\nZapisz obliczenia.",
+    "polecenie": "Oblicz\n\\[\\frac{\\log_3 5\\cdot\\log_{25}27}{\\log_7\\sqrt[6]{49}}\\]\nZapisz obliczenia.",
     "strona_zadania": 4
   },
   {
     "numer": "2.1",
-    "polecenie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=\\left|-\\frac14x^2+3x-5\\right|\\) dla \\(x\\in\\mathbb R\\). Na rysunku przedstawiono fragment jej wykresu. Wyznacz zbiór wartości, które \\(g\\) przyjmuje na przedziale \\([9,11]\\). Zapisz obliczenia.",
+    "polecenie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=\\left|-\\frac14 x^2+3x-5\\right|\\) dla każdego \\(x\\in\\mathbb{R}\\). Fragment wykresu funkcji \\(g\\) w kartezjańskim układzie współrzędnych \\((x,y)\\) przedstawiono na rysunku (jednostki pominięto).\n\nWyznacz zbiór wszystkich wartości, jakie funkcja \\(g\\) przyjmuje w przedziale \\([9,11]\\).\n\nZapisz obliczenia.",
     "strona_zadania": 5
   },
   {
     "numer": "2.2",
-    "polecenie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=\\left|-\\frac14x^2+3x-5\\right|\\) dla \\(x\\in\\mathbb R\\). Na rysunku przedstawiono fragment jej wykresu. Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie \\(g(x)=|m|\\) ma dokładnie dwa rozwiązania dodatnie.",
+    "polecenie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=\\left|-\\frac14 x^2+3x-5\\right|\\) dla każdego \\(x\\in\\mathbb{R}\\). Fragment wykresu funkcji \\(g\\) w kartezjańskim układzie współrzędnych \\((x,y)\\) przedstawiono na rysunku (jednostki pominięto).\n\nWyznacz zbiór wszystkich wartości parametru \\(m\\), dla których równanie \\(g(x)=|m|\\) ma dokładnie dwa rozwiązania dodatnie.",
     "strona_zadania": 6
   },
   {
     "numer": "3",
-    "polecenie": "Udowodnij, że dla wszystkich \\(x,y\\in\\mathbb R\\) takich, że \\(x+y\\ge 1\\), zachodzi\n\\[x^3+2xy+y^3\\ge x^2+xy(x+y)+y^2.\\]",
+    "polecenie": "Wykaż, że dla każdej liczby rzeczywistej \\(x\\) oraz dla każdej liczby rzeczywistej \\(y\\), spełniających warunek \\(x+y\\geq 1\\), prawdziwa jest nierówność\n\\[x^3+2xy+y^3\\geq x^2+xy(x+y)+y^2\\]",
     "strona_zadania": 7
   },
   {
     "numer": "4",
-    "polecenie": "Maszyna ma napełniać torebki \\(200\\) gramami herbaty. Prawdopodobieństwo, że w pojedynczej torebce jest mniej herbaty, wynosi \\(0{,}1\\). Spośród torebek napełnionych pewnego dnia do kontroli wybrano losowo \\(20\\). Oblicz prawdopodobieństwo, że wylosowano co najwyżej dwie torebki zawierające mniej niż \\(200\\) gramów herbaty. Zapisz obliczenia i podaj wynik z dokładnością do dwóch miejsc po przecinku.",
+    "polecenie": "Maszyna napełnia torebki herbatą. Każda torebka ma zostać napełniona \\(200\\ \\mathrm{g}\\) herbaty. Torebkę, która zawiera mniej niż \\(200\\ \\mathrm{g}\\) herbaty, nazywamy torebką z niedowagą. Prawdopodobieństwo tego, że pojedyncza torebka napełniona przez tę maszynę jest z niedowagą, jest równe \\(0{,}1\\). Kontroli poddano masę herbaty w torebkach napełnianych przez tę maszynę danego dnia. Do kontroli wybrano losowo \\(20\\) torebek.\n\nOblicz prawdopodobieństwo zdarzenia polegającego na tym, że wśród tych \\(20\\) losowo wybranych torebek znajdą się co najwyżej dwie torebki z niedowagą.\n\nZapisz obliczenia. Wynik zapisz w zaokrągleniu do drugiego miejsca po przecinku.",
     "strona_zadania": 8
   },
   {
     "numer": "5",
-    "polecenie": "Rozwiąż równanie\n\\[6\\sin x+2\\sqrt3\\cos x+3\\tan x+\\sqrt3=0.\\]\nZapisz obliczenia.",
+    "polecenie": "Rozwiąż równanie\n\\[6\\sin x+2\\sqrt{3}\\cos x+3\\operatorname{tg}x+\\sqrt{3}=0\\]\nZapisz obliczenia.",
     "strona_zadania": 9
   },
   {
     "numer": "6",
-    "polecenie": "Dwusieczne kątów trójkąta \\(ABC\\) przecinają boki \\(BC\\), \\(AC\\) i \\(AB\\) odpowiednio w punktach \\(K\\), \\(L\\) i \\(M\\). Wszystkie trzy dwusieczne przechodzą przez \\(P\\). Zarówno na czworokącie \\(CLPK\\), jak i na czworokącie \\(BKPM\\) można opisać okrąg. Udowodnij, że \\(ABC\\) jest trójkątem równobocznym.",
+    "polecenie": "W trójkącie \\(ABC\\) poprowadzono dwusieczne kątów przecinające boki \\(BC\\), \\(AC\\) i \\(AB\\) tego trójkąta w punktach – odpowiednio – \\(K\\), \\(L\\) oraz \\(M\\). Punkt \\(P\\) jest punktem przecięcia tych dwusiecznych. Na czworokątach \\(CLPK\\) oraz \\(BKPM\\) można opisać okrąg.\n\nUdowodnij, że trójkąt \\(ABC\\) jest równoboczny.",
     "strona_zadania": 10
   },
   {
     "numer": "7",
-    "polecenie": "Olejarnia wytwarza dziennie od \\(480\\) do \\(530\\) litrów oleju. Jeśli wytwarza \\(480+x\\) litrów na dzień, to przeciętny koszt produkcji litra w złotych wynosi\n\\[K(x)=\\frac{22x^2-621{,}5x+23\\,430}{480+x}\\qquad\\text{dla }x\\in[0,50].\\]\nOblicz, dla jakiej dziennej produkcji przeciętny koszt litra jest najmniejszy. Podaj ten koszt i zapisz obliczenia.",
+    "polecenie": "Olejarnia wytwarza olej ekologiczny. Aby produkcja była opłacalna, dzienna wielkość produkcji musi wynosić co najmniej \\(480\\) litrów i nie może przekroczyć \\(530\\) litrów (ze względu na ograniczone moce produkcyjne). Przy poziomie produkcji \\((480+x)\\) litrów dziennie przeciętny koszt \\(K\\) (w złotych) wytworzenia jednego litra oleju jest równy\n\\[K(x)=\\frac{22x^2-621{,}5x+23\\,430}{480+x},\\ \\text{gdzie }x\\in[0,50].\\]\n\nOblicz, ile litrów oleju dziennie powinna wytworzyć olejarnia, aby przeciętny koszt produkcji jednego litra oleju był najmniejszy (z zachowaniem opłacalności produkcji). Oblicz ten najmniejszy przeciętny koszt.\n\nZapisz obliczenia.",
     "strona_zadania": 12
   },
   {
     "numer": "8",
-    "polecenie": "Rozwiąż nierówność\n\\[\\frac{x-1}{x^2-4}-\\frac1{2-x}\\ge\\frac3{2+x}+2.\\]\nZapisz obliczenia.",
+    "polecenie": "Rozwiąż nierówność\n\\[\\frac{x-1}{x^2-4}-\\frac{1}{2-x}\\geq \\frac{3}{2+x}+2\\]\nZapisz obliczenia.",
     "strona_zadania": 14
   },
   {
     "numer": "9",
-    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[x^2-(m-4)x+m^2-7m+12=0\\]\nma dwa różne pierwiastki rzeczywiste \\(x_1,x_2\\) spełniające\n\\[x_1^3+x_2^3<5x_1^2x_2+5x_1x_2^2.\\]\nZapisz obliczenia.",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[x^2-(m-4)x+m^2-7m+12=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1\\) oraz \\(x_2\\), spełniające warunek\n\\[x_1^3+x_2^3<5x_1^2\\cdot x_2+5x_1\\cdot x_2^2\\]\n\nZapisz obliczenia.",
     "strona_zadania": 16
   },
   {
     "numer": "10",
-    "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) ma podstawę \\(ABCD\\) o krawędzi długości \\(a\\). Kąt nachylenia ściany bocznej do płaszczyzny podstawy ma miarę \\(\\alpha\\), przy czym \\(\\cos\\alpha=\\frac{\\sqrt{10}}{10}\\). Płaszczyzna \\(\\pi\\) przechodzi przez krawędź \\(BC\\) i jest prostopadła do ściany bocznej \\(SAD\\). Narysuj ostrosłup, zaznacz i nazwij przekrój płaszczyzną \\(\\pi\\), a następnie oblicz pole przekroju. Zapisz obliczenia.",
+    "polecenie": "Dany jest ostrosłup prawidłowy czworokątny \\(ABCDS\\) o podstawie \\(ABCD\\). Krawędź podstawy tego ostrosłupa ma długość \\(a\\). Ściana boczna jest nachylona do płaszczyzny podstawy pod kątem o mierze \\(\\alpha\\) takim, że \\(\\cos\\alpha=\\frac{\\sqrt{10}}{10}\\). Przez krawędź \\(BC\\) podstawy ostrosłupa poprowadzono płaszczyznę \\(\\pi\\) prostopadłą do ściany bocznej \\(SAD\\).\n\nSporządź rysunek tego ostrosłupa, zaznacz na rysunku przekrój wyznaczony przez płaszczyznę \\(\\pi\\) i nazwij figurę, która jest tym przekrojem. Oblicz pole otrzymanego przekroju.\n\nZapisz obliczenia.",
     "strona_zadania": 18
   },
   {
     "numer": "11",
-    "polecenie": "Trapez \\(ABCD\\), o podstawach \\(AB\\) i \\(CD\\) takich, że \\(|AB|>|CD|\\), jest wpisany w okrąg o promieniu \\(5\\). Ramię \\(BC\\) ma długość \\(6\\). Ponadto\n\\[\\frac{\\sin\\angle BAC}{\\sin\\angle ABC}=\\frac58.\\]\nOblicz pole i obwód trapezu. Zapisz obliczenia.",
+    "polecenie": "Dany jest trapez \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\), w którym \\(|AB|>|CD|\\) oraz ramię \\(BC\\) ma długość \\(6\\). Na tym trapezie opisano okrąg o promieniu \\(R=5\\). Miary kątów \\(BAC\\) i \\(ABC\\) tego trapezu spełniają warunek\n\\[\\frac{\\sin|\\measuredangle BAC|}{\\sin|\\measuredangle ABC|}=\\frac{5}{8}\\]\n\nOblicz pole i obwód trapezu \\(ABCD\\).\n\nZapisz obliczenia.",
     "strona_zadania": 20
   },
   {
     "numer": "12",
-    "polecenie": "Prosta \\(k\\colon x+y-9=0\\) przecina parabolę \\(y=\\frac14x^2-\\frac32x+\\frac14\\) w punktach \\(A\\) i \\(B\\). Punkt \\(A\\) ma pierwszą współrzędną dodatnią, a \\(B\\) ujemną. Prosta \\(l\\) równoległa do \\(k\\) jest styczna do paraboli w punkcie \\(C\\). Oblicz odległość \\(C\\) od prostej \\(k\\) i pole trójkąta \\(ABC\\). Zapisz obliczenia.",
+    "polecenie": "Prosta \\(k\\) o równaniu \\(x+y-9=0\\) przecina parabolę o równaniu \\(y=\\frac14 x^2-\\frac32 x+\\frac14\\) w punktach \\(A\\) oraz \\(B\\). Pierwsza współrzędna punktu \\(A\\) jest liczbą dodatnią; pierwsza współrzędna punktu \\(B\\) jest liczbą ujemną. Prosta \\(l\\) jest równoległa do prostej \\(k\\) i styczna do danej paraboli w punkcie \\(C\\).\n\nOblicz odległość punktu \\(C\\) od prostej \\(k\\) oraz pole trójkąta \\(ABC\\).\n\nZapisz obliczenia.",
     "strona_zadania": 22
   }
 ]

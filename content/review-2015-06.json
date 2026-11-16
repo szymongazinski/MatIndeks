@@ -1,66 +1,66 @@
 [
   {
     "numer": "1",
-    "polecenie": "Ciąg \\((a_n)\\) jest określony wzorem \\(a_{n+1}=a_n+n-6\\) dla każdej liczby naturalnej \\(n\\ge1\\). Wiadomo, że \\(a_3=-1\\). Ile wynosi \\(a_2\\)?\n\nA. \\(-3\\)\nB. \\(-2\\)\nC. \\(2\\)\nD. \\(3\\)"
+    "polecenie": "Ciąg \\((a_n)\\) jest określony wzorem \\(a_{n+1}=a_n+n-6\\) dla każdej liczby naturalnej \\(n\\ge 1\\). Trzeci wyraz tego ciągu jest równy \\(a_3=-1\\). Wyraz \\(a_2\\) jest równy\n\nA. \\(-3\\)\nB. \\(-2\\)\nC. \\(2\\)\nD. \\(3\\)"
   },
   {
     "numer": "2",
-    "polecenie": "Ile punktów wspólnych mają wykresy funkcji \\(y=-x+1\\) oraz \\(y=\\log_2 x\\)?\n\nA. \\(0\\)\nB. \\(1\\)\nC. \\(2\\)\nD. \\(3\\)"
+    "polecenie": "Liczba punktów wspólnych wykresów funkcji \\(y=-x+1\\) i \\(y=\\log_2 x\\) jest równa\n\nA. \\(0\\)\nB. \\(1\\)\nC. \\(2\\)\nD. \\(3\\)"
   },
   {
     "numer": "3",
-    "polecenie": "Która z funkcji określonych na \\(\\mathbb R\\) nie ma ani minimum lokalnego, ani maksimum lokalnego?\n\nA. \\(f(x)=4x^2+5x\\)\nB. \\(f(x)=3x^3+2x^2\\)\nC. \\(f(x)=\\tfrac13x^3+2x\\)\nD. \\(f(x)=(4x+1)^2\\)"
+    "polecenie": "Która z poniższych funkcji, określonych w zbiorze liczb rzeczywistych, nie ma minimum lokalnego ani maksimum lokalnego?\n\nA. \\(f(x)=4x^2+5x\\)\nB. \\(f(x)=3x^3+2x^2\\)\nC. \\(f(x)=\\dfrac13 x^3+2x\\)\nD. \\(f(x)=(4x+1)^2\\)"
   },
   {
     "numer": "4",
-    "polecenie": "Które wyrażenie jest równe \\(\\sin\\alpha+\\sin(180^\\circ-\\alpha)\\) dla dowolnego kąta \\(\\alpha\\)?\n\nA. \\(\\sin(2\\alpha)\\)\nB. \\(-\\sin\\alpha\\)\nC. \\(2\\sin\\alpha\\)\nD. \\(0\\)"
+    "polecenie": "Dla dowolnego kąta \\(\\alpha\\) wartość wyrażenia \\(\\sin\\alpha+\\sin(180^\\circ-\\alpha)\\) jest równa wartości wyrażenia\n\nA. \\(\\sin 2\\alpha\\)\nB. \\(-\\sin\\alpha\\)\nC. \\(2\\sin\\alpha\\)\nD. \\(0\\)"
   },
   {
     "numer": "5",
-    "polecenie": "Niech \\(K\\) oznacza zbiór wszystkich liczb rzeczywistych \\(x\\), dla których wyrażenie \\(\\sqrt{x(x^2-9)}\\) ma wartość rzeczywistą. Który zapis odpowiada \\(K\\)?\n\nA. \\([-3,0]\\cup[3,+\\infty)\\)\nB. \\((-\\infty,-3]\\cup[0,3]\\)\nC. \\((-3,0)\\cup(3,+\\infty)\\)\nD. \\((-\\infty,-3)\\cup(0,3)\\)"
+    "polecenie": "Zbiór \\(K\\) – to zbiór wszystkich liczb rzeczywistych \\(x\\), dla których wartość liczbowa wyrażenia \\(\\sqrt{x(x^2-9)}\\) jest liczbą rzeczywistą. Zatem\n\nA. \\(K=\\langle-3,0\\rangle\\cup\\langle3,+\\infty)\\)\nB. \\(K=(-\\infty,-3\\rangle\\cup\\langle0,3\\rangle\\)\nC. \\(K=(-3,0)\\cup(3,+\\infty)\\)\nD. \\(K=(-\\infty,-3)\\cup(0,3)\\)"
   },
   {
     "numer": "6",
-    "polecenie": "Wyznacz największą liczbę całkowitą spełniającą nierówność \\(|x|<|x-1025|\\). Zakoduj kolejno cyfry setek, dziesiątek i jedności wyniku."
+    "polecenie": "Wyznacz największą liczbę całkowitą spełniającą nierówność \\(|x|<|x-1025|\\). W poniższe kratki wpisz – kolejno – cyfrę setek, cyfrę dziesiątek i cyfrę jedności otrzymanego wyniku."
   },
   {
     "numer": "7",
-    "polecenie": "Prosta o równaniu \\(y=\\frac34x-\\frac{61}{14}\\) jest styczna do okręgu o środku \\(S=(1,-4)\\). Wyznacz promień tego okręgu."
+    "polecenie": "Prosta o równaniu \\(y=\\dfrac34x-\\dfrac{61}{14}\\) jest styczna od okręgu o środku \\(S=(1,-4)\\). Wyznacz promień tego okręgu."
   },
   {
     "numer": "8",
-    "polecenie": "Niech \\(a=\\log_{12}2\\). Wykaż, że\n\\[\\log_6 64=\\frac{6a}{1-a}.\\]"
+    "polecenie": "Niech \\(a=\\log_{12}2\\). Wykaż, że \\(\\log_6 64=\\dfrac{6a}{1-a}\\)."
   },
   {
     "numer": "9",
-    "polecenie": "W trójkącie \\(ABC\\) kąt wewnętrzny przy \\(A\\) ma \\(50^\\circ\\), a przy \\(C\\) ma \\(60^\\circ\\). Okrąg \\(o_1\\) przechodzi przez \\(A\\) i przecina boki \\(AB\\) i \\(AC\\) odpowiednio w \\(D\\) i \\(E\\). Okrąg \\(o_2\\) przechodzi przez \\(B\\) i przecina \\(o_1\\) w \\(D\\) oraz w punkcie \\(F\\) wewnątrz trójkąta. Okrąg \\(o_2\\) przecina też bok \\(BC\\) w \\(G\\).\n\n[[rysunek:2015-06-9|Trójkąt ABC i dwa okręgi. Zaznaczono punkty D, E, F i G oraz kąty 50° i 60°.]]\n\nUdowodnij, że na czworokącie \\(CEFG\\) można opisać okrąg."
+    "polecenie": "W trójkącie \\(ABC\\) kąt wewnętrzny przy wierzchołku \\(A\\) ma miarę \\(50^\\circ\\), a kąt wewnętrzny przy wierzchołku \\(C\\) ma miarę \\(60^\\circ\\). Okrąg \\(o_1\\) przechodzi przez punkt \\(A\\) i przecina boki \\(AB\\) i \\(AC\\) trójkąta odpowiednio w punktach \\(D\\) i \\(E\\). Okrąg \\(o_2\\) przechodzi przez punkt \\(B\\), przecina okrąg \\(o_1\\) w punkcie \\(D\\) oraz w punkcie \\(F\\) leżącym wewnątrz trójkąta \\(ABC\\). Ponadto okrąg \\(o_2\\) przecina bok \\(BC\\) trójkąta w punkcie \\(G\\).\n\nUdowodnij, że na czworokącie \\(CEFG\\) można opisać okrąg."
   },
   {
     "numer": "10",
-    "polecenie": "Rozwiąż równanie\n\\[(4\\sin^2x-1)\\sin x=\\cos^2x-3\\sin^2x\\]\ndla \\(x\\in(-\\pi,0)\\)."
+    "polecenie": "Rozwiąż równanie \\((4\\sin^2 x-1)\\cdot\\sin x=\\cos^2 x-3\\sin^2 x\\), dla \\(x\\in(-\\pi,0)\\)."
   },
   {
     "numer": "11",
-    "polecenie": "W trójkąt prostokątny o przyprostokątnych długości \\(15\\) i \\(20\\) wpisano okrąg. Oblicz długość odcinka od wierzchołka kąta prostego do punktu styczności okręgu z przeciwprostokątną."
+    "polecenie": "W trójkąt prostokątny o przyprostokątnych długości \\(15\\) i \\(20\\) wpisano okrąg. Oblicz długość odcinka łączącego wierzchołek kąta prostego tego trójkąta z punktem wspólnym okręgu i przeciwprostokątnej."
   },
   {
     "numer": "12",
-    "polecenie": "W trójkącie \\(ABC\\) zachodzi \\(|BC|=a\\). Środkowa z \\(B\\) przecina bok \\(AC\\) w \\(D\\). Niech \\(S\\) będzie środkiem \\(BD\\), a \\(P\\) punktem przecięcia prostej \\(AS\\) z bokiem \\(BC\\). Wykaż, że \\(|CP|=\\tfrac23a\\)."
+    "polecenie": "Dany jest trójkąt \\(ABC\\), w którym \\(|BC|=a\\). Z wierzchołka \\(B\\) poprowadzono środkową \\(BD\\) do boku \\(AC\\). Punkt \\(S\\) jest środkiem odcinka \\(BD\\). Przez punkty \\(A\\) i \\(S\\) poprowadzono prostą, która przecięła bok \\(BC\\) w punkcie \\(P\\). Wykaż, że długość odcinka \\(CP\\) jest równa \\(\\dfrac23a\\)."
   },
   {
     "numer": "13",
-    "polecenie": "Ile jest parzystych pięciocyfrowych liczb naturalnych, których zapis dziesiętny zawiera co najwyżej dwie cyfry \\(2\\)?"
+    "polecenie": "Oblicz, ile jest wszystkich liczb naturalnych pięciocyfrowych parzystych, w których zapisie występują co najwyżej dwie dwójki."
   },
   {
     "numer": "14",
-    "polecenie": "Podstawą ostrosłupa \\(ABCDS\\) jest trapez \\(ABCD\\) o dłuższej podstawie \\(AB\\). Przekątna \\(AC\\) ma długość \\(8\\sqrt3\\), jest prostopadła do ramienia \\(BC\\) i tworzy z \\(AB\\) kąt \\(30^\\circ\\). Wszystkie krawędzie boczne mają długość \\(4\\sqrt5\\). Oblicz odległość spodka wysokości od krawędzi bocznej \\(SD\\)."
+    "polecenie": "Podstawą ostrosłupa \\(ABCDS\\) jest trapez \\(ABCD\\). Przekątna \\(AC\\) tego trapezu ma długość \\(8\\sqrt{3}\\), jest prostopadła do ramienia \\(BC\\) i tworzy z dłuższą podstawą \\(AB\\) tego trapezu kąt o mierze \\(30^\\circ\\). Każda krawędź boczna tego ostrosłupa ma tę samą długość \\(4\\sqrt{5}\\). Oblicz odległość spodka wysokości tego ostrosłupa od jego krawędzi bocznej \\(SD\\)."
   },
   {
     "numer": "15",
-    "polecenie": "Dla każdego \\(x\\in\\mathbb R\\) dana jest funkcja\n\\[f(x)=\\frac{m^2+m-6}{m-5}x^2-(m-2)x+m-5.\\]\nWyznacz całkowite wartości parametru \\(m\\), dla których funkcja przyjmuje wartość największą i ma dwa różne miejsca zerowe o jednakowych znakach."
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{m^2+m-6}{m-5}x^2-(m-2)x+m-5\\) dla każdej liczby rzeczywistej \\(x\\). Wyznacz całkowite wartości parametru \\(m\\), dla których funkcja \\(f\\) przyjmuje wartość największą i ma dwa różne miejsca zerowe o jednakowych znakach."
   },
   {
     "numer": "16",
-    "polecenie": "Rozpatrujemy wszystkie stożki, w których suma długości tworzącej i promienia podstawy jest równa \\(2\\). Wyznacz wysokość stożka o największej objętości oraz oblicz tę objętość."
+    "polecenie": "Rozpatrujemy wszystkie stożki, w których suma długości tworzącej i promienia podstawy jest równa \\(2\\). Wyznacz wysokość tego spośród rozpatrywanych stożków, którego objętość jest największa. Oblicz tę objętość."
   }
 ]

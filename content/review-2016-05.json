@@ -1,66 +1,66 @@
 [
   {
     "numer": "1",
-    "polecenie": "Wskaż współczynnik przy \\(xy^2\\) w rozwinięciu \\(\\bigl(2\\sqrt3\\,x+4y\\bigr)^3\\).\n\nA. \\(32\\sqrt3\\)\nB. \\(48\\)\nC. \\(96\\sqrt3\\)\nD. \\(144\\)"
+    "polecenie": "W rozwinięciu wyrażenia \\((2\\sqrt3x+4y)^3\\) współczynnik przy iloczynie \\(xy^2\\) jest równy\n\nA. \\(32\\sqrt3\\)\nB. \\(48\\)\nC. \\(96\\sqrt3\\)\nD. \\(144\\)"
   },
   {
     "numer": "2",
-    "polecenie": "Dla której wartości \\(p\\) wielomian \\(W(x)=6x^3+3x^2-5x+p\\) jest podzielny przez \\(x-1\\)?\n\nA. \\(4\\)\nB. \\(-2\\)\nC. \\(2\\)\nD. \\(-4\\)"
+    "polecenie": "Wielomian \\(W(x)=6x^3+3x^2-5x+p\\) jest podzielny przez dwumian \\(x-1\\) dla \\(p\\) równego\n\nA. \\(4\\)\nB. \\(-2\\)\nC. \\(2\\)\nD. \\(-4\\)"
   },
   {
     "numer": "3",
-    "polecenie": "Na rysunku pokazano fragment wykresu funkcji homograficznej \\(y=f(x)\\) o dziedzinie \\(D=(-\\infty,3)\\cup(3,+\\infty)\\).\n\n[[rysunek:2016-05-3|Fragment wykresu funkcji homograficznej z asymptotami x = 3 i y = 2.]]\n\nDla których wartości \\(p\\) równanie \\(|f(x)|=p\\) ma dokładnie jedno rozwiązanie?\n\nA. \\(p=0\\) lub \\(p=3\\)\nB. \\(p=0\\) lub \\(p=2\\)\nC. Tylko \\(p=3\\)\nD. Tylko \\(p=2\\)"
+    "polecenie": "Na rysunku przedstawiono fragment wykresu funkcji homograficznej \\(y=f(x)\\), której dziedziną jest zbiór \\(D=(-\\infty,3)\\cup(3,+\\infty)\\).\n\nRównanie \\(|f(x)|=p\\) z niewiadomą \\(x\\) ma dokładnie jedno rozwiązanie\n\nA. w dwóch przypadkach: \\(p=0\\) lub \\(p=3\\).\nB. w dwóch przypadkach: \\(p=0\\) lub \\(p=2\\).\nC. tylko wtedy, gdy \\(p=3\\).\nD. tylko wtedy, gdy \\(p=2\\)."
   },
   {
     "numer": "4",
-    "polecenie": "Dana jest funkcja \\(f(x)=\\frac{3x-1}{x^2+4}\\) dla \\(x\\in\\mathbb R\\). Wskaż wzór jej pochodnej.\n\nA. \\(\\frac{-3x^2+2x+12}{(x^2+4)^2}\\)\nB. \\(\\frac{-9x^2+2x-12}{(x^2+4)^2}\\)\nC. \\(\\frac{3x^2-2x-12}{(x^2+4)^2}\\)\nD. \\(\\frac{9x^2-2x+12}{(x^2+4)^2}\\)"
+    "polecenie": "Funkcja \\(f(x)=\\dfrac{3x-1}{x^2+4}\\) jest określona dla każdej liczby rzeczywistej \\(x\\). Pochodna tej funkcji jest określona wzorem\n\nA. \\(f'(x)=\\dfrac{-3x^2+2x+12}{(x^2+4)^2}\\)\nB. \\(f'(x)=\\dfrac{-9x^2+2x-12}{(x^2+4)^2}\\)\nC. \\(f'(x)=\\dfrac{3x^2-2x-12}{(x^2+4)^2}\\)\nD. \\(f'(x)=\\dfrac{9x^2-2x+12}{(x^2+4)^2}\\)"
   },
   {
     "numer": "5",
-    "polecenie": "Wiadomo, że \\(\\lim_{n\\to\\infty}\\frac{(pn^2+4n)^3}{5n^6-4}=-\\frac85\\). Wskaż wartość \\(p\\).\n\nA. \\(-8\\)\nB. \\(4\\)\nC. \\(2\\)\nD. \\(-2\\)"
+    "polecenie": "Granica \\(\\displaystyle\\lim_{n\\to\\infty}\\frac{(pn^2+4n)^3}{5n^6-4}=-\\frac85\\). Wynika stąd, że\n\nA. \\(p=-8\\)\nB. \\(p=4\\)\nC. \\(p=2\\)\nD. \\(p=-2\\)"
   },
   {
     "numer": "6",
-    "polecenie": "Wśród \\(10\\,000\\) mieszkańców pewnego miasta przeprowadzono sondaż dotyczący budowy publicznego przedszkola. Uzyskano następujące wyniki.\n\\[\\begin{array}{l|r|r}\n\\text{Badana grupa}&\\text{Popiera budowę}&\\text{Nie popiera budowy}\\\\ \\hline\n\\text{Kobiety}&5140&1860\\\\\n\\text{Mężczyźni}&2260&740\n\\end{array}\\]\nOblicz prawdopodobieństwo, że wybrana losowo osoba spośród ankietowanych popiera budowę przedszkola, jeżeli wiadomo, że jest mężczyzną. Zakoduj trzy pierwsze cyfry po przecinku w nieskończonym rozwinięciu dziesiętnym wyniku."
+    "polecenie": "Wśród \\(10\\) tysięcy mieszkańców pewnego miasta przeprowadzono sondaż dotyczący budowy przedszkola publicznego. Wyniki sondażu przedstawiono w tabeli.\n\\[\\begin{array}{|l|c|c|}\n\\hline\n\\text{Badane grupy}&\\begin{gathered}\\text{Liczba osób popierających}\\\\\\text{budowę przedszkola}\\end{gathered}&\\begin{gathered}\\text{Liczba osób niepopierających}\\\\\\text{budowy przedszkola}\\end{gathered}\\\\ \\hline\n\\text{Kobiety}&5140&1860\\\\ \\hline\n\\text{Mężczyźni}&2260&740\\\\ \\hline\n\\end{array}\\]\nOblicz prawdopodobieństwo zdarzenia polegającego na tym, że losowo wybrana osoba, spośród ankietowanych, popiera budowę przedszkola, jeśli wiadomo, że jest mężczyzną. Zakoduj trzy pierwsze cyfry po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku."
   },
   {
     "numer": "7",
-    "polecenie": "Dany jest ciąg geometryczny \\(a_n=\\left(\\frac1{2x-371}\\right)^n\\) dla \\(n\\ge1\\). Wszystkie jego wyrazy są dodatnie. Wyznacz najmniejszą liczbę całkowitą \\(x\\), dla której szereg \\(a_1+a_2+a_3+\\cdots\\) jest zbieżny."
+    "polecenie": "Dany jest ciąg geometryczny \\((a_n)\\) określony wzorem \\(a_n=\\left(\\dfrac{1}{2x-371}\\right)^n\\) dla \\(n\\ge 1\\). Wszystkie wyrazy tego ciągu są dodatnie. Wyznacz najmniejszą liczbę całkowitą \\(x\\), dla której nieskończony szereg \\(a_1+a_2+a_3+\\ldots\\) jest zbieżny."
   },
   {
     "numer": "8",
-    "polecenie": "Wykaż, że dla dowolnych dodatnich liczb rzeczywistych \\(x,y\\) spełniających \\(x^2+y^2=2\\) zachodzi \\(x+y\\le2\\)."
+    "polecenie": "Wykaż, że dla dowolnych dodatnich liczb rzeczywistych \\(x\\) i \\(y\\) takich, że \\(x^2+y^2=2\\), prawdziwa jest nierówność \\(x+y\\le 2\\)."
   },
   {
     "numer": "9",
-    "polecenie": "Dany jest prostokąt \\(ABCD\\). Okrąg wpisany w \\(BCD\\) jest styczny do przekątnej \\(BD\\) w \\(N\\). Okrąg wpisany w \\(ABD\\) dotyka \\(AD\\) w \\(M\\), a jego środek \\(S\\) leży na \\(MN\\), jak na rysunku. Wykaż, że \\(|MN|=|AD|\\)."
+    "polecenie": "Dany jest prostokąt \\(ABCD\\). Okrąg wpisany w trójkąt \\(BCD\\) jest styczny do przekątnej \\(BD\\) w punkcie \\(N\\). Okrąg wpisany w trójkąt \\(ABD\\) jest styczny do boku \\(AD\\) w punkcie \\(M\\), a środek \\(S\\) tego okręgu leży na odcinku \\(MN\\), jak na rysunku.\n\nWykaż, że \\(|MN|=|AD|\\)."
   },
   {
     "numer": "10",
-    "polecenie": "Wyznacz wartości \\(a\\), dla których wykresy \\(f(x)=x-2\\) i \\(g(x)=5-ax\\) przecinają się w punkcie o obu dodatnich współrzędnych."
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(a\\), dla których wykresy funkcji \\(f\\) i \\(g\\), określonych wzorami \\(f(x)=x-2\\) oraz \\(g(x)=5-ax\\), przecinają się w punkcie o obu współrzędnych dodatnich."
   },
   {
     "numer": "11",
-    "polecenie": "Rozwiąż w przedziale \\([0,2\\pi]\\) nierówność \\[\\frac{2\\cos x-\\sqrt3}{\\cos^2x}<0.\\]"
+    "polecenie": "Rozwiąż nierówność \\(\\dfrac{2\\cos x-\\sqrt3}{\\cos^2 x}<0\\) w przedziale \\(\\langle 0,2\\pi\\rangle\\)."
   },
   {
     "numer": "12",
-    "polecenie": "Dany jest trójmian \\(f(x)=x^2+2(m+1)x+6m+1\\). Wyznacz wartości rzeczywiste \\(m\\), dla których ma dwa różne pierwiastki \\(x_1,x_2\\) tego samego znaku oraz \\(|x_1-x_2|<3\\)."
+    "polecenie": "Dany jest trójmian kwadratowy \\(f(x)=x^2+2(m+1)x+6m+1\\). Wyznacz wszystkie rzeczywiste wartości parametru \\(m\\), dla których ten trójmian ma dwa różne pierwiastki \\(x_1,x_2\\) tego samego znaku, spełniające warunek \\(|x_1-x_2|<3\\)."
   },
   {
     "numer": "13",
-    "polecenie": "Punkty \\(A=(30,32)\\) i \\(B=(0,8)\\) są sąsiednimi wierzchołkami czworokąta \\(ABCD\\) wpisanego w okrąg. Prosta \\(x-y+2=0\\) jest jego jedyną osią symetrii i zawiera przekątną \\(AC\\). Oblicz współrzędne \\(C,D\\)."
+    "polecenie": "Punkty \\(A=(30,32)\\) i \\(B=(0,8)\\) są sąsiednimi wierzchołkami czworokąta \\(ABCD\\) wpisanego w okrąg. Prosta o równaniu \\(x-y+2=0\\) jest jedyną osią symetrii tego czworokąta i zawiera przekątną \\(AC\\). Oblicz współrzędne wierzchołków \\(C\\) i \\(D\\) tego czworokąta."
   },
   {
     "numer": "14",
-    "polecenie": "Rozważamy dziesięciocyfrowe liczby naturalne, w których mogą wystąpić wyłącznie cyfry \\(1,2,3\\), a cyfra \\(1\\) występuje dokładnie trzy razy. Uzasadnij, że jest \\(15\\,360\\) takich liczb."
+    "polecenie": "Rozpatrujemy wszystkie liczby naturalne dziesięciocyfrowe, w zapisie których mogą występować wyłącznie cyfry \\(1\\), \\(2\\), \\(3\\), przy czym cyfra \\(1\\) występuje dokładnie trzy razy. Uzasadnij, że takich liczb jest \\(15\\ 360\\)."
   },
   {
     "numer": "15",
-    "polecenie": "Ostrosłup prawidłowy czworokątny \\(ABCDS\\) o podstawie \\(ABCD\\) ma wysokość \\(5\\). Kąt między sąsiednimi ścianami bocznymi ma miarę \\(120^\\circ\\). Oblicz objętość ostrosłupa."
+    "polecenie": "W ostrosłupie prawidłowym czworokątnym \\(ABCDS\\) o podstawie \\(ABCD\\) wysokość jest równa \\(5\\), a kąt między sąsiednimi ścianami bocznymi ostrosłupa ma miarę \\(120^\\circ\\). Oblicz objętość tego ostrosłupa."
   },
   {
     "numer": "16",
-    "polecenie": "Parabola \\(y=2-\\frac12x^2\\) przecina oś \\(Ox\\) w \\(A=(-2,0)\\) i \\(B=(2,0)\\). Rozważamy trapezy równoramienne \\(ABCD\\) o dłuższej podstawie \\(AB\\), których końce \\(C,D\\) krótszej podstawy leżą na paraboli (zobacz rysunek).\n\nWyznacz pole \\(ABCD\\) w zależności od pierwszej współrzędnej \\(C\\). Oblicz współrzędne \\(C\\) dla trapezu o największym polu."
+    "polecenie": "Parabola o równaniu \\(y=2-\\dfrac12x^2\\) przecina oś \\(Ox\\) układu współrzędnych w punktach \\(A=(-2,0)\\) i \\(B=(2,0)\\). Rozpatrujemy wszystkie trapezy równoramienne \\(ABCD\\), których dłuższą podstawą jest odcinek \\(AB\\), a końce \\(C\\) i \\(D\\) krótszej podstawy leżą na paraboli (zobacz rysunek).\n\nWyznacz pole trapezu \\(ABCD\\) w zależności od pierwszej współrzędnej wierzchołka \\(C\\). Oblicz współrzędne wierzchołka \\(C\\) tego z rozpatrywanych trapezów, którego pole jest największe."
   }
 ]

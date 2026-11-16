@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Ile wynosi \\(\\log_3\\sqrt{27}-\\log_{27}\\sqrt3\\)? Wybierz jedną odpowiedź.\n\nA. \\(\\frac43\\)\nB. \\(\\frac12\\)\nC. \\(\\frac{11}{12}\\)\nD. \\(3\\)",
+    "polecenie": "Liczba \\(\\log_3\\sqrt{27}-\\log_{27}\\sqrt{3}\\) jest równa\n\nA. \\(\\frac{4}{3}\\)\n\nB. \\(\\frac{1}{2}\\)\n\nC. \\(\\frac{11}{12}\\)\n\nD. \\(3\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Dla \\(x\\ne2\\) funkcja \\(f\\) jest określona wzorem \\(f(x)=\\frac{x^3-8}{x-2}\\). Ile wynosi \\(f'(1/2)\\)? Wybierz jedną odpowiedź.\n\nA. \\(\\frac34\\)\nB. \\(\\frac94\\)\nC. \\(3\\)\nD. \\(\\frac{54}{8}\\)",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\frac{x^3-8}{x-2}\\) dla każdej liczby rzeczywistej \\(x\\ne 2\\). Wartość pochodnej tej funkcji dla argumentu \\(x=\\frac12\\) jest równa\n\nA. \\(\\frac{3}{4}\\)\n\nB. \\(\\frac{9}{4}\\)\n\nC. \\(3\\)\n\nD. \\(\\frac{54}{8}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Załóżmy, że \\(\\cos\\beta=-\\frac13\\) oraz \\(\\beta\\in(\\pi,3\\pi/2)\\). Wybierz wartość wyrażenia \\(\\sin(\\beta-\\pi/3)\\).\n\nA. \\(\\frac{-2\\sqrt2+\\sqrt3}{6}\\)\nB. \\(\\frac{2\\sqrt6+1}{6}\\)\nC. \\(\\frac{2\\sqrt2+\\sqrt3}{6}\\)\nD. \\(\\frac{1-2\\sqrt6}{6}\\)",
+    "polecenie": "Jeżeli \\(\\cos\\beta=-\\frac13\\) i \\(\\beta\\in\\left(\\pi,\\frac32\\pi\\right)\\), to wartość wyrażenia \\(\\sin\\left(\\beta-\\frac13\\pi\\right)\\) jest równa\n\nA. \\(\\frac{-2\\sqrt{2}+\\sqrt{3}}{6}\\)\n\nB. \\(\\frac{2\\sqrt{6}+1}{6}\\)\n\nC. \\(\\frac{2\\sqrt{2}+\\sqrt{3}}{6}\\)\n\nD. \\(\\frac{1-2\\sqrt{6}}{6}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "W pierwszej urnie jest jedna kula biała i sześć czarnych, a w drugiej cztery białe i trzy czarne. Rzucamy raz symetryczną monetą. Po reszce losujemy kulę z pierwszej urny, po orle z drugiej.\n\nJakie jest prawdopodobieństwo wylosowania białej kuli? Wybierz jedną odpowiedź.\n\nA. \\(\\frac5{14}\\)\nB. \\(\\frac9{14}\\)\nC. \\(\\frac57\\)\nD. \\(\\frac67\\)",
+    "polecenie": "Dane są dwie urny z kulami. W każdej z urn jest siedem kul. W pierwszej urnie są jedna kula biała i sześć kul czarnych, w drugiej urnie są cztery kule białe i trzy kule czarne. Rzucamy jeden raz symetryczną monetą. Jeżeli wypadnie reszka, to losujemy jedną kulę z pierwszej urny, w przeciwnym przypadku – jedną kulę z drugiej urny. Prawdopodobieństwo zdarzenia polegającego na tym, że wylosujemy kulę białą w tym doświadczeniu, jest równe\n\nA. \\(\\frac{5}{14}\\)\n\nB. \\(\\frac{9}{14}\\)\n\nC. \\(\\frac{5}{7}\\)\n\nD. \\(\\frac{6}{7}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Niech \\(p>0\\) będzie liczbą rzeczywistą. Dla każdej liczby naturalnej \\(n\\ge1\\) dany jest ciąg\n\\[a_n=\\frac{(7p-1)n^3+5pn-3}{(p+1)n^3+n^2+p}.\\]\nOblicz \\(p\\), dla którego granica ciągu jest równa \\(\\frac43\\). Podaj kolejno pierwszą, drugą i trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "polecenie": "Ciąg \\((a_n)\\) jest określony dla każdej liczby naturalnej \\(n\\geq 1\\) wzorem \\(a_n=\\frac{(7p-1)n^3+5pn-3}{(p+1)n^3+n^2+p}\\), gdzie \\(p\\) jest liczbą rzeczywistą dodatnią.\n\nOblicz wartość \\(p\\), dla której granica ciągu \\((a_n)\\) jest równa \\(\\frac43\\).\n\nW poniższe kratki wpisz kolejno – od lewej do prawej – pierwszą, drugą oraz trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Wykaż, że dla dowolnych liczb rzeczywistych \\(x,y\\) spełniających \\(2x>y\\) zachodzi\n\\[7x^3+4x^2y\\ge y^3+2xy^2-x^3.\\]",
+    "polecenie": "Wykaż, że dla każdej liczby rzeczywistej \\(x\\) i dla każdej liczby rzeczywistej \\(y\\) takich, że \\(2x>y\\), spełniona jest nierówność\n\\[7x^3+4x^2y\\geq y^3+2xy^2-x^3\\]",
     "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "Rozwiąż równanie \\(|x-3|=2x+11\\).",
+    "polecenie": "Rozwiąż równanie:\n\\[|x-3|=2x+11\\]",
     "strona_zadania": 6
   },
   {
     "numer": "8",
-    "polecenie": "Punkt \\(P\\) jest przecięciem przekątnych trapezu \\(ABCD\\). Podstawa \\(CD\\) jest o \\(2\\) krótsza od \\(AB\\). Promień okręgu opisanego na ostrokątnym trójkącie \\(CPD\\) jest o \\(3\\) mniejszy od promienia okręgu opisanego na \\(APB\\).\n\nWykaż, że\n\\[|DP|^2+|CP|^2-|CD|^2=\\frac{4\\sqrt2}{3}|DP||CP|.\\]",
+    "polecenie": "Punkt \\(P\\) jest punktem przecięcia przekątnych trapezu \\(ABCD\\). Długość podstawy \\(CD\\) jest o \\(2\\) mniejsza od długości podstawy \\(AB\\). Promień okręgu opisanego na trójkącie ostrokątnym \\(CPD\\) jest o \\(3\\) mniejszy od promienia okręgu opisanego na trójkącie \\(APB\\).\n\nWykaż, że spełniony jest warunek \\(|DP|^2+|CP|^2-|CD|^2=\\frac{4\\sqrt{2}}{3}\\cdot|DP|\\cdot|CP|\\).",
     "strona_zadania": 8
   },
   {
     "numer": "9",
-    "polecenie": "Reszta z dzielenia wielomianu \\(W(x)=4x^3-6x^2-(5m+1)x-2m\\) przez \\(x+2\\) wynosi \\(-30\\).\n\nWyznacz \\(m\\) i dla tej wartości rozwiąż nierówność \\(W(x)\\ge0\\).",
+    "polecenie": "Reszta z dzielenia wielomianu \\(W(x)=4x^3-6x^2-(5m+1)x-2m\\) przez dwumian \\(x+2\\) jest równa \\((-30)\\).\n\nOblicz \\(m\\) i dla wyznaczonej wartości \\(m\\) rozwiąż nierówność \\(W(x)\\geq 0\\).",
     "strona_zadania": 10
   },
   {
     "numer": "10",
-    "polecenie": "Ciąg geometryczny \\((a_n)_{n\\ge1}\\) ma same dodatnie wyrazy. Zachodzą \\(a_1=675\\) i \\(a_{22}=\\frac54a_{23}+\\frac15a_{21}\\). Ciąg \\((b_n)_{n\\ge1}\\) jest arytmetyczny. Suma wszystkich wyrazów \\((a_n)\\) jest równa sumie początkowych dwudziestu pięciu wyrazów \\((b_n)\\). Ponadto \\(a_3=b_4\\).\n\nOblicz \\(b_1\\).",
+    "polecenie": "Ciąg \\((a_n)\\), określony dla każdej liczby naturalnej \\(n\\geq 1\\), jest geometryczny i ma wszystkie wyrazy dodatnie. Ponadto \\(a_1=675\\) i \\(a_{22}=\\frac54a_{23}+\\frac15a_{21}\\). Ciąg \\((b_n)\\), określony dla każdej liczby naturalnej \\(n\\geq 1\\), jest arytmetyczny. Suma wszystkich wyrazów ciągu \\((a_n)\\) jest równa sumie dwudziestu pięciu początkowych kolejnych wyrazów ciągu \\((b_n)\\). Ponadto \\(a_3=b_4\\). Oblicz \\(b_1\\).",
     "strona_zadania": 12
   },
   {
     "numer": "11",
-    "polecenie": "Rozwiąż równanie \\(\\sin x+\\sin(2x)+\\sin(3x)=0\\) w przedziale \\([0,\\pi]\\).",
+    "polecenie": "Rozwiąż równanie \\(\\sin x+\\sin 2x+\\sin 3x=0\\) w przedziale \\(\\langle 0,\\pi\\rangle\\).",
     "strona_zadania": 14
   },
   {
     "numer": "12",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie \\(x^2-(m+1)x+m=0\\) ma dwa różne niezerowe rozwiązania rzeczywiste \\(x_1,x_2\\) spełniające\n\\[\\frac1{x_1}+\\frac1{x_2}+2=\\frac1{x_1^2}+\\frac1{x_2^2}.\\]",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[x^2-(m+1)x+m=0\\]\nma dwa różne rozwiązania rzeczywiste \\(x_1\\) oraz \\(x_2\\), spełniające warunki:\n\\[x_1\\ne 0,\\quad x_2\\ne 0\\quad\\text{oraz}\\quad\\frac1{x_1}+\\frac1{x_2}+2=\\frac1{x_1^2}+\\frac1{x_2^2}\\]",
     "strona_zadania": 16
   },
   {
     "numer": "13",
-    "polecenie": "Graniastosłup prosty \\(ABCDEFGH\\) ma prostokątną podstawę \\(ABCD\\). Przekątne \\(AH,AF\\) ścian bocznych tworzą kąt ostry \\(\\alpha\\) o sinusie \\(12/13\\). Pole trójkąta \\(AFH\\) wynosi \\(26{,}4\\).\n\nOblicz wysokość \\(h\\) tego graniastosłupa.",
+    "polecenie": "Dany jest graniastosłup prosty \\(ABCDEFGH\\) o podstawie prostokątnej \\(ABCD\\). Przekątne \\(AH\\) i \\(AF\\) ścian bocznych tworzą kąt ostry o mierze \\(\\alpha\\) takiej, że \\(\\sin\\alpha=\\frac{12}{13}\\) (zobacz rysunek). Pole trójkąta \\(AFH\\) jest równe \\(26{,}4\\).\n\nOblicz wysokość \\(h\\) tego graniastosłupa.",
     "strona_zadania": 18
   },
   {
     "numer": "14",
-    "polecenie": "Punkt \\(A=(-3,2)\\) jest wierzchołkiem trójkąta \\(ABC\\) o równych ramionach \\(AC,BC\\) i polu \\(15\\). Bok \\(BC\\) leży na prostej \\(y=x-1\\).\n\nOblicz współrzędne \\(B\\) oraz \\(C\\).",
+    "polecenie": "Punkt \\(A=(-3,2)\\) jest wierzchołkiem trójkąta równoramiennego \\(ABC\\), w którym \\(|AC|=|BC|\\). Pole tego trójkąta jest równe \\(15\\). Bok \\(BC\\) zawarty jest w prostej o równaniu \\(y=x-1\\).\n\nOblicz współrzędne wierzchołków \\(B\\) i \\(C\\) tego trójkąta.",
     "strona_zadania": 20
   },
   {
     "numer": "15",
-    "polecenie": "Rozważ wszystkie trójkąty równoramienne o obwodzie \\(18\\).\n\na) Wykaż, że pole trójkąta o ramieniu długości \\(b\\) jest określone wzorem \\(P(b)=\\frac{(18-2b)\\sqrt{18b-81}}{2}\\).\nb) Wyznacz dziedzinę funkcji \\(P\\).\nc) Oblicz długości boków trójkąta o największym polu.",
+    "polecenie": "Rozpatrujemy wszystkie trójkąty równoramienne o obwodzie równym \\(18\\).\n\na) Wykaż, że pole \\(P\\) każdego z tych trójkątów, jako funkcja długości \\(b\\) ramienia, wyraża się wzorem \\(P(b)=\\frac{(18-2b)\\cdot\\sqrt{18b-81}}{2}\\).\n\nb) Wyznacz dziedzinę funkcji \\(P\\).\n\nc) Oblicz długości boków tego z rozpatrywanych trójkątów, który ma największe pole.",
     "strona_zadania": 22
   }
 ]

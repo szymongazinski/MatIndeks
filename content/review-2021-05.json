@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Oblicz \\(\\cos^2(165^\\circ)-\\sin^2(165^\\circ)\\). Wybierz poprawną odpowiedź.\n\nA. \\(-1\\)\nB. \\(-\\frac{\\sqrt3}{2}\\)\nC. \\(-\\frac12\\)\nD. \\(\\frac{\\sqrt3}{2}\\)",
+    "polecenie": "Różnica \\(\\cos^2 165^\\circ-\\sin^2 165^\\circ\\) jest równa\n\nA. \\(-1\\)\n\nB. \\(-\\frac{\\sqrt3}{2}\\)\n\nC. \\(-\\frac12\\)\n\nD. \\(\\frac{\\sqrt3}{2}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Na rysunku przedstawiono fragment wykresu funkcji \\(f\\) określonej na \\(\\mathbb R\\). Wybierz wzór funkcji \\(f\\).\n\nA. \\(f(x)=\\frac{\\cos x+1}{|\\cos x|+1}\\)\nB. \\(f(x)=\\frac{\\sin x+1}{|\\sin x|+1}\\)\nC. \\(f(x)=\\frac{|\\cos x|-2}{\\cos x-2}\\)\nD. \\(f(x)=\\frac{|\\sin x|-2}{\\sin x-2}\\)",
+    "polecenie": "Na rysunku przedstawiono fragment wykresu funkcji \\(f\\) określonej dla każdej liczby rzeczywistej \\(x\\).\n\nJeden spośród podanych poniżej wzorów jest wzorem tej funkcji. Wskaż wzór funkcji \\(f\\).\n\nA. \\(f(x)=\\frac{\\cos x+1}{|\\cos x|+1}\\)\n\nB. \\(f(x)=\\frac{\\sin x+1}{|\\sin x|+1}\\)\n\nC. \\(f(x)=\\frac{|\\cos x|-2}{\\cos x-2}\\)\n\nD. \\(f(x)=\\frac{|\\sin x|-2}{\\sin x-2}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Który wielomian jest dzielnikiem \\(W(x)=x^4+81\\)?\n\nA. \\(x-3\\)\nB. \\(x^2+9\\)\nC. \\(x^2-3\\sqrt2\\,x+9\\)\nD. \\(x^2+3\\sqrt2\\,x-9\\)",
+    "polecenie": "Wielomian \\(W(x)=x^4+81\\) jest podzielny przez\n\nA. \\(x-3\\)\n\nB. \\(x^2+9\\)\n\nC. \\(x^2-3\\sqrt2x+9\\)\n\nD. \\(x^2+3\\sqrt2x-9\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Ile różnych pierwiastków ma równanie \\(3x+|x-4|=0\\)?\n\nA. \\(0\\)\nB. \\(1\\)\nC. \\(2\\)\nD. \\(3\\)",
+    "polecenie": "Liczba różnych pierwiastków równania \\(3x+|x-4|=0\\) jest równa\n\nA. \\(0\\)\n\nB. \\(1\\)\n\nC. \\(2\\)\n\nD. \\(3\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Oblicz granicę\n\\[\\lim_{n\\to\\infty}\\frac{(3n+2)^2-(1-2n)^2}{(2n-1)^2}.\\]\nWpisz kolejno cyfrę jedności i pierwsze dwie cyfry po przecinku w skończonym rozwinięciu dziesiętnym wyniku.",
+    "polecenie": "Oblicz granicę \\(\\displaystyle\\lim_{n\\to\\infty}\\frac{(3n+2)^2-(1-2n)^2}{(2n-1)^2}\\).\n\nW poniższe kratki wpisz kolejno – od lewej do prawej – cyfrę jedności i pierwsze dwie cyfry po przecinku skończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Niech \\(c=\\log_2 18\\). Udowodnij, że \\(\\log_3 4=\\frac{4}{c-1}\\).",
+    "polecenie": "Niech \\(\\log_2 18=c\\). Wykaż, że \\(\\log_3 4=\\frac{4}{c-1}\\).",
     "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "Rozwiąż nierówność\n\\[\\frac{2x-1}{1-x}\\le\\frac{2+2x}{5x}.\\]",
+    "polecenie": "Rozwiąż nierówność:\n\\[\\frac{2x-1}{1-x}\\leq\\frac{2+2x}{5x}\\]",
     "strona_zadania": 6
   },
   {
     "numer": "8",
-    "polecenie": "Na bokach \\(AB\\) i \\(AC\\) trójkąta równobocznego \\(ABC\\) wybrano odpowiednio \\(D\\) i \\(E\\) tak, że \\(|BD|=|AE|=\\frac13|AB|\\). Odcinki \\(CD\\) i \\(BE\\) przecinają się w \\(P\\) (zobacz rysunek). Udowodnij, że pole trójkąta \\(DBP\\) stanowi \\(\\frac1{21}\\) pola trójkąta \\(ABC\\).",
+    "polecenie": "Dany jest trójkąt równoboczny \\(ABC\\). Na bokach \\(AB\\) i \\(AC\\) wybrano punkty – odpowiednio – \\(D\\) i \\(E\\) takie, że \\(|BD|=|AE|=\\frac13|AB|\\). Odcinki \\(CD\\) i \\(BE\\) przecinają się w punkcie \\(P\\) (zobacz rysunek).\n\nWykaż, że pole trójkąta \\(DBP\\) jest \\(21\\) razy mniejsze od pola trójkąta \\(ABC\\).",
     "strona_zadania": 8
   },
   {
     "numer": "9",
-    "polecenie": "Losujemy jedną liczbę ze zbioru wszystkich liczb naturalnych czterocyfrowych. Oblicz prawdopodobieństwo tego, że jest podzielna przez \\(15\\), pod warunkiem że jest podzielna przez \\(18\\).",
+    "polecenie": "Ze zbioru wszystkich liczb naturalnych czterocyfrowych losujemy jedną liczbę. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że wylosowana liczba jest podzielna przez \\(15\\), jeśli wiadomo, że jest ona podzielna przez \\(18\\).",
     "strona_zadania": 10
   },
   {
     "numer": "10",
-    "polecenie": "Prosta przez punkty \\(A=(8,-6)\\) i \\(B=(5,15)\\) jest styczna do okręgu o środku \\(O=(0,0)\\). Oblicz promień okręgu i współrzędne punktu styczności.",
+    "polecenie": "Prosta przechodząca przez punkty \\(A=(8,-6)\\) i \\(B=(5,15)\\) jest styczna do okręgu o środku w punkcie \\(O=(0,0)\\). Oblicz promień tego okręgu i współrzędne punktu styczności tego okręgu z prostą \\(AB\\).",
     "strona_zadania": 12
   },
   {
     "numer": "11",
-    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których trójmian \\(4x^2-2(m+1)x+m\\) ma dwa różne pierwiastki rzeczywiste \\(x_1,x_2\\) spełniające\n\\[x_1\\ne0,\\qquad x_2\\ne0,\\qquad x_1+x_2\\le\\frac1{x_1}+\\frac1{x_2}.\\]",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których trójmian kwadratowy\n\\[4x^2-2(m+1)x+m\\]\nma dwa różne pierwiastki rzeczywiste \\(x_1\\) oraz \\(x_2\\), spełniające warunki:\n\\[x_1\\ne 0,\\quad x_2\\ne 0\\quad\\text{oraz}\\quad x_1+x_2\\leq\\frac1{x_1}+\\frac1{x_2}\\]",
     "strona_zadania": 14
   },
   {
     "numer": "12",
-    "polecenie": "Rozwiąż równanie \\(\\cos(2x)=\\frac{\\sqrt2}{2}(\\cos x-\\sin x)\\) dla \\(x\\in[0,\\pi]\\).",
+    "polecenie": "Rozwiąż równanie \\(\\cos 2x=\\frac{\\sqrt2}{2}(\\cos x-\\sin x)\\) w przedziale \\(\\langle 0,\\pi\\rangle\\).",
     "strona_zadania": 16
   },
   {
     "numer": "13",
-    "polecenie": "Promień okręgu wpisanego w trójkąt prostokątny \\(ABC\\) stanowi jedną piątą długości przeciwprostokątnej. Oblicz sinus większego z kątów ostrych trójkąta.",
+    "polecenie": "Dany jest trójkąt prostokątny \\(ABC\\). Promień okręgu wpisanego w ten trójkąt jest pięć razy krótszy od przeciwprostokątnej tego trójkąta. Oblicz sinus tego z kątów ostrych trójkąta \\(ABC\\), który ma większą miarę.",
     "strona_zadania": 18
   },
   {
     "numer": "14",
-    "polecenie": "Dane są parabola \\(y=x^2\\) oraz punkty \\(A=(0,2)\\) i \\(B=(1,3)\\) (zobacz rysunek). Wierzchołek \\(C\\) trójkąta \\(ABC\\) leży na tej paraboli i ma pierwszą współrzędną \\(m\\).\n\na) Wyznacz pole \\(P\\) trójkąta \\(ABC\\) jako funkcję \\(m\\).\nb) Wyznacz wszystkie wartości \\(m\\), dla których \\(ABC\\) jest ostrokątny.",
+    "polecenie": "Dane są parabola o równaniu \\(y=x^2\\) oraz punkty \\(A=(0,2)\\) i \\(B=(1,3)\\) (zobacz rysunek). Rozpatrujemy wszystkie trójkąty \\(ABC\\), których wierzchołek \\(C\\) leży na tej paraboli. Niech \\(m\\) oznacza pierwszą współrzędną punktu \\(C\\).\n\na) Wyznacz pole \\(P\\) trójkąta \\(ABC\\) jako funkcję zmiennej \\(m\\).\n\nb) Wyznacz wszystkie wartości \\(m\\), dla których trójkąt \\(ABC\\) jest ostrokątny.",
     "strona_zadania": 20
   },
   {
     "numer": "15",
-    "polecenie": "Prostopadłościenny zbiornik bez pokrywy ma pojemność \\(144\\,\\mathrm{m}^3\\) i kwadratowe dno. Żaden z jego wymiarów nie może przekroczyć \\(9\\,\\mathrm m\\). Wykonanie dna kosztuje \\(100\\) zł za \\(\\mathrm{m}^2\\), a wykonanie ścian bocznych \\(75\\) zł za \\(\\mathrm{m}^2\\). Oblicz wymiary, dla których koszt wykonania zbiornika jest najmniejszy.",
+    "polecenie": "Pewien zakład otrzymał zamówienie na wykonanie prostopadłościennego zbiornika (całkowicie otwartego od góry) o pojemności \\(144\\ \\mathrm{m}^3\\). Dno zbiornika ma być kwadratem. Żaden z wymiarów zbiornika (krawędzi prostopadłościanu) nie może przekraczać \\(9\\) metrów. Całkowity koszt wykonania zbiornika ustalono w następujący sposób:\n\n– \\(100\\) zł za \\(1\\ \\mathrm{m}^2\\) dna\n\n– \\(75\\) zł za \\(1\\ \\mathrm{m}^2\\) ściany bocznej.\n\nOblicz wymiary zbiornika, dla którego tak ustalony koszt wykonania będzie najmniejszy.",
     "strona_zadania": 24
   }
 ]

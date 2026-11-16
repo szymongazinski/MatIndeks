@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Niech \\(L=\\log_{\\sqrt2}2\\cdot\\log_2\\sqrt3\\cdot\\log_{\\sqrt3}4\\). Wskaż prawdziwą równość.\n\nA. \\(L=1\\)\nB. \\(L=2\\)\nC. \\(L=3\\)\nD. \\(L=4\\)",
+    "polecenie": "Niech \\(L=\\log_{\\sqrt2}2\\cdot\\log_2\\sqrt3\\cdot\\log_{\\sqrt3}4\\). Wtedy\n\nA. \\(L=1\\)\nB. \\(L=2\\)\nC. \\(L=3\\)\nD. \\(L=4\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Okrąg o równaniu \\((x-3)^2+(y+7)^2=625\\) jest styczny do okręgu o środku \\(S=(12,5)\\) i promieniu \\(r\\). Wskaż, która równość z tego wynika.\n\nA. \\(r=5\\)\nB. \\(r=15\\)\nC. \\(r=10\\)\nD. \\(r=20\\)",
+    "polecenie": "Okrąg o równaniu \\((x-3)^2+(y+7)^2=625\\) jest styczny do okręgu o środku \\(S=(12,5)\\) i promieniu \\(r\\). Wynika stąd, że\n\nA. \\(r=5\\)\nB. \\(r=15\\)\nC. \\(r=10\\)\nD. \\(r=20\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Wskaż wartość wyrażenia\n\\[\\sqrt{(1-\\sqrt2)^2}+\\sqrt{(2-\\sqrt2)^2}.\\]\nA. \\(1\\)\nB. \\(-1\\)\nC. \\(3-2\\sqrt2\\)\nD. \\(2\\sqrt2+1\\)",
+    "polecenie": "Liczba \\(\\sqrt{(1-\\sqrt2)^2}+\\sqrt{(2-\\sqrt2)^2}\\) jest równa\n\nA. \\(1\\)\nB. \\(-1\\)\nC. \\(3-2\\sqrt2\\)\nD. \\(2\\sqrt2+1\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Którą z nierówności spełniają dokładnie trzy liczby całkowite?\n\nA. \\(\\left|\\frac34x+5\\right|<2\\)\nB. \\(\\left|\\frac43x+5\\right|<2\\)\nC. \\(\\left|\\frac35x+4\\right|<2\\)\nD. \\(\\left|\\frac45x+3\\right|<2\\)",
+    "polecenie": "Spośród poniższych nierówności wskaż tę, którą spełniają dokładnie trzy liczby całkowite.\n\nA. \\(\\left|\\dfrac34x+5\\right|<2\\)\nB. \\(\\left|\\dfrac43x+5\\right|<2\\)\nC. \\(\\left|\\dfrac35x+4\\right|<2\\)\nD. \\(\\left|\\dfrac45x+3\\right|<2\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Funkcja \\(f(x)=\\dfrac{x^2}{x-1}\\) jest określona dla \\(x\\ne1\\). Oblicz współczynnik kierunkowy stycznej do jej wykresu w punkcie \\(A=\\left(6,\\frac{36}5\\right)\\).\n\nPodaj kolejno cyfrę jedności i dwie cyfry po przecinku skończonego rozwinięcia dziesiętnego wyniku.",
+    "polecenie": "Oblicz współczynnik kierunkowy stycznej do wykresu funkcji \\(f(x)=\\dfrac{x^2}{x-1}\\), określonej dla każdej liczby rzeczywistej \\(x\\ne1\\), poprowadzonej w punkcie \\(A=\\left(6,\\dfrac{36}5\\right)\\) tego wykresu.\n\nW poniższe kratki wpisz kolejno cyfrę jedności i dwie cyfry po przecinku skończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "W trójkącie \\(ABC\\) kąt \\(BAC\\) ma dwa razy większą miarę niż kąt \\(ABC\\). Wykaż, że\n\\[|BC|^2-|AC|^2=|AB|\\cdot|AC|.\\]",
+    "polecenie": "W trójkącie \\(ABC\\) kąt \\(BAC\\) jest dwa razy większy od kąta \\(ABC\\). Wykaż, że prawdziwa jest równość \\(|BC|^2-|AC|^2=|AB|\\cdot|AC|\\).",
     "strona_zadania": 4
   },
   {
     "numer": "7",
-    "polecenie": "Udowodnij, że dla każdego \\(\\alpha\\in\\left(0,\\frac\\pi2\\right)\\) zachodzi\n\\[\\sin\\left(\\frac\\pi{12}-\\alpha\\right)\\cos\\left(\\frac\\pi{12}+\\alpha\\right)<\\frac14.\\]",
+    "polecenie": "Udowodnij, że dla dowolnego kąta \\(\\alpha\\in\\left(0,\\dfrac\\pi2\\right)\\) prawdziwa jest nierówność\n\\[\\sin\\left(\\frac\\pi{12}-\\alpha\\right)\\cdot\\cos\\left(\\frac\\pi{12}+\\alpha\\right)<\\frac14.\\]",
     "strona_zadania": 5
   },
   {
     "numer": "8",
-    "polecenie": "Wykaż, że równanie \\(x^8+x^2=2(x^4+x-1)\\) ma dokładnie jedno rozwiązanie rzeczywiste, \\(x=1\\).",
+    "polecenie": "Wykaż, że równanie \\(x^8+x^2=2(x^4+x-1)\\) ma tylko jedno rozwiązanie rzeczywiste \\(x=1\\).",
     "strona_zadania": 6
   },
   {
     "numer": "9",
-    "polecenie": "Losujemy jedną spośród wszystkich ośmiocyfrowych liczb naturalnych, których zapis dziesiętny składa się wyłącznie z cyfr ze zbioru \\(\\{0,1,3,5,7,9\\}\\). Oblicz prawdopodobieństwo, że suma cyfr wylosowanej liczby wynosi \\(3\\).",
+    "polecenie": "Ze zbioru wszystkich liczb naturalnych ośmiocyfrowych, w których zapisie dziesiętnym występują tylko cyfry ze zbioru \\(\\{0,1,3,5,7,9\\}\\), losujemy jedną. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że suma cyfr wylosowanej liczby jest równa \\(3\\).",
     "strona_zadania": 7
   },
   {
     "numer": "10",
-    "polecenie": "Ciąg geometryczny \\((a,aq,aq^2)\\) jest rosnący, a jego wyrazy i iloraz są nieparzystymi liczbami całkowitymi. Po zmniejszeniu największego wyrazu o \\(4\\) otrzymujemy ciąg arytmetyczny. Oblicz \\(aq\\).",
+    "polecenie": "Dany jest rosnący ciąg geometryczny \\((a,aq,aq^2)\\), którego wszystkie wyrazy i iloraz są liczbami całkowitymi nieparzystymi. Jeśli największy wyraz ciągu zmniejszymy o \\(4\\), to otrzymamy ciąg arytmetyczny. Oblicz wyraz \\(aq\\) tego ciągu.",
     "strona_zadania": 8
   },
   {
     "numer": "11",
-    "polecenie": "Dla \\(n\\ge1\\) okrąg \\(o_n\\) ma równanie \\(x^2+y^2=2^{11-n}\\). Niech \\(P_k\\) oznacza pierścień ograniczony z zewnątrz przez \\(o_{2k-1}\\), a od wewnątrz przez \\(o_{2k}\\). Oblicz sumę pól wszystkich pierścieni \\(P_k\\), \\(k\\ge1\\).",
+    "polecenie": "Dany jest nieskończony ciąg okręgów \\((o_n)\\) o równaniach \\(x^2+y^2=2^{11-n}\\), \\(n\\ge1\\). Niech \\(P_k\\) będzie pierścieniem ograniczonym zewnętrznym okręgiem \\(o_{2k-1}\\) i wewnętrznym okręgiem \\(o_{2k}\\). Oblicz sumę pól wszystkich pierścieni \\(P_k\\), gdzie \\(k\\ge1\\).",
     "strona_zadania": 9
   },
   {
     "numer": "12",
-    "polecenie": "Trapez prostokątny \\(ABCD\\) jest opisany na okręgu i ma podstawy \\(AB,CD\\). Ramię \\(BC\\) ma długość \\(10\\), a ramię \\(AD\\) jest wysokością. Podstawa \\(AB\\) ma dwukrotnie większą długość niż \\(CD\\). Oblicz pole trapezu.",
+    "polecenie": "Trapez prostokątny \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\) jest opisany na okręgu. Ramię \\(BC\\) ma długość \\(10\\), a ramię \\(AD\\) jest wysokością trapezu. Podstawa \\(AB\\) jest \\(2\\) razy dłuższa od podstawy \\(CD\\). Oblicz pole tego trapezu.",
     "strona_zadania": 10
   },
   {
     "numer": "13",
-    "polecenie": "Wierzchołki \\(A,B\\) trójkąta prostokątnego \\(ABC\\) leżą na osi \\(Oy\\). Okrąg wpisany w ten trójkąt jest styczny do boków \\(AB,BC,CA\\) odpowiednio w punktach \\(P=(0,10)\\), \\(Q=(8,6)\\), \\(R=(9,13)\\). Wyznacz współrzędne \\(A,B,C\\).",
+    "polecenie": "Wierzchołki \\(A\\) i \\(B\\) trójkąta prostokątnego \\(ABC\\) leżą na osi \\(Oy\\) układu współrzędnych. Okrąg wpisany w ten trójkąt jest styczny do boków \\(AB\\), \\(BC\\) i \\(CA\\) w punktach – odpowiednio – \\(P=(0,10)\\), \\(Q=(8,6)\\) i \\(R=(9,13)\\). Oblicz współrzędne wierzchołków \\(A\\), \\(B\\) i \\(C\\) tego trójkąta.",
     "strona_zadania": 12
   },
   {
     "numer": "14",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[x^2-3mx+(m+1)(2m-1)=0\\]\nma dwa różne rozwiązania \\(x_1,x_2\\) takie, że \\(x_1x_2\\ne0\\) oraz\n\\[0<\\frac1{x_1}+\\frac1{x_2}\\le\\frac23.\\]",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[x^2-3mx+(m+1)(2m-1)=0\\]\nma dwa różne rozwiązania \\(x_1,x_2\\) spełniające warunki: \\(x_1\\cdot x_2\\ne0\\) oraz \\(0<\\dfrac{1}{x_1}+\\dfrac{1}{x_2}\\le\\dfrac23\\).",
     "strona_zadania": 14
   },
   {
     "numer": "15",
-    "polecenie": "Rozważamy drewniane szkielety wykonane z listewek i mające kształt pokazany na rysunku. Każda listewka jest prostopadłościanem o podstawie w kształcie kwadratu o boku \\(x\\). Wymiary szkieletu podano na rysunku.\n\n[[rysunek:2018-06-15|Drewniany szkielet prostopadłościanu. Dwie krawędzie mają długość 6, jedna ma długość 10−2x. Kwadratowy przekrój listewki ma bok x.]]\n\na) Zapisz objętość \\(V\\) drewna potrzebnego do budowy szkieletu jako funkcję \\(x\\).\n\nb) Wyznacz dziedzinę funkcji \\(V\\).\n\nc) Wyznacz \\(x\\), dla którego szkielet jest najcięższy, czyli \\(V\\) jest największa. Oblicz największą objętość.",
+    "polecenie": "Rozpatrujemy wszystkie możliwe drewniane szkielety o kształcie przedstawionym na rysunku, wykonane z listewek. Każda z tych listewek ma kształt prostopadłościanu o podstawie kwadratu o boku długości \\(x\\). Wymiary szkieletu zaznaczono na rysunku.\n\na) Wyznacz objętość \\(V\\) drewna potrzebnego do budowy szkieletu jako funkcję zmiennej \\(x\\).\n\nb) Wyznacz dziedzinę funkcji \\(V\\).\n\nc) Oblicz tę wartość \\(x\\), dla której zbudowany szkielet jest możliwie najcięższy, czyli kiedy funkcja \\(V\\) osiąga wartość największą. Oblicz tę największą objętość.",
     "strona_zadania": 16
   }
 ]

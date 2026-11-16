@@ -1,32 +1,32 @@
 [
   {
     "numer": "1",
-    "polecenie": "Liczba \\(\\left(\\sqrt{2-\\sqrt3}-\\sqrt{2+\\sqrt3}\\right)^2\\) jest równa\n\nA. \\(2\\)\nB. \\(4\\)\nC. \\(\\sqrt3\\)\nD. \\(2\\sqrt3\\)",
+    "polecenie": "Liczba \\((\\sqrt{2-\\sqrt3}-\\sqrt{2+\\sqrt3})^2\\) jest równa\n\nA. \\(2\\)\nB. \\(4\\)\nC. \\(\\sqrt3\\)\nD. \\(2\\sqrt3\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Nieskończony ciąg liczbowy jest określony wzorem \\(\\displaystyle a_n=\\frac{(n^2-10n)(2-3n)}{2n^3+n^2+3}\\) dla \\(n\\ge1\\). Wtedy\n\nA. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=\\frac12\\)\nB. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=0\\)\nC. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=-\\infty\\)\nD. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=-\\frac32\\)",
+    "polecenie": "Nieskończony ciąg liczbowy jest określony wzorem \\(a_n=\\dfrac{(n^2-10n)(2-3n)}{2n^3+n^2+3}\\) dla \\(n\\ge1\\). Wtedy\n\nA. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=\\frac12\\)\nB. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=0\\)\nC. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=-\\infty\\)\nD. \\(\\displaystyle\\lim_{n\\to\\infty}a_n=-\\frac32\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Odcinek \\(CD\\) jest wysokością trójkąta \\(ABC\\), w którym \\(|AD|=|CD|=\\frac12|BC|\\) (zobacz rysunek).\n\nOkrąg o środku \\(C\\) i promieniu \\(CD\\) jest styczny do prostej \\(AB\\). Okrąg ten przecina boki \\(AC\\) i \\(BC\\) trójkąta odpowiednio w punktach \\(K\\) i \\(L\\).\n\nZaznaczony na rysunku kąt \\(\\alpha\\) wpisany w okrąg jest równy\n\nA. \\(37{,}5^\\circ\\)\nB. \\(45^\\circ\\)\nC. \\(52{,}5^\\circ\\)\nD. \\(60^\\circ\\)",
+    "polecenie": "Odcinek \\(CD\\) jest wysokością trójkąta \\(ABC\\), w którym \\(|AD|=|CD|=\\dfrac12|BC|\\) (zobacz rysunek). Okrąg o środku \\(C\\) i promieniu \\(CD\\) jest styczny do prostej \\(AB\\). Okrąg ten przecina boki \\(AC\\) i \\(BC\\) trójkąta odpowiednio w punktach \\(K\\) i \\(L\\).\n\nZaznaczony na rysunku kąt \\(\\alpha\\) wpisany w okrąg jest równy\n\nA. \\(37{,}5^\\circ\\)\nB. \\(45^\\circ\\)\nC. \\(52{,}5^\\circ\\)\nD. \\(60^\\circ\\)",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Dane są punkt \\(B=(-4,7)\\) i wektor \\(\\vec u=[-3,5]\\). Punkt \\(A\\), taki, że \\(\\overrightarrow{AB}=-3\\vec u\\), ma współrzędne\n\nA. \\(A=(5,-8)\\)\nB. \\(A=(-13,22)\\)\nC. \\(A=(9,-15)\\)\nD. \\(A=(12,24)\\)",
+    "polecenie": "Dane są punkt \\(B=(-4,7)\\) i wektor \\(\\vec{u}=[-3,5]\\). Punkt \\(A\\), taki, że \\(\\overrightarrow{AB}=-3\\vec{u}\\), ma współrzędne\n\nA. \\(A=(5,-8)\\)\nB. \\(A=(-13,22)\\)\nC. \\(A=(9,-15)\\)\nD. \\(A=(12,24)\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "Reszta z dzielenia wielomianu \\(W(x)=x^3-2x^2+ax+\\frac34\\) przez dwumian \\(x-2\\) jest równa \\(1\\).\n\nOblicz wartość współczynnika \\(a\\).\n\nW poniższe kratki wpisz kolejno trzy pierwsze cyfry po przecinku rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "polecenie": "Reszta z dzielenia wielomianu \\(W(x)=x^3-2x^2+ax+\\dfrac34\\) przez dwumian \\(x-2\\) jest równa \\(1\\).\n\nOblicz wartość współczynnika \\(a\\).\n\nW poniższe kratki wpisz kolejno trzy pierwsze cyfry po przecinku rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(\\displaystyle f(x)=\\frac{x-1}{x^2+1}\\) dla każdej liczby rzeczywistej \\(x\\). Wyznacz równanie stycznej do wykresu tej funkcji w punkcie \\(P=(1,0)\\).",
+    "polecenie": "Funkcja \\(f\\) jest określona wzorem \\(f(x)=\\dfrac{x-1}{x^2+1}\\) dla każdej liczby rzeczywistej \\(x\\). Wyznacz równanie stycznej do wykresu tej funkcji w punkcie \\(P=(1,0)\\).",
     "strona_zadania": 4
   },
   {
@@ -36,12 +36,12 @@
   },
   {
     "numer": "8",
-    "polecenie": "W trójkącie ostrokątnym \\(ABC\\) bok \\(AB\\) ma długość \\(c\\), długość boku \\(BC\\) jest równa \\(a\\) oraz \\(|\\angle ABC|=\\beta\\). Dwusieczna kąta \\(ABC\\) przecina bok \\(AC\\) trójkąta w punkcie \\(E\\).\n\nWykaż, że długość odcinka \\(BE\\) jest równa \\(\\displaystyle\\frac{2ac\\cdot \\cos\\frac{\\beta}{2}}{a+c}\\).",
+    "polecenie": "W trójkącie ostrokątnym \\(ABC\\) bok \\(AB\\) ma długość \\(c\\), długość boku \\(BC\\) jest równa \\(a\\) oraz \\(|\\angle ABC|=\\beta\\). Dwusieczna kąta \\(ABC\\) przecina bok \\(AC\\) trójkąta w punkcie \\(E\\).\n\nWykaż, że długość odcinka \\(BE\\) jest równa \\(\\dfrac{2ac\\cdot\\cos\\frac{\\beta}{2}}{a+c}\\).",
     "strona_zadania": 6
   },
   {
     "numer": "9",
-    "polecenie": "W czworościanie, którego wszystkie krawędzie mają taką samą długość \\(6\\), umieszczono kulę tak, że ma ona dokładnie jeden punkt wspólny z każdą ścianą czworościanu. Płaszczyzna \\(\\pi\\), równoległa do podstawy tego czworościanu, dzieli go na dwie bryły: ostrosłup o objętości równej \\(\\frac{8}{27}\\) objętości dzielonego czworościanu i ostrosłup ścięty. Oblicz odległość środka \\(S\\) kuli od płaszczyzny \\(\\pi\\), tj. długość najkrótszego spośród odcinków \\(SP\\), gdzie \\(P\\) jest punktem płaszczyzny \\(\\pi\\).",
+    "polecenie": "W czworościanie, którego wszystkie krawędzie mają taką samą długość \\(6\\), umieszczono kulę tak, że ma ona dokładnie jeden punkt wspólny z każdą ścianą czworościanu. Płaszczyzna \\(\\pi\\), równoległa do podstawy tego czworościanu, dzieli go na dwie bryły: ostrosłup o objętości równej \\(\\dfrac{8}{27}\\) objętości dzielonego czworościanu i ostrosłup ścięty. Oblicz odległość środka \\(S\\) kuli od płaszczyzny \\(\\pi\\), tj. długość najkrótszego spośród odcinków \\(SP\\), gdzie \\(P\\) jest punktem płaszczyzny \\(\\pi\\).",
     "strona_zadania": 7
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "numer": "14",
-    "polecenie": "Liczby \\(a,b,c\\) są – odpowiednio – pierwszym, drugim i trzecim wyrazem ciągu arytmetycznego. Suma tych liczb jest równa \\(27\\). Ciąg \\((a-2,b,2c+1)\\) jest geometryczny.\n\nWyznacz liczby \\(a,b,c\\).",
+    "polecenie": "Liczby \\(a\\), \\(b\\), \\(c\\) są – odpowiednio – pierwszym, drugim i trzecim wyrazem ciągu arytmetycznego. Suma tych liczb jest równa \\(27\\). Ciąg \\((a-2,b,2c+1)\\) jest geometryczny.\n\nWyznacz liczby \\(a,b,c\\).",
     "strona_zadania": 14
   },
   {

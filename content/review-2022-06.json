@@ -1,77 +1,77 @@
 [
   {
     "numer": "1",
-    "polecenie": "Niech \\(a=\\log_5 2\\) i \\(b=\\log_5 3\\). Wybierz wartość \\(\\log_{18}40\\).\n\nA. \\(\\frac{3a+1}{a+b}\\)\nB. \\(\\frac{2a+1}{a+b}\\)\nC. \\(\\frac{2a+1}{a+2b}\\)\nD. \\(\\frac{3a+1}{2b+a}\\)",
+    "polecenie": "Wiadomo, że \\(\\log_5 2=a\\) i \\(\\log_5 3=b\\). Wtedy liczba \\(\\log_{18}40\\) jest równa\n\nA. \\(\\frac{3a+1}{a+b}\\)\n\nB. \\(\\frac{2a+1}{a+b}\\)\n\nC. \\(\\frac{2a+1}{a+2b}\\)\n\nD. \\(\\frac{3a+1}{2b+a}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "2",
-    "polecenie": "Wybierz wartość granicy\n\\[\\lim_{x\\to-3}\\frac{0{,}5x^2+3{,}5x+6}{-x^2+2x+15}.\\]\n\nA. \\(-\\frac18\\)\nB. \\(\\frac1{16}\\)\nC. \\(-\\frac1{16}\\)\nD. \\(\\frac74\\)",
+    "polecenie": "Granica \\(\\displaystyle\\lim_{x\\to-3}\\frac{0{,}5x^2+3{,}5x+6}{-x^2+2x+15}\\) jest równa\n\nA. \\(\\left(-\\frac{1}{8}\\right)\\)\n\nB. \\(\\frac{1}{16}\\)\n\nC. \\(\\left(-\\frac{1}{16}\\right)\\)\n\nD. \\(\\frac{7}{4}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "3",
-    "polecenie": "Suma wektorów \\(\\vec a=[2+2m,\\frac23n+1]\\) i \\(\\vec b=[n+1,m+2]\\) to \\([0,0]\\). Wskaż właściwe wartości \\(m,n\\).\n\nA. \\(m=1,\\ n=3\\)\nB. \\(m=-9,\\ n=-21\\)\nC. \\(m=3,\\ n=-9\\)\nD. \\(m=-1,\\ n=0\\)",
+    "polecenie": "Sumą wektorów \\(\\vec a=\\left[2+2m,\\frac{2}{3}n+1\\right]\\) oraz \\(\\vec b=[n+1,m+2]\\) jest wektor \\(\\vec c=[0,0]\\). Wynika stąd, że\n\nA. \\(m=1\\) i \\(n=3\\).\n\nB. \\(m=-9\\) i \\(n=-21\\).\n\nC. \\(m=3\\) i \\(n=-9\\).\n\nD. \\(m=-1\\) i \\(n=0\\).",
     "strona_zadania": 2
   },
   {
     "numer": "4",
-    "polecenie": "Pole trójkąta ostrokątnego o dwóch bokach długości \\(5\\) i \\(8\\) wynosi \\(12\\). Wybierz długość trzeciego boku.\n\nA. \\(5\\)\nB. \\(8\\)\nC. \\(\\sqrt{41}\\)\nD. \\(\\sqrt{143}\\)",
+    "polecenie": "Pole trójkąta ostrokątnego o bokach \\(5\\) i \\(8\\) jest równe \\(12\\). Długość trzeciego boku tego trójkąta jest równa\n\nA. \\(5\\)\n\nB. \\(8\\)\n\nC. \\(\\sqrt{41}\\)\n\nD. \\(\\sqrt{143}\\)",
     "strona_zadania": 2
   },
   {
     "numer": "5",
-    "polecenie": "W firmie pracuje \\(390\\) osób, w tym \\(150\\) kobiet i \\(240\\) mężczyzn. W wieku przedemerytalnym jest \\(21\\) kobiet i \\(43\\) mężczyzn.\n\nOblicz prawdopodobieństwo, że losowo wybrany pracownik jest w wieku przedemerytalnym, jeśli wiadomo, że jest mężczyzną. Podaj kolejno pierwszą, drugą i trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
+    "polecenie": "Wśród \\(390\\) pracowników pewnej firmy jest \\(150\\) kobiet i \\(240\\) mężczyzn. Wśród nich w wieku przedemerytalnym jest \\(21\\) kobiet i \\(43\\) mężczyzn. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że losowo wybrany pracownik tej firmy jest w wieku przedemerytalnym – pod warunkiem że jest mężczyzną.\n\nW poniższe kratki wpisz kolejno – od lewej do prawej – pierwszą, drugą oraz trzecią cyfrę po przecinku nieskończonego rozwinięcia dziesiętnego otrzymanego wyniku.",
     "strona_zadania": 4
   },
   {
     "numer": "6",
-    "polecenie": "Wykaż, że dla dowolnych liczb rzeczywistych \\(x\\ne y\\) zachodzi\n\\[x^4+y^4>xy(x^2+y^2).\\]",
+    "polecenie": "Wykaż, że dla każdej liczby rzeczywistej \\(x\\) i dla każdej liczby rzeczywistej \\(y\\) takich, że \\(x\\ne y\\), spełniona jest nierówność\n\\[x^4+y^4>xy(x^2+y^2)\\]",
     "strona_zadania": 5
   },
   {
     "numer": "7",
-    "polecenie": "Ile jest pięciocyfrowych liczb naturalnych, w których zapisie dziesiętnym występują dokładnie dwie cyfry nieparzyste?",
+    "polecenie": "Oblicz, ile jest wszystkich liczb naturalnych pięciocyfrowych, w których zapisie występują dokładnie dwie cyfry nieparzyste.",
     "strona_zadania": 6
   },
   {
     "numer": "8",
-    "polecenie": "Rozwiąż nierówność\n\\[\\frac{3x+1}{2x+1}\\le\\frac{3x+4}{2x+3}.\\]",
+    "polecenie": "Rozwiąż nierówność\n\\[\\frac{3x+1}{2x+1}\\leq\\frac{3x+4}{2x+3}\\]",
     "strona_zadania": 8
   },
   {
     "numer": "9",
-    "polecenie": "Trapez \\(ABCD\\) ma podstawy \\(AB,CD\\). Przez punkt przecięcia przekątnych \\(O\\) prowadzimy równoległą do \\(BC\\), która przecina \\(AB\\) w \\(B'\\), oraz równoległą do \\(AD\\), która przecina \\(AB\\) w \\(A'\\).\n\nWykaż, że \\(|AA'|=|BB'|\\).",
+    "polecenie": "W trapezie \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\) przez punkt \\(O\\) przecięcia się przekątnych poprowadzono dwie proste równoległe do boków \\(BC\\) i \\(AD\\). Prosta równoległa do boku \\(BC\\) przecina bok \\(AB\\) w punkcie \\(B'\\), a prosta równoległa do boku \\(AD\\) przecina bok \\(AB\\) w punkcie \\(A'\\). Wykaż, że \\(|AA'|=|BB'|\\).",
     "strona_zadania": 10
   },
   {
     "numer": "10",
-    "polecenie": "Nieskończony ciąg geometryczny \\((a_n)_{n\\ge1}\\) ma pierwszy wyraz równy ilorazowi \\(q\\) i \\(|q|<1\\). Niech \\(S_N\\) oznacza sumę wyrazów o nieparzystych indeksach, a \\(S_P\\) sumę wyrazów o parzystych indeksach. Wiadomo, że \\(\\frac{S_N}{S_P}=S_N-S_P\\).\n\nOblicz \\(q\\).",
+    "polecenie": "Dany jest nieskończony ciąg geometryczny \\((a_n)\\), określony dla każdej liczby naturalnej \\(n\\geq 1\\), którego iloraz \\(q\\) jest równy pierwszemu wyrazowi i spełnia warunek \\(|q|<1\\). Stosunek sumy \\(S_N\\) wszystkich wyrazów tego ciągu o numerach nieparzystych do sumy \\(S_P\\) wszystkich wyrazów tego ciągu o numerach parzystych jest równy różnicy tych sum, tj. \\(\\frac{S_N}{S_P}=S_N-S_P\\). Oblicz \\(q\\).",
     "strona_zadania": 12
   },
   {
     "numer": "11",
-    "polecenie": "Rozwiąż w przedziale \\([0,\\pi]\\) równanie\n\\[\\cos(3x)+\\sqrt3\\sin(3x)+1=0.\\]",
+    "polecenie": "Rozwiąż równanie \\(\\cos(3x)+\\sqrt{3}\\sin(3x)+1=0\\) w przedziale \\(\\langle 0,\\pi\\rangle\\).",
     "strona_zadania": 14
   },
   {
     "numer": "12",
-    "polecenie": "Podstawa graniastosłupa prostego \\(ABCDA_1B_1C_1D_1\\) jest trapezem równoramiennym \\(ABCD\\) wpisanym w okrąg o środku \\(O\\) i promieniu \\(R\\). Dłuższa podstawa \\(AB\\) jest średnicą okręgu. Krótsza podstawa jest cięciwą odpowiadającą kątowi środkowemu \\(2\\alpha\\). Przekątna ściany bocznej zawierającej ramię trapezu tworzy z płaszczyzną podstawy kąt \\(\\alpha\\).\n\nWyznacz objętość graniastosłupa w zależności od \\(R\\) i \\(\\alpha\\).",
+    "polecenie": "Podstawą graniastosłupa prostego \\(ABCDA_1B_1C_1D_1\\) jest trapez równoramienny \\(ABCD\\) wpisany w okrąg o środku \\(O\\) i promieniu \\(R\\). Dłuższa podstawa \\(AB\\) trapezu jest średnicą tego okręgu, a krótsza – cięciwą odpowiadającą kątowi środkowemu o mierze \\(2\\alpha\\) (zobacz rysunek). Przekątna ściany bocznej zawierającej ramię trapezu jest nachylona do płaszczyzny podstawy pod kątem o mierze \\(\\alpha\\). Wyznacz objętość tego graniastosłupa jako funkcję promienia \\(R\\) i miary kąta \\(\\alpha\\).",
     "strona_zadania": 16
   },
   {
     "numer": "13",
-    "polecenie": "Wyznacz wszystkie \\(m\\), dla których równanie\n\\[(x-4)\\big[x^2+(m-3)x+m^2-m-6\\big]=0\\]\nma trzy różne pierwiastki rzeczywiste \\(x_1,x_2,x_3\\) spełniające\n\\[x_1x_2x_3>x_1^2+x_2^2+x_3^2-5m-51.\\]",
+    "polecenie": "Wyznacz wszystkie wartości parametru \\(m\\), dla których równanie\n\\[(x-4)[x^2+(m-3)x+m^2-m-6]=0\\]\nma trzy różne rozwiązania rzeczywiste \\(x_1\\), \\(x_2\\) oraz \\(x_3\\), spełniające warunek\n\\[x_1\\cdot x_2\\cdot x_3>x_1^2+x_2^2+x_3^2-5m-51\\]",
     "strona_zadania": 18
   },
   {
     "numer": "14",
-    "polecenie": "Dany jest okrąg \\(o_1\\colon (x-6)^2+(y-4)^2=98\\) oraz okrąg \\(o_2\\) o promieniu \\(2\\sqrt5\\). Środki leżą po przeciwnych stronach prostej \\(k\\colon y=-3x-6\\), a wszystkie punkty wspólne okręgów leżą na \\(k\\).\n\nWyznacz równanie \\(o_2\\).",
+    "polecenie": "Dane są okrąg \\(o_1\\) o równaniu \\((x-6)^2+(y-4)^2=98\\) oraz okrąg \\(o_2\\) o promieniu \\(2\\sqrt{5}\\). Środki okręgów \\(o_1\\) i \\(o_2\\) leżą po różnych stronach prostej \\(k\\) o równaniu \\(y=-3x-6\\), a punkty wspólne obu okręgów leżą na prostej \\(k\\). Wyznacz równanie okręgu \\(o_2\\).",
     "strona_zadania": 20
   },
   {
     "numer": "15",
-    "polecenie": "Rozważ wszystkie ostrokątne trójkąty równoramienne \\(ABC\\) o ramionach \\(|AC|=|BC|\\), wpisane w okrąg o promieniu \\(1\\). Niech \\(x\\) oznacza odległość środka okręgu od \\(AB\\).\n\na) Wykaż, że pole jest równe \\(P(x)=(x+1)\\sqrt{1-x^2}\\).\nb) Wyznacz dziedzinę \\(P\\).\nc) Oblicz \\(x\\) dla trójkąta o największym polu i podaj to pole.",
+    "polecenie": "Rozpatrujemy wszystkie trójkąty równoramienne ostrokątne \\(ABC\\) (\\(|AC|=|BC|\\)), na których opisano okrąg o promieniu \\(R=1\\). Niech \\(x\\) oznacza odległość środka okręgu od podstawy \\(AB\\) trójkąta.\n\na) Wykaż, że pole \\(P\\) każdego z tych trójkątów, jako funkcja długości \\(x\\), wyraża się wzorem \\(P(x)=(x+1)\\cdot\\sqrt{1-x^2}\\).\n\nb) Wyznacz dziedzinę funkcji \\(P\\).\n\nc) Oblicz długość odcinka \\(x\\) tego z rozpatrywanych trójkątów, który ma największe pole. Oblicz to największe pole.",
     "strona_zadania": 22
   }
 ]

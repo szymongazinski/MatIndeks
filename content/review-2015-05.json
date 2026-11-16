@@ -1,66 +1,66 @@
 [
   {
     "numer": "1",
-    "polecenie": "Na osi liczbowej zaznaczono zbiór wszystkich rozwiązań nierówności \\(|2x-8|\\le10\\).\n\n[[rysunek:2015-05-1|Na osi liczbowej zaznaczono przedział domknięty od −1 do k.]]\n\nIle wynosi \\(k\\)?\n\nA. \\(k=2\\)\nB. \\(k=4\\)\nC. \\(k=5\\)\nD. \\(k=9\\)"
+    "polecenie": "Na rysunku przedstawiony jest zbiór wszystkich liczb rzeczywistych spełniających nierówność \\(|2x-8|\\le 10\\).\n\nStąd wynika, że\n\nA. \\(k=2\\)\nB. \\(k=4\\)\nC. \\(k=5\\)\nD. \\(k=9\\)"
   },
   {
     "numer": "2",
-    "polecenie": "Dana jest funkcja\n\\[f(x)=\\begin{cases}\nx-2 & \\text{dla } x\\le0,\\\\\n\\bigl||x+3|-4\\bigr| & \\text{dla } x>0.\n\\end{cases}\\]\nIle rozwiązań ma równanie \\(f(x)=1\\)?\n\nA. Jedno.\nB. Dwa.\nC. Cztery.\nD. Pięć."
+    "polecenie": "Dana jest funkcja \\(f\\) określona wzorem\n\\[f(x)=\\begin{cases}x-2&\\text{dla } x\\le 0\\\\\\big||x+3|-4\\big|&\\text{dla } x>0\\end{cases}\\]\nRównanie \\(f(x)=1\\) ma dokładnie\n\nA. jedno rozwiązanie.\nB. dwa rozwiązania.\nC. cztery rozwiązania.\nD. pięć rozwiązań."
   },
   {
     "numer": "3",
-    "polecenie": "Która liczba jest równa \\((3-2\\sqrt3)^3\\)?\n\nA. \\(27-24\\sqrt3\\)\nB. \\(27-30\\sqrt3\\)\nC. \\(135-78\\sqrt3\\)\nD. \\(135-30\\sqrt3\\)"
+    "polecenie": "Liczba \\((3-2\\sqrt{3})^3\\) jest równa\n\nA. \\(27-24\\sqrt{3}\\)\nB. \\(27-30\\sqrt{3}\\)\nC. \\(135-78\\sqrt{3}\\)\nD. \\(135-30\\sqrt{3}\\)"
   },
   {
     "numer": "4",
-    "polecenie": "Ile rozwiązań rzeczywistych ma równanie \\(2\\sin x+3\\cos x=6\\) w przedziale \\((0,2\\pi)\\)?\n\nA. Nie ma rozwiązań.\nB. Dokładnie jedno.\nC. Dokładnie dwa.\nD. Więcej niż dwa."
+    "polecenie": "Równanie \\(2\\sin x+3\\cos x=6\\) w przedziale \\((0,2\\pi)\\)\n\nA. nie ma rozwiązań rzeczywistych.\nB. ma dokładnie jedno rozwiązanie rzeczywiste.\nC. ma dokładnie dwa rozwiązania rzeczywiste.\nD. ma więcej niż dwa rozwiązania rzeczywiste."
   },
   {
     "numer": "5",
-    "polecenie": "Ile wynosi odległość początku układu współrzędnych od prostej \\(y=2x+4\\)?\n\nA. \\(\\dfrac{\\sqrt5}{5}\\)\nB. \\(\\dfrac{4\\sqrt5}{5}\\)\nC. \\(\\dfrac45\\)\nD. \\(4\\)"
+    "polecenie": "Odległość początku układu współrzędnych od prostej o równaniu \\(y=2x+4\\) jest równa\n\nA. \\(\\dfrac{\\sqrt{5}}5\\)\nB. \\(\\dfrac{4\\sqrt{5}}5\\)\nC. \\(\\dfrac45\\)\nD. \\(4\\)"
   },
   {
     "numer": "6",
-    "polecenie": "Oblicz granicę\n\\[\\lim_{n\\to\\infty}\\left(\\frac{11n^3+6n+5}{6n^3+1}-\\frac{2n^2+2n+1}{5n^2-4}\\right).\\]\nZakoduj kolejno cyfrę jedności i dwie pierwsze cyfry po przecinku w rozwinięciu dziesiętnym wyniku."
+    "polecenie": "Oblicz granicę \\(\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{11n^3+6n+5}{6n^3+1}-\\frac{2n^2+2n+1}{5n^2-4}\\right)\\). W poniższe kratki wpisz kolejno cyfrę jedności i pierwsze dwie cyfry po przecinku rozwinięcia dziesiętnego otrzymanego wyniku."
   },
   {
     "numer": "7",
-    "polecenie": "Liczby \\(-1\\) oraz \\(3\\) są miejscami zerowymi funkcji kwadratowej \\(f\\). Oblicz \\(\\dfrac{f(6)}{f(12)}\\)."
+    "polecenie": "Liczby \\((-1)\\) i \\(3\\) są miejscami zerowymi funkcji kwadratowej \\(f\\). Oblicz \\(\\dfrac{f(6)}{f(12)}\\)."
   },
   {
     "numer": "8",
-    "polecenie": "Udowodnij, że dla każdego \\(x\\in\\mathbb R\\) zachodzi nierówność\n\\[x^4-x^2-2x+3>0.\\]"
+    "polecenie": "Udowodnij, że dla każdej liczby rzeczywistej \\(x\\) prawdziwa jest nierówność\n\\[x^4-x^2-2x+3>0.\\]"
   },
   {
     "numer": "9",
-    "polecenie": "Czworokąt \\(ABCD\\) jest wpisany w okrąg. Dwusieczne jego kątów wyznaczają cztery różne punkty przecięcia \\(P,Q,R,S\\), jak na rysunku.\n\n[[rysunek:2015-05-9|Czworokąt ABCD wpisany w okrąg z dwusiecznymi przecinającymi się w P, Q, R i S.]]\n\nWykaż, że na czworokącie \\(PQRS\\) można opisać okrąg."
+    "polecenie": "Dwusieczne czworokąta \\(ABCD\\) wpisanego w okrąg przecinają się w czterech różnych punktach: \\(P,Q,R,S\\) (zobacz rysunek).\n\nWykaż, że na czworokącie \\(PQRS\\) można opisać okrąg."
   },
   {
     "numer": "10",
-    "polecenie": "Długości boków czworokąta \\(ABCD\\) wynoszą \\(|AB|=2,\\ |BC|=3,\\ |CD|=4,\\ |DA|=5\\). Na \\(ABCD\\) opisano okrąg. Oblicz długość przekątnej \\(AC\\)."
+    "polecenie": "Długości boków czworokąta \\(ABCD\\) są równe: \\(|AB|=2\\), \\(|BC|=3\\), \\(|CD|=4\\), \\(|DA|=5\\). Na czworokącie \\(ABCD\\) opisano okrąg. Oblicz długość przekątnej \\(AC\\) tego czworokąta."
   },
   {
     "numer": "11",
-    "polecenie": "W pierwszej urnie są \\(3\\) kule białe i \\(5\\) czarnych, a w drugiej \\(7\\) białych i \\(2\\) czarne. Losujemy kulę z pierwszej urny, przekładamy ją do drugiej, a następnie dodajemy do drugiej urny jeszcze dwie kule tego samego koloru co wylosowana. Z drugiej urny losujemy dwie kule. Oblicz prawdopodobieństwo, że obie będą białe."
+    "polecenie": "W pierwszej urnie umieszczono \\(3\\) kule białe i \\(5\\) kul czarnych, a w drugiej urnie \\(7\\) kul białych i \\(2\\) kule czarne. Losujemy jedną kulę z pierwszej urny, przekładamy ją do urny drugiej i dodatkowo dokładamy do urny drugiej jeszcze dwie kule tego samego koloru, co wylosowana kula. Następnie losujemy dwie kule z urny drugiej. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że obie kule wylosowane z drugiej urny będą białe."
   },
   {
     "numer": "12",
-    "polecenie": "Funkcję \\(f(x)=x^3-2x^2+1\\) określono dla wszystkich \\(x\\in\\mathbb R\\). Wyznacz równania stycznych do jej wykresu równoległych do prostej \\(y=4x\\)."
+    "polecenie": "Funkcja \\(f\\) określona jest wzorem \\(f(x)=x^3-2x^2+1\\) dla każdej liczby rzeczywistej \\(x\\). Wyznacz równania tych stycznych do wykresu funkcji \\(f\\), które są równoległe do prostej o równaniu \\(y=4x\\)."
   },
   {
     "numer": "13",
-    "polecenie": "Dany jest trójmian kwadratowy\n\\[f(x)=(m+1)x^2+2(m-2)x-m+4.\\]\nWyznacz wszystkie wartości parametru \\(m\\), dla których \\(f\\) ma dwa różne pierwiastki rzeczywiste \\(x_1,x_2\\) spełniające \\(x_1^2-x_2^2=x_1^4-x_2^4\\)."
+    "polecenie": "Dany jest trójmian kwadratowy \\(f(x)=(m+1)x^2+2(m-2)x-m+4\\). Wyznacz wszystkie wartości parametru \\(m\\), dla których trójmian \\(f\\) ma dwa różne pierwiastki rzeczywiste \\(x_1,x_2\\), spełniające warunek \\(x_1^2-x_2^2=x_1^4-x_2^4\\)."
   },
   {
     "numer": "14",
-    "polecenie": "Ostrosłup \\(ABCDS\\) ma kwadratową podstawę \\(ABCD\\). Jego wysokością jest krawędź \\(SD\\), która ma długość dwa razy większą od krawędzi podstawy. Oblicz sinus kąta między ścianami bocznymi \\(ABS\\) i \\(CBS\\)."
+    "polecenie": "Podstawą ostrosłupa \\(ABCDS\\) jest kwadrat \\(ABCD\\). Krawędź boczna \\(SD\\) jest wysokością ostrosłupa, a jej długość jest dwa razy większa od długości krawędzi podstawy. Oblicz sinus kąta między ścianami bocznymi \\(ABS\\) i \\(CBS\\) tego ostrosłupa."
   },
   {
     "numer": "15",
-    "polecenie": "Suma wszystkich czterech współczynników wielomianu \\(W(x)=x^3+ax^2+bx+c\\) wynosi \\(0\\). Trzy pierwiastki wielomianu tworzą ciąg arytmetyczny o różnicy \\(3\\). Wyznacz \\(a,b,c\\), uwzględniając wszystkie przypadki."
+    "polecenie": "Suma wszystkich czterech współczynników wielomianu \\(W(x)=x^3+ax^2+bx+c\\) jest równa \\(0\\). Trzy pierwiastki tego wielomianu tworzą ciąg arytmetyczny o różnicy równej \\(3\\). Oblicz współczynniki \\(a\\), \\(b\\) i \\(c\\). Rozważ wszystkie możliwe przypadki."
   },
   {
     "numer": "16",
-    "polecenie": "Rozpatrujemy wszystkie stożki, których przekrój osiowy jest trójkątem o obwodzie \\(20\\). Wyznacz wysokość i promień podstawy stożka o największej objętości oraz oblicz tę objętość."
+    "polecenie": "Rozpatrujemy wszystkie stożki, których przekrojem osiowym jest trójkąt o obwodzie \\(20\\). Oblicz wysokość i promień podstawy tego stożka, którego objętość jest największa. Oblicz objętość tego stożka."
   }
 ]
